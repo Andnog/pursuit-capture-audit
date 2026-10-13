@@ -1,0 +1,77 @@
+{
+  "package": "20260922_w05_constructive_on_network_r01",
+  "stage": "W5",
+  "claim_class": "does_an_abstraction_level_result_transfer_to_the_simulator",
+  "verdict": "CONSTRUCTIVE_TIMES_FAIL",
+  "tolerance_s": 0.1,
+  "tolerance_justification": "arrival is observed once per 0.1 s physical step; below the simulator's own resolution equality is not observable. Declared before any run.",
+  "geometry": {
+    "route_edges": 18,
+    "route_drivable_length_m": 1608.44,
+    "station_edge": "1096147716#2",
+    "station_position_m": 0.475,
+    "station_driving_distance_m": 1042.455,
+    "route_speed_limit_min_mps": 13.89,
+    "route_speed_limits_mps": [
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89,
+      13.89
+    ],
+    "speed_limit_choice": "minimum over the route's edges, so the profile is legal everywhere"
+  },
+  "map": {
+    "map_id": "adelaide_cbd",
+    "declared_split": "train",
+    "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+    "opened_read_only": true
+  },
+  "not_established": [
+    "capture, assistance, learning, benefit, transfer or novelty",
+    "simultaneous lane occupancy under the capacity constraint on the network",
+    "anything O22 guards"
+  ],
+  "resources": {
+    "sumo_process_starts": 6,
+    "simulated_seconds": 555.3,
+    "wall_seconds": 8.47,
+    "cpu_seconds": 0.673,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  },
+  "mechanism": {
+    "clamped_steps_single_vehicle": "52 to 144 of roughly 780 to 1550 commanded steps",
+    "clamped_steps_three_vehicles": "192 to 652",
+    "network_junctions": {
+      "traffic_light": 4,
+      "priority": 378,
+      "right_before_left": 6,
+      "dead_end": 32
+    },
+    "diagnosis": "NOT signals. The network carries four traffic lights against 378 unregulated PRIORITY junctions, so the lateness comes from junction right-of-way logic and internal-edge speed handling, which the finite abstraction omits entirely. This is not avoidable by choosing a different route: priority junctions are what an urban network is made of.",
+    "analysis_route": "read from the network file with sumolib; no additional SUMO process was started"
+  },
+  "consequence": "This is the same shape as the predictive-model refutation, now for CONSTRUCTIVE schedules. Rule A admits SUPPORTED only when every arrival set UNDER-approximates. A constructive witness that arrives LATE on the network is not an UNDER set on the network. The constructive route was the one thing that made SUPPORTED reachable at all after UNDER was refuted for predictive models; it holds in the abstraction and fails here.",
+  "direction": "ALL SEVEN ARRIVALS LATE, none early. The sign is consistent, which is what makes this a refutation rather than noise.",
+  "limits": [
+    "one route on one TRAINING map",
+    "four target times in arm 1, three participants in arm 2",
+    "seven measurements in total: a consistent direction with an identified mechanism, not a proof",
+    "replication across maps and routes is required before stating this as general"
+  ]
+}

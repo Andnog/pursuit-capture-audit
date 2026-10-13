@@ -1,0 +1,173 @@
+{
+  "failed": 0,
+  "rates": {
+    "cut": {
+      "n": 180,
+      "trapped": [
+        0.156,
+        0.106,
+        0.211
+      ],
+      "immobilised": 0.144,
+      "contact_capture": 0.15,
+      "certified": 0.639,
+      "trapped_given_certified": 0.235,
+      "trapped_given_not_certified": 0.015,
+      "evader_exited": 0.194,
+      "collisions": 0
+    },
+    "individual": {
+      "n": 180,
+      "trapped": [
+        0.039,
+        0.011,
+        0.067
+      ],
+      "immobilised": 0.022,
+      "contact_capture": 0.039,
+      "certified": 0.378,
+      "trapped_given_certified": 0.103,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.139,
+      "collisions": 0
+    },
+    "random": {
+      "n": 180,
+      "trapped": [
+        0.122,
+        0.078,
+        0.172
+      ],
+      "immobilised": 0.122,
+      "contact_capture": 0.122,
+      "certified": 0.378,
+      "trapped_given_certified": 0.324,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.189,
+      "collisions": 0
+    },
+    "T_seed1_final": {
+      "n": 180,
+      "trapped": [
+        0.133,
+        0.083,
+        0.183
+      ],
+      "immobilised": 0.122,
+      "contact_capture": 0.133,
+      "certified": 0.617,
+      "trapped_given_certified": 0.216,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.178,
+      "collisions": 0
+    },
+    "T_seed2_final": {
+      "n": 180,
+      "trapped": [
+        0.094,
+        0.056,
+        0.139
+      ],
+      "immobilised": 0.089,
+      "contact_capture": 0.094,
+      "certified": 0.633,
+      "trapped_given_certified": 0.149,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.211,
+      "collisions": 0
+    },
+    "U_seed1_final": {
+      "n": 180,
+      "trapped": [
+        0.078,
+        0.039,
+        0.117
+      ],
+      "immobilised": 0.078,
+      "contact_capture": 0.078,
+      "certified": 0.728,
+      "trapped_given_certified": 0.107,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.178,
+      "collisions": 0
+    },
+    "U_seed2_final": {
+      "n": 180,
+      "trapped": [
+        0.144,
+        0.094,
+        0.2
+      ],
+      "immobilised": 0.139,
+      "contact_capture": 0.144,
+      "certified": 0.694,
+      "trapped_given_certified": 0.208,
+      "trapped_given_not_certified": 0.0,
+      "evader_exited": 0.156,
+      "collisions": 0
+    }
+  },
+  "contrasts": {
+    "PRIMARY_cut_minus_individual": [
+      0.117,
+      0.061,
+      0.172
+    ],
+    "random_minus_cut": [
+      -0.033,
+      -0.094,
+      0.028
+    ],
+    "random_minus_individual": [
+      0.083,
+      0.033,
+      0.139
+    ],
+    "T_seed1_final_minus_cut": [
+      -0.022,
+      -0.067,
+      0.022
+    ],
+    "T_seed1_final_minus_individual": [
+      0.094,
+      0.044,
+      0.15
+    ],
+    "T_seed2_final_minus_cut": [
+      -0.061,
+      -0.106,
+      -0.017
+    ],
+    "T_seed2_final_minus_individual": [
+      0.056,
+      0.011,
+      0.1
+    ],
+    "U_seed1_final_minus_cut": [
+      -0.078,
+      -0.133,
+      -0.022
+    ],
+    "U_seed1_final_minus_individual": [
+      0.039,
+      -0.006,
+      0.089
+    ],
+    "U_seed2_final_minus_cut": [
+      -0.011,
+      -0.078,
+      0.056
+    ],
+    "U_seed2_final_minus_individual": [
+      0.106,
+      0.05,
+      0.167
+    ],
+    "cut_minus_individual_contact_capture": [
+      0.111,
+      0.056,
+      0.167
+    ]
+  },
+  "primary_passes": true
+}

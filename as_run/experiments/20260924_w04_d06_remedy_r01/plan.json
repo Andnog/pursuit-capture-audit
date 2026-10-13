@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_d06_remedy_r01",
+  "created": "2026-09-24",
+  "stage": "W4",
+  "protocol": "PROTOCOL_EN.md",
+  "decided_by": "Research lead, 2026-09-24: collision = overlap; min_gap pursuer 2.5, evader 1.0; D06 unchanged",
+  "acceptance_rule_frozen_before_running": true,
+  "acceptance_rule": {
+    "REMEDY_VERIFIED": "arm 1 outside band no collision; arm 2 inside band no collision judge SUPPORTED; arm 3 collision reported",
+    "REMEDY_FAILED": "any arm fails"
+  },
+  "resource_limits": {
+    "sumo_process_starts_permitted": 6
+  }
+}

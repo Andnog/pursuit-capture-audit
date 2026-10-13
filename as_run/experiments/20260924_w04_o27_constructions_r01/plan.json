@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_o27_constructions_r01",
+  "created": "2026-09-24",
+  "stage": "W4",
+  "protocol": "PROTOCOL_EN.md",
+  "amendment": "PROTOCOL_AMENDMENT_EN.md",
+  "acceptance_rule_frozen_before_running": true,
+  "gate": "at least two CONSTRUCTED among the four AVOIDANT cases",
+  "budget": {
+    "AVOIDANT_cpu_minutes": 90,
+    "OPTIMAL_ESCAPE_cpu_minutes": 30,
+    "max_expansions_per_case": 100000
+  }
+}

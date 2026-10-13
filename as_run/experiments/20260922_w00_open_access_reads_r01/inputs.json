@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w00_open_access_reads_r01",
+  "novelty_artifacts": {
+    "research/novelty/claim_evidence_matrix.csv": "f6e36f2238dad474cf91fa9d6d3ffd0de7abe909d4f96dea8d09fdf8ad510b25",
+    "research/novelty/search_log.jsonl": "cc56af78be59f160ad9a414447e9eec6d37eb1eb0957255ed62c80107662088f",
+    "research/novelty/sources.bib": "071d553626cb1eb76e2d2ff480e7b2ebb46020408bb8359ef166947a51624f42",
+    "research/novelty/TECHNICAL_GAP_EN.md": "210087c58f9d979cf315f14644f36e78f76ca76ea5aa12ef81d42506166f1738"
+  },
+  "primary_sources_read": [
+    {
+      "record": "N03b_DACOOP_A",
+      "route": "arXiv 2310.15699v2, open",
+      "local_copy_sha256": "972a2eb0d0888b1ef7b621be0d7a677bb5c0ab888a1950d5698985bde342fdfb",
+      "extraction": "pdftotext -layout",
+      "extracted_characters": 66286,
+      "depth": "FULL_TEXT"
+    },
+    {
+      "record": "E02_GSTAM",
+      "route": "ACM open-access full text, doi 10.1145/3804601.3804818",
+      "depth": "FULL_TEXT",
+      "note": "read as rendered HTML in the browser pane; a direct curl was refused HTTP 403 by bot protection, not by a paywall"
+    },
+    {
+      "record": "E03_ATT_D3RQN",
+      "route": "IEEE Xplore document 11172636 via the Universidad Panamericana proxy",
+      "depth": "METHOD_SECTIONS"
+    }
+  ],
+  "note": "the two PDF copies are scratch downloads, not project artifacts; their hashes are recorded so the readings can be reproduced against the same bytes"
+}

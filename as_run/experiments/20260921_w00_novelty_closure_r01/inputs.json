@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r01",
+  "novelty_artifacts": {
+    "research/novelty/TECHNICAL_GAP_EN.md": "17c3f9403bc3897ede330ac03f6d937943b0d7b8589fe42be313c6b80fc39ddd",
+    "research/novelty/claim_evidence_matrix.csv": "c15809f84a77cd8198cb9e1b6e55ae3ca8061692f395e734eb7e227dbb57e111",
+    "research/novelty/search_log.jsonl": "4327f562e3b8b6ef1bc0fd0369902d4961164f5becf63ac26906d98fd89e5ea5",
+    "research/novelty/sources.bib": "32ff575548dc7220cca8a99b0685b55d090d7dfd9600ee49009ad23e968a0711",
+    "research/novelty/SEARCH_PROTOCOL_EN.md": "fc1b40348de7e39109093766a3bec398ca1e8b2bb50bc7e8c0821728406fc57e",
+    "docs/BASELINE_SPEC_EN.md": "cb810ff971725206a4645082d31190d8503a8260d275b44e57dd1fe1941b4cb5"
+  },
+  "note": "Search inputs are external web records, identified by URL and DOI in search_log.jsonl and sources.bib. They cannot be hashed the way a local file can, and their reading depths are recorded per record."
+}

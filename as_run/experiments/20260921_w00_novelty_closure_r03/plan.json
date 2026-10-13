@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r03",
+  "created": "2026-09-21",
+  "stage": "W0_REVISION",
+  "revision": "r03",
+  "continues": "20260921_w00_novelty_closure_r02",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_rule_frozen_before_searching": true,
+  "access": "Scopus via Universidad Panamericana proxy; already authenticated; no credentials entered by the agent",
+  "supersedes_reason": "r02 recorded FAMILY_OPEN because no citation index was reachable; that verdict was correct then and is superseded, not retracted",
+  "acceptance_rule": {
+    "REFUTED": "a citing work implements the conjunction",
+    "FAMILY_CLOSED": "forward citations of all three records screened",
+    "FAMILY_PARTIAL": "citations screened for some records only",
+    "FAMILY_OPEN": "no usable citation data obtained"
+  },
+  "declared_limit": "Scopus indexes what it indexes; a citing work outside its coverage will not appear",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

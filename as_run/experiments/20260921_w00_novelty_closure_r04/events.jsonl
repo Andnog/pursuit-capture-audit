@@ -1,0 +1,9 @@
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "run_started", "package": "20260921_w00_novelty_closure_r04"}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "precondition_failure_detected", "detail": "B06 recorded in r03 as a 6-page PDF; pdftotext reports 14 pages. The r03 depth was taken from a truncated image render."}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "source_reread", "source_id": "B06", "depth": "FULL_TEXT", "pages": 14}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "matrix_row_corrected", "source_id": "B06", "direction": "AGAINST_THIS_PROJECT", "detail": "a k-agent adjacency capture predicate exists and had been omitted"}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "reference_list_screened", "source_id": "B06", "references": 22, "relevant": 2}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "record_added", "record_id": "G01_JENNINGS_COMMITMENT", "depth": "ABSTRACT", "claim": "C05"}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "record_upgraded", "record_id": "F01_RIEDMILLER_MULTIOPTION", "from": "CITED_ONLY_NOT_RETRIEVED", "to": "SECONDHAND_METHOD_DESCRIPTION_NOT_A_READ"}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "retrieval_failed", "record_id": "F01_RIEDMILLER_MULTIOPTION", "reason": "publisher record CLOSED; abstract elided by publisher; no open copy; no PDF on the author's page; De Gruyter not among supplied proxies"}
+{"ts": "2026-09-22T01:30:21.404449Z", "event": "run_ended", "verdict": "CHASE_PARTIAL"}

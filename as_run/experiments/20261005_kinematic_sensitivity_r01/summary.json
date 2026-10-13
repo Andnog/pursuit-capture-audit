@@ -1,0 +1,103 @@
+{
+  "failed": 252,
+  "episodes": 10080,
+  "variants": {
+    "K0": {
+      "families": 273,
+      "cells": 819,
+      "oc": {
+        "plb": 0.4389,
+        "pursuit": 0.3126
+      },
+      "prox_5m_pursuit": 0.9316,
+      "prox_5m_centre_pursuit": 0.87,
+      "plb_minus_pursuit_family_95": [
+        0.1264,
+        0.0897,
+        0.1642
+      ],
+      "plb_minus_pursuit_city_family_95": [
+        0.1264,
+        0.0791,
+        0.1795
+      ],
+      "prox5_minus_oc_pursuit_family_95": [
+        0.619,
+        0.5733,
+        0.6654
+      ]
+    },
+    "K1": {
+      "families": 273,
+      "cells": 819,
+      "oc": {
+        "plb": 0.4432,
+        "pursuit": 0.3034
+      },
+      "prox_5m_pursuit": 0.9347,
+      "prox_5m_centre_pursuit": 0.8791,
+      "plb_minus_pursuit_family_95": [
+        0.1398,
+        0.1032,
+        0.177
+      ],
+      "plb_minus_pursuit_city_family_95": [
+        0.1398,
+        0.0879,
+        0.1978
+      ],
+      "prox5_minus_oc_pursuit_family_95": [
+        0.6313,
+        0.5855,
+        0.6764
+      ],
+      "oc_minus_K0_plus_opt_family_95": [
+        0.0043,
+        -0.0226,
+        0.0311
+      ],
+      "oc_minus_K0_pursuit_family_95": [
+        -0.0092,
+        -0.0354,
+        0.0165
+      ],
+      "primary_passes": true
+    },
+    "K2": {
+      "families": 273,
+      "cells": 819,
+      "oc": {
+        "plb": 0.4493,
+        "pursuit": 0.3309
+      },
+      "prox_5m_pursuit": 0.9121,
+      "prox_5m_centre_pursuit": 0.8376,
+      "plb_minus_pursuit_family_95": [
+        0.1184,
+        0.0794,
+        0.1575
+      ],
+      "plb_minus_pursuit_city_family_95": [
+        0.1184,
+        0.0706,
+        0.1691
+      ],
+      "prox5_minus_oc_pursuit_family_95": [
+        0.5812,
+        0.5311,
+        0.63
+      ],
+      "oc_minus_K0_plus_opt_family_95": [
+        0.0104,
+        -0.0409,
+        0.0611
+      ],
+      "oc_minus_K0_pursuit_family_95": [
+        0.0183,
+        -0.0336,
+        0.0702
+      ],
+      "primary_passes": true
+    }
+  }
+}

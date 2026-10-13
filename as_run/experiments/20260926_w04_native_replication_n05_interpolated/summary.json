@@ -1,0 +1,8 @@
+{
+  "native_constructions": 0,
+  "prerequisite": "NOT_MET",
+  "rule": "at least two TRAINING maps with a natively replicated construction",
+  "cpu_seconds_sumo": 1.2,
+  "wall_seconds": 4218.6,
+  "python_version": "3.14.6"
+}

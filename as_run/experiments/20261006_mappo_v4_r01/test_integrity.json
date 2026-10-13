@@ -1,0 +1,20 @@
+{
+  "failure_reasons": {
+    "ValueError": 1204
+  },
+  "counts": {
+    "attempted": 23520,
+    "failed": 1204,
+    "valid": 22316,
+    "d06": 8521,
+    "prox_5m": 19975,
+    "end_reasons": {
+      "evader_exit": 4327,
+      "event": 8521,
+      "horizon": 9468
+    },
+    "collided": 0,
+    "inner_gap_frames": 3,
+    "legacy_capture_instant_differs": 0
+  }
+}

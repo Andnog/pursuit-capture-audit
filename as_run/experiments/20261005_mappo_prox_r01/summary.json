@@ -1,0 +1,166 @@
+{
+  "rates": {
+    "mappo_oc": {
+      "d06": 0.4402,
+      "prox_5m": 0.9249,
+      "prox_5m_centre": 0.8596
+    },
+    "planner_c215": {
+      "d06": 0.3968,
+      "prox_5m": 0.9206,
+      "prox_5m_centre": 0.84
+    },
+    "prox_final": {
+      "d06": 0.2784,
+      "prox_5m": 0.9332,
+      "prox_5m_centre": 0.8578
+    },
+    "prox_mlp_s1": {
+      "d06": 0.4347,
+      "prox_5m": 0.9261,
+      "prox_5m_centre": 0.8584
+    },
+    "prox_mlp_s2": {
+      "d06": 0.4402,
+      "prox_5m": 0.9249,
+      "prox_5m_centre": 0.8596
+    },
+    "proxlast_mlp_s1": {
+      "d06": 0.2766,
+      "prox_5m": 0.9335,
+      "prox_5m_centre": 0.8578
+    },
+    "proxlast_mlp_s2": {
+      "d06": 0.2802,
+      "prox_5m": 0.9328,
+      "prox_5m_centre": 0.8578
+    },
+    "pursuit": {
+      "d06": 0.2735,
+      "prox_5m": 0.9341,
+      "prox_5m_centre": 0.8608
+    }
+  },
+  "runs": {
+    "mlp_s1": {
+      "best": 0.9197860962566845,
+      "bc_val": 0.9197860962566845,
+      "episodes": 2048,
+      "stop_reason": "max_episodes",
+      "vals": [
+        0.9197860962566845,
+        0.9144385026737968,
+        0.9197860962566845,
+        0.9090909090909091,
+        0.9090909090909091
+      ]
+    },
+    "mlp_s2": {
+      "best": 0.9144385026737968,
+      "bc_val": 0.9144385026737968,
+      "episodes": 2048,
+      "stop_reason": "max_episodes",
+      "vals": [
+        0.9144385026737968,
+        0.9197860962566845,
+        0.9144385026737968,
+        0.9144385026737968,
+        0.9090909090909091
+      ]
+    }
+  },
+  "selected": "mlp_s1",
+  "failed": 294,
+  "collisions": 0,
+  "primary": {
+    "checkpoint": "final policies of both proximity runs, averaged per cell",
+    "gap_prox_minus_oc__prox_trained_minus_oc_trained": [
+      0.17,
+      0.135,
+      0.205
+    ],
+    "passes": true
+  },
+  "secondary": {
+    "best_validation_checkpoint_gap": [
+      0.007,
+      -0.01,
+      0.024
+    ],
+    "d06:prox_trained_minus_oc_trained": [
+      -0.162,
+      -0.197,
+      -0.127
+    ],
+    "d06:prox_trained_minus_plb": [
+      -0.118,
+      -0.153,
+      -0.085
+    ],
+    "d06:plb_minus_pursuit": [
+      0.123,
+      0.088,
+      0.16
+    ],
+    "d06:final_s1_minus_oc_trained": [
+      -0.164,
+      -0.199,
+      -0.129
+    ],
+    "d06:final_s2_minus_oc_trained": [
+      -0.16,
+      -0.196,
+      -0.125
+    ],
+    "prox_5m:prox_trained_minus_oc_trained": [
+      0.008,
+      -0.001,
+      0.02
+    ],
+    "prox_5m:prox_trained_minus_plb": [
+      0.013,
+      0.003,
+      0.024
+    ],
+    "prox_5m:plb_minus_pursuit": [
+      -0.013,
+      -0.025,
+      -0.004
+    ],
+    "prox_5m:final_s1_minus_oc_trained": [
+      0.009,
+      0.0,
+      0.02
+    ],
+    "prox_5m:final_s2_minus_oc_trained": [
+      0.008,
+      -0.002,
+      0.02
+    ],
+    "prox_5m_centre:prox_trained_minus_oc_trained": [
+      -0.002,
+      -0.018,
+      0.015
+    ],
+    "prox_5m_centre:prox_trained_minus_plb": [
+      0.018,
+      0.0,
+      0.036
+    ],
+    "prox_5m_centre:plb_minus_pursuit": [
+      -0.021,
+      -0.04,
+      -0.002
+    ],
+    "prox_5m_centre:final_s1_minus_oc_trained": [
+      -0.002,
+      -0.018,
+      0.015
+    ],
+    "prox_5m_centre:final_s2_minus_oc_trained": [
+      -0.002,
+      -0.019,
+      0.016
+    ]
+  }
+}

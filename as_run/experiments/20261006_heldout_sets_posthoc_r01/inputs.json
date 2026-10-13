@@ -1,0 +1,12 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261006_heldout_sets_posthoc_r01",
+ "post_hoc": true,
+ "sources": {
+  "scripts/posthoc_heldout_b_vs_test.py": "d75dcf34ba750e801e37cfc4f5cfa631a7012aca7efb65aa4997d8a9a19a9be2",
+  "scripts/run_heldout_b.py": "4276ed15e52cf6c82e6633aab14ccf616f8aa27b8adf9bff97865a99ed8a6051",
+  "scripts/addendum_reanalysis.py": "d62a15064a3e1b660970b7a5f32d6df42b23c1779fed621b2786dd663a2b08a4",
+  "experiments/20261003_test_confirmation_r01/results.jsonl": "7801c3de42ac86d70c7665ce97e8f0b34d24a36e01fa74380da2a93dc9c9f602",
+  "experiments/20261005_heldout_b_r01/results.jsonl": "226ece77bc1c4738398eeaaa235b11b843949cab4e93aa42fc178e6a0220fb38"
+ }
+}

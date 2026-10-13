@@ -1,0 +1,48 @@
+{
+  "package": "20260921_w00_novelty_closure_r03",
+  "stage": "W0_REVISION",
+  "continues": "20260921_w00_novelty_closure_r02",
+  "access": {
+    "index": "Scopus",
+    "route": "Universidad Panamericana proxy",
+    "authenticated": true,
+    "credentials_entered_by_agent": false
+  },
+  "family": {
+    "name": "citation chasing on B03, B04, B06",
+    "verdict": "FAMILY_PARTIAL",
+    "resolved": "B06 forward citations screened (8 of 8 for the PRICAI version)",
+    "not_resolved": [
+      "5 citing works of the AAMAS version of B06",
+      "forward citations of B03",
+      "forward citations of B04"
+    ],
+    "reachable_now": true
+  },
+  "refutation_found": false,
+  "new_close_records": 3,
+  "matrix": {
+    "rows": 31,
+    "status_counts": {
+      "KNOWN": 11,
+      "POTENTIAL_DIFFERENCE": 12,
+      "PENDING": 8
+    }
+  },
+  "verdict": {
+    "composite_claim_C12": "POTENTIAL_DIFFERENCE",
+    "changed_from_previous": false,
+    "claim_class": "novelty_only",
+    "structural_finding": "learned interception under temporal constraints is an AEROSPACE literature: it coordinates scalar times-to-go in free space and never represents interval-valued arrival sets on a lane network",
+    "new_blocker": "three close records (E01-E03) now require method-level reading; E01 blocks an H2 distinctness claim alongside B06"
+  },
+  "resources": {
+    "queries_executed": 3,
+    "citation_lists_screened": 1,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

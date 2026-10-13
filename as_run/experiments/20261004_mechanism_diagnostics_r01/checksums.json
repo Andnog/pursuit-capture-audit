@@ -1,0 +1,13 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261004_mechanism_diagnostics_r01",
+ "sealed_at": "2026-10-05T05:34:37.077409+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "SCIENTIFIC_DECISION_EN.md": "8cd5acf8f05c641d90be601daa107442a57a0b154b545066ccec8b63e8113721",
+  "inputs.json": "5c314a8bf16d20aa5c6b2b77b4011436f34bf12409bcb31aeaac60863a16f1b0",
+  "results.jsonl": "715759c15e29507aab5fdb1c9af8ea528b670d0a4f4d92190ca65a4b68b6a20f"
+ }
+}

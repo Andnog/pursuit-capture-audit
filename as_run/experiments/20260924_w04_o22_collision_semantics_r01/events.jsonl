@@ -1,0 +1,5 @@
+{"ts": "2026-09-25T03:38:38.630459Z", "event": "run_started"}
+{"ts": "2026-09-25T03:38:38.630459Z", "event": "void_run", "reason": "every measured gap -25.0 m; vehicles not where placed; caught by the read-back rule"}
+{"ts": "2026-09-25T03:38:38.630459Z", "event": "collision_semantics_measured", "defaults": "collision below 2.5 m including the whole capture band", "mingap_factor_0": "no collision without overlap"}
+{"ts": "2026-09-25T03:38:38.630459Z", "event": "safe_following_measured", "smallest_gap_m": 2.501}
+{"ts": "2026-09-25T03:38:38.630459Z", "event": "run_ended", "verdict": "CAPTURE_BAND_IS_A_COLLISION_BY_DEFAULT_AND_IS_UNREACHABLE_UNDER_SAFE_FOLLOWING"}

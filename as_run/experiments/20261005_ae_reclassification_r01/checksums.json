@@ -1,0 +1,12 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_ae_reclassification_r01",
+ "sealed_at": "2026-10-05T06:11:49.528455+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "AE_RECLASSIFICATION.json": "abd44fe86d930324b85ae31b0cf01038382b5b3f1123d14f3b057ff230726578",
+  "SCIENTIFIC_DECISION_EN.md": "ab09077fd7fbe52b208f1a8147651353737e0bb0710123485b9e70e9140a5153"
+ }
+}

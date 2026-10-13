@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261001_robustness_study_r01",
+ "sealed_at": "2026-10-01T22:59:24.447801Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "1db121136e9f3dd976fc3f8d591763476083e9e680657fb72d408d2e42a0e994",
+  "PROTOCOL_EN.md": "2bb5cc2fad0baa8499f9dfc38ce0778ad20a73afbb6e98a2c970980ba8714247",
+  "SCIENTIFIC_DECISION_EN.md": "cdf4861c742a2d99c3a7bc1690ce35bd06f5233f9fab28c5b5f1266dfb60d3f1",
+  "gifs/C2grid_idx1_cut.gif": "144e0c7b17dc36f88d7d16e94c306cb62278cc01d6f09a11771df29f9a301b23",
+  "gifs/C2grid_idx1_pursuit.gif": "dce1a0a8a208419e80421bff2734c13a3caba96bf605beafd4daaf7e67dead5a",
+  "inputs.json": "76ad4b6d73c19b604bd081e14e952193e2ef24bf24f8445d278cf0ba125dcf78",
+  "results.jsonl": "1d48ea69bdef170d57702a3b42264f726e44328f2fa336365cc9c8547263d793",
+  "run.log": "6f1111e9258d349e80210faaabb3e08df2067f51bef78ae7911fd16ef23866ee",
+  "summary.json": "7ca529a0e00fd354ba032578d3110d5316331fffee8ed006bd113c445569f4ec"
+ }
+}

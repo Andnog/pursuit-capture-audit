@@ -1,0 +1,131 @@
+{
+  "cities": [
+    "denver_downtown",
+    "vancouver_downtown",
+    "barcelona_eixample",
+    "buenos_aires_microcentro"
+  ],
+  "episodes": 4640,
+  "failed": 142,
+  "collisions": 0,
+  "families": 157,
+  "cells": 459,
+  "rates_primary_levels": {
+    "plus_opt": {
+      "d06": 0.2908,
+      "prox_5m": 0.7919,
+      "prox_5m_centre": 0.6471
+    },
+    "ambush_a95": {
+      "d06": 0.2669,
+      "prox_5m": 0.7767,
+      "prox_5m_centre": 0.6405
+    },
+    "pursuit": {
+      "d06": 0.2266,
+      "prox_5m": 0.7756,
+      "prox_5m_centre": 0.6427
+    }
+  },
+  "rates_optimal": {
+    "plus_opt": 0.1583,
+    "ambush_a95": 0.1229,
+    "pursuit": 0.0854
+  },
+  "null_team": {
+    "d06": 0.0164,
+    "prox_5m": 0.273,
+    "prox_5m_centre": 0.2138
+  },
+  "B1_plb_minus_pursuit_family_97.5": [
+    0.0643,
+    0.0145,
+    0.1139
+  ],
+  "B1_passes": true,
+  "B1_family_95": [
+    0.0643,
+    0.0214,
+    0.1078
+  ],
+  "B1_city_family_95": [
+    0.0643,
+    0.0087,
+    0.132
+  ],
+  "B2_prox5_minus_oc_pursuit_family_97.5": [
+    0.549,
+    0.4758,
+    0.6204
+  ],
+  "B2_passes": true,
+  "B2_city_family_95": [
+    0.549,
+    0.4158,
+    0.6741
+  ],
+  "by_city_plb_minus_pursuit": {
+    "denver_downtown": [
+      0.1453,
+      0.0333,
+      0.2542
+    ],
+    "vancouver_downtown": [
+      0.0292,
+      -0.075,
+      0.1208
+    ],
+    "barcelona_eixample": [
+      0.0312,
+      -0.0144,
+      0.0856
+    ],
+    "buenos_aires_microcentro": [
+      0.05,
+      0.0,
+      0.1111
+    ]
+  },
+  "optimal_plb_minus_pursuit_family_95": [
+    0.0729,
+    0.0167,
+    0.1313
+  ],
+  "plb_minus_ambush_family_95": [
+    0.024,
+    -0.0166,
+    0.0637
+  ],
+  "centre5_minus_oc_pursuit_family_95": [
+    0.4161,
+    0.3475,
+    0.4837
+  ],
+  "plb_minus_pursuit_under_body_gap_5m": [
+    0.0163,
+    -0.0022,
+    0.0373
+  ],
+  "plb_minus_pursuit_under_centre_5m": [
+    0.0044,
+    -0.0163,
+    0.0248
+  ],
+  "by_team_plb_minus_pursuit": {
+    "team3": [
+      0.0541,
+      -0.0032,
+      0.1115
+    ],
+    "team5": [
+      0.0822,
+      0.023,
+      0.1382
+    ],
+    "team7": [
+      0.0567,
+      -0.0033,
+      0.1167
+    ]
+  }
+}

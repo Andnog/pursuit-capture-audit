@@ -1,0 +1,7 @@
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "run_started", "package": "20260924_w05_signal_aware_approach_r01"}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "approach_model_built", "detail": "lane chain including internal junction lanes, with fixed-time signal programs read from the network"}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "signal_residual_explained", "route": "washington_downtown rt0", "predicted_wait_s": 121.122, "model_error_vs_actual_s": 0.115}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "sign_test", "result": "model earlier than SUMO free run on 8 of 12 routes", "verdict": "MODEL_STILL_OPTIMISTIC"}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "control_sigma_zero", "finding": "default driver imperfection costs only 0.5 to 3.0 s; not the cause of the optimism"}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "residual_identified", "detail": "model distance short of SUMO odometer by up to 42.3 m; lane choice and missing via lanes ruled out; cause unknown"}
+{"ts": "2026-09-24T14:19:24.832387Z", "event": "run_ended", "verdict": "MODEL_STILL_OPTIMISTIC"}

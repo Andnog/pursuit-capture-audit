@@ -1,0 +1,391 @@
+{"stage": "demos", "arm": "T", "episodes": 294, "decisions": 17132, "cut_p_cage": 0.697, "wall": 1790785168.1}
+{"stage": "demos", "arm": "U", "episodes": 294, "decisions": 16851, "cut_p_cage": 0.721, "wall": 1790785270.5}
+{"stage": "eval", "policy": "cut", "p_cage": 0.7, "wall": 1790785311.4}
+{"stage": "eval", "policy": "cut_label", "p_cage": 0.7, "wall": 1790785351.9}
+{"stage": "eval", "policy": "individual", "p_cage": 0.317, "wall": 1790785399.4}
+{"stage": "eval", "policy": "random", "p_cage": 0.4, "wall": 1790785448.5}
+{"stage": "bc", "arm": "T", "epoch": 0, "nll": 1.5521, "wall": 1790785458.3}
+{"stage": "bc", "arm": "T", "epoch": 1, "nll": 0.8252, "wall": 1790785465.8}
+{"stage": "bc", "arm": "T", "epoch": 2, "nll": 0.7709, "wall": 1790785473.3}
+{"stage": "bc", "arm": "T", "epoch": 3, "nll": 0.6699, "wall": 1790785481.0}
+{"stage": "bc", "arm": "T", "epoch": 4, "nll": 0.5829, "wall": 1790785488.5}
+{"stage": "bc", "arm": "T", "epoch": 5, "nll": 0.5375, "wall": 1790785495.8}
+{"stage": "bc", "arm": "T", "epoch": 6, "nll": 0.5035, "wall": 1790785503.2}
+{"stage": "bc", "arm": "T", "epoch": 7, "nll": 0.4772, "wall": 1790785510.9}
+{"stage": "bc", "arm": "T", "epoch": 8, "nll": 0.4549, "wall": 1790785518.4}
+{"stage": "bc", "arm": "T", "epoch": 9, "nll": 0.4379, "wall": 1790785525.8}
+{"stage": "bc", "arm": "T", "epoch": 10, "nll": 0.4198, "wall": 1790785533.3}
+{"stage": "bc", "arm": "T", "epoch": 11, "nll": 0.408, "wall": 1790785541.3}
+{"stage": "bc", "arm": "T", "epoch": 12, "nll": 0.3936, "wall": 1790785548.6}
+{"stage": "bc", "arm": "T", "epoch": 13, "nll": 0.3835, "wall": 1790785556.0}
+{"stage": "bc", "arm": "T", "epoch": 14, "nll": 0.3741, "wall": 1790785563.6}
+{"stage": "bc", "arm": "T", "epoch": 15, "nll": 0.366, "wall": 1790785571.0}
+{"stage": "bc", "arm": "T", "epoch": 16, "nll": 0.3565, "wall": 1790785578.3}
+{"stage": "bc", "arm": "T", "epoch": 17, "nll": 0.3518, "wall": 1790785585.7}
+{"stage": "bc", "arm": "T", "epoch": 18, "nll": 0.3427, "wall": 1790785593.0}
+{"stage": "bc", "arm": "T", "epoch": 19, "nll": 0.337, "wall": 1790785600.5}
+{"stage": "bc", "arm": "T", "epoch": 20, "nll": 0.3322, "wall": 1790785607.9}
+{"stage": "bc", "arm": "T", "epoch": 21, "nll": 0.325, "wall": 1790785615.3}
+{"stage": "bc", "arm": "T", "epoch": 22, "nll": 0.3198, "wall": 1790785622.8}
+{"stage": "bc", "arm": "T", "epoch": 23, "nll": 0.316, "wall": 1790785630.4}
+{"stage": "bc", "arm": "T", "epoch": 24, "nll": 0.3121, "wall": 1790785637.9}
+{"stage": "bc", "arm": "T", "epoch": 25, "nll": 0.3106, "wall": 1790785645.3}
+{"stage": "bc", "arm": "T", "epoch": 26, "nll": 0.3042, "wall": 1790785652.8}
+{"stage": "bc", "arm": "T", "epoch": 27, "nll": 0.3021, "wall": 1790785660.4}
+{"stage": "bc", "arm": "T", "epoch": 28, "nll": 0.297, "wall": 1790785667.7}
+{"stage": "bc", "arm": "T", "epoch": 29, "nll": 0.2964, "wall": 1790785675.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 1, "episodes": 64, "p_cage": 0.698, "mean_reward": 3.928, "policy_loss": 0.3689, "value_loss": 0.5253, "entropy": 0.0721, "wall": 1790785703.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 2, "episodes": 128, "p_cage": 0.597, "mean_reward": 3.225, "policy_loss": -0.057, "value_loss": 2.8977, "entropy": 0.1328, "wall": 1790785736.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 3, "episodes": 192, "p_cage": 0.651, "mean_reward": 3.853, "policy_loss": 0.1627, "value_loss": 1.526, "entropy": 0.0879, "wall": 1790785769.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 4, "episodes": 256, "p_cage": 0.645, "mean_reward": 3.663, "policy_loss": -0.0357, "value_loss": 1.5363, "entropy": 0.0818, "wall": 1790785799.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 5, "episodes": 320, "p_cage": 0.698, "mean_reward": 3.883, "policy_loss": -0.0327, "value_loss": 1.5504, "entropy": 0.1093, "wall": 1790785827.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 6, "episodes": 384, "p_cage": 0.59, "mean_reward": 3.993, "policy_loss": 0.0131, "value_loss": 1.0556, "entropy": 0.1283, "wall": 1790785858.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 7, "episodes": 448, "p_cage": 0.656, "mean_reward": 3.695, "policy_loss": 0.0305, "value_loss": 1.2955, "entropy": 0.0774, "wall": 1790785891.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 8, "episodes": 512, "p_cage": 0.645, "mean_reward": 3.906, "policy_loss": 0.1732, "value_loss": 0.7832, "entropy": 0.1289, "wall": 1790785922.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 9, "episodes": 576, "p_cage": 0.683, "mean_reward": 4.503, "policy_loss": -0.0947, "value_loss": 0.9352, "entropy": 0.1257, "wall": 1790785953.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 10, "episodes": 640, "p_cage": 0.694, "mean_reward": 3.637, "policy_loss": 0.0591, "value_loss": 1.3215, "entropy": 0.0989, "wall": 1790785984.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 11, "episodes": 704, "p_cage": 0.639, "mean_reward": 3.239, "policy_loss": 0.115, "value_loss": 0.8973, "entropy": 0.1284, "wall": 1790786016.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 12, "episodes": 768, "p_cage": 0.656, "mean_reward": 3.949, "policy_loss": -0.0627, "value_loss": 1.1339, "entropy": 0.0946, "wall": 1790786049.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 13, "episodes": 832, "p_cage": 0.694, "mean_reward": 3.834, "policy_loss": -0.0162, "value_loss": 1.6359, "entropy": 0.1022, "wall": 1790786078.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 14, "episodes": 896, "p_cage": 0.698, "mean_reward": 3.783, "policy_loss": -0.043, "value_loss": 1.3377, "entropy": 0.1155, "wall": 1790786106.1}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 15, "episodes": 960, "p_cage": 0.721, "mean_reward": 3.841, "policy_loss": 0.001, "value_loss": 1.028, "entropy": 0.1104, "wall": 1790786137.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 16, "episodes": 1024, "p_cage": 0.619, "mean_reward": 3.406, "policy_loss": 0.0759, "value_loss": 0.9651, "entropy": 0.1146, "wall": 1790786172.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 17, "episodes": 1088, "p_cage": 0.597, "mean_reward": 3.159, "policy_loss": -0.0101, "value_loss": 0.823, "entropy": 0.0915, "wall": 1790786206.8}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 18, "episodes": 1152, "p_cage": 0.703, "mean_reward": 3.856, "policy_loss": 0.0965, "value_loss": 0.88, "entropy": 0.14, "wall": 1790786235.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 19, "episodes": 1216, "p_cage": 0.651, "mean_reward": 3.727, "policy_loss": -0.0507, "value_loss": 1.2721, "entropy": 0.1054, "wall": 1790786266.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 20, "episodes": 1280, "p_cage": 0.547, "mean_reward": 3.295, "policy_loss": 0.1406, "value_loss": 0.8246, "entropy": 0.1165, "wall": 1790786301.1}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 21, "episodes": 1344, "p_cage": 0.714, "mean_reward": 3.551, "policy_loss": -0.0554, "value_loss": 1.048, "entropy": 0.1127, "wall": 1790786333.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 22, "episodes": 1408, "p_cage": 0.635, "mean_reward": 3.551, "policy_loss": -0.2177, "value_loss": 1.0669, "entropy": 0.0665, "wall": 1790786363.6}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 23, "episodes": 1472, "p_cage": 0.762, "mean_reward": 4.216, "policy_loss": -0.1278, "value_loss": 1.0172, "entropy": 0.1301, "wall": 1790786392.4}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 24, "episodes": 1536, "p_cage": 0.762, "mean_reward": 3.921, "policy_loss": 0.0463, "value_loss": 0.8868, "entropy": 0.1433, "wall": 1790786427.6}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 25, "episodes": 1600, "p_cage": 0.609, "mean_reward": 3.596, "policy_loss": -0.0068, "value_loss": 1.1223, "entropy": 0.1209, "wall": 1790786464.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 26, "episodes": 1664, "p_cage": 0.661, "mean_reward": 3.559, "policy_loss": -0.0042, "value_loss": 0.9609, "entropy": 0.1393, "wall": 1790786500.8}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 27, "episodes": 1728, "p_cage": 0.778, "mean_reward": 4.002, "policy_loss": 0.0754, "value_loss": 1.2519, "entropy": 0.0971, "wall": 1790786538.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 28, "episodes": 1792, "p_cage": 0.688, "mean_reward": 3.836, "policy_loss": -0.0366, "value_loss": 1.036, "entropy": 0.1061, "wall": 1790786573.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 29, "episodes": 1856, "p_cage": 0.71, "mean_reward": 3.76, "policy_loss": 0.1555, "value_loss": 0.7818, "entropy": 0.0883, "wall": 1790786610.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 30, "episodes": 1920, "p_cage": 0.714, "mean_reward": 3.921, "policy_loss": -0.0009, "value_loss": 1.1071, "entropy": 0.1157, "wall": 1790786645.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 31, "episodes": 1984, "p_cage": 0.635, "mean_reward": 3.116, "policy_loss": 0.2223, "value_loss": 1.0442, "entropy": 0.1164, "wall": 1790786683.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 32, "episodes": 2048, "p_cage": 0.677, "mean_reward": 3.779, "policy_loss": 0.1527, "value_loss": 1.8497, "entropy": 0.0886, "wall": 1790786722.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 33, "episodes": 2112, "p_cage": 0.694, "mean_reward": 4.034, "policy_loss": 0.0565, "value_loss": 1.2195, "entropy": 0.1261, "wall": 1790786759.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 34, "episodes": 2176, "p_cage": 0.754, "mean_reward": 4.07, "policy_loss": -0.0542, "value_loss": 1.3506, "entropy": 0.0966, "wall": 1790786792.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 35, "episodes": 2240, "p_cage": 0.703, "mean_reward": 3.933, "policy_loss": -0.0272, "value_loss": 0.9212, "entropy": 0.1056, "wall": 1790786828.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 36, "episodes": 2304, "p_cage": 0.714, "mean_reward": 3.847, "policy_loss": -0.1095, "value_loss": 1.2184, "entropy": 0.0682, "wall": 1790786867.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 37, "episodes": 2368, "p_cage": 0.781, "mean_reward": 4.201, "policy_loss": 0.0965, "value_loss": 1.2496, "entropy": 0.1051, "wall": 1790786904.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 38, "episodes": 2432, "p_cage": 0.651, "mean_reward": 3.575, "policy_loss": -0.0041, "value_loss": 0.8559, "entropy": 0.0979, "wall": 1790786942.4}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 39, "episodes": 2496, "p_cage": 0.603, "mean_reward": 3.97, "policy_loss": 0.523, "value_loss": 0.3189, "entropy": 0.0112, "wall": 1790786978.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 40, "episodes": 2560, "p_cage": 0.73, "mean_reward": 4.222, "policy_loss": 0.0123, "value_loss": 0.9954, "entropy": 0.0984, "wall": 1790787017.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 41, "episodes": 2624, "p_cage": 0.726, "mean_reward": 3.944, "policy_loss": -0.2761, "value_loss": 1.4579, "entropy": 0.0669, "wall": 1790787052.1}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 42, "episodes": 2688, "p_cage": 0.73, "mean_reward": 4.13, "policy_loss": -0.0265, "value_loss": 1.0817, "entropy": 0.091, "wall": 1790787087.6}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 43, "episodes": 2752, "p_cage": 0.767, "mean_reward": 4.121, "policy_loss": -0.1178, "value_loss": 1.1048, "entropy": 0.0742, "wall": 1790787120.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 44, "episodes": 2816, "p_cage": 0.689, "mean_reward": 3.624, "policy_loss": -0.0126, "value_loss": 1.1408, "entropy": 0.1319, "wall": 1790787156.4}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 45, "episodes": 2880, "p_cage": 0.641, "mean_reward": 3.605, "policy_loss": -0.0781, "value_loss": 1.0338, "entropy": 0.0967, "wall": 1790787194.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 46, "episodes": 2944, "p_cage": 0.71, "mean_reward": 3.99, "policy_loss": 0.0224, "value_loss": 1.1276, "entropy": 0.0896, "wall": 1790787231.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 47, "episodes": 3008, "p_cage": 0.766, "mean_reward": 3.974, "policy_loss": 0.0292, "value_loss": 1.0294, "entropy": 0.1133, "wall": 1790787266.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 48, "episodes": 3072, "p_cage": 0.587, "mean_reward": 3.659, "policy_loss": 0.1598, "value_loss": 1.3653, "entropy": 0.0978, "wall": 1790787306.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 49, "episodes": 3136, "p_cage": 0.54, "mean_reward": 3.32, "policy_loss": -0.0193, "value_loss": 1.0003, "entropy": 0.1157, "wall": 1790787354.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 50, "episodes": 3200, "p_cage": 0.688, "mean_reward": 4.173, "policy_loss": 0.1025, "value_loss": 1.1821, "entropy": 0.1285, "wall": 1790787391.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 51, "episodes": 3264, "p_cage": 0.597, "mean_reward": 3.489, "policy_loss": -0.0053, "value_loss": 1.3068, "entropy": 0.0874, "wall": 1790787432.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 52, "episodes": 3328, "p_cage": 0.726, "mean_reward": 3.971, "policy_loss": -0.044, "value_loss": 1.2948, "entropy": 0.1007, "wall": 1790787469.5}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 53, "episodes": 3392, "p_cage": 0.683, "mean_reward": 3.884, "policy_loss": 0.099, "value_loss": 1.1484, "entropy": 0.0863, "wall": 1790787505.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 54, "episodes": 3456, "p_cage": 0.683, "mean_reward": 4.116, "policy_loss": -0.1487, "value_loss": 1.3945, "entropy": 0.0679, "wall": 1790787542.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 55, "episodes": 3520, "p_cage": 0.698, "mean_reward": 3.608, "policy_loss": -0.1816, "value_loss": 1.361, "entropy": 0.1168, "wall": 1790787577.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 56, "episodes": 3584, "p_cage": 0.774, "mean_reward": 4.209, "policy_loss": -0.0822, "value_loss": 1.465, "entropy": 0.0928, "wall": 1790787612.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 57, "episodes": 3648, "p_cage": 0.746, "mean_reward": 3.847, "policy_loss": 0.1168, "value_loss": 1.2191, "entropy": 0.0898, "wall": 1790787645.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 58, "episodes": 3712, "p_cage": 0.635, "mean_reward": 3.503, "policy_loss": 0.0197, "value_loss": 0.9286, "entropy": 0.077, "wall": 1790787685.0}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 59, "episodes": 3776, "p_cage": 0.77, "mean_reward": 4.373, "policy_loss": 0.0389, "value_loss": 0.8481, "entropy": 0.0807, "wall": 1790787719.4}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 60, "episodes": 3840, "p_cage": 0.688, "mean_reward": 3.902, "policy_loss": 0.1295, "value_loss": 0.8709, "entropy": 0.075, "wall": 1790787755.9}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 61, "episodes": 3904, "p_cage": 0.645, "mean_reward": 3.613, "policy_loss": 0.0169, "value_loss": 1.1096, "entropy": 0.0721, "wall": 1790787794.1}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 62, "episodes": 3968, "p_cage": 0.651, "mean_reward": 3.247, "policy_loss": -0.034, "value_loss": 1.1121, "entropy": 0.0771, "wall": 1790787829.7}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 63, "episodes": 4032, "p_cage": 0.79, "mean_reward": 3.999, "policy_loss": 0.007, "value_loss": 1.03, "entropy": 0.0948, "wall": 1790787863.1}
+{"stage": "eval", "policy": "T_seed1_initial", "p_cage": 0.35, "wall": 1790787924.0}
+{"stage": "eval", "policy": "T_seed1_bc", "p_cage": 0.7, "wall": 1790787975.2}
+{"stage": "eval", "policy": "T_seed1_final", "p_cage": 0.683, "wall": 1790788024.8}
+{"stage": "bc", "arm": "T", "epoch": 0, "nll": 1.5174, "wall": 1790788034.7}
+{"stage": "bc", "arm": "T", "epoch": 1, "nll": 0.8243, "wall": 1790788044.1}
+{"stage": "bc", "arm": "T", "epoch": 2, "nll": 0.7537, "wall": 1790788054.0}
+{"stage": "bc", "arm": "T", "epoch": 3, "nll": 0.6427, "wall": 1790788064.0}
+{"stage": "bc", "arm": "T", "epoch": 4, "nll": 0.5803, "wall": 1790788073.6}
+{"stage": "bc", "arm": "T", "epoch": 5, "nll": 0.5398, "wall": 1790788083.4}
+{"stage": "bc", "arm": "T", "epoch": 6, "nll": 0.5104, "wall": 1790788093.2}
+{"stage": "bc", "arm": "T", "epoch": 7, "nll": 0.4834, "wall": 1790788102.9}
+{"stage": "bc", "arm": "T", "epoch": 8, "nll": 0.4554, "wall": 1790788112.6}
+{"stage": "bc", "arm": "T", "epoch": 9, "nll": 0.4361, "wall": 1790788122.1}
+{"stage": "bc", "arm": "T", "epoch": 10, "nll": 0.4161, "wall": 1790788131.9}
+{"stage": "bc", "arm": "T", "epoch": 11, "nll": 0.4015, "wall": 1790788141.5}
+{"stage": "bc", "arm": "T", "epoch": 12, "nll": 0.3892, "wall": 1790788151.1}
+{"stage": "bc", "arm": "T", "epoch": 13, "nll": 0.3802, "wall": 1790788160.5}
+{"stage": "bc", "arm": "T", "epoch": 14, "nll": 0.3705, "wall": 1790788169.9}
+{"stage": "bc", "arm": "T", "epoch": 15, "nll": 0.3641, "wall": 1790788179.4}
+{"stage": "bc", "arm": "T", "epoch": 16, "nll": 0.3558, "wall": 1790788188.8}
+{"stage": "bc", "arm": "T", "epoch": 17, "nll": 0.3481, "wall": 1790788198.4}
+{"stage": "bc", "arm": "T", "epoch": 18, "nll": 0.3425, "wall": 1790788207.7}
+{"stage": "bc", "arm": "T", "epoch": 19, "nll": 0.3367, "wall": 1790788217.2}
+{"stage": "bc", "arm": "T", "epoch": 20, "nll": 0.3307, "wall": 1790788226.6}
+{"stage": "bc", "arm": "T", "epoch": 21, "nll": 0.3246, "wall": 1790788236.2}
+{"stage": "bc", "arm": "T", "epoch": 22, "nll": 0.3193, "wall": 1790788246.1}
+{"stage": "bc", "arm": "T", "epoch": 23, "nll": 0.3167, "wall": 1790788255.6}
+{"stage": "bc", "arm": "T", "epoch": 24, "nll": 0.3133, "wall": 1790788265.5}
+{"stage": "bc", "arm": "T", "epoch": 25, "nll": 0.3078, "wall": 1790788274.6}
+{"stage": "bc", "arm": "T", "epoch": 26, "nll": 0.3046, "wall": 1790788284.3}
+{"stage": "bc", "arm": "T", "epoch": 27, "nll": 0.3008, "wall": 1790788293.7}
+{"stage": "bc", "arm": "T", "epoch": 28, "nll": 0.2983, "wall": 1790788302.9}
+{"stage": "bc", "arm": "T", "epoch": 29, "nll": 0.2956, "wall": 1790788312.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 1, "episodes": 64, "p_cage": 0.698, "mean_reward": 3.772, "policy_loss": 0.0849, "value_loss": 2.4914, "entropy": 0.1228, "wall": 1790788348.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 2, "episodes": 128, "p_cage": 0.667, "mean_reward": 3.917, "policy_loss": -0.1287, "value_loss": 1.2282, "entropy": 0.0974, "wall": 1790788392.2}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 3, "episodes": 192, "p_cage": 0.629, "mean_reward": 3.568, "policy_loss": -0.0772, "value_loss": 1.3858, "entropy": 0.1138, "wall": 1790788434.6}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 4, "episodes": 256, "p_cage": 0.694, "mean_reward": 4.273, "policy_loss": 0.3149, "value_loss": 2.1123, "entropy": 0.1493, "wall": 1790788475.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 5, "episodes": 320, "p_cage": 0.656, "mean_reward": 3.964, "policy_loss": 0.0091, "value_loss": 1.4696, "entropy": 0.1249, "wall": 1790788518.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 6, "episodes": 384, "p_cage": 0.656, "mean_reward": 3.804, "policy_loss": 0.0543, "value_loss": 1.3587, "entropy": 0.136, "wall": 1790788557.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 7, "episodes": 448, "p_cage": 0.794, "mean_reward": 4.257, "policy_loss": -0.139, "value_loss": 1.4171, "entropy": 0.1571, "wall": 1790788590.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 8, "episodes": 512, "p_cage": 0.629, "mean_reward": 3.501, "policy_loss": -0.0172, "value_loss": 1.1432, "entropy": 0.1296, "wall": 1790788632.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 9, "episodes": 576, "p_cage": 0.645, "mean_reward": 3.531, "policy_loss": 0.0079, "value_loss": 1.0713, "entropy": 0.1252, "wall": 1790788675.5}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 10, "episodes": 640, "p_cage": 0.742, "mean_reward": 3.87, "policy_loss": -0.0879, "value_loss": 1.343, "entropy": 0.1118, "wall": 1790788714.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 11, "episodes": 704, "p_cage": 0.635, "mean_reward": 3.961, "policy_loss": -0.0252, "value_loss": 0.8796, "entropy": 0.1156, "wall": 1790788754.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 12, "episodes": 768, "p_cage": 0.672, "mean_reward": 3.798, "policy_loss": -0.192, "value_loss": 1.3963, "entropy": 0.123, "wall": 1790788793.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 13, "episodes": 832, "p_cage": 0.672, "mean_reward": 4.165, "policy_loss": -0.0105, "value_loss": 1.3333, "entropy": 0.0958, "wall": 1790788831.6}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 14, "episodes": 896, "p_cage": 0.603, "mean_reward": 3.686, "policy_loss": 0.0061, "value_loss": 0.8798, "entropy": 0.0987, "wall": 1790788873.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 15, "episodes": 960, "p_cage": 0.581, "mean_reward": 3.22, "policy_loss": 0.0051, "value_loss": 1.1107, "entropy": 0.0922, "wall": 1790788906.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 16, "episodes": 1024, "p_cage": 0.869, "mean_reward": 4.371, "policy_loss": 0.0757, "value_loss": 1.3273, "entropy": 0.1045, "wall": 1790788939.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 17, "episodes": 1088, "p_cage": 0.787, "mean_reward": 4.198, "policy_loss": 0.081, "value_loss": 1.2802, "entropy": 0.0692, "wall": 1790788971.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 18, "episodes": 1152, "p_cage": 0.672, "mean_reward": 3.785, "policy_loss": -0.0216, "value_loss": 1.1095, "entropy": 0.0907, "wall": 1790789004.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 19, "episodes": 1216, "p_cage": 0.651, "mean_reward": 3.718, "policy_loss": -0.0084, "value_loss": 1.1677, "entropy": 0.0881, "wall": 1790789035.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 20, "episodes": 1280, "p_cage": 0.734, "mean_reward": 3.708, "policy_loss": 0.0439, "value_loss": 1.3159, "entropy": 0.0887, "wall": 1790789068.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 21, "episodes": 1344, "p_cage": 0.641, "mean_reward": 3.281, "policy_loss": -0.0381, "value_loss": 1.142, "entropy": 0.0907, "wall": 1790789104.2}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 22, "episodes": 1408, "p_cage": 0.565, "mean_reward": 3.228, "policy_loss": -0.1033, "value_loss": 1.2139, "entropy": 0.0758, "wall": 1790789141.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 23, "episodes": 1472, "p_cage": 0.629, "mean_reward": 3.699, "policy_loss": -0.031, "value_loss": 0.7626, "entropy": 0.0829, "wall": 1790789177.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 24, "episodes": 1536, "p_cage": 0.625, "mean_reward": 3.635, "policy_loss": 0.0877, "value_loss": 1.287, "entropy": 0.1022, "wall": 1790789212.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 25, "episodes": 1600, "p_cage": 0.734, "mean_reward": 4.188, "policy_loss": 0.0029, "value_loss": 1.3215, "entropy": 0.1235, "wall": 1790789241.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 26, "episodes": 1664, "p_cage": 0.619, "mean_reward": 3.672, "policy_loss": 0.3084, "value_loss": 0.7496, "entropy": 0.0907, "wall": 1790789279.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 27, "episodes": 1728, "p_cage": 0.776, "mean_reward": 4.185, "policy_loss": 0.0313, "value_loss": 1.2034, "entropy": 0.08, "wall": 1790789311.2}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 28, "episodes": 1792, "p_cage": 0.766, "mean_reward": 4.166, "policy_loss": 0.1433, "value_loss": 1.0869, "entropy": 0.0998, "wall": 1790789344.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 29, "episodes": 1856, "p_cage": 0.806, "mean_reward": 4.589, "policy_loss": -0.0152, "value_loss": 0.9729, "entropy": 0.0901, "wall": 1790789376.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 30, "episodes": 1920, "p_cage": 0.641, "mean_reward": 3.725, "policy_loss": 0.0866, "value_loss": 1.1021, "entropy": 0.0878, "wall": 1790789410.5}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 31, "episodes": 1984, "p_cage": 0.645, "mean_reward": 3.717, "policy_loss": -0.0014, "value_loss": 0.9044, "entropy": 0.083, "wall": 1790789443.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 32, "episodes": 2048, "p_cage": 0.651, "mean_reward": 3.912, "policy_loss": -0.0121, "value_loss": 0.9206, "entropy": 0.0707, "wall": 1790789475.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 33, "episodes": 2112, "p_cage": 0.609, "mean_reward": 3.547, "policy_loss": -0.2187, "value_loss": 1.2474, "entropy": 0.0724, "wall": 1790789511.5}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 34, "episodes": 2176, "p_cage": 0.778, "mean_reward": 4.015, "policy_loss": -0.0153, "value_loss": 0.9913, "entropy": 0.0795, "wall": 1790789545.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 35, "episodes": 2240, "p_cage": 0.703, "mean_reward": 3.877, "policy_loss": 0.0392, "value_loss": 1.0791, "entropy": 0.1042, "wall": 1790789577.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 36, "episodes": 2304, "p_cage": 0.667, "mean_reward": 3.896, "policy_loss": -0.1804, "value_loss": 0.9454, "entropy": 0.0603, "wall": 1790789610.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 37, "episodes": 2368, "p_cage": 0.623, "mean_reward": 3.664, "policy_loss": 0.0634, "value_loss": 0.8959, "entropy": 0.1069, "wall": 1790789644.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 38, "episodes": 2432, "p_cage": 0.754, "mean_reward": 3.826, "policy_loss": -0.0393, "value_loss": 0.9849, "entropy": 0.0808, "wall": 1790789678.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 39, "episodes": 2496, "p_cage": 0.603, "mean_reward": 3.501, "policy_loss": 0.1414, "value_loss": 0.9865, "entropy": 0.0687, "wall": 1790789712.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 40, "episodes": 2560, "p_cage": 0.667, "mean_reward": 3.858, "policy_loss": 0.1662, "value_loss": 1.0989, "entropy": 0.1159, "wall": 1790789744.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 41, "episodes": 2624, "p_cage": 0.613, "mean_reward": 3.914, "policy_loss": 0.0907, "value_loss": 1.1163, "entropy": 0.0888, "wall": 1790789779.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 42, "episodes": 2688, "p_cage": 0.587, "mean_reward": 3.334, "policy_loss": 0.2902, "value_loss": 1.104, "entropy": 0.0416, "wall": 1790789816.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 43, "episodes": 2752, "p_cage": 0.721, "mean_reward": 3.844, "policy_loss": -0.0798, "value_loss": 1.4437, "entropy": 0.0816, "wall": 1790789849.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 44, "episodes": 2816, "p_cage": 0.797, "mean_reward": 4.391, "policy_loss": -0.061, "value_loss": 1.4528, "entropy": 0.0762, "wall": 1790789880.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 45, "episodes": 2880, "p_cage": 0.656, "mean_reward": 3.559, "policy_loss": -0.1254, "value_loss": 1.0783, "entropy": 0.1053, "wall": 1790789913.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 46, "episodes": 2944, "p_cage": 0.629, "mean_reward": 3.677, "policy_loss": 0.1341, "value_loss": 1.072, "entropy": 0.1002, "wall": 1790789944.6}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 47, "episodes": 3008, "p_cage": 0.734, "mean_reward": 4.157, "policy_loss": -0.074, "value_loss": 1.1699, "entropy": 0.0686, "wall": 1790789980.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 48, "episodes": 3072, "p_cage": 0.645, "mean_reward": 4.052, "policy_loss": -0.0404, "value_loss": 0.9668, "entropy": 0.0619, "wall": 1790790021.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 49, "episodes": 3136, "p_cage": 0.71, "mean_reward": 4.107, "policy_loss": -0.0625, "value_loss": 1.1073, "entropy": 0.0857, "wall": 1790790056.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 50, "episodes": 3200, "p_cage": 0.698, "mean_reward": 4.226, "policy_loss": -0.0129, "value_loss": 1.1618, "entropy": 0.0967, "wall": 1790790087.2}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 51, "episodes": 3264, "p_cage": 0.565, "mean_reward": 3.559, "policy_loss": -0.0284, "value_loss": 1.6101, "entropy": 0.0872, "wall": 1790790123.6}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 52, "episodes": 3328, "p_cage": 0.734, "mean_reward": 4.396, "policy_loss": 0.0459, "value_loss": 1.1892, "entropy": 0.1016, "wall": 1790790149.8}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 53, "episodes": 3392, "p_cage": 0.645, "mean_reward": 3.68, "policy_loss": 0.124, "value_loss": 1.4615, "entropy": 0.1411, "wall": 1790790183.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 54, "episodes": 3456, "p_cage": 0.719, "mean_reward": 3.888, "policy_loss": 0.1614, "value_loss": 0.7942, "entropy": 0.0595, "wall": 1790790216.3}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 55, "episodes": 3520, "p_cage": 0.733, "mean_reward": 3.394, "policy_loss": -0.1331, "value_loss": 1.4827, "entropy": 0.07, "wall": 1790790249.1}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 56, "episodes": 3584, "p_cage": 0.803, "mean_reward": 4.528, "policy_loss": 0.1183, "value_loss": 0.7553, "entropy": 0.085, "wall": 1790790281.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 57, "episodes": 3648, "p_cage": 0.639, "mean_reward": 4.175, "policy_loss": -0.1284, "value_loss": 1.0392, "entropy": 0.0947, "wall": 1790790315.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 58, "episodes": 3712, "p_cage": 0.641, "mean_reward": 3.825, "policy_loss": -0.0781, "value_loss": 1.4085, "entropy": 0.0723, "wall": 1790790348.2}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 59, "episodes": 3776, "p_cage": 0.667, "mean_reward": 3.993, "policy_loss": 0.143, "value_loss": 0.9486, "entropy": 0.0816, "wall": 1790790380.0}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 60, "episodes": 3840, "p_cage": 0.714, "mean_reward": 4.17, "policy_loss": 0.0898, "value_loss": 1.0991, "entropy": 0.0999, "wall": 1790790410.4}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 61, "episodes": 3904, "p_cage": 0.672, "mean_reward": 3.556, "policy_loss": 0.048, "value_loss": 0.9491, "entropy": 0.1076, "wall": 1790790443.7}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 62, "episodes": 3968, "p_cage": 0.639, "mean_reward": 3.869, "policy_loss": 0.0666, "value_loss": 0.9882, "entropy": 0.08, "wall": 1790790473.9}
+{"stage": "ppo", "arm": "T", "seed": 2, "iteration": 63, "episodes": 4032, "p_cage": 0.613, "mean_reward": 3.395, "policy_loss": 0.0032, "value_loss": 1.0235, "entropy": 0.0779, "wall": 1790790506.3}
+{"stage": "eval", "policy": "T_seed2_initial", "p_cage": 0.283, "wall": 1790790557.7}
+{"stage": "eval", "policy": "T_seed2_bc", "p_cage": 0.667, "wall": 1790790602.2}
+{"stage": "eval", "policy": "T_seed2_final", "p_cage": 0.708, "wall": 1790790645.8}
+{"stage": "bc", "arm": "U", "epoch": 0, "nll": 3.3909, "wall": 1790790653.8}
+{"stage": "bc", "arm": "U", "epoch": 1, "nll": 2.452, "wall": 1790790661.6}
+{"stage": "bc", "arm": "U", "epoch": 2, "nll": 2.3078, "wall": 1790790669.5}
+{"stage": "bc", "arm": "U", "epoch": 3, "nll": 2.1382, "wall": 1790790677.3}
+{"stage": "bc", "arm": "U", "epoch": 4, "nll": 1.9582, "wall": 1790790685.2}
+{"stage": "bc", "arm": "U", "epoch": 5, "nll": 1.8253, "wall": 1790790693.1}
+{"stage": "bc", "arm": "U", "epoch": 6, "nll": 1.7449, "wall": 1790790700.9}
+{"stage": "bc", "arm": "U", "epoch": 7, "nll": 1.6792, "wall": 1790790708.8}
+{"stage": "bc", "arm": "U", "epoch": 8, "nll": 1.6336, "wall": 1790790716.7}
+{"stage": "bc", "arm": "U", "epoch": 9, "nll": 1.6015, "wall": 1790790724.7}
+{"stage": "bc", "arm": "U", "epoch": 10, "nll": 1.5721, "wall": 1790790732.5}
+{"stage": "bc", "arm": "U", "epoch": 11, "nll": 1.5563, "wall": 1790790740.4}
+{"stage": "bc", "arm": "U", "epoch": 12, "nll": 1.5401, "wall": 1790790748.4}
+{"stage": "bc", "arm": "U", "epoch": 13, "nll": 1.5251, "wall": 1790790756.6}
+{"stage": "bc", "arm": "U", "epoch": 14, "nll": 1.5113, "wall": 1790790764.7}
+{"stage": "bc", "arm": "U", "epoch": 15, "nll": 1.4999, "wall": 1790790772.8}
+{"stage": "bc", "arm": "U", "epoch": 16, "nll": 1.4987, "wall": 1790790780.8}
+{"stage": "bc", "arm": "U", "epoch": 17, "nll": 1.4823, "wall": 1790790788.8}
+{"stage": "bc", "arm": "U", "epoch": 18, "nll": 1.4699, "wall": 1790790797.4}
+{"stage": "bc", "arm": "U", "epoch": 19, "nll": 1.4652, "wall": 1790790805.3}
+{"stage": "bc", "arm": "U", "epoch": 20, "nll": 1.4642, "wall": 1790790813.1}
+{"stage": "bc", "arm": "U", "epoch": 21, "nll": 1.452, "wall": 1790790821.3}
+{"stage": "bc", "arm": "U", "epoch": 22, "nll": 1.4427, "wall": 1790790829.2}
+{"stage": "bc", "arm": "U", "epoch": 23, "nll": 1.436, "wall": 1790790837.0}
+{"stage": "bc", "arm": "U", "epoch": 24, "nll": 1.4316, "wall": 1790790845.2}
+{"stage": "bc", "arm": "U", "epoch": 25, "nll": 1.4209, "wall": 1790790853.2}
+{"stage": "bc", "arm": "U", "epoch": 26, "nll": 1.4162, "wall": 1790790860.9}
+{"stage": "bc", "arm": "U", "epoch": 27, "nll": 1.4067, "wall": 1790790868.8}
+{"stage": "bc", "arm": "U", "epoch": 28, "nll": 1.4065, "wall": 1790790876.6}
+{"stage": "bc", "arm": "U", "epoch": 29, "nll": 1.3998, "wall": 1790790884.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 1, "episodes": 64, "p_cage": 0.635, "mean_reward": 3.486, "policy_loss": 0.0175, "value_loss": 1.9919, "entropy": 0.4943, "wall": 1790790925.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 2, "episodes": 128, "p_cage": 0.613, "mean_reward": 3.294, "policy_loss": -0.0574, "value_loss": 1.2587, "entropy": 0.5417, "wall": 1790790969.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 3, "episodes": 192, "p_cage": 0.587, "mean_reward": 3.322, "policy_loss": 0.1203, "value_loss": 0.446, "entropy": 0.4749, "wall": 1790791015.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 4, "episodes": 256, "p_cage": 0.581, "mean_reward": 3.178, "policy_loss": 0.0005, "value_loss": 0.9376, "entropy": 0.5832, "wall": 1790791058.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 5, "episodes": 320, "p_cage": 0.651, "mean_reward": 3.606, "policy_loss": 0.0034, "value_loss": 0.6121, "entropy": 0.5686, "wall": 1790791099.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 6, "episodes": 384, "p_cage": 0.639, "mean_reward": 4.096, "policy_loss": 0.2583, "value_loss": 1.2317, "entropy": 0.7013, "wall": 1790791140.1}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 7, "episodes": 448, "p_cage": 0.639, "mean_reward": 3.603, "policy_loss": 0.0784, "value_loss": 0.648, "entropy": 0.465, "wall": 1790791181.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 8, "episodes": 512, "p_cage": 0.677, "mean_reward": 4.171, "policy_loss": 0.0703, "value_loss": 0.9313, "entropy": 0.4774, "wall": 1790791218.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 9, "episodes": 576, "p_cage": 0.667, "mean_reward": 3.805, "policy_loss": -0.0747, "value_loss": 0.8722, "entropy": 0.5239, "wall": 1790791259.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 10, "episodes": 640, "p_cage": 0.742, "mean_reward": 3.921, "policy_loss": -0.0103, "value_loss": 0.6996, "entropy": 0.5383, "wall": 1790791296.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 11, "episodes": 704, "p_cage": 0.607, "mean_reward": 3.111, "policy_loss": -0.1315, "value_loss": 0.9565, "entropy": 0.5597, "wall": 1790791336.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 12, "episodes": 768, "p_cage": 0.525, "mean_reward": 3.137, "policy_loss": -0.0253, "value_loss": 0.9065, "entropy": 0.5675, "wall": 1790791380.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 13, "episodes": 832, "p_cage": 0.694, "mean_reward": 3.661, "policy_loss": 0.0418, "value_loss": 0.9568, "entropy": 0.5181, "wall": 1790791417.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 14, "episodes": 896, "p_cage": 0.667, "mean_reward": 3.528, "policy_loss": 0.0254, "value_loss": 0.9094, "entropy": 0.554, "wall": 1790791458.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 15, "episodes": 960, "p_cage": 0.656, "mean_reward": 3.595, "policy_loss": 0.1407, "value_loss": 0.7233, "entropy": 0.5279, "wall": 1790791498.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 16, "episodes": 1024, "p_cage": 0.635, "mean_reward": 3.419, "policy_loss": 0.0254, "value_loss": 0.9198, "entropy": 0.4245, "wall": 1790791535.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 17, "episodes": 1088, "p_cage": 0.613, "mean_reward": 3.307, "policy_loss": -0.1783, "value_loss": 0.8965, "entropy": 0.5373, "wall": 1790791577.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 18, "episodes": 1152, "p_cage": 0.719, "mean_reward": 3.91, "policy_loss": 0.0562, "value_loss": 1.034, "entropy": 0.4982, "wall": 1790791614.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 19, "episodes": 1216, "p_cage": 0.683, "mean_reward": 3.997, "policy_loss": 0.0495, "value_loss": 1.0283, "entropy": 0.5301, "wall": 1790791655.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 20, "episodes": 1280, "p_cage": 0.609, "mean_reward": 3.398, "policy_loss": 0.0536, "value_loss": 0.5997, "entropy": 0.5225, "wall": 1790791695.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 21, "episodes": 1344, "p_cage": 0.683, "mean_reward": 3.167, "policy_loss": 0.0212, "value_loss": 0.888, "entropy": 0.4629, "wall": 1790791734.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 22, "episodes": 1408, "p_cage": 0.714, "mean_reward": 4.015, "policy_loss": 0.0675, "value_loss": 0.9529, "entropy": 0.4807, "wall": 1790791769.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 23, "episodes": 1472, "p_cage": 0.651, "mean_reward": 3.722, "policy_loss": 0.0634, "value_loss": 0.8724, "entropy": 0.5153, "wall": 1790791805.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 24, "episodes": 1536, "p_cage": 0.635, "mean_reward": 3.615, "policy_loss": 0.0499, "value_loss": 0.8787, "entropy": 0.5163, "wall": 1790791844.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 25, "episodes": 1600, "p_cage": 0.641, "mean_reward": 3.295, "policy_loss": 0.1021, "value_loss": 1.4667, "entropy": 0.3664, "wall": 1790791885.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 26, "episodes": 1664, "p_cage": 0.629, "mean_reward": 3.494, "policy_loss": -0.1981, "value_loss": 1.0967, "entropy": 0.4887, "wall": 1790791925.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 27, "episodes": 1728, "p_cage": 0.714, "mean_reward": 3.791, "policy_loss": -0.007, "value_loss": 0.8341, "entropy": 0.5181, "wall": 1790791967.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 28, "episodes": 1792, "p_cage": 0.688, "mean_reward": 3.697, "policy_loss": -0.03, "value_loss": 0.7313, "entropy": 0.4428, "wall": 1790792007.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 29, "episodes": 1856, "p_cage": 0.79, "mean_reward": 4.302, "policy_loss": -0.0391, "value_loss": 0.9292, "entropy": 0.4823, "wall": 1790792046.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 30, "episodes": 1920, "p_cage": 0.714, "mean_reward": 3.889, "policy_loss": -0.0261, "value_loss": 0.9582, "entropy": 0.5037, "wall": 1790792084.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 31, "episodes": 1984, "p_cage": 0.619, "mean_reward": 3.115, "policy_loss": 0.0193, "value_loss": 0.7522, "entropy": 0.4612, "wall": 1790792123.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 32, "episodes": 2048, "p_cage": 0.742, "mean_reward": 4.128, "policy_loss": -0.0283, "value_loss": 0.8102, "entropy": 0.4673, "wall": 1790792163.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 33, "episodes": 2112, "p_cage": 0.613, "mean_reward": 3.462, "policy_loss": 0.0425, "value_loss": 0.7658, "entropy": 0.4828, "wall": 1790792203.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 34, "episodes": 2176, "p_cage": 0.689, "mean_reward": 3.457, "policy_loss": 0.0913, "value_loss": 0.7547, "entropy": 0.4782, "wall": 1790792242.0}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 35, "episodes": 2240, "p_cage": 0.734, "mean_reward": 3.826, "policy_loss": 0.0372, "value_loss": 0.7365, "entropy": 0.494, "wall": 1790792278.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 36, "episodes": 2304, "p_cage": 0.667, "mean_reward": 3.819, "policy_loss": -0.0341, "value_loss": 0.9383, "entropy": 0.449, "wall": 1790792318.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 37, "episodes": 2368, "p_cage": 0.672, "mean_reward": 3.551, "policy_loss": 0.1379, "value_loss": 0.8571, "entropy": 0.5234, "wall": 1790792358.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 38, "episodes": 2432, "p_cage": 0.762, "mean_reward": 3.971, "policy_loss": -0.2396, "value_loss": 1.1691, "entropy": 0.3741, "wall": 1790792395.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 39, "episodes": 2496, "p_cage": 0.73, "mean_reward": 4.624, "policy_loss": 0.0201, "value_loss": 1.1088, "entropy": 0.363, "wall": 1790792431.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 40, "episodes": 2560, "p_cage": 0.683, "mean_reward": 3.896, "policy_loss": 0.055, "value_loss": 0.7228, "entropy": 0.4584, "wall": 1790792469.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 41, "episodes": 2624, "p_cage": 0.677, "mean_reward": 3.672, "policy_loss": 0.0679, "value_loss": 0.808, "entropy": 0.4196, "wall": 1790792506.8}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 42, "episodes": 2688, "p_cage": 0.635, "mean_reward": 3.526, "policy_loss": 0.003, "value_loss": 0.7246, "entropy": 0.4191, "wall": 1790792543.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 43, "episodes": 2752, "p_cage": 0.733, "mean_reward": 3.994, "policy_loss": 0.0056, "value_loss": 0.985, "entropy": 0.4173, "wall": 1790792577.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 44, "episodes": 2816, "p_cage": 0.623, "mean_reward": 3.501, "policy_loss": 0.143, "value_loss": 0.7596, "entropy": 0.3967, "wall": 1790792611.8}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 45, "episodes": 2880, "p_cage": 0.641, "mean_reward": 3.626, "policy_loss": -0.0729, "value_loss": 0.7793, "entropy": 0.3958, "wall": 1790792647.9}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 46, "episodes": 2944, "p_cage": 0.71, "mean_reward": 3.931, "policy_loss": -0.0282, "value_loss": 0.5939, "entropy": 0.4637, "wall": 1790792687.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 47, "episodes": 3008, "p_cage": 0.719, "mean_reward": 3.817, "policy_loss": 0.0412, "value_loss": 0.7168, "entropy": 0.3944, "wall": 1790792726.1}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 48, "episodes": 3072, "p_cage": 0.603, "mean_reward": 3.935, "policy_loss": -0.1009, "value_loss": 0.6422, "entropy": 0.3997, "wall": 1790792765.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 49, "episodes": 3136, "p_cage": 0.54, "mean_reward": 3.125, "policy_loss": -0.0513, "value_loss": 1.095, "entropy": 0.3826, "wall": 1790792808.1}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 50, "episodes": 3200, "p_cage": 0.719, "mean_reward": 4.33, "policy_loss": -0.027, "value_loss": 0.9509, "entropy": 0.4425, "wall": 1790792844.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 51, "episodes": 3264, "p_cage": 0.629, "mean_reward": 3.647, "policy_loss": -0.0006, "value_loss": 0.9873, "entropy": 0.3574, "wall": 1790792884.3}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 52, "episodes": 3328, "p_cage": 0.742, "mean_reward": 4.257, "policy_loss": 0.0231, "value_loss": 0.9478, "entropy": 0.3662, "wall": 1790792918.1}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 53, "episodes": 3392, "p_cage": 0.567, "mean_reward": 3.48, "policy_loss": -0.2245, "value_loss": 0.9497, "entropy": 0.3522, "wall": 1790792957.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 54, "episodes": 3456, "p_cage": 0.667, "mean_reward": 4.046, "policy_loss": -0.1055, "value_loss": 0.8939, "entropy": 0.3589, "wall": 1790792993.4}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 55, "episodes": 3520, "p_cage": 0.571, "mean_reward": 3.049, "policy_loss": -0.2562, "value_loss": 1.1306, "entropy": 0.3599, "wall": 1790793031.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 56, "episodes": 3584, "p_cage": 0.71, "mean_reward": 4.042, "policy_loss": -0.0839, "value_loss": 0.9116, "entropy": 0.3926, "wall": 1790793066.5}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 57, "episodes": 3648, "p_cage": 0.746, "mean_reward": 3.803, "policy_loss": 0.1018, "value_loss": 0.5557, "entropy": 0.4459, "wall": 1790793102.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 58, "episodes": 3712, "p_cage": 0.651, "mean_reward": 3.92, "policy_loss": -0.0618, "value_loss": 0.9243, "entropy": 0.4616, "wall": 1790793140.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 59, "episodes": 3776, "p_cage": 0.803, "mean_reward": 4.696, "policy_loss": 0.1481, "value_loss": 0.887, "entropy": 0.3659, "wall": 1790793173.2}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 60, "episodes": 3840, "p_cage": 0.766, "mean_reward": 4.353, "policy_loss": -0.1087, "value_loss": 0.7835, "entropy": 0.3821, "wall": 1790793207.6}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 61, "episodes": 3904, "p_cage": 0.597, "mean_reward": 3.557, "policy_loss": 0.0275, "value_loss": 0.8429, "entropy": 0.3757, "wall": 1790793248.7}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 62, "episodes": 3968, "p_cage": 0.651, "mean_reward": 3.486, "policy_loss": -0.027, "value_loss": 0.9255, "entropy": 0.3298, "wall": 1790793286.0}
+{"stage": "ppo", "arm": "U", "seed": 1, "iteration": 63, "episodes": 4032, "p_cage": 0.726, "mean_reward": 3.379, "policy_loss": 0.0415, "value_loss": 0.8334, "entropy": 0.3408, "wall": 1790793320.9}
+{"stage": "eval", "policy": "U_seed1_initial", "p_cage": 0.383, "wall": 1790793387.7}
+{"stage": "eval", "policy": "U_seed1_bc", "p_cage": 0.65, "wall": 1790793434.2}
+{"stage": "eval", "policy": "U_seed1_final", "p_cage": 0.725, "wall": 1790793475.9}
+{"stage": "bc", "arm": "U", "epoch": 0, "nll": 3.4365, "wall": 1790793483.8}
+{"stage": "bc", "arm": "U", "epoch": 1, "nll": 2.4872, "wall": 1790793491.5}
+{"stage": "bc", "arm": "U", "epoch": 2, "nll": 2.3766, "wall": 1790793499.2}
+{"stage": "bc", "arm": "U", "epoch": 3, "nll": 2.2082, "wall": 1790793507.3}
+{"stage": "bc", "arm": "U", "epoch": 4, "nll": 2.0505, "wall": 1790793515.6}
+{"stage": "bc", "arm": "U", "epoch": 5, "nll": 1.9183, "wall": 1790793523.3}
+{"stage": "bc", "arm": "U", "epoch": 6, "nll": 1.821, "wall": 1790793531.0}
+{"stage": "bc", "arm": "U", "epoch": 7, "nll": 1.7525, "wall": 1790793538.7}
+{"stage": "bc", "arm": "U", "epoch": 8, "nll": 1.6913, "wall": 1790793546.3}
+{"stage": "bc", "arm": "U", "epoch": 9, "nll": 1.647, "wall": 1790793554.0}
+{"stage": "bc", "arm": "U", "epoch": 10, "nll": 1.6117, "wall": 1790793561.6}
+{"stage": "bc", "arm": "U", "epoch": 11, "nll": 1.5827, "wall": 1790793569.3}
+{"stage": "bc", "arm": "U", "epoch": 12, "nll": 1.5593, "wall": 1790793577.0}
+{"stage": "bc", "arm": "U", "epoch": 13, "nll": 1.5397, "wall": 1790793584.7}
+{"stage": "bc", "arm": "U", "epoch": 14, "nll": 1.5217, "wall": 1790793592.5}
+{"stage": "bc", "arm": "U", "epoch": 15, "nll": 1.5089, "wall": 1790793600.1}
+{"stage": "bc", "arm": "U", "epoch": 16, "nll": 1.4978, "wall": 1790793607.8}
+{"stage": "bc", "arm": "U", "epoch": 17, "nll": 1.4912, "wall": 1790793615.5}
+{"stage": "bc", "arm": "U", "epoch": 18, "nll": 1.4765, "wall": 1790793623.2}
+{"stage": "bc", "arm": "U", "epoch": 19, "nll": 1.4657, "wall": 1790793630.9}
+{"stage": "bc", "arm": "U", "epoch": 20, "nll": 1.458, "wall": 1790793638.6}
+{"stage": "bc", "arm": "U", "epoch": 21, "nll": 1.4485, "wall": 1790793646.4}
+{"stage": "bc", "arm": "U", "epoch": 22, "nll": 1.4405, "wall": 1790793654.2}
+{"stage": "bc", "arm": "U", "epoch": 23, "nll": 1.4356, "wall": 1790793661.9}
+{"stage": "bc", "arm": "U", "epoch": 24, "nll": 1.4241, "wall": 1790793669.6}
+{"stage": "bc", "arm": "U", "epoch": 25, "nll": 1.4188, "wall": 1790793677.3}
+{"stage": "bc", "arm": "U", "epoch": 26, "nll": 1.414, "wall": 1790793685.0}
+{"stage": "bc", "arm": "U", "epoch": 27, "nll": 1.4037, "wall": 1790793692.7}
+{"stage": "bc", "arm": "U", "epoch": 28, "nll": 1.401, "wall": 1790793700.6}
+{"stage": "bc", "arm": "U", "epoch": 29, "nll": 1.4007, "wall": 1790793708.3}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 1, "episodes": 64, "p_cage": 0.778, "mean_reward": 4.102, "policy_loss": -0.6924, "value_loss": 3.9011, "entropy": 0.3616, "wall": 1790793746.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 2, "episodes": 128, "p_cage": 0.587, "mean_reward": 3.823, "policy_loss": 0.0244, "value_loss": 1.6219, "entropy": 0.4562, "wall": 1790793791.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 3, "episodes": 192, "p_cage": 0.758, "mean_reward": 4.126, "policy_loss": -0.231, "value_loss": 1.6372, "entropy": 0.4535, "wall": 1790793829.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 4, "episodes": 256, "p_cage": 0.645, "mean_reward": 3.912, "policy_loss": 0.0119, "value_loss": 1.0312, "entropy": 0.4069, "wall": 1790793871.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 5, "episodes": 320, "p_cage": 0.578, "mean_reward": 3.465, "policy_loss": 0.0802, "value_loss": 0.8594, "entropy": 0.4078, "wall": 1790793917.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 6, "episodes": 384, "p_cage": 0.623, "mean_reward": 3.666, "policy_loss": 0.4894, "value_loss": 1.6839, "entropy": 0.5918, "wall": 1790793956.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 7, "episodes": 448, "p_cage": 0.714, "mean_reward": 4.054, "policy_loss": -0.0168, "value_loss": 0.3969, "entropy": 0.3673, "wall": 1790793992.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 8, "episodes": 512, "p_cage": 0.613, "mean_reward": 3.218, "policy_loss": -0.086, "value_loss": 0.7905, "entropy": 0.3779, "wall": 1790794035.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 9, "episodes": 576, "p_cage": 0.613, "mean_reward": 3.917, "policy_loss": 0.0147, "value_loss": 0.677, "entropy": 0.4405, "wall": 1790794078.5}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 10, "episodes": 640, "p_cage": 0.597, "mean_reward": 3.324, "policy_loss": 0.0133, "value_loss": 0.5533, "entropy": 0.4067, "wall": 1790794119.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 11, "episodes": 704, "p_cage": 0.603, "mean_reward": 3.956, "policy_loss": 0.0601, "value_loss": 0.6357, "entropy": 0.4189, "wall": 1790794160.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 12, "episodes": 768, "p_cage": 0.719, "mean_reward": 4.191, "policy_loss": -0.08, "value_loss": 0.7595, "entropy": 0.3676, "wall": 1790794200.9}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 13, "episodes": 832, "p_cage": 0.689, "mean_reward": 4.232, "policy_loss": -0.0337, "value_loss": 0.7878, "entropy": 0.4677, "wall": 1790794238.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 14, "episodes": 896, "p_cage": 0.619, "mean_reward": 3.825, "policy_loss": -0.0087, "value_loss": 0.6882, "entropy": 0.4328, "wall": 1790794281.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 15, "episodes": 960, "p_cage": 0.694, "mean_reward": 3.928, "policy_loss": 0.0222, "value_loss": 0.5882, "entropy": 0.3987, "wall": 1790794320.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 16, "episodes": 1024, "p_cage": 0.803, "mean_reward": 4.166, "policy_loss": -0.0326, "value_loss": 0.6862, "entropy": 0.4, "wall": 1790794359.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 17, "episodes": 1088, "p_cage": 0.738, "mean_reward": 4.294, "policy_loss": -0.2408, "value_loss": 0.9517, "entropy": 0.3034, "wall": 1790794396.9}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 18, "episodes": 1152, "p_cage": 0.721, "mean_reward": 3.989, "policy_loss": -0.0017, "value_loss": 0.7877, "entropy": 0.3589, "wall": 1790794437.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 19, "episodes": 1216, "p_cage": 0.603, "mean_reward": 3.373, "policy_loss": 0.0417, "value_loss": 0.8155, "entropy": 0.3618, "wall": 1790794478.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 20, "episodes": 1280, "p_cage": 0.766, "mean_reward": 3.653, "policy_loss": 0.0844, "value_loss": 0.8704, "entropy": 0.3439, "wall": 1790794514.1}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 21, "episodes": 1344, "p_cage": 0.688, "mean_reward": 3.352, "policy_loss": 2.5482, "value_loss": 5.7767, "entropy": 0.1319, "wall": 1790794554.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 22, "episodes": 1408, "p_cage": 0.581, "mean_reward": 3.22, "policy_loss": -0.0136, "value_loss": 0.9032, "entropy": 0.3874, "wall": 1790794598.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 23, "episodes": 1472, "p_cage": 0.742, "mean_reward": 4.054, "policy_loss": 0.3089, "value_loss": 1.3931, "entropy": 0.4513, "wall": 1790794638.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 24, "episodes": 1536, "p_cage": 0.625, "mean_reward": 3.739, "policy_loss": -0.0328, "value_loss": 0.6703, "entropy": 0.3714, "wall": 1790794678.5}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 25, "episodes": 1600, "p_cage": 0.672, "mean_reward": 3.779, "policy_loss": -0.0639, "value_loss": 0.7877, "entropy": 0.4883, "wall": 1790794714.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 26, "episodes": 1664, "p_cage": 0.683, "mean_reward": 4.155, "policy_loss": -0.1605, "value_loss": 0.448, "entropy": 0.354, "wall": 1790794757.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 27, "episodes": 1728, "p_cage": 0.741, "mean_reward": 4.094, "policy_loss": 0.0626, "value_loss": 0.7995, "entropy": 0.4234, "wall": 1790794793.5}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 28, "episodes": 1792, "p_cage": 0.656, "mean_reward": 3.623, "policy_loss": 0.0773, "value_loss": 0.4599, "entropy": 0.3444, "wall": 1790794832.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 29, "episodes": 1856, "p_cage": 0.629, "mean_reward": 3.519, "policy_loss": 0.0506, "value_loss": 0.6831, "entropy": 0.4029, "wall": 1790794870.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 30, "episodes": 1920, "p_cage": 0.609, "mean_reward": 3.662, "policy_loss": -0.0997, "value_loss": 1.021, "entropy": 0.3927, "wall": 1790794908.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 31, "episodes": 1984, "p_cage": 0.694, "mean_reward": 4.019, "policy_loss": -0.0403, "value_loss": 0.8307, "entropy": 0.3972, "wall": 1790794945.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 32, "episodes": 2048, "p_cage": 0.603, "mean_reward": 3.638, "policy_loss": 0.0691, "value_loss": 0.6771, "entropy": 0.3869, "wall": 1790794986.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 33, "episodes": 2112, "p_cage": 0.75, "mean_reward": 4.188, "policy_loss": -0.0441, "value_loss": 1.1222, "entropy": 0.3575, "wall": 1790795025.5}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 34, "episodes": 2176, "p_cage": 0.778, "mean_reward": 4.048, "policy_loss": 0.0725, "value_loss": 0.7804, "entropy": 0.393, "wall": 1790795061.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 35, "episodes": 2240, "p_cage": 0.625, "mean_reward": 3.371, "policy_loss": 0.0771, "value_loss": 0.8548, "entropy": 0.3948, "wall": 1790795102.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 36, "episodes": 2304, "p_cage": 0.683, "mean_reward": 3.76, "policy_loss": -0.0881, "value_loss": 0.9162, "entropy": 0.3575, "wall": 1790795138.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 37, "episodes": 2368, "p_cage": 0.607, "mean_reward": 3.761, "policy_loss": -0.0266, "value_loss": 0.6465, "entropy": 0.3379, "wall": 1790795179.9}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 38, "episodes": 2432, "p_cage": 0.787, "mean_reward": 4.082, "policy_loss": -0.1805, "value_loss": 0.7725, "entropy": 0.3812, "wall": 1790795216.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 39, "episodes": 2496, "p_cage": 0.635, "mean_reward": 3.639, "policy_loss": 0.0287, "value_loss": 0.9822, "entropy": 0.3588, "wall": 1790795254.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 40, "episodes": 2560, "p_cage": 0.619, "mean_reward": 3.709, "policy_loss": 0.0397, "value_loss": 0.7971, "entropy": 0.3721, "wall": 1790795293.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 41, "episodes": 2624, "p_cage": 0.726, "mean_reward": 4.25, "policy_loss": -0.1083, "value_loss": 1.1448, "entropy": 0.3169, "wall": 1790795331.3}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 42, "episodes": 2688, "p_cage": 0.635, "mean_reward": 3.622, "policy_loss": -0.1151, "value_loss": 1.0187, "entropy": 0.3126, "wall": 1790795369.3}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 43, "episodes": 2752, "p_cage": 0.738, "mean_reward": 3.99, "policy_loss": 0.1173, "value_loss": 0.7427, "entropy": 0.3481, "wall": 1790795405.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 44, "episodes": 2816, "p_cage": 0.766, "mean_reward": 4.15, "policy_loss": 0.0325, "value_loss": 0.8887, "entropy": 0.3279, "wall": 1790795441.8}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 45, "episodes": 2880, "p_cage": 0.797, "mean_reward": 4.418, "policy_loss": 0.0574, "value_loss": 0.9074, "entropy": 0.3845, "wall": 1790795480.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 46, "episodes": 2944, "p_cage": 0.806, "mean_reward": 4.133, "policy_loss": -0.1375, "value_loss": 0.8703, "entropy": 0.3172, "wall": 1790795514.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 47, "episodes": 3008, "p_cage": 0.734, "mean_reward": 4.144, "policy_loss": -0.0964, "value_loss": 0.8369, "entropy": 0.3205, "wall": 1790795555.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 48, "episodes": 3072, "p_cage": 0.694, "mean_reward": 4.477, "policy_loss": 0.0084, "value_loss": 0.5587, "entropy": 0.2676, "wall": 1790795595.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 49, "episodes": 3136, "p_cage": 0.71, "mean_reward": 4.203, "policy_loss": -0.1371, "value_loss": 0.6552, "entropy": 0.2239, "wall": 1790795631.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 50, "episodes": 3200, "p_cage": 0.667, "mean_reward": 4.103, "policy_loss": 0.032, "value_loss": 1.0038, "entropy": 0.2711, "wall": 1790795666.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 51, "episodes": 3264, "p_cage": 0.597, "mean_reward": 3.62, "policy_loss": -0.3146, "value_loss": 0.801, "entropy": 0.2768, "wall": 1790795703.9}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 52, "episodes": 3328, "p_cage": 0.75, "mean_reward": 4.339, "policy_loss": -0.0048, "value_loss": 0.8406, "entropy": 0.3591, "wall": 1790795737.6}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 53, "episodes": 3392, "p_cage": 0.613, "mean_reward": 3.874, "policy_loss": 0.099, "value_loss": 0.5582, "entropy": 0.2655, "wall": 1790795776.9}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 54, "episodes": 3456, "p_cage": 0.719, "mean_reward": 4.172, "policy_loss": 0.0353, "value_loss": 0.992, "entropy": 0.4033, "wall": 1790795819.0}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 55, "episodes": 3520, "p_cage": 0.8, "mean_reward": 3.732, "policy_loss": 0.025, "value_loss": 1.0974, "entropy": 0.267, "wall": 1790795860.1}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 56, "episodes": 3584, "p_cage": 0.721, "mean_reward": 4.156, "policy_loss": -0.0187, "value_loss": 0.7251, "entropy": 0.333, "wall": 1790795904.5}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 57, "episodes": 3648, "p_cage": 0.656, "mean_reward": 3.925, "policy_loss": -0.0595, "value_loss": 0.9508, "entropy": 0.3016, "wall": 1790795948.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 58, "episodes": 3712, "p_cage": 0.625, "mean_reward": 3.681, "policy_loss": 0.0021, "value_loss": 0.5235, "entropy": 0.3731, "wall": 1790795996.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 59, "episodes": 3776, "p_cage": 0.603, "mean_reward": 3.507, "policy_loss": -0.0721, "value_loss": 1.3165, "entropy": 0.3529, "wall": 1790796044.4}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 60, "episodes": 3840, "p_cage": 0.683, "mean_reward": 3.907, "policy_loss": -0.0293, "value_loss": 0.8926, "entropy": 0.3461, "wall": 1790796080.7}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 61, "episodes": 3904, "p_cage": 0.812, "mean_reward": 4.061, "policy_loss": 0.0405, "value_loss": 0.9622, "entropy": 0.3166, "wall": 1790796114.3}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 62, "episodes": 3968, "p_cage": 0.656, "mean_reward": 3.863, "policy_loss": 0.1104, "value_loss": 0.4659, "entropy": 0.4378, "wall": 1790796154.2}
+{"stage": "ppo", "arm": "U", "seed": 2, "iteration": 63, "episodes": 4032, "p_cage": 0.694, "mean_reward": 4.058, "policy_loss": 0.044, "value_loss": 0.8458, "entropy": 0.3337, "wall": 1790796189.1}
+{"stage": "eval", "policy": "U_seed2_initial", "p_cage": 0.175, "wall": 1790796255.3}
+{"stage": "eval", "policy": "U_seed2_bc", "p_cage": 0.683, "wall": 1790796299.7}
+{"stage": "eval", "policy": "U_seed2_final", "p_cage": 0.742, "wall": 1790796340.7}
+{"stage": "summary", "p_cage": {"T_seed1_bc": 0.7, "T_seed1_final": 0.683, "T_seed1_initial": 0.35, "T_seed2_bc": 0.667, "T_seed2_final": 0.708, "T_seed2_initial": 0.283, "U_seed1_bc": 0.65, "U_seed1_final": 0.725, "U_seed1_initial": 0.383, "U_seed2_bc": 0.683, "U_seed2_final": 0.742, "U_seed2_initial": 0.175, "cut": 0.7, "cut_label": 0.7, "individual": 0.317, "random": 0.4}, "acquisition": {"T_seed1": {"final_minus_initial": [0.333, 0.233, 0.433], "passes": true, "final_minus_bc": [-0.017, -0.083, 0.05], "final_minus_cut": [-0.017, -0.092, 0.058]}, "T_seed2": {"final_minus_initial": [0.425, 0.317, 0.533], "passes": true, "final_minus_bc": [0.042, -0.025, 0.117], "final_minus_cut": [0.008, -0.042, 0.067]}, "U_seed1": {"final_minus_initial": [0.342, 0.233, 0.45], "passes": true, "final_minus_bc": [0.075, -0.017, 0.167], "final_minus_cut": [0.025, -0.058, 0.108]}, "U_seed2": {"final_minus_initial": [0.567, 0.467, 0.667], "passes": true, "final_minus_bc": [0.058, -0.017, 0.133], "final_minus_cut": [0.042, -0.042, 0.133]}}, "descriptive": {"T_minus_U_seed1": [-0.042, -0.133, 0.05], "T_minus_U_seed2": [-0.033, -0.125, 0.058]}, "pilot_passes": true, "failed_episodes": 0, "wall": 1790796342.3}

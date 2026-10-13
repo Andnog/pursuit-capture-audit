@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_interpreter_provenance_r01",
+  "created": "2026-09-21",
+  "stage": "W4",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "claim_class": "software_correctness",
+  "acceptance_rule_frozen_before_running": true,
+  "question": "does the interpreter recorded in environment.json match the interpreter that ran the tests",
+  "acceptance_rule": {
+    "CONSISTENT": "every runner satisfies requires-python and all agree",
+    "PROVENANCE_DEFECT": "a runner resolves outside the pin, or two runners disagree on the same source",
+    "INCONCLUSIVE": "only one runner available"
+  },
+  "closure_condition": "a PROVENANCE_DEFECT is not closed by correcting the result; it requires a guard that fails loudly on recurrence",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

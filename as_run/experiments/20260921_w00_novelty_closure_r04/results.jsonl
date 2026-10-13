@@ -1,0 +1,7 @@
+{"check_id": "R04_1", "name": "page_count_confirmed", "expected": "page count confirmed before recording depth", "observed": "14 pages; r03 recorded 6", "status": "FAILED_IN_R03_CORRECTED_HERE"}
+{"check_id": "R04_2", "name": "b06_capture_predicate", "expected": "matrix cell matches primary text", "observed": "primary text defines k-agent adjacency capture within range r; r03 cell recorded only the absence of physical geometry", "status": "CORRECTED", "direction": "AGAINST_THIS_PROJECT"}
+{"check_id": "R04_3", "name": "b06_temporality", "expected": "matrix cell matches primary text", "observed": "no arrival times, windows or intervals anywhere in the full text", "status": "CONFIRMED"}
+{"check_id": "R04_4", "name": "reference_screen", "expected": "all 22 references screened against the claim classes", "observed": "22 screened; 2 relevant ([8] Jennings 1993 -> C05; [15] Riedmiller & Withopf 2005 -> C03/C04)", "status": "DONE"}
+{"check_id": "R04_5", "name": "jennings_retrieval", "expected": "method-level read", "observed": "abstract obtained verbatim; full text not retrieved", "status": "ABSTRACT_ONLY"}
+{"check_id": "R04_6", "name": "riedmiller_retrieval", "expected": "method-level read", "observed": "CLOSED; abstract elided by publisher; 4 retrieval routes failed", "status": "NOT_OBTAINABLE"}
+{"check_id": "R04_7", "name": "refutation_screen", "expected": "no reference implements the conjunction", "observed": "none of the 22 implements the conjunction", "status": "NO_REFUTATION"}

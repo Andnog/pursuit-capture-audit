@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260930_marl_pilot_r03",
+ "sealed_at": "2026-09-30T19:27:37.121720Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "POSTHOC_ANALYSIS.json": "67853a13ec86f35db7b35170667e66aad919677ed121c531838df7bbe0571f8e",
+  "PROTOCOL_EN.md": "bc50183bbfbd1fa1cf91ac296b3c715397d502deafc09a5a783f0738f9213fa6",
+  "SCIENTIFIC_DECISION_EN.md": "4255aa621bd544fd98092d22662a614ca64b83cbf648f4959c100ee26271076f",
+  "checkpoints/T_seed1_bc.pt": "e72cad4e97424cdb3ef687d5d0493c3d11072dfb10925a6a80cb3c4f5c75aff5",
+  "checkpoints/T_seed1_final.pt": "334fc958135fb384bd7c6805f10dddf84ffc91000b5fb925c4199dd77198dbea",
+  "checkpoints/T_seed1_initial.pt": "4dbbca26466f052958371b45db8cd51177be200630f73cdb706f575410641169",
+  "checkpoints/T_seed2_bc.pt": "31e130b39702f6273640901f92f46f0962a803d4ffa6e5991d39e2efb95fd58c",
+  "checkpoints/T_seed2_final.pt": "5ed300c6d0b352cc29ab20e243e119f7b69894ae0f190db22fae60a0183f87dc",
+  "checkpoints/T_seed2_initial.pt": "adbc6c059c7d6840ea29b564e647539a7f10bcf35e853dcd8ecaf99286716422",
+  "checkpoints/U_seed1_bc.pt": "63f3a3f3c2187520b186b58a43d13dd7dca66cce263924ecc8e9b9bfc46dafa6",
+  "checkpoints/U_seed1_final.pt": "e2050fc9420242534dc64306deba9022562a395c3b7e8ba41d5a4e7aaaa64583",
+  "checkpoints/U_seed1_initial.pt": "4dbbca26466f052958371b45db8cd51177be200630f73cdb706f575410641169",
+  "checkpoints/U_seed2_bc.pt": "183f0c86010eaa36152e8bfa4936770344912479dca385e2aeadb1295f36d077",
+  "checkpoints/U_seed2_final.pt": "37c3842d80dc7666987c212aeb23934aab41e0263b908cd6ceff449d9ecc69d1",
+  "checkpoints/U_seed2_initial.pt": "adbc6c059c7d6840ea29b564e647539a7f10bcf35e853dcd8ecaf99286716422",
+  "eval.jsonl": "83e94e008d182d16a46974704ac515a67794138fd8fd331bcbcb53e88d3c9d7c",
+  "gifs/washington10_T_seed2_final.gif": "a58cebaf67f02c67c3043de8d8b6fe2036736aef9daab1e426f8c16020a3c032",
+  "gifs/washington10_U_seed2_final.gif": "a9ebffb8803a246c58079dbf7c7fa1d3ebd25b149be6f71d5ad0d3c3d0271891",
+  "gifs/washington10_cut.gif": "fbc0cf0573994c2b9351f610e6211068962408c911fa277fa037b683eb8e2459",
+  "inputs.json": "565a031d693f7c757489dd2a258efab5802b7e9ed9aa7e60408b8598d0ecdb8c",
+  "run.log": "8f334759afc25ef37f9c7a8ca93e11d63aea1199ccc9fdbab2ff2da3448f3d56",
+  "summary.json": "ae9cd321bf049270efce40a2ba2c9e30edc0a2f451ec495408cd603f0dc30a02",
+  "train_log.jsonl": "467317858031ad3ca38be267ce8b878fa92121a4b9fc19c3a116cbdd39379e3c"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_published_env_audit_r01",
+ "sealed_at": "2026-10-05T09:59:50.843641+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PRERUN_CHECK.jsonl": "9bcfc0079917860d7588704e3cd5e1a67ecb48f8f8974bea5f69571c64afe8ed",
+  "PROTOCOL_EN.md": "7c9b7f61a076db1ccfd1da24ac2d9c305781c58b339c23966f0ab5b3b1012419",
+  "SCIENTIFIC_DECISION_EN.md": "e3c3a55f18ec945c66071e9f561e4f2c86e2dc7aa422638ce41d23be536d0193",
+  "inputs.json": "d3782ba4a1f59d8317cc992a8dce8c5136fd2e5d1d59fe83f842fd58820fff7f",
+  "results.jsonl": "1b9c6ee23e541804dabb8a653c7ce63f20997767cfc2ea6f4130889bbd055ce8",
+  "run.log": "bbd60bba5bfccb0b79df4a6c16fffd5222e031c62a507a7850513c5a2ae04b70",
+  "summary.json": "457e20bed8235e8e5c708daaadc866302f76da67c6825e04a68c0d6cb87115cf",
+  "third_party_hashes.json": "97dba904de2f7eba14e8c1dd76d322fd533117cd52ceea7b2feaadfe9c37bdae"
+ }
+}

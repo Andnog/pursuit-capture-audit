@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_v3_first_batch_reconstruction_r01",
+ "sealed_at": "2026-10-06T09:39:07.118993+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "591f918242a22dc53b1ad0035cf8a13bb908c444f922842cbb2a2d464698be84",
+  "SCIENTIFIC_DECISION_EN.md": "8769561e5c1ef5ee61de9eae35c57e60b7856b05a78600966fe01b9711b39339",
+  "inputs.json": "3aa1217f6bddf3ec95b1790b82c8087df4fc930081694b666b8a7e9d47a7059d",
+  "results.jsonl": "01321a9dc4c7c77c7b28fef8076dff607a08b2c001879b5602d7e898f8ca0665",
+  "run_chunk1.log": "4eb1b64538341606647071ce0292aed653302659ea78dc90295e71d8fb65a2e9",
+  "summary.json": "5a740b16a424e517516d75e9779f7ae46092f5bba5a1a962629c1fb7c473abdb"
+ }
+}

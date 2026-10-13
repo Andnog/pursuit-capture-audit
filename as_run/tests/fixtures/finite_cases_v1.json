@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "fixture_id": "finite_cases_v1",
+  "stage": "W1",
+  "frozen_on": "2026-09-20",
+  "frozen_before_execution": true,
+  "derivation_statement": "Every expected value below was derived BY HAND from docs/METHOD_SPEC_EN.md and configs/finite_examples_v1.json, before any implementation of the predicates was written or executed. Each entry carries its arithmetic so a third party can check the answer without running this project's code. These expectations are NOT produced by, and do not restate, the implementation.",
+  "independence_note": "The implementation in src/joint_interception/ must be checked AGAINST these values. If the two disagree, the disagreement is recorded as a failure and investigated; the fixture is not edited to match the code.",
+  "representation_expectations": {
+    "F1": {
+      "derivation": "Lane L1 usable length 14.0 m; body 5.0 m; min gap 2.5 m. Capacity rule n*5.0 + (n-1)*2.5 <= 14.0. n=1 -> 5.0 <= 14.0 OK. n=2 -> 10.0 + 2.5 = 12.5 <= 14.0 OK. n=3 -> 15.0 + 5.0 = 20.0 > 14.0 VIOLATED. All three participants are assigned to L1, so the joint occupancy check fails. Every unordered pair assigns only two participants to L1, so every pairwise occupancy check passes. Temporally, all three arrival sets are [10,20] with direction UNDER; their intersection is [10,20], max_contiguous 10.0 >= dwell 3.0, and Rule A is satisfied, so the temporal component is SUPPORTED. AND(SUPPORTED, REJECTED, SUPPORTED) = REJECTED.",
+      "joint_window": [[10.0, 20.0]],
+      "max_contiguous": 10.0,
+      "temporal_verdict": "SUPPORTED",
+      "occupancy_verdict": "REJECTED",
+      "occupancy_required_length_m": 20.0,
+      "occupancy_available_length_m": 14.0,
+      "movement_verdict": "SUPPORTED",
+      "joint_verdict": "REJECTED",
+      "pairwise_verdict": "SUPPORTED",
+      "pairwise_joint_discrepancy": true,
+      "pairwise_is_certificate": false,
+      "variant_unknown_temporal": {
+        "derivation": "Same geometry with arrival direction PREDICTION. Rule A fails (not all UNDER) so the temporal component cannot be SUPPORTED; Rule B fails (not all OVER, and the intersection is non-empty) so it cannot be REJECTED; the temporal verdict is UNKNOWN. Occupancy is still REJECTED. AND(UNKNOWN, REJECTED, SUPPORTED) = REJECTED, because rejection dominates ignorance.",
+        "temporal_verdict": "UNKNOWN",
+        "occupancy_verdict": "REJECTED",
+        "joint_verdict": "REJECTED"
+      }
+    },
+    "F2": {
+      "derivation": "Lane L2 usable length 30.0 m; two participants. n=2 -> 10.0 + 2.5 = 12.5 <= 30.0, occupancy SUPPORTED. Arrival sets: p1 = [5,12] U [20,25], p2 = [10,22], both UNDER. Intersection: [5,12] n [10,22] = [10,12]; [20,25] n [10,22] = [20,22]. Result [[10,12],[20,22]], already canonical (disjoint, non-adjacent). Total width = 2.0 + 2.0 = 4.0. max_contiguous = 2.0. dwell 1.5, so 2.0 >= 1.5 and Rule A holds -> temporal SUPPORTED. Margin = 2.0 - 1.5 = 0.5. With only two participants the pairwise relaxation is the same computation, so it must agree.",
+      "joint_window": [[10.0, 12.0], [20.0, 22.0]],
+      "joint_window_total_width": 4.0,
+      "max_contiguous": 2.0,
+      "margin": 0.5,
+      "temporal_verdict": "SUPPORTED",
+      "occupancy_verdict": "SUPPORTED",
+      "movement_verdict": "SUPPORTED",
+      "joint_verdict": "SUPPORTED",
+      "pairwise_verdict": "SUPPORTED",
+      "pairwise_joint_discrepancy": false,
+      "note": "max_contiguous (2.0), not total width (4.0), governs dwell feasibility. A total-width implementation would report 4.0 and could pass a dwell requirement it does not meet: for a dwell of 3.0 this case must be REJECTED-or-UNKNOWN, never SUPPORTED."
+    },
+    "F3": {
+      "derivation": "p1 = [4,6] U [14,16], p2 = [7,13], both OVER. Intersection: [4,6] n [7,13] = empty (6 < 7); [14,16] n [7,13] = empty (14 > 13). Result empty. All directions are OVER, so Rule B permits rejection: the true reachable sets are contained in the reported ones, hence they cannot intersect either. Temporal REJECTED, therefore joint REJECTED. A convex-hull implementation would use hull(p1) = [4,16], intersect with [7,13] to obtain [7,13] of width 6.0, and report SUPPORTED. That is the error this case detects.",
+      "joint_window": [],
+      "max_contiguous": 0.0,
+      "temporal_verdict": "REJECTED",
+      "joint_verdict": "REJECTED",
+      "hull_would_give_window": [[7.0, 13.0]],
+      "hull_would_give_max_contiguous": 6.0,
+      "hull_is_incorrect": true,
+      "under_variant": {
+        "derivation": "If the same two sets were labelled UNDER instead of OVER, the empty intersection could NOT justify rejection, because the true sets are supersets of the reported ones and may still intersect. The correct verdict would then be UNKNOWN.",
+        "temporal_verdict": "UNKNOWN",
+        "joint_verdict": "UNKNOWN"
+      }
+    },
+    "F4": {
+      "derivation": "Under the examined branch b1: arrival sets [8,14] and [9,15], both UNDER; intersection [9,14]; max_contiguous 5.0 >= dwell 1.0; Rule A holds -> branch verdict SUPPORTED. Occupancy: n=2 on a 30.0 m lane, 12.5 <= 30.0, SUPPORTED. Branch b2 is declared but not examined, so its verdict is UNKNOWN. Coverage = 1 examined / 2 declared = 0.5. A claim quantified over all declared branches is the conjunction AND(SUPPORTED, UNKNOWN) = UNKNOWN. By property AND-2, no aggregation of an unknown yields support.",
+      "branch_verdicts": {"b1": "SUPPORTED", "b2": "UNKNOWN"},
+      "b1_joint_window": [[9.0, 14.0]],
+      "b1_max_contiguous": 5.0,
+      "coverage": 0.5,
+      "all_branch_verdict": "UNKNOWN",
+      "all_branch_claim_permitted": false,
+      "reason": "unexamined_evader_branch"
+    },
+    "F5": {
+      "derivation": "Arrival sets [6,12] and [7,13], both UNDER; intersection [7,12]; max_contiguous 5.0 >= dwell 1.0; Rule A holds -> temporal SUPPORTED. Occupancy: n=2 on 30.0 m, SUPPORTED. The pair (p1,p2) is declared movement-UNKNOWN, so the movement component is UNKNOWN. AND(SUPPORTED, SUPPORTED, UNKNOWN) = UNKNOWN. Separately, step-1 admission is SUPPORTED while step-4 admission is UNKNOWN; the sequence verdict is therefore UNKNOWN. The purpose of this case is that the step-1 SUPPORTED verdict must NOT be promoted to a verdict about the whole manoeuvre.",
+      "temporal_verdict": "SUPPORTED",
+      "occupancy_verdict": "SUPPORTED",
+      "movement_verdict": "UNKNOWN",
+      "joint_verdict": "UNKNOWN",
+      "step_1_admission": "SUPPORTED",
+      "sequence_admission": "UNKNOWN",
+      "one_step_safety_certifies_sequence": false,
+      "execution_permitted": false,
+      "reason": "declared_unknown_movement_interaction"
+    },
+    "F6": {
+      "derivation": "J1 parameters: max_commit_duration 10, switch_margin 0.10, unknown_tolerance 2. At t=1 there is no commitment, so the selector takes argmax over SUPPORTED candidates: X at 0.60 beats Y at 0.55. Commit to X; decision CONTINUE (new commitment). At t=2 the committed candidate X is still SUPPORTED and its age (1) is below max_commit_duration, so the switch test applies: the best alternative is Y at 0.62, and switching requires 0.62 > score(X) + switch_margin = 0.58 + 0.10 = 0.68. Since 0.62 <= 0.68 the selector does NOT switch; decision CONTINUE, committed candidate remains X. J0 parameters: switch_margin 0.0, max_commit_duration 1. At t=2 the commitment has reached its maximum duration, so it is abandoned and the selector re-selects argmax: Y at 0.62 beats X at 0.58. Final selection Y. The two arms therefore end on different candidates from identical inputs, which is exactly what this case must demonstrate.",
+      "J1": {"t1_selected": "X", "t1_decision": "CONTINUE", "t2_selected": "X", "t2_decision": "CONTINUE", "final_selected": "X", "switch_count": 0},
+      "J0": {"t1_selected": "X", "t2_selected": "Y", "final_selected": "Y"},
+      "memory_changes_later_choice": true,
+      "degeneracy_assertion": {
+        "statement": "Running the J1 code path with switch_margin=0.0, max_commit_duration=1 and unknown_tolerance=0 must reproduce the J0 trace exactly.",
+        "expected_equal": true
+      }
+    }
+  },
+  "assistance_expectations": {
+    "_bounds_rule": "d = Y_factual - Y_intervened with bounds [l_f - u_b, u_f - l_b]. A known 0 gives [0,0]; a known 1 gives [1,1]; UNKNOWN gives [0,1]. Y_factual = 1 in every case below, so [l_f,u_f] = [1,1]. Hence: intervened 0 -> d = [1,1]; intervened 1 -> d = [0,0]; intervened UNKNOWN -> d = [1-1, 1-0] = [0,1]. These are logical bounds from missing outcomes, NOT confidence intervals.",
+    "_label_rule": "Consider only members whose admission is SUPPORTED_ADMISSIBLE. If any such member has an UNKNOWN outcome -> INSUFFICIENT_SUPPORT. Otherwise, over those members: all d strictly positive -> POSITIVE_ACROSS_FAMILY; all strictly negative -> HARMFUL_ACROSS_FAMILY; all zero -> NO_POSITIVE_EFFECT_DEMONSTRATED; mixed -> BASELINE_DEPENDENT. incomplete_family is true iff any DECLARED member has admission UNRESOLVED. complete_family_conclusion_permitted = (not incomplete_family) and label != INSUFFICIENT_SUPPORT.",
+    "A1": {"derivation": "Three admissible members, outcomes 0,0,0 -> d = [1,1] for each. L = min lower = 1, U = max upper = 1. All strictly positive and all resolved.", "per_alternative_bounds": {"b1": [1, 1], "b2": [1, 1], "b3": [1, 1]}, "envelope": [1, 1], "label": "POSITIVE_ACROSS_FAMILY", "incomplete_family": false, "complete_family_conclusion_permitted": true},
+    "A2": {"derivation": "Two admissible members, outcomes 1,1 -> d = [0,0] for each. Envelope [0,0], includes zero, all zero -> NO_POSITIVE_EFFECT_DEMONSTRATED. The joint withdrawal of h1 and h2 has outcome 0, i.e. an effect of 1, while the individual effects are 0 and 0. 0 + 0 = 0 != 1, so individual leave-one-out effects do not sum to the coalition effect. This must NOT be reported as absence of coordination.", "per_alternative_bounds": {"b1": [0, 0], "b3": [0, 0]}, "envelope": [0, 0], "label": "NO_POSITIVE_EFFECT_DEMONSTRATED", "incomplete_family": false, "complete_family_conclusion_permitted": true, "individual_effects_sum": 0, "coalition_effect": 1, "additivity_holds": false, "absence_of_coordination_inferred": false},
+    "A3": {"derivation": "Three admissible members, outcomes 1,1,1 -> d = [0,0] each. Envelope [0,0] -> NO_POSITIVE_EFFECT_DEMONSTRATED. The helper's static occupancy does assist, but no admissible POLICY substitution changes it, so this intervention family cannot identify the effect.", "per_alternative_bounds": {"b1": [0, 0], "b2": [0, 0], "b3": [0, 0]}, "envelope": [0, 0], "label": "NO_POSITIVE_EFFECT_DEMONSTRATED", "incomplete_family": false, "complete_family_conclusion_permitted": true, "effect_not_identifiable_by_policy_substitution": true},
+    "A4": {"derivation": "One admissible member, outcome 1 -> d = [0,0]. Envelope [0,0] -> NO_POSITIVE_EFFECT_DEMONSTRATED. The factual and alternative intentions differ (APPROACH vs CRUISE) but the guard clamps both to the identical executed command u_clamped_12.0. By executed-command consistency the next physical state is identical, so a zero contrast is the correct answer and is attributable to the guard, not to the policy.", "per_alternative_bounds": {"b1": [0, 0]}, "envelope": [0, 0], "label": "NO_POSITIVE_EFFECT_DEMONSTRATED", "incomplete_family": false, "complete_family_conclusion_permitted": true, "executed_commands_identical": true, "intentions_identical": false, "reason": "guard_equivalent_execution"},
+    "A5": {"derivation": "Two admissible members: b1 outcome 0 -> d = [1,1]; b3 outcome 1 -> d = [0,0]. Envelope L = min(1,0) = 0, U = max(1,0) = 1. The signs are mixed, so the conclusion depends on which baseline is used.", "per_alternative_bounds": {"b1": [1, 1], "b3": [0, 0]}, "envelope": [0, 1], "label": "BASELINE_DEPENDENT", "incomplete_family": false, "complete_family_conclusion_permitted": true},
+    "A6": {"derivation": "One admissible member with an UNKNOWN outcome -> d = [0,1]. An admissible member with an unresolved outcome forces INSUFFICIENT_SUPPORT. The two completions reverse the conclusion: outcome 0 gives d = 1 (positive), outcome 1 gives d = 0 (null). Dropping the unresolved pair would change the population and is not permitted.", "per_alternative_bounds": {"b1": [0, 1]}, "envelope": [0, 1], "label": "INSUFFICIENT_SUPPORT", "incomplete_family": false, "complete_family_conclusion_permitted": false, "completions_reverse_conclusion": true},
+    "A7": {"derivation": "One admissible member, b2, outcome 0 -> d = [1,1] -> POSITIVE_ACROSS_FAMILY over the declared family {b2}. The essential property is separate from the label: the step-1 executed command is identical and the step-1 next state is identical, yet the trajectories diverge at step 2 because the commitment memories differ. One-step state equality therefore does NOT imply trajectory equality.", "per_alternative_bounds": {"b2": [1, 1]}, "envelope": [1, 1], "label": "POSITIVE_ACROSS_FAMILY", "incomplete_family": false, "complete_family_conclusion_permitted": true, "step_1_state_identical": true, "trajectory_identical": false, "one_step_equality_implies_trajectory_equality": false},
+    "A8": {"derivation": "Declared family {b1, b3}. b1 is SUPPORTED_ADMISSIBLE at step 1 but UNRESOLVED at step 4, so its admission over the manoeuvre is UNRESOLVED and it is outside the resolved family; it is retained visibly, not silently replaced. b3 is admissible with outcome 0 -> d = [1,1]. Over resolved members only, all d are strictly positive, so the restricted-family label is POSITIVE_ACROSS_FAMILY with envelope [1,1]. Because a declared member has UNRESOLVED admission, incomplete_family is true and no complete-family conclusion is permitted.", "per_alternative_bounds": {"b3": [1, 1]}, "envelope": [1, 1], "label": "POSITIVE_ACROSS_FAMILY", "incomplete_family": true, "complete_family_conclusion_permitted": false, "excluded_members": ["b1"], "excluded_reason": "admission_unresolved_at_step_4", "one_step_admission_certifies_sequence": false}
+  }
+}

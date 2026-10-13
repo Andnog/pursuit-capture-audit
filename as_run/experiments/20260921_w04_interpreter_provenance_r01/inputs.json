@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_interpreter_provenance_r01",
+  "sources": {
+    "pyproject.toml": "bbf8ca89eb209c217ea2899da7138db3e94ebf619e79e9729e9e415c87d93e74",
+    "tests/test_source_hygiene.py": "f59ec45bcadc760ea02809e87d9d4bb6608ba06d884d5d4561f2342f5d7b15c5",
+    "tests/test_interpreter_pin.py": "6e89611a0267ce8366508edb569563332b58def814ec21745e9403ee9b37b967",
+    "README.md": "5d3a791efd7e9a8b16b6e245d524d5c0cde43ff56682498f45a75f728a751cc1"
+  },
+  "requires_python": "==3.14.*"
+}

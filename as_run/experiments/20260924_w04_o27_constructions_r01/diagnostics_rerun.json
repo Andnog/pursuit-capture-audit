@@ -1,0 +1,76 @@
+{
+  "AVOIDANT|adelaide_cbd": {
+    "reproduced_exactly": false,
+    "cpu_s": 1350.1,
+    "stopped_by": "CPU budget",
+    "expansions": 19991,
+    "failed_verification_reasons": {}
+  },
+  "AVOIDANT|seattle_downtown": {
+    "reproduced_exactly": true,
+    "cpu_s": 97.7,
+    "stopped_by": "candidate queue exhausted",
+    "expansions": 1603,
+    "failed_verification_reasons": {
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 6,
+      "{\"collisions\": 5048, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 3,
+      "{\"collisions\": 5058, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 3
+    }
+  },
+  "AVOIDANT|toronto_downtown": {
+    "reproduced_exactly": true,
+    "cpu_s": 552.1,
+    "stopped_by": "candidate queue exhausted",
+    "expansions": 8509,
+    "failed_verification_reasons": {}
+  },
+  "AVOIDANT|washington_downtown": {
+    "reproduced_exactly": true,
+    "cpu_s": 92.1,
+    "stopped_by": "candidate queue exhausted",
+    "expansions": 1396,
+    "failed_verification_reasons": {}
+  },
+  "OPTIMAL_ESCAPE|adelaide_cbd": {
+    "reproduced_exactly": true,
+    "cpu_s": 91.1,
+    "stopped_by": "candidate queue exhausted",
+    "expansions": 2497,
+    "failed_verification_reasons": {
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 128
+    }
+  },
+  "OPTIMAL_ESCAPE|seattle_downtown": {
+    "reproduced_exactly": false,
+    "cpu_s": 450.0,
+    "stopped_by": "CPU budget",
+    "expansions": 7241,
+    "failed_verification_reasons": {
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 6
+    }
+  },
+  "OPTIMAL_ESCAPE|toronto_downtown": {
+    "reproduced_exactly": true,
+    "cpu_s": 361.4,
+    "stopped_by": "candidate queue exhausted",
+    "expansions": 5130,
+    "failed_verification_reasons": {
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 23,
+      "{\"collisions\": 4, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 8,
+      "{\"collisions\": 5, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 4,
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 4
+    }
+  },
+  "OPTIMAL_ESCAPE|washington_downtown": {
+    "reproduced_exactly": false,
+    "cpu_s": 450.1,
+    "stopped_by": "CPU budget",
+    "expansions": 4389,
+    "failed_verification_reasons": {
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 319,
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 311,
+      "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 3}": 49,
+      "{\"collisions\": 4, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 18
+    }
+  }
+}

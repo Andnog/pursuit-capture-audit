@@ -1,0 +1,6 @@
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "run_started", "package": "20260923_w05_constructive_replication_r01"}
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "routes_found", "map_id": "adelaide_cbd", "routes": 4}
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "routes_found", "map_id": "seattle_downtown", "routes": 4}
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "routes_found", "map_id": "toronto_downtown", "routes": 4}
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "routes_found", "map_id": "washington_downtown", "routes": 4}
+{"ts": "2026-09-24T01:14:36.240009Z", "event": "run_ended", "verdict": "REFUTATION_REPLICATED"}

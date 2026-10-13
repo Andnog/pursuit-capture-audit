@@ -1,0 +1,51 @@
+{
+  "episodes": 3360,
+  "failed": 84,
+  "collisions": 4,
+  "families": 273,
+  "oc": {
+    "traffic": {
+      "plb": 0.3773,
+      "pursuit": 0.2833
+    },
+    "no_traffic": {
+      "plb": 0.4389,
+      "pursuit": 0.3126
+    }
+  },
+  "prox_5m_pursuit": {
+    "traffic": 0.9212,
+    "no_traffic": 0.9316
+  },
+  "primary_plb_minus_pursuit_traffic_family_95": [
+    0.094,
+    0.0598,
+    0.13
+  ],
+  "primary_city_family_95": [
+    0.094,
+    0.0497,
+    0.1368
+  ],
+  "primary_passes": true,
+  "plb_minus_pursuit_no_traffic_family_95": [
+    0.1264,
+    0.0897,
+    0.1642
+  ],
+  "traffic_minus_no_traffic_plb_family_95": [
+    -0.0617,
+    -0.0952,
+    -0.0299
+  ],
+  "traffic_minus_no_traffic_pursuit_family_95": [
+    -0.0293,
+    -0.0629,
+    0.0037
+  ],
+  "prox5_minus_oc_pursuit_traffic_family_95": [
+    0.638,
+    0.5934,
+    0.6819
+  ]
+}

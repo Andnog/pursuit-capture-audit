@@ -1,0 +1,44 @@
+[
+  {
+    "map_id": "toronto_downtown",
+    "arm": "factual",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "toronto_downtown",
+    "arm": "factual",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "toronto_downtown",
+    "arm": "b1",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "toronto_downtown",
+    "arm": "b1",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "toronto_downtown",
+    "arm": "helper_never_acts",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "toronto_downtown",
+    "arm": "helper_never_acts",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  }
+]

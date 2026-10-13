@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "domain_id": "domain_v1",
+  "stage": "W2",
+  "date": "2026-09-21",
+  "status": "RESOLVED_BY_RESEARCH_LEAD_2026_09_21",
+  "status_note": "D06 and D08 were resolved by the Research lead on 2026-09-21. The capture reading is CONTACT-TO-STOP with a mandatory coordination requirement; formation maintenance is explicitly REJECTED. The evader is a scripted difficulty level, not a policy. See governance/AMENDMENTS_EN.md A-22 and A-23.",
+  "team": {
+    "pursuers": 5,
+    "evaders": 1,
+    "pursuer_ids": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "evader_id": "e1"
+  },
+  "vehicle": {
+    "body_length_m": 5.0,
+    "body_width_m": 1.8,
+    "min_gap_m": 2.5,
+    "shape": "axis-aligned rectangle in the vehicle frame, rotated by heading",
+    "source": "master plan section 5 (5 m x 1.8 m); min_gap from the SUMO default used by the historical runtime and visible in its recorded station-separation arithmetic",
+    "min_gap_m_by_class": {
+      "pursuer": 2.5,
+      "evader": 1.0
+    },
+    "min_gap_note": "min_gap_m (2.5) is the PURSUER value and remains the default. Per-class values resolved by the Research lead on 2026-09-24 (A-46): pursuers 2.5 m so that a pursuer trailing the evader stops OUTSIDE the capture band, preserving by construction the historical lesson that sustained proximity is not capture; evader 1.0 m so that an evader brought to a stop behind or beside a pursuer comes to rest INSIDE the band with safety checks on. min_gap is a car-following distance, not a physical boundary."
+  },
+  "timing": {
+    "horizon_s": 300.0,
+    "physical_step_s": 0.1,
+    "decision_interval_s": 1.0,
+    "physical_steps_per_decision": 10,
+    "decisions_per_episode": 300,
+    "physical_steps_per_episode": 3000
+  },
+  "capture_predicate": {
+    "decision_ref": "D06",
+    "status": "FROZEN",
+    "definition": "Operational contact is a defined close interaction WITHOUT collision, held continuously. It is not mechanical impact and it is not physical restraint of a real vehicle.",
+    "parameters": {
+      "contact_gap_min_m": {
+        "value": 0.3,
+        "units": "m",
+        "meaning": "lower bound on body-to-body separation g(i,e,t) during the witness interval",
+        "derivation": "Must be strictly positive so that a capture can never coincide with a collision. Must also exceed the geometric tolerance by a wide margin, so that a reported gap at the bound cannot in fact be an overlap produced by polyline discretisation. 0.30 m is 30x geometry_tolerance_m and is 3x the 0.10 m screening margin the historical safety intervention used for stopped-body clearance.",
+        "boundary_case": "At exactly 0.30 m the bodies are 30 cm apart. Any value at or below geometry_tolerance_m would make non-collision unverifiable."
+      },
+      "contact_gap_max_m": {
+        "value": 2.0,
+        "units": "m",
+        "meaning": "upper bound on body-to-body separation; beyond it the configuration is proximity, not containment",
+        "derivation": "Bounded ABOVE by the minimum gap of ordinary car-following. The historical O26 diagnostic measured minimum prey/pursuer body gaps of 2.5009-2.5016 m across four full 300 s episodes and recorded explicitly that 'proximity and ordinary following do not constitute capture'. Setting contact_gap_max_m strictly below min_gap_m = 2.5 m makes ordinary following impossible to label as capture BY CONSTRUCTION rather than by judgement. 2.00 m leaves a 0.5 m margin below that measured following distance.",
+        "boundary_case": "Any value at or above 2.5 m would have labelled all four O26 episodes as containing capture configurations. That is the single most important constraint on this parameter and it comes from measured evidence, not from preference."
+      },
+      "capture_speed_max_mps": {
+        "value": 1.0,
+        "units": "m/s",
+        "meaning": "upper bound on the ABSOLUTE speed of both the evader and the participating pursuers during the witness interval",
+        "derivation": "RESOLVED 2026-09-21 as CONTACT_TO_STOP. The evader must be brought to a halt, not merely slowed, so the bound is set at 1.0 m/s: below walking pace and far below the 3.0 m/s at which the historical O26 episodes began and sustained circulation. The previously proposed 2.0 m/s admitted a slow roll; the resolved reading does not. The relative-speed bound of 1.0 m/s is now equal to the absolute bound, which is consistent: two bodies both at or below 1.0 m/s cannot exceed 1.0 m/s relative while satisfying the orientation bound.",
+        "rejected_alternative": "Moving containment at a higher bound. Rejected by the Research lead: it reproduces the caging endpoint and is not a different contribution."
+      },
+      "relative_speed_max_mps": {
+        "value": 1.0,
+        "units": "m/s",
+        "meaning": "upper bound on |v_i - v_e| during the witness interval",
+        "derivation": "Bounds how transient the configuration may be. At a relative speed of 1.00 m/s the admissible separation band of 1.70 m is crossed in 1.70 s, which is LESS than the required dwell of 2.00 s. The pair of values therefore has the derived consequence recorded under 'derived_properties': a straight fly-through of the band cannot satisfy the dwell requirement.",
+        "boundary_case": "Raising this to 0.85 m/s or below would make band traversal take 2.0 s or more and destroy that property; raising it above 0.85 m/s preserves it only while the dwell exceeds band_width / relative_speed_max."
+      },
+      "orientation_tolerance_rad": {
+        "value": 0.2618,
+        "units": "rad",
+        "degrees": 15.0,
+        "meaning": "upper bound on |theta|, the relative heading between a participating pursuer and the evader",
+        "derivation": "Containment requires the pursuer to be aligned with the evader's direction of travel, i.e. blocking rather than crossing. The historical safety intervention used a 1 degree heading window, but that scope was explicitly restricted to STRAIGHT two-point lanes and is far too tight for a capture predicate on curved urban lanes: a 5 m body on a curved lane can subtend several degrees of heading change along its own length. 15 degrees accommodates ordinary lane curvature while excluding crossing geometry, which is near 90 degrees. CONFIRMED 2026-09-21 at 15 degrees. The map audit supports it: across the 12 usable networks the multi-lane fraction ranges 20.7-65.6% with up to 6 lanes on an edge, so curvature and lane offset are substantial and a tighter window would reject legal containments.",
+        "boundary_case": "At 90 degrees the configuration is a side-on crossing, which this predicate must never accept. At 1 degree most legal curved-lane containments would be rejected."
+      },
+      "dwell_time_s": {
+        "value": 2.0,
+        "units": "s",
+        "meaning": "required CONTINUOUS duration for which every other condition holds",
+        "derivation": "Must exceed a single decision interval so that capture cannot be an artefact of one decision, and must span many physical steps so that the interpolation convention is meaningful. 2.00 s is exactly 2 decision intervals and 20 physical steps. A configuration that survives two consecutive decisions by a reactive evader is not a coincidence of one timestep.",
+        "boundary_case": "At 1.0 s the evader has no opportunity to react within the witness. At 0.1 s the predicate would reduce to a single-frame proximity test, which is what the master plan forbids when it says centre distance alone is insufficient."
+      },
+      "geometry_tolerance_m": {
+        "value": 0.01,
+        "units": "m",
+        "meaning": "numerical tolerance for body-geometry computations and separation comparisons",
+        "derivation": "Positions and lane polylines are double precision at urban scale, where representation error is many orders of magnitude below 1 cm; the tolerance therefore covers polyline discretisation and coordinate-frame conversion, not float noise. It is 1/30 of contact_gap_min_m, so it cannot by itself move a verdict across the separation bound.",
+        "boundary_case": "The historical O22 failure recorded a native collision at a reported positive body gap of 1.959 m. That discrepancy was a MODELLING error in station-separation arithmetic, roughly two orders of magnitude larger than this tolerance. No numerical tolerance can absorb a modelling error, and this one is not intended to.",
+        "correction_2026_09_24": "The boundary_case note attributes the O22 Roma collision to a modelling error in station-separation arithmetic. A-45 measured that the logged arithmetic 6.459929 - 5 - 2.5 = -1.04 m IS SUMO's collision gap, net of min_gap, under default collision semantics: a correctly computed physical gap of 1.46 m is also a SUMO collision. The attribution was incomplete."
+      },
+      "alignment_lateral_max_m": {
+        "value": 1.0,
+        "units": "m",
+        "meaning": "upper bound on the evader's LATERAL offset from the finisher's longitudinal axis; together with the requirement that the finisher be AHEAD of the evader along its own heading, the predicate describes the evader held behind the finisher in file",
+        "derivation": "Added 2026-09-26 by the Research lead (A-57). The seven original conditions have no alignment term, so two bodies stopped side by side in adjacent lanes (lateral gap about 1.4 m) satisfied them; 1 of 14 SUMO captures on TRAINING maps was in different lanes. 1.0 m is below half a lane width, excluding adjacent lanes, and above the lateral offset of two bodies in file on a curved lane.",
+        "decided": "Research lead, 2026-09-26, A-57"
+      }
+    },
+    "interpolation_convention": "Separation, speeds and relative heading are evaluated at each recorded physical step. Between steps, separation is linearly interpolated and the witness interval must satisfy every condition at every sampled step AND at both interpolated endpoints of the interval. A condition satisfied only between samples is recorded UNKNOWN, never SUPPORTED.",
+    "witness_requirements": [
+      "no body overlap at any sampled step within the interval",
+      "no safety failure recorded for any participating vehicle within the interval",
+      "all conditions hold at every sampled step, continuously, for at least dwell_time_s",
+      "the trace covering the interval is complete; a gap makes the witness UNKNOWN"
+    ],
+    "what_this_does_not_establish": [
+      "that a real vehicle has been physically restrained",
+      "that the configuration would persist beyond the witness interval",
+      "that the evader could not have escaped under a different continuation",
+      "any claim about real-road safety"
+    ],
+    "reading": "CONTACT_TO_STOP",
+    "reading_rationale": "Capture is contact in which the evader is brought to a halt, reached because a cooperating vehicle was already stopped ahead or because it was closed on from ahead or behind. MOVING CONTAINMENT IS REJECTED: maintaining a formation around a still-circulating evader would reproduce the caging endpoint the historical programme failed to achieve, and would violate the project's premise of attempting something different. The distinguishing requirement is that contact must be COORDINATED.",
+    "coordination_requirement": {
+      "status": "FROZEN",
+      "statement": "Contact alone is NOT capture for this project's purposes. A capture counts only if it was COORDINATED: the configuration must have been produced by more than one pursuer's decisions.",
+      "why": "The Research lead's decision. Contact reached by a single pursuer closing on the evader is a chase outcome, not a cooperative one, and the research question concerns joint interception.",
+      "dead_end_rule": {
+        "captures_in_a_cul_de_sac_are_admissible": true,
+        "but_count_as_coordinated_only_if": "the evader was FORCED into the dead end, with positive evidence that no better exit was available to it at the decision where it entered",
+        "evidence_required": "enumerate the evader's admissible exits at the entry decision and show that every alternative was blocked or worse under its own difficulty level",
+        "feasibility_note": "Checkable by enumeration rather than assertion: the map audit measures dead-end fractions of 0.83-4.25% across the 12 usable networks, so cul-de-sacs are scarce enough to enumerate.",
+        "otherwise": "recorded as CAPTURE_UNCOORDINATED_DEAD_END and excluded from the primary outcome"
+      }
+    },
+    "amendments": [
+      {
+        "date": "2026-09-26",
+        "ref": "A-57",
+        "change": "alignment condition added: finisher ahead of the evader along the finisher's heading, and |lateral offset| <= alignment_lateral_max_m"
+      }
+    ]
+  },
+  "derived_properties": {
+    "admissible_band_width_m": 1.7,
+    "band_traversal_time_at_max_relative_speed_s": 1.7,
+    "monotone_traversal_cannot_satisfy_dwell": {
+      "holds": true,
+      "statement": "band_width / relative_speed_max_mps = 1.70 s < dwell_time_s = 2.00 s. A pursuer that crosses the admissible separation band monotonically at the maximum permitted relative speed leaves the band before the dwell requirement is met. A valid capture therefore requires separation that is actually HELD, not a fly-through.",
+      "why_it_matters": "Without this property the predicate could be satisfied by a fast pass at close range, which is a near-miss rather than containment."
+    },
+    "ordinary_following_excluded_by_construction": {
+      "holds": true,
+      "statement": "contact_gap_max_m = 2.00 m < PURSUER min_gap 2.50 m <= the 2.5009-2.5016 m minimum gaps measured across the four historical O26 episodes. A pursuer's ordinary car-following cannot satisfy the separation condition.",
+      "why_it_matters": "The historical programme's central negative result was that sustained proximity is not capture. This predicate encodes that finding instead of relying on a judge to apply it.",
+      "scope_note_2026_09_24": "Restated for PURSUERS under the per-class min_gap of A-46. It still holds, by construction, for the direction the historical lesson concerned: pursuers trailing the evader."
+    },
+    "dwell_is_an_integer_number_of_physical_steps": {
+      "holds": true,
+      "statement": "dwell_time_s / physical_step_s = 20.0, an integer, so the witness interval aligns with recorded frames and needs no partial-step convention."
+    },
+    "capture_cannot_coincide_with_collision": {
+      "holds": true,
+      "statement": "contact_gap_min_m = 0.30 m > 0 and is 30x geometry_tolerance_m, so a separation reported at or above the bound cannot be an overlap within tolerance.",
+      "correction_2026_09_24": "This property was asserted as holding and was FALSE under SUMO's default collision semantics, which report any bumper gap below min_gap as a collision (A-45, measured). It holds now BECAUSE simulator.collision_mingap_factor = 0 makes a collision mean physical overlap; its truth depends on that setting and is guarded by the contract consistency check."
+    },
+    "capture_band_reachable_under_safe_following": {
+      "holds": true,
+      "statement": "contact_gap_min_m 0.30 <= EVADER min_gap 1.00 <= contact_gap_max_m 2.00. An evader brought to a stop behind a pursuer, with safety checks on, comes to rest inside the capture band. This is the property whose absence made D06 unsatisfiable.",
+      "why_it_matters": "Capture becomes INTERCEPTION - getting ahead of the evader and blocking - rather than chase, which is the joint interception the research question concerns.",
+      "added": "2026-09-24, A-46"
+    }
+  },
+  "dynamics": {
+    "decision_ref": "D07",
+    "status": "PROPOSED_NOT_FROZEN",
+    "simulator": "Eclipse SUMO 1.21.0 via the TraCI socket interface",
+    "car_following_model": "SUMO default (Krauss) unless overridden per vehicle type; the exact model and its parameters are recorded per scenario in the maps manifest",
+    "lane_change_model": "SUMO default (LC2013); lateral resolution and sublane behaviour recorded per scenario",
+    "braking": "ordinary deceleration only; emergency braking is a safety-failure indicator, not an available action",
+    "junction_rules": "SUMO junction model with right-of-way from the network definition",
+    "not_validated": "SUMO acceptance is NOT independently validated Ackermann vehicle dynamics. No claim about real-vehicle steering feasibility follows from any result in this project."
+  },
+  "observation": {
+    "decision_ref": "D07",
+    "status": "PROPOSED_NOT_FROZEN",
+    "architecture": "CENTRALIZED. One selector observes the public projection for all pursuers and emits the joint decision. This is declared, not disguised. It is NOT CTDE and it does not support a decentralized-execution claim.",
+    "per_vehicle_public_fields": [
+      "vehicle_id",
+      "vehicle_class",
+      "position_xy_m",
+      "speed_mps",
+      "heading_rad",
+      "lane_id",
+      "lane_position_m",
+      "body_length_m",
+      "body_width_m"
+    ],
+    "shared_public_fields": [
+      "simulation_time_s",
+      "decision_index",
+      "topology_version",
+      "signal_phases"
+    ],
+    "topology_access": "FULL and STATIC: edges, lanes, lengths, speed limits, connections and permissions. A road network is public information and is available for unseen cities under the declared deployment interface.",
+    "signal_access": "current phase and remaining duration, where the signal is publicly displayed to a driver",
+    "sensing_radius_m": null,
+    "sensing_radius_note": "null means full observability of the six task vehicles. This is a SIMPLIFICATION of the initial claim and is declared as such; partial observability is a separate study.",
+    "observation_noise": {
+      "position_m": 0.0,
+      "speed_mps": 0.0,
+      "heading_rad": 0.0
+    },
+    "observation_noise_note": "Zero noise at v1. Declared as a simplification, not as realism.",
+    "communication": {
+      "model": "none required",
+      "note": "Centralized selection makes an explicit communication protocol unnecessary at v1. Any decentralized variant needs its own information contract and latency model."
+    },
+    "latency_decisions": 0,
+    "prohibited_fields": [
+      "evader route file or any future evader position",
+      "any judge or audit output computed from a future state",
+      "private simulator fields absent from this projection",
+      "held-out, reserved or TEST-split quantities",
+      "another agent's internal memory, intent or policy parameters",
+      "the factual outcome of an episode under audit"
+    ],
+    "prohibited_fields_note": "The list above is the human-readable statement of the information boundary. It is prose and MUST NOT be pattern-matched against records: the word 'evader' occurs legitimately as a vehicle_class. The machine-readable list below is what code checks.",
+    "prohibited_observation_keys": [
+      "evader_route",
+      "route_file",
+      "future_positions",
+      "future_trajectory",
+      "ground_truth",
+      "judge_verdict",
+      "audit_result",
+      "outcome",
+      "capture_label",
+      "held_out",
+      "test_split",
+      "policy_parameters",
+      "internal_memory",
+      "intent",
+      "reward",
+      "advantage",
+      "value_estimate"
+    ]
+  },
+  "action_menu": {
+    "decision_ref": "D07",
+    "status": "PROPOSED_NOT_FROZEN",
+    "implementation_status": "CONTRACT ONLY. No action is implemented against the simulator at W2; the adapter is W3 work.",
+    "principle": "Actions are explicit, public and stable. The executor allocates no helper, assigns no finisher role and encodes no hidden cooperation. Any coordination must come from the selector's choice among these actions.",
+    "actions": [
+      {
+        "action_id": "HOLD_LANE",
+        "code": 0,
+        "parameters": [],
+        "description": "Continue on the current lane under the car-following model.",
+        "always_valid": true
+      },
+      {
+        "action_id": "CRUISE",
+        "code": 1,
+        "parameters": [
+          "target_speed_fraction"
+        ],
+        "description": "Proceed toward a fraction of the lane speed limit."
+      },
+      {
+        "action_id": "SLOW",
+        "code": 2,
+        "parameters": [
+          "target_speed_fraction"
+        ],
+        "description": "Decelerate toward a fraction of current speed using ordinary braking."
+      },
+      {
+        "action_id": "STOP_AT",
+        "code": 3,
+        "parameters": [
+          "lane_id",
+          "lane_position_m"
+        ],
+        "description": "Come to an ordinary stop at a declared station on a reachable lane."
+      },
+      {
+        "action_id": "CHANGE_LANE",
+        "code": 4,
+        "parameters": [
+          "direction"
+        ],
+        "description": "Request a lane change left or right where one is legal and admissible."
+      },
+      {
+        "action_id": "TURN_AT_NEXT_JUNCTION",
+        "code": 5,
+        "parameters": [
+          "connection_id"
+        ],
+        "description": "Select an outgoing connection at the next junction."
+      }
+    ],
+    "validity_mask": "Every action carries a per-vehicle validity bit computed from the public state and the safety admission interface. An action whose bit is 0 is not selectable.",
+    "fallback": "If no action is valid, the vehicle executes the contract-defined safe stop and the decision is recorded as FALLBACK with its reason. The selector never invents an action.",
+    "inference_deadline_s": 0.5,
+    "deadline_miss_behavior": "record a deadline miss and execute HOLD_LANE, which is always valid"
+  },
+  "evader": {
+    "decision_ref": "D08",
+    "status": "FROZEN_2026_09_21",
+    "model": "SCRIPTED_DIFFICULTY_LEVEL",
+    "statement": "The evader is NOT an agent with a policy to be learned or justified. It is a scripted routine with a difficulty level, so the only thing configured per scenario is how hard the pursuers' task is.",
+    "rationale": "Research lead's decision. It keeps the evader out of the contribution: no claim depends on the evader being optimal or realistic, only on the difficulty level being declared and held fixed.",
+    "levels": [
+      {
+        "level": 1,
+        "name": "RANDOM",
+        "behaviour": "chooses uniformly at random among admissible continuations at each junction",
+        "difficulty": "lowest"
+      },
+      {
+        "level": 2,
+        "name": "AVOIDANT",
+        "behaviour": "chooses a continuation away from the pursuers' current positions; not necessarily the optimal escape",
+        "difficulty": "medium"
+      },
+      {
+        "level": 3,
+        "name": "OPTIMAL_ESCAPE",
+        "behaviour": "chooses the best available escape continuation given the pursuers' observed positions",
+        "difficulty": "highest"
+      }
+    ],
+    "determinism": {
+      "required": true,
+      "implementation": "seeded per scenario, with the seed part of the frozen scenario definition, so a difficulty level plus a seed reproduces the same decisions exactly",
+      "why": "replicable experiments; the assistance audit additionally needs a reproducible prefix"
+    },
+    "speed": {
+      "evader_may_be_faster_than_pursuers": false,
+      "rule": "evader maximum speed <= pursuer maximum speed",
+      "curriculum_note": "Scenarios may start the evader SLOWER than the pursuers to make early capture attainable. The speed ratio is a declared scenario parameter and is reported with every result, because an easier ratio is not a better method."
+    },
+    "route_exhaustion": {
+      "behaviour": "the evader becomes stuck in the cul-de-sac it entered",
+      "capture_there_is_admissible": true,
+      "coordination_requirement": "see capture_predicate.coordination_requirement.dead_end_rule",
+      "no_future_route_oracle": true
+    },
+    "declared_branches": "all admissible continuations at the next junction, per the level's selection rule"
+  },
+  "endpoint_causes": [
+    "CAPTURE_COORDINATED_CONTACT",
+    "CAPTURE_FORCED_DEAD_END",
+    "CAPTURE_UNCOORDINATED_DEAD_END",
+    "CAPTURE_UNCOORDINATED_SINGLE_PURSUER",
+    "NO_CAPTURE_HORIZON_REACHED",
+    "NO_CAPTURE_NATURAL_TRAFFIC_STOP",
+    "NO_CAPTURE_GENUINE_BLOCKAGE",
+    "SAFETY_FAILURE",
+    "INTEGRITY_FAILURE_INCOMPLETE_TRACE",
+    "UNKNOWN"
+  ],
+  "endpoint_reporting_rule": "Only CAPTURE_COORDINATED_CONTACT and CAPTURE_FORCED_DEAD_END count toward the primary outcome, and they are reported SEPARATELY. CAPTURE_UNCOORDINATED_DEAD_END and CAPTURE_UNCOORDINATED_SINGLE_PURSUER are recorded and reported but excluded from the primary outcome: they are contact without coordination, which is the confound this project exists to avoid.",
+  "simulator": {
+    "status": "FROZEN",
+    "resolved_by": "Research lead, 2026-09-24, A-46",
+    "collision_mingap_factor": 0,
+    "meaning": "a SUMO collision is PHYSICAL OVERLAP of bodies, not a bumper gap below min_gap",
+    "why": "Under SUMO's default, every bumper gap below min_gap is reported as a collision, which placed the whole capture band [0.30, 2.00] m inside the collision zone and made D06 unsatisfiable (A-45). The project's collision notion was always physical contact; the default silently substituted a following distance for it.",
+    "sumo_argument": [
+      "--collision.mingap-factor",
+      "0"
+    ],
+    "safety_checks": "LEFT ON: speed mode unchanged. Disabling them to obtain capture is prohibited."
+  }
+}

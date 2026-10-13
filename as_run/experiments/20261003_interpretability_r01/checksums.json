@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_interpretability_r01",
+ "sealed_at": "2026-10-03T13:10:49.154654+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "INTERPRETABILITY_CAPTURE_LAW.json": "c10e95e11c5aa38492851e19ac4b3371b20a9b6e8786dc66b04d298d356d342f",
+  "INTERPRETABILITY_POLICY_HEADS.json": "2215eb70188e5a2064b72220ae809de2182f29b183406d2e1bc5169a75c4c43a",
+  "KAN_SYMBOLIC.json": "1a1ceb3996657d5b6741d2379924a49ce683cd19684b293b593888a710351d56",
+  "SCIENTIFIC_DECISION_EN.md": "141569b0fa8105706157cd2a1d7bd6a497796c2763b69f0ac6676ad03615b3ff",
+  "decisions.pkl": "a652b099c869f700567915304cb4ff28d9be53a9007b386eeca930dabdd1b83e",
+  "inputs.json": "a292abd30c0f57dc4ab2c84d6e6655cfb56d9753921ebbe043822374087900f3",
+  "kan_symbolic_ckpt/0.0_cache_data": "1c7e7515c4c8e0e22636d9ef8e2d738b88b0c3576dbb0a5ed6d963fca6e7a451",
+  "kan_symbolic_ckpt/0.0_config.yml": "778d779049c50bc929e617c2da092f61a38f5df2e145b8f0e8264b0a5668f623",
+  "kan_symbolic_ckpt/0.0_state": "7d439950c037e9861f02c9e4980b82b02f82c3ecaae29e3ba6f88161fdbc9590",
+  "kan_symbolic_ckpt/0.1_cache_data": "8b89a3880ee25457e0230096c7cb26355cd8517200198257f5682d3e8d457684",
+  "kan_symbolic_ckpt/0.1_config.yml": "91fbda66b7e1c1985ddf02da991a886fac804c92d57a717e1971fad7731c7f14",
+  "kan_symbolic_ckpt/0.1_state": "fcd6064daa273a7223ba864921e76f796600e519e72d5dd1ca6c72626d25dbaa",
+  "kan_symbolic_ckpt/0.2_cache_data": "8b89a3880ee25457e0230096c7cb26355cd8517200198257f5682d3e8d457684",
+  "kan_symbolic_ckpt/0.2_config.yml": "2afccb0d6793e4adc3f976c364bc5cd300fb7bf8b1b30b502bc6ef6c58e344c5",
+  "kan_symbolic_ckpt/0.2_state": "199709de074a54b163cb44e2cfa4042d50b2a229a584ba7b50caf4a38ce2d1f2",
+  "kan_symbolic_ckpt/0.3_cache_data": "8b89a3880ee25457e0230096c7cb26355cd8517200198257f5682d3e8d457684",
+  "kan_symbolic_ckpt/0.3_config.yml": "f1761f173a2e17c51c35cc85f38e5df295a0935a77bb30ef1804e0f87d64b63d",
+  "kan_symbolic_ckpt/0.3_state": "345acd55e063653832a395d77cddfdebcdfde9ae0e40c2a2b9603a692b44a1b7",
+  "kan_symbolic_ckpt/history.txt": "51e7895a75b4e2e45249c9f918c554f53ade064fe84f448d2ffc1c839aa49549"
+ }
+}

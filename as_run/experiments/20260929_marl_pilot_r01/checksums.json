@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_marl_pilot_r01",
+ "sealed_at": "2026-09-29T23:07:43.811960Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "1ada0d84b5f2b26fea534d71d6bda9fae208d031b0bb5d0464d9386329689188",
+  "SCIENTIFIC_DECISION_EN.md": "c2c2060c5fab7e5c22494e1b8bb64d2d2d8e3d615bc825b6ef41495262315aa9",
+  "inputs.json": "c93995bb603b7f2ee20a4689d6bda7049ef02ae7bfcb64b85eb2a3722a4d45fd",
+  "run.log": "b93d8029baeb381f24ed08580d5130ca1b67d09962975be3bd8650a0300e438c",
+  "train_log.jsonl": "7c7b59d2722db7628b3b8a8a6cacd59cf1c183b8aca2da6281f38420f94b963b"
+ }
+}

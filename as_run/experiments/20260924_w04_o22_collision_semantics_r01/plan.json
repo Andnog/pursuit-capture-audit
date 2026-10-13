@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_o22_collision_semantics_r01",
+  "created": "2026-09-24",
+  "stage": "W4",
+  "protocol": "PROTOCOL_EN.md",
+  "authorised_by": "Research lead, 2026-09-24, O22 safety-admission part",
+  "acceptance_rule_frozen_before_running": true,
+  "acceptance_rule": {
+    "CAPTURE_BAND_IS_COLLISION_FREE_BY_DEFAULT": "no default collision at any gap in [0.30, 2.00]",
+    "CAPTURE_BAND_IS_A_COLLISION_BY_DEFAULT": "default collision at gaps inside the band",
+    "PROBE_FAILED": "positions not forced or report unreadable"
+  },
+  "extension": "the approach probe answers a second question the first raised; it used one of the two remaining permitted starts",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 6
+  }
+}

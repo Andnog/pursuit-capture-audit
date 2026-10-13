@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_signal_aware_approach_r01",
+  "sealed_at": "2026-09-24T14:19:55.594881Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "939b8cbacdb95790cb61dccaa2a51a2e8fb607b1eef31eaf383161958a26728e",
+    "PROTOCOL_EN.md": "f29b4e1607cf20126d2da952abcd46e2f8c22096f8a9bb4f9b13587b54bb1aad",
+    "SCIENTIFIC_DECISION_EN.md": "00eaec4cda0df6bdf0adce9c53de3c4bb88788cf24528f65f3138bedb68f531b",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "38d8ad1b3c0268d07e853151d9fce296b615be81b06303f1fa5e83c731fcd8ff",
+    "events.jsonl": "f68652486a945bd7cda04d168f211d8c517b200d25d6d00cde903cd7c30e37ed",
+    "inputs.json": "951f4ca49793b3bd5129399dd50aebfc42993313d7ed5d379077b6cb1e3f1074",
+    "measurements_sigma_controlled.json": "e887e5fe71a0a38d97b24e3b3f689917f972aa35adc66312ea7b73c2ad9a9e48",
+    "measurements_sigma_default.json": "05ffa7f63d6bbfc06272057929bfb6a66b731d62cbc5817fa9174067a0c88b90",
+    "plan.json": "d15dbc1ff2e44ee3d23817599e3f4bb297c2c151d18d29b8590b62248cf0754d",
+    "result.json": "8fca0af58d8bff6784316ff304d8255f7cef593d18cfbf414d5f686600295f2c",
+    "results.jsonl": "f4364c956b16228ce18a5bef129ad5c93c95953829ac23f2f1fcb627e1b7a4f0"
+  },
+  "verdict": "MODEL_STILL_OPTIMISTIC",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

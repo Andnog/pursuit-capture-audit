@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://doctoral-joint-interception/contracts/episode_result.schema.json",
+  "title": "Episode result row",
+  "description": "One row of results.jsonl. Y is physical capture; Z is protocol-supported ASSISTED capture and may be UNKNOWN. A capture whose required audit is unresolved gives Z = UNKNOWN, never 1 - that constraint is enforced by the admission code, not only by this schema. Every field named in master plan section 14 is REQUIRED to be present; several are nullable, because 'absent' and 'known to be inapplicable' are different statements.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "case_id",
+    "arm",
+    "split",
+    "city",
+    "scenario_id",
+    "seeds",
+    "input_hashes",
+    "status",
+    "endpoint_cause",
+    "Y",
+    "Z",
+    "physical_validity",
+    "audit_coverage",
+    "cost",
+    "evidence_paths",
+    "endpoint_time_s",
+    "safety_failures",
+    "guard_interventions",
+    "commitment_switches",
+    "assistance_label",
+    "reasons"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "arm": {
+      "type": "string",
+      "enum": [
+        "I0",
+        "I1",
+        "J0",
+        "J1",
+        "RAND",
+        "REACT",
+        "PLAN",
+        "DET-J",
+        "INITIAL",
+        "BC",
+        "BC_PPO"
+      ]
+    },
+    "split": {
+      "type": "string",
+      "enum": [
+        "TRAINING",
+        "DEVELOPMENT",
+        "TEST"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seeds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "environment",
+        "training",
+        "audit"
+      ],
+      "properties": {
+        "environment": {
+          "type": "integer"
+        },
+        "training": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "audit": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "input_hashes": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "FAILED",
+        "CANCELLED",
+        "NOT_EXECUTED"
+      ]
+    },
+    "endpoint_cause": {
+      "type": "string",
+      "enum": [
+        "CAPTURE_MOVING_CIRCULATION",
+        "CAPTURE_AFTER_ROUTE_ENDPOINT",
+        "NO_CAPTURE_HORIZON_REACHED",
+        "NO_CAPTURE_NATURAL_TRAFFIC_STOP",
+        "NO_CAPTURE_GENUINE_BLOCKAGE",
+        "SAFETY_FAILURE",
+        "INTEGRITY_FAILURE_INCOMPLETE_TRACE",
+        "UNKNOWN"
+      ]
+    },
+    "Y": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ]
+        },
+        {
+          "type": "string",
+          "const": "UNKNOWN"
+        }
+      ]
+    },
+    "Z": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ]
+        },
+        {
+          "type": "string",
+          "const": "UNKNOWN"
+        }
+      ]
+    },
+    "endpoint_time_s": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 300
+    },
+    "physical_validity": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "FAIL",
+        "UNKNOWN"
+      ]
+    },
+    "safety_failures": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "guard_interventions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "commitment_switches": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "audit_coverage": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "assistance_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "POSITIVE_ACROSS_FAMILY",
+        "BASELINE_DEPENDENT",
+        "NO_POSITIVE_EFFECT_DEMONSTRATED",
+        "HARMFUL_ACROSS_FAMILY",
+        "INSUFFICIENT_SUPPORT",
+        null
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "wall_seconds",
+        "cpu_seconds"
+      ],
+      "properties": {
+        "wall_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cpu_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "candidate_generation_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "compatibility_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "inference_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "deadline_misses": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "evidence_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

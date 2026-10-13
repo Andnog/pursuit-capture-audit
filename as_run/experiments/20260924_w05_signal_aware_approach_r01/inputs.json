@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_signal_aware_approach_r01",
+  "sources": {
+    "src/joint_interception/opportunities/approach.py": "7734294ff0bdb7185d25bd12b4d2c2f2aa8cd1b585d169b9b559ded36435b8b8",
+    "scripts/approach_extract.py": "60e74dcc39f55b1e4d2305f977f369aaf9adeb9d0b73d92f1ed1312420879f4a",
+    "scripts/run_approach_validation.py": "5dba4d138cb1ff270f4ab0b2ca5a59e88574618c8d9e8055b12a148c5fbfa4f4",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f"
+  }
+}

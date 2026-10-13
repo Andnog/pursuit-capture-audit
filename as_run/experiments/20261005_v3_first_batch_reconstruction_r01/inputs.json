@@ -1,0 +1,33 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_v3_first_batch_reconstruction_r01",
+ "recorded_at_launch": "2026-10-06T03:24:03.473475+00:00",
+ "amendment": "A-139 F5-1/F5-6",
+ "sources": {
+  "scripts/audit_cage_certificate.py": "14475fd3be552ea4b2cda7951d44193ff7925bd2d648cccb5059a7ecf32a7c2f",
+  "scripts/reconstruct_v3_first_batches.py": "b8681686537f0d0ddc4d189827a8666cb28db33eb8f4fab84301db06abcbd800",
+  "scripts/run_ambush_optimization.py": "7f877fe749480a637fba0322a57703f08b0eb8048d78d470fa1b2177f198f5ef",
+  "scripts/run_test_confirmation.py": "9259f5f93361978a932a371dff6fd29f19df543ec116e3bd36c1b0a127c52b57",
+  "scripts/train_caging_pilot.py": "3cd6b30b0d8a202b3f75028e7b9731ec8b5b832821c1f98fd0a70c459aa5df2c",
+  "scripts/train_mappo_prox.py": "ca5ffc3dd4f36cf8eef341843d67148593d6c374946081cc4934e2487d7b0fd7",
+  "scripts/train_mappo_v2.py": "8191a5f69bd8cee61f20ef51b8559fbd6f6ca4798f312dcf95b860f19a2d8ba7",
+  "scripts/train_mappo_v3.py": "81cd5495168541382f0e98b82671a684f45ff1521117d41b4dcb2bb71dc18291",
+  "scripts/train_mappo_v4.py": "ad9fa719692ba6b2e745b286daa8d23beec2141fda607d41af676e1ab30e0d48",
+  "src/joint_interception/evaluation/capture_judge.py": "fea2e00a825ba4aa43e6f6f83722788a11657f219c5b20a14758020b653a232d",
+  "src/joint_interception/evaluation/capture_time.py": "c1a1d39523623e13440c062394b08bd1aa58e983f9bf9151887e6063829b58ba",
+  "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+  "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+  "src/joint_interception/native/mappo_ambush.py": "67d398874bf87efd3595ecf2dd46ebf933912a157fb88204eac99f285d4498ea",
+  "src/joint_interception/native/mappo_ambush_v2.py": "ef0509ea5c7923269cd35ba3c56f330c889f16a1089db84ab3e8fb8495cd1d20",
+  "src/joint_interception/native/mappo_ambush_v3.py": "9f46f18dac097e982fe02a7a82024450093f85796b310e2e6bb3fc4d18736ad8",
+  "src/joint_interception/rl/mappo_policy.py": "53d91f4d73bf1b4a6c82ce991ef54b0243dadf5a757f9ac64ed854bdbe87fc45",
+  "src/joint_interception/rl/rollout.py": "26916d2cc04624034970076b6784c885e7ec28872f15ea8c5126c7ff97dfd862",
+  "src/joint_interception/rl/transitions.py": "0bf5ec38acaa1b65a604d938e80e7f0b49f160772d88884288e711f5fa065cff",
+  "src/joint_interception/simulator/evader.py": "a9b531635fe5b9b462e7a2d69419bf112c8b53f5cdee03c8341ad34146b85502",
+  "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5",
+  "tests/test_fifth_review.py": "961a0b339e89946211c208abbbe825a3b3a4470f89216630a5c820bf0b0048ea",
+  "tests/test_mappo_v4.py": "20be9a874001bc4240805295b15bbda0c2e2d9c1b0586609271cbdae9407cd6c"
+ },
+ "sealed_study": "experiments/20261005_mappo_v3_r01",
+ "sumo": "1.21.0"
+}

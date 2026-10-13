@@ -1,0 +1,167 @@
+{
+ "rule": "Every record of every package used by the article is assigned to one category by an explicit rule:\n- evaluation: an episode run to estimate a rate or a contrast that the article reports;\n- selection: an episode used to choose parameters or candidates (search rungs, search validation);\n- replay: a re-run of an earlier episode for an audit (follow-up, hold, bookkeeping, reproduction);\n- failed: a scheduled task that produced no episode (almost always a placement failure).\nEpisodes generated while training a learner, validation during training, and development checks\nare not in these files and are not counted. Writes `provenance/EPISODE_COUNTS.json`.",
+ "own_setting": {
+  "total": {
+   "evaluation": 170841,
+   "selection": 16403,
+   "replay": 20523,
+   "failed": 5124
+  },
+  "packages": {
+   "20261001_endpoint_validation_r01": {
+    "evaluation": 2030,
+    "selection": 0,
+    "replay": 1435,
+    "failed": 70
+   },
+   "20261001_final_study_r01": {
+    "evaluation": 2891,
+    "selection": 0,
+    "replay": 1323,
+    "failed": 49
+   },
+   "20261001_robustness_study_r01": {
+    "evaluation": 22446,
+    "selection": 0,
+    "replay": 0,
+    "failed": 534
+   },
+   "20261001_ambush_study_r01": {
+    "evaluation": 6562,
+    "selection": 0,
+    "replay": 0,
+    "failed": 158
+   },
+   "20261001_ambush_learning_r01": {
+    "evaluation": 6456,
+    "selection": 0,
+    "replay": 0,
+    "failed": 288
+   },
+   "20261002_ambush_optimization_r01": {
+    "evaluation": 14702,
+    "selection": 8417,
+    "replay": 0,
+    "failed": 497
+   },
+   "20261002_sensitivity_r02": {
+    "evaluation": 8560,
+    "selection": 5067,
+    "replay": 0,
+    "failed": 517
+   },
+   "20261002_mappo_r01": {
+    "evaluation": 9984,
+    "selection": 0,
+    "replay": 0,
+    "failed": 96
+   },
+   "20261003_commitment_r01": {
+    "evaluation": 6512,
+    "selection": 0,
+    "replay": 0,
+    "failed": 208
+   },
+   "20261003_d06_persistence_audit_r01": {
+    "evaluation": 0,
+    "selection": 0,
+    "replay": 1433,
+    "failed": 0
+   },
+   "20261003_test_confirmation_r01": {
+    "evaluation": 14514,
+    "selection": 0,
+    "replay": 1088,
+    "failed": 526
+   },
+   "20261003_goal_evader_r01": {
+    "evaluation": 4320,
+    "selection": 0,
+    "replay": 0,
+    "failed": 160
+   },
+   "20261004_audit_addendum_r01": {
+    "evaluation": 548,
+    "selection": 0,
+    "replay": 2899,
+    "failed": 12
+   },
+   "20261004_mappo_v2_r01": {
+    "evaluation": 14688,
+    "selection": 0,
+    "replay": 0,
+    "failed": 432
+   },
+   "20261004_audit_addendum_r02": {
+    "evaluation": 0,
+    "selection": 0,
+    "replay": 1388,
+    "failed": 0
+   },
+   "20261004_audit_addendum_r03": {
+    "evaluation": 4940,
+    "selection": 0,
+    "replay": 10899,
+    "failed": 100
+   },
+   "20261004_mechanism_diagnostics_r01": {
+    "evaluation": 204,
+    "selection": 0,
+    "replay": 58,
+    "failed": 8
+   },
+   "20261005_mappo_prox_r01": {
+    "evaluation": 11466,
+    "selection": 0,
+    "replay": 0,
+    "failed": 294
+   },
+   "20261005_kinematic_sensitivity_r01": {
+    "evaluation": 9828,
+    "selection": 0,
+    "replay": 0,
+    "failed": 252
+   },
+   "20261005_traffic_sensitivity_r01": {
+    "evaluation": 3276,
+    "selection": 0,
+    "replay": 0,
+    "failed": 84
+   },
+   "20261005_tuned_evader_r01": {
+    "evaluation": 4010,
+    "selection": 2919,
+    "replay": 0,
+    "failed": 223
+   },
+   "20261005_mappo_v3_r01": {
+    "evaluation": 22904,
+    "selection": 0,
+    "replay": 0,
+    "failed": 616
+   }
+  }
+ },
+ "third_party_environment": {
+  "total": {
+   "evaluation": 1600,
+   "selection": 0,
+   "replay": 812,
+   "failed": 0
+  },
+  "packages": {
+   "20261005_published_env_audit_r01": {
+    "evaluation": 1600,
+    "selection": 0,
+    "replay": 0,
+    "failed": 0
+   },
+   "20261005_published_env_audit_r02": {
+    "evaluation": 0,
+    "selection": 0,
+    "replay": 812,
+    "failed": 0
+   }
+  }
+ }
+}

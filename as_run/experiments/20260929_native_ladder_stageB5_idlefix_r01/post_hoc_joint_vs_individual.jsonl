@@ -1,0 +1,46 @@
+{"map_id": "C1_grid4x4", "index": 6, "participants": ["p2", "p5"], "p_full": 1.0, "p_single": {"p2": 0.15, "p5": 0.0}, "delta_joint": 0.85, "delta_helper_removed": 1.0}
+{"map_id": "C1_grid4x4", "index": 3, "participants": ["p1", "p3", "p5"], "p_full": 1.0, "p_single": {"p1": 0.55, "p3": 0.3, "p5": 0.05}, "delta_joint": 0.44999999999999996, "delta_helper_removed": 0.0}
+{"map_id": "C1_grid4x4", "index": 5, "participants": ["p2", "p4"], "p_full": 1.0, "p_single": {"p2": 0.5, "p4": 0.0}, "delta_joint": 0.5, "delta_helper_removed": 1.0}
+{"map_id": "C1_grid4x4", "index": 7, "participants": ["p1", "p3"], "p_full": 0.1, "p_single": {"p1": 0.5, "p3": 0.0}, "delta_joint": -0.4, "delta_helper_removed": 0.1}
+{"map_id": "C1_grid4x4", "index": 1, "participants": ["p2", "p4"], "p_full": 0.45, "p_single": {"p2": 0.25, "p4": 0.25}, "delta_joint": 0.2, "delta_helper_removed": 0.2}
+{"map_id": "C1_grid4x4", "index": 0, "participants": ["p3", "p4", "p5"], "p_full": 0.15, "p_single": {"p3": 0.2, "p4": 0.0, "p5": 0.35}, "delta_joint": -0.19999999999999998, "delta_helper_removed": -0.2}
+{"map_id": "C1_grid4x4", "index": 8, "participants": ["p1", "p3"], "p_full": 1.0, "p_single": {"p1": 1.0, "p3": 0.7}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C1_grid4x4", "index": 12, "participants": ["p1", "p3"], "p_full": 0.85, "p_single": {"p1": 0.5, "p3": 0.0}, "delta_joint": 0.35, "delta_helper_removed": 0.35}
+{"map_id": "C1_grid4x4", "index": 14, "participants": ["p2", "p4"], "p_full": 0.0, "p_single": {"p2": 0.0, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C1_grid4x4", "index": 18, "participants": ["p2", "p5"], "p_full": 0.65, "p_single": {"p2": 1.0, "p5": 0.75}, "delta_joint": -0.35, "delta_helper_removed": -0.35}
+{"map_id": "C1_grid4x4", "index": 17, "participants": ["p2", "p3"], "p_full": 1.0, "p_single": {"p2": 0.0, "p3": 1.0}, "delta_joint": 0.0, "delta_helper_removed": 1.0}
+{"map_id": "C1_grid4x4", "index": 20, "participants": ["p1", "p4", "p5"], "p_full": 0.9, "p_single": {"p1": 0.0, "p4": 0.0, "p5": 0.9}, "delta_joint": 0.0, "delta_helper_removed": 0.9}
+{"map_id": "C1_grid4x4", "index": 21, "participants": ["p3", "p5"], "p_full": 0.1, "p_single": {"p3": 0.1, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C1_grid4x4", "index": 19, "participants": ["p1", "p2", "p4"], "p_full": 0.0, "p_single": {"p1": 0.1, "p2": 0.0, "p4": 0.5}, "delta_joint": -0.5, "delta_helper_removed": 0.0}
+{"map_id": "C1_grid4x4", "index": 23, "participants": ["p2", "p3", "p5"], "p_full": 0.8, "p_single": {"p2": 0.05, "p3": 0.0, "p5": 0.1}, "delta_joint": 0.7000000000000001, "delta_helper_removed": -0.05}
+{"map_id": "C2_grid6x6", "index": 0, "participants": ["p3", "p4", "p5"], "p_full": 0.05, "p_single": {"p3": 0.0, "p4": 0.0, "p5": 0.0}, "delta_joint": 0.05, "delta_helper_removed": 0.05}
+{"map_id": "C1_grid4x4", "index": 29, "participants": ["p3", "p4"], "p_full": 0.05, "p_single": {"p3": 0.05, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.05}
+{"map_id": "C2_grid6x6", "index": 2, "participants": ["p1", "p3"], "p_full": 0.3, "p_single": {"p1": 0.05, "p3": 0.1}, "delta_joint": 0.19999999999999998, "delta_helper_removed": 0.25}
+{"map_id": "C1_grid4x4", "index": 26, "participants": ["p2", "p4", "p5"], "p_full": 0.25, "p_single": {"p2": 0.3, "p4": 0.0, "p5": 0.2}, "delta_joint": -0.04999999999999999, "delta_helper_removed": -0.15}
+{"map_id": "C2_grid6x6", "index": 6, "participants": ["p2", "p5"], "p_full": 0.0, "p_single": {"p2": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C2_grid6x6", "index": 8, "participants": ["p1", "p3", "p5"], "p_full": 0.2, "p_single": {"p1": 0.0, "p3": 0.1, "p5": 0.05}, "delta_joint": 0.1, "delta_helper_removed": 0.15}
+{"map_id": "C2_grid6x6", "index": 21, "participants": ["p1", "p3", "p5"], "p_full": 0.0, "p_single": {"p1": 0.0, "p3": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C2_grid6x6", "index": 19, "participants": ["p3", "p4"], "p_full": 1.0, "p_single": {"p3": 0.0, "p4": 1.0}, "delta_joint": 0.0, "delta_helper_removed": 1.0}
+{"map_id": "C2_grid6x6", "index": 22, "participants": ["p1", "p2", "p3"], "p_full": 0.0, "p_single": {"p1": 0.0, "p2": 0.0, "p3": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C2_grid6x6", "index": 23, "participants": ["p2", "p4"], "p_full": 0.1, "p_single": {"p2": 0.1, "p4": 0.05}, "delta_joint": 0.0, "delta_helper_removed": 0.05}
+{"map_id": "C2_grid6x6", "index": 27, "participants": ["p3", "p5"], "p_full": 0.0, "p_single": {"p3": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C2_grid6x6", "index": 29, "participants": ["p2", "p3"], "p_full": 0.0, "p_single": {"p2": 0.0, "p3": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C3_grid9x9", "index": 23, "participants": ["p1", "p2", "p3"], "p_full": 0.0, "p_single": {"p1": 0.0, "p2": 0.0, "p3": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C4_grid10x4", "index": 4, "participants": ["p2", "p4"], "p_full": 0.0, "p_single": {"p2": 0.0, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C4_grid10x4", "index": 3, "participants": ["p1", "p5"], "p_full": 0.05, "p_single": {"p1": 0.05, "p5": 1.0}, "delta_joint": -0.95, "delta_helper_removed": 0.0}
+{"map_id": "C4_grid10x4", "index": 2, "participants": ["p2", "p3", "p4"], "p_full": 0.0, "p_single": {"p2": 0.0, "p3": 0.1, "p4": 0.0}, "delta_joint": -0.1, "delta_helper_removed": 0.0}
+{"map_id": "C4_grid10x4", "index": 12, "participants": ["p1", "p2", "p4"], "p_full": 0.0, "p_single": {"p1": 0.0, "p2": 0.0, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": -0.05}
+{"map_id": "C4_grid10x4", "index": 15, "participants": ["p1", "p5"], "p_full": 0.0, "p_single": {"p1": 0.25, "p5": 0.0}, "delta_joint": -0.25, "delta_helper_removed": -0.25}
+{"map_id": "C4_grid10x4", "index": 19, "participants": ["p3", "p4", "p5"], "p_full": 0.0, "p_single": {"p3": 0.0, "p4": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C4_grid10x4", "index": 29, "participants": ["p2", "p4"], "p_full": 0.2, "p_single": {"p2": 0.0, "p4": 0.3}, "delta_joint": -0.09999999999999998, "delta_helper_removed": 0.2}
+{"map_id": "C4_grid10x4", "index": 28, "participants": ["p1", "p3", "p5"], "p_full": 0.0, "p_single": {"p1": 0.0, "p3": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C5_spider", "index": 5, "participants": ["p2", "p4"], "p_full": 0.2, "p_single": {"p2": 0.2, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C5_spider", "index": 4, "participants": ["p2", "p3", "p4"], "p_full": 0.0, "p_single": {"p2": 0.0, "p3": 0.0, "p4": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.0}
+{"map_id": "C5_spider", "index": 6, "participants": ["p3", "p5"], "p_full": 1.0, "p_single": {"p3": 0.65, "p5": 0.5}, "delta_joint": 0.35, "delta_helper_removed": 0.35}
+{"map_id": "C5_spider", "index": 10, "participants": ["p2", "p4"], "p_full": 0.55, "p_single": {"p2": 0.6, "p4": 0.0}, "delta_joint": -0.04999999999999993, "delta_helper_removed": -0.05}
+{"map_id": "C5_spider", "index": 15, "participants": ["p3", "p4", "p5"], "p_full": 0.0, "p_single": {"p3": 0.0, "p4": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": -0.2}
+{"map_id": "C5_spider", "index": 13, "participants": ["p3", "p4"], "p_full": 0.0, "p_single": {"p3": 0.05, "p4": 0.0}, "delta_joint": -0.05, "delta_helper_removed": -0.05}
+{"map_id": "C5_spider", "index": 21, "participants": ["p1", "p2", "p5"], "p_full": 0.0, "p_single": {"p1": 0.1, "p2": 0.0, "p5": 0.0}, "delta_joint": -0.1, "delta_helper_removed": 0.0}
+{"map_id": "C5_spider", "index": 19, "participants": ["p2", "p3", "p5"], "p_full": 0.05, "p_single": {"p2": 0.05, "p3": 0.0, "p5": 0.0}, "delta_joint": 0.0, "delta_helper_removed": 0.05}
+{"map_id": "C5_spider", "index": 27, "participants": ["p2", "p3", "p5"], "p_full": 0.0, "p_single": {"p2": 0.05, "p3": 0.0, "p5": 0.15}, "delta_joint": -0.15, "delta_helper_removed": -0.05}
+{"map_id": "C5_spider", "index": 28, "participants": ["p1", "p2", "p4"], "p_full": 0.0, "p_single": {"p1": 0.0, "p2": 1.0, "p4": 0.0}, "delta_joint": -1.0, "delta_helper_removed": -0.3}

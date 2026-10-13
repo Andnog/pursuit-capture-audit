@@ -1,0 +1,76 @@
+{
+  "package": "20260921_w04_constructive_arrival_r01",
+  "stage": "W4_PREREQUISITE",
+  "checks": {
+    "planned": 6,
+    "executed": 6,
+    "passed": 6,
+    "tests_run": 25
+  },
+  "witness": {
+    "unblocked_witness": {
+      "intervals": [
+        [
+          8.841337154566094,
+          300.0
+        ]
+      ],
+      "direction": "UNDER",
+      "earliest_s": 8.841337155,
+      "certified_upper_bound_s": 300.0,
+      "verified_sample_count": 64
+    },
+    "blocked_witness": {
+      "intervals": [
+        [
+          8.841337154566094,
+          20.0
+        ],
+        [
+          40.0,
+          60.0
+        ],
+        [
+          75.0,
+          300.0
+        ]
+      ],
+      "interval_count": 3,
+      "nonconvex": true
+    },
+    "independent_earliest_s": 8.841337155,
+    "earliest_agrees_with_witness": true,
+    "integration_check": {
+      "samples": 400,
+      "worst_distance_error_m": 4.263256414560601e-14,
+      "worst_time_error_s": 0.0,
+      "legality_violations": 0
+    }
+  },
+  "regression": {
+    "full_suite_ok": true,
+    "lint_clean": true
+  },
+  "gate": {
+    "name": "W4_prereq_constructive_arrival_witnesses",
+    "rule": "SUPPORTED only if all six criteria pass",
+    "verdict": "SUPPORTED",
+    "claim_class": "analytical_correctness_in_a_finite_abstraction_only",
+    "claim_supported": "An UNDER-approximating arrival set can be produced and its label EARNED, in the declared finite abstraction.",
+    "explicitly_not_established": [
+      "that constructive witnesses can be produced on a real SUMO network",
+      "handling of interaction between participants' committed plans",
+      "physical feasibility, assistance, learning, benefit, transfer or novelty"
+    ]
+  },
+  "resources": {
+    "cpu_seconds": 0.686,
+    "wall_seconds": 0.698,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0,
+    "w4_cpu_hour_cap_consumed": false
+  }
+}

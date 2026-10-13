@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_constructive_arrival_r01",
+  "created": "2026-09-21",
+  "stage": "W4_PREREQUISITE",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "protocol_frozen_before_implementation": true,
+  "gap_closed": "ConstructiveArrivalModel took (earliest, latest) as INPUT; nothing generated or verified them, so the UNDER label was an assertion.",
+  "why_unblocked": "A constructive schedule needs kinematic limits and a path, not the evader policy (D08) or the capture thresholds (D06).",
+  "criteria": {
+    "C1_earliest_arrives_exactly": "integrate the profile; tolerance 1e-9",
+    "C2_interval_fullness": ">=200 sampled times in [t_min,t_max], each integrating to exact arrival",
+    "C3_legality": "0 <= v <= v_limit and -b_max <= a <= a_max on every segment; zero violations",
+    "C4_under_is_earned": "every reported time has a verified legal schedule",
+    "C5_nonconvexity": "a blocking window yields >=2 disjoint intervals, each fully scheduled",
+    "C6_end_to_end": "constructive sets reach SUPPORTED where free-flow sets give UNKNOWN"
+  },
+  "gate_rule": {
+    "SUPPORTED": "all six criteria hold",
+    "NOT_SUPPORTED": "anything else",
+    "claim_supported": "An UNDER-approximating arrival set can be produced and its label EARNED, in the declared finite abstraction only."
+  },
+  "explicitly_not_established": [
+    "that constructive witnesses can be produced on a real SUMO network",
+    "handling of interaction between participants' committed plans",
+    "physical feasibility, assistance, learning, benefit, transfer or novelty"
+  ],
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0,
+    "w4_cpu_hour_cap_consumed": false
+  },
+  "commands": {
+    "run": "uv run python scripts/run_constructive_checks.py --package experiments/20260921_w04_constructive_arrival_r01"
+  }
+}

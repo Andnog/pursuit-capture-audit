@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_arrival_model_prereq_r01",
+  "sealed_at": "2026-09-21T16:14:19Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "ae46f32b5e17beb0dbe9f9b4a76f9449c4c70b877a369574f8e52477b059976d",
+    "PROTOCOL_EN.md": "769c49665c983124e73dc876528959bede8b0ddfecdc688a4a983220ce96f1ad",
+    "SCIENTIFIC_DECISION_EN.md": "4e29d5c86dc78737633676ec7969926c67494f5bf9b3dfc2ca21ed515dcdbd20",
+    "domain.json": "5931ba41154c2e91ee0cbb13d55c18bfd79ff6923b93156fc91e65c4f482db61",
+    "environment.json": "ceeb4d1963e9f4df1fb110397adac6922cbe526ca0a608e2ed24d6885d33260e",
+    "events.jsonl": "ca337ac7d35dfceaff26c41c41783342ea268196b84fa12f229c3007bb63aa7f",
+    "inputs.json": "e0645b326c119bea10f0e1a81a370a7bf4792a8ce67f5b944199fb651771446e",
+    "plan.json": "2b5817b2f49a753410d42c625ef98cd70419c732b71c8caa5ea16385dfb94a8b",
+    "result.json": "fa8712253436f5e10d0626b9b88e82d973edfd99ce651dd50cacea340b0f6b80",
+    "results.jsonl": "c7b82c2afaf0deb8c26282c1503ab16e10ae618d90bfb5cc6412b891cd9e0877"
+  },
+  "verdict": "CRITERION_INVALID_NO_CONCLUSION_DRAWN",
+  "limit": "This package records a mis-specified criterion. Its headline verdict is withdrawn; see DEVIATIONS_EN.md D-18. The valid conclusion is in r02."
+}

@@ -1,0 +1,70 @@
+{
+  "package": "20260923_w05_constructive_replication_r01",
+  "stage": "W5",
+  "claim_class": "replication_of_a_transfer_refutation",
+  "verdict": "REFUTATION_REPLICATED",
+  "tolerance_s": 0.1,
+  "maps": [
+    "adelaide_cbd",
+    "seattle_downtown",
+    "toronto_downtown",
+    "washington_downtown"
+  ],
+  "judged_on": "the CLOSED-LOOP arm; the open-loop arm is reported alongside it",
+  "feasibility": {
+    "closed_loop_runs": 48,
+    "lost_feasibility_mid_flight": 48,
+    "kept_feasibility_throughout": 0,
+    "remaining_route_fraction_at_loss": {
+      "min": 0.093,
+      "median": 0.606,
+      "max": 0.944,
+      "reading": "feasibility is lost with most of the route still ahead; the median run still had 61% to go"
+    }
+  },
+  "open_loop_comparison": {
+    "runs": 48,
+    "arrived": 48,
+    "within_tolerance": 0,
+    "error_median_s": 25.456733
+  },
+  "measurements": {
+    "attempted": 48,
+    "arrived": 48,
+    "within_tolerance": 0,
+    "late": 48,
+    "early": 0,
+    "error_min_s": 0.126886,
+    "error_median_s": 25.456733,
+    "error_max_s": 171.381887,
+    "all_errors_positive": true
+  },
+  "what_distinguishes_routes_that_hold": null,
+  "relationship_note": "Junction counts are recorded and any relationship is DESCRIBED. Describing a relationship is not certifying a bound, and nothing here may be fitted into the arrival construction.",
+  "resources": {
+    "sumo_process_starts": 116,
+    "simulated_seconds": 14022.3,
+    "wall_seconds": 155.767,
+    "cpu_seconds": 14.951,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  },
+  "detector_soundness": {
+    "question": "does the feasibility detector fire at a floating-point boundary rather than on genuine infeasibility",
+    "probe": "arrival_at returns a profile at EXACTLY the earliest possible time and None only strictly below it",
+    "conclusion": "the detector fires only when remaining time is strictly less than the fastest possible time. Genuine infeasibility, not a boundary artifact. The equal values in the logged detail are an artifact of rounding to one decimal."
+  },
+  "mechanism_correction": {
+    "a40_claimed": "junction right-of-way logic, from a junction census on ONE route",
+    "measured_here": "correlation between arrival error and junction count before the station is 0.02 across 48 measurements on 12 routes and 4 maps",
+    "verdict": "A-40's mechanism attribution is WITHDRAWN. Junction count is not the explanatory variable.",
+    "what_survives": "correlation with clamped steps is 0.54: SUMO overrides the commanded speed, and the resulting deficit accumulates. WHY it overrides is not established by this package.",
+    "structural_note": "the lower endpoint of every UNDER arrival set is the earliest arrival, which by construction has ZERO slack. Any deficit whatsoever makes it unreachable. That is a property of the representation, not an empirical finding, and it means the earliest time in any UNDER set is unreachable in practice."
+  },
+  "arms_differ": {
+    "rows_with_identical_error": 26,
+    "rows_that_differ": 22,
+    "note": "the two arms are not the same experiment; closed-loop re-planning changes the outcome on 22 of 48 rows, and loses feasibility on all 48"
+  }
+}

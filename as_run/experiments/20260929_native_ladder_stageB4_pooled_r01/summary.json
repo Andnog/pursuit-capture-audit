@@ -1,0 +1,72 @@
+{
+  "C1_grid4x4:AVOIDANT": {
+    "scenarios": 30,
+    "with_necessary_plan": 8,
+    "p_with_mean": 0.844,
+    "p_without_mean": 0.781,
+    "delta_mean": 0.062,
+    "delta_ci95": [
+      -0.188,
+      0.375
+    ],
+    "passes": false
+  },
+  "C2_grid6x6:AVOIDANT": {
+    "scenarios": 30,
+    "with_necessary_plan": 10,
+    "p_with_mean": 0.395,
+    "p_without_mean": 0.29,
+    "delta_mean": 0.105,
+    "delta_ci95": [
+      -0.13,
+      0.365
+    ],
+    "passes": false
+  },
+  "C3_grid9x9:AVOIDANT": {
+    "scenarios": 30,
+    "with_necessary_plan": 1,
+    "p_with_mean": 0.0,
+    "p_without_mean": 0.0,
+    "delta_mean": 0.0,
+    "delta_ci95": [
+      0.0,
+      0.0
+    ],
+    "passes": false
+  },
+  "C4_grid10x4:AVOIDANT": {
+    "scenarios": 30,
+    "with_necessary_plan": 5,
+    "p_with_mean": 0.33,
+    "p_without_mean": 0.02,
+    "delta_mean": 0.31,
+    "delta_ci95": [
+      0.06,
+      0.56
+    ],
+    "passes": true
+  },
+  "C5_spider:AVOIDANT": {
+    "scenarios": 30,
+    "with_necessary_plan": 6,
+    "p_with_mean": 0.608,
+    "p_without_mean": 0.65,
+    "delta_mean": -0.042,
+    "delta_ci95": [
+      -0.458,
+      0.442
+    ],
+    "passes": false
+  },
+  "POOLED_AVOIDANT": {
+    "contributing_scenarios": 30,
+    "scenarios": 150,
+    "delta_mean": 0.095,
+    "delta_ci95": [
+      -0.058,
+      0.253
+    ],
+    "passes": false
+  }
+}

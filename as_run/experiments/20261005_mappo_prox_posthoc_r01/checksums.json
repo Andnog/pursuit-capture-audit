@@ -1,0 +1,13 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_mappo_prox_posthoc_r01",
+ "sealed_at": "2026-10-05T10:29:47.124633+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "POSTHOC.json": "d51e7f7dd7c81e9c2c23554fede4761216a2855f4bc7ca44b44fea62fd8a6c7c",
+  "SCIENTIFIC_DECISION_EN.md": "5e08b7d40a1db97e125282f145098946f8c5ceee3949c2092cba8a54e5c02602",
+  "../../scripts/posthoc_mappo_prox_contrasts.py": "d6974f25a5302bc99e58988f0ccf2a716aa0508e7acea598554181c1be46bd38"
+ }
+}

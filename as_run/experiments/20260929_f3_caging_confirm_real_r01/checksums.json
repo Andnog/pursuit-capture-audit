@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_f3_caging_confirm_real_r01",
+ "sealed_at": "2026-09-29T20:18:26.479936Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "49521e5d164dbb44720ac1d95f5b18a02325a0e6aed48f528dc668de9c0b69bd",
+  "PROTOCOL_EN.md": "7f7aa6cdf9b507bb8da281ed43678471a0e64cd9bb39bb09d0ca6e3aed362feb",
+  "SCIENTIFIC_DECISION_EN.md": "6f1240d32412b7a18210648629e8c69e3a965d90edc81e07eab439b6e7ecf3ad",
+  "gifs/washington_team3_x1.5_s6_cut.gif": "cc1051729243916768ab711c9f1be2fdefe907d41de0d96a9ffaff046118614d",
+  "gifs/washington_team3_x1.5_s6_individual.gif": "e89ee5dbc167f36324f9d7b9a47972e83df5a927fd6ca69cd3ae90d3dc8d1304",
+  "inputs.json": "bbed7f12b6ee9c27decc2e7731d9843fc1886069c0fce25807c95e1438ee4dd1",
+  "results.jsonl": "8a4990f4d14a4e07c52c72b15e8112946e9b4f2f4d0d039ef88a812834c22f20",
+  "run.log": "e36d59f8196f7de2836d2ca623b1a008d9d4699548b03be34ca564e15df03812",
+  "source_snapshot/scripts/run_caging_confirm.py": "aac42fb43a54687af655c12eaccb7d4228249091dc672aee28cec4e74c07050d",
+  "summary.json": "a7e240f554ba7bf8f2cff1cd0b1eb6320dabc7cd623b1ae5f3985d51a15e1708"
+ }
+}

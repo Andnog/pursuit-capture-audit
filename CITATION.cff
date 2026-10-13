@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or these data, please cite the article below and the archived release
+  of this repository.
+title: >-
+  pursuit-capture-audit: code and evidence for "When Proximity Is Not Interception"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/Andnog/pursuit-capture-audit"
+url: "https://andnog.github.io/pursuit-capture-audit/"
+abstract: >-
+  An audit of capture endpoints for multi-vehicle pursuit in microscopic urban traffic
+  simulation (SUMO, fifteen real downtown networks): a library that scores an episode under
+  proximity rules and under an operational capture rule, the code of the study as it ran, its
+  sealed evidence packages with checksums, its registration records, and the instructions to
+  verify, recompute and run every study again.
+keywords:
+  - multi-vehicle pursuit
+  - evaluation methodology
+  - microscopic traffic simulation
+  - SUMO
+  - multi-agent reinforcement learning
+authors:
+  - family-names: Noguera Gil
+    given-names: Andrei
+    orcid: "https://orcid.org/0009-0007-4585-2177"
+    affiliation: "Universidad Panamericana, Facultad de Ingeniería, Ciudad de México, México"
+  - family-names: Martinez-Rios
+    given-names: Felix
+    affiliation: "Universidad Panamericana, Facultad de Ingeniería, Ciudad de México, México"
+  - family-names: Avalos-Gauna
+    given-names: Edgar
+    affiliation: "Rice University, Houston, Texas, United States"
+preferred-citation:
+  type: article
+  status: submitted
+  title: >-
+    When Proximity Is Not Interception: Auditing Capture Endpoints and Predictive Lane Blocking
+    for Vehicle Pursuit in Microscopic Urban Traffic Simulation
+  authors:
+    - family-names: Noguera Gil
+      given-names: Andrei
+    - family-names: Martinez-Rios
+      given-names: Felix
+    - family-names: Avalos-Gauna
+      given-names: Edgar
+  year: 2026
+  notes: "Manuscript in preparation; the journal reference will replace this entry on publication."

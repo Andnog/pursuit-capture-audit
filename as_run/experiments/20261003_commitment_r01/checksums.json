@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_commitment_r01",
+ "sealed_at": "2026-10-02T23:55:50.388066Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "adc5b768da30b53bdec53bb883a309eccdffe78ea34be2fe98ba2932728fcf13",
+  "SCIENTIFIC_DECISION_EN.md": "f245e95788501c7a2eb0b3847bc3e4b931fc7e4cfc7ffae2170607e61fb04e29",
+  "inputs.json": "345c2453e10b47f89ea60a118ee77183b77140f80582216e48284d2f7141186b",
+  "results.jsonl": "467319e7ae0a5e1acfa5e809032d00d1e0bf5f2bc569052a0e996eed160cd9c8",
+  "run.log": "b6836167d0a4a7b4495557965c168f14169dd811607b0b018dcfd7c7c959f533",
+  "summary.json": "0a063795c5de5676e4b8792fb3b7277eeb91af0c372dcfa7323e6e524814dd35"
+ }
+}

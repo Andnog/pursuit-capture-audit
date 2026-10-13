@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_traci_first_execution_r01",
+  "created": "2026-09-22",
+  "stage": "W4",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "claim_class": "software_correctness_and_one_empirical_property_of_sumo",
+  "acceptance_rule_frozen_before_implementing": true,
+  "first_sumo_process_in_this_root": true,
+  "gate_reading": "O22 remains OPEN. Its discharge condition blocks native CAMPAIGNS until native regression evidence exists under the new capture contract. A bounded, attended, instrumented run that starts a process, exercises an interface and closes it is not a campaign, is not a capability trial, and claims nothing O22 guards. No capture is attempted and no success is scored.",
+  "acceptance_rule": {
+    "SURFACE_EXERCISED_RESTORATION_EXACT": "every protocol method executes and the two trajectories are exactly equal",
+    "SURFACE_EXERCISED_RESTORATION_INEXACT": "every protocol method executes and the trajectories differ",
+    "SURFACE_INCOMPLETE": "a protocol method could not be executed",
+    "PROCESS_FAILED": "SUMO could not be started or did not terminate cleanly"
+  },
+  "comparison_rule": "exact equality, never a tolerance; a tolerance introduced after seeing a failure is the failure being hidden",
+  "resource_limits_declared": {
+    "sumo_process_starts_permitted": 2,
+    "simulated_seconds_permitted": 120,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  },
+  "resource_limit_deviation": "3 process starts were used. Recorded in DEVIATIONS_EN.md D-1. The protocol file was NOT edited."
+}

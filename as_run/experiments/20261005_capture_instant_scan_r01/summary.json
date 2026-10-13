@@ -1,0 +1,28 @@
+{
+  "replays": 1433,
+  "failed": 0,
+  "reproduced_sealed_instant_and_finisher": 1433,
+  "captured_by_engine_judge": 1433,
+  "same_instant_all_four": 1433,
+  "instants_that_differ": [],
+  "corrected_equals_judge_instant_and_pursuer": 1433,
+  "traces_with_an_inner_gap": 4,
+  "inner_gap_keys": [
+    "test|plus_opt|sapporo_grid|14|109514|AVOIDANT|5",
+    "test|plus_opt|sapporo_grid|14|9514|AVOIDANT|5",
+    "test|plus_opt|washington_downtown|6|109506|AVOIDANT|7",
+    "test|plus_opt|washington_downtown|6|9506|AVOIDANT|7"
+  ],
+  "traces_with_any_absent_frame": 33,
+  "absent_vehicle_counts": {
+    "e1": 29,
+    "p4": 2,
+    "p6": 2
+  },
+  "traces_with_invalid_values": 0,
+  "integrity_errors": 0,
+  "frames_scanned": 4284032,
+  "episodes_with_a_collision": 0,
+  "episodes_with_a_collision_at_or_before_capture": 0,
+  "episodes_with_collisions_only_after_capture": 0
+}

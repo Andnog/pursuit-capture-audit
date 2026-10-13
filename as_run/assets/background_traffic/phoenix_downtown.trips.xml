@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-10-01 14:21:59.108199 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/phoenix_downtown.net.xml"/>
+    <output-trip-file value="/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/assets/background_traffic/phoenix_downtown.trips.xml"/>
+    <route-file value="/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/assets/background_traffic/phoenix_downtown.rou.xml"/>
+    <prefix value="bg"/>
+    <vehicle-class value="passenger"/>
+    <seed value="4166332820"/>
+    <min-distance value="300.0"/>
+    <validate value="True"/>
+    <end value="300.0"/>
+    <period value="1.0"/>
+</configuration>
+-->
+
+<!-- generated on 2026-10-01 14:21:59 by Eclipse SUMO duarouter Version 1.21.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/phoenix_downtown.net.xml"/>
+        <route-files value="/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/assets/background_traffic/phoenix_downtown.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/assets/background_traffic/phoenix_downtown.trips.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="300.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bg_passenger" vClass="passenger"/>
+    <trip id="bg0" type="bg_passenger" depart="0.00" from="1458918994" to="115812987#0"/>
+    <trip id="bg1" type="bg_passenger" depart="1.00" from="436946869" to="-325641379#1"/>
+    <trip id="bg2" type="bg_passenger" depart="2.00" from="-681285212" to="305224932"/>
+    <trip id="bg3" type="bg_passenger" depart="3.00" from="436946877#0" to="384892490#0"/>
+    <trip id="bg4" type="bg_passenger" depart="4.00" from="437355060" to="436796101"/>
+    <trip id="bg5" type="bg_passenger" depart="5.00" from="1462986248#0" to="529635548"/>
+    <trip id="bg6" type="bg_passenger" depart="6.00" from="1068017722" to="1069097884#1"/>
+    <trip id="bg7" type="bg_passenger" depart="7.00" from="386584316" to="436946282"/>
+    <trip id="bg8" type="bg_passenger" depart="8.00" from="436946886#0" to="305224935"/>
+    <trip id="bg9" type="bg_passenger" depart="9.00" from="519317362#0" to="5644000#5"/>
+    <trip id="bg10" type="bg_passenger" depart="10.00" from="-617901678#1" to="422092343"/>
+    <trip id="bg11" type="bg_passenger" depart="11.00" from="218678329" to="436795274"/>
+    <trip id="bg12" type="bg_passenger" depart="12.00" from="1393336310#0" to="436946892#0"/>
+    <trip id="bg13" type="bg_passenger" depart="13.00" from="1069097891" to="-529635548"/>
+    <trip id="bg14" type="bg_passenger" depart="14.00" from="436946281#0" to="325641377"/>
+    <trip id="bg15" type="bg_passenger" depart="15.00" from="-324034731" to="1069097884#2"/>
+    <trip id="bg16" type="bg_passenger" depart="16.00" from="436945740#0" to="1462986248#0"/>
+    <trip id="bg17" type="bg_passenger" depart="17.00" from="-30119666#1" to="-1069716890"/>
+    <trip id="bg18" type="bg_passenger" depart="18.00" from="1078673129#2" to="436796100#0"/>
+    <trip id="bg19" type="bg_passenger" depart="19.00" from="519284988#2" to="324630651#0"/>
+    <trip id="bg20" type="bg_passenger" depart="20.00" from="436796536#0" to="-1078673129#2"/>
+    <trip id="bg21" type="bg_passenger" depart="21.00" from="531234413#0" to="-126746181"/>
+    <trip id="bg22" type="bg_passenger" depart="22.00" from="-436946893#1" to="305224935"/>
+    <trip id="bg23" type="bg_passenger" depart="23.00" from="5655450#0" to="-5600517#3"/>
+    <trip id="bg24" type="bg_passenger" depart="24.00" from="-404824954#1" to="-5637931#0"/>
+    <trip id="bg25" type="bg_passenger" depart="25.00" from="-405986159#1" to="30119666#0"/>
+    <trip id="bg26" type="bg_passenger" depart="26.00" from="-1069716895#1" to="1055078826#0"/>
+    <trip id="bg27" type="bg_passenger" depart="27.00" from="436795274" to="436795279#0"/>
+    <trip id="bg28" type="bg_passenger" depart="28.00" from="1078673129#0" to="436795274"/>
+    <trip id="bg29" type="bg_passenger" depart="29.00" from="-30121012#1" to="325641368"/>
+    <trip id="bg30" type="bg_passenger" depart="30.00" from="-126746183#0" to="437355058#0"/>
+    <trip id="bg31" type="bg_passenger" depart="31.00" from="218678329" to="1055078822#0"/>
+    <trip id="bg32" type="bg_passenger" depart="32.00" from="436945744#0" to="437355058#0"/>
+    <trip id="bg33" type="bg_passenger" depart="33.00" from="-324630651#3" to="48665391#2"/>
+    <trip id="bg34" type="bg_passenger" depart="34.00" from="436946875#0" to="-1069716895#1"/>
+    <trip id="bg35" type="bg_passenger" depart="35.00" from="115812974#2" to="326178222#0"/>
+    <trip id="bg36" type="bg_passenger" depart="36.00" from="519284988#2" to="436945136#0"/>
+    <trip id="bg37" type="bg_passenger" depart="37.00" from="436795277#0" to="5600967#11"/>
+    <trip id="bg38" type="bg_passenger" depart="38.00" from="-5655445#1" to="5613555#3"/>
+    <trip id="bg39" type="bg_passenger" depart="39.00" from="-5686619#3" to="529635549#0"/>
+    <trip id="bg40" type="bg_passenger" depart="40.00" from="436796103#0" to="325641371#0"/>
+    <trip id="bg41" type="bg_passenger" depart="41.00" from="5613555#6" to="1517856356"/>
+    <trip id="bg42" type="bg_passenger" depart="42.00" from="305222951" to="-5655445#0"/>
+    <trip id="bg43" type="bg_passenger" depart="43.00" from="5646192#0" to="1393336312#0"/>
+    <trip id="bg44" type="bg_passenger" depart="44.00" from="405986160#0" to="5613555#12"/>
+    <trip id="bg45" type="bg_passenger" depart="45.00" from="326178220" to="405986159#1"/>
+    <trip id="bg46" type="bg_passenger" depart="46.00" from="1069716895#1" to="-5613555#5"/>
+    <trip id="bg47" type="bg_passenger" depart="47.00" from="305224929#0" to="-617901678#0"/>
+    <trip id="bg48" type="bg_passenger" depart="48.00" from="326178222#0" to="305222932#0"/>
+    <trip id="bg49" type="bg_passenger" depart="49.00" from="-305224935" to="1069097890#2"/>
+    <trip id="bg50" type="bg_passenger" depart="50.00" from="436946892#0" to="529635549#0"/>
+    <trip id="bg51" type="bg_passenger" depart="51.00" from="-537986758#1" to="-325641373#0"/>
+    <trip id="bg52" type="bg_passenger" depart="52.00" from="30120976#0" to="218678329"/>
+    <trip id="bg53" type="bg_passenger" depart="53.00" from="5637963#0" to="549341976#0"/>
+    <trip id="bg54" type="bg_passenger" depart="54.00" from="405986155#1" to="115812987#1"/>
+    <trip id="bg55" type="bg_passenger" depart="55.00" from="436946873" to="30120984#2"/>
+    <trip id="bg56" type="bg_passenger" depart="56.00" from="-436945132#1" to="-405986159#0"/>
+    <trip id="bg57" type="bg_passenger" depart="57.00" from="436795279#0" to="421759981#0"/>
+    <trip id="bg58" type="bg_passenger" depart="58.00" from="436796109#0" to="436946891#0"/>
+    <trip id="bg59" type="bg_passenger" depart="59.00" from="-115064773" to="436795275#0"/>
+    <trip id="bg60" type="bg_passenger" depart="60.00" from="436796115#0" to="681285211"/>
+    <trip id="bg61" type="bg_passenger" depart="61.00" from="-1065730717#2" to="-115813001"/>
+    <trip id="bg62" type="bg_passenger" depart="62.00" from="-5613555#13" to="519284988#2"/>
+    <trip id="bg63" type="bg_passenger" depart="63.00" from="5685441#2" to="5600967#11"/>
+    <trip id="bg64" type="bg_passenger" depart="64.00" from="-422092343" to="436795281#1"/>
+    <trip id="bg65" type="bg_passenger" depart="65.00" from="324630651#0" to="-436946879#1"/>
+    <trip id="bg66" type="bg_passenger" depart="66.00" from="436946871" to="-1069716890"/>
+    <trip id="bg67" type="bg_passenger" depart="67.00" from="436795290" to="5637931#0"/>
+    <trip id="bg68" type="bg_passenger" depart="68.00" from="436795274" to="1078673129#2"/>
+    <trip id="bg69" type="bg_passenger" depart="69.00" from="-305224929#1" to="1142588861#0"/>
+    <trip id="bg70" type="bg_passenger" depart="70.00" from="-1069097894#2" to="-5637963#1"/>
+    <trip id="bg71" type="bg_passenger" depart="71.00" from="5655445#0" to="217279630#0"/>
+    <trip id="bg72" type="bg_passenger" depart="72.00" from="436795290" to="305224935"/>
+    <trip id="bg73" type="bg_passenger" depart="73.00" from="529635548" to="5646192#0"/>
+    <trip id="bg74" type="bg_passenger" depart="74.00" from="436796536#0" to="1062204078"/>
+    <trip id="bg75" type="bg_passenger" depart="75.00" from="218678331#0" to="294428451"/>
+    <trip id="bg76" type="bg_passenger" depart="76.00" from="531234413#0" to="512612126#0"/>
+    <trip id="bg77" type="bg_passenger" depart="77.00" from="-5646192#1" to="436796538#0"/>
+    <trip id="bg78" type="bg_passenger" depart="78.00" from="-5644000#0" to="30119666#0"/>
+    <trip id="bg79" type="bg_passenger" depart="79.00" from="405986158" to="1430477368"/>
+    <trip id="bg80" type="bg_passenger" depart="80.00" from="30119518#0" to="279666025"/>
+    <trip id="bg81" type="bg_passenger" depart="81.00" from="529635549#1" to="5686619#2"/>
+    <trip id="bg82" type="bg_passenger" depart="82.00" from="1095707419" to="30119518#0"/>
+    <trip id="bg83" type="bg_passenger" depart="83.00" from="422092341#0" to="1069089090"/>
+    <trip id="bg84" type="bg_passenger" depart="84.00" from="5587569#0" to="1078673127#0"/>
+    <trip id="bg85" type="bg_passenger" depart="85.00" from="324626233#0" to="436796538#0"/>
+    <trip id="bg86" type="bg_passenger" depart="86.00" from="436945743#0" to="-5655450#3"/>
+    <trip id="bg87" type="bg_passenger" depart="87.00" from="5637931#0" to="-5587569#2"/>
+    <trip id="bg88" type="bg_passenger" depart="88.00" from="-1078673129#1" to="5664169"/>
+    <trip id="bg90" type="bg_passenger" depart="90.00" from="324430258#0" to="-5637963#0"/>
+    <trip id="bg91" type="bg_passenger" depart="91.00" from="1462986248#0" to="5637952#1"/>
+    <trip id="bg92" type="bg_passenger" depart="92.00" from="-5686619#1" to="436796105"/>
+    <trip id="bg93" type="bg_passenger" depart="93.00" from="-5637963#2" to="-1462986251"/>
+    <trip id="bg94" type="bg_passenger" depart="94.00" from="5686619#0" to="436945744#0"/>
+    <trip id="bg95" type="bg_passenger" depart="95.00" from="-30120984#3" to="5587569#0"/>
+    <trip id="bg96" type="bg_passenger" depart="96.00" from="-1069097894#2" to="5685441#0"/>
+    <trip id="bg97" type="bg_passenger" depart="97.00" from="-1069097893#1" to="-436945132#1"/>
+    <trip id="bg98" type="bg_passenger" depart="98.00" from="48665391#2" to="405986159#2"/>
+    <trip id="bg99" type="bg_passenger" depart="99.00" from="-1069089090" to="142438897"/>
+    <trip id="bg100" type="bg_passenger" depart="100.00" from="-5600517#0" to="-421762648"/>
+    <trip id="bg101" type="bg_passenger" depart="101.00" from="-5603931#2" to="436946878#0"/>
+    <trip id="bg102" type="bg_passenger" depart="102.00" from="305224933#0" to="305222943"/>
+    <trip id="bg103" type="bg_passenger" depart="103.00" from="529678989#1" to="-436945135#1"/>
+    <trip id="bg104" type="bg_passenger" depart="104.00" from="1055078826#0" to="681285212"/>
+    <trip id="bg105" type="bg_passenger" depart="105.00" from="-5587569#2" to="-405986159#1"/>
+    <trip id="bg106" type="bg_passenger" depart="106.00" from="-436945132#1" to="422621373#0"/>
+    <trip id="bg108" type="bg_passenger" depart="108.00" from="1458918994" to="-5686018"/>
+    <trip id="bg109" type="bg_passenger" depart="109.00" from="-294428451" to="-5600517#3"/>
+    <trip id="bg110" type="bg_passenger" depart="110.00" from="5637963#1" to="436946884#0"/>
+    <trip id="bg111" type="bg_passenger" depart="111.00" from="5637963#0" to="-324034731"/>
+    <trip id="bg112" type="bg_passenger" depart="112.00" from="404824958#1" to="512606812#0"/>
+    <trip id="bg113" type="bg_passenger" depart="113.00" from="30120976#0" to="436946891#0"/>
+    <trip id="bg114" type="bg_passenger" depart="114.00" from="28887067#3" to="436945744#0"/>
+    <trip id="bg115" type="bg_passenger" depart="115.00" from="-30121012#1" to="-48665391#1"/>
+    <trip id="bg116" type="bg_passenger" depart="116.00" from="436945138#0" to="-5600785#0"/>
+    <trip id="bg117" type="bg_passenger" depart="117.00" from="-1062204075" to="28887067#0"/>
+    <trip id="bg118" type="bg_passenger" depart="118.00" from="1462986250" to="-436946894#1"/>
+    <trip id="bg119" type="bg_passenger" depart="119.00" from="5600967#3" to="-5587569#2"/>
+    <trip id="bg120" type="bg_passenger" depart="120.00" from="436946872#0" to="-324034731"/>
+    <trip id="bg121" type="bg_passenger" depart="121.00" from="-5637931#0" to="-436945135#1"/>
+    <trip id="bg122" type="bg_passenger" depart="122.00" from="5686619#0" to="1470293747"/>
+    <trip id="bg123" type="bg_passenger" depart="123.00" from="436946878#0" to="-115813001"/>
+    <trip id="bg124" type="bg_passenger" depart="124.00" from="1069716890" to="-436946888"/>
+    <trip id="bg125" type="bg_passenger" depart="125.00" from="5655450#2" to="1078673129#4"/>
+    <trip id="bg126" type="bg_passenger" depart="126.00" from="294423447#1" to="1055078821#0"/>
+    <trip id="bg127" type="bg_passenger" depart="127.00" from="5587569#0" to="1083507344"/>
+    <trip id="bg128" type="bg_passenger" depart="128.00" from="-5600966#1" to="437355060"/>
+    <trip id="bg129" type="bg_passenger" depart="129.00" from="28887067#5" to="617901679#0"/>
+    <trip id="bg130" type="bg_passenger" depart="130.00" from="437360246#1" to="436946891#0"/>
+    <trip id="bg131" type="bg_passenger" depart="131.00" from="324626233#0" to="436796100#0"/>
+    <trip id="bg132" type="bg_passenger" depart="132.00" from="324034731" to="136920673#0"/>
+    <trip id="bg133" type="bg_passenger" depart="133.00" from="-529635547" to="30120648#2"/>
+    <trip id="bg134" type="bg_passenger" depart="134.00" from="5644000#0" to="405986159#1"/>
+    <trip id="bg135" type="bg_passenger" depart="135.00" from="5686018" to="48665391#0"/>
+    <trip id="bg136" type="bg_passenger" depart="136.00" from="305224934#0" to="1069089090"/>
+    <trip id="bg137" type="bg_passenger" depart="137.00" from="-405986159#1" to="115812974#2"/>
+    <trip id="bg138" type="bg_passenger" depart="138.00" from="-5686643" to="5644000#3"/>
+    <trip id="bg139" type="bg_passenger" depart="139.00" from="436795281#1" to="5686619#2"/>
+    <trip id="bg140" type="bg_passenger" depart="140.00" from="-5600772" to="436796111"/>
+    <trip id="bg141" type="bg_passenger" depart="141.00" from="436796536#0" to="-117680207"/>
+    <trip id="bg142" type="bg_passenger" depart="142.00" from="1393336310#0" to="524121799#0"/>
+    <trip id="bg143" type="bg_passenger" depart="143.00" from="324630651#0" to="537986758#0"/>
+    <trip id="bg144" type="bg_passenger" depart="144.00" from="30120759#0" to="-436946893#1"/>
+    <trip id="bg145" type="bg_passenger" depart="145.00" from="-1069097884#2" to="436796109#0"/>
+    <trip id="bg146" type="bg_passenger" depart="146.00" from="-5619353" to="-436945132#1"/>
+    <trip id="bg147" type="bg_passenger" depart="147.00" from="436946873" to="324626233#0"/>
+    <trip id="bg148" type="bg_passenger" depart="148.00" from="-305224930#2" to="-1078673128"/>
+    <trip id="bg149" type="bg_passenger" depart="149.00" from="-5637952#1" to="436946879#0"/>
+    <trip id="bg150" type="bg_passenger" depart="150.00" from="5600517#7" to="28887067#3"/>
+    <trip id="bg151" type="bg_passenger" depart="151.00" from="1068017722" to="-436945132#1"/>
+    <trip id="bg152" type="bg_passenger" depart="152.00" from="436946883#0" to="1393336310#0"/>
+    <trip id="bg153" type="bg_passenger" depart="153.00" from="-5637931#0" to="384892490#0"/>
+    <trip id="bg154" type="bg_passenger" depart="154.00" from="1393336310#0" to="1331959083"/>
+    <trip id="bg155" type="bg_passenger" depart="155.00" from="305224929#2" to="386584316"/>
+    <trip id="bg156" type="bg_passenger" depart="156.00" from="512606812#0" to="436795286#0"/>
+    <trip id="bg157" type="bg_passenger" depart="157.00" from="-617901678#0" to="48665391#2"/>
+    <trip id="bg158" type="bg_passenger" depart="158.00" from="-1071936009#1" to="5613555#12"/>
+    <trip id="bg159" type="bg_passenger" depart="159.00" from="136758915#0" to="5635209"/>
+    <trip id="bg160" type="bg_passenger" depart="160.00" from="519317362#0" to="436946885#0"/>
+    <trip id="bg161" type="bg_passenger" depart="161.00" from="436946281#0" to="436794414#0"/>
+    <trip id="bg162" type="bg_passenger" depart="162.00" from="30119518#0" to="30120759#0"/>
+    <trip id="bg163" type="bg_passenger" depart="163.00" from="405986159#1" to="436946894#0"/>
+    <trip id="bg164" type="bg_passenger" depart="164.00" from="-405986155#1" to="305224929#0"/>
+    <trip id="bg165" type="bg_passenger" depart="165.00" from="-5637963#2" to="436794405#0"/>
+    <trip id="bg166" type="bg_passenger" depart="166.00" from="436946875#0" to="305222951"/>
+    <trip id="bg167" type="bg_passenger" depart="167.00" from="-5613555#8" to="547679223"/>
+    <trip id="bg168" type="bg_passenger" depart="168.00" from="436946880#0" to="305222943"/>
+    <trip id="bg169" type="bg_passenger" depart="169.00" from="436946886#0" to="5600967#9"/>
+    <trip id="bg170" type="bg_passenger" depart="170.00" from="436945122" to="5644000#0"/>
+    <trip id="bg171" type="bg_passenger" depart="171.00" from="5644000#3" to="617901678#0"/>
+    <trip id="bg172" type="bg_passenger" depart="172.00" from="-305224929#2" to="227519989#0"/>
+    <trip id="bg173" type="bg_passenger" depart="173.00" from="436946892#0" to="5655450#4"/>
+    <trip id="bg174" type="bg_passenger" depart="174.00" from="-1062204075" to="1078673133#0"/>
+    <trip id="bg175" type="bg_passenger" depart="175.00" from="-115813001" to="1055078821#0"/>
+    <trip id="bg176" type="bg_passenger" depart="176.00" from="305222932#0" to="1069097891"/>
+    <trip id="bg177" type="bg_passenger" depart="177.00" from="436946277" to="436946885#0"/>
+    <trip id="bg178" type="bg_passenger" depart="178.00" from="-1069097893#1" to="5600967#4"/>
+    <trip id="bg179" type="bg_passenger" depart="179.00" from="-5686619#2" to="115012170#1"/>
+    <trip id="bg180" type="bg_passenger" depart="180.00" from="436946869" to="-5637963#0"/>
+    <trip id="bg181" type="bg_passenger" depart="181.00" from="-5686018" to="324630648#0"/>
+    <trip id="bg182" type="bg_passenger" depart="182.00" from="436946885#0" to="436796101"/>
+    <trip id="bg183" type="bg_passenger" depart="183.00" from="-5613555#11" to="531246662#0"/>
+    <trip id="bg184" type="bg_passenger" depart="184.00" from="5600967#9" to="-1078673129#4"/>
+    <trip id="bg185" type="bg_passenger" depart="185.00" from="1393336312#0" to="5600967#0"/>
+    <trip id="bg186" type="bg_passenger" depart="186.00" from="294423570#0" to="-422621373#2"/>
+    <trip id="bg187" type="bg_passenger" depart="187.00" from="-305224930#2" to="5644000#3"/>
+    <trip id="bg188" type="bg_passenger" depart="188.00" from="384892490#2" to="1430797359"/>
+    <trip id="bg189" type="bg_passenger" depart="189.00" from="1068017722" to="529635549#1"/>
+    <trip id="bg190" type="bg_passenger" depart="190.00" from="-527672772#0" to="519284988#2"/>
+    <trip id="bg191" type="bg_passenger" depart="191.00" from="1393336311#0" to="-5600517#9"/>
+    <trip id="bg192" type="bg_passenger" depart="192.00" from="-1078673129#4" to="-529635548"/>
+    <trip id="bg193" type="bg_passenger" depart="193.00" from="305222932#2" to="421762648"/>
+    <trip id="bg194" type="bg_passenger" depart="194.00" from="-422621373#2" to="115012170#1"/>
+    <trip id="bg195" type="bg_passenger" depart="195.00" from="115812974#2" to="1055078822#0"/>
+    <trip id="bg196" type="bg_passenger" depart="196.00" from="1430477368" to="-324034731"/>
+    <trip id="bg197" type="bg_passenger" depart="197.00" from="1062204078" to="-115812989#1"/>
+    <trip id="bg198" type="bg_passenger" depart="198.00" from="617901679#1" to="1078673129#4"/>
+    <trip id="bg199" type="bg_passenger" depart="199.00" from="-529635548" to="437355058#0"/>
+    <trip id="bg200" type="bg_passenger" depart="200.00" from="5600967#4" to="617901668"/>
+    <trip id="bg201" type="bg_passenger" depart="201.00" from="48665391#0" to="-1078673129#3"/>
+    <trip id="bg202" type="bg_passenger" depart="202.00" from="1420653953#0" to="126746183#0"/>
+    <trip id="bg203" type="bg_passenger" depart="203.00" from="5600517#0" to="436946882#0"/>
+    <trip id="bg204" type="bg_passenger" depart="204.00" from="324626233#1" to="-1069097894#2"/>
+    <trip id="bg205" type="bg_passenger" depart="205.00" from="-436946891#1" to="436796540#0"/>
+    <trip id="bg206" type="bg_passenger" depart="206.00" from="1078673129#0" to="325641365#0"/>
+    <trip id="bg207" type="bg_passenger" depart="207.00" from="-5613557" to="436795279#0"/>
+    <trip id="bg208" type="bg_passenger" depart="208.00" from="218678331#0" to="-1069097890#1"/>
+    <trip id="bg209" type="bg_passenger" depart="209.00" from="1095707419" to="5587569#0"/>
+    <trip id="bg210" type="bg_passenger" depart="210.00" from="-115812989#1" to="527672772#1"/>
+    <trip id="bg211" type="bg_passenger" depart="211.00" from="5644000#1" to="-115812989#1"/>
+    <trip id="bg212" type="bg_passenger" depart="212.00" from="437355057" to="436946894#0"/>
+    <trip id="bg213" type="bg_passenger" depart="213.00" from="-5603931#2" to="436945136#0"/>
+    <trip id="bg214" type="bg_passenger" depart="214.00" from="-5635209" to="1069097892"/>
+    <trip id="bg215" type="bg_passenger" depart="215.00" from="384892490#0" to="5644000#5"/>
+    <trip id="bg216" type="bg_passenger" depart="216.00" from="1078673129#0" to="436795277#0"/>
+    <trip id="bg217" type="bg_passenger" depart="217.00" from="529678989#0" to="422621373#0"/>
+    <trip id="bg218" type="bg_passenger" depart="218.00" from="5635209" to="5613555#6"/>
+    <trip id="bg219" type="bg_passenger" depart="219.00" from="-436946894#1" to="-529635548"/>
+    <trip id="bg220" type="bg_passenger" depart="220.00" from="436946879#0" to="5686619#0"/>
+    <trip id="bg221" type="bg_passenger" depart="221.00" from="126746183#0" to="5600966#0"/>
+    <trip id="bg222" type="bg_passenger" depart="222.00" from="-5646192#2" to="-1071936009#1"/>
+    <trip id="bg223" type="bg_passenger" depart="223.00" from="5646192#0" to="294423570#0"/>
+    <trip id="bg224" type="bg_passenger" depart="224.00" from="-436945138#1" to="5655450#4"/>
+    <trip id="bg225" type="bg_passenger" depart="225.00" from="-1517856359#3" to="1198089523#0"/>
+    <trip id="bg226" type="bg_passenger" depart="226.00" from="-1078673129#2" to="384892490#0"/>
+    <trip id="bg227" type="bg_passenger" depart="227.00" from="-529635549#0" to="1069097890#2"/>
+    <trip id="bg228" type="bg_passenger" depart="228.00" from="-5686619#1" to="1055078823#0"/>
+    <trip id="bg229" type="bg_passenger" depart="229.00" from="-324034734#1" to="-5637963#0"/>
+    <trip id="bg230" type="bg_passenger" depart="230.00" from="-5635209" to="1078673129#0"/>
+    <trip id="bg231" type="bg_passenger" depart="231.00" from="-324630651#3" to="405986159#2"/>
+    <trip id="bg232" type="bg_passenger" depart="232.00" from="617901679#0" to="5644000#0"/>
+    <trip id="bg233" type="bg_passenger" depart="233.00" from="1069097892" to="436946869"/>
+    <trip id="bg234" type="bg_passenger" depart="234.00" from="436945135#0" to="5600517#0"/>
+    <trip id="bg235" type="bg_passenger" depart="235.00" from="28887067#0" to="5613555#9"/>
+    <trip id="bg236" type="bg_passenger" depart="236.00" from="-126746183#0" to="-326178222#2"/>
+    <trip id="bg237" type="bg_passenger" depart="237.00" from="5600967#4" to="324630648#0"/>
+    <trip id="bg238" type="bg_passenger" depart="238.00" from="1055078822#0" to="436794405#0"/>
+    <trip id="bg239" type="bg_passenger" depart="239.00" from="1055078822#0" to="-30121012#1"/>
+    <trip id="bg240" type="bg_passenger" depart="240.00" from="-115812987#1" to="279666020"/>
+    <trip id="bg242" type="bg_passenger" depart="242.00" from="-1069716891" to="5644000#3"/>
+    <trip id="bg243" type="bg_passenger" depart="243.00" from="324034731" to="5600966#0"/>
+    <trip id="bg244" type="bg_passenger" depart="244.00" from="-5637931#0" to="305224933#0"/>
+    <trip id="bg245" type="bg_passenger" depart="245.00" from="458932309#0" to="-436946887"/>
+    <trip id="bg246" type="bg_passenger" depart="246.00" from="519317362#0" to="5600517#1"/>
+    <trip id="bg247" type="bg_passenger" depart="247.00" from="405986160#0" to="436946878#0"/>
+    <trip id="bg248" type="bg_passenger" depart="248.00" from="-30121012#1" to="-5637963#0"/>
+    <trip id="bg249" type="bg_passenger" depart="249.00" from="1095707417" to="-115012170#0"/>
+    <trip id="bg250" type="bg_passenger" depart="250.00" from="-5619353" to="-305224932"/>
+    <trip id="bg251" type="bg_passenger" depart="251.00" from="-5637963#2" to="30119518#0"/>
+    <trip id="bg252" type="bg_passenger" depart="252.00" from="-5603931#2" to="-549349797"/>
+    <trip id="bg253" type="bg_passenger" depart="253.00" from="305224931" to="305224929#2"/>
+    <trip id="bg254" type="bg_passenger" depart="254.00" from="529635549#1" to="1065730717#0"/>
+    <trip id="bg255" type="bg_passenger" depart="255.00" from="436945138#0" to="-1069097895#2"/>
+    <trip id="bg256" type="bg_passenger" depart="256.00" from="5637963#3" to="-5600517#3"/>
+    <trip id="bg257" type="bg_passenger" depart="257.00" from="-529635547" to="-5613555#2"/>
+    <trip id="bg258" type="bg_passenger" depart="258.00" from="1393336310#0" to="5644000#5"/>
+    <trip id="bg259" type="bg_passenger" depart="259.00" from="1069716895#1" to="1078673133#0"/>
+    <trip id="bg260" type="bg_passenger" depart="260.00" from="-5600785#3" to="-324034731"/>
+    <trip id="bg261" type="bg_passenger" depart="261.00" from="5603931#0" to="1331959083"/>
+    <trip id="bg262" type="bg_passenger" depart="262.00" from="-305224932" to="-1062204075"/>
+    <trip id="bg263" type="bg_passenger" depart="263.00" from="436796115#0" to="5600967#12"/>
+    <trip id="bg264" type="bg_passenger" depart="264.00" from="-1069716890" to="405986159#1"/>
+    <trip id="bg265" type="bg_passenger" depart="265.00" from="436946884#0" to="-5637963#0"/>
+    <trip id="bg266" type="bg_passenger" depart="266.00" from="1055078825" to="436794405#0"/>
+    <trip id="bg267" type="bg_passenger" depart="267.00" from="436795280#0" to="524121799#0"/>
+    <trip id="bg268" type="bg_passenger" depart="268.00" from="-5600785#0" to="405986155#2"/>
+    <trip id="bg269" type="bg_passenger" depart="269.00" from="1462986249#0" to="436796111"/>
+    <trip id="bg270" type="bg_passenger" depart="270.00" from="-1078673129#4" to="-5613555#13"/>
+    <trip id="bg271" type="bg_passenger" depart="271.00" from="-48665391#1" to="1198089523#0"/>
+    <trip id="bg272" type="bg_passenger" depart="272.00" from="436795277#0" to="217279630#0"/>
+    <trip id="bg273" type="bg_passenger" depart="273.00" from="-1078673129#2" to="115812974#3"/>
+    <trip id="bg275" type="bg_passenger" depart="275.00" from="305224934#0" to="-436946887"/>
+    <trip id="bg276" type="bg_passenger" depart="276.00" from="-5664169" to="-115012170#2"/>
+    <trip id="bg277" type="bg_passenger" depart="277.00" from="436946282" to="-1078673133#2"/>
+    <trip id="bg278" type="bg_passenger" depart="278.00" from="136920667" to="436795281#1"/>
+    <trip id="bg279" type="bg_passenger" depart="279.00" from="436946878#0" to="-5637952#0"/>
+    <trip id="bg280" type="bg_passenger" depart="280.00" from="305224935" to="1055078821#0"/>
+    <trip id="bg281" type="bg_passenger" depart="281.00" from="1069097893#0" to="-1069097895#2"/>
+    <trip id="bg282" type="bg_passenger" depart="282.00" from="436946869" to="512612126#0"/>
+    <trip id="bg283" type="bg_passenger" depart="283.00" from="512612128#0" to="-617901678#0"/>
+    <trip id="bg284" type="bg_passenger" depart="284.00" from="1055078824#0" to="-5637931#1"/>
+    <trip id="bg285" type="bg_passenger" depart="285.00" from="305222932#2" to="28887067#6"/>
+    <trip id="bg286" type="bg_passenger" depart="286.00" from="1062204078" to="-326178222#2"/>
+    <trip id="bg287" type="bg_passenger" depart="287.00" from="-115812987#0" to="5619353"/>
+    <trip id="bg288" type="bg_passenger" depart="288.00" from="436945740#0" to="126746183#0"/>
+    <trip id="bg289" type="bg_passenger" depart="289.00" from="5685441#4" to="1078673128"/>
+    <trip id="bg290" type="bg_passenger" depart="290.00" from="437355058#0" to="-115012170#0"/>
+    <trip id="bg291" type="bg_passenger" depart="291.00" from="-436946893#1" to="-305224929#1"/>
+    <trip id="bg292" type="bg_passenger" depart="292.00" from="-1069097891" to="-1069097894#2"/>
+    <trip id="bg293" type="bg_passenger" depart="293.00" from="-136758915#1" to="1393336312#0"/>
+    <trip id="bg294" type="bg_passenger" depart="294.00" from="-115012170#0" to="5644000#0"/>
+    <trip id="bg295" type="bg_passenger" depart="295.00" from="5600967#3" to="436795277#0"/>
+    <trip id="bg296" type="bg_passenger" depart="296.00" from="421762648" to="-324034731"/>
+    <trip id="bg297" type="bg_passenger" depart="297.00" from="-28887067#2" to="1069097894#0"/>
+    <trip id="bg298" type="bg_passenger" depart="298.00" from="117680207" to="1078673128"/>
+    <trip id="bg299" type="bg_passenger" depart="299.00" from="512606812#0" to="-436946888"/>
+</routes>

@@ -1,0 +1,107 @@
+{
+  "p_cage": {
+    "T_seed1_bc": 0.317,
+    "T_seed1_final": 0.383,
+    "T_seed1_initial": 0.467,
+    "T_seed2_bc": 0.367,
+    "T_seed2_final": 0.367,
+    "T_seed2_initial": 0.15,
+    "U_seed1_bc": 0.217,
+    "U_seed1_final": 0.333,
+    "U_seed1_initial": 0.25,
+    "U_seed2_bc": 0.25,
+    "U_seed2_final": 0.5,
+    "U_seed2_initial": 0.183,
+    "cut": 0.733,
+    "individual": 0.4,
+    "random": 0.317
+  },
+  "acquisition": {
+    "T_seed1": {
+      "final_minus_initial": [
+        -0.083,
+        -0.25,
+        0.083
+      ],
+      "passes": false,
+      "final_minus_bc": [
+        0.067,
+        -0.067,
+        0.2
+      ],
+      "final_minus_cut": [
+        -0.35,
+        -0.5,
+        -0.2
+      ]
+    },
+    "T_seed2": {
+      "final_minus_initial": [
+        0.217,
+        0.083,
+        0.35
+      ],
+      "passes": true,
+      "final_minus_bc": [
+        0.0,
+        -0.117,
+        0.117
+      ],
+      "final_minus_cut": [
+        -0.367,
+        -0.5,
+        -0.233
+      ]
+    },
+    "U_seed1": {
+      "final_minus_initial": [
+        0.083,
+        -0.05,
+        0.217
+      ],
+      "passes": false,
+      "final_minus_bc": [
+        0.117,
+        -0.017,
+        0.25
+      ],
+      "final_minus_cut": [
+        -0.4,
+        -0.55,
+        -0.25
+      ]
+    },
+    "U_seed2": {
+      "final_minus_initial": [
+        0.317,
+        0.15,
+        0.467
+      ],
+      "passes": true,
+      "final_minus_bc": [
+        0.25,
+        0.133,
+        0.383
+      ],
+      "final_minus_cut": [
+        -0.233,
+        -0.383,
+        -0.083
+      ]
+    }
+  },
+  "descriptive": {
+    "T_minus_U_seed1": [
+      0.05,
+      -0.067,
+      0.183
+    ],
+    "T_minus_U_seed2": [
+      -0.133,
+      -0.283,
+      0.017
+    ]
+  },
+  "pilot_passes": false,
+  "failed_episodes": 0
+}

@@ -1,0 +1,15 @@
+{
+  "python_version_of_this_recorder": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "runners_resolved": {
+    "uv run python": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/.venv/bin/python3 3.14.6",
+    "uv run pytest": "/Library/Frameworks/Python.framework/Versions/3.10/bin/pytest",
+    "bare python3": "/opt/homebrew/opt/python@3.14/bin/python3.14 3.14.6"
+  },
+  "pytest_is_a_declared_dependency": false,
+  "sumo_process_starts": 0,
+  "sumo_episodes_executed": 0,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false
+}

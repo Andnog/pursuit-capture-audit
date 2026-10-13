@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r02",
+  "created": "2026-09-21",
+  "stage": "W0_REVISION",
+  "revision": "r02",
+  "continues": "20260921_w00_novelty_closure_r01",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_rule_frozen_before_searching": true,
+  "family": "citation chasing on B03, B04, B06",
+  "rationale": "Cheapest open family, and the one most likely to REFUTE: the composite claim is the conjunction of what these three separately establish, so a combining work would cite them.",
+  "discriminating_question_unchanged_from_r01": true,
+  "acceptance_rule": {
+    "REFUTED": "a citing work implements the conjunction",
+    "FAMILY_CLOSED": "forward citations of all three examined at title-and-abstract level, none implementing the conjunction",
+    "FAMILY_PARTIAL": "citations examined for some records only",
+    "FAMILY_OPEN": "no usable citation data obtained"
+  },
+  "does_not_upgrade_composite_claim": "Three other families remain open; the r01 rule requires all five.",
+  "refutation_requires_method_level": "A candidate that appears to implement the conjunction is promoted to method level before being treated as a refutation.",
+  "declared_limit": "Forward-citation coverage depends on what the indexes return. Closing means the reachable citations were screened, not that no citing work exists.",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260923_w05_constructive_replication_r01",
+  "created": "2026-09-23",
+  "stage": "W5",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "continues": "20260922_w05_constructive_on_network_r01",
+  "claim_class": "replication_of_a_transfer_refutation",
+  "acceptance_rule_frozen_before_implementing": true,
+  "questions": {
+    "Q1": "does the refutation replicate across maps and routes",
+    "Q2": "is there ANY route on which the constructive arrival time holds - this bounds the repair"
+  },
+  "tolerance_s": 0.1,
+  "tolerance_unchanged_from": "A-40",
+  "acceptance_rule": {
+    "REFUTATION_REPLICATED": "every route late on every target",
+    "REFUTATION_MIXED": "some routes hold and some do not",
+    "REFUTATION_NOT_REPLICATED": "every route holds",
+    "RUN_FAILED": "too few arrivals to judge"
+  },
+  "arms": {
+    "open_loop": "command the time-indexed profile; comparable with A-40",
+    "closed_loop": "re-plan every step and record the step at which the target becomes infeasible; the verdict is judged on this arm"
+  },
+  "prohibited_and_observed": [
+    "no tolerance widening",
+    "no route or map selected after seeing its error",
+    "no delay margin fitted to the measurements",
+    "no safety checks disabled",
+    "no TEST map"
+  ],
+  "resource_limits_declared": {
+    "sumo_process_starts_permitted": 150,
+    "simulated_seconds_permitted": 30000
+  },
+  "resource_limits_used": {
+    "sumo_process_starts": 116,
+    "simulated_seconds": 14022.3
+  },
+  "headroom_note": "declared in advance because the previous two packages each exceeded their own limit when a first arm needed a second"
+}

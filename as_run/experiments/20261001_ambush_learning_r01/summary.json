@@ -1,0 +1,174 @@
+{
+  "failed": 264,
+  "collisions": 0,
+  "rates": {
+    "ambush_a95": [
+      0.273,
+      0.239,
+      0.308
+    ],
+    "kan_s1_best": [
+      0.277,
+      0.243,
+      0.311
+    ],
+    "mlp_s1_best": [
+      0.277,
+      0.243,
+      0.311
+    ],
+    "pursuit": [
+      0.2,
+      0.17,
+      0.231
+    ],
+    "random_option": [
+      0.231,
+      0.2,
+      0.264
+    ],
+    "rule": [
+      0.277,
+      0.243,
+      0.311
+    ]
+  },
+  "primary": {
+    "mlp": {
+      "learned_minus_rule": [
+        0.0,
+        -0.004,
+        0.004
+      ],
+      "passes": false,
+      "runs": [
+        "mlp_s1_best"
+      ]
+    },
+    "kan": {
+      "learned_minus_rule": [
+        0.0,
+        -0.004,
+        0.004
+      ],
+      "passes": false,
+      "runs": [
+        "kan_s1_best"
+      ]
+    }
+  },
+  "secondary": {
+    "mlp_minus_pursuit": [
+      0.077,
+      0.055,
+      0.1
+    ],
+    "mlp_minus_ambush_a95": [
+      0.004,
+      -0.008,
+      0.016
+    ],
+    "mlp_minus_random_option": [
+      0.046,
+      0.02,
+      0.071
+    ],
+    "mlp_by_cell": {
+      "AVOIDANT_team3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "AVOIDANT_team5": [
+        0.004,
+        0.0,
+        0.011
+      ],
+      "RANDOM_team3": [
+        0.0,
+        -0.011,
+        0.011
+      ],
+      "RANDOM_team5": [
+        -0.004,
+        -0.011,
+        0.0
+      ]
+    },
+    "kan_minus_pursuit": [
+      0.077,
+      0.056,
+      0.1
+    ],
+    "kan_minus_ambush_a95": [
+      0.004,
+      -0.007,
+      0.016
+    ],
+    "kan_minus_random_option": [
+      0.046,
+      0.02,
+      0.071
+    ],
+    "kan_by_cell": {
+      "AVOIDANT_team3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "AVOIDANT_team5": [
+        0.004,
+        0.0,
+        0.011
+      ],
+      "RANDOM_team3": [
+        0.0,
+        -0.011,
+        0.011
+      ],
+      "RANDOM_team5": [
+        -0.004,
+        -0.011,
+        0.0
+      ]
+    },
+    "kan_minus_mlp": [
+      0.0,
+      -0.003,
+      0.003
+    ]
+  },
+  "runs": {
+    "mlp_s1": {
+      "episodes": 2048,
+      "stop_reason": "breaker: no smoothed gain >= min_delta for patience validations",
+      "bc_val": 0.39473684210526316,
+      "best_smoothed": 0.39473684210526316,
+      "vals": [
+        0.39473684210526316,
+        0.4052631578947368,
+        0.4052631578947368,
+        0.4,
+        0.39473684210526316
+      ],
+      "bc_heldout_acc": 0.993
+    },
+    "kan_s1": {
+      "episodes": 2048,
+      "stop_reason": "breaker: no smoothed gain >= min_delta for patience validations",
+      "bc_val": 0.4052631578947368,
+      "best_smoothed": 0.4052631578947368,
+      "vals": [
+        0.4052631578947368,
+        0.3894736842105263,
+        0.3894736842105263,
+        0.3894736842105263,
+        0.4
+      ],
+      "bc_heldout_acc": 0.99
+    }
+  },
+  "rule_val": 0.4105263157894737,
+  "a95_val": 0.3894736842105263,
+  "skip_seeds": true
+}

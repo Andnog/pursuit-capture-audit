@@ -1,0 +1,270 @@
+{"key": "M1|1|adelaide_cbd|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 30, "pairs_same_lane": 59, "targets": 157}
+{"key": "M1|0|adelaide_cbd|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 770}
+{"key": "M1|0|adelaide_cbd|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 242}
+{"key": "M1|0|adelaide_cbd|0|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 205}
+{"key": "M1|1|adelaide_cbd|0|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 115, "pairs_same_lane": 333, "targets": 534}
+{"key": "M1|1|adelaide_cbd|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 175, "pairs_same_lane": 344, "targets": 586}
+{"key": "M1|1|adelaide_cbd|0|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 115, "pairs_same_lane": 334, "targets": 668}
+{"key": "M1|0|adelaide_cbd|0|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 449}
+{"key": "M1|0|adelaide_cbd|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 339}
+{"key": "M1|0|adelaide_cbd|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 258}
+{"key": "M1|1|adelaide_cbd|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 1, "pairs_same_lane": 2, "targets": 260}
+{"key": "M1|0|adelaide_cbd|2|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 233}
+{"key": "M1|1|adelaide_cbd|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 76, "pairs_same_lane": 217, "targets": 380}
+{"key": "M1|0|adelaide_cbd|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 12}
+{"key": "M1|1|adelaide_cbd|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 12}
+{"key": "M1|1|adelaide_cbd|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 196, "pairs_same_lane": 572, "targets": 982}
+{"key": "M1|0|adelaide_cbd|3|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|1|adelaide_cbd|3|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|1|adelaide_cbd|2|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 222, "pairs_same_lane": 658, "targets": 1114}
+{"key": "M1|0|adelaide_cbd|2|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 674}
+{"key": "M1|0|adelaide_cbd|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 442}
+{"key": "M1|1|adelaide_cbd|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 214, "pairs_same_lane": 438, "targets": 880}
+{"key": "M1|0|adelaide_cbd|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 41}
+{"key": "M1|1|adelaide_cbd|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 19, "pairs_same_lane": 19, "targets": 57}
+{"key": "M1|0|adelaide_cbd|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 266}
+{"key": "M1|1|adelaide_cbd|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 241, "pairs_same_lane": 480, "targets": 746}
+{"key": "M1|0|adelaide_cbd|4|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 101}
+{"key": "M1|0|adelaide_cbd|4|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 78}
+{"key": "M1|1|adelaide_cbd|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 52, "pairs_same_lane": 153, "targets": 264}
+{"key": "M1|1|toronto_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 201, "pairs_same_lane": 342, "targets": 885}
+{"key": "M1|0|toronto_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 127}
+{"key": "M1|1|adelaide_cbd|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 6, "pairs_same_lane": 9, "targets": 19}
+{"key": "M1|0|toronto_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 604}
+{"key": "M1|1|toronto_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 115, "pairs_same_lane": 275, "targets": 522}
+{"key": "M1|0|toronto_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 43}
+{"key": "M1|0|toronto_downtown|1|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 302}
+{"key": "M1|1|toronto_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|toronto_downtown|1|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 580}
+{"key": "M1|0|toronto_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|toronto_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 12, "pairs_same_lane": 48, "targets": 79}
+{"key": "M1|1|toronto_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 136, "pairs_same_lane": 535, "targets": 712}
+{"key": "M1|0|toronto_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 709}
+{"key": "M1|0|toronto_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 569}
+{"key": "M1|0|toronto_downtown|3|AVOIDANT|5", "d06": false, "steps": 120, "dup_steps": 0, "pairs_same_lane": 0, "targets": 305}
+{"key": "M1|1|toronto_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 186, "pairs_same_lane": 271, "targets": 616}
+{"key": "M1|0|toronto_downtown|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 15}
+{"key": "M1|1|toronto_downtown|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 12, "pairs_same_lane": 12, "targets": 27}
+{"key": "M1|1|toronto_downtown|2|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 151, "pairs_same_lane": 151, "targets": 477}
+{"key": "M1|0|toronto_downtown|2|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 477}
+{"key": "M1|1|toronto_downtown|3|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 112, "pairs_same_lane": 334, "targets": 509}
+{"key": "M1|0|toronto_downtown|3|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 27}
+{"key": "M1|1|toronto_downtown|3|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 17, "pairs_same_lane": 17, "targets": 44}
+{"key": "M1|1|toronto_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 36, "pairs_same_lane": 60, "targets": 172}
+{"key": "M1|0|toronto_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 138}
+{"key": "M1|0|toronto_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 45}
+{"key": "M1|0|toronto_downtown|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 31}
+{"key": "M1|1|toronto_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 48, "pairs_same_lane": 162, "targets": 216}
+{"key": "M1|1|toronto_downtown|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 10, "pairs_same_lane": 10, "targets": 31}
+{"key": "M1|0|toronto_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 293}
+{"key": "M1|1|toronto_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 70, "pairs_same_lane": 210, "targets": 293}
+{"key": "M1|1|washington_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 10, "pairs_same_lane": 30, "targets": 108}
+{"key": "M1|0|washington_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 86}
+{"key": "M1|0|washington_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 52}
+{"key": "M1|1|washington_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 39}
+{"key": "M1|0|washington_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 39}
+{"key": "M1|1|washington_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 9, "pairs_same_lane": 9, "targets": 52}
+{"key": "M1|0|washington_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 171}
+{"key": "M1|1|washington_downtown|1|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 42, "pairs_same_lane": 96, "targets": 267}
+{"key": "M1|0|washington_downtown|2|RANDOM|5", "d06": false, "steps": 154, "dup_steps": 0, "pairs_same_lane": 0, "targets": 42}
+{"key": "M1|1|washington_downtown|2|RANDOM|5", "d06": false, "steps": 154, "dup_steps": 0, "pairs_same_lane": 0, "targets": 42}
+{"key": "M1|1|washington_downtown|1|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 33, "pairs_same_lane": 59, "targets": 346}
+{"key": "M1|0|washington_downtown|1|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 467}
+{"key": "M1|0|washington_downtown|1|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 208}
+{"key": "M1|0|washington_downtown|2|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 358}
+{"key": "M1|1|washington_downtown|1|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 208}
+{"key": "M1|1|washington_downtown|2|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 286, "pairs_same_lane": 736, "targets": 1223}
+{"key": "M1|0|washington_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 10}
+{"key": "M1|0|washington_downtown|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 522}
+{"key": "M1|1|washington_downtown|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 204, "pairs_same_lane": 234, "targets": 726}
+{"key": "M1|1|washington_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 10}
+{"key": "M1|0|washington_downtown|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 34}
+{"key": "M1|1|washington_downtown|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 11, "pairs_same_lane": 25, "targets": 48}
+{"key": "M1|0|washington_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 14}
+{"key": "M1|1|washington_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 12, "pairs_same_lane": 26, "targets": 38}
+{"key": "M1|1|seattle_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 5, "pairs_same_lane": 10, "targets": 41}
+{"key": "M1|0|seattle_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 32}
+{"key": "M1|0|washington_downtown|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 1072}
+{"key": "M1|1|washington_downtown|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 286, "pairs_same_lane": 785, "targets": 1321}
+{"key": "M1|0|washington_downtown|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 161}
+{"key": "M1|0|washington_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 24}
+{"key": "M1|1|washington_downtown|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 70, "pairs_same_lane": 163, "targets": 267}
+{"key": "M1|1|washington_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 12, "pairs_same_lane": 24, "targets": 36}
+{"key": "M1|1|seattle_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 169, "pairs_same_lane": 169, "targets": 522}
+{"key": "M1|0|seattle_downtown|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 353}
+{"key": "M1|0|seattle_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 12}
+{"key": "M1|1|seattle_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 3, "pairs_same_lane": 9, "targets": 21}
+{"key": "M1|0|seattle_downtown|1|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 685}
+{"key": "M1|0|seattle_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 181}
+{"key": "M1|1|seattle_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 61, "pairs_same_lane": 244, "targets": 305}
+{"key": "M1|1|seattle_downtown|1|RANDOM|5", "d06": false, "steps": 293, "dup_steps": 50, "pairs_same_lane": 101, "targets": 234}
+{"key": "M1|0|seattle_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 3}
+{"key": "M1|1|seattle_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 3, "pairs_same_lane": 3, "targets": 6}
+{"key": "M1|0|seattle_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 215}
+{"key": "M1|1|seattle_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 43, "pairs_same_lane": 119, "targets": 303}
+{"key": "M1|0|seattle_downtown|3|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|1|seattle_downtown|3|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|1|seattle_downtown|2|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 130}
+{"key": "M1|0|seattle_downtown|2|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 130}
+{"key": "M1|0|seattle_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 2}
+{"key": "M1|1|seattle_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 2}
+{"key": "M1|1|seattle_downtown|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 232, "pairs_same_lane": 434, "targets": 1003}
+{"key": "M1|0|seattle_downtown|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 888}
+{"key": "M1|1|seattle_downtown|4|RANDOM|5", "d06": false, "steps": 45, "dup_steps": 2, "pairs_same_lane": 2, "targets": 4}
+{"key": "M1|0|seattle_downtown|4|RANDOM|5", "d06": false, "steps": 45, "dup_steps": 0, "pairs_same_lane": 0, "targets": 2}
+{"key": "M1|0|seattle_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 172}
+{"key": "M1|1|seattle_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 97, "pairs_same_lane": 97, "targets": 194}
+{"key": "M1|1|seattle_downtown|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 173, "pairs_same_lane": 173, "targets": 1051}
+{"key": "M1|0|seattle_downtown|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 878}
+{"key": "M1|0|seattle_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 230}
+{"key": "M1|1|seattle_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 81, "pairs_same_lane": 139, "targets": 360}
+{"key": "M1|1|phoenix_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 256, "pairs_same_lane": 1024, "targets": 1280}
+{"key": "M1|0|phoenix_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 986}
+{"key": "M1|0|phoenix_downtown|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 215}
+{"key": "M1|1|phoenix_downtown|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 196, "pairs_same_lane": 340, "targets": 555}
+{"key": "M1|0|phoenix_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 412}
+{"key": "M1|1|phoenix_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 83, "pairs_same_lane": 332, "targets": 423}
+{"key": "M1|0|phoenix_downtown|1|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 500}
+{"key": "M1|1|phoenix_downtown|1|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 500}
+{"key": "M1|0|phoenix_downtown|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 39}
+{"key": "M1|1|phoenix_downtown|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 39, "pairs_same_lane": 59, "targets": 98}
+{"key": "M1|0|phoenix_downtown|1|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 865}
+{"key": "M1|1|phoenix_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 25, "pairs_same_lane": 100, "targets": 130}
+{"key": "M1|1|phoenix_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 54, "pairs_same_lane": 82, "targets": 226}
+{"key": "M1|0|phoenix_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 176}
+{"key": "M1|0|phoenix_downtown|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 345}
+{"key": "M1|1|phoenix_downtown|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 289, "pairs_same_lane": 1042, "targets": 1356}
+{"key": "M1|1|phoenix_downtown|3|GOAL_DIRECTED|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|0|phoenix_downtown|3|GOAL_DIRECTED|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M1|0|phoenix_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 164}
+{"key": "M1|1|phoenix_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 109, "pairs_same_lane": 109, "targets": 218}
+{"key": "M1|0|phoenix_downtown|3|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 19}
+{"key": "M1|1|phoenix_downtown|3|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 19}
+{"key": "M1|1|phoenix_downtown|3|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 142, "pairs_same_lane": 142, "targets": 637}
+{"key": "M1|0|phoenix_downtown|3|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 495}
+{"key": "M1|0|phoenix_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 15}
+{"key": "M1|1|phoenix_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 15}
+{"key": "M1|0|phoenix_downtown|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 436}
+{"key": "M1|1|phoenix_downtown|4|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 38, "pairs_same_lane": 60, "targets": 116}
+{"key": "M1|0|phoenix_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 363}
+{"key": "M1|1|phoenix_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 121, "pairs_same_lane": 484, "targets": 605}
+{"key": "M1|1|portland_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 3, "pairs_same_lane": 6, "targets": 34}
+{"key": "M1|0|portland_downtown|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 28}
+{"key": "M1|0|portland_downtown|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 11}
+{"key": "M1|1|portland_downtown|0|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 3, "pairs_same_lane": 3, "targets": 11}
+{"key": "M1|0|portland_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 206}
+{"key": "M1|1|portland_downtown|0|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 79, "pairs_same_lane": 304, "targets": 384}
+{"key": "M1|0|portland_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 94}
+{"key": "M1|1|portland_downtown|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 49, "pairs_same_lane": 49, "targets": 142}
+{"key": "M1|1|portland_downtown|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 10}
+{"key": "M1|0|portland_downtown|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 10}
+{"key": "M1|0|portland_downtown|2|RANDOM|5", "d06": false, "steps": 155, "dup_steps": 0, "pairs_same_lane": 0, "targets": 230}
+{"key": "M1|1|portland_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 54}
+{"key": "M1|0|portland_downtown|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 54}
+{"key": "M1|0|portland_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 311}
+{"key": "M1|1|portland_downtown|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 234, "pairs_same_lane": 234, "targets": 527}
+{"key": "M1|1|portland_downtown|2|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 60, "pairs_same_lane": 79, "targets": 229}
+{"key": "M1|0|portland_downtown|3|AVOIDANT|5", "d06": false, "steps": 26, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|portland_downtown|3|AVOIDANT|5", "d06": false, "steps": 26, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|0|portland_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 25}
+{"key": "M1|1|portland_downtown|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 25}
+{"key": "M1|0|portland_downtown|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|portland_downtown|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|0|portland_downtown|4|RANDOM|5", "d06": false, "steps": 213, "dup_steps": 0, "pairs_same_lane": 0, "targets": 45}
+{"key": "M1|0|portland_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 30}
+{"key": "M1|1|portland_downtown|4|RANDOM|5", "d06": false, "steps": 213, "dup_steps": 0, "pairs_same_lane": 0, "targets": 45}
+{"key": "M1|0|portland_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 150}
+{"key": "M1|1|portland_downtown|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 9, "pairs_same_lane": 18, "targets": 44}
+{"key": "M1|1|portland_downtown|4|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 150}
+{"key": "M1|0|portland_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 31}
+{"key": "M1|1|portland_downtown|4|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 31}
+{"key": "M1|1|sapporo_grid|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 65, "pairs_same_lane": 185, "targets": 369}
+{"key": "M1|0|sapporo_grid|0|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 390}
+{"key": "M1|0|sapporo_grid|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 163}
+{"key": "M1|0|sapporo_grid|0|GOAL_DIRECTED|5", "d06": false, "steps": 255, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|sapporo_grid|0|GOAL_DIRECTED|5", "d06": false, "steps": 255, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|sapporo_grid|0|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 114, "pairs_same_lane": 312, "targets": 474}
+{"key": "M1|0|sapporo_grid|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 132}
+{"key": "M1|1|sapporo_grid|1|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 19, "pairs_same_lane": 19, "targets": 132}
+{"key": "M1|1|sapporo_grid|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 18, "pairs_same_lane": 30, "targets": 207}
+{"key": "M1|0|sapporo_grid|1|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 177}
+{"key": "M1|1|sapporo_grid|1|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 96, "pairs_same_lane": 286, "targets": 435}
+{"key": "M1|0|sapporo_grid|1|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 212}
+{"key": "M1|0|sapporo_grid|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|sapporo_grid|2|AVOIDANT|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|0|sapporo_grid|2|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 211}
+{"key": "M1|1|sapporo_grid|2|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 52, "pairs_same_lane": 104, "targets": 251}
+{"key": "M1|0|sapporo_grid|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|1|sapporo_grid|2|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 0}
+{"key": "M1|0|sapporo_grid|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 231}
+{"key": "M1|1|sapporo_grid|3|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 215, "pairs_same_lane": 395, "targets": 949}
+{"key": "M1|1|sapporo_grid|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 121, "pairs_same_lane": 279, "targets": 482}
+{"key": "M1|0|sapporo_grid|3|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 529}
+{"key": "M1|0|sapporo_grid|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 179}
+{"key": "M1|1|sapporo_grid|3|GOAL_DIRECTED|5", "d06": false, "steps": 301, "dup_steps": 212, "pairs_same_lane": 540, "targets": 968}
+{"key": "M1|0|sapporo_grid|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 958}
+{"key": "M1|1|sapporo_grid|4|AVOIDANT|5", "d06": true, "steps": 301, "dup_steps": 185, "pairs_same_lane": 370, "targets": 958}
+{"key": "M1|0|sapporo_grid|4|RANDOM|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 56}
+{"key": "M1|1|sapporo_grid|4|RANDOM|5", "d06": false, "steps": 301, "dup_steps": 70, "pairs_same_lane": 218, "targets": 304}
+{"key": "M1|1|sapporo_grid|4|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 150, "pairs_same_lane": 297, "targets": 900}
+{"key": "M1|0|sapporo_grid|4|GOAL_DIRECTED|5", "d06": true, "steps": 301, "dup_steps": 0, "pairs_same_lane": 0, "targets": 749}
+{"key": "M2|test|plus_opt|adelaide_cbd|3|9503|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M2|test|pursuit|adelaide_cbd|0|9500|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|adelaide_cbd|13|9513|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|adelaide_cbd|5|9505|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 21, "checked": 21}}
+{"key": "M2|test|plus_opt|adelaide_cbd|10|9510|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 9, "checked": 15}}
+{"key": "M2|test|plus_opt|adelaide_cbd|1|109501|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 211, "checked": 211}}
+{"key": "M2|test|plus_opt|adelaide_cbd|15|9515|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|adelaide_cbd|8|9508|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 8, "checked": 8}}
+{"key": "M2|test|plus_opt|adelaide_cbd|18|9518|RANDOM|5", "failed": "ValueError: scenario could not place the team"}
+{"key": "M2|test|plus_opt|adelaide_cbd|6|109506|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 10, "checked": 10}}
+{"key": "M2|test|plus_opt|adelaide_cbd|16|109516|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 11, "checked": 11}}
+{"key": "M2|test|plus_opt|adelaide_cbd|11|109511|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 347, "checked": 347}}
+{"key": "M2|test|plus_opt|toronto_downtown|0|9500|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 7, "checked": 10}}
+{"key": "M2|test|plus_opt|toronto_downtown|5|9505|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 14, "checked": 20}}
+{"key": "M2|test|plus_opt|toronto_downtown|10|9510|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 2, "checked": 2}}
+{"key": "M2|test|plus_opt|toronto_downtown|3|9503|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 76, "checked": 76}}
+{"key": "M2|test|plus_opt|toronto_downtown|1|109501|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 64, "checked": 71}}
+{"key": "M2|test|plus_opt|toronto_downtown|8|9508|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 26, "checked": 26}}
+{"key": "M2|test|plus_opt|toronto_downtown|6|109506|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 27, "checked": 27}}
+{"key": "M2|test|plus_opt|toronto_downtown|11|109511|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 9, "checked": 15}}
+{"key": "M2|test|plus_opt|toronto_downtown|13|9513|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 7, "checked": 7}}
+{"key": "M2|test|plus_opt|toronto_downtown|15|9515|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 44, "checked": 44}}
+{"key": "M2|test|plus_opt|toronto_downtown|18|9518|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 16, "checked": 21}}
+{"key": "M2|test|plus_opt|washington_downtown|0|9500|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|toronto_downtown|16|109516|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 5, "checked": 5}}
+{"key": "M2|test|plus_opt|washington_downtown|5|9505|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 14, "checked": 14}}
+{"key": "M2|test|plus_opt|washington_downtown|3|9503|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 2, "checked": 2}}
+{"key": "M2|test|plus_opt|washington_downtown|1|109501|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 510, "checked": 510}}
+{"key": "M2|test|plus_opt|washington_downtown|11|109511|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|washington_downtown|8|9508|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|washington_downtown|10|9510|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 6, "checked": 15}}
+{"key": "M2|test|plus_opt|washington_downtown|13|9513|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 18, "checked": 18}}
+{"key": "M2|test|plus_opt|washington_downtown|6|109506|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 284, "checked": 284}}
+{"key": "M2|test|plus_opt|washington_downtown|15|9515|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|0|9500|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|6|109506|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 7, "checked": 48}}
+{"key": "M2|test|plus_opt|seattle_downtown|1|109501|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|5|9505|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 22, "checked": 22}}
+{"key": "M2|test|plus_opt|washington_downtown|18|9518|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|3|9503|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 16, "checked": 16}}
+{"key": "M2|test|plus_opt|seattle_downtown|10|9510|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|washington_downtown|16|109516|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 26, "checked": 26}}
+{"key": "M2|test|plus_opt|seattle_downtown|8|9508|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|11|109511|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 3, "checked": 3}}
+{"key": "M2|test|plus_opt|seattle_downtown|15|9515|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 6, "checked": 6}}
+{"key": "M2|test|plus_opt|phoenix_downtown|0|9500|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 70, "checked": 130}}
+{"key": "M2|test|plus_opt|seattle_downtown|13|9513|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 29, "checked": 29}}
+{"key": "M2|test|plus_opt|seattle_downtown|18|9518|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|seattle_downtown|16|109516|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 21, "checked": 40}}
+{"key": "M2|test|plus_opt|phoenix_downtown|3|9503|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 15, "checked": 15}}
+{"key": "M2|test|plus_opt|phoenix_downtown|1|109501|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 54, "checked": 54}}
+{"key": "M2|test|plus_opt|phoenix_downtown|5|9505|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 89, "checked": 112}}
+{"key": "M2|test|plus_opt|phoenix_downtown|8|9508|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 13, "checked": 136}}
+{"key": "M2|test|plus_opt|phoenix_downtown|10|9510|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 20, "checked": 20}}
+{"key": "M2|test|plus_opt|phoenix_downtown|6|109506|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 46, "checked": 46}}
+{"key": "M2|test|plus_opt|phoenix_downtown|15|9515|AVOIDANT|3", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|phoenix_downtown|11|109511|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 203, "checked": 203}}
+{"key": "M2|test|plus_opt|phoenix_downtown|13|9513|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 15, "checked": 15}}
+{"key": "M2|test|plus_opt|phoenix_downtown|18|9518|RANDOM|5", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 0, "checked": 0}}
+{"key": "M2|test|plus_opt|phoenix_downtown|16|109516|AVOIDANT|7", "identical_traces": true, "first_difference_s": null, "same_outcome": true, "dispatch_events": {"legacy": 424, "checked": 424}}

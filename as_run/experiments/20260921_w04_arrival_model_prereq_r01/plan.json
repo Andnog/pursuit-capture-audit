@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_arrival_model_prereq_r01",
+  "created": "2026-09-21",
+  "stage": "W4_PREREQUISITE",
+  "stage_note": "Master plan section 6 requires model validation BEFORE W4. This is not W4 itself: the offline constructions additionally require D08 and the D06 freeze.",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_criteria_frozen_before_examining_diagnostic_set": true,
+  "criteria": {
+    "A1_lower_bound_soundness": {"threshold": "violations == 0", "tolerance_m": 0.05},
+    "A2_upper_bound_existence": {"threshold": "certified bound present on >= 99% of covered transitions"},
+    "A3_coverage": {"threshold": "reported; < 0.90 recorded as inadequate"},
+    "A4_lane_change_containment": {"threshold": "reported; leakage into a covered prediction is a soundness failure"},
+    "A5_braking_containment": {"threshold": "reported"}
+  },
+  "gate_rule": {
+    "UNDER_APPROXIMATING": "A1 and A2 hold and coverage >= 0.90",
+    "OVER_APPROXIMATING": "A1 holds and A2 fails",
+    "PREDICTION_ONLY": "A1 fails",
+    "declared_consequence": "OVER_APPROXIMATING or PREDICTION_ONLY means no joint opportunity can ever be SUPPORTED under Rule A from such a model."
+  },
+  "diagnostic_set": {
+    "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_28/corrected_transitions.jsonl",
+    "access": "READ_ONLY",
+    "records": 5980,
+    "limit": "Historical traces can reveal limitations but cannot certify a changed model or domain."
+  },
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0,
+    "w4_cpu_hour_cap_consumed": false
+  },
+  "commands": {
+    "run": "uv run python scripts/run_arrival_diagnostic.py --package experiments/20260921_w04_arrival_model_prereq_r01",
+    "tests": "uv run python -m unittest discover -s tests -t tests",
+    "verify": "python3 scripts/verify_artifacts.py"
+  }
+}

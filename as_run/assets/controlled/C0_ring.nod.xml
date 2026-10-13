@@ -1,0 +1,14 @@
+<nodes>
+  <node id="r0" x="190.99" y="0.00" type="priority"/>
+  <node id="r1" x="165.40" y="95.49" type="priority"/>
+  <node id="r2" x="95.49" y="165.40" type="priority"/>
+  <node id="r3" x="0.00" y="190.99" type="priority"/>
+  <node id="r4" x="-95.49" y="165.40" type="priority"/>
+  <node id="r5" x="-165.40" y="95.49" type="priority"/>
+  <node id="r6" x="-190.99" y="0.00" type="priority"/>
+  <node id="r7" x="-165.40" y="-95.49" type="priority"/>
+  <node id="r8" x="-95.49" y="-165.40" type="priority"/>
+  <node id="r9" x="-0.00" y="-190.99" type="priority"/>
+  <node id="r10" x="95.49" y="-165.40" type="priority"/>
+  <node id="r11" x="165.40" y="-95.49" type="priority"/>
+</nodes>

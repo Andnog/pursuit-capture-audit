@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "contract_version": "task_contract_v1",
+  "stage": "W2",
+  "date": "2026-09-21",
+  "status": "PROPOSED_PENDING_RESEARCH_LEAD_FREEZE",
+  "domain_config": "configs/domain_v1.json",
+  "authoritative_source": "configs/domain_v1.json — the code reads the configuration, never TASK_CONTRACT_EN.md",
+  "schemas": {
+    "public_observation": "contracts/public_observation.schema.json",
+    "action": "contracts/action.schema.json",
+    "opportunity": "contracts/opportunity.schema.json",
+    "episode_result": "contracts/episode_result.schema.json"
+  },
+  "validation_layers": [
+    {"layer": "schema", "rejects": "missing critical fields, wrong types, out-of-range values, unknown extra keys", "engine": "jsonschema Draft 2020-12", "closed_schemas": true},
+    {"layer": "invariants", "rejects": "structurally valid records that are scientifically wrong", "engine": "src/joint_interception/domain/contracts.py", "note": "JSON Schema cannot express these; each corresponds to a way the primary endpoint could be inflated or a failure erased"}
+  ],
+  "semantic_invariants": [
+    "Z=1 requires Y=1",
+    "Y=0 requires Z=0",
+    "Z=1 requires audit_coverage=1.0; an unresolved required audit gives Z=UNKNOWN, never 1",
+    "a capture endpoint_cause requires Y=1, and Y=1 requires a capture endpoint_cause",
+    "SAFETY_FAILURE or physical_validity=FAIL cannot coincide with Y=1",
+    "INTEGRITY_FAILURE_INCOMPLETE_TRACE requires Y=UNKNOWN",
+    "NOT_EXECUTED and CANCELLED require Y=UNKNOWN and Z=UNKNOWN and remain in the denominator",
+    "Y=1 requires endpoint_time_s, which must not exceed the horizon",
+    "POSITIVE_ACROSS_FAMILY requires audit_coverage=1.0"
+  ],
+  "implementation_status": {
+    "schemas": "IMPLEMENTED_AND_TESTED",
+    "semantic_invariants": "IMPLEMENTED_AND_TESTED",
+    "capture_judge": "IMPLEMENTED_AND_TESTED",
+    "body_geometry": "IMPLEMENTED_AND_TESTED",
+    "safety_admission": "IMPLEMENTED_AND_TESTED_AS_LOCAL_GUARD_ONLY",
+    "observation_builder": "IMPLEMENTED_AND_TESTED",
+    "action_menu_and_mask": "IMPLEMENTED_AND_TESTED",
+    "simulator_adapter": "NOT_IMPLEMENTED_W3",
+    "evader_policy": "NOT_IMPLEMENTED_D08_UNRESOLVED",
+    "candidate_generator_over_real_topology": "NOT_IMPLEMENTED_W3",
+    "learner": "NOT_IMPLEMENTED_W6"
+  },
+  "freeze_requirements": {
+    "D06_capture_parameters": "Research lead; before W4",
+    "D07_dynamics_observation_actions": "Implementer; W3 integration, freeze before W4",
+    "D08_evader_policy": "Research lead; before W4",
+    "D10_commitment_values": "Implementer; before evaluated outcomes"
+  },
+  "does_not_establish": [
+    "independently validated Ackermann vehicle dynamics",
+    "a formally synthesised safety shield",
+    "physical feasibility, runtime feasibility, assistance, learning, benefit, transfer or novelty"
+  ]
+}

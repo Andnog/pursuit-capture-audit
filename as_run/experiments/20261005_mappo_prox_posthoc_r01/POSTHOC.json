@@ -1,0 +1,71 @@
+{
+  "status": "post hoc; not registered",
+  "source": "experiments/20261005_mappo_prox_r01/results.jsonl",
+  "contrasts": {
+    "d06:mappo_oc_minus_planner_c215": {
+      "families": 273,
+      "family_95": [
+        0.0433,
+        0.0159,
+        0.0708
+      ],
+      "city_family_95": [
+        0.0433,
+        0.0006,
+        0.0915
+      ]
+    },
+    "d06:planner_c215_minus_pursuit": {
+      "families": 273,
+      "family_95": [
+        0.1233,
+        0.0867,
+        0.1593
+      ],
+      "city_family_95": [
+        0.1233,
+        0.0745,
+        0.1697
+      ]
+    },
+    "prox_5m:planner_c215_minus_pursuit": {
+      "families": 273,
+      "family_95": [
+        -0.0134,
+        -0.025,
+        -0.0043
+      ],
+      "city_family_95": [
+        -0.0134,
+        -0.0286,
+        -0.0025
+      ]
+    },
+    "d06:proxlast_mlp_s1_minus_pursuit": {
+      "families": 273,
+      "family_95": [
+        0.0031,
+        -0.0092,
+        0.0147
+      ],
+      "city_family_95": [
+        0.0031,
+        -0.0145,
+        0.0221
+      ]
+    },
+    "d06:proxlast_mlp_s2_minus_pursuit": {
+      "families": 273,
+      "family_95": [
+        0.0067,
+        -0.0049,
+        0.0183
+      ],
+      "city_family_95": [
+        0.0067,
+        -0.008,
+        0.0231
+      ]
+    }
+  }
+}

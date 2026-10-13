@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w03_evader_r01",
+  "created": "2026-09-21",
+  "stage": "W3_COMPLETION",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "completes": "W3 deviation D-14: simulator/evader.py was withheld because D08 was unresolved",
+  "unblocked_by": "D08 resolved and frozen 2026-09-21",
+  "checks": {
+    "E1": "determinism",
+    "E2": "keyed not sequential randomness",
+    "E3": "levels differ in difficulty",
+    "E4": "decision record supports the D06 dead-end rule",
+    "E5": "information boundary",
+    "E6": "contract agreement with configs/domain_v1.json"
+  },
+  "gate_rule": "SUPPORTED only if all six pass, the full suite passes on both interpreters, and lint is clean",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  },
+  "explicitly_not_established": [
+    "that any of this runs against a real network",
+    "physical feasibility, assistance, learning, benefit or transfer"
+  ],
+  "conservative_choice": "was_forced_into_dead_end credits the pursuers only when EVERY alternative at the entry decision was also a dead end; it cannot over-credit"
+}

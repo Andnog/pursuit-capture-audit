@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://doctoral-joint-interception/contracts/action.schema.json",
+  "title": "Public action with validity mask",
+  "description": "One proposed action for one vehicle. The PROPOSED action and the EXECUTED command are logged separately, because a guard may clamp the second without changing the first.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "vehicle_id", "action_id", "action_code", "valid", "parameters"],
+  "properties": {
+    "contract_version": {"type": "string", "minLength": 1},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "action_id": {"type": "string", "enum": ["HOLD_LANE", "CRUISE", "SLOW", "STOP_AT", "CHANGE_LANE", "TURN_AT_NEXT_JUNCTION"]},
+    "action_code": {"type": "integer", "minimum": 0, "maximum": 5},
+    "valid": {"type": "boolean"},
+    "invalid_reason": {"type": ["string", "null"]},
+    "parameters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "target_speed_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+        "lane_id": {"type": "string", "minLength": 1},
+        "lane_position_m": {"type": "number", "minimum": 0},
+        "direction": {"type": "string", "enum": ["left", "right"]},
+        "connection_id": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

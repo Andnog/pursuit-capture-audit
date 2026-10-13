@@ -1,0 +1,24 @@
+{"stage": "demos", "episodes": 294, "cut_p_cage": 0.694, "wall": 1790722438.8}
+{"stage": "eval", "policy": "cut", "p_cage": 0.733, "wall": 1790722458.1}
+{"stage": "eval", "policy": "individual", "p_cage": 0.4, "wall": 1790722481.9}
+{"stage": "eval", "policy": "random", "p_cage": 0.317, "wall": 1790722510.9}
+{"stage": "bc", "arm": "T", "epoch": 0, "nll": 3.0246, "wall": 1790722535.3}
+{"stage": "bc", "arm": "T", "epoch": 1, "nll": 2.722, "wall": 1790722556.9}
+{"stage": "bc", "arm": "T", "epoch": 2, "nll": 2.6382, "wall": 1790722577.7}
+{"stage": "bc", "arm": "T", "epoch": 3, "nll": 2.6041, "wall": 1790722598.1}
+{"stage": "bc", "arm": "T", "epoch": 4, "nll": 2.5663, "wall": 1790722618.7}
+{"stage": "bc", "arm": "T", "epoch": 5, "nll": 2.5302, "wall": 1790722639.2}
+{"stage": "bc", "arm": "T", "epoch": 6, "nll": 2.5078, "wall": 1790722659.8}
+{"stage": "bc", "arm": "T", "epoch": 7, "nll": 2.4895, "wall": 1790722680.2}
+{"stage": "bc", "arm": "T", "epoch": 8, "nll": 2.476, "wall": 1790722700.6}
+{"stage": "bc", "arm": "T", "epoch": 9, "nll": 2.4626, "wall": 1790722720.8}
+{"stage": "bc", "arm": "T", "epoch": 10, "nll": 2.4458, "wall": 1790722741.0}
+{"stage": "bc", "arm": "T", "epoch": 11, "nll": 2.4313, "wall": 1790722761.2}
+{"stage": "bc", "arm": "T", "epoch": 12, "nll": 2.4204, "wall": 1790722781.5}
+{"stage": "bc", "arm": "T", "epoch": 13, "nll": 2.4098, "wall": 1790722803.5}
+{"stage": "bc", "arm": "T", "epoch": 14, "nll": 2.3993, "wall": 1790722824.8}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 1, "episodes": 64, "p_cage": 0.397, "mean_reward": 2.144, "policy_loss": -0.0367, "value_loss": 1.0432, "entropy": 2.5105, "wall": 1790722883.4}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 2, "episodes": 128, "p_cage": 0.29, "mean_reward": 1.461, "policy_loss": 0.0218, "value_loss": 0.9774, "entropy": 2.2789, "wall": 1790722946.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 3, "episodes": 192, "p_cage": 0.349, "mean_reward": 1.946, "policy_loss": 0.1718, "value_loss": 0.0253, "entropy": 3.2504, "wall": 1790723012.3}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 4, "episodes": 256, "p_cage": 0.29, "mean_reward": 1.503, "policy_loss": -0.2306, "value_loss": 0.8708, "entropy": 2.9068, "wall": 1790723076.2}
+{"stage": "ppo", "arm": "T", "seed": 1, "iteration": 5, "episodes": 320, "p_cage": 0.286, "mean_reward": 1.736, "policy_loss": 0.0047, "value_loss": 0.8076, "entropy": 2.5634, "wall": 1790723140.6}

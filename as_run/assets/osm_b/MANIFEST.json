@@ -1,0 +1,204 @@
+{
+ "amendment": "A-138",
+ "built_but_not_used": [
+  "brisbane_cbd"
+ ],
+ "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0",
+ "netconvert": [
+  "--proj.utm",
+  "true",
+  "--geometry.remove",
+  "true",
+  "--tls.discard-loaded",
+  "true",
+  "--tls.discard-simple",
+  "true",
+  "--ramps.guess",
+  "false",
+  "--keep-edges.postload",
+  "true",
+  "--remove-edges.isolated",
+  "true",
+  "--no-internal-links",
+  "false",
+  "--junctions.join",
+  "true"
+ ],
+ "typemap": "SUMO 1.21.0 data/typemap/osmNetconvert.typ.xml",
+ "accepted": [
+  "denver_downtown",
+  "vancouver_downtown",
+  "barcelona_eixample",
+  "buenos_aires_microcentro"
+ ],
+ "cities": [
+  {
+   "city": "denver_downtown",
+   "centre": [
+    39.7475,
+    -104.994
+   ],
+   "bbox_swne": [
+    39.736648,
+    -105.00802,
+    39.758352,
+    -104.97998
+   ],
+   "osm": {
+    "file": "assets/osm_b/raw/denver_downtown.osm",
+    "bytes": 1195935,
+    "sha256": "ac5841a98734a0b9c2a645165b8937e5bdf9d41e9aa8c2973e6c01146005b214",
+    "downloaded_utc": "2026-10-06T03:10:12.258878+00:00",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:xml][timeout:180];(way[\"highway\"~\"^(primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|residential|unclassified)$\"](39.736648,-105.00802,39.758352,-104.97998););(._;>;);out body;"
+   },
+   "net": {
+    "file": "assets/osm_b/denver_downtown.net.xml",
+    "returncode": 0,
+    "warnings": 57,
+    "errors": [],
+    "bytes": 5050147,
+    "sha256": "52a40561406bb995a92bb88484f01334732ba187d33b426f4da01d36d3a0420b"
+   },
+   "usability": {
+    "passenger_edges": 1367,
+    "passenger_lanes": 2721,
+    "junctions": 674,
+    "dead_end_fraction": 0.011704,
+    "multi_lane_fraction": 0.523775
+   },
+   "placement": {
+    "AVOIDANT": 18,
+    "RANDOM": 20
+   },
+   "decision": "accepted",
+   "reasons": []
+  },
+  {
+   "city": "vancouver_downtown",
+   "centre": [
+    49.2827,
+    -123.1207
+   ],
+   "bbox_swne": [
+    49.271848,
+    -123.137225,
+    49.293552,
+    -123.104175
+   ],
+   "osm": {
+    "file": "assets/osm_b/raw/vancouver_downtown.osm",
+    "bytes": 1160214,
+    "sha256": "3977af969ae1f0a3cfb61dd5d22579ae65747c0da49290c5c1199d3f2598a474",
+    "downloaded_utc": "2026-10-06T03:10:32.817723+00:00",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:xml][timeout:180];(way[\"highway\"~\"^(primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|residential|unclassified)$\"](49.271848,-123.137225,49.293552,-123.104175););(._;>;);out body;"
+   },
+   "net": {
+    "file": "assets/osm_b/vancouver_downtown.net.xml",
+    "returncode": 0,
+    "warnings": 239,
+    "errors": [],
+    "bytes": 3428203,
+    "sha256": "f2790040677ce710f1239b7fa58db96271df4a91ed43998b0c513831e22da779"
+   },
+   "usability": {
+    "passenger_edges": 1059,
+    "passenger_lanes": 1699,
+    "junctions": 471,
+    "dead_end_fraction": 0.007554,
+    "multi_lane_fraction": 0.409821
+   },
+   "placement": {
+    "AVOIDANT": 20,
+    "RANDOM": 20
+   },
+   "decision": "accepted",
+   "reasons": []
+  },
+  {
+   "city": "barcelona_eixample",
+   "centre": [
+    41.3917,
+    2.165
+   ],
+   "bbox_swne": [
+    41.380848,
+    2.150631,
+    41.402552,
+    2.179369
+   ],
+   "osm": {
+    "file": "assets/osm_b/raw/barcelona_eixample.osm",
+    "bytes": 1608056,
+    "sha256": "bc691c240fad3eb4478b3d5d33f1085bebb2f2385137a1850b8931715432d092",
+    "downloaded_utc": "2026-10-06T03:15:47.088061+00:00",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:xml][timeout:180];(way[\"highway\"~\"^(primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|residential|unclassified)$\"](41.380848,2.150631,41.402552,2.179369););(._;>;);out body;"
+   },
+   "net": {
+    "file": "assets/osm_b/barcelona_eixample.net.xml",
+    "returncode": 0,
+    "warnings": 54,
+    "errors": [],
+    "bytes": 3196928,
+    "sha256": "e9b4c4eb3bac1c0909ec61a8e522a21e7c2f986b83e6139b08e090f9b79e4804"
+   },
+   "usability": {
+    "passenger_edges": 926,
+    "passenger_lanes": 2111,
+    "junctions": 567,
+    "dead_end_fraction": 0.047516,
+    "multi_lane_fraction": 0.701944
+   },
+   "placement": {
+    "AVOIDANT": 19,
+    "RANDOM": 17
+   },
+   "decision": "accepted",
+   "reasons": []
+  },
+  {
+   "city": "buenos_aires_microcentro",
+   "centre": [
+    -34.6037,
+    -58.3816
+   ],
+   "bbox_swne": [
+    -34.614552,
+    -58.394697,
+    -34.592848,
+    -58.368503
+   ],
+   "osm": {
+    "file": "assets/osm_b/raw/buenos_aires_microcentro.osm",
+    "bytes": 730125,
+    "sha256": "964e3fc39057d9500c57a133db4cc9064cc9b8a19d3e296b4708378b9e175421",
+    "downloaded_utc": "2026-10-06T03:10:56.050989+00:00",
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "query": "[out:xml][timeout:180];(way[\"highway\"~\"^(primary|primary_link|secondary|secondary_link|tertiary|tertiary_link|residential|unclassified)$\"](-34.614552,-58.394697,-34.592848,-58.368503););(._;>;);out body;"
+   },
+   "net": {
+    "file": "assets/osm_b/buenos_aires_microcentro.net.xml",
+    "returncode": 0,
+    "warnings": 43,
+    "errors": [],
+    "bytes": 2212696,
+    "sha256": "9f049f5737a8744c3c8c6d9e83a8bd2770100cb3970d3bbcc3298a8bb7578b41"
+   },
+   "usability": {
+    "passenger_edges": 646,
+    "passenger_lanes": 1499,
+    "junctions": 391,
+    "dead_end_fraction": 0.051084,
+    "multi_lane_fraction": 0.77709
+   },
+   "placement": {
+    "AVOIDANT": 20,
+    "RANDOM": 16
+   },
+   "decision": "accepted",
+   "reasons": []
+  }
+ ]
+}

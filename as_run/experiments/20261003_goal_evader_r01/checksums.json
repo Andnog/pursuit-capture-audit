@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_goal_evader_r01",
+ "sealed_at": "2026-10-03T13:24:41.958927+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "00b5f43dd4d4188a843539c95b79026a1af203641f9ea52351fa5685688b903c",
+  "SCIENTIFIC_DECISION_EN.md": "31687e93d438c2cf1aebb5f8412d2c4382debc6ab54cdcb5bb66a19b68140143",
+  "inputs.json": "337b92d2389bdd66b6ba3c96c257e595bed99e1e3f9548a14d1ad7e1ff2fdadf",
+  "results.jsonl": "aa1ce699bf819cd71587d57fbdf74e56d1acf31bfc7ad0c0cc065d65aced7f76",
+  "run.log": "8cb78369b6cc8b3ce9b58cbe7b056dbba796a63aa545692e0f10e5ccef43d3b1",
+  "summary.json": "c26a9fe915e7d5ebde226dd334661e64e642aa0138751d73494da8ac083370b1"
+ }
+}

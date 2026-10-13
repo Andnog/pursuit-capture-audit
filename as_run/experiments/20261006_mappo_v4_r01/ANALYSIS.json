@@ -1,0 +1,1158 @@
+{
+  "integrity": {
+    "start_validation_equals_v3": {
+      "W_mlp_s1": {
+        "v4": [
+          90,
+          190
+        ],
+        "v3_logged": 0.47368421052631576,
+        "equal": true
+      },
+      "W_mlp_s2": {
+        "v4": [
+          90,
+          190
+        ],
+        "v3_logged": 0.47368421052631576,
+        "equal": true
+      },
+      "P_mlp_s1": {
+        "v4": [
+          178,
+          190
+        ],
+        "v3_logged": 0.9368421052631579,
+        "equal": true
+      },
+      "P_mlp_s2": {
+        "v4": [
+          178,
+          190
+        ],
+        "v3_logged": 0.9368421052631579,
+        "equal": true
+      },
+      "F_mlp_s1": {
+        "v4": [
+          90,
+          190
+        ],
+        "v3_logged": 0.47368421052631576,
+        "equal": true
+      },
+      "F_mlp_s2": {
+        "v4": [
+          90,
+          190
+        ],
+        "v3_logged": 0.47368421052631576,
+        "equal": true
+      },
+      "F_kan_s1": {
+        "v4": [
+          89,
+          190
+        ],
+        "v3_logged": 0.46842105263157896,
+        "equal": true
+      },
+      "F_kan_s2": {
+        "v4": [
+          88,
+          190
+        ],
+        "v3_logged": 0.4631578947368421,
+        "equal": true
+      }
+    },
+    "first_batch_equals_reconstruction": {
+      "W_mlp_s1": {
+        "v4": {
+          "attempted": 64,
+          "valid": 61,
+          "success": 23,
+          "oc": 23,
+          "proximity": 58
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 61,
+          "success": 23,
+          "oc": 23,
+          "proximity": 58
+        },
+        "equal": true
+      },
+      "W_mlp_s2": {
+        "v4": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 30,
+          "oc": 30,
+          "proximity": 58
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 30,
+          "oc": 30,
+          "proximity": 58
+        },
+        "equal": true
+      },
+      "P_mlp_s1": {
+        "v4": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 58,
+          "oc": 27,
+          "proximity": 58
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 58,
+          "oc": 27,
+          "proximity": 58
+        },
+        "equal": true
+      },
+      "P_mlp_s2": {
+        "v4": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 59,
+          "oc": 29,
+          "proximity": 59
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 59,
+          "oc": 29,
+          "proximity": 59
+        },
+        "equal": true
+      },
+      "F_mlp_s1": {
+        "v4": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 26,
+          "oc": 26,
+          "proximity": 55
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 26,
+          "oc": 26,
+          "proximity": 55
+        },
+        "equal": true
+      },
+      "F_mlp_s2": {
+        "v4": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 21,
+          "oc": 21,
+          "proximity": 57
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 21,
+          "oc": 21,
+          "proximity": 57
+        },
+        "equal": true
+      },
+      "F_kan_s1": {
+        "v4": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 26,
+          "oc": 26,
+          "proximity": 55
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 63,
+          "success": 26,
+          "oc": 26,
+          "proximity": 55
+        },
+        "equal": true
+      },
+      "F_kan_s2": {
+        "v4": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 22,
+          "oc": 22,
+          "proximity": 57
+        },
+        "reconstruction_of_v3": {
+          "attempted": 64,
+          "valid": 62,
+          "success": 22,
+          "oc": 22,
+          "proximity": 57
+        },
+        "equal": true
+      }
+    },
+    "source_hashes": {
+      "recorded": 73,
+      "changed": []
+    },
+    "all_start_validations_equal": true,
+    "all_first_batches_equal": true
+  },
+  "training": {
+    "runs": {
+      "W_mlp_s1|warmup": {
+        "attempted": 256,
+        "failed": 4,
+        "valid": 252,
+        "used": 252,
+        "excluded": 0,
+        "transitions": 17121,
+        "terminal_observations_not_trained": 6510,
+        "ended_by_objective": 121,
+        "ended_at_horizon": 97,
+        "ended_by_evader_exit": 34,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 0,
+        "earlier_contract_decisions": 17227,
+        "earlier_contract_decisions_without_future": 106,
+        "earlier_contract_episodes_with_such_a_decision": 106,
+        "captures": 121,
+        "captures_on_a_decision_tick": 9,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 4
+        },
+        "exclusion_reasons": {}
+      },
+      "W_mlp_s1|train": {
+        "attempted": 2048,
+        "failed": 47,
+        "valid": 2001,
+        "used": 2001,
+        "excluded": 0,
+        "transitions": 144972,
+        "terminal_observations_not_trained": 43317,
+        "ended_by_objective": 782,
+        "ended_at_horizon": 956,
+        "ended_by_evader_exit": 263,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 12,
+        "earlier_contract_decisions": 145967,
+        "earlier_contract_decisions_without_future": 995,
+        "earlier_contract_episodes_with_such_a_decision": 995,
+        "captures": 782,
+        "captures_on_a_decision_tick": 41,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 47
+        },
+        "exclusion_reasons": {}
+      },
+      "W_mlp_s2|warmup": {
+        "attempted": 256,
+        "failed": 5,
+        "valid": 251,
+        "used": 251,
+        "excluded": 0,
+        "transitions": 17829,
+        "terminal_observations_not_trained": 5965,
+        "ended_by_objective": 106,
+        "ended_at_horizon": 119,
+        "ended_by_evader_exit": 26,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 0,
+        "earlier_contract_decisions": 17953,
+        "earlier_contract_decisions_without_future": 124,
+        "earlier_contract_episodes_with_such_a_decision": 124,
+        "captures": 106,
+        "captures_on_a_decision_tick": 5,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 5
+        },
+        "exclusion_reasons": {}
+      },
+      "W_mlp_s2|train": {
+        "attempted": 2048,
+        "failed": 51,
+        "valid": 1997,
+        "used": 1997,
+        "excluded": 0,
+        "transitions": 142328,
+        "terminal_observations_not_trained": 45185,
+        "ended_by_objective": 847,
+        "ended_at_horizon": 891,
+        "ended_by_evader_exit": 259,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 22,
+        "earlier_contract_decisions": 143275,
+        "earlier_contract_decisions_without_future": 947,
+        "earlier_contract_episodes_with_such_a_decision": 947,
+        "captures": 847,
+        "captures_on_a_decision_tick": 57,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 51
+        },
+        "exclusion_reasons": {}
+      },
+      "P_mlp_s1|train": {
+        "attempted": 2048,
+        "failed": 41,
+        "valid": 2007,
+        "used": 2007,
+        "excluded": 0,
+        "transitions": 55562,
+        "terminal_observations_not_trained": 132504,
+        "ended_by_objective": 1866,
+        "ended_at_horizon": 39,
+        "ended_by_evader_exit": 102,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 0,
+        "earlier_contract_decisions": 55659,
+        "earlier_contract_decisions_without_future": 97,
+        "earlier_contract_episodes_with_such_a_decision": 97,
+        "captures": 791,
+        "captures_on_a_decision_tick": 0,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 41
+        },
+        "exclusion_reasons": {}
+      },
+      "P_mlp_s2|train": {
+        "attempted": 2048,
+        "failed": 51,
+        "valid": 1997,
+        "used": 1997,
+        "excluded": 0,
+        "transitions": 54066,
+        "terminal_observations_not_trained": 134083,
+        "ended_by_objective": 1863,
+        "ended_at_horizon": 47,
+        "ended_by_evader_exit": 87,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 4,
+        "earlier_contract_decisions": 54191,
+        "earlier_contract_decisions_without_future": 125,
+        "earlier_contract_episodes_with_such_a_decision": 125,
+        "captures": 831,
+        "captures_on_a_decision_tick": 0,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 51
+        },
+        "exclusion_reasons": {}
+      },
+      "F_mlp_s1|train": {
+        "attempted": 2048,
+        "failed": 39,
+        "valid": 2009,
+        "used": 2009,
+        "excluded": 0,
+        "transitions": 142891,
+        "terminal_observations_not_trained": 45284,
+        "ended_by_objective": 828,
+        "ended_at_horizon": 913,
+        "ended_by_evader_exit": 268,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 27,
+        "earlier_contract_decisions": 143843,
+        "earlier_contract_decisions_without_future": 952,
+        "earlier_contract_episodes_with_such_a_decision": 952,
+        "captures": 828,
+        "captures_on_a_decision_tick": 39,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 39
+        },
+        "exclusion_reasons": {}
+      },
+      "F_mlp_s2|train": {
+        "attempted": 2048,
+        "failed": 45,
+        "valid": 2003,
+        "used": 2003,
+        "excluded": 0,
+        "transitions": 144563,
+        "terminal_observations_not_trained": 43949,
+        "ended_by_objective": 806,
+        "ended_at_horizon": 933,
+        "ended_by_evader_exit": 264,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 0,
+        "earlier_contract_decisions": 145556,
+        "earlier_contract_decisions_without_future": 993,
+        "earlier_contract_episodes_with_such_a_decision": 993,
+        "captures": 806,
+        "captures_on_a_decision_tick": 60,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 45
+        },
+        "exclusion_reasons": {}
+      },
+      "F_kan_s1|train": {
+        "attempted": 2048,
+        "failed": 39,
+        "valid": 2009,
+        "used": 2009,
+        "excluded": 0,
+        "transitions": 142809,
+        "terminal_observations_not_trained": 45454,
+        "ended_by_objective": 830,
+        "ended_at_horizon": 914,
+        "ended_by_evader_exit": 265,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 27,
+        "earlier_contract_decisions": 143770,
+        "earlier_contract_decisions_without_future": 961,
+        "earlier_contract_episodes_with_such_a_decision": 961,
+        "captures": 830,
+        "captures_on_a_decision_tick": 47,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 39
+        },
+        "exclusion_reasons": {}
+      },
+      "F_kan_s2|train": {
+        "attempted": 2048,
+        "failed": 45,
+        "valid": 2003,
+        "used": 2003,
+        "excluded": 0,
+        "transitions": 143740,
+        "terminal_observations_not_trained": 44853,
+        "ended_by_objective": 820,
+        "ended_at_horizon": 924,
+        "ended_by_evader_exit": 259,
+        "episodes_with_a_collision": 0,
+        "collision_inside_trained_interval": 0,
+        "collision_only_outside": 0,
+        "inner_gap_frames": 0,
+        "earlier_contract_decisions": 144721,
+        "earlier_contract_decisions_without_future": 981,
+        "earlier_contract_episodes_with_such_a_decision": 981,
+        "captures": 820,
+        "captures_on_a_decision_tick": 57,
+        "earlier_capture_instant_differs": 0,
+        "failure_reasons": {
+          "ValueError": 45
+        },
+        "exclusion_reasons": {}
+      }
+    },
+    "all": {
+      "attempted": 16896,
+      "failed": 367,
+      "valid": 16529,
+      "used": 16529,
+      "excluded": 0,
+      "transitions": 1005881,
+      "terminal_observations_not_trained": 547104,
+      "ended_by_objective": 8869,
+      "ended_at_horizon": 5833,
+      "ended_by_evader_exit": 1827,
+      "episodes_with_a_collision": 0,
+      "collision_inside_trained_interval": 0,
+      "collision_only_outside": 0,
+      "inner_gap_frames": 92,
+      "earlier_contract_decisions": 1012162,
+      "earlier_contract_decisions_without_future": 6281,
+      "earlier_contract_episodes_with_such_a_decision": 6281,
+      "captures": 6762,
+      "captures_on_a_decision_tick": 315,
+      "earlier_capture_instant_differs": 0,
+      "failure_reasons": {
+        "ValueError": 367
+      }
+    }
+  },
+  "validation": {
+    "curves": {
+      "W_mlp_s1": [
+        [
+          90,
+          190
+        ],
+        [
+          92,
+          190
+        ],
+        [
+          91,
+          190
+        ],
+        [
+          91,
+          190
+        ],
+        [
+          89,
+          190
+        ]
+      ],
+      "W_mlp_s2": [
+        [
+          90,
+          190
+        ],
+        [
+          90,
+          190
+        ],
+        [
+          92,
+          190
+        ],
+        [
+          86,
+          190
+        ],
+        [
+          88,
+          190
+        ]
+      ],
+      "P_mlp_s1": [
+        [
+          178,
+          190
+        ],
+        [
+          178,
+          190
+        ],
+        [
+          177,
+          190
+        ],
+        [
+          178,
+          190
+        ],
+        [
+          177,
+          190
+        ]
+      ],
+      "P_mlp_s2": [
+        [
+          178,
+          190
+        ],
+        [
+          178,
+          190
+        ],
+        [
+          178,
+          190
+        ],
+        [
+          178,
+          190
+        ],
+        [
+          178,
+          190
+        ]
+      ],
+      "F_mlp_s1": [
+        [
+          90,
+          190
+        ],
+        [
+          88,
+          190
+        ],
+        [
+          87,
+          190
+        ],
+        [
+          86,
+          190
+        ],
+        [
+          90,
+          190
+        ]
+      ],
+      "F_mlp_s2": [
+        [
+          90,
+          190
+        ],
+        [
+          89,
+          190
+        ],
+        [
+          91,
+          190
+        ],
+        [
+          87,
+          190
+        ],
+        [
+          88,
+          190
+        ]
+      ],
+      "F_kan_s1": [
+        [
+          89,
+          190
+        ],
+        [
+          91,
+          190
+        ],
+        [
+          91,
+          190
+        ],
+        [
+          90,
+          190
+        ],
+        [
+          92,
+          190
+        ]
+      ],
+      "F_kan_s2": [
+        [
+          88,
+          190
+        ],
+        [
+          90,
+          190
+        ],
+        [
+          88,
+          190
+        ],
+        [
+          90,
+          190
+        ],
+        [
+          90,
+          190
+        ]
+      ]
+    },
+    "episodes": 7680,
+    "failed": 80,
+    "failure_reasons": {
+      "ValueError": 80
+    }
+  },
+  "test": {
+    "scheduled": 23520,
+    "failed": 1204,
+    "completed": 22316,
+    "collisions": 0,
+    "selected_is_start": [
+      "sel_F_kan_s1",
+      "sel_F_kan_s2",
+      "sel_F_mlp_s1",
+      "sel_F_mlp_s2",
+      "sel_W_mlp_s1",
+      "sel_W_mlp_s2"
+    ],
+    "primary_1": {
+      "family_95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes": false
+    },
+    "primary_2": {
+      "family_95": [
+        0.003,
+        -0.008,
+        0.014
+      ],
+      "passes": false
+    },
+    "secondary": {
+      "d06:sel_W_mlp_minus_start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d06:final_W_mlp_minus_start": [
+        0.011,
+        -0.005,
+        0.026
+      ],
+      "d06:sel_W_mlp_minus_plb": [
+        0.017,
+        -0.012,
+        0.046
+      ],
+      "d06:final_W_mlp_minus_plb": [
+        0.027,
+        -0.002,
+        0.058
+      ],
+      "d06:sel_F_mlp_minus_start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d06:final_F_mlp_minus_start": [
+        0.0,
+        -0.012,
+        0.013
+      ],
+      "d06:sel_F_mlp_minus_plb": [
+        0.017,
+        -0.012,
+        0.046
+      ],
+      "d06:final_F_mlp_minus_plb": [
+        0.017,
+        -0.011,
+        0.046
+      ],
+      "d06:sel_F_kan_minus_start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d06:final_F_kan_minus_start": [
+        0.01,
+        -0.001,
+        0.021
+      ],
+      "d06:sel_F_kan_minus_plb": [
+        0.011,
+        -0.016,
+        0.04
+      ],
+      "d06:final_F_kan_minus_plb": [
+        0.021,
+        -0.005,
+        0.05
+      ],
+      "d06:sel_W_mlp_minus_sel_F_mlp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "d06:final_W_mlp_minus_final_F_mlp": [
+        0.01,
+        -0.002,
+        0.022
+      ],
+      "d06:start_mlp_minus_plb": [
+        0.017,
+        -0.012,
+        0.046
+      ],
+      "d06:start_kan_minus_plb": [
+        0.011,
+        -0.016,
+        0.04
+      ],
+      "d06:final_P_mlp_minus_start": [
+        -0.004,
+        -0.014,
+        0.007
+      ],
+      "d06:plb_minus_pursuit": [
+        0.128,
+        0.084,
+        0.17
+      ],
+      "prox_5m:final_P_mlp_minus_start": [
+        -0.001,
+        -0.002,
+        0.0
+      ],
+      "prox_5m:plb_minus_pursuit": [
+        -0.004,
+        -0.011,
+        0.003
+      ],
+      "prox_5m_centre:final_P_mlp_minus_start": [
+        0.0,
+        -0.004,
+        0.005
+      ],
+      "prox_5m_centre:plb_minus_pursuit": [
+        -0.021,
+        -0.038,
+        -0.006
+      ],
+      "d06:final_P_mlp_minus_pursuit": [
+        0.141,
+        0.102,
+        0.179
+      ]
+    },
+    "per_seed": {
+      "d06:final_W_mlp_s1_minus_start": [
+        0.008,
+        -0.009,
+        0.026
+      ],
+      "d06:final_W_mlp_s2_minus_start": [
+        0.013,
+        -0.007,
+        0.033
+      ],
+      "d06:final_P_mlp_s1_minus_start": [
+        -0.005,
+        -0.018,
+        0.008
+      ],
+      "d06:final_P_mlp_s2_minus_start": [
+        -0.003,
+        -0.019,
+        0.014
+      ],
+      "d06:final_F_mlp_s1_minus_start": [
+        -0.004,
+        -0.02,
+        0.011
+      ],
+      "d06:final_F_mlp_s2_minus_start": [
+        0.005,
+        -0.014,
+        0.023
+      ],
+      "d06:final_F_kan_s1_minus_start": [
+        0.009,
+        -0.003,
+        0.021
+      ],
+      "d06:final_F_kan_s2_minus_start": [
+        0.011,
+        -0.007,
+        0.03
+      ]
+    },
+    "rates": {
+      "final_F_kan": {
+        "d06": 0.3971,
+        "prox_5m": 0.8955,
+        "prox_5m_centre": 0.824
+      },
+      "final_F_kan_s1": {
+        "d06": 0.3971,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8212
+      },
+      "final_F_kan_s2": {
+        "d06": 0.3971,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8269
+      },
+      "final_F_mlp": {
+        "d06": 0.3927,
+        "prox_5m": 0.8943,
+        "prox_5m_centre": 0.8218
+      },
+      "final_F_mlp_s1": {
+        "d06": 0.3902,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8225
+      },
+      "final_F_mlp_s2": {
+        "d06": 0.3952,
+        "prox_5m": 0.8934,
+        "prox_5m_centre": 0.8212
+      },
+      "final_P_mlp": {
+        "d06": 0.3886,
+        "prox_5m": 0.8949,
+        "prox_5m_centre": 0.8215
+      },
+      "final_P_mlp_s1": {
+        "d06": 0.3896,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8206
+      },
+      "final_P_mlp_s2": {
+        "d06": 0.3877,
+        "prox_5m": 0.8946,
+        "prox_5m_centre": 0.8225
+      },
+      "final_W_mlp": {
+        "d06": 0.4031,
+        "prox_5m": 0.8949,
+        "prox_5m_centre": 0.824
+      },
+      "final_W_mlp_s1": {
+        "d06": 0.4028,
+        "prox_5m": 0.8946,
+        "prox_5m_centre": 0.8218
+      },
+      "final_W_mlp_s2": {
+        "d06": 0.4034,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8262
+      },
+      "planner_c215": {
+        "d06": 0.3758,
+        "prox_5m": 0.8927,
+        "prox_5m_centre": 0.8149
+      },
+      "pursuit": {
+        "d06": 0.2478,
+        "prox_5m": 0.8965,
+        "prox_5m_centre": 0.8363
+      },
+      "sel_F_kan": {
+        "d06": 0.3871,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8228
+      },
+      "sel_F_kan_s1": {
+        "d06": 0.3883,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8218
+      },
+      "sel_F_kan_s2": {
+        "d06": 0.3858,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8237
+      },
+      "sel_F_mlp": {
+        "d06": 0.3924,
+        "prox_5m": 0.8955,
+        "prox_5m_centre": 0.8212
+      },
+      "sel_F_mlp_s1": {
+        "d06": 0.3946,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8212
+      },
+      "sel_F_mlp_s2": {
+        "d06": 0.3902,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8212
+      },
+      "sel_W_mlp": {
+        "d06": 0.3924,
+        "prox_5m": 0.8955,
+        "prox_5m_centre": 0.8212
+      },
+      "sel_W_mlp_s1": {
+        "d06": 0.3946,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8212
+      },
+      "sel_W_mlp_s2": {
+        "d06": 0.3902,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8212
+      },
+      "start_kan": {
+        "d06": 0.3871,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8228
+      },
+      "start_kan_s1": {
+        "d06": 0.3883,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8218
+      },
+      "start_kan_s2": {
+        "d06": 0.3858,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8237
+      },
+      "start_mlp": {
+        "d06": 0.3924,
+        "prox_5m": 0.8955,
+        "prox_5m_centre": 0.8212
+      },
+      "start_mlp_s1": {
+        "d06": 0.3946,
+        "prox_5m": 0.8952,
+        "prox_5m_centre": 0.8212
+      },
+      "start_mlp_s2": {
+        "d06": 0.3902,
+        "prox_5m": 0.8959,
+        "prox_5m_centre": 0.8212
+      }
+    },
+    "runs": {
+      "W_mlp_s1": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.47368421052631576,
+          0.4842105263157895,
+          0.4789473684210526,
+          0.4789473684210526,
+          0.46842105263157896
+        ],
+        "best": 0.47368421052631576,
+        "start_val": 0.47368421052631576,
+        "warm": 4
+      },
+      "W_mlp_s2": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.47368421052631576,
+          0.47368421052631576,
+          0.4842105263157895,
+          0.45263157894736844,
+          0.4631578947368421
+        ],
+        "best": 0.47368421052631576,
+        "start_val": 0.47368421052631576,
+        "warm": 4
+      },
+      "P_mlp_s1": {
+        "episodes": 2048,
+        "stop_reason": "max_episodes",
+        "vals": [
+          0.9368421052631579,
+          0.9368421052631579,
+          0.9315789473684211,
+          0.9368421052631579,
+          0.9315789473684211
+        ],
+        "best": 0.9368421052631579,
+        "start_val": 0.9368421052631579,
+        "warm": 0
+      },
+      "P_mlp_s2": {
+        "episodes": 2048,
+        "stop_reason": "max_episodes",
+        "vals": [
+          0.9368421052631579,
+          0.9368421052631579,
+          0.9368421052631579,
+          0.9368421052631579,
+          0.9368421052631579
+        ],
+        "best": 0.9368421052631579,
+        "start_val": 0.9368421052631579,
+        "warm": 0
+      },
+      "F_mlp_s1": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.47368421052631576,
+          0.4631578947368421,
+          0.45789473684210524,
+          0.45263157894736844,
+          0.47368421052631576
+        ],
+        "best": 0.47368421052631576,
+        "start_val": 0.47368421052631576,
+        "warm": 0
+      },
+      "F_mlp_s2": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.47368421052631576,
+          0.46842105263157896,
+          0.4789473684210526,
+          0.45789473684210524,
+          0.4631578947368421
+        ],
+        "best": 0.47368421052631576,
+        "start_val": 0.47368421052631576,
+        "warm": 0
+      },
+      "F_kan_s1": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.46842105263157896,
+          0.4789473684210526,
+          0.4789473684210526,
+          0.47368421052631576,
+          0.4842105263157895
+        ],
+        "best": 0.46842105263157896,
+        "start_val": 0.46842105263157896,
+        "warm": 0
+      },
+      "F_kan_s2": {
+        "episodes": 2048,
+        "stop_reason": "breaker",
+        "vals": [
+          0.4631578947368421,
+          0.47368421052631576,
+          0.4631578947368421,
+          0.47368421052631576,
+          0.47368421052631576
+        ],
+        "best": 0.4631578947368421,
+        "start_val": 0.4631578947368421,
+        "warm": 0
+      }
+    },
+    "integrity": {
+      "failure_reasons": {
+        "ValueError": 1204
+      },
+      "counts": {
+        "attempted": 23520,
+        "failed": 1204,
+        "valid": 22316,
+        "d06": 8521,
+        "prox_5m": 19975,
+        "end_reasons": {
+          "evader_exit": 4327,
+          "event": 8521,
+          "horizon": 9468
+        },
+        "collided": 0,
+        "inner_gap_frames": 3,
+        "legacy_capture_instant_differs": 0
+      }
+    }
+  }
+}

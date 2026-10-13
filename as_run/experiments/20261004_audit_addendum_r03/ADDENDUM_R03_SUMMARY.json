@@ -1,0 +1,189 @@
+{
+  "AB": {
+    "episodes": 4940,
+    "failed": 100,
+    "rates": {
+      "coord": 0.3486,
+      "indep": 0.2777
+    },
+    "primary_pooled": [
+      0.0709,
+      0.0538,
+      0.089
+    ],
+    "by_evader": {
+      "AVOIDANT": [
+        0.0811,
+        0.0527,
+        0.113
+      ],
+      "RANDOM": [
+        0.0616,
+        0.035,
+        0.0918
+      ],
+      "GOAL_DIRECTED": [
+        0.07,
+        0.0399,
+        0.1027
+      ]
+    },
+    "by_team": {
+      "3": [
+        0.0498,
+        0.0279,
+        0.0716
+      ],
+      "5": [
+        0.0777,
+        0.0534,
+        0.1044
+      ],
+      "7": [
+        0.0852,
+        0.0572,
+        0.1144
+      ]
+    },
+    "primary_passes": true
+  },
+  "AE": {
+    "captures": 1433,
+    "failed": 0,
+    "reproduced": 1433,
+    "follow_up_60": 1433,
+    "escapes": 15,
+    "escapes_among_reproduced": 15,
+    "with_lane_change_attempt": 115,
+    "escapes_with_lane_option": 15,
+    "escapes_without_lane_option": 0,
+    "escape_families": [
+      "sapporo_grid|11|RANDOM",
+      "sapporo_grid|17|AVOIDANT",
+      "toronto_downtown|0|AVOIDANT"
+    ],
+    "attempt_totals": {
+      "reroute": 80607,
+      "lane_change": 6818,
+      "internal": 28,
+      "error": 122
+    },
+    "families": 176,
+    "cities": {
+      "adelaide_cbd": 379,
+      "phoenix_downtown": 240,
+      "portland_downtown": 113,
+      "sapporo_grid": 184,
+      "seattle_downtown": 153,
+      "toronto_downtown": 170,
+      "washington_downtown": 194
+    }
+  },
+  "RC": {
+    "a99": {
+      "episodes": 6536,
+      "agreement": 1.0,
+      "changed": 0,
+      "by_method": {
+        "pursuit": {
+          "agree": 1634,
+          "n": 1634
+        },
+        "ambush_a95": {
+          "agree": 1634,
+          "n": 1634
+        },
+        "plus_default": {
+          "agree": 1634,
+          "n": 1634
+        },
+        "plus_opt": {
+          "agree": 1634,
+          "n": 1634
+        }
+      },
+      "plb_minus_pursuit": {
+        "checked": [
+          0.1047,
+          0.0683,
+          0.141
+        ],
+        "sealed": [
+          0.1047,
+          0.0683,
+          0.141
+        ]
+      },
+      "plb_minus_a95": {
+        "checked": [
+          0.0502,
+          0.0159,
+          0.0842
+        ],
+        "sealed": [
+          0.0502,
+          0.0159,
+          0.0842
+        ]
+      }
+    },
+    "goal": {
+      "episodes": 2430,
+      "agreement": 1.0,
+      "changed": 0,
+      "by_method": {
+        "plus_opt": {
+          "agree": 810,
+          "n": 810
+        },
+        "ambush_a95": {
+          "agree": 810,
+          "n": 810
+        },
+        "pursuit": {
+          "agree": 810,
+          "n": 810
+        }
+      },
+      "plb_minus_pursuit": {
+        "checked": [
+          0.1049,
+          0.058,
+          0.1556
+        ],
+        "sealed": [
+          0.1049,
+          0.058,
+          0.1556
+        ]
+      }
+    }
+  },
+  "RP": {
+    "robustness": {
+      "n": 100,
+      "failed": 0,
+      "reproduced": 100
+    },
+    "sensitivity": {
+      "n": 100,
+      "failed": 0,
+      "reproduced": 100
+    },
+    "commitment": {
+      "n": 100,
+      "failed": 0,
+      "reproduced": 100
+    },
+    "goal": {
+      "n": 100,
+      "failed": 0,
+      "reproduced": 100
+    },
+    "mappo_v2": {
+      "n": 100,
+      "failed": 0,
+      "reproduced": 100
+    }
+  }
+}

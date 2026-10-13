@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260927_native_ladder_stageB3_probability_r01",
+ "sealed_at": "2026-09-27T22:07:35.711313Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "0ce7f0ce6691c76e8a21d77f02f916133b8f5689121c3a212482b5cfbf28dd2e",
+  "SCIENTIFIC_DECISION_EN.md": "f31c80327fa6fd07971879068b972abefc612e0e875ff1dd746c075b169ef832",
+  "gifs/C2_s6_seed5005_helper_removed.gif": "887f544ac5b32143dbb20fbf3e9e334cc8f0cb46bca15b5bb409db2e312b83fc",
+  "gifs/C2_s6_seed5005_with_helper.gif": "9189c22b2450a84c671b49ade61b39f4003fcc2a75d7fbe8d466f68d29192df2",
+  "inputs.json": "14bd75902f33577aacbe417c32cbcff2a397296723c3c7579e61bc7d41980388",
+  "results.jsonl": "41aa61f3cd409a5cf30fe4825766b2058a524874a6ae8f6f80de5d55e7f78bf0",
+  "run.log": "72c4a68348e001cdad057234be9b03465d59c7fb8d80e087d9c3fa49981d8680",
+  "summary.json": "a9a130c89ee7a34de84254c7fa6ab7e22240f34e0aa4cbe4a5068022e0e1bbf1"
+ }
+}

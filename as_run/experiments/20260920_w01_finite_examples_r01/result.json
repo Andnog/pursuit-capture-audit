@@ -1,0 +1,48 @@
+{
+  "package": "20260920_w01_finite_examples_r01",
+  "stage": "W0_W1",
+  "planned_cases": 14,
+  "executed_cases": 14,
+  "passed": 14,
+  "failed": 0,
+  "errors": 0,
+  "not_executed": 0,
+  "additional_variant_checks": {
+    "executed": 2,
+    "passed": 2
+  },
+  "unit_tests": {
+    "returncode": 0,
+    "summary": "Ran 108 tests in 0.018s"
+  },
+  "gate": {
+    "name": "W1_analytical_correctness",
+    "rule": "SUPPORTED only if 14/14 cases PASS and the cross-checks hold",
+    "verdict": "SUPPORTED",
+    "claim_class": "analytical_correctness_only"
+  },
+  "resources": {
+    "cpu_seconds": 0.061,
+    "wall_seconds": 0.061,
+    "cpu_minutes": 0.001,
+    "cap_cpu_minutes": 30
+  },
+  "per_case": {
+    "F1": "PASS",
+    "F1_variant_unknown_temporal": "PASS",
+    "F2": "PASS",
+    "F3": "PASS",
+    "F3_under_variant": "PASS",
+    "F4": "PASS",
+    "F5": "PASS",
+    "F6": "PASS",
+    "A1": "PASS",
+    "A2": "PASS",
+    "A3": "PASS",
+    "A4": "PASS",
+    "A5": "PASS",
+    "A6": "PASS",
+    "A7": "PASS",
+    "A8": "PASS"
+  }
+}

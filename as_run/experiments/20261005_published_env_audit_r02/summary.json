@@ -1,0 +1,363 @@
+{
+  "rows": 812,
+  "failed": 0,
+  "followup_completion": {
+    "censored_in_r01": 12,
+    "rerun": 12,
+    "same_first_event": 12,
+    "episodes": {
+      "3x3Traffic_4_2|null|followup|241": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|92": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|259": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|257": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|74": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|207": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|null|followup|67": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|greedy|followup|285": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|greedy|followup|26": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_4_2|greedy|followup|261": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_7_4|greedy|followup|88": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      },
+      "3x3Traffic_7_4|greedy|followup|60": {
+        "same_first_event": true,
+        "marks": [
+          1,
+          2,
+          5,
+          10,
+          30
+        ]
+      }
+    }
+  },
+  "marks_with_denominators": {
+    "3x3Traffic_4_2|greedy": {
+      "+1s": {
+        "first_captures": 127,
+        "observed_in_r01": 127,
+        "observed_after_completion": 127,
+        "within_5m_of_capturer": 30,
+        "over_50m_from_every_pursuer": 0,
+        "evader_faster_than_1mps": 114,
+        "median_dist_capturer_m": 7.5
+      },
+      "+2s": {
+        "first_captures": 127,
+        "observed_in_r01": 127,
+        "observed_after_completion": 127,
+        "within_5m_of_capturer": 9,
+        "over_50m_from_every_pursuer": 16,
+        "evader_faster_than_1mps": 114,
+        "median_dist_capturer_m": 14.5
+      },
+      "+5s": {
+        "first_captures": 127,
+        "observed_in_r01": 127,
+        "observed_after_completion": 127,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 42,
+        "evader_faster_than_1mps": 115,
+        "median_dist_capturer_m": 42.0
+      },
+      "+10s": {
+        "first_captures": 127,
+        "observed_in_r01": 125,
+        "observed_after_completion": 127,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 118,
+        "evader_faster_than_1mps": 116,
+        "median_dist_capturer_m": 102.1
+      },
+      "+30s": {
+        "first_captures": 127,
+        "observed_in_r01": 124,
+        "observed_after_completion": 127,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 121,
+        "evader_faster_than_1mps": 111,
+        "median_dist_capturer_m": 423.2
+      }
+    },
+    "3x3Traffic_4_2|null": {
+      "+1s": {
+        "first_captures": 270,
+        "observed_in_r01": 270,
+        "observed_after_completion": 270,
+        "within_5m_of_capturer": 33,
+        "over_50m_from_every_pursuer": 0,
+        "evader_faster_than_1mps": 204,
+        "median_dist_capturer_m": 12.0
+      },
+      "+2s": {
+        "first_captures": 270,
+        "observed_in_r01": 269,
+        "observed_after_completion": 270,
+        "within_5m_of_capturer": 2,
+        "over_50m_from_every_pursuer": 28,
+        "evader_faster_than_1mps": 200,
+        "median_dist_capturer_m": 22.4
+      },
+      "+5s": {
+        "first_captures": 270,
+        "observed_in_r01": 269,
+        "observed_after_completion": 270,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 155,
+        "evader_faster_than_1mps": 197,
+        "median_dist_capturer_m": 53.2
+      },
+      "+10s": {
+        "first_captures": 270,
+        "observed_in_r01": 265,
+        "observed_after_completion": 270,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 256,
+        "evader_faster_than_1mps": 203,
+        "median_dist_capturer_m": 118.9
+      },
+      "+30s": {
+        "first_captures": 270,
+        "observed_in_r01": 263,
+        "observed_after_completion": 270,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 251,
+        "evader_faster_than_1mps": 223,
+        "median_dist_capturer_m": 439.2
+      }
+    },
+    "3x3Traffic_7_4|greedy": {
+      "+1s": {
+        "first_captures": 80,
+        "observed_in_r01": 80,
+        "observed_after_completion": 80,
+        "within_5m_of_capturer": 14,
+        "over_50m_from_every_pursuer": 0,
+        "evader_faster_than_1mps": 68,
+        "median_dist_capturer_m": 10.1
+      },
+      "+2s": {
+        "first_captures": 80,
+        "observed_in_r01": 80,
+        "observed_after_completion": 80,
+        "within_5m_of_capturer": 3,
+        "over_50m_from_every_pursuer": 9,
+        "evader_faster_than_1mps": 68,
+        "median_dist_capturer_m": 19.6
+      },
+      "+5s": {
+        "first_captures": 80,
+        "observed_in_r01": 80,
+        "observed_after_completion": 80,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 29,
+        "evader_faster_than_1mps": 70,
+        "median_dist_capturer_m": 51.5
+      },
+      "+10s": {
+        "first_captures": 80,
+        "observed_in_r01": 80,
+        "observed_after_completion": 80,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 74,
+        "evader_faster_than_1mps": 68,
+        "median_dist_capturer_m": 117.5
+      },
+      "+30s": {
+        "first_captures": 80,
+        "observed_in_r01": 78,
+        "observed_after_completion": 80,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 69,
+        "evader_faster_than_1mps": 61,
+        "median_dist_capturer_m": 423.6
+      }
+    },
+    "3x3Traffic_7_4|null": {
+      "+1s": {
+        "first_captures": 100,
+        "observed_in_r01": 100,
+        "observed_after_completion": 100,
+        "within_5m_of_capturer": 9,
+        "over_50m_from_every_pursuer": 0,
+        "evader_faster_than_1mps": 72,
+        "median_dist_capturer_m": 10.4
+      },
+      "+2s": {
+        "first_captures": 100,
+        "observed_in_r01": 100,
+        "observed_after_completion": 100,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 9,
+        "evader_faster_than_1mps": 69,
+        "median_dist_capturer_m": 19.4
+      },
+      "+5s": {
+        "first_captures": 100,
+        "observed_in_r01": 100,
+        "observed_after_completion": 100,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 39,
+        "evader_faster_than_1mps": 69,
+        "median_dist_capturer_m": 49.7
+      },
+      "+10s": {
+        "first_captures": 100,
+        "observed_in_r01": 100,
+        "observed_after_completion": 100,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 95,
+        "evader_faster_than_1mps": 67,
+        "median_dist_capturer_m": 110.2
+      },
+      "+30s": {
+        "first_captures": 100,
+        "observed_in_r01": 100,
+        "observed_after_completion": 100,
+        "within_5m_of_capturer": 0,
+        "over_50m_from_every_pursuer": 95,
+        "evader_faster_than_1mps": 82,
+        "median_dist_capturer_m": 449.0
+      }
+    }
+  },
+  "stop_analogue": {
+    "3x3Traffic_4_2|greedy": {
+      "episodes": 300,
+      "events_identical": 300,
+      "legacy_identical": 300,
+      "evaders": 600,
+      "two_observations": 16,
+      "stopped_2s": 15,
+      "two_observations_share": 0.0267,
+      "stopped_2s_share": 0.025
+    },
+    "3x3Traffic_4_2|null": {
+      "episodes": 300,
+      "events_identical": 300,
+      "legacy_identical": 300,
+      "evaders": 600,
+      "two_observations": 23,
+      "stopped_2s": 23,
+      "two_observations_share": 0.0383,
+      "stopped_2s_share": 0.0383
+    },
+    "3x3Traffic_7_4|greedy": {
+      "episodes": 100,
+      "events_identical": 100,
+      "legacy_identical": 100,
+      "evaders": 400,
+      "two_observations": 14,
+      "stopped_2s": 13,
+      "two_observations_share": 0.035,
+      "stopped_2s_share": 0.0325
+    },
+    "3x3Traffic_7_4|null": {
+      "episodes": 100,
+      "events_identical": 100,
+      "legacy_identical": 100,
+      "evaders": 400,
+      "two_observations": 16,
+      "stopped_2s": 16,
+      "two_observations_share": 0.04,
+      "stopped_2s_share": 0.04
+    }
+  }
+}

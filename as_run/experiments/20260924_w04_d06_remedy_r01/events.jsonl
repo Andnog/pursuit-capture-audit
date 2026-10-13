@@ -1,0 +1,5 @@
+{"ts": "2026-09-25T04:57:22.115188Z", "event": "run_started"}
+{"ts": "2026-09-25T04:57:22.115188Z", "event": "arm1", "result": "pursuer rests at 2.501 m outside band; judge REJECTED"}
+{"ts": "2026-09-25T04:57:22.115188Z", "event": "arm2", "result": "evader rests at 1.001 m inside band; judge SUPPORTED, 17.2 s witness"}
+{"ts": "2026-09-25T04:57:22.115188Z", "event": "arm3", "result": "forced overlap reported as a collision"}
+{"ts": "2026-09-25T04:57:22.115188Z", "event": "run_ended", "verdict": "REMEDY_VERIFIED"}

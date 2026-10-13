@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260926_w04_native_replication_n02_optimal",
+  "recorded_at_launch": "2026-09-26T16:07:17.098529Z",
+  "sources": {
+    "configs/domain_v1.json": "1e91e51b6f0dd71436a25f9a6304dca45842d032d218f9cfc692c2fff5d2d9d7",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "scripts/run_native_replication.py": "c51a95616a6a21bbe2bb9d68a9f7b29ca849a7de348dfef494aab14106a97b78",
+    "src/joint_interception/world/network.py": "e67a0de7b9884026660e3337974104a4aec2827943d6395e13fe0b0667c2791f",
+    "src/joint_interception/world/simulation.py": "c60efd454091691ce1d067cd7519fd31f5668be41718121b4bb6ba588b91bf4b",
+    "src/joint_interception/world/construction.py": "81d0871869ccb4543adae95b53440b04d41f18f78fc7071731874db9b05c7f44",
+    "src/joint_interception/simulator/evader.py": "dc42e9b1042dd1d5ee734c8dddf2d5fa5828055c5455bbb0a9de4365ddc9b7b5",
+    "src/joint_interception/simulator/topology.py": "73e2d88afd5d28bb7d1243d765afa3f50e1c2a7afd6ea471ea513582706418c0",
+    "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "src/joint_interception/domain/contracts.py": "df1c30a923bc9788dea17b5102e7b00d09a87287b522bde0df6066c238040ea2",
+    "src/joint_interception/domain/geometry.py": "5fa41ea0651c274cb16192ab87313de8a4778e521cd9655fa33580fbb49e0a07",
+    "src/joint_interception/opportunities/approach.py": "50fd6dd626c4f37c5870112e48ef055d2d3a3cfdcea9248dad69aa50a2402b29",
+    "src/joint_interception/validation/diagnostic_set.py": "340762ff40206d2329c7cad6021cb49b570d70b92e16f1fa318786996049a195",
+    "src/joint_interception/validation/sumo_replay.py": "ed108a00039260ce98c8916b4da170ffe9697914634aa72e29dc28496fd6cb2b",
+    "src/joint_interception/validation/native.py": "f98f0e3a8bfb40dad4ef5da5d172563865092896cf67fdba957125c4dc95b1fe",
+    "experiments/20260926_w04_native_replication_n02_optimal/PROTOCOL_EN.md": "11e83cae9ca6fb00f80ecea0bc69ec0089b0f6d0a5ef4688cde1d058f325f1f0"
+  },
+  "arguments": {
+    "salt": "n02",
+    "level": "OPTIMAL_ESCAPE",
+    "cpu_per_map": 450,
+    "exp_per_map": 100000
+  },
+  "rule": "these files are not modified while the search runs"
+}

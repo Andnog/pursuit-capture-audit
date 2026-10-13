@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_fresh_start_determinism_r01",
+  "created": "2026-09-22",
+  "stage": "W4",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "continues": "20260922_w04_traci_first_execution_r01",
+  "claim_class": "one_empirical_property_of_sumo",
+  "acceptance_rule_frozen_before_implementing": true,
+  "why": "A-37 established that saveState/loadState cannot carry the assistance audit. The proposed replacement is replay by RE-EXECUTION, which rests on an assumption of its own. This package tests it.",
+  "questions": {
+    "Q1": "two fresh starts, same seed, same commands: identical trajectories?",
+    "Q2": "two fresh starts identical up to decision k and different after: are the frames BEFORE k exactly equal?",
+    "Q3": "control: do the arms actually differ after k, so that Q2 is not vacuous?"
+  },
+  "acceptance_rule": {
+    "REPRODUCIBLE_AND_PREFIX_COUPLED": "A1 == A2 in full, and B's prefix == A1's prefix",
+    "REPRODUCIBLE_PREFIX_NOT_COUPLED": "A1 == A2 but B's prefix differs",
+    "NOT_REPRODUCIBLE": "A1 != A2",
+    "PROCESS_FAILED": "SUMO could not be started or did not terminate cleanly"
+  },
+  "comparison_rule": "exact equality, never a tolerance",
+  "diagnostic_arm_declared_in_advance": "if Q1 fails under SUMO defaults, one further pair with sigma = 0 may run; no other arm without a recorded deviation",
+  "resource_limits_declared": {
+    "sumo_process_starts_permitted": 6,
+    "simulated_seconds_permitted": 300,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  },
+  "resource_limits_used": {
+    "sumo_process_starts": 3,
+    "simulated_seconds": 90.3
+  }
+}

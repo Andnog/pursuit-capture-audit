@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_heldout_b_r01",
+ "sealed_at": "2026-10-06T09:32:00.578093+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "reseal": {
+  "first_seal": "2026-10-06T09:29:41.213557+00:00",
+  "reason": "The decision text quoted the wrong TEST comparison figure; corrected in version 2. Version 1 and its checksums are kept.",
+  "changed_since_first_seal": [
+   "SCIENTIFIC_DECISION_EN.md"
+  ],
+  "unchanged_since_first_seal": [
+   "DEVIATIONS_EN.md",
+   "LEVELS_CHECK_SAMPLE.json",
+   "LEVELS_CHECK_judge_guard.json",
+   "PROTOCOL_EN.md",
+   "inputs.json",
+   "results.jsonl",
+   "run.log",
+   "summary.json"
+  ]
+ },
+ "files": {
+  "DEVIATIONS_EN.md": "e1943891a775e9b06d42bde635ec2749e9e4673e596ebafed3fac1792d96147a",
+  "LEVELS_CHECK_SAMPLE.json": "f130f0db4ac2516d5b02eba87a568014473d3d5064162ad5ae213a737efa842c",
+  "LEVELS_CHECK_judge_guard.json": "f0ac06638a21a2b33c60ea29147db434e224140afb9905deeb56087b5206ad48",
+  "PROTOCOL_EN.md": "9aeeef1bb59b7bd933f90b259f3b95cd2a36e2f15cffafbf76783af107014036",
+  "SCIENTIFIC_DECISION_EN.md": "6a977132fefb9fa91aaf447f2b2b2ceeb418964766819893a6cae5eb4d7ea470",
+  "SCIENTIFIC_DECISION_EN.v1_superseded.md": "7e507ff66c620e2791f7b9d3575d500a2d014588b700e4e7ebf2501b7b3b0f7c",
+  "checksums.v1_superseded.json": "3b0994ba4f73e10d5c0647ddf1e5cd6b2e87b6b4e336fc335669dacb887d21b3",
+  "inputs.json": "560d6aa00e983f727f4cfa0b04a55776b85946778bedd31884445549378adda1",
+  "results.jsonl": "226ece77bc1c4738398eeaaa235b11b843949cab4e93aa42fc178e6a0220fb38",
+  "run.log": "da142635bcdebac1df48a400a89fe03b8ee6314c85b3d62907ba73a0aa3188fc",
+  "summary.json": "383234b3be9d4c3f24a5639dd15f01b005b6d43cd99140b826eaefe38e5c2a5d"
+ }
+}

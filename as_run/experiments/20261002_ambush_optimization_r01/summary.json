@@ -1,0 +1,379 @@
+{
+  "final_name": "c2_15",
+  "final_params": {
+    "depth": 2,
+    "margin_s": 0.0,
+    "slow": 1.05,
+    "startup_s": 5.0,
+    "hold_m": 21.776,
+    "chasers": 0,
+    "pre_k_min": 1,
+    "pre_k_max": 2,
+    "pre_margin": -1.007,
+    "prepos_during_plan": 0
+  },
+  "breaker": null,
+  "val": {
+    "final": 0.47593582887700536,
+    "default": 0.42245989304812837
+  },
+  "failed": 418,
+  "collisions": 1,
+  "cells": {
+    "AVOIDANT_team3": {
+      "scenarios": 138,
+      "plus_opt": [
+        0.279,
+        0.214,
+        0.348
+      ],
+      "plus_default": [
+        0.261,
+        0.196,
+        0.33
+      ],
+      "ambush_a95": [
+        0.217,
+        0.156,
+        0.283
+      ],
+      "pursuit": [
+        0.17,
+        0.116,
+        0.232
+      ],
+      "opt_minus_a95": [
+        0.062,
+        -0.004,
+        0.127
+      ],
+      "opt_minus_pursuit": [
+        0.109,
+        0.04,
+        0.178
+      ],
+      "opt_minus_default": [
+        0.018,
+        -0.047,
+        0.083
+      ],
+      "default_minus_a95": [
+        0.043,
+        0.0,
+        0.091
+      ],
+      "single_mean": [
+        0.168,
+        0.128,
+        0.21
+      ],
+      "synergy": [
+        -0.07,
+        -0.144,
+        0.005
+      ],
+      "synergy_bonferroni": [
+        -0.07,
+        -0.17,
+        0.031
+      ]
+    },
+    "AVOIDANT_team5": {
+      "scenarios": 137,
+      "plus_opt": [
+        0.361,
+        0.288,
+        0.434
+      ],
+      "plus_default": [
+        0.299,
+        0.23,
+        0.372
+      ],
+      "ambush_a95": [
+        0.307,
+        0.237,
+        0.376
+      ],
+      "pursuit": [
+        0.223,
+        0.161,
+        0.292
+      ],
+      "opt_minus_a95": [
+        0.055,
+        -0.015,
+        0.124
+      ],
+      "opt_minus_pursuit": [
+        0.139,
+        0.066,
+        0.215
+      ],
+      "opt_minus_default": [
+        0.062,
+        -0.015,
+        0.139
+      ],
+      "default_minus_a95": [
+        -0.007,
+        -0.058,
+        0.044
+      ],
+      "single_mean": [
+        0.164,
+        0.128,
+        0.203
+      ],
+      "synergy": [
+        -0.066,
+        -0.156,
+        0.021
+      ],
+      "synergy_bonferroni": [
+        -0.066,
+        -0.184,
+        0.054
+      ]
+    },
+    "AVOIDANT_team7": {
+      "scenarios": 137,
+      "plus_opt": [
+        0.369,
+        0.296,
+        0.442
+      ],
+      "plus_default": [
+        0.405,
+        0.332,
+        0.482
+      ],
+      "ambush_a95": [
+        0.336,
+        0.266,
+        0.405
+      ],
+      "pursuit": [
+        0.223,
+        0.161,
+        0.288
+      ],
+      "opt_minus_a95": [
+        0.033,
+        -0.036,
+        0.102
+      ],
+      "opt_minus_pursuit": [
+        0.146,
+        0.073,
+        0.219
+      ],
+      "opt_minus_default": [
+        -0.036,
+        -0.113,
+        0.04
+      ],
+      "default_minus_a95": [
+        0.069,
+        0.007,
+        0.131
+      ],
+      "single_mean": [
+        0.163,
+        0.128,
+        0.201
+      ],
+      "synergy": [
+        -0.113,
+        -0.2,
+        -0.026
+      ],
+      "synergy_bonferroni": [
+        -0.113,
+        -0.229,
+        0.007
+      ]
+    },
+    "RANDOM_team3": {
+      "scenarios": 135,
+      "plus_opt": [
+        0.307,
+        0.237,
+        0.381
+      ],
+      "plus_default": [
+        0.237,
+        0.174,
+        0.3
+      ],
+      "ambush_a95": [
+        0.2,
+        0.141,
+        0.263
+      ],
+      "pursuit": [
+        0.2,
+        0.137,
+        0.263
+      ],
+      "opt_minus_a95": [
+        0.107,
+        0.048,
+        0.17
+      ],
+      "opt_minus_pursuit": [
+        0.107,
+        0.052,
+        0.167
+      ],
+      "opt_minus_default": [
+        0.07,
+        0.004,
+        0.137
+      ],
+      "default_minus_a95": [
+        0.037,
+        -0.019,
+        0.093
+      ],
+      "single_mean": [
+        0.212,
+        0.162,
+        0.264
+      ],
+      "synergy": [
+        -0.054,
+        -0.113,
+        0.006
+      ],
+      "synergy_bonferroni": [
+        -0.054,
+        -0.131,
+        0.023
+      ]
+    },
+    "RANDOM_team5": {
+      "scenarios": 135,
+      "plus_opt": [
+        0.344,
+        0.27,
+        0.419
+      ],
+      "plus_default": [
+        0.293,
+        0.23,
+        0.356
+      ],
+      "ambush_a95": [
+        0.311,
+        0.241,
+        0.381
+      ],
+      "pursuit": [
+        0.263,
+        0.196,
+        0.33
+      ],
+      "opt_minus_a95": [
+        0.033,
+        -0.033,
+        0.1
+      ],
+      "opt_minus_pursuit": [
+        0.081,
+        0.015,
+        0.148
+      ],
+      "opt_minus_default": [
+        0.052,
+        -0.019,
+        0.119
+      ],
+      "default_minus_a95": [
+        -0.019,
+        -0.063,
+        0.022
+      ],
+      "single_mean": [
+        0.21,
+        0.161,
+        0.26
+      ],
+      "synergy": [
+        -0.078,
+        -0.137,
+        -0.022
+      ],
+      "synergy_bonferroni": [
+        -0.078,
+        -0.158,
+        -0.003
+      ]
+    },
+    "RANDOM_team7": {
+      "scenarios": 135,
+      "plus_opt": [
+        0.404,
+        0.326,
+        0.481
+      ],
+      "plus_default": [
+        0.43,
+        0.356,
+        0.507
+      ],
+      "ambush_a95": [
+        0.393,
+        0.315,
+        0.47
+      ],
+      "pursuit": [
+        0.359,
+        0.285,
+        0.433
+      ],
+      "opt_minus_a95": [
+        0.011,
+        -0.056,
+        0.078
+      ],
+      "opt_minus_pursuit": [
+        0.044,
+        -0.019,
+        0.107
+      ],
+      "opt_minus_default": [
+        -0.026,
+        -0.096,
+        0.044
+      ],
+      "default_minus_a95": [
+        0.037,
+        -0.026,
+        0.1
+      ],
+      "single_mean": [
+        0.217,
+        0.169,
+        0.267
+      ],
+      "synergy": [
+        -0.068,
+        -0.137,
+        0.001
+      ],
+      "synergy_bonferroni": [
+        -0.068,
+        -0.164,
+        0.023
+      ]
+    }
+  },
+  "primary_opt_minus_a95_pooled": [
+    0.05,
+    0.023,
+    0.076
+  ],
+  "primary_passes": true,
+  "cooperation_cells": []
+}

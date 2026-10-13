@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "config_id": "finite_examples_v1",
+  "stage": "W1",
+  "date": "2026-09-20",
+  "description": "Inputs for the six representation cases and eight assistance-accounting cases required by master plan section 10. Finite abstraction only: no simulator, no continuous dynamics, no policy, no optimizer.",
+  "scope_warning": "The numeric parameters below are ILLUSTRATIVE FINITE-ABSTRACTION VALUES chosen so that each case is exhaustively checkable by hand. They are NOT the operational contact thresholds, which remain UNRESOLVED under decision D06, and they are NOT the operational commitment parameters, which remain UNRESOLVED under D10.",
+  "lane_geometry": {
+    "body_length_m": 5.0,
+    "min_gap_m": 2.5,
+    "comment": "Body length and minimum gap are taken from the master plan vehicle body (5 m) and the historical native minGap (2.5 m) that appears in the recorded O22 station-separation arithmetic. Usable lane lengths are per-case."
+  },
+  "commitment_parameters": {
+    "J1": {"max_commit_duration": 10, "switch_margin": 0.10, "unknown_tolerance": 2},
+    "J0": {"max_commit_duration": 1, "switch_margin": 0.0, "unknown_tolerance": 0},
+    "comment": "J0 is the SAME code path as J1 with degenerate constants. The degeneracy is asserted by a test."
+  },
+  "representation_cases": [
+    {
+      "case_id": "F1",
+      "title": "Individually feasible routes with joint conflict",
+      "plan_requirement": "(1) individually feasible routes with joint conflict",
+      "dwell_required_s": 3.0,
+      "lanes": {"L1": {"usable_length_m": 14.0}},
+      "participants": ["p1", "p2", "p3"],
+      "stations": {"p1": "L1", "p2": "L1", "p3": "L1"},
+      "arrival_sets": {
+        "p1": {"intervals": [[10.0, 20.0]], "direction": "UNDER"},
+        "p2": {"intervals": [[10.0, 20.0]], "direction": "UNDER"},
+        "p3": {"intervals": [[10.0, 20.0]], "direction": "UNDER"}
+      },
+      "declared_movement_conflicts": [],
+      "declared_movement_unknown_pairs": [],
+      "evader_branches": ["b1"],
+      "examined_branches": ["b1"],
+      "variant_unknown_temporal": {
+        "description": "Same geometry, arrival sets relabelled PREDICTION so the temporal component becomes UNKNOWN. Tests that a physical rejection dominates temporal ignorance.",
+        "arrival_direction_override": "PREDICTION"
+      }
+    },
+    {
+      "case_id": "F2",
+      "title": "Genuinely compatible joint opportunity",
+      "plan_requirement": "(2) a genuinely compatible joint opportunity",
+      "dwell_required_s": 1.5,
+      "lanes": {"L2": {"usable_length_m": 30.0}},
+      "participants": ["p1", "p2"],
+      "stations": {"p1": "L2", "p2": "L2"},
+      "arrival_sets": {
+        "p1": {"intervals": [[5.0, 12.0], [20.0, 25.0]], "direction": "UNDER"},
+        "p2": {"intervals": [[10.0, 22.0]], "direction": "UNDER"}
+      },
+      "declared_movement_conflicts": [],
+      "declared_movement_unknown_pairs": [],
+      "evader_branches": ["b1"],
+      "examined_branches": ["b1"]
+    },
+    {
+      "case_id": "F3",
+      "title": "Nonconvex arrival times",
+      "plan_requirement": "(3) nonconvex arrival times",
+      "dwell_required_s": 1.0,
+      "lanes": {"L3": {"usable_length_m": 30.0}},
+      "participants": ["p1", "p2"],
+      "stations": {"p1": "L3", "p2": "L3"},
+      "arrival_sets": {
+        "p1": {"intervals": [[4.0, 6.0], [14.0, 16.0]], "direction": "OVER"},
+        "p2": {"intervals": [[7.0, 13.0]], "direction": "OVER"}
+      },
+      "declared_movement_conflicts": [],
+      "declared_movement_unknown_pairs": [],
+      "evader_branches": ["b1"],
+      "examined_branches": ["b1"],
+      "hull_trap": {
+        "description": "A convex-hull implementation would replace p1 by its hull [4,16], intersect with [7,13] and report a 6.0 s window. The correct answer is an empty intersection.",
+        "hull_of_p1": [[4.0, 16.0]]
+      }
+    },
+    {
+      "case_id": "F4",
+      "title": "Unknown evader branch",
+      "plan_requirement": "(4) unknown evader branch",
+      "dwell_required_s": 1.0,
+      "lanes": {"L4": {"usable_length_m": 30.0}},
+      "participants": ["p1", "p2"],
+      "stations": {"p1": "L4", "p2": "L4"},
+      "arrival_sets": {
+        "p1": {"intervals": [[8.0, 14.0]], "direction": "UNDER"},
+        "p2": {"intervals": [[9.0, 15.0]], "direction": "UNDER"}
+      },
+      "declared_movement_conflicts": [],
+      "declared_movement_unknown_pairs": [],
+      "evader_branches": ["b1", "b2"],
+      "examined_branches": ["b1"],
+      "comment": "The arrival sets above hold under branch b1. Branch b2 is declared but not examined."
+    },
+    {
+      "case_id": "F5",
+      "title": "Initially safe action whose later continuation is unresolved",
+      "plan_requirement": "(5) initially safe action whose later continuation is unresolved/unsafe",
+      "dwell_required_s": 1.0,
+      "lanes": {"L5": {"usable_length_m": 30.0}},
+      "participants": ["p1", "p2"],
+      "stations": {"p1": "L5", "p2": "L5"},
+      "arrival_sets": {
+        "p1": {"intervals": [[6.0, 12.0]], "direction": "UNDER"},
+        "p2": {"intervals": [[7.0, 13.0]], "direction": "UNDER"}
+      },
+      "declared_movement_conflicts": [],
+      "declared_movement_unknown_pairs": [["p1", "p2"]],
+      "step_admission": {"step_1": "SUPPORTED", "step_4": "UNKNOWN"},
+      "evader_branches": ["b1"],
+      "examined_branches": ["b1"],
+      "comment": "Step-1 admission is SUPPORTED. The pair (p1,p2) has a declared-unknown movement interaction later in the manoeuvre."
+    },
+    {
+      "case_id": "F6",
+      "title": "Commitment memory changing a later choice",
+      "plan_requirement": "(6) commitment memory changing a later choice",
+      "dwell_required_s": 1.0,
+      "decisions": [
+        {"t": 1, "candidate_scores": {"X": 0.60, "Y": 0.55}, "candidate_verdicts": {"X": "SUPPORTED", "Y": "SUPPORTED"}},
+        {"t": 2, "candidate_scores": {"X": 0.58, "Y": 0.62}, "candidate_verdicts": {"X": "SUPPORTED", "Y": "SUPPORTED"}}
+      ],
+      "comment": "Scores are given directly; this case tests the selection and memory rule, not the compatibility predicate."
+    }
+  ],
+  "assistance_cases": [
+    {"case_id": "A1", "title": "Necessary helper", "plan_requirement": "necessary helper",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0},
+       {"alternative": "b2", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0},
+       {"alternative": "b3", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0}]},
+    {"case_id": "A2", "title": "Redundant pair", "plan_requirement": "redundant pair",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1},
+       {"alternative": "b3", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1}],
+     "coalition_note": {"joint_withdrawal_of_h1_and_h2_outcome": 0,
+       "comment": "Recorded to test that individual effects do not sum to the coalition effect. The coalition intervention itself is NOT evaluated; it requires its own admission and budget."}},
+    {"case_id": "A3", "title": "Occupancy unchanged by policy substitution", "plan_requirement": "occupancy unchanged by policy substitution",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1},
+       {"alternative": "b2", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1},
+       {"alternative": "b3", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1}],
+     "effect_not_identifiable_by_policy_substitution": true,
+     "comment": "The helper's body occupies a corridor. Every admissible policy substitution leaves the body where it is, so the occupancy assistance is real but invisible to this intervention family."},
+    {"case_id": "A4", "title": "Guard-equivalent commands", "plan_requirement": "guard-equivalent commands",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1}],
+     "execution": {"factual_intent": "APPROACH", "alternative_intent": "CRUISE",
+       "factual_executed_command": "u_clamped_12.0", "alternative_executed_command": "u_clamped_12.0"},
+     "comment": "Two different intentions are clamped by the guard to the same executed command."},
+    {"case_id": "A5", "title": "Baseline-sensitive result", "plan_requirement": "baseline-sensitive result",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0},
+       {"alternative": "b3", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 1}]},
+    {"case_id": "A6", "title": "Unresolved transition", "plan_requirement": "unresolved transition",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "SUPPORTED_ADMISSIBLE", "outcome": "UNKNOWN"}],
+     "comment": "The two admissible completions of the unresolved transition reverse the conclusion: outcome 0 gives a positive effect, outcome 1 gives a null effect."},
+    {"case_id": "A7", "title": "Delayed memory effect", "plan_requirement": "delayed memory effect",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b2", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0}],
+     "execution": {"step_1_executed_command_identical": true, "step_1_next_state_identical": true,
+       "step_2_executed_command_identical": false,
+       "comment": "Commitment memories differ although the first executed command is identical."}},
+    {"case_id": "A8", "title": "Time-varying admission", "plan_requirement": "time-varying admission",
+     "helper": "h1", "factual_outcome": 1,
+     "declared_family": [
+       {"alternative": "b1", "admission": "UNRESOLVED", "admission_at_step_1": "SUPPORTED_ADMISSIBLE",
+        "admission_at_step_4": "UNRESOLVED", "outcome": "UNKNOWN"},
+       {"alternative": "b3", "admission": "SUPPORTED_ADMISSIBLE", "outcome": 0}]}
+  ]
+}

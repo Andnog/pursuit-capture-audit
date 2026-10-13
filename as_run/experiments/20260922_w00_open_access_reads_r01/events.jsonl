@@ -1,0 +1,11 @@
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "run_started", "package": "20260922_w00_open_access_reads_r01"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "access_assumption_falsified", "record": "N03b_DACOOP_A", "detail": "recorded as needing institutional access; the full method is on arXiv, open"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "source_read", "record": "N03b_DACOOP_A", "depth": "FULL_TEXT"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "decision_resolved", "decision": "D05", "outcome": "NEGATIVE: DACOOP-A cannot be the primary baseline for this endpoint"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "access_assumption_falsified", "record": "E02_GSTAM", "detail": "open access; no subscription needed or used"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "source_read", "record": "E02_GSTAM", "depth": "FULL_TEXT"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "concession_recorded", "record": "E02_GSTAM", "claims": ["C12", "C04", "C05"], "direction": "AGAINST_THIS_PROJECT", "magnitude": "largest in the corpus"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "source_read", "record": "E03_ATT_D3RQN", "depth": "METHOD_SECTIONS"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "no_constraint", "record": "E03_ATT_D3RQN", "reason": "one-on-one; no allocation, no joint feasibility, no inter-agent commitment"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "note_against_framing", "record": "E03_ATT_D3RQN", "detail": "the lane-constraint motivation is stated in print and is therefore published prior art"}
+{"ts": "2026-09-22T13:08:36.075412Z", "event": "run_ended", "verdict": "THREE_CONCESSIONS_NO_REFUTATION_D05_RESOLVED"}

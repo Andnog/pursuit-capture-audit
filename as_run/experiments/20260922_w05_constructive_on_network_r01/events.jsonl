@@ -1,0 +1,3 @@
+{"ts": "2026-09-23T03:33:29.839974Z", "event": "run_started", "package": "20260922_w05_constructive_on_network_r01"}
+{"ts": "2026-09-23T03:33:29.839974Z", "event": "geometry_fixed", "route_edges": 18, "route_drivable_length_m": 1608.44, "station_edge": "1096147716#2", "station_position_m": 0.475, "station_driving_distance_m": 1042.455, "route_speed_limit_min_mps": 13.89, "route_speed_limits_mps": [13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89, 13.89], "speed_limit_choice": "minimum over the route's edges, so the profile is legal everywhere"}
+{"ts": "2026-09-23T03:33:29.839974Z", "event": "run_ended", "verdict": "CONSTRUCTIVE_TIMES_FAIL"}

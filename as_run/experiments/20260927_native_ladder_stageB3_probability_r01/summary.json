@@ -1,0 +1,86 @@
+{
+  "C1_grid4x4:AVOIDANT": {
+    "scenarios": 8,
+    "with_necessary_plan": 2,
+    "p_with_mean": 1.0,
+    "p_without_mean": 0.675,
+    "delta_mean": 0.325,
+    "delta_ci95": [
+      0.0,
+      0.65
+    ],
+    "passes": false
+  },
+  "C2_grid6x6:AVOIDANT": {
+    "scenarios": 8,
+    "with_necessary_plan": 2,
+    "p_with_mean": 0.625,
+    "p_without_mean": 0.475,
+    "delta_mean": 0.15,
+    "delta_ci95": [
+      -0.1,
+      0.4
+    ],
+    "passes": false
+  },
+  "C3_grid9x9:AVOIDANT": {
+    "scenarios": 8,
+    "with_necessary_plan": 1,
+    "p_with_mean": 0.0,
+    "p_without_mean": 0.0,
+    "delta_mean": 0.0,
+    "delta_ci95": [
+      0.0,
+      0.0
+    ],
+    "passes": false
+  },
+  "C4_grid10x4:AVOIDANT": {
+    "scenarios": 8,
+    "with_necessary_plan": 3,
+    "p_with_mean": 0.483,
+    "p_without_mean": 0.533,
+    "delta_mean": -0.05,
+    "delta_ci95": [
+      -0.5,
+      0.45
+    ],
+    "passes": false
+  },
+  "C5_spider:AVOIDANT": {
+    "scenarios": 8,
+    "with_necessary_plan": 4,
+    "p_with_mean": 0.275,
+    "p_without_mean": 0.212,
+    "delta_mean": 0.062,
+    "delta_ci95": [
+      -0.1,
+      0.275
+    ],
+    "passes": false
+  },
+  "C2_grid6x6:RANDOM": {
+    "scenarios": 8,
+    "with_necessary_plan": 1,
+    "p_with_mean": 0.85,
+    "p_without_mean": 0.5,
+    "delta_mean": 0.35,
+    "delta_ci95": [
+      0.35,
+      0.35
+    ],
+    "passes": false
+  },
+  "C2_grid6x6:OPTIMAL_ESCAPE": {
+    "scenarios": 8,
+    "with_necessary_plan": 1,
+    "p_with_mean": 1.0,
+    "p_without_mean": 0.45,
+    "delta_mean": 0.55,
+    "delta_ci95": [
+      0.55,
+      0.55
+    ],
+    "passes": false
+  }
+}

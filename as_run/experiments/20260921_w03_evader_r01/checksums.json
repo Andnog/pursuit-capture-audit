@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w03_evader_r01",
+  "sealed_at": "2026-09-21T19:59:42Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "bf026c79f9fc483ee39252dfb2129b1ffdd2e46ca034f3eaa7835cf694d5d836",
+    "PROTOCOL_EN.md": "fbd4e8545bb63d12bd317433265bb974e77d692f376e4be1c1aaa346e3bc69c9",
+    "SCIENTIFIC_DECISION_EN.md": "d9960b5b6ce91d0c1c3ea1691b957d5fb17c499c0f4a4e0eea3fc14e9af63d52",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "54c359ec00f069d52489b63cf38a7315c2b52a03b573cee97c1a7569ff639fd4",
+    "events.jsonl": "7e2e7f0471d5b9356d56adf01654afd6ed1f1e7ad4bfa83fc8baa823f356e028",
+    "inputs.json": "a1cde428fc3c2ddc2834f0444179bde35103affeb5669012a6ccaffe74d43f15",
+    "plan.json": "4d333a623d5e7f8bb81f025299c38ba4e29a9230d01dd1642c30b51a82f92a2e",
+    "result.json": "859c240b367e048a7cc9460b0ab8453977dc9ee714d9abd50d7009ff71df3d6a",
+    "results.jsonl": "047d8e77fae0c69f70ba8ad68052ff49a69744eae58b51dd028d8f0923462b00"
+  },
+  "verdict": "W3_EVADER_COMPLETE_ORDERING_MONOTONE",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

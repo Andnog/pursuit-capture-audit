@@ -1,0 +1,75 @@
+{
+  "gate": {
+    "verdict": "NOT_COVERED",
+    "m1_share_within_1s": 0.9388,
+    "m2_share_within_1m": 0.9613,
+    "m3_share_reproduced": 0.7333,
+    "m4_p95_m": 0.9705,
+    "passes": {
+      "m1": true,
+      "m2": true,
+      "m3": false,
+      "m4": true
+    },
+    "scored": {
+      "m1": 2776,
+      "m2": 362,
+      "m3": 60,
+      "m4": 88597
+    },
+    "unknown": {
+      "m1": 248,
+      "m2": 4,
+      "m3": 0,
+      "m4": 2441
+    },
+    "enough": {
+      "m1": true,
+      "m2": true,
+      "m3": true,
+      "m4": true
+    },
+    "thresholds": {
+      "m1_error_s": 1.0,
+      "m1_share": 0.9,
+      "m2_error_m": 1.0,
+      "m2_share": 0.9,
+      "m3_share": 0.8,
+      "m4_p95_m": 2.0
+    },
+    "minimum_scored": {
+      "m1": 100,
+      "m2": 30,
+      "m3": 20,
+      "m4": 500
+    }
+  },
+  "selection": {
+    "phoenix_downtown": {
+      "scanned": 141,
+      "no_plan": 9,
+      "illegal": 15,
+      "capture": 20,
+      "other": 10
+    },
+    "portland_downtown": {
+      "scanned": 164,
+      "no_plan": 8,
+      "illegal": 5,
+      "capture": 20,
+      "other": 10
+    },
+    "sapporo_grid": {
+      "scanned": 213,
+      "no_plan": 10,
+      "illegal": 28,
+      "capture": 20,
+      "other": 10
+    }
+  },
+  "scenarios_scored": 90,
+  "stopped_by": "completed",
+  "cpu_seconds_python": 302.6,
+  "cpu_seconds_sumo": 39.5,
+  "sumo_process_starts": 180
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r02",
+  "novelty_artifacts": {
+    "research/novelty/TECHNICAL_GAP_EN.md": "17c3f9403bc3897ede330ac03f6d937943b0d7b8589fe42be313c6b80fc39ddd",
+    "research/novelty/claim_evidence_matrix.csv": "e92c3f736099c02921bb682cadb9108e57677794bcf48c9a7e30267b50906bfe",
+    "research/novelty/search_log.jsonl": "88037d4daf8dfb0afbdfbb5b2b4b9831a3403186b68a0d5af721d68cc4c3b8fd",
+    "research/novelty/sources.bib": "3ee3e9748664fabd438ddcd1d7ef5fbd3bb5e0cec71736536986ce8050b5395b"
+  },
+  "note": "Search inputs are external web records identified by URL in search_log.jsonl and sources.bib; reading depths are recorded per record."
+}

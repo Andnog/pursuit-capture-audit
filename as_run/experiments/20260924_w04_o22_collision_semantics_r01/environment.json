@@ -1,0 +1,10 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "sumo_binary_version": "SUMO 1.21.0",
+  "map": "adelaide_cbd (TRAINING, read-only)",
+  "sumo_process_starts": 5,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false
+}

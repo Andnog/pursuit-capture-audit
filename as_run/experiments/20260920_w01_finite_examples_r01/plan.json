@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260920_w01_finite_examples_r01",
+  "created": "2026-09-20",
+  "stage": "W0_W1",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "protocol_frozen_before_implementation": true,
+  "expected_answers_frozen_before_implementation": true,
+  "planned_cases": {
+    "representation": ["F1", "F2", "F3", "F4", "F5", "F6"],
+    "assistance": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8"],
+    "additional_variant_checks": ["F1_variant_unknown_temporal", "F3_under_variant"]
+  },
+  "acceptance_rule": {
+    "per_case": "PASS iff every asserted field matches the frozen expectation; numeric tolerance 1e-9; verdicts, labels and booleans exact.",
+    "gate": "W1 analytical correctness is SUPPORTED only if 14/14 planned cases PASS and the unit test suite returns 0.",
+    "claim_class": "analytical_correctness_only"
+  },
+  "resource_limits": {
+    "stage_cap": "W0-W1 combined: one working day and 30 CPU minutes",
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0,
+    "external_dependency_installs_permitted": 0
+  },
+  "prohibited_and_not_performed": [
+    "SUMO invocation or any simulator episode",
+    "optimizer updates or checkpoint loading",
+    "TEST-split access",
+    "import or execution of any legacy runtime module",
+    "unattended campaigns, heartbeats or automatic retries",
+    "editing the frozen fixture to match implementation output"
+  ],
+  "commands": {
+    "run": "python3 scripts/run_finite_examples.py --package experiments/20260920_w01_finite_examples_r01",
+    "tests": "python3 -m unittest discover -s tests -t tests",
+    "verify": "python3 scripts/verify_artifacts.py"
+  }
+}

@@ -1,0 +1,6 @@
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "run_started", "package": "20260924_w05_deficit_mechanism_r01"}
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "modelling_error_found", "detail": "route_speed_limit ignored internal junction lanes; median internal lane speed 7.99 m/s against 13.89 on normal lanes"}
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "correction_applied_to_the_model", "detail": "minimum over route edge lanes AND connecting internal lanes; not a fitted margin"}
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "re_measured", "runs": 24, "median_error_before_s": 39.636, "median_error_after_s": 4.351}
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "residual_mechanism_candidate", "candidate": "traffic lights", "status": "PLAUSIBLE_UNCONFIRMED"}
+{"ts": "2026-09-24T13:50:57.032656Z", "event": "run_ended", "verdict": "TWO_MECHANISMS_ONE_WAS_MY_OWN_MODELLING_ERROR"}

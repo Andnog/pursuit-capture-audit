@@ -1,0 +1,23 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261001_endpoint_validation_r01",
+ "sealed_at": "2026-10-01T13:22:22.700292Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "POSTHOC_TRAP_GEOMETRY.json": "17abef9f5b0a70a3ca331d9a4b230a39fb0ddceb596e18877d6c95d912d0804f",
+  "PROTOCOL_EN.md": "c15d7d8c43fbb5f0a1ef280a28d79462e286be100ccf494a7193b5996052f4b6",
+  "SCIENTIFIC_DECISION_EN.md": "229d2881ee03340efb0ab2754bc8c33b5f21df08e1f4d9f7952c7fec320662bf",
+  "audit.jsonl": "96b9e904131452348ee785b9d4bbabd86e07690eafb20d357fba3f4236ac8bc9",
+  "endpoint.jsonl": "21d4abf78704e22a3ddec7470aa359a296323ec85b4a73a8df582255e9e1566e",
+  "gifs/phoenix17_pursuit_DEAD_END.gif": "ffbc0fd28c3222faeba3ea3f2b9d3623c21d286f346519e08ee5e6db8cf76d9d",
+  "gifs/portland20_pursuit_SANDWICH.gif": "fac2f73043e85c610e058db16690496b5589d02dec79cb85d8251b4fb958240f",
+  "inputs.json": "b11b17cb40677185028b0610e19deb67ae65be7c954fdec678ba16c0d55a2648",
+  "posthoc_trap_geometry.py": "3cbb12ad4ba3e08494b33a68acb9bc1cd8ae96c2a335b828fcf102d432eb2ce2",
+  "records.jsonl.gz": "d3110c6779dd636b1cbd26b14ed88343478d9c42eeba8279ff9aeeb18a044991",
+  "run_audit.log": "bdd1fcaac65fd42c139260f0996f9d77581d8ce45bb4870db82922ea46a1649b",
+  "run_endpoint.log": "0b87cb8a5589fa71a77de05335cbf00a28226bc3c86d05da9002e5712c79e69e",
+  "summary.json": "e3162ebb8f3775908a3dbc33698f00a5ec906de386fd70f9291f5fba51de9145"
+ }
+}

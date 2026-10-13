@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w03_evader_r01",
+  "implementation_inputs": {
+    "src/joint_interception/simulator/evader.py": "dc42e9b1042dd1d5ee734c8dddf2d5fa5828055c5455bbb0a9de4365ddc9b7b5",
+    "src/joint_interception/simulator/topology.py": "73e2d88afd5d28bb7d1243d765afa3f50e1c2a7afd6ea471ea513582706418c0",
+    "scripts/run_evader_checks.py": "4f76fdb3adc9f8287db2e04c39d74814d07ea035d3c809e7f08782b7bb3a5f60",
+    "tests/test_evader_levels.py": "b4122e12499d53a9d78eef2c04cd5cfe392625fbaec04d6e251669af2468040a"
+  },
+  "specification_inputs": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "docs/METHOD_SPEC_EN.md": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5"
+  },
+  "frozen_decisions": {
+    "D06": "FROZEN 2026-09-21",
+    "D08": "FROZEN 2026-09-21"
+  },
+  "note": "The evader is exercised against an in-memory topology, not one of the 12 audited OSM networks."
+}

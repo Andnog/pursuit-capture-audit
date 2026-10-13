@@ -1,0 +1,72 @@
+{
+  "C1_grid4x4:AVOIDANT": {
+    "scenarios": 8,
+    "with_capture": 6,
+    "with_coordinated": 0,
+    "with_robust": 0,
+    "plans_tried": 641,
+    "coordinated_per_100_plans": 0.0,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 304.2
+  },
+  "C2_grid6x6:AVOIDANT": {
+    "scenarios": 8,
+    "with_capture": 8,
+    "with_coordinated": 1,
+    "with_robust": 0,
+    "plans_tried": 762,
+    "coordinated_per_100_plans": 0.131,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 491.2
+  },
+  "C3_grid9x9:AVOIDANT": {
+    "scenarios": 8,
+    "with_capture": 5,
+    "with_coordinated": 2,
+    "with_robust": 0,
+    "plans_tried": 656,
+    "coordinated_per_100_plans": 0.305,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 442.1
+  },
+  "C4_grid10x4:AVOIDANT": {
+    "scenarios": 8,
+    "with_capture": 6,
+    "with_coordinated": 0,
+    "with_robust": 0,
+    "plans_tried": 682,
+    "coordinated_per_100_plans": 0.0,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 422.5
+  },
+  "C5_spider:AVOIDANT": {
+    "scenarios": 8,
+    "with_capture": 8,
+    "with_coordinated": 1,
+    "with_robust": 0,
+    "plans_tried": 979,
+    "coordinated_per_100_plans": 0.102,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 483.0
+  },
+  "C2_grid6x6:RANDOM": {
+    "scenarios": 8,
+    "with_capture": 6,
+    "with_coordinated": 0,
+    "with_robust": 0,
+    "plans_tried": 1017,
+    "coordinated_per_100_plans": 0.0,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 247.4
+  },
+  "C2_grid6x6:OPTIMAL_ESCAPE": {
+    "scenarios": 8,
+    "with_capture": 3,
+    "with_coordinated": 0,
+    "with_robust": 0,
+    "plans_tried": 846,
+    "coordinated_per_100_plans": 0.0,
+    "robust_per_100_plans": 0.0,
+    "cpu_seconds": 482.9
+  }
+}

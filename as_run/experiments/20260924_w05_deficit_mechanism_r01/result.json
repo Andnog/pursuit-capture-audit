@@ -1,0 +1,86 @@
+{
+  "package": "20260924_w05_deficit_mechanism_r01",
+  "stage": "W5",
+  "claim_class": "diagnostic_no_pre_registered_acceptance_rule",
+  "verdict": "TWO_MECHANISMS_ONE_WAS_MY_OWN_MODELLING_ERROR",
+  "finding_1_modelling_error": {
+    "what": "route_speed_limit sampled only NORMAL edge lanes. SUMO's INTERNAL junction lanes are much slower, and the abstraction therefore assumed a speed the vehicle is never permitted to reach while crossing a junction.",
+    "adelaide_cbd_lane_speeds": {
+      "normal_lanes": {
+        "n": 1358,
+        "median_mps": 13.89
+      },
+      "internal_lanes": {
+        "n": 3299,
+        "median_mps": 7.99,
+        "min_mps": 2.78
+      },
+      "internal_slower_than_13_89": "2243 of 3299 = 68.0%, median 6.51 m/s among those"
+    },
+    "correction": "take the minimum over route edge lanes AND the internal lanes connecting them. This is the conservative bound the UNDER semantics always required; it is NOT a fitted margin.",
+    "effect": {
+      "median_error_before_s": 39.636,
+      "median_error_after_s": 4.351,
+      "reduction_factor": 9.1,
+      "routes_reduced_to_observation_resolution": [
+        "adelaide_cbd rt0",
+        "adelaide_cbd rt1",
+        "adelaide_cbd rt2",
+        "seattle_downtown rt2",
+        "toronto_downtown rt0",
+        "toronto_downtown rt2"
+      ],
+      "kept_feasibility_throughout_before": "0 of 12",
+      "kept_feasibility_throughout_after": "2 of 12",
+      "within_0_1_s_tolerance": "0 of 12 both before and after"
+    }
+  },
+  "finding_2_residual_mechanism": {
+    "candidate": "traffic lights",
+    "evidence_for": "all three routes with ZERO traffic lights on the approach have a residual below 0.21 s; the most signalised map, washington_downtown with 4 to 8 lights per route, is uniformly large at 10.3 to 101.8 s",
+    "evidence_against_a_count_based_rule": "seattle routes 0, 1 and 2 all cross 2 lights and split 37.7 / 47.1 / 0.14 s; toronto routes 0 and 2 cross 3 and 5 lights with small residuals while route 1 crosses 2 with 8.5 s",
+    "reading": "count does not determine the outcome, because whether a vehicle is stopped depends on PHASE TIMING at the moment it arrives, not on how many signals it passes. This is the same reason the junction count in A-41 explained nothing.",
+    "tls_on_approach_by_route": {
+      "adelaide_cbd rt0": 0,
+      "adelaide_cbd rt1": 0,
+      "adelaide_cbd rt2": 0,
+      "seattle_downtown rt0": 2,
+      "seattle_downtown rt1": 2,
+      "seattle_downtown rt2": 2,
+      "toronto_downtown rt0": 3,
+      "toronto_downtown rt1": 2,
+      "toronto_downtown rt2": 5,
+      "washington_downtown rt0": 8,
+      "washington_downtown rt1": 4,
+      "washington_downtown rt2": 8
+    },
+    "status": "PLAUSIBLE AND UNCONFIRMED. No signal-phase trace was recorded; that would confirm it and is not done here."
+  },
+  "effect_on_sealed_amendments": {
+    "A-40": "magnitudes INFLATED by the modelling error. Conclusion survives.",
+    "A-41": "'48 of 48 lost feasibility' becomes '10 of 12' once the model uses a speed the vehicle can actually reach. Median error 39.6 s becomes 4.35 s. The conclusion that no route arrives within tolerance SURVIVES.",
+    "not_done": "neither sealed package was edited"
+  },
+  "consequence_for_the_windows_redesign": "A signal hold is set by the signal program and is unbounded from the kinematic model's point of view. No kinematic bound absorbs it. A window-based SUPPORTED must either span the worst-case signal delay on the approach, or the model must read the signal program, or stations must be restricted to unsignalised approaches - and unlike the junction-free restriction closed by A-41, that last one has instances: three of twelve routes here.",
+  "measurements": {
+    "routes": 12,
+    "maps": 4,
+    "runs": 24,
+    "naive_median_error_s": 39.636,
+    "naive_max_error_s": 117.045,
+    "conservative_median_error_s": 4.351,
+    "conservative_max_error_s": 101.798
+  },
+  "not_established": [
+    "that traffic lights are the residual cause; no phase trace was recorded",
+    "capture, assistance, learning, benefit, transfer or novelty",
+    "anything O22 guards"
+  ],
+  "resources": {
+    "sumo_process_starts": 40,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

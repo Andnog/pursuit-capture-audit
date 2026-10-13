@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r04",
+  "created": "2026-09-21",
+  "stage": "W0_REVISION",
+  "revision": "r04",
+  "continues": "20260921_w00_novelty_closure_r03",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_rule_frozen_before_searching": true,
+  "move": "backward citation chasing on the 22 references of B06; no keyword query issued",
+  "access": "open web; Semantic Scholar Graph API; author publication page. No proxy used, no credentials entered by the agent.",
+  "acceptance_rule": {
+    "REFUTED": "a reference implements the conjunction",
+    "CHASE_CLOSED": "all references screened, all relevant ones read at method level",
+    "CHASE_PARTIAL": "all references screened; one or more relevant ones identified but not obtainable",
+    "CHASE_FAILED": "the reference list could not be read"
+  },
+  "declared_limit": "screening a reference list finds ancestors of one source only; it says nothing about work that source did not cite",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

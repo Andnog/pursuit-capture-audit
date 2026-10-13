@@ -1,0 +1,31 @@
+{
+  "what": "post-run read-only diagnostics on the r03 code (no source modified)",
+  "witness_mechanism": [
+    {
+      "map_id": "adelaide_cbd",
+      "finisher": "p4",
+      "edge": "27405202#2",
+      "lanes": 1,
+      "finisher_state": "stopped at its hold, offset 12.0 m",
+      "evader_state": "stopped at offset 6.0 m, 0.00 m following room behind the finisher (its 1.0 m min_gap)",
+      "signal_or_merge_involved": false
+    },
+    {
+      "map_id": "seattle_downtown",
+      "finisher": "p3",
+      "edge": "465797044#0",
+      "lanes": 1,
+      "finisher_state": "stopped at its hold, offset 12.0 m",
+      "evader_state": "stopped at offset 6.0 m, 0.00 m following room behind the finisher",
+      "signal_or_merge_involved": false
+    }
+  ],
+  "witness_reading": "both captures are physical blocking on a single-lane edge: the evader is stopped by the finisher's body, not by a signal, a merge yield or a route end",
+  "seattle_failed_verifications": {
+    "count": 198,
+    "sampled": 40,
+    "all_sampled_identical": "pursuer p5 at 54.3 s (a plan segment from decision 0, shared by every sampled plan), required 10.549 m/s against an ordinary floor of 10.604 m/s (about 5.05 m/s^2 against 4.5)",
+    "mechanism": "p5 was braking for a red signal at the end of edge -428227893#1 (stop line 13.92 m ahead). On entering that edge a merge yield appeared whose stop point is the junction entry minus 0.5 m (13.42 m). The merge priority judges 'can still stop' at the entry itself, not at the yield point 0.5 m earlier, so a vehicle able to stop at the line is asked to stop 0.5 m before it.",
+    "direction": "blocks verification of factual captures; cannot create a construction"
+  }
+}

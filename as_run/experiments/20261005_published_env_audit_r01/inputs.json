@@ -1,0 +1,32 @@
+{
+ "amendment": "A-126",
+ "third_party": {
+  "url": "https://github.com/BUPT-ANTlab/DGMARL-MVP",
+  "commit": "62bd72e2a6ae94c1b5afba0ddee89aeee5ea9257"
+ },
+ "script": {
+  "scripts/audit_published_env.py": "65b95f8ed67ce6edaf1d7dcf27d7baaad37009ced90db1b259c12eb45b193c2f"
+ },
+ "sumo": "1.21.0",
+ "seed0": 126000,
+ "episodes": {
+  "3x3Traffic_4_2": 300,
+  "3x3Traffic_7_4": 100
+ },
+ "arms": [
+  "null",
+  "greedy"
+ ],
+ "modes": [
+  "published",
+  "followup"
+ ],
+ "follow_s": 30,
+ "marks_s": [
+  1,
+  2,
+  5,
+  10,
+  30
+ ]
+}

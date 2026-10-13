@@ -1,0 +1,13 @@
+{"event": "run_started", "package": "20260921_w02_contracts_r01", "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "preflight_executed", "returncode": 0, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_reachable_intervals", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_joint_compatibility", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_commitment_memory", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_assistance_accounting", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_information_boundary", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_contract_admission", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_capture_judge", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_safety_admission", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_split_integrity", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "test_module_executed", "module": "test_reward_horizon", "ok": true, "ts": "2026-09-21T15:19:09.533614+00:00"}
+{"event": "w1_regression_executed", "passed": 14, "planned": 14, "ts": "2026-09-21T15:19:09.533614+00:00"}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260926_w04_native_replication_n05_interpolated",
+  "recorded_at_launch": "2026-09-27T01:14:15.139976Z",
+  "sources": {
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "scripts/run_native_replication.py": "c51a95616a6a21bbe2bb9d68a9f7b29ca849a7de348dfef494aab14106a97b78",
+    "src/joint_interception/world/network.py": "e67a0de7b9884026660e3337974104a4aec2827943d6395e13fe0b0667c2791f",
+    "src/joint_interception/world/simulation.py": "93fea931fb1607a2c3f711587c539f96e1defc6c038949feb0f62a21be518714",
+    "src/joint_interception/world/construction.py": "13e6edcb409d5b6f4d0eee872c24e711020528bb509d327192837d9bbc9dc4b6",
+    "src/joint_interception/simulator/evader.py": "8d677227a146432fe51d692e859ffb34fcab83ca678451e015bb37932ea8f8ef",
+    "src/joint_interception/simulator/topology.py": "d7d468684ef53e187931a9c160900bece202c1950e694ccf40fd9b3d75d64d6b",
+    "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "src/joint_interception/domain/contracts.py": "df1c30a923bc9788dea17b5102e7b00d09a87287b522bde0df6066c238040ea2",
+    "src/joint_interception/domain/geometry.py": "5fa41ea0651c274cb16192ab87313de8a4778e521cd9655fa33580fbb49e0a07",
+    "src/joint_interception/opportunities/approach.py": "50fd6dd626c4f37c5870112e48ef055d2d3a3cfdcea9248dad69aa50a2402b29",
+    "src/joint_interception/validation/diagnostic_set.py": "21eae7cbe70a96a1c1549845bd485544a7874d416bca2ea0aca1ae444a577f01",
+    "src/joint_interception/validation/sumo_replay.py": "329fe9fc3686452ddd610e1f9caaf3cd532337e5288a433560c116b66dd9408d",
+    "src/joint_interception/validation/native.py": "f98f0e3a8bfb40dad4ef5da5d172563865092896cf67fdba957125c4dc95b1fe",
+    "experiments/20260926_w04_native_replication_n05_interpolated/PROTOCOL_EN.md": "be265322e23fbf5f7dcd2a50e7aa61c38eb46f72c4fba743cf8ab42ab49f0677"
+  },
+  "arguments": {
+    "salt": "n05",
+    "level": "AVOIDANT",
+    "cpu_per_map": 1800,
+    "exp_per_map": 100000
+  },
+  "rule": "these files are not modified while the search runs"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260920_w01_finite_examples_r01",
+  "description": "Exact identity of every input consumed by this run. Hashes are integrity aids, not scientific validation.",
+  "specification_inputs": {
+    "docs/METHOD_SPEC_EN.md": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5",
+    "docs/BASELINE_SPEC_EN.md": "237db5a17e8c55002d6f028a4d5fc9da2b2f7886528cd5dd1922c01bac6eee33",
+    "docs/RESEARCH_QUESTION_EN.md": "7f450366d501ee788e0ea9207b667e49e2f6c1d09f6d8f8ae2a653ffa3f3738b",
+    "research/novelty/TECHNICAL_GAP_EN.md": "38bb894ac7c880087ccc13857916a055b657b6b58a56cb0f43e68432a3563818",
+    "research/novelty/SEARCH_PROTOCOL_EN.md": "fc1b40348de7e39109093766a3bec398ca1e8b2bb50bc7e8c0821728406fc57e",
+    "research/novelty/claim_evidence_matrix.csv": "aabf03b541c2b616b6f638f7752dcf654edcc1d4e25e34a719f4c6289bddb25b",
+    "research/novelty/search_log.jsonl": "eb913b53235619d90e871d5e28fe887eef5896313c3179820f6432aa962090da",
+    "research/novelty/sources.bib": "b4076850c545f053194af24a597ef1f329c82787446f31135c13c39514167bf2",
+    "governance/LEGACY_OBLIGATIONS_EN.md": "eebfe018c12e3746146799de3030782a1f9d0406f40e4514a96323a9c5fadd07",
+    "governance/SOURCE_PROVENANCE.json": "08a3e91c5bda3a83d75271da60941613d1b582bb632bb2f834faa06ef18de599"
+  },
+  "implementation_inputs": {
+    "src/joint_interception/__init__.py": "826b3c133785922fa2db33994daf57c508d07bfb314e9e266d5f69a209753726",
+    "src/joint_interception/opportunities/__init__.py": "b7c2082b14ffa9fb97c30b708c1977e5528f2592434a8d44e12b1dbfe2d74e26",
+    "src/joint_interception/opportunities/compatibility.py": "f6ac3d6e3adb4a690fb682e1d54a26fd07db07392c7c17f4a099c452a0b92e71",
+    "src/joint_interception/opportunities/reachability.py": "c8d6ba53ac24f823bf531f0c640c6330b70fdfa989fe14729c18f37ebf03d088",
+    "src/joint_interception/opportunities/types.py": "55cd542818398d574124855df1283ca5765ba097a808cff6f91f086dedcc326c",
+    "src/joint_interception/policies/__init__.py": "69e034b290f816c08d7ac8eb4779a6d4053e08a1f6d763c6a87495e6181f29a6",
+    "src/joint_interception/policies/memory.py": "c4cd73bc699944537a2b07f7914033b20e68d17705185de216a1b0467599086f",
+    "src/joint_interception/evaluation/__init__.py": "053de9f3751a529cf2e64f7182df74e6ce827ccaafa3b73a00260b1db0d5e576",
+    "src/joint_interception/evaluation/assistance_audit.py": "66fa9a6ed18fe0adca2ec4f998ca23c224fa305c26f5623c35b902a0bffb320a",
+    "tests/_support.py": "f0d81bcbb4b5a3f2b5f2a6300d374dd7377dd7ae5a1f9ac4ccdc9d6bacd4551c",
+    "tests/test_assistance_accounting.py": "45d786ec533d11e2b3be95fcb36aed52c13bf2af231d893a68f4b0088ca9d2a4",
+    "tests/test_commitment_memory.py": "58fd0e44ce9f9db9dad9bd3a4908b33aee0daabbd0e8c0de7d6ee4635082354a",
+    "tests/test_information_boundary.py": "7bed504610515cad862e5bee5abf6e93cf6373921eeb5ba2981d641f5d66b7b9",
+    "tests/test_joint_compatibility.py": "f8f245b7423a4594fb661ad8e27d1e665a161a994ba15d9e923539ab2b3952ea",
+    "tests/test_reachable_intervals.py": "64d0ef8fd05ff603a90f4f26a0eaab7357223ca145b391502248f9ab0058bf02",
+    "scripts/run_finite_examples.py": "45575b8804d17ecaac5a2dc0ff81de080a27df69c8b9374dd5661e1b7b3e4a96"
+  },
+  "frozen_expectation_inputs": {
+    "configs/finite_examples_v1.json": "a22fb48a21c62518ba3293fb526a53f78d5721789efd544f3f60eae68e6500f2",
+    "tests/fixtures/finite_cases_v1.json": "4d83a52de3c311924ff25480c06dfec482733947bdef2ecb5fe66805f2138cda"
+  },
+  "historical_inputs_consulted_read_only": {
+    "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/METHOD_SPEC_EN.md": "32a82a55a4931bf1614778492ad4021d795f6a494b4426f2a4c07e38a3d5aa83",
+    "urban_dynamic_containment/docs/HANDOFF_TRAINING_20260910.md": "ed858676f6407d93b49a8c4ea0a031fd98700225976d9a907a39ab6d5cb6750b"
+  },
+  "source_dirty_state_note": "The new project root is not under version control, so no commit label exists. The implementation hashes above record the exact source that produced this run."
+}

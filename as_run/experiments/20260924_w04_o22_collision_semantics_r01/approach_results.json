@@ -1,0 +1,42 @@
+{
+  "speed_mode": 31,
+  "min_gap_m": 2.5,
+  "smallest_bumper_gap_reached_m": 2.501,
+  "capture_band_m": [
+    0.3,
+    2.0
+  ],
+  "reached_capture_band": false,
+  "trace": [
+    {
+      "step": 0,
+      "gap_m": 34.974,
+      "pursuer_speed_mps": 0.26
+    },
+    {
+      "step": 50,
+      "gap_m": 14.06,
+      "pursuer_speed_mps": 5.0
+    },
+    {
+      "step": 100,
+      "gap_m": 2.6564,
+      "pursuer_speed_mps": 0.1727
+    },
+    {
+      "step": 150,
+      "gap_m": 2.5018,
+      "pursuer_speed_mps": 0.0009
+    },
+    {
+      "step": 200,
+      "gap_m": 2.501,
+      "pursuer_speed_mps": 0.0
+    },
+    {
+      "step": 215,
+      "gap_m": 2.501,
+      "pursuer_speed_mps": 0.0
+    }
+  ]
+}

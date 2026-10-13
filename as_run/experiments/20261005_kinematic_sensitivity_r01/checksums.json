@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_kinematic_sensitivity_r01",
+ "sealed_at": "2026-10-05T11:38:32.852058+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVCHECK.json": "70279108c1e6d8f76018f73ded9be1fe20d9b6729ff221acfffaac6694c27ad3",
+  "PROTOCOL_EN.md": "2df9c0e34609379c71c4c9db137c94066a5c70cd59c44296e5a10a90f1d5c5cc",
+  "SCIENTIFIC_DECISION_EN.md": "f6ee3d76bfe02eaed5e7be4579e791ebbd12d6508f03f6cc8bff58d174817090",
+  "inputs.json": "e652ba8f63a6cbf3626638c7093bd1ea7ffe3578810739fb7b783e692254e810",
+  "results.jsonl": "240dddf396aed489c59ed6cdb7ca01a8520c6b558ff6f88870c537183ef4ea0f",
+  "run.log": "543b3041dab9c2cf14d8deaa52ed2e663690bd36aef5571ad543caccd8bb0f16",
+  "summary.json": "022abf2d82c43e01d2715c51c368cbfc9fee993124b198ce070ca93cf09591f8"
+ }
+}

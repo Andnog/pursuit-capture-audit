@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261001_ambush_study_r01",
+ "sealed_at": "2026-10-02T01:40:26.660437Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "96404efe68d04f48193d92b401bb6cac5c0da2c847b52145fdeb1fe5494685f0",
+  "PROTOCOL_EN.md": "2903b60a50e4c426cf14fe8e4dcdd0141e0855c6df1e7619c2af983ed9304c1e",
+  "SCIENTIFIC_DECISION_EN.md": "85534c99cec27d71a7b680fe05088d5016358deb9a975fa632ad85b99beb9b5a",
+  "STRUCTURAL_junction_blockability.json": "4a9acdb58a25e0426eb96a51fc5e8e3bd5f9bd9e6e327d949b4282337140124a",
+  "gifs/phoenix4_ambush_team3.gif": "b88f1c22a744b28fcd9b438773536716e0557554523d138232df39531f82011c",
+  "inputs.json": "5199dddb3391800571276c516109efb9c051f87cb9228970a7b1808fa932cb9d",
+  "results.jsonl": "4e46d0e31d6da3c7c8c8774189032fe0196678f9a386c5d7f9ea2492371ab0ca",
+  "run.log": "6ecd4d372c08ff2e440eb737d6d410548bb9fde9977d150d8120726b91fa3ea7",
+  "summary.json": "3ddf161010ffb132952b6441b6ba473c1615fd24b07861c9e805a5a63953d450"
+ }
+}

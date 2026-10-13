@@ -1,0 +1,39 @@
+{
+  "package": "20260922_w04_fresh_start_determinism_r01",
+  "stage": "W4",
+  "claim_class": "one_empirical_property_of_sumo",
+  "verdict": "REPRODUCIBLE_AND_PREFIX_COUPLED",
+  "questions": {
+    "Q1_reproducibility": {
+      "sumo_defaults": true,
+      "deterministic_car_following": null
+    },
+    "Q2_prefix_coupling": {
+      "sumo_defaults": true,
+      "deterministic_car_following": null
+    }
+  },
+  "map": {
+    "map_id": "adelaide_cbd",
+    "declared_split": "train",
+    "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+    "opened_read_only": true,
+    "copied_or_modified": false
+  },
+  "consequence_for_the_assistance_audit": "replay by re-execution is viable",
+  "not_established": [
+    "physical feasibility",
+    "capture ability",
+    "protocol-supported assistance",
+    "anything O22 guards"
+  ],
+  "resources": {
+    "sumo_process_starts": 3,
+    "simulated_seconds": 90.3,
+    "wall_seconds": 3.971,
+    "cpu_seconds": 0.237,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

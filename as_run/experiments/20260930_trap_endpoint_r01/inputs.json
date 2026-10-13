@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260930_trap_endpoint_r01",
+  "recorded_at_launch": "2026-10-01T00:25:28.701732Z",
+  "sources": {
+    "scripts/run_trap_endpoint.py": "05edf07a84baafdf7e685bf80043c55d365086b5423541794669cd9b40fe4eaf",
+    "scripts/audit_cage_certificate.py": "3653b5a9d3610e35a13042571a3549d0cadaa1e46668769238187f181f1a02e4",
+    "scripts/train_caging_pilot.py": "8c71712ccd2f6031196028d326ac6052d9782fddfdeba4e1b4fb321dc2c66ea5",
+    "src/joint_interception/rl/rollout.py": "fccb99cf3bac12144dba6a60d1c9766a4489f76ba8eb9149ea2bc514985d38e7",
+    "src/joint_interception/rl/policy.py": "85f5612c96320295609da84cdf1c05fae917466f909d05e8a3d9f863e5150786",
+    "src/joint_interception/native/engine.py": "d7dcd915e34672729957ab0f85021eea292ea8d5b69b8fc71e46edc1b3c4aea0",
+    "src/joint_interception/native/caging.py": "1c36aa57aeb2f3d3b935c56e55b34b14de3c7da26f699817ba7dfb274dc2bbe4",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "experiments/20260930_trap_endpoint_r01/PROTOCOL_EN.md": "512b10ad44839857fe825747a46df0bae87612ffacd738575c637fe616b93188",
+    "experiments/20260930_marl_pilot_r03/checksums.json": "f19843ae4f2e860cce10c6f0a1d193a86b221246f2c78f6cbb771f23d641c147"
+  },
+  "arguments": {
+    "salt": "PE4",
+    "scenarios_per_map": 60,
+    "workers": 8
+  },
+  "rule": "not modified while running"
+}

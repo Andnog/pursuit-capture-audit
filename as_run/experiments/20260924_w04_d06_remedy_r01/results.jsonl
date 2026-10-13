@@ -1,0 +1,3 @@
+{"arm": "arm1_pursuer_trails_evader", "rest_gap_m": 2.501, "smallest_gap_m": 2.501, "outside_band": true, "collisions": [], "judge": "REJECTED", "judge_reason": "no_continuous_run_reaches_dwell"}
+{"arm": "arm2_evader_stops_behind_pursuer", "rest_gap_m": 1.001, "inside_band": true, "collisions": [], "judge": "SUPPORTED", "judge_reason": "continuous_witness_satisfies_dwell", "witness_duration_s": 17.2}
+{"arm": "arm3_forced_overlap_control", "bumper_gap_m": -3.0, "collision_reported": true, "collisions": [["a", "b"]]}

@@ -1,0 +1,312 @@
+{
+  "F_kan_s1|train": {
+    "attempted": 2048,
+    "failed": 39,
+    "failure_reasons": {
+      "ValueError": 39
+    },
+    "valid": 2009,
+    "used": 2009,
+    "excluded": {},
+    "transitions_used": 142809,
+    "recorded_ticks": 188263,
+    "terminal_observation_ticks": 45454,
+    "end_reasons": {
+      "evader_exit": 265,
+      "event": 830,
+      "horizon": 914
+    },
+    "captured_oc": 830,
+    "proximity": 1858,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 27,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 961,
+      "trained_decisions_without_future": 961,
+      "captures_on_a_decision_tick": 47,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "F_kan_s2|train": {
+    "attempted": 2048,
+    "failed": 45,
+    "failure_reasons": {
+      "ValueError": 45
+    },
+    "valid": 2003,
+    "used": 2003,
+    "excluded": {},
+    "transitions_used": 143740,
+    "recorded_ticks": 188593,
+    "terminal_observation_ticks": 44853,
+    "end_reasons": {
+      "evader_exit": 259,
+      "event": 820,
+      "horizon": 924
+    },
+    "captured_oc": 820,
+    "proximity": 1865,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 0,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 981,
+      "trained_decisions_without_future": 981,
+      "captures_on_a_decision_tick": 57,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "F_mlp_s1|train": {
+    "attempted": 2048,
+    "failed": 39,
+    "failure_reasons": {
+      "ValueError": 39
+    },
+    "valid": 2009,
+    "used": 2009,
+    "excluded": {},
+    "transitions_used": 142891,
+    "recorded_ticks": 188175,
+    "terminal_observation_ticks": 45284,
+    "end_reasons": {
+      "evader_exit": 268,
+      "event": 828,
+      "horizon": 913
+    },
+    "captured_oc": 828,
+    "proximity": 1856,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 27,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 952,
+      "trained_decisions_without_future": 952,
+      "captures_on_a_decision_tick": 39,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "F_mlp_s2|train": {
+    "attempted": 2048,
+    "failed": 45,
+    "failure_reasons": {
+      "ValueError": 45
+    },
+    "valid": 2003,
+    "used": 2003,
+    "excluded": {},
+    "transitions_used": 144563,
+    "recorded_ticks": 188512,
+    "terminal_observation_ticks": 43949,
+    "end_reasons": {
+      "evader_exit": 264,
+      "event": 806,
+      "horizon": 933
+    },
+    "captured_oc": 806,
+    "proximity": 1863,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 0,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 993,
+      "trained_decisions_without_future": 993,
+      "captures_on_a_decision_tick": 60,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "P_mlp_s1|train": {
+    "attempted": 2048,
+    "failed": 41,
+    "failure_reasons": {
+      "ValueError": 41
+    },
+    "valid": 2007,
+    "used": 2007,
+    "excluded": {},
+    "transitions_used": 55562,
+    "recorded_ticks": 188066,
+    "terminal_observation_ticks": 132504,
+    "end_reasons": {
+      "evader_exit": 102,
+      "event": 1866,
+      "horizon": 39
+    },
+    "captured_oc": 791,
+    "proximity": 1866,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 0,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 97,
+      "trained_decisions_without_future": 97,
+      "captures_on_a_decision_tick": 0,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "P_mlp_s2|train": {
+    "attempted": 2048,
+    "failed": 51,
+    "failure_reasons": {
+      "ValueError": 51
+    },
+    "valid": 1997,
+    "used": 1997,
+    "excluded": {},
+    "transitions_used": 54066,
+    "recorded_ticks": 188149,
+    "terminal_observation_ticks": 134083,
+    "end_reasons": {
+      "evader_exit": 87,
+      "event": 1863,
+      "horizon": 47
+    },
+    "captured_oc": 831,
+    "proximity": 1863,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 4,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 125,
+      "trained_decisions_without_future": 125,
+      "captures_on_a_decision_tick": 0,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "W_mlp_s1|train": {
+    "attempted": 2048,
+    "failed": 47,
+    "failure_reasons": {
+      "ValueError": 47
+    },
+    "valid": 2001,
+    "used": 2001,
+    "excluded": {},
+    "transitions_used": 144972,
+    "recorded_ticks": 188289,
+    "terminal_observation_ticks": 43317,
+    "end_reasons": {
+      "evader_exit": 263,
+      "event": 782,
+      "horizon": 956
+    },
+    "captured_oc": 782,
+    "proximity": 1851,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 12,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 995,
+      "trained_decisions_without_future": 995,
+      "captures_on_a_decision_tick": 41,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "W_mlp_s1|warmup": {
+    "attempted": 256,
+    "failed": 4,
+    "failure_reasons": {
+      "ValueError": 4
+    },
+    "valid": 252,
+    "used": 252,
+    "excluded": {},
+    "transitions_used": 17121,
+    "recorded_ticks": 23631,
+    "terminal_observation_ticks": 6510,
+    "end_reasons": {
+      "evader_exit": 34,
+      "event": 121,
+      "horizon": 97
+    },
+    "captured_oc": 121,
+    "proximity": 233,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 0,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 106,
+      "trained_decisions_without_future": 106,
+      "captures_on_a_decision_tick": 9,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "W_mlp_s2|train": {
+    "attempted": 2048,
+    "failed": 51,
+    "failure_reasons": {
+      "ValueError": 51
+    },
+    "valid": 1997,
+    "used": 1997,
+    "excluded": {},
+    "transitions_used": 142328,
+    "recorded_ticks": 187513,
+    "terminal_observation_ticks": 45185,
+    "end_reasons": {
+      "evader_exit": 259,
+      "event": 847,
+      "horizon": 891
+    },
+    "captured_oc": 847,
+    "proximity": 1866,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 22,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 947,
+      "trained_decisions_without_future": 947,
+      "captures_on_a_decision_tick": 57,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  },
+  "W_mlp_s2|warmup": {
+    "attempted": 256,
+    "failed": 5,
+    "failure_reasons": {
+      "ValueError": 5
+    },
+    "valid": 251,
+    "used": 251,
+    "excluded": {},
+    "transitions_used": 17829,
+    "recorded_ticks": 23794,
+    "terminal_observation_ticks": 5965,
+    "end_reasons": {
+      "evader_exit": 26,
+      "event": 106,
+      "horizon": 119
+    },
+    "captured_oc": 106,
+    "proximity": 232,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "collision_only_outside": 0,
+    "inner_gap_frames": 0,
+    "legacy": {
+      "episodes_with_a_trained_decision_without_future": 124,
+      "trained_decisions_without_future": 124,
+      "captures_on_a_decision_tick": 5,
+      "episodes_penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0
+    }
+  }
+}

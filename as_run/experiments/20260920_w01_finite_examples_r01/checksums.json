@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260920_w01_finite_examples_r01",
+  "sealed_at": "2026-09-20T14:24:59Z",
+  "resealed_at": "2026-09-21T15:17:52Z",
+  "reseal_reason": "Package was written to after sealing during a W2 reproducibility check. See SEAL_EVENT_EN.md.",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "scientific_rows_unchanged": true,
+  "scientific_rows_evidence": "results.jsonl hash is identical in the superseded seal and the current seal",
+  "files_changed_since_original_seal": [
+    "events.jsonl",
+    "result.json"
+  ],
+  "files": {
+    "DEVIATIONS_EN.md": "4aaebeab3472f1f29f7642071f9d60eac8414aef434563b77a1d0b18ded6025d",
+    "PROTOCOL_EN.md": "34035e70499f3fd08cb87d0e5a584ff96b34c4f4f2f49574c07bac0d6672f85d",
+    "SCIENTIFIC_DECISION_EN.md": "fff543634094ca1ae63dffa17d6e39c97c00e1c153e2b7dac035bc75390e3fd6",
+    "SEAL_EVENT_EN.md": "708a0af0597db64162874b06ba7fff4e3b67b06c4d345ac1841f7c90acdf2dd8",
+    "domain.json": "6d49ddb8b5b59e72a4394d18a59d4e48ff6f705a92572027d9a3368c7c1b09e3",
+    "environment.json": "a307cdfa283c7171922180ac3b561f9a78b1c1198b60c749a8fea07cb7436e6e",
+    "events.jsonl": "78dfec8623a754b6453b3d63395d22945851e60a786eeaca218dcfe065eb8098",
+    "first_run_record.json": "c5faea453a28e3c80692d6380f69143f5c4efb221d8cac2bab577d4d379ab1b8",
+    "inputs.json": "7b250c04e0fc79398f72a54b9c403c76a5dd09eb5af79b3ad62acbb069d0780c",
+    "plan.json": "21f58113f174f8d17d90d0da45653451c779a3160a3201723c9b6fd5ce235965",
+    "result.json": "90d0291d79c4ef851de1275c503794ba0601bb5e07fa931cf05f26c445697d4b",
+    "results.jsonl": "97a54db339699807db630b6a9469ea041786e5d3277d0a22996a56b586fc720e"
+  },
+  "superseded_seal": {
+    "sealed_at": "2026-09-20T14:24:59Z",
+    "algorithm": "sha256",
+    "files": {
+      "DEVIATIONS_EN.md": "4aaebeab3472f1f29f7642071f9d60eac8414aef434563b77a1d0b18ded6025d",
+      "PROTOCOL_EN.md": "34035e70499f3fd08cb87d0e5a584ff96b34c4f4f2f49574c07bac0d6672f85d",
+      "SCIENTIFIC_DECISION_EN.md": "fff543634094ca1ae63dffa17d6e39c97c00e1c153e2b7dac035bc75390e3fd6",
+      "domain.json": "6d49ddb8b5b59e72a4394d18a59d4e48ff6f705a92572027d9a3368c7c1b09e3",
+      "environment.json": "a307cdfa283c7171922180ac3b561f9a78b1c1198b60c749a8fea07cb7436e6e",
+      "events.jsonl": "2f6a88d772c7854ef00567e5eb33b18b7a47fccd64a635734f20fb625d0eb454",
+      "first_run_record.json": "c5faea453a28e3c80692d6380f69143f5c4efb221d8cac2bab577d4d379ab1b8",
+      "inputs.json": "7b250c04e0fc79398f72a54b9c403c76a5dd09eb5af79b3ad62acbb069d0780c",
+      "plan.json": "21f58113f174f8d17d90d0da45653451c779a3160a3201723c9b6fd5ce235965",
+      "result.json": "753d70c7f6638dbf14f5aadc1a9dfe29d63487ad9bea4f2f6441ca7f4e8a19c0",
+      "results.jsonl": "97a54db339699807db630b6a9469ea041786e5d3277d0a22996a56b586fc720e"
+    }
+  },
+  "limit": "A matching hash proves byte identity of this package's files. It is not scientific validation and certifies no claim in SCIENTIFIC_DECISION_EN.md."
+}

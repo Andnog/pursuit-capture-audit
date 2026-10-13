@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261002_mappo_r01",
+ "sealed_at": "2026-10-02T22:34:51.362622Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "43e4c05672538fc4b1bbb94de4a1f1095c40a393ebd75d3cc507ee9034362d70",
+  "PROTOCOL_EN.md": "32c14ed57fcdc16bfb47a8bb62946dea6418c2b950b2a0b7d4aeb68224db829d",
+  "SCIENTIFIC_DECISION_EN.md": "eda27eda286c38ddbcade6fc7a65f0c77e0807018c9cd424eb7d7cea896d7ccd",
+  "inputs.json": "72c4bd9563cf34338dc1095bd82122e1c19a5eeac237c8670817f1a056c51002",
+  "results.jsonl": "7c9d015de19eef2dc18605ec9d4793769e862f4708340309d11bcc2d7675ad31",
+  "results_failed_run1.jsonl": "3e0b526e4eada9f9ef9ac306ba9ecded9b6331f501f5bba9270d3ea65a2d7715",
+  "run.log": "70c01a6879892ebbf538840f32e439247e8f0c7b779bc58064eb315889f0d19d",
+  "state.pkl": "b8e6ca29cb5d280c3e35d2295654a984a28201ce9bc8aa4f08a42bd6063746a8",
+  "summary.json": "825aea013159289101427bf74715d98f3084f8afd69d3aff732afb72ab788814",
+  "train_log.jsonl": "bd2d53a61c2cff8b933ae7c6b22e4d14cbb526d4f689b67ddc2b8b5fc487d67f"
+ }
+}

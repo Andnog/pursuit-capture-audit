@@ -1,0 +1,2 @@
+{"ts": "2026-09-21T16:12:45.228416+00:00", "event": "run_started", "package": "20260921_w04_arrival_model_prereq_r01"}
+{"ts": "2026-09-21T16:12:45.228416+00:00", "event": "diagnostic_set_opened_read_only", "sha256": "d499ea4323b31631616da7261c3b0b4aa7f72f88d8b17b99c4583adb95771619"}

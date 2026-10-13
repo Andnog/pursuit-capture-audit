@@ -1,0 +1,35 @@
+{
+  "package": "20260921_w03_adapter_r01",
+  "stage": "W3",
+  "checks": {
+    "planned": 9,
+    "executed": 9,
+    "passed": 9,
+    "tests_run": 49
+  },
+  "regression": {
+    "full_suite_ok": true,
+    "bare_interpreter_ok": true,
+    "lint_clean": true
+  },
+  "gate": {
+    "name": "W3_adapter_and_state_restoration",
+    "rule": "SUPPORTED only if all nine planned checks pass",
+    "verdict": "SUPPORTED",
+    "claim_class": "engineering_acceptance_only",
+    "explicitly_not_validated": [
+      "the TraCI call surface: no SUMO process was started in W3",
+      "arrival sets computed from a real road network",
+      "anything physical, learned or comparative"
+    ]
+  },
+  "resources": {
+    "cpu_seconds": 0.503,
+    "wall_seconds": 0.507,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

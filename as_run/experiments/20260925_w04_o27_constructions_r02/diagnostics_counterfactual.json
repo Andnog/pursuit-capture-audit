@@ -1,0 +1,39 @@
+{
+  "what": "post-run diagnostic of the two CONSTRUCTED cases' counterfactual safety failures (read-only re-simulation on the sealed code)",
+  "cases": [
+    {
+      "level": "AVOIDANT",
+      "map_id": "adelaide_cbd",
+      "failure": {
+        "time_s": 38.6,
+        "vehicle": "p2",
+        "required_mps": 9.4504,
+        "ordinary_floor_mps": 13.0684
+      },
+      "factual_witness_start_s": 25.9,
+      "b1_decisions": [
+        11,
+        16
+      ],
+      "mechanism": "p2 (the helper, back on its plan after b1) holds 12.0 m into edge 1060954493#3. At 37.2 s on the approach edge its stop distance to the hold was 30.3 m (braking needs 21.4 m at 13.89 m/s). On entering the 14.44 m internal lane the hold dropped out of every constraint (_stop_distance returns early for a vehicle in a link; _upcoming lists only speed caps), so it held 13.89 m/s and reached the edge 10.9 m short of the hold."
+    },
+    {
+      "level": "OPTIMAL_ESCAPE",
+      "map_id": "adelaide_cbd",
+      "failure": {
+        "time_s": 61.4,
+        "vehicle": "p2",
+        "required_mps": 6.8122,
+        "ordinary_floor_mps": 13.3873
+      },
+      "factual_witness_start_s": 55.8,
+      "b1_decisions": [
+        29,
+        34
+      ],
+      "mechanism": "same: hold 6.0 m into -20440256#5, reached through a 14.4 m internal lane at 13.89 m/s; 5.8 m left at the edge entry."
+    }
+  ],
+  "judge_on_counterfactual": "REJECTED on the whole 300 s horizon in both cases; no capture occurs on the legal prefix (before the failure). After the failure the counterfactual is not a legal trajectory.",
+  "defect": "a hold on the edge AFTER an internal lane is not anticipated while the vehicle is on that internal lane. Invisible in baselines (no holds) and in the unit test for holds across a link (zero-length internal lane)."
+}

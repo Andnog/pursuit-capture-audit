@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w05_constructive_on_network_r01",
+  "created": "2026-09-22",
+  "stage": "W5",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "continues": "20260922_w04_interaction_fixed_point_r01",
+  "claim_class": "does_an_abstraction_level_result_transfer_to_the_simulator",
+  "acceptance_rule_frozen_before_implementing": true,
+  "question": "given a station on a real SUMO network and a constructively computed arrival time t*, does the vehicle actually arrive at t*",
+  "tolerance_s": 0.1,
+  "tolerance_declared_before_any_run": true,
+  "tolerance_justification": "arrival is observed once per 0.1 s physical step; below the simulator's own resolution equality is not observable",
+  "acceptance_rule": {
+    "CONSTRUCTIVE_TIMES_HOLD": "every arrival within 0.1 s of its target in both arms",
+    "CONSTRUCTIVE_TIMES_HOLD_ARM_1_ONLY": "arm 1 holds, arm 2 does not",
+    "CONSTRUCTIVE_TIMES_FAIL": "arm 1 does not hold",
+    "RUN_FAILED": "SUMO could not start or no vehicle reached the station"
+  },
+  "expected_plausible_outcome_declared_in_advance": "CONSTRUCTIVE_TIMES_FAIL, publishable as-is, to be reported with sign and magnitude",
+  "route_and_station_fixed_before_running": "the first route pick_route returns for this network, unchanged from the two previous packages; station at 60% of route length",
+  "resource_limits_declared": {
+    "sumo_process_starts_permitted": 6,
+    "simulated_seconds_permitted": 600
+  },
+  "resource_limit_deviation": "12 starts used across a void run and a valid run; recorded in DEVIATIONS_EN.md D-3; the protocol file was not edited"
+}

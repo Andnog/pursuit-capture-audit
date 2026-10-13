@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_mappo_prox_r01",
+ "sealed_at": "2026-10-05T10:28:37.781550+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "7802b489ce1515287b1f32478f9e79d80cd1785ee2fbdc40a7b83572a378c2a7",
+  "SCIENTIFIC_DECISION_EN.md": "b717a96f67550371f809d92c9000ee3250b182fb4198902d4cc3f59432d3da26",
+  "inputs.json": "99f345cc79816080328dbcaebeb941d514c9ad1cec74a5a13716ff25261f83d2",
+  "results.jsonl": "37e0e8ce010a90707ca3745cf080b0ece54413d37a6537f45bc380c7982f56cf",
+  "run.log": "51b583edb0807cca4ca3cc182c1f961573291d4c5d2916295eed6add7337b43a",
+  "state.pkl": "9d97e129a70d98c66ddb158901339d7a7d87bb3f5003dc445c391a116991f9d2",
+  "summary.json": "1fbe787b61f587a600818ae5ee0897f08ddcc0ba0edf8c403d202ae64f02f2c0",
+  "train_log.jsonl": "9efd8e900c1655f118ab385268fab649870f03371c5cede9f6d2cef208223195"
+ }
+}

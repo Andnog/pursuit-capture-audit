@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_traffic_sensitivity_r01",
+ "sealed_at": "2026-10-05T13:08:22.111743+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "01831dc4f18e36638c32edd3adfeb39e8b354d493c3684a05b2312f61318eb2c",
+  "SCIENTIFIC_DECISION_EN.md": "284ddd0f0a6c3325e040c350e51cc7d2066067c8533cb7ec42f6a174b8e92fe9",
+  "inputs.json": "c9a01c8c2c617e8db4d54694fb58a47b6a91af258093a534f847b2ff6262a038",
+  "results.jsonl": "a312cd6cf1d5eeba988ce510116b844fb85a5e81dc68e61c36448e9ff46f548f",
+  "run.log": "10c317ba77b526ae1c14d89783fdfba8de91f31fe07f66731a9189f04f6453ab",
+  "summary.json": "90dda04a19581fa953d1aa92b3737f4375c46a2648a4a03babfb82bec991e9da"
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_deficit_mechanism_r01",
+  "sources": {
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "scripts/run_constructive_on_network.py": "4929dc5510704516a94ca7cc9a76c759f07a6a508591aafee07e83390e6353ea",
+    "scripts/run_constructive_replication.py": "bd7af54363df6e0960c653c8a3d268fd7e0e5738a984a579eaa3153bc9569185",
+    "src/joint_interception/opportunities/schedule.py": "d5694ae9a9737437ca2ad4d19215bb186a02b34e8dea105c53505502a6f221a7"
+  },
+  "note": "the closed-loop driver is imported from the A-41 runner unchanged; only the speed-limit input differs between the two variants"
+}

@@ -1,0 +1,29 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.14"
+      - name: Install
+        run: uv sync
+      - name: Style
+        run: |
+          uv run ruff check src tests tools
+          uv run ruff format --check src tests tools
+      - name: Tests, with the equivalence of the capture rule
+        run: uv run pytest
+      - name: Sealed evidence against its checksums
+        run: uv run pursuit-audit verify
+      - name: Headline results from the per-episode records
+        run: uv run pursuit-audit recompute
+      - name: Result tables are current
+        run: uv run python tools/build_results.py --check

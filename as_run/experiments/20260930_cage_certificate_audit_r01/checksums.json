@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260930_cage_certificate_audit_r01",
+ "sealed_at": "2026-09-30T19:44:35.870423Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "46af0c954386389e8d2b6915df43e4570cf0666a7531f207883bd347c07b07ec",
+  "SCIENTIFIC_DECISION_EN.md": "8c495825dde81e3147f22636a663f8868c04a05170fff0882f61516fd096d164",
+  "inputs.json": "c7b2f33667683c25932f869d967f5f1c1d76aa8864be8274ac82c62bbef93591",
+  "results.jsonl": "b5dae4ddaab35f0771f09eb7180fde6a55c16a0db2d78a7fc97894eb5b197d66",
+  "run.log": "b40483d72362be4c2db438e7166731398d478562d86d404a7e22c44d4ca34f2e",
+  "summary.json": "d2d99c9e342c1b524a25c2e8714339f91e15dfd65f8d510af392bea0ce87e66d"
+ }
+}

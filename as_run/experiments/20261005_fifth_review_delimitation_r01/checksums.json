@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_fifth_review_delimitation_r01",
+ "sealed_at": "2026-10-06T09:49:11.280563+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DELIMITATION.json": "1af3e9b7d48bc2649cde6b6762c308d53c2987641c5e00103f1c6912dc8b2351",
+  "PROTOCOL_EN.md": "ed49a42720b9f545d393c3be025d763b01cabc00ab15c070ecfe12fed7ab2fd4",
+  "SCIENTIFIC_DECISION_EN.md": "589e59289998fe745d0d77495f89eedb64d5557865892f8403c5706d2f324786",
+  "inputs.json": "696d9a772814c61c865d3b6a86a755a162ff7a0fbd8b06087a70992f15334ed9"
+ }
+}

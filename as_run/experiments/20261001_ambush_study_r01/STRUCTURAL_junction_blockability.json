@@ -1,0 +1,74 @@
+{
+  "adelaide_cbd": {
+    "arrival_edges": 876,
+    "median_lanes_to_close": 3,
+    "closable_by_1": 0.11,
+    "closable_by_2": 0.24,
+    "closable_by_3": 0.557,
+    "closable_by_5": 0.768
+  },
+  "toronto_downtown": {
+    "arrival_edges": 715,
+    "median_lanes_to_close": 5,
+    "closable_by_1": 0.092,
+    "closable_by_2": 0.256,
+    "closable_by_3": 0.368,
+    "closable_by_5": 0.687
+  },
+  "washington_downtown": {
+    "arrival_edges": 1080,
+    "median_lanes_to_close": 4,
+    "closable_by_1": 0.073,
+    "closable_by_2": 0.244,
+    "closable_by_3": 0.438,
+    "closable_by_5": 0.743
+  },
+  "seattle_downtown": {
+    "arrival_edges": 426,
+    "median_lanes_to_close": 4,
+    "closable_by_1": 0.085,
+    "closable_by_2": 0.209,
+    "closable_by_3": 0.371,
+    "closable_by_5": 0.746
+  },
+  "phoenix_downtown": {
+    "arrival_edges": 474,
+    "median_lanes_to_close": 4,
+    "closable_by_1": 0.076,
+    "closable_by_2": 0.122,
+    "closable_by_3": 0.39,
+    "closable_by_5": 0.804
+  },
+  "portland_downtown": {
+    "arrival_edges": 782,
+    "median_lanes_to_close": 4,
+    "closable_by_1": 0.068,
+    "closable_by_2": 0.18,
+    "closable_by_3": 0.423,
+    "closable_by_5": 0.932
+  },
+  "sapporo_grid": {
+    "arrival_edges": 704,
+    "median_lanes_to_close": 5,
+    "closable_by_1": 0.058,
+    "closable_by_2": 0.116,
+    "closable_by_3": 0.295,
+    "closable_by_5": 0.642
+  },
+  "C2_grid6x6": {
+    "arrival_edges": 120,
+    "median_lanes_to_close": 3,
+    "closable_by_1": 0.067,
+    "closable_by_2": 0.467,
+    "closable_by_3": 1.0,
+    "closable_by_5": 1.0
+  },
+  "C3_grid9x9": {
+    "arrival_edges": 288,
+    "median_lanes_to_close": 3,
+    "closable_by_1": 0.028,
+    "closable_by_2": 0.319,
+    "closable_by_3": 1.0,
+    "closable_by_5": 1.0
+  }
+}

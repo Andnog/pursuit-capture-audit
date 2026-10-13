@@ -1,0 +1,7 @@
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "run_started", "package": "20260921_w04_interpreter_provenance_r01"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "runner_resolution_compared", "finding": "uv run python -> .venv 3.14.6; uv run pytest -> /Library/Frameworks/Python.framework/Versions/3.10/bin/pytest"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "provenance_defect_confirmed", "detail": "pytest is not a declared dependency, so uv run pytest falls through to PATH and violates requires-python ==3.14.*"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "latent_inert_check_found", "detail": "Python 3.12 emits FSTRING_* tokens instead of STRING; the glued-concatenation check walked STRING tokens and was inert for f-strings on the pinned interpreter"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "guard_added", "artifact": "tests/test_interpreter_pin.py"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "detector_repaired", "artifact": "tests/test_source_hygiene.py", "detail": "FSTRING_* groups rejoined; static_edges replaces ast.literal_eval; self-test added"}
+{"ts": "2026-09-22T01:37:09.259995Z", "event": "run_ended", "verdict": "PROVENANCE_DEFECT_CORRECTED_AND_GUARDED"}

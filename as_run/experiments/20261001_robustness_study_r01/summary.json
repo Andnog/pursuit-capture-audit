@@ -1,0 +1,841 @@
+{
+  "episodes": 22980,
+  "failed": 534,
+  "bonferroni_cells": 10,
+  "cells": {
+    "F_RANDOM_team2": {
+      "scenarios": 138,
+      "pursuit_team_d06": [
+        0.176,
+        0.123,
+        0.232
+      ],
+      "cut_team_d06": [
+        0.174,
+        0.121,
+        0.229
+      ],
+      "single_mean_d06": [
+        0.116,
+        0.08,
+        0.156
+      ],
+      "independent_union_d06": [
+        0.192,
+        0.137,
+        0.25
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.015,
+        -0.049,
+        0.019
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.015,
+        -0.064,
+        0.033
+      ],
+      "team_minus_best_single": [
+        -0.01,
+        -0.041,
+        0.022
+      ],
+      "team_minus_mean_single": [
+        0.06,
+        0.027,
+        0.097
+      ],
+      "R2_pursuit_minus_cut": [
+        0.002,
+        -0.063,
+        0.068
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.722,
+        0.657,
+        0.785
+      ],
+      "pursuit_prox5": [
+        0.899,
+        0.85,
+        0.942
+      ],
+      "pursuit_trapped": [
+        0.176,
+        0.123,
+        0.232
+      ],
+      "cooperation_detected": false
+    },
+    "F_RANDOM_team3": {
+      "scenarios": 138,
+      "pursuit_team_d06": [
+        0.275,
+        0.213,
+        0.343
+      ],
+      "cut_team_d06": [
+        0.283,
+        0.22,
+        0.345
+      ],
+      "single_mean_d06": [
+        0.122,
+        0.087,
+        0.161
+      ],
+      "independent_union_d06": [
+        0.246,
+        0.183,
+        0.31
+      ],
+      "R1_synergy_team_minus_union": [
+        0.029,
+        -0.011,
+        0.073
+      ],
+      "R1_synergy_bonferroni_ci": [
+        0.029,
+        -0.029,
+        0.094
+      ],
+      "team_minus_best_single": [
+        0.043,
+        0.005,
+        0.085
+      ],
+      "team_minus_mean_single": [
+        0.153,
+        0.109,
+        0.2
+      ],
+      "R2_pursuit_minus_cut": [
+        -0.007,
+        -0.077,
+        0.063
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.659,
+        0.589,
+        0.727
+      ],
+      "pursuit_prox5": [
+        0.935,
+        0.894,
+        0.969
+      ],
+      "pursuit_trapped": [
+        0.275,
+        0.213,
+        0.343
+      ],
+      "cooperation_detected": false
+    },
+    "F_RANDOM_team5": {
+      "scenarios": 138,
+      "pursuit_team_d06": [
+        0.345,
+        0.275,
+        0.413
+      ],
+      "cut_team_d06": [
+        0.357,
+        0.287,
+        0.425
+      ],
+      "single_mean_d06": [
+        0.115,
+        0.086,
+        0.146
+      ],
+      "independent_union_d06": [
+        0.324,
+        0.257,
+        0.392
+      ],
+      "R1_synergy_team_minus_union": [
+        0.022,
+        -0.026,
+        0.072
+      ],
+      "R1_synergy_bonferroni_ci": [
+        0.022,
+        -0.047,
+        0.096
+      ],
+      "team_minus_best_single": [
+        0.048,
+        0.002,
+        0.097
+      ],
+      "team_minus_mean_single": [
+        0.23,
+        0.178,
+        0.285
+      ],
+      "R2_pursuit_minus_cut": [
+        -0.012,
+        -0.085,
+        0.06
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.597,
+        0.524,
+        0.669
+      ],
+      "pursuit_prox5": [
+        0.942,
+        0.903,
+        0.973
+      ],
+      "pursuit_trapped": [
+        0.35,
+        0.28,
+        0.42
+      ],
+      "cooperation_detected": false
+    },
+    "F_AVOIDANT_team2": {
+      "scenarios": 137,
+      "pursuit_team_d06": [
+        0.102,
+        0.061,
+        0.148
+      ],
+      "cut_team_d06": [
+        0.071,
+        0.036,
+        0.109
+      ],
+      "single_mean_d06": [
+        0.068,
+        0.043,
+        0.096
+      ],
+      "independent_union_d06": [
+        0.127,
+        0.079,
+        0.179
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.025,
+        -0.071,
+        0.018
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.025,
+        -0.089,
+        0.035
+      ],
+      "team_minus_best_single": [
+        -0.022,
+        -0.068,
+        0.022
+      ],
+      "team_minus_mean_single": [
+        0.034,
+        -0.001,
+        0.071
+      ],
+      "R2_pursuit_minus_cut": [
+        0.032,
+        -0.022,
+        0.085
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.747,
+        0.684,
+        0.81
+      ],
+      "pursuit_prox5": [
+        0.849,
+        0.793,
+        0.903
+      ],
+      "pursuit_trapped": [
+        0.102,
+        0.061,
+        0.148
+      ],
+      "cooperation_detected": false
+    },
+    "F_AVOIDANT_team3": {
+      "scenarios": 137,
+      "pursuit_team_d06": [
+        0.141,
+        0.09,
+        0.195
+      ],
+      "cut_team_d06": [
+        0.148,
+        0.097,
+        0.204
+      ],
+      "single_mean_d06": [
+        0.073,
+        0.05,
+        0.097
+      ],
+      "independent_union_d06": [
+        0.192,
+        0.134,
+        0.254
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.051,
+        -0.115,
+        0.011
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.051,
+        -0.142,
+        0.04
+      ],
+      "team_minus_best_single": [
+        -0.041,
+        -0.102,
+        0.017
+      ],
+      "team_minus_mean_single": [
+        0.068,
+        0.02,
+        0.118
+      ],
+      "R2_pursuit_minus_cut": [
+        -0.007,
+        -0.073,
+        0.056
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.735,
+        0.667,
+        0.798
+      ],
+      "pursuit_prox5": [
+        0.876,
+        0.822,
+        0.925
+      ],
+      "pursuit_trapped": [
+        0.141,
+        0.09,
+        0.195
+      ],
+      "cooperation_detected": false
+    },
+    "F_AVOIDANT_team5": {
+      "scenarios": 136,
+      "pursuit_team_d06": [
+        0.206,
+        0.147,
+        0.272
+      ],
+      "cut_team_d06": [
+        0.228,
+        0.167,
+        0.292
+      ],
+      "single_mean_d06": [
+        0.068,
+        0.049,
+        0.088
+      ],
+      "independent_union_d06": [
+        0.259,
+        0.196,
+        0.327
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.053,
+        -0.122,
+        0.015
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.053,
+        -0.152,
+        0.044
+      ],
+      "team_minus_best_single": [
+        -0.037,
+        -0.103,
+        0.029
+      ],
+      "team_minus_mean_single": [
+        0.138,
+        0.083,
+        0.198
+      ],
+      "R2_pursuit_minus_cut": [
+        -0.022,
+        -0.096,
+        0.054
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.743,
+        0.674,
+        0.809
+      ],
+      "pursuit_prox5": [
+        0.949,
+        0.914,
+        0.98
+      ],
+      "pursuit_trapped": [
+        0.213,
+        0.152,
+        0.279
+      ],
+      "cooperation_detected": false
+    },
+    "F_OPTIMAL_ESCAPE_team2": {
+      "scenarios": 136,
+      "pursuit_team_d06": [
+        0.147,
+        0.088,
+        0.206
+      ],
+      "cut_team_d06": [
+        0.069,
+        0.029,
+        0.113
+      ],
+      "single_mean_d06": [
+        0.121,
+        0.08,
+        0.168
+      ],
+      "independent_union_d06": [
+        0.199,
+        0.132,
+        0.272
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.051,
+        -0.118,
+        0.007
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.051,
+        -0.14,
+        0.037
+      ],
+      "team_minus_best_single": [
+        -0.051,
+        -0.118,
+        0.007
+      ],
+      "team_minus_mean_single": [
+        0.026,
+        -0.022,
+        0.076
+      ],
+      "R2_pursuit_minus_cut": [
+        0.078,
+        0.012,
+        0.145
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.699,
+        0.618,
+        0.772
+      ],
+      "pursuit_prox5": [
+        0.846,
+        0.779,
+        0.904
+      ],
+      "pursuit_trapped": [
+        0.147,
+        0.088,
+        0.206
+      ],
+      "cooperation_detected": false
+    },
+    "F_OPTIMAL_ESCAPE_team3": {
+      "scenarios": 135,
+      "pursuit_team_d06": [
+        0.18,
+        0.119,
+        0.247
+      ],
+      "cut_team_d06": [
+        0.084,
+        0.044,
+        0.131
+      ],
+      "single_mean_d06": [
+        0.123,
+        0.087,
+        0.16
+      ],
+      "independent_union_d06": [
+        0.284,
+        0.21,
+        0.363
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.104,
+        -0.183,
+        -0.027
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.104,
+        -0.217,
+        0.007
+      ],
+      "team_minus_best_single": [
+        -0.104,
+        -0.183,
+        -0.027
+      ],
+      "team_minus_mean_single": [
+        0.058,
+        -0.002,
+        0.12
+      ],
+      "R2_pursuit_minus_cut": [
+        0.096,
+        0.022,
+        0.173
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.719,
+        0.644,
+        0.793
+      ],
+      "pursuit_prox5": [
+        0.899,
+        0.847,
+        0.948
+      ],
+      "pursuit_trapped": [
+        0.18,
+        0.119,
+        0.247
+      ],
+      "cooperation_detected": false
+    },
+    "F_OPTIMAL_ESCAPE_team5": {
+      "scenarios": 135,
+      "pursuit_team_d06": [
+        0.156,
+        0.096,
+        0.222
+      ],
+      "cut_team_d06": [
+        0.133,
+        0.084,
+        0.188
+      ],
+      "single_mean_d06": [
+        0.116,
+        0.082,
+        0.151
+      ],
+      "independent_union_d06": [
+        0.323,
+        0.244,
+        0.405
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.168,
+        -0.252,
+        -0.086
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.168,
+        -0.289,
+        -0.052
+      ],
+      "team_minus_best_single": [
+        -0.168,
+        -0.252,
+        -0.086
+      ],
+      "team_minus_mean_single": [
+        0.04,
+        -0.015,
+        0.099
+      ],
+      "R2_pursuit_minus_cut": [
+        0.022,
+        -0.054,
+        0.101
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.8,
+        0.733,
+        0.867
+      ],
+      "pursuit_prox5": [
+        0.956,
+        0.919,
+        0.985
+      ],
+      "pursuit_trapped": [
+        0.163,
+        0.104,
+        0.23
+      ],
+      "cooperation_detected": false
+    },
+    "T_AVOIDANT_team3_traffic": {
+      "scenarios": 137,
+      "pursuit_team_d06": [
+        0.129,
+        0.085,
+        0.178
+      ],
+      "cut_team_d06": [
+        0.109,
+        0.066,
+        0.158
+      ],
+      "single_mean_d06": [
+        0.082,
+        0.058,
+        0.108
+      ],
+      "independent_union_d06": [
+        0.208,
+        0.149,
+        0.271
+      ],
+      "R1_synergy_team_minus_union": [
+        -0.079,
+        -0.139,
+        -0.019
+      ],
+      "R1_synergy_bonferroni_ci": [
+        -0.079,
+        -0.17,
+        0.005
+      ],
+      "team_minus_best_single": [
+        -0.071,
+        -0.131,
+        -0.01
+      ],
+      "team_minus_mean_single": [
+        0.047,
+        0.004,
+        0.093
+      ],
+      "R2_pursuit_minus_cut": [
+        0.019,
+        -0.036,
+        0.075
+      ],
+      "R3_prox5_minus_d06_pursuit": [
+        0.776,
+        0.713,
+        0.835
+      ],
+      "pursuit_prox5": [
+        0.905,
+        0.856,
+        0.949
+      ],
+      "pursuit_trapped": [
+        0.129,
+        0.085,
+        0.178
+      ],
+      "cooperation_detected": false
+    }
+  },
+  "any_cooperation_detected": false,
+  "R4_traffic_minus_no_traffic_pursuit_d06": [
+    -0.012,
+    -0.056,
+    0.029
+  ],
+  "L_literature_like": {
+    "pursuit_prox_5m": [
+      0.631,
+      0.556,
+      0.703
+    ],
+    "pursuit_prox_10m": [
+      0.692,
+      0.619,
+      0.761
+    ],
+    "pursuit_prox_5m_centre": [
+      0.242,
+      0.172,
+      0.314
+    ],
+    "pursuit_d06": [
+      0.364,
+      0.297,
+      0.433
+    ],
+    "pursuit_trapped": [
+      0.364,
+      0.297,
+      0.433
+    ],
+    "pursuit_prox5_minus_d06": [
+      0.267,
+      0.2,
+      0.336
+    ],
+    "cut_prox_5m": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cut_prox_10m": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cut_prox_5m_centre": [
+      0.806,
+      0.744,
+      0.864
+    ],
+    "cut_d06": [
+      0.65,
+      0.594,
+      0.706
+    ],
+    "cut_trapped": [
+      0.65,
+      0.594,
+      0.706
+    ],
+    "cut_prox5_minus_d06": [
+      0.35,
+      0.294,
+      0.406
+    ]
+  },
+  "trap_types": {
+    "F_AVOIDANT_team2_pursuit": {
+      "SANDWICH": 18,
+      "FRONT_ONLY": 15,
+      "DEAD_END": 9
+    },
+    "F_RANDOM_team3_pursuit": {
+      "SANDWICH": 73,
+      "DEAD_END": 6,
+      "FRONT_ONLY": 30,
+      "CONTACT_ONLY": 5
+    },
+    "F_RANDOM_team3_cut": {
+      "SANDWICH": 57,
+      "FRONT_ONLY": 57,
+      "CONTACT_ONLY": 7,
+      "DEAD_END": 1
+    },
+    "F_AVOIDANT_team3_pursuit": {
+      "SANDWICH": 34,
+      "CONTACT_ONLY": 1,
+      "DEAD_END": 10,
+      "FRONT_ONLY": 13
+    },
+    "F_RANDOM_team5_pursuit": {
+      "SANDWICH": 99,
+      "FRONT_ONLY": 27,
+      "CONTACT_ONLY": 16,
+      "DEAD_END": 3
+    },
+    "F_RANDOM_team5_cut": {
+      "SANDWICH": 82,
+      "FRONT_ONLY": 55,
+      "DEAD_END": 1,
+      "CONTACT_ONLY": 14
+    },
+    "F_AVOIDANT_team5_pursuit": {
+      "SANDWICH": 54,
+      "FRONT_ONLY": 24,
+      "DEAD_END": 3,
+      "CONTACT_ONLY": 6
+    },
+    "F_AVOIDANT_team5_cut": {
+      "DEAD_END": 13,
+      "CONTACT_ONLY": 3,
+      "FRONT_ONLY": 41,
+      "SANDWICH": 41
+    },
+    "F_OPTIMAL_ESCAPE_team2_pursuit": {
+      "SANDWICH": 30,
+      "DEAD_END": 27,
+      "FRONT_ONLY": 3
+    },
+    "F_OPTIMAL_ESCAPE_team2_cut": {
+      "SANDWICH": 16,
+      "FRONT_ONLY": 3,
+      "DEAD_END": 9
+    },
+    "F_OPTIMAL_ESCAPE_team3_pursuit": {
+      "DEAD_END": 14,
+      "SANDWICH": 45,
+      "FRONT_ONLY": 14
+    },
+    "F_RANDOM_team2_pursuit": {
+      "SANDWICH": 39,
+      "FRONT_ONLY": 30,
+      "DEAD_END": 3,
+      "CONTACT_ONLY": 1
+    },
+    "F_RANDOM_team2_cut": {
+      "SANDWICH": 16,
+      "FRONT_ONLY": 51,
+      "CONTACT_ONLY": 6
+    },
+    "T_AVOIDANT_team3_traffic_pursuit": {
+      "SANDWICH": 32,
+      "FRONT_ONLY": 7,
+      "CONTACT_ONLY": 3,
+      "DEAD_END": 11
+    },
+    "F_AVOIDANT_team3_cut": {
+      "SANDWICH": 26,
+      "FRONT_ONLY": 24,
+      "DEAD_END": 7,
+      "CONTACT_ONLY": 4
+    },
+    "F_AVOIDANT_team2_cut": {
+      "FRONT_ONLY": 17,
+      "SANDWICH": 7,
+      "DEAD_END": 5
+    },
+    "F_OPTIMAL_ESCAPE_team3_cut": {
+      "SANDWICH": 25,
+      "FRONT_ONLY": 1,
+      "DEAD_END": 5,
+      "CONTACT_ONLY": 3
+    },
+    "F_OPTIMAL_ESCAPE_team5_cut": {
+      "SANDWICH": 40,
+      "CONTACT_ONLY": 1,
+      "FRONT_ONLY": 3,
+      "DEAD_END": 10
+    },
+    "T_AVOIDANT_team3_traffic_cut": {
+      "FRONT_ONLY": 21,
+      "SANDWICH": 17,
+      "CONTACT_ONLY": 1,
+      "DEAD_END": 7
+    },
+    "F_OPTIMAL_ESCAPE_team5_pursuit": {
+      "SANDWICH": 36,
+      "FRONT_ONLY": 18,
+      "DEAD_END": 12
+    },
+    "L_RANDOM_team5_pursuit": {
+      "SANDWICH": 75,
+      "FRONT_ONLY": 51,
+      "CONTACT_ONLY": 5
+    },
+    "L_RANDOM_team5_cut": {
+      "SANDWICH": 148,
+      "FRONT_ONLY": 81,
+      "CONTACT_ONLY": 5
+    }
+  },
+  "collisions": 1
+}

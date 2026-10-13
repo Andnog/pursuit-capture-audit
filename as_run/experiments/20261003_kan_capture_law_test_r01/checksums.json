@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_kan_capture_law_test_r01",
+ "sealed_at": "2026-10-03T07:48:01.837334+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "CAPTURE_LAW_TEST.json": "6f2b228dab1738b9127f4b5bef4c1a5ccaf6913c6b45313762f4afad43a3f9a0",
+  "SCIENTIFIC_DECISION_EN.md": "635548c5dc1442487d2b61c55d052cff872f4ba8ff6fcb80a6ebf3750b5ee3c9",
+  "kan_ckpt/0.0_cache_data": "1c7e7515c4c8e0e22636d9ef8e2d738b88b0c3576dbb0a5ed6d963fca6e7a451",
+  "kan_ckpt/0.0_config.yml": "2f4f58a5411e84a5329699c4da4ddc39402d978332eea820c6d73d65e4dbe78c",
+  "kan_ckpt/0.0_state": "7d439950c037e9861f02c9e4980b82b02f82c3ecaae29e3ba6f88161fdbc9590",
+  "kan_ckpt/0.1_cache_data": "e05181fe8fc3d1e3f315af2f68f1d8b9f51c90d6a41010c299ba1160491b782b",
+  "kan_ckpt/0.1_config.yml": "db747bcab955f46cf3692a6f3e822573da7d5f51420e2bb33244e85baecdad3a",
+  "kan_ckpt/0.1_state": "ff1a62f179ead417380487ecf0f6932b631231b3e75dbf8aaaef50e646afb22c",
+  "kan_ckpt/history.txt": "f2e6bf5ded3ce71c605b184dd369b4c84ab577b198a7c5fa5cd7c5714d678727"
+ }
+}

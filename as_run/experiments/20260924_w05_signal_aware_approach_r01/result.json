@@ -1,0 +1,73 @@
+{
+  "package": "20260924_w05_signal_aware_approach_r01",
+  "stage": "W5",
+  "claim_class": "model_soundness_on_the_network",
+  "verdict": "MODEL_STILL_OPTIMISTIC",
+  "authorised_choices": {
+    "1b": "SUPPORTED over WINDOWS",
+    "window_path": "model reads the signal program",
+    "capacity": "over the whole window",
+    "width": "derived per approach",
+    "note": "this package builds only the approach model the other three depend on; windows and capacity-over-windows are NOT implemented"
+  },
+  "how_far_it_came": {
+    "a40_a41_worst_error_s": 117.045,
+    "signal_aware_model_worst_deviation_s": 5.606,
+    "washington_route_0": {
+      "naive_target_s": 73.86,
+      "actual_arrival_s": 190.905,
+      "model_s": 190.79,
+      "model_error_s": 0.115,
+      "predicted_signal_waits": 3,
+      "predicted_total_wait_s": 121.122,
+      "reading": "the 117 s residual A-40 could not explain was three red lights, and the model now lands within 0.115 s of the actual arrival"
+    }
+  },
+  "the_criterion_is_sign_not_accuracy": {
+    "model_minus_sumo_free_run_sigma_zero": {
+      "min_s": -5.606,
+      "median_s": -1.209,
+      "max_s": 1.89
+    },
+    "optimistic_routes": 8,
+    "of": 12,
+    "verdict": "the model claims times the vehicle cannot reach even at full effort on 8 of 12 routes, so it does NOT yet earn UNDER"
+  },
+  "driver_imperfection_control": {
+    "finding": "SUMO's default sigma=0.5 costs only 0.5 to 3.0 s against sigma=0",
+    "reading": "the optimism is NOT an artifact of SUMO's deliberately imperfect default driver"
+  },
+  "dominant_residual_identified_not_fixed": {
+    "what": "the model's own distance disagrees with SUMO's odometer by up to 42.3 m, median 17.3 m short",
+    "correlation": "where the distance gap is ZERO the deviation is -2.566, -0.182 and +1.615 s; where it is -42 m the model is 5.6 s optimistic",
+    "ruled_out": [
+      "lane choice: slowest, longest and edge-length all give the identical total",
+      "missing internal lanes: every connection on the probed route has a via lane"
+    ],
+    "status": "CAUSE NOT IDENTIFIED. A model that disagrees about how far cannot be judged on how long, so this is the next thing to fix."
+  },
+  "zero_distance_gap_subset": {
+    "routes": 3,
+    "deviations_s": [
+      -2.566,
+      -0.182,
+      1.615
+    ],
+    "reading": "on the three routes where the model and SUMO agree on distance, deviations are -2.566, -0.182 and +1.615 s - close, and still not uniformly conservative"
+  },
+  "not_established": [
+    "that the model UNDER-approximates",
+    "windows",
+    "capacity over windows",
+    "capture, assistance, learning, benefit, transfer, novelty",
+    "anything O22 guards"
+  ],
+  "resources": {
+    "sumo_process_starts": 64,
+    "declared_limit": 80,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

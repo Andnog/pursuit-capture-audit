@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "manifest_id": "split_manifest",
+ "stage": "W4",
+ "date": "2026-09-24",
+ "status": "ASSIGNED",
+ "status_note": "Assigned 2026-09-24 under D15, as resolved by the Research lead: the 12 audited maps, berlin_mitte_large excluded. TEST remains CLOSED.",
+ "decision_ref": "D15",
+ "splits": {
+  "TRAINING": {
+   "cities": [
+    "adelaide_cbd",
+    "seattle_downtown",
+    "toronto_downtown",
+    "washington_downtown"
+   ],
+   "scenarios": [],
+   "permits": [
+    "gradient_updates",
+    "demonstrations",
+    "normalizer_fitting"
+   ]
+  },
+  "DEVELOPMENT": {
+   "cities": [
+    "phoenix_downtown",
+    "portland_downtown",
+    "sapporo_grid"
+   ],
+   "scenarios": [],
+   "permits": [
+    "evaluation",
+    "method_decisions"
+   ],
+   "forbids": [
+    "gradient_updates",
+    "adding_trajectories_to_training_data"
+   ]
+  },
+  "TEST": {
+   "cities": [
+    "chicago_loop",
+    "melbourne_cbd",
+    "minneapolis_downtown",
+    "salt_lake_city"
+   ],
+   "scenarios": [],
+   "permits": [],
+   "state": "CLOSED"
+  }
+ },
+ "exposure_log": [
+  {
+   "date": "2026-09-21",
+   "stage": "W2",
+   "category": "STRUCTURAL_READ_FOR_VALIDITY_AUDIT",
+   "splits": [
+    "TRAINING",
+    "DEVELOPMENT",
+    "TEST",
+    "EXCLUDED"
+   ],
+   "maps": [
+    "adelaide_cbd",
+    "seattle_downtown",
+    "toronto_downtown",
+    "washington_downtown",
+    "phoenix_downtown",
+    "portland_downtown",
+    "sapporo_grid",
+    "chicago_loop",
+    "melbourne_cbd",
+    "minneapolis_downtown",
+    "salt_lake_city",
+    "berlin_mitte_large"
+   ],
+   "by": "scripts/audit_maps.py, at the Research lead's request to review which maps work",
+   "what_was_read": "network files parsed with sumolib.net.readNet; recorded passenger edge and lane counts, junction counts, dead-end fraction, lane multiplicity and sha256",
+   "what_was_NOT_done": "no SUMO process, no scenario, no episode, no method output, no performance measure",
+   "judgement": "not a TEST ACCESS under this manifest's definition, which concerns scenarios and method evaluation. It is recorded here because stating that TEST was never touched would be inaccurate, and a reviewer should be able to judge it.",
+   "constraint_adopted": "the structural statistics of TEST maps must not inform any method, threshold or design decision"
+  },
+  {
+   "date": "2026-09-22 to 2026-09-24",
+   "stage": "W4-W5",
+   "category": "NATIVE_DIAGNOSTIC_RUNS",
+   "splits": [
+    "TRAINING"
+   ],
+   "maps": [
+    "adelaide_cbd",
+    "seattle_downtown",
+    "toronto_downtown",
+    "washington_downtown"
+   ],
+   "what": "SUMO processes for interface, determinism, arrival-time transfer and approach-model diagnostics (A-37 to A-43)",
+   "judgement": "TRAINING only; permitted"
+  },
+  {
+   "date": "2026-09-24",
+   "stage": "W4",
+   "category": "STRUCTURAL_READ_FOR_PROVENANCE",
+   "splits": [
+    "TRAINING",
+    "DEVELOPMENT",
+    "TEST",
+    "EXCLUDED"
+   ],
+   "what_was_read": "the netconvert configuration comment and the <location> element at the head of each net file",
+   "what_was_NOT_done": "no network body parsed beyond the header, no SUMO process, no scenario, no method output",
+   "judgement": "provenance metadata of the same kind as the sha256 already recorded; not a TEST access under this manifest's definition",
+   "constraint": "TEST header metadata must not inform any method, threshold or design decision"
+  },
+  {
+   "date": "2026-09-26",
+   "stage": "A-47 harness development",
+   "category": "NATIVE_DIAGNOSTIC_RUNS",
+   "splits": [
+    "TRAINING"
+   ],
+   "maps": [
+    "adelaide_cbd",
+    "seattle_downtown",
+    "toronto_downtown",
+    "washington_downtown"
+   ],
+   "by": "validation harness development (src/joint_interception/validation/*), development scripts only",
+   "what_was_read": "SUMO open- and closed-loop replays of declared-model runs on TRAINING maps, to develop the replay harness, the metrics, and the model's right-of-way rules; plus replays of the two r03 constructions and their counterfactuals",
+   "what_was_NOT_done": "no DEVELOPMENT or TEST map was simulated, generated or scored; no optimizer, no checkpoint",
+   "sumo_process_starts_upper_bound": 300
+  },
+  {
+   "date": "2026-09-26",
+   "stage": "A-47 model-validation gate",
+   "category": "MODEL_VALIDATION_GATE",
+   "splits": [
+    "DEVELOPMENT"
+   ],
+   "maps": [
+    "phoenix_downtown",
+    "portland_downtown",
+    "sapporo_grid"
+   ],
+   "by": "scripts/run_model_validation.py, package 20260926_w04_model_validation_r01",
+   "what": "seeded diagnostic scenarios generated and selected on model outcomes; SUMO open- and closed-loop replays; metrics M1-M4",
+   "permitted_by": "DEVELOPMENT permits evaluation and method decisions; no gradient updates, no training data",
+   "recorded": "before launch"
+  }
+ ],
+ "exposure_log_note": "Every examination of a DEVELOPMENT or reserved scenario is appended here with date, stage and what was observed. An examined holdout is exposed development evidence, not a fresh holdout.",
+ "test_access_events": [],
+ "test_accesses_in_this_project": 0,
+ "test_open_preconditions": [
+  "method frozen",
+  "checkpoint-selection rule frozen",
+  "metrics frozen",
+  "inference procedure frozen",
+  "resource limits frozen",
+  "TEST manifest sealed",
+  "sealed historical TEST set located and disjointness established"
+ ],
+ "assignment_rule": "Keep each map's legacy declared split, minus the one exposed map. This preserves the TEST set the legacy manifest records as sealed and never opened, and places the legacy 'validation' maps - plausibly examined by the legacy programme - in DEVELOPMENT, which is where examined data belongs. No map was moved between splits after anything was measured on it.",
+ "excluded": {
+  "cities": [
+   "berlin_mitte_large"
+  ],
+  "reason": "EXPOSED: confirmed 2026-09-21 as the same extract as the historical Berlin TRAINING map. Recorded as validation in the legacy manifest but carries training exposure. Excluded from every split, not demoted."
+ },
+ "disjointness": {
+  "method": "sha256 of each network file",
+  "distinct": "11 of 11",
+  "result": "no duplicate extract among the assigned maps",
+  "limit": "byte-level disjointness only; no two assigned maps are the same city"
+ },
+ "test_open_preconditions_status": {
+  "method frozen": "NOT MET",
+  "checkpoint-selection rule frozen": "NOT MET",
+  "metrics frozen": "NOT MET",
+  "inference procedure frozen": "NOT MET",
+  "resource limits frozen": "NOT MET",
+  "TEST manifest sealed": "NOT MET",
+  "sealed historical TEST set located and disjointness established": "MET 2026-09-24: located as the four maps above; byte-disjoint from TRAINING and DEVELOPMENT"
+ },
+ "city_sha256": {
+  "adelaide_cbd": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+  "seattle_downtown": "abdeed9ee9e86c233c5f584175522c773170839eda08df124e833f6d98f331c4",
+  "toronto_downtown": "44e1a3f563d4e9b5975794e76c285ad86531bba98eccc6163ced94a3bc8d3392",
+  "washington_downtown": "e39bcefb3cebc79494f9ac024e397321756a87ac2bececcdb5e9f5b46702d009",
+  "phoenix_downtown": "5cfb54779a330245816b61354378d1ccfecf10dc7ff6dc14e92b2c2f7be99f6d",
+  "portland_downtown": "cb4e9a878a91bf587c07fa3f3828782139cedea5ae72594d268e04750fe96050",
+  "sapporo_grid": "d1dea720cdec1d29911832294f9556fc52fb9a2cc4de13152a265dc464301bb1",
+  "chicago_loop": "c252a88f0f6bb2e622b6b77a66623aef80b77ff2fbbf8d87d8af5acd476c1b5b",
+  "melbourne_cbd": "322c90a56594db43091bedbea41047386541de4cbfe26ad692f4783c05e55308",
+  "minneapolis_downtown": "d18c07e0f9294ee8ae5939b3512f6da226f220c84372e7d4603ae7f88f5e942e",
+  "salt_lake_city": "5f70f6b2b975f7beb6b7336a0ad573d01d4b583c7449d1ee95d6600e2a7d1feb",
+  "berlin_mitte_large": "0b7fd8db32ded3abaa14ef8cfbbd39fad5748eb2b9828fe531db87f7703fb149"
+ }
+}

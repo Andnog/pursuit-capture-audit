@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_constructive_arrival_r01",
+  "implementation_inputs": {
+    "src/joint_interception/opportunities/schedule.py": "d5694ae9a9737437ca2ad4d19215bb186a02b34e8dea105c53505502a6f221a7",
+    "src/joint_interception/opportunities/arrival.py": "a8341bb0d2ef2e4b05b8b5484c8c230d6d9a89c2c08741ba2b0734c38b6e090a",
+    "src/joint_interception/opportunities/compatibility.py": "1d6adf738df19c3a51704ab04e4a464837fd6a5d1a5630b0c442b9efc68fdf0f",
+    "src/joint_interception/opportunities/reachability.py": "669a712dc3fe062447c05821fbcd3f3008fb37573c06308d3505d4e06cd38ca5",
+    "src/joint_interception/opportunities/types.py": "fb368e4341aa29b6672a186b5f19d0d57db322169badacafd73658e3b6a76b3d",
+    "scripts/run_constructive_checks.py": "00252beddfaaf6112877006c6dbd8cb102c95e1f2e8e052c77760a845643c28b",
+    "tests/test_constructive_schedule.py": "ce045bdd1abb5a7388be0b5835a7b75fd13c8ee1dd11ff57643189634eacbee8",
+    "tests/test_arrival_model.py": "17fd69066d9c12d10339641d41c566480767e7e6a37d75bd6fa5dfe56372a3c1"
+  },
+  "specification_inputs": {
+    "docs/METHOD_SPEC_EN.md": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5",
+    "configs/domain_v1.json": "5931ba41154c2e91ee0cbb13d55c18bfd79ff6923b93156fc91e65c4f482db61"
+  },
+  "dependency_inputs": {
+    "pyproject.toml": "bbf8ca89eb209c217ea2899da7138db3e94ebf619e79e9729e9e415c87d93e74",
+    "uv.lock": "67c74cd3176694434e9040b6c222ae84fe5e5bd7875395aa05a255718a3e2246"
+  },
+  "predecessor": "20260921_w04_arrival_model_prereq_r02 established that only a constructive schedule yields UNDER"
+}

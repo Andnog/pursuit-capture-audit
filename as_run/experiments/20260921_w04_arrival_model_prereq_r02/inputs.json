@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_arrival_model_prereq_r02",
+  "supersedes": "20260921_w04_arrival_model_prereq_r01",
+  "diagnostic_set": {
+    "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_28/corrected_transitions.jsonl",
+    "sha256": "d499ea4323b31631616da7261c3b0b4aa7f72f88d8b17b99c4583adb95771619",
+    "records": 5980,
+    "access": "READ_ONLY",
+    "modified": false
+  },
+  "implementation_inputs": {
+    "src/joint_interception/opportunities/arrival.py": "d077461e2f2725d4c1869f3700040ec35457ba5e83d1972675b8b2ac60d06bce",
+    "src/joint_interception/opportunities/compatibility.py": "1d6adf738df19c3a51704ab04e4a464837fd6a5d1a5630b0c442b9efc68fdf0f",
+    "src/joint_interception/opportunities/reachability.py": "669a712dc3fe062447c05821fbcd3f3008fb37573c06308d3505d4e06cd38ca5",
+    "src/joint_interception/opportunities/types.py": "fb368e4341aa29b6672a186b5f19d0d57db322169badacafd73658e3b6a76b3d",
+    "scripts/run_arrival_diagnostic.py": "6b98f773979a749af4d0dd8a3de40682c71a6b839d6fe62c4c04fd2013accd6d",
+    "tests/test_arrival_model.py": "52bc6a4203625d40c6f38f7d650111ebd544f50a2c4aec42bcb419de9f9dcc35"
+  },
+  "specification_inputs": {
+    "docs/METHOD_SPEC_EN.md": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5",
+    "configs/domain_v1.json": "5931ba41154c2e91ee0cbb13d55c18bfd79ff6923b93156fc91e65c4f482db61",
+    "governance/LEGACY_OBLIGATIONS_EN.md": "eebfe018c12e3746146799de3030782a1f9d0406f40e4514a96323a9c5fadd07"
+  },
+  "dependency_inputs": {
+    "pyproject.toml": "bbf8ca89eb209c217ea2899da7138db3e94ebf619e79e9729e9e415c87d93e74",
+    "uv.lock": "67c74cd3176694434e9040b6c222ae84fe5e5bd7875395aa05a255718a3e2246"
+  }
+}

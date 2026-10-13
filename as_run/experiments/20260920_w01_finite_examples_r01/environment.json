@@ -1,0 +1,13 @@
+{
+  "python_version": "3.14.6",
+  "python_implementation": "CPython",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "external_dependencies": [],
+  "dependency_policy": "Python standard library only at W0-W1; pinning deferred to W2 (D16).",
+  "sumo_invoked": false,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false,
+  "legacy_module_imported": false
+}

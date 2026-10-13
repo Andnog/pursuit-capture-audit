@@ -1,0 +1,117 @@
+[
+ {
+  "name": "passing_cars",
+  "title": "Two cars pass in opposite lanes at 12 m/s",
+  "kind": "synthetic",
+  "oc": {
+   "reached": false,
+   "time": null,
+   "pursuer": null,
+   "closest_failure": "evader_moving"
+  },
+  "body_5m": {
+   "reached": true,
+   "time": 3.0
+  },
+  "centre_5m": {
+   "reached": true,
+   "time": 3.2
+  },
+  "front_5m": {
+   "reached": true,
+   "time": 3.0
+  }
+ },
+ {
+  "name": "follower_behind",
+  "title": "A pursuer trails the evader at 10 m/s",
+  "kind": "synthetic",
+  "oc": {
+   "reached": false,
+   "time": null,
+   "pursuer": null,
+   "closest_failure": "gap_above_maximum"
+  },
+  "body_5m": {
+   "reached": true,
+   "time": 0.0
+  },
+  "centre_5m": {
+   "reached": false,
+   "time": null
+  },
+  "front_5m": {
+   "reached": false,
+   "time": null
+  }
+ },
+ {
+  "name": "blocked_stop",
+  "title": "The evader stops behind a stopped pursuer",
+  "kind": "synthetic",
+  "oc": {
+   "reached": true,
+   "time": 5.0,
+   "pursuer": "p1",
+   "closest_failure": null
+  },
+  "body_5m": {
+   "reached": true,
+   "time": 2.5
+  },
+  "centre_5m": {
+   "reached": false,
+   "time": null
+  },
+  "front_5m": {
+   "reached": false,
+   "time": null
+  }
+ },
+ {
+  "name": "adelaide_25_ambush_plus",
+  "title": "Adelaide, scenario 25: 5 pursuers with predictive lane blocking, avoidant evader",
+  "kind": "simulated",
+  "oc": {
+   "reached": true,
+   "time": 53.4,
+   "pursuer": "p2",
+   "closest_failure": null
+  },
+  "body_5m": {
+   "reached": true,
+   "time": 42.7
+  },
+  "centre_5m": {
+   "reached": true,
+   "time": 43.1
+  },
+  "front_5m": {
+   "reached": true,
+   "time": 42.8
+  }
+ },
+ {
+  "name": "adelaide_25_pursuit",
+  "title": "Adelaide, scenario 25: 5 pursuers with pursuit, avoidant evader",
+  "kind": "simulated",
+  "oc": {
+   "reached": false,
+   "time": null,
+   "pursuer": null,
+   "closest_failure": "evader_moving"
+  },
+  "body_5m": {
+   "reached": true,
+   "time": 31.4
+  },
+  "centre_5m": {
+   "reached": true,
+   "time": 31.6
+  },
+  "front_5m": {
+   "reached": true,
+   "time": 31.4
+  }
+ }
+]

@@ -1,0 +1,53 @@
+[project]
+name = "joint-interception"
+version = "0.2.0"
+description = "Learning joint interception opportunities for cooperative capture in urban road networks"
+readme = "README.md"
+requires-python = "==3.14.*"
+
+# Runtime dependencies for W2-W5. The learner is deliberately NOT here: it is an
+# optional group, resolved and recorded separately at W6 under decision D17.
+dependencies = [
+    "traci==1.21.0",
+    "sumolib==1.21.0",
+    "numpy==2.3.3",
+    "jsonschema==4.25.1",
+]
+
+[project.optional-dependencies]
+# Resolved and pinned now so the interpreter choice cannot block W6, but NOT installed
+# at W2. Installing it is a W6 action and is recorded in the resource ledger.
+learning = ["torch==2.14.0"]
+
+[dependency-groups]
+dev = ["ruff==0.14.5"]
+viz = [
+    "pillow==11.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/joint_interception"]
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts"]
+# Code inside a sealed evidence package is the code that RAN. Reformatting it to satisfy a
+# linter would break the package's checksums and misrepresent what executed, so sealed
+# packages are excluded rather than edited. First needed for the O22 probe, sealed 2026-09-24.
+extend-exclude = ["experiments"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# This generator embeds long explanatory prose in the provenance record it writes.
+# Hard-wrapping those strings to satisfy a line-length rule once corrupted the file;
+# the prose is the artifact, so the rule is waived here rather than the prose reflowed.
+"scripts/build_provenance.py" = ["E501"]

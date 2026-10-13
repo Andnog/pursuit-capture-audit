@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_f1_caging_feasibility_r01",
+ "sealed_at": "2026-09-29T18:09:48.277088Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "985e8f607072ca07bd61248485c1a1c08a952ed66a098f0a6d57afeeadfc6446",
+  "SCIENTIFIC_DECISION_EN.md": "5397658273c226fe113b6f9e97d871436d6c9f56ae41f6b74e2f5d010cef8bec",
+  "gifs/C2_s0_speed1.2_seed7003_cut.gif": "05b5d052e1e900b9f7fb74694ac7f128f622c120dbf28b8550d8fe1635ab9630",
+  "gifs/C2_s0_speed1.2_seed7003_individual.gif": "6afdc66a44eca81bdd4a1b78bddcbd1ce8ad1a9f1bccd4800901bd78aa05822f",
+  "inputs.json": "5c87679f051dfed05edcb7d4e7b9dffdc9ac3aa7af6d7b0e3e4c1f323174a592",
+  "results.jsonl": "ad5369b98be6a0811d046a405c6a2562fd3f191f498550aa4a2598924ac292fc",
+  "run.log": "1fec0de343302a297379abaf8e4512d5f43bce99f07c3628a1c319910a60ecc3",
+  "summary.json": "7109571c28295ea5f5274052f0b415f8e5217182ecba13bb85cefc53774fb16d"
+ }
+}

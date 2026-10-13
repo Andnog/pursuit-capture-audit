@@ -1,0 +1,25 @@
+{
+  "python_version": "3.14.6",
+  "python_implementation": "CPython",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "declared_dependencies": [
+    "traci==1.21.0",
+    "sumolib==1.21.0",
+    "numpy==2.3.3",
+    "jsonschema==4.25.1"
+  ],
+  "dev_dependencies": [
+    "ruff==0.14.5"
+  ],
+  "optional_not_installed": [
+    "torch==2.14.0"
+  ],
+  "sumo_binary_source": "external system installation; no macOS arm64 wheel exists",
+  "sumo_invoked_for_version_only": true,
+  "sumo_episodes_executed": 0,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false,
+  "legacy_module_imported": false
+}

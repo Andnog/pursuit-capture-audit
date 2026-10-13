@@ -1,0 +1,39 @@
+{
+  "package": "20260921_w02_contracts_r01",
+  "stage": "W2",
+  "groups": {
+    "preflight": {
+      "executed": 1,
+      "passed": 1
+    },
+    "contract_checks": {
+      "modules": 10,
+      "passed": 10,
+      "tests_run": 145,
+      "skipped": 0
+    },
+    "w1_regression": {
+      "planned": 14,
+      "passed": 14
+    }
+  },
+  "lint": {
+    "returncode": 0,
+    "clean": true
+  },
+  "gate": {
+    "name": "W2_contracts_and_admission",
+    "rule": "SUPPORTED only if the preflight is consistent, every contract-check module passes, the W0-W1 regression is 14/14, and lint is clean",
+    "verdict": "SUPPORTED",
+    "claim_class": "engineering_acceptance_only",
+    "note": "Engineering acceptance permits only the next gated scientific test. It establishes no physical, learning, benefit, transfer or novelty claim."
+  },
+  "resources": {
+    "cpu_seconds": 0.208,
+    "wall_seconds": 0.258,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

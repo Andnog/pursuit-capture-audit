@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_f4_caging_confirm_admission_r01",
+ "sealed_at": "2026-09-29T21:45:56.956256Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "ffb76fa86f432f1060eb4cfe972aefa11852e6b037b2a2edc974a53700cc66a1",
+  "SCIENTIFIC_DECISION_EN.md": "4d6ccd6711a83e84a50c018f34eb603d41e4594350c9827c6148b1e720647546",
+  "inputs.json": "8af5a947f3bf8f86235957b1a5ead90f1661e9c914509c43c132f1e270615bf0",
+  "results.jsonl": "dc08a2880f061a7a4a65d4b888438061fe3dd670d9341f403687d3bce78fa4bb",
+  "run.log": "a8c41125c40501ddafcc51a124b028843f5f1319f34d58298f72bc7b29b29d6c"
+ }
+}

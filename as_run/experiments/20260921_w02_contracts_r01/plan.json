@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w02_contracts_r01",
+  "created": "2026-09-21",
+  "stage": "W2",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_rule_frozen_before_outcomes": true,
+  "acceptance_rule_frozen_where": "scripts/run_contract_checks.py, gate.rule string, before first execution",
+  "prose_protocol_written_after_first_execution": true,
+  "prose_protocol_deviation": "DEVIATIONS_EN.md D-06",
+  "groups": {
+    "preflight": ["PF1_simulator_environment"],
+    "contract_checks": [
+      "test_reachable_intervals", "test_joint_compatibility", "test_commitment_memory",
+      "test_assistance_accounting", "test_information_boundary", "test_contract_admission",
+      "test_capture_judge", "test_safety_admission", "test_split_integrity", "test_reward_horizon"
+    ],
+    "w1_regression": ["F1", "F2", "F3", "F4", "F5", "F6", "A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8"]
+  },
+  "acceptance_rule": {
+    "gate": "SUPPORTED only if the preflight is consistent, every contract-check module passes, the W0-W1 regression is 14/14, and lint is clean",
+    "claim_class": "engineering_acceptance_only"
+  },
+  "resource_limits": {
+    "stage_cap": "W2: no native campaign; engineering compute recorded separately",
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0,
+    "dependency_installation_permitted": true,
+    "dependency_installation_note": "W2 IS the dependency-lock task. torch was deliberately not installed."
+  },
+  "prohibited_and_not_performed": [
+    "any SUMO episode (only `sumo --version` was invoked)",
+    "optimizer updates or checkpoint loading",
+    "TEST-split access",
+    "import or execution of any legacy runtime module",
+    "editing a frozen expectation to match implementation output",
+    "writing into the sealed W1 package"
+  ],
+  "commands": {
+    "preflight": "uv run python scripts/preflight.py",
+    "run": "uv run python scripts/run_contract_checks.py --package experiments/20260921_w02_contracts_r01",
+    "tests": "uv run python -m unittest discover -s tests -t tests",
+    "tests_bare_interpreter": "python3 -m unittest discover -s tests -t tests",
+    "lint": "uv run ruff check src tests scripts",
+    "verify": "python3 scripts/verify_artifacts.py"
+  }
+}

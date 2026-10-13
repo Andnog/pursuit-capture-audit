@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261002_ambush_optimization_r01",
+ "sealed_at": "2026-10-02T07:45:52.454833Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "f73a67f974cc0742da548d77cf181bb279044d55ec4ea0919403501d1ade0fb2",
+  "PROTOCOL_EN.md": "d8168f883c92ee48d725224b2af0c2ae2c659e2095df8ac2a73d8593d8613792",
+  "SCIENTIFIC_DECISION_EN.md": "f4f905f8f2bb6ba8089d811507b1cd88907722a0559739d7ac0ebd69f10bf2ac",
+  "inputs.json": "90bef4cc0451726a33f3c371873506ef9a6f88420c9a2aa90082b46d63576b1d",
+  "log.jsonl": "f5c9f5687162aff391161be75ab9579b275e9c199f9ab6218d085b59b465756a",
+  "results.jsonl": "33df2eb4d89678f49f3de5b3abc26014f7425418a576bd2666c40920f3d5f271",
+  "run.log": "3122ec3fe07212cb01b8a86465225e8c887f331403656e45a90a001ded1fe043",
+  "state.pkl": "f15332b1fe841000f73e9b40f7ebee5689a38be6a4318037f4f6baec30c95bfd",
+  "summary.json": "34df9be1765038a4fe9331919caa684944d906cc8f0a3d1df74ccba3412e78ad"
+ }
+}

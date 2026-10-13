@@ -1,0 +1,659 @@
+{
+  "schema_version": 2,
+  "document_id": "SOURCE_PROVENANCE",
+  "stage": "B0-W2",
+  "build_date": "2026-09-25",
+  "built_by": "scripts/build_provenance.py",
+  "project_root": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception",
+  "workspace_root": "/Volumes/SSD Mac/PHD/Union",
+  "hash_algorithm": "sha256",
+  "purpose": "Record the actual on-disk identity of every authoritative, historical and authored input, so later work can detect silent substitution. Hashes are integrity aids; they are not scientific validation.",
+  "fresh_start_policy": {
+    "statement": "No mutable legacy research module, learned weight, optimizer state, replay buffer or demonstration is imported, symlinked or executed by this project.",
+    "verified_through": "W2",
+    "verification_method": "tests/test_information_boundary.py parses every module in the package and asserts that no import resolves to a legacy runtime and that every third-party import is a pinned declared dependency."
+  },
+  "authoritative_documents": [
+    {
+      "source_id": "AUTH01",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/README.md",
+      "role": "new_project_entry_point",
+      "use_policy": "GOVERNING_DOCUMENT",
+      "notes": "Updated after the seal; see AMENDMENTS_EN.md A-05.",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/README.md",
+      "size_bytes": 7313,
+      "sha256": "5d3a791efd7e9a8b16b6e245d524d5c0cde43ff56682498f45a75f728a751cc1",
+      "mtime_utc": "2026-09-22T01:35:43Z"
+    },
+    {
+      "source_id": "AUTH02",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/DOCTORAL_MASTER_PLAN_EN_v3.md",
+      "role": "governing_specification",
+      "use_policy": "GOVERNING_DOCUMENT",
+      "notes": "Sealed, unchanged.",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/DOCTORAL_MASTER_PLAN_EN_v3.md",
+      "size_bytes": 62509,
+      "sha256": "03751fd4fd2a87a520ef85eebd7c9f87cccdb10a4034e60293bc0248c4bffe88",
+      "mtime_utc": "2026-09-20T13:34:15Z"
+    },
+    {
+      "source_id": "AUTH03",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/FINAL_REVIEW_EN.md",
+      "role": "documentary_review",
+      "use_policy": "GOVERNING_DOCUMENT",
+      "notes": "Sealed, unchanged.",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/FINAL_REVIEW_EN.md",
+      "size_bytes": 10199,
+      "sha256": "c6aae77ec56f08262865cb08ad8eafdc1d42ea497ad6d6b7f6e18a3bdd37407a",
+      "mtime_utc": "2026-09-20T13:33:11Z"
+    },
+    {
+      "source_id": "AUTH04",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/DECISIONS_EN.md",
+      "role": "frozen_decision_register",
+      "use_policy": "GOVERNING_DOCUMENT",
+      "notes": "Sealed, unchanged; resolutions go in AMENDMENTS_EN.md.",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/DECISIONS_EN.md",
+      "size_bytes": 6463,
+      "sha256": "92e7b17570367022950b5534cdec9e32792ec3dd9cc934908d0f9908be39bc04",
+      "mtime_utc": "2026-09-20T13:33:11Z"
+    },
+    {
+      "source_id": "AUTH05",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/REVIEW_MANIFEST.json",
+      "role": "documentary_integrity_manifest",
+      "use_policy": "GOVERNING_DOCUMENT",
+      "notes": "Historical seal of the 2026-09-20 review; not updated as work proceeds.",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/REVIEW_MANIFEST.json",
+      "size_bytes": 14168,
+      "sha256": "6d93a8333b4ea75ed208bce3a906948ba85756c5b2bd822dcd0273ed800ed808",
+      "mtime_utc": "2026-09-20T13:34:15Z"
+    }
+  ],
+  "historical_documents": [
+    {
+      "source_id": "HIST01",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/PLAN_MAESTRO_DOCTORAL_IMPLEMENTACION_ES_v2.md",
+      "role": "original_spanish_master_plan_v2",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/PLAN_MAESTRO_DOCTORAL_IMPLEMENTACION_ES_v2.md",
+      "size_bytes": 31061,
+      "sha256": "a08c5c89a2e826f20bd4142e3e5d204df1b144d96334a22b48d406172a286d85",
+      "mtime_utc": "2026-09-20T03:35:37Z"
+    },
+    {
+      "source_id": "HIST02",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/PREGUNTA_DOCTORAL_Y_CONTRIBUCION_ES.md",
+      "role": "original_fixed_research_question",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/PREGUNTA_DOCTORAL_Y_CONTRIBUCION_ES.md",
+      "size_bytes": 7840,
+      "sha256": "da26204a57ed30940acf3e3f9dd8efc9daaa89152fc9208a86cde96d7c95f883",
+      "mtime_utc": "2026-09-20T03:27:18Z"
+    },
+    {
+      "source_id": "HIST03",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/START_HERE_EN.md",
+      "role": "updated_english_pointer",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/START_HERE_EN.md",
+      "size_bytes": 1046,
+      "sha256": "c15b67c00f46b941c3d4183896703cab396143ae033a6c9636a14e8b6eb65691",
+      "mtime_utc": "2026-09-20T13:33:11Z"
+    },
+    {
+      "source_id": "HIST04",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/START_HERE_ES.md",
+      "role": "superseded_spanish_entry_point",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/START_HERE_ES.md",
+      "size_bytes": 1510,
+      "sha256": "8853c334677597eb75fa2f51c3fce77a6a7acb4832e38cf7ba3514835098ee38",
+      "mtime_utc": "2026-09-20T02:14:00Z"
+    },
+    {
+      "source_id": "HIST05",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/METHOD_SPEC_EN.md",
+      "role": "historical_assistance_method_specification",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/METHOD_SPEC_EN.md",
+      "size_bytes": 12854,
+      "sha256": "32a82a55a4931bf1614778492ad4021d795f6a494b4426f2a4c07e38a3d5aa83",
+      "mtime_utc": "2026-09-20T02:12:34Z"
+    },
+    {
+      "source_id": "HIST06",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/LITERATURE_MATRIX_EN.md",
+      "role": "historical_literature_matrix_S01_S28",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/LITERATURE_MATRIX_EN.md",
+      "size_bytes": 14519,
+      "sha256": "30967d17f0ae46f46dc17f11edae6ea6c7289201603635f7c6e526df6f6f0eab",
+      "mtime_utc": "2026-09-20T02:12:34Z"
+    },
+    {
+      "source_id": "HIST07",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/SEARCH_PROTOCOL_EN.md",
+      "role": "historical_search_protocol",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_novelty_audit_01/SEARCH_PROTOCOL_EN.md",
+      "size_bytes": 5065,
+      "sha256": "1b41679b83f5fa5d4a965b5f54fc058e999f40777826727c4580e33a73cfc6b0",
+      "mtime_utc": "2026-09-20T02:12:34Z"
+    },
+    {
+      "source_id": "HIST08",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/PRIMARY_FINDINGS_EN.md",
+      "role": "primary_source_findings",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/PRIMARY_FINDINGS_EN.md",
+      "size_bytes": 13409,
+      "sha256": "fd53997c1728b223413f0d6d214582d2f14380afc4d1ed13e870c2368c9880e2",
+      "mtime_utc": "2026-09-20T02:55:09Z"
+    },
+    {
+      "source_id": "HIST09",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_research_pivot_05/PRIMARY_SOURCE_DELTA_EN.md",
+      "role": "primary_source_delta",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_capture_cooperation_v3/research/20260919_research_pivot_05/PRIMARY_SOURCE_DELTA_EN.md",
+      "size_bytes": 3813,
+      "sha256": "fc05facfaf827324533ad5ba232a85ac92fc789e61e297691915366872e0dabe",
+      "mtime_utc": "2026-09-20T03:20:31Z"
+    },
+    {
+      "source_id": "HIST10",
+      "path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/docs/HANDOFF_TRAINING_2026091 0.md",
+      "role": "historical_runtime_handoff",
+      "use_policy": "EVIDENCE_AND_PROVENANCE_READ_ONLY",
+      "notes": "",
+      "exists": false,
+      "real_path": null,
+      "size_bytes": null,
+      "sha256": "UNRESOLVED_FILE_ABSENT",
+      "mtime_utc": null
+    }
+  ],
+  "project_authored_artifacts": [
+    {
+      "source_id": "NEW01",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/RESEARCH_QUESTION_EN.md",
+      "role": "b0_research_question",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/RESEARCH_QUESTION_EN.md",
+      "size_bytes": 9395,
+      "sha256": "7f450366d501ee788e0ea9207b667e49e2f6c1d09f6d8f8ae2a653ffa3f3738b",
+      "mtime_utc": "2026-09-20T13:56:32Z"
+    },
+    {
+      "source_id": "NEW02",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/HANDOFF_EN.md",
+      "role": "handoff",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0-W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/HANDOFF_EN.md",
+      "size_bytes": 18086,
+      "sha256": "e8939c4edce7819fa93ded8c9226e7650ccdfceef3b51beac0be1d07369e4b83",
+      "mtime_utc": "2026-09-21T20:00:31Z"
+    },
+    {
+      "source_id": "NEW03",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/METHOD_SPEC_EN.md",
+      "role": "w1_method_spec",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W1",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/METHOD_SPEC_EN.md",
+      "size_bytes": 21616,
+      "sha256": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5",
+      "mtime_utc": "2026-09-20T14:10:19Z"
+    },
+    {
+      "source_id": "NEW04",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/BASELINE_SPEC_EN.md",
+      "role": "w0_baseline_spec",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/docs/BASELINE_SPEC_EN.md",
+      "size_bytes": 11098,
+      "sha256": "cb810ff971725206a4645082d31190d8503a8260d275b44e57dd1fe1941b4cb5",
+      "mtime_utc": "2026-09-21T16:24:11Z"
+    },
+    {
+      "source_id": "NEW05",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/PROJECT_STATE.json",
+      "role": "project_state",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0; updated through W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/PROJECT_STATE.json",
+      "size_bytes": 29686,
+      "sha256": "d4069c6e53141da39364cfd8847a60e791cf527cce26789b4b6d7ec7fc993f52",
+      "mtime_utc": "2026-09-25T22:02:24Z"
+    },
+    {
+      "source_id": "NEW06",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/LEGACY_OBLIGATIONS_EN.md",
+      "role": "obligations",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/LEGACY_OBLIGATIONS_EN.md",
+      "size_bytes": 19928,
+      "sha256": "eebfe018c12e3746146799de3030782a1f9d0406f40e4514a96323a9c5fadd07",
+      "mtime_utc": "2026-09-20T13:58:28Z"
+    },
+    {
+      "source_id": "NEW07",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/RESOURCE_LEDGER.jsonl",
+      "role": "resource_ledger",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0; appended through W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/RESOURCE_LEDGER.jsonl",
+      "size_bytes": 62506,
+      "sha256": "33598a29b77bfdd372815feb012364ec7127d81bf5ca6fe9c031267b1506c38a",
+      "mtime_utc": "2026-09-25T22:02:24Z"
+    },
+    {
+      "source_id": "NEW08",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/AMENDMENTS_EN.md",
+      "role": "amendments",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "B0-W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/governance/AMENDMENTS_EN.md",
+      "size_bytes": 117978,
+      "sha256": "71a26ef302322ac5559a652de3a90384407d54c6f6b08668ed81598db03764dc",
+      "mtime_utc": "2026-09-25T22:02:24Z"
+    },
+    {
+      "source_id": "NEW09",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/SEARCH_PROTOCOL_EN.md",
+      "role": "w0_search_protocol",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/SEARCH_PROTOCOL_EN.md",
+      "size_bytes": 8401,
+      "sha256": "d15b123aac759e21ed581f254ddd4ca21340d6f6d0969d2442df0926c43c7b79",
+      "mtime_utc": "2026-09-22T01:29:00Z"
+    },
+    {
+      "source_id": "NEW10",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/search_log.jsonl",
+      "role": "w0_search_log",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/search_log.jsonl",
+      "size_bytes": 49142,
+      "sha256": "556a676881499f0815dc335b53a172fc5f7406798014830c3dd990624c41cacd",
+      "mtime_utc": "2026-09-25T03:32:02Z"
+    },
+    {
+      "source_id": "NEW11",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/sources.bib",
+      "role": "w0_bibliography",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/sources.bib",
+      "size_bytes": 30316,
+      "sha256": "4a1e6015e9e60338da0528096a5c7f0f5f517ab1dca8d34b8687944bed7a357e",
+      "mtime_utc": "2026-09-25T03:32:02Z"
+    },
+    {
+      "source_id": "NEW12",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/claim_evidence_matrix.csv",
+      "role": "w0_claim_matrix",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/claim_evidence_matrix.csv",
+      "size_bytes": 36901,
+      "sha256": "9915a9dc8b959aaf36927d61bedcdc63d327579dd19df12adcb2bf0c6734b58b",
+      "mtime_utc": "2026-09-25T03:32:02Z"
+    },
+    {
+      "source_id": "NEW13",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/TECHNICAL_GAP_EN.md",
+      "role": "w0_technical_gap",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W0",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/research/novelty/TECHNICAL_GAP_EN.md",
+      "size_bytes": 21208,
+      "sha256": "210087c58f9d979cf315f14644f36e78f76ca76ea5aa12ef81d42506166f1738",
+      "mtime_utc": "2026-09-22T13:07:33Z"
+    },
+    {
+      "source_id": "NEW14",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/configs/finite_examples_v1.json",
+      "role": "w1_case_inputs",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W1, frozen before implementation",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/configs/finite_examples_v1.json",
+      "size_bytes": 10097,
+      "sha256": "a22fb48a21c62518ba3293fb526a53f78d5721789efd544f3f60eae68e6500f2",
+      "mtime_utc": "2026-09-20T14:11:06Z"
+    },
+    {
+      "source_id": "NEW15",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/tests/fixtures/finite_cases_v1.json",
+      "role": "w1_frozen_expectations",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W1, derived by hand before implementation",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/tests/fixtures/finite_cases_v1.json",
+      "size_bytes": 13970,
+      "sha256": "4d83a52de3c311924ff25480c06dfec482733947bdef2ecb5fe66805f2138cda",
+      "mtime_utc": "2026-09-20T14:12:10Z"
+    },
+    {
+      "source_id": "NEW16",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/TASK_CONTRACT_EN.md",
+      "role": "w2_task_contract",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/TASK_CONTRACT_EN.md",
+      "size_bytes": 8634,
+      "sha256": "cf283a23c5ca3ed113c572a7471ca2fd02da26bed997af4311a4a0d5bc83c13b",
+      "mtime_utc": "2026-09-21T15:09:13Z"
+    },
+    {
+      "source_id": "NEW17",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/task_contract.json",
+      "role": "w2_task_contract_machine",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/task_contract.json",
+      "size_bytes": 2830,
+      "sha256": "7c4da1aee986456ac3ce30f50e1bb3898e966cf05a65a9581fead282516d0de0",
+      "mtime_utc": "2026-09-21T15:09:43Z"
+    },
+    {
+      "source_id": "NEW18",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/REWARD_CONTRACT_EN.md",
+      "role": "w2_reward_contract",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/REWARD_CONTRACT_EN.md",
+      "size_bytes": 2971,
+      "sha256": "ae7580cee4beb45ce19012933889bd23b9a4ba63567b9eec6062c8597ce17e50",
+      "mtime_utc": "2026-09-21T15:09:43Z"
+    },
+    {
+      "source_id": "NEW19",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/ASSISTANCE_PROTOCOL_EN.md",
+      "role": "w2_assistance_protocol",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/ASSISTANCE_PROTOCOL_EN.md",
+      "size_bytes": 5220,
+      "sha256": "dcc957588a1f85e4c9055a315e767d7297ee371d39e85065f18001da1c4c7ddf",
+      "mtime_utc": "2026-09-21T15:10:24Z"
+    },
+    {
+      "source_id": "NEW20",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/SPLIT_PROTOCOL_EN.md",
+      "role": "w2_split_protocol",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/SPLIT_PROTOCOL_EN.md",
+      "size_bytes": 3692,
+      "sha256": "165ee19ec09a022e1a0334eb72c1a9d847d8ccc132e332052ee44d36ce573885",
+      "mtime_utc": "2026-09-21T15:10:24Z"
+    },
+    {
+      "source_id": "NEW21",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/maps_manifest.json",
+      "role": "w2_maps_manifest",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2, declared empty",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/maps_manifest.json",
+      "size_bytes": 30439,
+      "sha256": "714136c23e9889746a97c5cddf6b60d26c8105a7bae3ccd5ee0ce0928d43d348",
+      "mtime_utc": "2026-09-25T03:34:58Z"
+    },
+    {
+      "source_id": "NEW22",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/split_manifest.json",
+      "role": "w2_split_manifest",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2, declared empty, TEST closed",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/contracts/split_manifest.json",
+      "size_bytes": 6766,
+      "sha256": "0e0cbde6d6ac64943d2a20471266600cb294ab81d4b281742e16afb9b0400b25",
+      "mtime_utc": "2026-09-25T03:34:58Z"
+    },
+    {
+      "source_id": "NEW23",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/configs/domain_v1.json",
+      "role": "w2_domain_config_D06_D07",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2, PROPOSED not frozen",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/configs/domain_v1.json",
+      "size_bytes": 24329,
+      "sha256": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+      "mtime_utc": "2026-09-25T04:54:31Z"
+    },
+    {
+      "source_id": "NEW24",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/THIRD_PARTY_NOTICES.md",
+      "role": "w2_dependency_notices_D16",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/THIRD_PARTY_NOTICES.md",
+      "size_bytes": 4234,
+      "sha256": "cd8695e333a636388ee801063c530200c8fe856f651bf4a29a85df1da9764fd9",
+      "mtime_utc": "2026-09-21T15:03:19Z"
+    },
+    {
+      "source_id": "NEW25",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/pyproject.toml",
+      "role": "w2_dependency_pins",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/pyproject.toml",
+      "size_bytes": 1687,
+      "sha256": "bf7ace6df428bdeebdbeb0cae28e8d18e61f13d4d621e28ed1a58197b4083965",
+      "mtime_utc": "2026-09-25T03:39:25Z"
+    },
+    {
+      "source_id": "NEW26",
+      "path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/uv.lock",
+      "role": "w2_dependency_lock",
+      "use_policy": "AUTHORED_HERE",
+      "notes": "W2",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception/uv.lock",
+      "size_bytes": 65328,
+      "sha256": "67c74cd3176694434e9040b6c222ae84fe5e5bd7875395aa05a255718a3e2246",
+      "mtime_utc": "2026-09-21T15:04:52Z"
+    }
+  ],
+  "legacy_runtime_roots": [
+    {
+      "source_id": "RUNTIME_HOME",
+      "path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment",
+      "exists": true,
+      "real_path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment",
+      "designation": "CANONICAL_FOR_OBLIGATION_TEXT",
+      "use_policy": "READ_ONLY_EVIDENCE_NO_IMPORT_NO_EXECUTION",
+      "git": {
+        "is_git_repository": true,
+        "head_commit": "6f526c3a411ddf4b99da99bf3ca4ea7faa8b77e1",
+        "head_subject": "Add visual-gated OSM capture oracle pilot",
+        "head_committed_at": "2026-09-02T18:12:46-06:00",
+        "working_tree_entry_count": 133,
+        "working_tree_clean": false
+      },
+      "basis_for_designation": "Later HEAD commit date, and the only root containing docs/HANDOFF_TRAINING_20260910.md.",
+      "readme_sha256": "7d966e575fde924e54f70072c7e7506fc08ba03cc6d7c2dc24a268c946500fb5",
+      "docs_entry_count": 33,
+      "tests_entry_count": 111,
+      "runs_entry_count": 14,
+      "src_entry_count": 2
+    },
+    {
+      "source_id": "RUNTIME_SSD",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment",
+      "exists": true,
+      "real_path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment",
+      "designation": "DIVERGENT_OLDER_COPY",
+      "use_policy": "READ_ONLY_EVIDENCE_NO_IMPORT_NO_EXECUTION",
+      "git": {
+        "is_git_repository": true,
+        "head_commit": "857d9837c85c3cf839ed8f7e6897246426119cba",
+        "head_subject": "Record diverse G6 grid validation",
+        "head_committed_at": "2026-09-02T10:34:47-06:00",
+        "working_tree_entry_count": 12,
+        "working_tree_clean": false
+      },
+      "basis_for_designation": "Different HEAD, smaller working-tree difference set, no handoff document. Not a copy or symlink.",
+      "readme_sha256": "1baf9d83efdf9fdc9f219aaca796eca612cae7d16677393dd22f95071d804ae1",
+      "docs_entry_count": 1,
+      "tests_entry_count": 18,
+      "runs_entry_count": 13,
+      "src_entry_count": 2
+    }
+  ],
+  "legacy_runtime_root_equivalence": {
+    "established": false,
+    "verdict": "DISTINCT_DIVERGENT_ROOTS",
+    "consequence": "Obligation text is read from RUNTIME_HOME only. No statement in this project may cite 'the runtime' without naming which root it came from."
+  },
+  "historical_evidence_packages": [
+    {
+      "package_id": "recovery_20260919_26",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_26",
+      "exists": true,
+      "use_policy": "READ_ONLY_EVIDENCE_NO_IMPORT_NO_REUSE_OF_SUCCESS_LABELS",
+      "entry_count": 36,
+      "checksums.json_sha256": "f862bb3aaf981a7b98ddb6cdb80529bb2855a51febc823ab1c4e8e665679f76f",
+      "SCIENTIFIC_DECISION.md_sha256": "ceb59e3cfe30a612650e9379819ed8a074722c384ce6c612fc488e4ed7a8c8a7",
+      "NEXT_WORK.md_sha256": "0646801a797b60cda472d9fa675a9f920937cb41deb7c64a352f9f8e5c3d9ad5",
+      "REPORT.md_sha256": "6c987b7bd51c50711747993cba9b4199a0574e1cb98a7e594fa84cf7d78da0c3"
+    },
+    {
+      "package_id": "recovery_20260919_27",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_27",
+      "exists": true,
+      "use_policy": "READ_ONLY_EVIDENCE_NO_IMPORT_NO_REUSE_OF_SUCCESS_LABELS",
+      "entry_count": 58,
+      "checksums.json_sha256": "b05ba3b982a55030e724cb74f7731ebd3383a2912f44627622a640d8bbdf08b5",
+      "SCIENTIFIC_DECISION.md_sha256": "a4e67bb1da2ba8a177185afe3abbbe38db83e6acfc612aa76e83e2c21d849980",
+      "NEXT_WORK.md_sha256": "156aa5f0e8a659dd6c59d05e54eeb8c598c48fdeb77b465b16d8c0a3015f29ad",
+      "REPORT.md_sha256": "b5e93f543224a34842ba43d97594d5da7143c9b1132b6a38bc6ab04b6a416a63"
+    },
+    {
+      "package_id": "recovery_20260919_28",
+      "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_28",
+      "exists": true,
+      "use_policy": "READ_ONLY_EVIDENCE_NO_IMPORT_NO_REUSE_OF_SUCCESS_LABELS",
+      "entry_count": 35,
+      "checksums.json_sha256": "7782666bc73e9f63a5d9ce3bcc7a7358b51624051e3f713abd207beea1f94df6",
+      "SCIENTIFIC_DECISION.md_sha256": "0a5c5fe26f26008de328f5bfd19e2c84d7b3d1a2f9ab394849235a33e512d182",
+      "NEXT_WORK.md_sha256": "c57d0a0dfa666af5bcaa5e536573a618bc1c1074463c4ff7996767c66a5f4281",
+      "REPORT.md_sha256": "edd319ea73829d9f492b4f2a7d1dee3b2797b9eee199fa8f5e28fda11d452026"
+    }
+  ],
+  "external_system_dependencies": [
+    {
+      "name": "Eclipse SUMO",
+      "version": "1.21.0",
+      "channel": "external system installation; eclipse-sumo publishes no macOS arm64 wheel",
+      "installed_python_package_wheel_tag": "cp310-cp310-macosx_14_0_arm64",
+      "usable_from_project_interpreter": false,
+      "why_it_matters": "Binary and Python bindings come from different channels and can drift apart silently; a binding speaking a different TraCI version returns wrong state rather than raising. scripts/preflight.py blocks on any mismatch.",
+      "episodes_executed": 0,
+      "invoked_for": "--version only",
+      "license": "EPL-2.0"
+    }
+  ],
+  "documentary_seal_reverification": {
+    "performed_on": "2026-09-25",
+    "source_manifest": "governance/REVIEW_MANIFEST.json",
+    "files_checked": 5,
+    "files_matching": 4,
+    "original_seal_checks_rechecked": 30,
+    "original_seal_checks_matching": 30,
+    "mismatches": [
+      "doctoral_joint_interception/README.md"
+    ],
+    "all_match": false,
+    "note": "README.md was updated after the seal under amendment A-05, so exactly one mismatch is expected. Any other mismatch is unexplained and must be investigated.",
+    "limit": "Documentary bytes only. Certifies no runtime behaviour and no scientific claim."
+  },
+  "post_seal_changes": [
+    {
+      "file": "doctoral_joint_interception/README.md",
+      "sealed_sha256": "c9e3ba1c16571e2ed03f0ffc2793077827c7b220673dba91580a1ce579c204d2",
+      "current_sha256": "5d3a791efd7e9a8b16b6e245d524d5c0cde43ff56682498f45a75f728a751cc1",
+      "reason": "The delivered README stated 'Implementation status: NOT STARTED', which became false.",
+      "authorization": "governance/AMENDMENTS_EN.md A-05",
+      "review_manifest_updated": false
+    },
+    {
+      "file": "experiments/20260920_w01_finite_examples_r01/{events.jsonl,result.json}",
+      "reason": "A W2 reproducibility check re-ran the finite examples against the sealed W1 package.",
+      "authorization": "that package's SEAL_EVENT_EN.md; W2 DEVIATIONS_EN.md D-11",
+      "scientific_impact": "none; results.jsonl is byte-identical to the original seal",
+      "original_hashes_preserved_in": "that package's checksums.json under superseded_seal",
+      "corrective_action": "both runners refuse to write into a sealed package without --reseal"
+    }
+  ],
+  "repository_instructions": {
+    "agents_md_files_found": 0,
+    "claude_md_files_found": 0,
+    "conclusion": "No AGENTS.md or equivalent exists in either tree. The master plan and the decision register are the only binding repository instructions."
+  },
+  "version_control_state": {
+    "project_root_under_git": false,
+    "note": "The project root is not inside a git repository. Evidence integrity relies on package checksums.json files, not on commit identity."
+  },
+  "limits": [
+    "A matching hash proves byte identity, not scientific correctness.",
+    "Historical evidence may inform diagnostics only; its success labels were produced under an incompatible capture contract and are not reused.",
+    "Absence of an AGENTS.md file was established by search; a later addition is not reflected."
+  ]
+}

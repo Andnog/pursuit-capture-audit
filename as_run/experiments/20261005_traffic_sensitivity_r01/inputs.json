@@ -1,0 +1,28 @@
+{
+ "amendment": "A-127 T",
+ "salt": "PK1",
+ "traffic": "assets/background_traffic/<city>.rou.xml",
+ "traffic_sha256": {
+  "adelaide_cbd": "8536f495aa557d272f37d0fb032104696b0b618ce17551f5a59459653f4ed062",
+  "toronto_downtown": "a037c5db782bdff316d4c39f2bfbbf9c467059c79d7580223f0eef68573e1a43",
+  "washington_downtown": "7fab4f619c7b4072a84c62aec5780f29fcb0934cd11a95369e26d9894ea70867",
+  "seattle_downtown": "123c77e56c963e85d4ba1bdc8a50a558e678a41269d94ae67b72daa9ffebf803",
+  "phoenix_downtown": "98e306ab17e08218bbc6b654eae7d0492e4a96d72902d1cdd4dab77b9f8d1887",
+  "portland_downtown": "c7b60728e43b38cc8117250dbc7600439ebb74ad85dc2ab3d8f588f1b68b081f",
+  "sapporo_grid": "2414727ba17bea9bdfea30970a245cba032998368811f1897a66040c89a05d36"
+ },
+ "reference": "experiments/20261005_kinematic_sensitivity_r01 arm K0",
+ "sumo": "1.21.0",
+ "sources_sha256": {
+  "scripts/audit_cage_certificate.py": "23abd2ab10a3061e1312e6baa0111a3e055c32a1f49b273c07759fca6722389a",
+  "scripts/addendum_reanalysis.py": "d62a15064a3e1b660970b7a5f32d6df42b23c1779fed621b2786dd663a2b08a4",
+  "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+  "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+  "src/joint_interception/native/ambush.py": "a9aca907bce554cf3ef6a115fb8064261d2d335661c8e4ec34daf29887fdd6fd",
+  "src/joint_interception/simulator/evader.py": "a9b531635fe5b9b462e7a2d69419bf112c8b53f5cdee03c8341ad34146b85502",
+  "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5",
+  "scripts/run_traffic_sensitivity.py": "c7aef800149fd77441db42123b4715e04c9ec8d735dea718d48c2059836dfe2b",
+  "scripts/run_kinematic_sensitivity.py": "09e5984813f3e44a304c8918590c8fb2555e74b12d7f1398ddce495cfccd0948"
+ },
+ "note": "sources hashed after the evader gained the TUNED level (A-127 E); the reference arm K0 ran before that change, and the four existing levels were checked unchanged (LEVELS_CHECK_before/after in the tuned-evader package)"
+}

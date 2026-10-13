@@ -1,0 +1,7 @@
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "run_started", "package": "20260921_w04_constructive_arrival_r01"}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C1_earliest_arrives_exactly", "ok": true}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C2_interval_fullness", "ok": true}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C3_legality", "ok": true}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C4_under_is_earned", "ok": true}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C5_nonconvexity", "ok": true}
+{"ts": "2026-09-21T16:32:05.821885+00:00", "event": "check_executed", "check": "C6_end_to_end", "ok": true}

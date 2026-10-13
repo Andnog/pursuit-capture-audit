@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261001_final_study_r01",
+ "sealed_at": "2026-10-01T14:35:22.392076Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "62c8604b29216b65d74a758912be0f936b62ac0e68620b16dd88050ad1ef7844",
+  "SCIENTIFIC_DECISION_EN.md": "e0e8e72a19d3e6d34dcb6b76616d09e1285daa4894c0eb7828ddc99cca5d06cb",
+  "audit.jsonl": "705b388d2f28bf24cf5a79aae67d48933eafa7382db0197cdc6525bbf1e8fce3",
+  "audit_phase.log": "eefc642db09da35dae93653d3c2ed07ace3efc1067bbecc53a7d298d26bf1688",
+  "gifs/phoenix12_pursuit_5m_rule.gif": "1cc2217b64c4ca5c53b14348a408cf3e735d71d4ef2c412fcb3926c4e8ae7d7e",
+  "inputs.json": "51cbe2eb5dae3244ed1ea2f5bc7e2d20a313ff3718ad9baec4ff1e26f00fbfe8",
+  "records.jsonl.gz": "9a497129baa177ea428b453142110825f35ef44765f67ec78c4bb568fbb71246",
+  "run.jsonl": "0c6b093ed866e522d914581d758f336601e1842eb8f9a917b9d13591a2c1ce31",
+  "run_phase.log": "efb3d244b3d3e9111e3e138be4d9c7b6a844bf05c8b13323ad93009a5d65169b",
+  "summary.json": "63b5093ab201363db85209d0b677cdaf15c029cdd0424ba615b6c5967cb8e40b"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_published_env_pepcrl_r01",
+ "sealed_at": "2026-10-06T09:17:13.497781+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "9a2bb43a46451b5f5e7aeec9d5b07fb9b2d32bccd6e9ef59acba74cd5193f3ad",
+  "SCIENTIFIC_DECISION_EN.md": "cb786d62d1757df444f468f0e1f8a848e2121e07c6dfa8dcbca0d601c5b5dd26",
+  "inputs.json": "bd87e4d0c2d6c53df30830c8f03bdb81254e03d8d2e8593ca7d32c2fdc5d012e",
+  "results.jsonl": "cf2f537c0569eb17c9c9092f486762352261ca85cf55e2f9b2dd4d3383bab69a",
+  "run.log": "d36d21cfad3f0e4306650811c18a2dedf5570a3036b3b3db7dc30a63fb59de4a",
+  "summary.json": "8aad1d1d4c8f3c31bce245b21b3c0e035b9627ec463223de6240fd4b72e19fa7",
+  "third_party_hashes.json": "09797250b4b064851f5142deb0fa2751990bac005af53af6ecca9ec99fa03a18",
+  "../../scripts/report_published_env_pepcrl.py": "6d378b3c9919afbdef3274c29eebdb31282736845eb1a995c8d2de3663fb92c8"
+ }
+}

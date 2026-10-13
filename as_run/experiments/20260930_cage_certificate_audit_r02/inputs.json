@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260930_cage_certificate_audit_r02",
+  "recorded_at_launch": "2026-09-30T19:44:35.894947Z",
+  "sources": {
+    "scripts/audit_cage_certificate.py": "9628aefe798a7aa22831e9d49237252904259c358237e4f6fa3f1a6af75640e0",
+    "scripts/train_caging_pilot.py": "8c71712ccd2f6031196028d326ac6052d9782fddfdeba4e1b4fb321dc2c66ea5",
+    "src/joint_interception/rl/rollout.py": "fccb99cf3bac12144dba6a60d1c9766a4489f76ba8eb9149ea2bc514985d38e7",
+    "src/joint_interception/rl/policy.py": "85f5612c96320295609da84cdf1c05fae917466f909d05e8a3d9f863e5150786",
+    "src/joint_interception/native/engine.py": "d7dcd915e34672729957ab0f85021eea292ea8d5b69b8fc71e46edc1b3c4aea0",
+    "src/joint_interception/native/caging.py": "1c36aa57aeb2f3d3b935c56e55b34b14de3c7da26f699817ba7dfb274dc2bbe4",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "experiments/20260930_cage_certificate_audit_r02/PROTOCOL_EN.md": "e34eab76dce7bd7af1309fc3f8689abf6315673a82e0e4f4b4746103526fc3e2",
+    "experiments/20260930_cage_certificate_audit_r02/DEVIATIONS_EN.md": "78985dbb626fb0541010df9faf5ac33be893b79028c92ae8d9584c0ae268d8e5",
+    "experiments/20260930_marl_pilot_r03/eval.jsonl": "83e94e008d182d16a46974704ac515a67794138fd8fd331bcbcb53e88d3c9d7c",
+    "experiments/20260930_marl_pilot_r03/checksums.json": "f19843ae4f2e860cce10c6f0a1d193a86b221246f2c78f6cbb771f23d641c147"
+  },
+  "arguments": {
+    "pilot": "experiments/20260930_marl_pilot_r03",
+    "conditions": [
+      "hold",
+      "policy"
+    ],
+    "post_cage_s": 60,
+    "workers": 8
+  },
+  "rule": "not modified while running"
+}

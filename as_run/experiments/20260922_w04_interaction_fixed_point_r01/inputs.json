@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_interaction_fixed_point_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "src/joint_interception/opportunities/interaction.py": "dcf1d008b6e673c1fc25172f1b12f4ed65d6d29f4f355a7b7006762e30e1c79a",
+    "src/joint_interception/opportunities/schedule.py": "d5694ae9a9737437ca2ad4d19215bb186a02b34e8dea105c53505502a6f221a7",
+    "src/joint_interception/opportunities/compatibility.py": "1d6adf738df19c3a51704ab04e4a464837fd6a5d1a5630b0c442b9efc68fdf0f",
+    "tests/test_interaction_fixed_point.py": "af16a626d6d07a5672ed4410858dece0a277d1b900860eb72875dd7f2243a600",
+    "scripts/run_interaction_checks.py": "bcb825ae7d9965e70a0e396ed8e975ece1c1bb59632547a6ef29e4112c4c00cc"
+  },
+  "reuse": "lane_capacity_required_m is imported from compatibility.py and constructive_arrival_set from schedule.py; neither is reimplemented, so the capacity arithmetic and the UNDER discharge are the same code that produced the frozen results"
+}

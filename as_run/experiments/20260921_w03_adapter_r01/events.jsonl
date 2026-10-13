@@ -1,0 +1,10 @@
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "run_started", "package": "20260921_w03_adapter_r01"}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R1_state_restoration_exact", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R2_shared_seed_insufficient_after_divergence", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R3_information_boundary_every_decision", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R4_masks_and_fallback", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R5_deadline_enforced", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R6_proposed_vs_executed_logged_separately", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R7_generator_pruning_accounted", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R8_episode_result_rows_validate", "ok": true}
+{"ts": "2026-09-21T15:51:00.865657+00:00", "event": "check_executed", "check": "R9_no_legacy_import_lint_clean_earlier_tests_pass", "ok": true}

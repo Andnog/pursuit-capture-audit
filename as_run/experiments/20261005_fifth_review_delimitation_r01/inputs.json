@@ -1,0 +1,10 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_fifth_review_delimitation_r01",
+ "recorded_at_launch": "2026-10-06T09:49:11.236853+00:00",
+ "amendment": "A-139 (post hoc)",
+ "sources": {
+  "scripts/delimit_fifth_review.py": "63e0408f35e38857e78807f0d78e11ade12e34951f70d3a626c6892844b312f5"
+ },
+ "reads": "20261005_mappo_v3_r01, 20261004_mappo_v2_r01, 20261005_mappo_prox_r01, 20261002_mappo_r01"
+}

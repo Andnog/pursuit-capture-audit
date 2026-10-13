@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261004_audit_addendum_r01",
+  "recorded_at_launch": "2026-10-04T15:28:58.360988+00:00",
+  "sources": {
+    "scripts/audit_addendum.py": "fae440ec8c3b31fdccb5c54676a36f5b36fabdfccf28435ef2bfdbf7963ecddc",
+    "scripts/audit_cage_certificate.py": "23abd2ab10a3061e1312e6baa0111a3e055c32a1f49b273c07759fca6722389a",
+    "scripts/run_ambush_optimization.py": "7f877fe749480a637fba0322a57703f08b0eb8048d78d470fa1b2177f198f5ef",
+    "scripts/run_endpoint_validation.py": "533c4896a7a3e32bbe2ccb9f5d1002e339e062253efeee986879a2b3f22c651c",
+    "src/joint_interception/rl/rollout.py": "63c5868854524ec6f09d7f1e160bd324b79c7103abc30a29a10fb2b63cda03fd",
+    "src/joint_interception/native/engine.py": "67fb392934ef8d6ca703e4f006d6c56648da0780d93fbe84b0b73f6132d6a629",
+    "src/joint_interception/native/ambush_plus.py": "3bac31545ed988cde92ba4da7bd1c0fabfb4ff808db4832267d7710b6f9f9efe",
+    "src/joint_interception/native/ambush.py": "a9aca907bce554cf3ef6a115fb8064261d2d335661c8e4ec34daf29887fdd6fd",
+    "src/joint_interception/simulator/evader.py": "ba3baf1f34a9d477b77d95d24bb757456dde94909ea92a05614ff665070a03fc",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b"
+  },
+  "offline_sources": {
+    "scripts/addendum_reanalysis.py": "d62a15064a3e1b660970b7a5f32d6df42b23c1779fed621b2786dd663a2b08a4",
+    "scripts/interpretability_capture_law.py": "1198ee71072860ccba3a760e08f9000a9453f955393e264d88210d3e7359833b"
+  }
+}

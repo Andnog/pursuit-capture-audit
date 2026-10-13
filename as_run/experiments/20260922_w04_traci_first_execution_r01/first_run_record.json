@@ -1,0 +1,204 @@
+{
+  "note": "The FIRST executed run of the TraCI surface, preserved verbatim before any diagnostic arm was added. It is the protocol's primary test and its verdict stands. Nothing below was retried, loosened or re-scored.",
+  "result": {
+    "package": "20260922_w04_traci_first_execution_r01",
+    "stage": "W4",
+    "claim_class": "software_correctness_and_one_empirical_property_of_sumo",
+    "verdict": "SURFACE_EXERCISED_RESTORATION_INEXACT",
+    "map": {
+      "map_id": "adelaide_cbd",
+      "declared_split": "train",
+      "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+      "opened_read_only": true,
+      "copied_or_modified": false
+    },
+    "restoration": {
+      "exact": false,
+      "first_difference": {
+        "kind": "frame",
+        "frame_index": 0,
+        "time_s": 11.2,
+        "vehicle_id": "p2",
+        "fields": {
+          "x": {
+            "first_run": 2267.9357059346053,
+            "second_run": 2267.92827395289
+          },
+          "y": {
+            "first_run": 584.4782585678807,
+            "second_run": 584.477648983424
+          },
+          "speed_mps": {
+            "first_run": 12.4480774938222,
+            "second_run": 12.512386866607704
+          },
+          "lane_position_m": {
+            "first_run": 23.603781651093172,
+            "second_run": 23.61123868666077
+          }
+        }
+      }
+    },
+    "not_established": [
+      "physical feasibility",
+      "capture ability",
+      "protocol-supported assistance",
+      "anything O22 guards"
+    ],
+    "resources": {
+      "sumo_process_starts": 1,
+      "simulated_seconds": 26.1,
+      "wall_seconds": 1.549,
+      "cpu_seconds": 0.19,
+      "optimizer_updates": 0,
+      "checkpoint_loads": 0,
+      "test_split_accesses": 0
+    }
+  },
+  "results": [
+    {
+      "check_id": "T1",
+      "name": "route_found",
+      "observed": {
+        "edges": 18,
+        "first": "-1003275547#2",
+        "last": "23263758"
+      },
+      "status": "PASSED"
+    },
+    {
+      "check_id": "T2",
+      "name": "vehicles_present",
+      "expected": 3,
+      "observed": 3,
+      "ids": [
+        "p1",
+        "p2",
+        "p3"
+      ],
+      "status": "PASSED"
+    },
+    {
+      "check_id": "T3",
+      "name": "body_dimensions_come_from_the_contract_not_a_sumo_default",
+      "expected": {
+        "length_m": 5.0,
+        "width_m": 1.8
+      },
+      "observed": {
+        "length_m": 5.0,
+        "width_m": 1.8
+      },
+      "status": "PASSED"
+    },
+    {
+      "check_id": "T4",
+      "name": "lane_length_readable",
+      "observed": {
+        "lane_id": "-1003275547#2_0",
+        "length_m": 71.41
+      },
+      "status": "PASSED"
+    },
+    {
+      "check_id": "T5",
+      "name": "command_queue_round_trip",
+      "observed": {
+        "p1": 5.0
+      },
+      "status": "PASSED"
+    },
+    {
+      "check_id": "T6",
+      "name": "commanded_speed_is_a_request_not_a_guarantee",
+      "commanded_mps": 5.0,
+      "executed_mps": 2.6000000000000005,
+      "equal": false,
+      "status": "OBSERVED",
+      "note": "SUMO's safety layer is left ON, so the executed speed may be lower than the request. This is recorded, not corrected: it is the same proposed-versus-executed separation the task contract requires."
+    },
+    {
+      "check_id": "T7",
+      "name": "state_restoration_reproduces_the_continuation_exactly",
+      "prefix_steps": 100,
+      "replay_steps": 150,
+      "captured_time_s": 11.1,
+      "time_after_restore_s": 11.1,
+      "first_run_digest": "28cb0819824520a41b54b8901709ffcda0e2536b3e19e72430a4b6fe3a9eb79f",
+      "second_run_digest": "4f1357a58fbee886fb08e8d14a7a5284440fcc020d1334494a91ac75c025d76f",
+      "exact": false,
+      "first_difference": {
+        "kind": "frame",
+        "frame_index": 0,
+        "time_s": 11.2,
+        "vehicle_id": "p2",
+        "fields": {
+          "x": {
+            "first_run": 2267.9357059346053,
+            "second_run": 2267.92827395289
+          },
+          "y": {
+            "first_run": 584.4782585678807,
+            "second_run": 584.477648983424
+          },
+          "speed_mps": {
+            "first_run": 12.4480774938222,
+            "second_run": 12.512386866607704
+          },
+          "lane_position_m": {
+            "first_run": 23.603781651093172,
+            "second_run": 23.61123868666077
+          }
+        }
+      },
+      "status": "FAILED",
+      "note": "Compared by exact equality, never within a tolerance. The protocol forbids loosening this comparison after seeing its result."
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-09-23T02:52:48.643994Z",
+      "event": "run_started",
+      "package": "20260922_w04_traci_first_execution_r01"
+    },
+    {
+      "ts": "2026-09-23T02:52:48.643994Z",
+      "event": "sumo_process_started",
+      "map_id": "adelaide_cbd",
+      "declared_split": "train",
+      "command": [
+        "/Library/Frameworks/Python.framework/Versions/3.10/bin/sumo",
+        "-n",
+        "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/adelaide_cbd.net.xml",
+        "--step-length",
+        "0.1",
+        "--seed",
+        "20260922",
+        "--collision.action",
+        "warn",
+        "--default.speeddev",
+        "0",
+        "--no-step-log",
+        "true",
+        "--time-to-teleport",
+        "-1",
+        "--quit-on-end",
+        "true"
+      ]
+    },
+    {
+      "ts": "2026-09-23T02:52:48.643994Z",
+      "event": "state_captured",
+      "time_s": 11.1
+    },
+    {
+      "ts": "2026-09-23T02:52:48.643994Z",
+      "event": "restoration_tested",
+      "exact": false
+    },
+    {
+      "ts": "2026-09-23T02:52:48.643994Z",
+      "event": "sumo_process_closed"
+    }
+  ]
+}

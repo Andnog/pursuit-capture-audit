@@ -1,0 +1,51 @@
+{
+  "package": "20260921_w00_novelty_closure_r04",
+  "stage": "W0_REVISION",
+  "continues": "20260921_w00_novelty_closure_r03",
+  "move": "backward citation chasing on B06's 22 references",
+  "chase": {
+    "source": "B06",
+    "references_screened": 22,
+    "relevant": 2,
+    "verdict": "CHASE_PARTIAL",
+    "not_closable_by_effort": [
+      "F01_RIEDMILLER_MULTIOPTION: publisher CLOSED, abstract elided, no open copy"
+    ]
+  },
+  "refutation_found": false,
+  "self_correction": {
+    "what": "the r03 B06 entry was taken from page images of a render that stopped at page 6 of 14",
+    "effect": "the entry omitted B06's k-agent adjacency capture predicate and so OVERSTATED this project's position",
+    "resolution": "B06 re-read at FULL_TEXT; the C05 difference is re-grounded on the soundness of a cardinality certificate rather than on the absence of a joint condition; the difference is NOT withdrawn",
+    "rule_adopted": "a render that ends is not a document that ends"
+  },
+  "claim_effects": {
+    "C05_H2": "NARROWED AGAIN. Jennings 1993 defines commitment and convention; the switch_margin hysteresis is a convention in that sense. H2 may not claim commitment, nor commitment under a revision rule. It is reduced to the committed OBJECT and to whether the revision rule is LEARNED.",
+    "C03_C04": "STILL BLOCKED, and the blocker is now a definite article rather than an open question. Riedmiller & Withopf 2005 is the closest structural relative of C04 and is not obtainable."
+  },
+  "matrix": {
+    "rows": 34,
+    "status_counts": {
+      "KNOWN": 13,
+      "POTENTIAL_DIFFERENCE": 12,
+      "PENDING": 9
+    }
+  },
+  "verdict": {
+    "composite_claim_C12": "POTENTIAL_DIFFERENCE",
+    "changed_from_previous": false,
+    "claim_class": "novelty_only",
+    "method_finding": "backward citation chasing produced two constraining records that thirty-five keyword searches did not; both are ancestors (1993, 2005), which is why forward and keyword search could not reach them",
+    "protocol_change": "backward citation chasing is now REQUIRED for every source read at METHOD_SECTIONS depth or deeper (A-33)"
+  },
+  "resources": {
+    "queries_executed": 2,
+    "reference_lists_screened": 1,
+    "retrieval_attempts": 7,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

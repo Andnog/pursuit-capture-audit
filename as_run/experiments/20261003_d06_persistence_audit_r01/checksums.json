@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_d06_persistence_audit_r01",
+ "sealed_at": "2026-10-03T05:24:52.282242Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "12f31e8b4b08930b14147322061d49f2d8418a23969892a6d6530676077f8cd3",
+  "SCIENTIFIC_DECISION_EN.md": "f8a238c18d2299ddc23f8642bd8ac9062ccdf60b55f4ecb9ff2ee2611c3ddbae",
+  "inputs.json": "3bcd0a38579c9c251fe43daa1653506f50ffab7891ae443e3626e9642684e642",
+  "results.jsonl": "b52ac2e056c6d7bbdf48ee41cfa7edfb3a1742d88c47b0b56a36c08124994e17",
+  "run_chunk1.log": "e096b2c224a8500d015f29f7197f12749f0c48ed2f88df0b0506bf95fd44fe2c",
+  "run_chunk2.log": "3e2c8d549a3430842adf942f780e73cdfddbe7fc687cd47fce268b8ff9dbda9e",
+  "summary.json": "f4c3fb23d07aba591e7ae39a96c8cc59fe7f0ac1afd907b72e3ee6a6f72f9819"
+ }
+}

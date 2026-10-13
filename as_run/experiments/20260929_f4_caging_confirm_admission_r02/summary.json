@@ -1,0 +1,278 @@
+{
+  "primary": {
+    "pooled_real_map_delta_phys": [
+      0.224,
+      0.182,
+      0.268
+    ],
+    "scenario_cells": 462,
+    "passes": true,
+    "rule": "pooled over maps, team sizes, speeds: paired Delta P(phys cage) cut - individual, bootstrap over scenario cells, CI lower > 0"
+  },
+  "cells": {
+    "adelaide_cbd|team3|x1.2": {
+      "runs": 222,
+      "time_cut": 0.973,
+      "phys_cut": 0.874,
+      "contact_cut": 0.135,
+      "time_individual": 0.865,
+      "phys_individual": 0.685,
+      "contact_individual": 0.045,
+      "d_phys_cut_minus_individual": [
+        0.189,
+        0.063,
+        0.315
+      ],
+      "d_time_cut_minus_individual": [
+        0.108,
+        0.036,
+        0.198
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "adelaide_cbd|team3|x1.5": {
+      "runs": 222,
+      "time_cut": 0.91,
+      "phys_cut": 0.757,
+      "contact_cut": 0.09,
+      "time_individual": 0.694,
+      "phys_individual": 0.414,
+      "contact_individual": 0.027,
+      "d_phys_cut_minus_individual": [
+        0.342,
+        0.198,
+        0.486
+      ],
+      "d_time_cut_minus_individual": [
+        0.216,
+        0.108,
+        0.333
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "adelaide_cbd|team4|x1.2": {
+      "runs": 216,
+      "time_cut": 0.972,
+      "phys_cut": 0.88,
+      "contact_cut": 0.157,
+      "time_individual": 0.889,
+      "phys_individual": 0.713,
+      "contact_individual": 0.056,
+      "d_phys_cut_minus_individual": [
+        0.167,
+        0.046,
+        0.287
+      ],
+      "d_time_cut_minus_individual": [
+        0.083,
+        0.019,
+        0.157
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": false
+    },
+    "adelaide_cbd|team4|x1.5": {
+      "runs": 216,
+      "time_cut": 0.917,
+      "phys_cut": 0.787,
+      "contact_cut": 0.111,
+      "time_individual": 0.815,
+      "phys_individual": 0.602,
+      "contact_individual": 0.056,
+      "d_phys_cut_minus_individual": [
+        0.185,
+        0.056,
+        0.315
+      ],
+      "d_time_cut_minus_individual": [
+        0.102,
+        0.019,
+        0.194
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "toronto_downtown|team3|x1.2": {
+      "runs": 240,
+      "time_cut": 0.858,
+      "phys_cut": 0.742,
+      "contact_cut": 0.025,
+      "time_individual": 0.642,
+      "phys_individual": 0.5,
+      "contact_individual": 0.0,
+      "d_phys_cut_minus_individual": [
+        0.242,
+        0.092,
+        0.392
+      ],
+      "d_time_cut_minus_individual": [
+        0.217,
+        0.058,
+        0.375
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "toronto_downtown|team3|x1.5": {
+      "runs": 240,
+      "time_cut": 0.825,
+      "phys_cut": 0.658,
+      "contact_cut": 0.083,
+      "time_individual": 0.408,
+      "phys_individual": 0.317,
+      "contact_individual": 0.0,
+      "d_phys_cut_minus_individual": [
+        0.342,
+        0.175,
+        0.508
+      ],
+      "d_time_cut_minus_individual": [
+        0.417,
+        0.275,
+        0.567
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "toronto_downtown|team4|x1.2": {
+      "runs": 240,
+      "time_cut": 0.925,
+      "phys_cut": 0.85,
+      "contact_cut": 0.033,
+      "time_individual": 0.783,
+      "phys_individual": 0.55,
+      "contact_individual": 0.008,
+      "d_phys_cut_minus_individual": [
+        0.3,
+        0.125,
+        0.475
+      ],
+      "d_time_cut_minus_individual": [
+        0.142,
+        0.008,
+        0.275
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "toronto_downtown|team4|x1.5": {
+      "runs": 240,
+      "time_cut": 0.875,
+      "phys_cut": 0.808,
+      "contact_cut": 0.05,
+      "time_individual": 0.667,
+      "phys_individual": 0.542,
+      "contact_individual": 0.033,
+      "d_phys_cut_minus_individual": [
+        0.267,
+        0.117,
+        0.417
+      ],
+      "d_time_cut_minus_individual": [
+        0.208,
+        0.1,
+        0.333
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "washington_downtown|team3|x1.2": {
+      "runs": 234,
+      "time_cut": 0.744,
+      "phys_cut": 0.658,
+      "contact_cut": 0.051,
+      "time_individual": 0.521,
+      "phys_individual": 0.419,
+      "contact_individual": 0.026,
+      "d_phys_cut_minus_individual": [
+        0.239,
+        0.077,
+        0.402
+      ],
+      "d_time_cut_minus_individual": [
+        0.222,
+        0.085,
+        0.368
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "washington_downtown|team3|x1.5": {
+      "runs": 234,
+      "time_cut": 0.624,
+      "phys_cut": 0.53,
+      "contact_cut": 0.034,
+      "time_individual": 0.444,
+      "phys_individual": 0.333,
+      "contact_individual": 0.017,
+      "d_phys_cut_minus_individual": [
+        0.197,
+        0.051,
+        0.342
+      ],
+      "d_time_cut_minus_individual": [
+        0.179,
+        0.043,
+        0.316
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": true
+    },
+    "washington_downtown|team4|x1.2": {
+      "runs": 234,
+      "time_cut": 0.846,
+      "phys_cut": 0.701,
+      "contact_cut": 0.026,
+      "time_individual": 0.684,
+      "phys_individual": 0.615,
+      "contact_individual": 0.0,
+      "d_phys_cut_minus_individual": [
+        0.085,
+        -0.043,
+        0.222
+      ],
+      "d_time_cut_minus_individual": [
+        0.162,
+        0.051,
+        0.282
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": false
+    },
+    "washington_downtown|team4|x1.5": {
+      "runs": 234,
+      "time_cut": 0.761,
+      "phys_cut": 0.632,
+      "contact_cut": 0.043,
+      "time_individual": 0.624,
+      "phys_individual": 0.504,
+      "contact_individual": 0.017,
+      "d_phys_cut_minus_individual": [
+        0.128,
+        0.0,
+        0.256
+      ],
+      "d_time_cut_minus_individual": [
+        0.137,
+        0.0,
+        0.274
+      ],
+      "d_phys_cut_minus_pursuit": null,
+      "coordination_regime": false
+    }
+  },
+  "coordination_regime_cells": [
+    "adelaide_cbd|team3|x1.2",
+    "adelaide_cbd|team3|x1.5",
+    "adelaide_cbd|team4|x1.5",
+    "toronto_downtown|team3|x1.2",
+    "toronto_downtown|team3|x1.5",
+    "toronto_downtown|team4|x1.2",
+    "toronto_downtown|team4|x1.5",
+    "washington_downtown|team3|x1.2",
+    "washington_downtown|team3|x1.5"
+  ],
+  "secondary_regime_cells_with_real": 9
+}

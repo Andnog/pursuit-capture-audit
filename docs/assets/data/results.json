@@ -1,0 +1,269 @@
+{
+ "test": {
+  "rates": {
+   "plus_opt": {
+    "d06": 0.3429,
+    "prox_5m": 0.8686,
+    "prox_5m_centre": 0.7543
+   },
+   "ambush_a95": {
+    "d06": 0.2415,
+    "prox_5m": 0.8632,
+    "prox_5m_centre": 0.781
+   },
+   "pursuit": {
+    "d06": 0.1976,
+    "prox_5m": 0.8632,
+    "prox_5m_centre": 0.7927
+   }
+  },
+  "by_team": {
+   "Random|3": {
+    "plus_opt": 0.2987,
+    "ambush_a95": 0.1753,
+    "pursuit": 0.1623
+   },
+   "Random|5": {
+    "plus_opt": 0.3506,
+    "ambush_a95": 0.2597,
+    "pursuit": 0.2208
+   },
+   "Random|7": {
+    "plus_opt": 0.3701,
+    "ambush_a95": 0.2922,
+    "pursuit": 0.2922
+   },
+   "Avoidant|3": {
+    "plus_opt": 0.2975,
+    "ambush_a95": 0.2025,
+    "pursuit": 0.1266
+   },
+   "Avoidant|5": {
+    "plus_opt": 0.3734,
+    "ambush_a95": 0.2532,
+    "pursuit": 0.1709
+   },
+   "Avoidant|7": {
+    "plus_opt": 0.3671,
+    "ambush_a95": 0.2658,
+    "pursuit": 0.2152
+   },
+   "Optimal|3": {
+    "plus_opt": 0.2532,
+    "ambush_a95": 0.1558,
+    "pursuit": 0.1299
+   },
+   "Optimal|5": {
+    "plus_opt": 0.2597,
+    "ambush_a95": 0.1883,
+    "pursuit": 0.0909
+   },
+   "Optimal|7": {
+    "plus_opt": 0.3636,
+    "ambush_a95": 0.2597,
+    "pursuit": 0.1429
+   }
+  },
+  "null_team": null,
+  "pursuit_all_evaders": {
+   "d06": 0.1724,
+   "prox_5m": 0.8512,
+   "prox_5m_centre": 0.7482
+  }
+ },
+ "heldout_b": {
+  "rates": {
+   "plus_opt": {
+    "d06": 0.2908,
+    "prox_5m": 0.7919,
+    "prox_5m_centre": 0.6471
+   },
+   "ambush_a95": {
+    "d06": 0.2669,
+    "prox_5m": 0.7767,
+    "prox_5m_centre": 0.6405
+   },
+   "pursuit": {
+    "d06": 0.2266,
+    "prox_5m": 0.7756,
+    "prox_5m_centre": 0.6427
+   }
+  },
+  "by_team": {
+   "Random|3": {
+    "plus_opt": 0.2987,
+    "ambush_a95": 0.2532,
+    "pursuit": 0.2208
+   },
+   "Random|5": {
+    "plus_opt": 0.3986,
+    "ambush_a95": 0.3649,
+    "pursuit": 0.3243
+   },
+   "Random|7": {
+    "plus_opt": 0.3699,
+    "ambush_a95": 0.3836,
+    "pursuit": 0.3493
+   },
+   "Avoidant|3": {
+    "plus_opt": 0.1625,
+    "ambush_a95": 0.15,
+    "pursuit": 0.1313
+   },
+   "Avoidant|5": {
+    "plus_opt": 0.25,
+    "ambush_a95": 0.2179,
+    "pursuit": 0.1603
+   },
+   "Avoidant|7": {
+    "plus_opt": 0.2792,
+    "ambush_a95": 0.2468,
+    "pursuit": 0.1883
+   },
+   "Optimal|3": {
+    "plus_opt": 0.1313,
+    "ambush_a95": 0.05,
+    "pursuit": 0.0625
+   },
+   "Optimal|5": {
+    "plus_opt": 0.1625,
+    "ambush_a95": 0.125,
+    "pursuit": 0.075
+   },
+   "Optimal|7": {
+    "plus_opt": 0.1812,
+    "ambush_a95": 0.1938,
+    "pursuit": 0.1187
+   }
+  },
+  "null_team": {
+   "d06": 0.0164,
+   "prox_5m": 0.273,
+   "prox_5m_centre": 0.2138
+  },
+  "pursuit_all_evaders": {
+   "d06": 0.1781,
+   "prox_5m": 0.7697,
+   "prox_5m_centre": 0.6202
+  }
+ },
+ "contrasts": [
+  {
+   "label": "TEST: PLB - pursuit, family 97.5 %",
+   "value": [
+    0.1453,
+    0.0855,
+    0.2073
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "TEST: PLB - pursuit, family 95 %",
+   "value": [
+    0.1453,
+    0.0919,
+    0.1987
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "TEST: PLB - pursuit, city and family 95 %",
+   "value": [
+    0.1453,
+    0.0738,
+    0.228
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "TEST: PLB - junction ambush, family 95 %",
+   "value": [
+    0.1015,
+    0.0534,
+    0.1506
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "TEST: PLB - pursuit, optimal evader, family 95 %",
+   "value": [
+    0.171,
+    0.1082,
+    0.2381
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "TEST: body gap 5 m - OC, pursuit team, family 97.5 %",
+   "value": [
+    0.6788,
+    0.6202,
+    0.7353
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - pursuit, family 97.5 %",
+   "value": [
+    0.0643,
+    0.0145,
+    0.1139
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - pursuit, city and family 95 %",
+   "value": [
+    0.0643,
+    0.0087,
+    0.132
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: body gap 5 m - OC, pursuit team, family 97.5 %",
+   "value": [
+    0.549,
+    0.4758,
+    0.6204
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - junction ambush, family 95 %",
+   "value": [
+    0.024,
+    -0.0166,
+    0.0637
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - pursuit, optimal evader, family 95 %",
+   "value": [
+    0.0729,
+    0.0167,
+    0.1313
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - pursuit under the 5 m body-gap rule",
+   "value": [
+    0.0163,
+    -0.0022,
+    0.0373
+   ],
+   "equals_sealed": true
+  },
+  {
+   "label": "HELD-OUT B: PLB - pursuit under the 5 m centre-distance rule",
+   "value": [
+    0.0044,
+    -0.0163,
+    0.0248
+   ],
+   "equals_sealed": true
+  }
+ ]
+}

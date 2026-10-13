@@ -1,0 +1,68 @@
+{
+  "package": "20260922_w00_open_access_reads_r01",
+  "stage": "W0_REVISION",
+  "claim_class": "novelty_only",
+  "verdict": "THREE_CONCESSIONS_NO_REFUTATION_D05_RESOLVED",
+  "access_finding": "three of the four families recorded as 'blocked on access' on 21 September were not blocked. DACOOP-A is on arXiv, GSTAM is open access, ATT-D3RQN needed only the proxy already available.",
+  "d05": {
+    "resolved": true,
+    "outcome": "NEGATIVE",
+    "reason": "DACOOP-A's capture is d_E,i < d_c for ANY ONE pursuer, which is the predicate D06 rejects; its cooperation is encirclement, the formation mechanism the Research lead ruled out; its evader is faster than the pursuers, where D08 froze the opposite",
+    "recommendation": "retain DACOOP-A as the cited structural comparison for the learned-control family; the graph-and-time-native baseline is CCBS (D11)",
+    "reserved_to": "Research lead"
+  },
+  "concessions": {
+    "C12_setting": "urban multi-vehicle pursuit with learned spatiotemporal reasoning is prior art (E02, E03); the MOTIVATION for leaving free space is also published (E03)",
+    "C04": "learned, online, balanced target allocation is prior art (E02), framed explicitly as dynamic ST-MR-IA. Closer to C04 than the access-blocked Riedmiller record, which is therefore no longer the binding constraint on C04.",
+    "C05_H2": "sustained target assignment mattering in multi-vehicle pursuit is prior art AS A FINDING (E02, 'persistent spatial lock-in'), not merely as a mechanism"
+  },
+  "what_survives": {
+    "C04": "the FEASIBILITY FILTER over the combination. GSTAM allocates over evaders and applies no filter, because a grid cannot make an allocation physically infeasible.",
+    "H2": "whether an EXPLICIT commitment mechanism beats EMERGENT persistence. GSTAM's persistence is a by-product of expert specialisation plus a balance regulariser, reported as a diagnostic; there is no commitment memory, hysteresis or switch margin.",
+    "temporal": "no record in the corpus carries arrival times, windows or intervals. GSTAM's Temporal Mamba encodes PAST observations."
+  },
+  "consequence_for_experiment_design": "the J1-versus-J0 comparison must include a GSTAM-style EMERGENT-PERSISTENCE comparator, or it tests nothing.",
+  "matrix": {
+    "rows": 35,
+    "status_counts": {
+      "KNOWN": 16,
+      "POTENTIAL_DIFFERENCE": 12,
+      "PENDING": 7
+    }
+  },
+  "verdict_composite": {
+    "composite_claim_C12": "POTENTIAL_DIFFERENCE",
+    "changed_from_previous": false,
+    "note": "unchanged in label, materially smaller in content. Four components were conceded before this package and six are conceded after it."
+  },
+  "still_blocked": [
+    {
+      "record": "T-CARE (Shrivastava and Obradovic 2026)",
+      "publisher": "SAGE",
+      "blocks": [
+        "C02",
+        "C03"
+      ],
+      "status": "no SAGE subscription; absent from Scopus as OnlineFirst"
+    },
+    {
+      "record": "Riedmiller and Withopf 2005",
+      "publisher": "De Gruyter / Oldenbourg",
+      "blocks": [
+        "C03",
+        "C04"
+      ],
+      "status": "CLOSED, abstract elided by the publisher",
+      "note": "NO LONGER the binding constraint on C04: GSTAM, which is readable, concedes more"
+    }
+  ],
+  "resources": {
+    "sources_read_full_text": 2,
+    "sources_read_method_level": 1,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

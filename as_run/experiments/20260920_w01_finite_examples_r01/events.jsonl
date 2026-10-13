@@ -1,0 +1,12 @@
+{"ts": "2026-09-21T15:13:37.168030+00:00", "event": "run_started", "package": "20260920_w01_finite_examples_r01"}
+{"ts": "2026-09-21T15:13:37.168213+00:00", "event": "inputs_loaded", "config_sha256": "a22fb48a21c62518ba3293fb526a53f78d5721789efd544f3f60eae68e6500f2", "fixture_sha256": "4d83a52de3c311924ff25480c06dfec482733947bdef2ecb5fe66805f2138cda"}
+{"ts": "2026-09-21T15:13:37.168289+00:00", "event": "case_evaluated", "case_id": "F1", "lane": "L1"}
+{"ts": "2026-09-21T15:13:37.168498+00:00", "event": "case_evaluated", "case_id": "A1"}
+{"ts": "2026-09-21T15:13:37.168516+00:00", "event": "case_evaluated", "case_id": "A2"}
+{"ts": "2026-09-21T15:13:37.168528+00:00", "event": "case_evaluated", "case_id": "A3"}
+{"ts": "2026-09-21T15:13:37.168536+00:00", "event": "case_evaluated", "case_id": "A4"}
+{"ts": "2026-09-21T15:13:37.168543+00:00", "event": "case_evaluated", "case_id": "A5"}
+{"ts": "2026-09-21T15:13:37.168550+00:00", "event": "case_evaluated", "case_id": "A6"}
+{"ts": "2026-09-21T15:13:37.168555+00:00", "event": "case_evaluated", "case_id": "A7"}
+{"ts": "2026-09-21T15:13:37.168563+00:00", "event": "case_evaluated", "case_id": "A8"}
+{"ts": "2026-09-21T15:13:37.229217+00:00", "event": "test_suite_executed", "returncode": 0, "summary": "Ran 108 tests in 0.018s"}

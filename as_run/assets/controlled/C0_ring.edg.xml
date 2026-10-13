@@ -1,0 +1,26 @@
+<edges>
+  <edge id="cw0" from="r0" to="r1" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw0" from="r1" to="r0" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw1" from="r1" to="r2" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw1" from="r2" to="r1" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw2" from="r2" to="r3" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw2" from="r3" to="r2" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw3" from="r3" to="r4" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw3" from="r4" to="r3" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw4" from="r4" to="r5" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw4" from="r5" to="r4" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw5" from="r5" to="r6" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw5" from="r6" to="r5" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw6" from="r6" to="r7" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw6" from="r7" to="r6" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw7" from="r7" to="r8" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw7" from="r8" to="r7" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw8" from="r8" to="r9" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw8" from="r9" to="r8" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw9" from="r9" to="r10" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw9" from="r10" to="r9" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw10" from="r10" to="r11" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw10" from="r11" to="r10" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="cw11" from="r11" to="r0" numLanes="1" speed="13.89" priority="1"/>
+  <edge id="ccw11" from="r0" to="r11" numLanes="1" speed="13.89" priority="1"/>
+</edges>

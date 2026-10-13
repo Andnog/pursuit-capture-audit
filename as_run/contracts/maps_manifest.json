@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "manifest_id": "maps_manifest",
+  "stage": "W4",
+  "date": "2026-09-24",
+  "status": "POPULATED",
+  "status_note": "Populated 2026-09-24 with the 12 audited maps under D15. Fields the legacy archive does not record are marked UNRESOLVED with a reason rather than filled in. The provenance chain breaks at the OSM source, whose files no longer exist.",
+  "decision_ref": "D15",
+  "required_fields_per_map": [
+    "map_id",
+    "city",
+    "country",
+    "source",
+    "source_url",
+    "source_license",
+    "road_data_version",
+    "download_date",
+    "clipping_boundary",
+    "graph_construction_tool",
+    "graph_construction_version",
+    "traffic_demand_source",
+    "route_generation_rule",
+    "scenario_seeds",
+    "source_asset_sha256",
+    "generated_asset_sha256",
+    "split_assignment"
+  ],
+  "maps": [
+    {
+      "map_id": "washington_downtown",
+      "city": "Washington, D.C.",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/washington_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -77.041656,
+          38.893554,
+          -77.009092,
+          38.913382
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          38.9035,
+          -77.0254
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:37",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "e39bcefb3cebc79494f9ac024e397321756a87ac2bececcdb5e9f5b46702d009",
+      "split_assignment": "TRAINING"
+    },
+    {
+      "map_id": "toronto_downtown",
+      "city": "Toronto",
+      "country": "Canada",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/toronto_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -79.393415,
+          43.64633,
+          -79.364447,
+          43.66361
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          43.655,
+          -79.3789
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:39",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "44e1a3f563d4e9b5975794e76c285ad86531bba98eccc6163ced94a3bc8d3392",
+      "split_assignment": "TRAINING"
+    },
+    {
+      "map_id": "adelaide_cbd",
+      "city": "Adelaide",
+      "country": "Australia",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/adelaide_cbd.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          138.581347,
+          -34.933765,
+          138.613242,
+          -34.904626
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          -34.9192,
+          138.5973
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:46:05",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+      "split_assignment": "TRAINING"
+    },
+    {
+      "map_id": "seattle_downtown",
+      "city": "Seattle",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/seattle_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -122.339138,
+          47.605092,
+          -122.322113,
+          47.617138
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          47.6111,
+          -122.3306
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:39",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "abdeed9ee9e86c233c5f584175522c773170839eda08df124e833f6d98f331c4",
+      "split_assignment": "TRAINING"
+    },
+    {
+      "map_id": "berlin_mitte_large",
+      "city": "Berlin",
+      "country": "Germany",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/berlin_mitte_large.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          13.368603,
+          52.50832,
+          13.406545,
+          52.533138
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          52.5207,
+          13.3876
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-28 21:34:23",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "0b7fd8db32ded3abaa14ef8cfbbd39fad5748eb2b9828fe531db87f7703fb149",
+      "split_assignment": "EXCLUDED"
+    },
+    {
+      "map_id": "sapporo_grid",
+      "city": "Sapporo",
+      "country": "Japan",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/sapporo_grid.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          141.328147,
+          43.05219,
+          141.367276,
+          43.073091
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          43.0626,
+          141.3477
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:46:25",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "d1dea720cdec1d29911832294f9556fc52fb9a2cc4de13152a265dc464301bb1",
+      "split_assignment": "DEVELOPMENT"
+    },
+    {
+      "map_id": "phoenix_downtown",
+      "city": "Phoenix",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/phoenix_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -112.082587,
+          33.436824,
+          -112.047679,
+          33.461291
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          33.4491,
+          -112.0651
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:46:52",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "5cfb54779a330245816b61354378d1ccfecf10dc7ff6dc14e92b2c2f7be99f6d",
+      "split_assignment": "DEVELOPMENT"
+    },
+    {
+      "map_id": "portland_downtown",
+      "city": "Portland, Oregon",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/portland_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -122.68705,
+          45.511137,
+          -122.661816,
+          45.528657
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          45.5199,
+          -122.6744
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:38",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "cb4e9a878a91bf587c07fa3f3828782139cedea5ae72594d268e04750fe96050",
+      "split_assignment": "DEVELOPMENT"
+    },
+    {
+      "map_id": "chicago_loop",
+      "city": "Chicago",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/chicago_loop.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -87.645397,
+          41.875706,
+          -87.615704,
+          41.900546
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          41.8881,
+          -87.6306
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-28 21:34:30",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "c252a88f0f6bb2e622b6b77a66623aef80b77ff2fbbf8d87d8af5acd476c1b5b",
+      "split_assignment": "TEST"
+    },
+    {
+      "map_id": "melbourne_cbd",
+      "city": "Melbourne",
+      "country": "Australia",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/melbourne_cbd.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          144.95074,
+          -37.818812,
+          144.973563,
+          -37.800253
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          -37.8095,
+          144.9622
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:38",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "322c90a56594db43091bedbea41047386541de4cbfe26ad692f4783c05e55308",
+      "split_assignment": "TEST"
+    },
+    {
+      "map_id": "salt_lake_city",
+      "city": "Salt Lake City",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/salt_lake_city.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -111.89961,
+          40.754129,
+          -111.852365,
+          40.782398
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          40.7683,
+          -111.876
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:42:03",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "5f70f6b2b975f7beb6b7336a0ad573d01d4b583c7449d1ee95d6600e2a7d1feb",
+      "split_assignment": "TEST"
+    },
+    {
+      "map_id": "minneapolis_downtown",
+      "city": "Minneapolis",
+      "country": "United States",
+      "source": "OpenStreetMap",
+      "source_url": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded by the legacy archive"
+      },
+      "source_license": "ODbL; attribution required (from the legacy manifest)",
+      "road_data_version": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file /Users/andrei/Documents/PHD/Union/ago_happo_road_caging/assets/maps/osm_real/minneapolis_downtown.osm no longer exists; the extract's data version cannot be recovered"
+      },
+      "download_date": {
+        "value": "UNRESOLVED",
+        "reason": "not recorded; the source OSM file no longer exists"
+      },
+      "clipping_boundary": {
+        "origBoundary_lon_lat": [
+          -93.274184,
+          44.970946,
+          -93.246902,
+          44.989001
+        ],
+        "source": "the net file's <location origBoundary>",
+        "centre_lat_lon": [
+          44.98,
+          -93.2605
+        ]
+      },
+      "graph_construction_tool": "Eclipse SUMO netconvert",
+      "graph_construction_version": {
+        "netconvert": "1.21.0",
+        "generated_on": "2026-05-29 12:41:38",
+        "options_of_consequence": {
+          "tls.discard-loaded": true,
+          "tls.discard-simple": true,
+          "limitTurnSpeed_mps2": 5.5,
+          "reading": "real-world signals from OSM were DISCARDED; the signal programs in the network are netconvert-generated, not real timings. limitTurnSpeed sets internal-lane speeds from curvature, which is the construction-level cause of the slow internal lanes found in A-42."
+        }
+      },
+      "traffic_demand_source": "none: vehicles are inserted by this project over TraCI; no background demand",
+      "route_generation_rule": "not yet frozen for scenarios; diagnostic runs used SUMO's router between edges taken in identifier order",
+      "scenario_seeds": {
+        "value": "NOT_YET_ASSIGNED",
+        "reason": "no scenario has been defined; W4 will define them"
+      },
+      "source_asset_sha256": {
+        "value": "UNRESOLVED",
+        "reason": "the source OSM file no longer exists, so its hash cannot be computed"
+      },
+      "generated_asset_sha256": "d18c07e0f9294ee8ae5939b3512f6da226f220c84372e7d4603ae7f88f5e942e",
+      "split_assignment": "TEST"
+    }
+  ],
+  "inherited_exposure": {
+    "note": "These are NOT this project's assets. They are recorded because they constrain which cities may be used for a transfer claim.",
+    "historically_exposed_cities": [
+      "Condesa",
+      "Berlin",
+      "Boston",
+      "Roma"
+    ],
+    "consequence": "Any city used for a transfer claim must be separated at the city level from all four, with the extract overlap checked rather than assumed.",
+    "city_level_check": {
+      "method": "each map's city established from its origBoundary coordinates, not from its identifier",
+      "result": "only berlin_mitte_large lies in a historically exposed city (Berlin); it is EXCLUDED. None of the 11 assigned maps lies in Condesa, Berlin, Boston or Roma."
+    }
+  },
+  "sealed_historical_test_set": {
+    "identity": "RESOLVED",
+    "maps": [
+      "chicago_loop",
+      "melbourne_cbd",
+      "minneapolis_downtown",
+      "salt_lake_city"
+    ],
+    "resolved_on": "2026-09-21",
+    "source": "the legacy OSM manifest's declared test split",
+    "disjointness": "byte-disjoint from TRAINING and DEVELOPMENT by sha256; geographically distinct cities, verified by origBoundary coordinates"
+  }
+}

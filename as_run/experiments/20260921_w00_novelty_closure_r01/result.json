@@ -1,0 +1,39 @@
+{
+  "package": "20260921_w00_novelty_closure_r01",
+  "stage": "W0_REVISION",
+  "families": {
+    "examined": 6,
+    "resolved": 1,
+    "still_pending": 5
+  },
+  "decisions": {
+    "D11": "RESOLVED_CCBS",
+    "D05": "UNRESOLVED_SHORTLISTED"
+  },
+  "matrix": {
+    "rows": 27,
+    "status_counts": {
+      "KNOWN": 8,
+      "POTENTIAL_DIFFERENCE": 12,
+      "PENDING": 7
+    }
+  },
+  "verdict": {
+    "composite_claim_C12": "POTENTIAL_DIFFERENCE",
+    "changed_from_previous": false,
+    "rule_applied": "DOCUMENTED_TECHNICAL_DIFFERENCE requires ALL five families resolved and read at method level; four remain unresolved.",
+    "refutation_found": false,
+    "refutation_note": "No source in either search block implements the conjunction. This is NOT evidence of absence: a finite search never is, and four families remain unread.",
+    "claim_class": "novelty_only"
+  },
+  "resources": {
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0,
+    "queries_executed": 3,
+    "records_verified_at_method_level": 1,
+    "stage_budget_consumed": "none; recorded on its own line"
+  }
+}

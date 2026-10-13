@@ -1,0 +1,77 @@
+[
+  {
+    "arm": "A",
+    "sumo_precision_flag": "default (2)",
+    "decimals_written": {
+      "pos": [
+        2,
+        2,
+        2
+      ],
+      "speed": [
+        2,
+        2
+      ],
+      "angle": [
+        2
+      ],
+      "posLat": [
+        2
+      ],
+      "departPos": [
+        2
+      ]
+    },
+    "vehicle_line_excerpt": "<vehicle id=\"p2\" type=\"DEFAULT_VEHTYPE_p2\" depart=\"0.00\" departPos=\"25.00\" departSpeed=\"0.00\" route=\"r0\" distance=\"85.66 0\" speedFactor=\"1.0000\" state=\"26 0 1 25.00 0 4.31 11000 0 0\" pos=\"22.36 17.36 1.23\" speed=\"12.31 12.05\" angle=\"265.31\""
+  },
+  {
+    "arm": "B",
+    "sumo_precision_flag": "default (2)",
+    "decimals_written": {
+      "pos": [
+        2,
+        2,
+        2
+      ],
+      "speed": [
+        2,
+        2
+      ],
+      "angle": [
+        2
+      ],
+      "posLat": [
+        2
+      ],
+      "departPos": [
+        2
+      ]
+    },
+    "vehicle_line_excerpt": "<vehicle id=\"p2\" type=\"DEFAULT_VEHTYPE_p2\" depart=\"0.00\" departPos=\"25.00\" departSpeed=\"0.00\" route=\"r0\" distance=\"85.66 0\" speedFactor=\"1.0000\" state=\"26 0 1 25.00 0 3.66 11000 0 0\" pos=\"31.23 26.23 1.39\" speed=\"13.89 13.89\" angle=\"265.31\""
+  },
+  {
+    "arm": "C",
+    "sumo_precision_flag": 12,
+    "decimals_written": {
+      "pos": [
+        2,
+        2,
+        2
+      ],
+      "speed": [
+        2,
+        2
+      ],
+      "angle": [
+        2
+      ],
+      "posLat": [
+        2
+      ],
+      "departPos": [
+        12
+      ]
+    },
+    "vehicle_line_excerpt": "<vehicle id=\"p2\" type=\"DEFAULT_VEHTYPE_p2\" depart=\"0.000\" departPos=\"25.000000000000\" departSpeed=\"0.000000000000\" route=\"r0\" distance=\"85.66 0\" speedFactor=\"1.0000\" state=\"26 0 1 25.000000000000 0 3.662131029518 11000 0 0\" pos=\"31.23 26.23"
+  }
+]

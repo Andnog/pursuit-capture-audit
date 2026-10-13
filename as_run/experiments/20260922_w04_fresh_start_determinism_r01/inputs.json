@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_fresh_start_determinism_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "src/joint_interception/simulator/sumo_adapter.py": "c34c8e502442d6cd6e0c4143afa57c960b0743404d19324314cafcbd96811077",
+    "scripts/run_fresh_start_determinism.py": "56ee0ca35eb14be6cfac27ae9e6db52cb4f5226f8dddbab12424f711c3bb39b7",
+    "scripts/run_traci_first_execution.py": "bf96f6b28b5b9f5ca23e3b9fc668fb33a078fc5d90f83dfe6a999a0ff78ca24a"
+  },
+  "map": {
+    "map_id": "adelaide_cbd",
+    "declared_split": "train",
+    "path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/adelaide_cbd.net.xml",
+    "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+    "opened_read_only": true,
+    "copied_or_modified": false
+  },
+  "comparison_code_reuse": "digest, first_difference, pick_route and training_map are IMPORTED from scripts/run_traci_first_execution.py, not copied. The comparison is literally the same code that produced the negative result in A-37, so a positive result here cannot come from a quietly different comparison."
+}

@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_capture_instant_scan_r01",
+ "sealed_at": "2026-10-06T09:33:40.143542+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "689ae26e1105c60702f7ac7771a494d06c109595bb48350b4c37f4e62175046e",
+  "SCIENTIFIC_DECISION_EN.md": "16173e1b1ee9afc4bb629cc18cf7ac985152cc5a8c93da857965842d98c9ede5",
+  "inputs.json": "71af5e8912794a71058a683f0a97512e2c110a20d9094a2cc41203006c7a6f0e",
+  "results.jsonl": "952f914444ffa05e00c192435f9fd770415a3b1c51119bb8b340c60fa96ad643",
+  "run_chunk1.log": "367a453a3fac8a70cc06634611b563ae66086cc4b1c994e207e29e598abb86e5",
+  "summary.json": "0398bc52d03e88339e380d862901bbb8988b4c364e8964434e7f92e1234aebd7"
+ }
+}

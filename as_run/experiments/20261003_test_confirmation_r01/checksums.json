@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261003_test_confirmation_r01",
+ "sealed_at": "2026-10-03T07:47:44.259911+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "11e47d3434a698c7e6b0aada8f98cd32a32b4a31323d6f5c0a012c75d682b26a",
+  "SCIENTIFIC_DECISION_EN.md": "e72078fe1a52185cba132274880aada549e46fbf89eb8d58f7563d9499d18149",
+  "inputs.json": "66899dace600b323a0d84b95525cb6d25d7cf13da239d535fae6fe7a454a88ca",
+  "log.jsonl": "f9ba1f05c1c73ce448278b31fb5c9fc9ec1f15cb40753cb09ac65b20e29a5887",
+  "results.jsonl": "7801c3de42ac86d70c7665ce97e8f0b34d24a36e01fa74380da2a93dc9c9f602",
+  "run.log": "d8d5d584d3719284200d51fd23f4169c7fa2cc7a97f3dc979fd79e8c410135f2",
+  "summary.json": "966bc90494ea3e56a869cb428a0a6b9fdc625bca71d9cbc85f5b2af413e8e179"
+ }
+}

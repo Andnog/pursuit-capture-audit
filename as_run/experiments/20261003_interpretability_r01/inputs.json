@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261003_interpretability_r01",
+  "recorded_after_run": "2026-10-03T13:10:49.060712+00:00",
+  "note": "post hoc analysis (A-113); symbolic extraction rerun with named variables is recorded in KAN_SYMBOLIC.json",
+  "sources": {
+    "scripts/interpretability_capture_law.py": "1198ee71072860ccba3a760e08f9000a9453f955393e264d88210d3e7359833b",
+    "scripts/interpretability_policy_heads.py": "1c0da5a3bf02f4f3d444a967606bd3e270197bceb9c9d21369063dfbc3f84e14",
+    "scripts/kan_capture_law.py": "86f997ab3d488357c796531a9ba0880734a44772aef63f72b29100ffa2cf6ce6",
+    "scripts/kan_capture_law_test.py": "56d43a320fe787ac65cb32e31297ae28c9b91f707fdc0556e474bf35702f2120",
+    "src/joint_interception/rl/mappo_policy.py": "0ac456d4215c744aa9c22768cc0aed584ad44ae1bd0f80354c85d11329a53599",
+    "src/joint_interception/rl/option_policy.py": "b048f893ee478417a38b6c5ec40f2ad677ac31f91f124203af62ba0083edb3a5",
+    "src/joint_interception/native/mappo_ambush.py": "a7a65090acd9756790b0c129a5f677996e8e973acaad7220fa5b1396ec1e8f0c",
+    "experiments/20261002_mappo_r01/state.pkl": "b8e6ca29cb5d280c3e35d2295654a984a28201ce9bc8aa4f08a42bd6063746a8"
+  }
+}

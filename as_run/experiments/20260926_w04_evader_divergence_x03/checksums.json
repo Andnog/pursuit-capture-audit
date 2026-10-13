@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260926_w04_evader_divergence_x03",
+ "sealed_at": "2026-09-26T18:21:29.243648Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "0ec67d25e7cc57aa163471d33695f2f5c27c9193407f9cfc605c0699b03aed9c",
+  "SCIENTIFIC_DECISION_EN.md": "5112525f07ef11eaaa7189eb16b8d37b6e166e16f03aa0498ab4d32d5bc6b73f",
+  "results.jsonl": "5799bdc8fb5de02bf2355220aedd3e43f5cf4d8e569d3495c9690fe5f2381fc5",
+  "source_snapshot/scripts/analyse_evader_divergence.py": "dfe4989ae83b346e4ac014708ee9cc1d92c1d56161d9f24dcac3fc8916789226"
+ }
+}

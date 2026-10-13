@@ -1,0 +1,81 @@
+{
+  "package": "20260926_w04_o27_constructions_r03",
+  "stage": "W4",
+  "claim_class": "abstract_feasibility_under_the_declared_model",
+  "run": "r03, the final pre-registered W4 attempt (A-53); AVOIDANT only; reported with r01 and r02",
+  "gate": "W4_GATE_PASSED",
+  "gate_rule": "at least two CONSTRUCTED among the four AVOIDANT cases",
+  "constructed": {
+    "AVOIDANT": 2
+  },
+  "attempts": {
+    "r01": "W4_GATE_NOT_PASSED (0 of 4 AVOIDANT)",
+    "r02": "W4_GATE_NOT_PASSED (1 of 4 AVOIDANT)",
+    "r03": "W4_GATE_PASSED (2 of 4 AVOIDANT)"
+  },
+  "per_case": [
+    {
+      "level": "AVOIDANT",
+      "map_id": "adelaide_cbd",
+      "verdict": "CONSTRUCTED",
+      "expansions": 3056,
+      "cpu_seconds": 157.183,
+      "stopped_by": "construction found",
+      "tally": {
+        "CAPTURE_NOT_COORDINATED": 461,
+        "NECESSARY_BUT_B1_NULL": 57,
+        "CONSTRUCTED": 1
+      },
+      "refused_commands": 4,
+      "failed_verification_reasons": {}
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "seattle_downtown",
+      "verdict": "CONSTRUCTED",
+      "expansions": 3421,
+      "cpu_seconds": 223.517,
+      "stopped_by": "construction found",
+      "tally": {
+        "FACTUAL_FAILED_VERIFICATION": 198,
+        "CAPTURE_NOT_COORDINATED": 6,
+        "CONSTRUCTED": 1
+      },
+      "refused_commands": 0,
+      "failed_verification_reasons": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 198
+      }
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "toronto_downtown",
+      "verdict": "CAPTURE_NOT_COORDINATED",
+      "expansions": 5000,
+      "cpu_seconds": 337.979,
+      "stopped_by": "expansion cap",
+      "tally": {
+        "CAPTURE_NOT_COORDINATED": 12,
+        "NECESSARY_BUT_B1_NULL": 9
+      },
+      "refused_commands": 2,
+      "failed_verification_reasons": {}
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "washington_downtown",
+      "verdict": "NO_WITNESS_WITHIN_CAP",
+      "expansions": 3561,
+      "cpu_seconds": 302.179,
+      "stopped_by": "candidate queue exhausted",
+      "tally": {},
+      "refused_commands": 0,
+      "failed_verification_reasons": {}
+    }
+  ],
+  "cpu_seconds_total": 1020.9,
+  "budget_cpu_seconds": 1880,
+  "sumo_process_starts": 0,
+  "optimizer_updates": 0,
+  "checkpoint_loads": 0,
+  "test_split_accesses": 0
+}

@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_tuned_evader_r01",
+ "sealed_at": "2026-10-05T13:14:44.259154+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "LEVELS_CHECK_SAMPLE.json": "148c968f1f2455e6807d695e1339debeef0eac74ca6ade8cd55a595a32e2e814",
+  "LEVELS_CHECK_after.json": "9ac4913c91cd9e2c6c3e712fce66fde81fcaa836fd65fc8e1007ccfcd2973626",
+  "LEVELS_CHECK_before.json": "de9b22d0bbe65e724b7aecd3c9d50238876c445a00452edd9badc462cca2c7ae",
+  "PROTOCOL_EN.md": "6057740f06438b1acfc659b579e9e246c61e5ba77f861296ac2dc25bfa0b22fd",
+  "SCIENTIFIC_DECISION_EN.md": "60bdd1de5369362e5fbab19d2acdf8895fc2d8943dc728f05fea9e33f5a46014",
+  "inputs.json": "24cdd76cf7aeecaf49cd32f528d64fc0624666f38bfa605648db622558cb1562",
+  "results.jsonl": "b5648dac3b1f14d03137b740d557d03d6a23029871847c82454ba9c3762a3879",
+  "run.log": "7bde03ee7bf3762ca60b7588db56710c94982d2f0a5e1347e18cf063c10e5c3a",
+  "summary.json": "790a03d9c4df1708706d747e96814b648e8db08d28503cbcec8cd13151df6a97"
+ }
+}

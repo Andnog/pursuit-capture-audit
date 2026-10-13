@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "document_id": "PROJECT_STATE",
+  "updated": "2026-09-29",
+  "project_root": "/Volumes/SSD Mac/PHD/Union/doctoral_joint_interception",
+  "governing_specification": "docs/DOCTORAL_MASTER_PLAN_EN_v3.md",
+  "implementation_status": "B0_W0_W1_W2_W3_W4_COMPLETE_W5_STARTED",
+  "implementation_status_note": "B0, W0-W1, W2 and W3 are complete. W4 has begun: the TraCI call surface is IMPLEMENTED and EXERCISED against a live SUMO process. Three bounded interface arms were run on a TRAINING map; no episode was run to completion, no capture was attempted, no success was scored, and no optimizer run, checkpoint load or TEST access has occurred in this root.",
+  "stages": {
+    "B0": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "NOT_ASSESSED",
+      "verdict_note": "B0 is a provenance and governance task. It produces no scientific claim.",
+      "artifacts": [
+        "docs/RESEARCH_QUESTION_EN.md",
+        "governance/PROJECT_STATE.json",
+        "governance/SOURCE_PROVENANCE.json",
+        "governance/LEGACY_OBLIGATIONS_EN.md",
+        "governance/RESOURCE_LEDGER.jsonl",
+        "governance/AMENDMENTS_EN.md"
+      ],
+      "evidence_refs": [
+        "governance/SOURCE_PROVENANCE.json#documentary_seal_reverification",
+        "governance/LEGACY_OBLIGATIONS_EN.md",
+        "governance/RESOURCE_LEDGER.jsonl"
+      ],
+      "next_allowed_stage": "W0"
+    },
+    "W0": {
+      "execution_status": "COMPLETE_REVISED",
+      "scientific_verdict": "NOT_SUPPORTED",
+      "verdict_note": "Novelty NOT established; POTENTIAL_DIFFERENCE unchanged. B06 now read at FULL_TEXT (14 pages); the r03 entry was taken from a truncated 6-page render and OMITTED B06's k-agent adjacency capture predicate, which is corrected AGAINST this project in A-33. The C05 difference is re-grounded on when a cardinality certificate stops being sound, not on the absence of a joint condition. Backward citation chasing on B06's 22 references added two constraining ancestors: Jennings 1993 (commitments and conventions) NARROWS H2 a second time - commitment under a revision rule is 1993 prior art and switch_margin is a convention in that sense; Riedmiller and Withopf 2005 (multi-option framework, centralized meta-agent choosing a joint option) is the closest structural relative of C04 and is NOT OBTAINABLE - publisher CLOSED, abstract elided, no open copy. T-CARE also remains unread: no SAGE subscription. C03/C04 distinctness stays BLOCKED.",
+      "artifacts": [
+        "research/novelty/SEARCH_PROTOCOL_EN.md",
+        "research/novelty/search_log.jsonl",
+        "research/novelty/sources.bib",
+        "research/novelty/claim_evidence_matrix.csv",
+        "research/novelty/TECHNICAL_GAP_EN.md",
+        "docs/BASELINE_SPEC_EN.md",
+        "governance/AMENDMENTS_EN.md#A-02",
+        "experiments/20260921_w00_novelty_closure_r01/",
+        "experiments/20260921_w00_novelty_closure_r02/",
+        "experiments/20260921_w00_novelty_closure_r03/",
+        "experiments/20260921_w00_novelty_closure_r04/",
+        "governance/AMENDMENTS_EN.md#A-33"
+      ],
+      "evidence_refs": [
+        "research/novelty/TECHNICAL_GAP_EN.md",
+        "research/novelty/claim_evidence_matrix.csv",
+        "research/novelty/search_log.jsonl#search_closure",
+        "experiments/20260921_w00_novelty_closure_r01/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w00_novelty_closure_r02/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w00_novelty_closure_r03/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w00_novelty_closure_r04/SCIENTIFIC_DECISION_EN.md"
+      ],
+      "next_allowed_stage": "W1"
+    },
+    "W1": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "SUPPORTED",
+      "verdict_note": "Analytical correctness SUPPORTED: 14/14 frozen finite cases PASS against expectations derived by hand before implementation; 58 unit tests pass; four cross-check properties hold. This is the weakest of the eight claim classes and implies none of the other seven.",
+      "artifacts": [
+        "docs/METHOD_SPEC_EN.md",
+        "configs/finite_examples_v1.json",
+        "tests/fixtures/finite_cases_v1.json",
+        "src/joint_interception/",
+        "tests/",
+        "scripts/run_finite_examples.py",
+        "scripts/verify_artifacts.py",
+        "experiments/20260920_w01_finite_examples_r01/"
+      ],
+      "evidence_refs": [
+        "experiments/20260920_w01_finite_examples_r01/result.json",
+        "experiments/20260920_w01_finite_examples_r01/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260920_w01_finite_examples_r01/checksums.json"
+      ],
+      "next_allowed_stage": "W2"
+    },
+    "W2": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "SUPPORTED",
+      "verdict_note": "Engineering acceptance SUPPORTED: preflight consistent, 145/145 tests across 10 modules, W0-W1 regression 14/14 against unchanged frozen expectations, lint clean. Engineering acceptance permits only the next gated scientific test; it is not a scientific result. Capture parameters are PROPOSED, not frozen.",
+      "artifacts": [
+        "contracts/",
+        "configs/domain_v1.json",
+        "pyproject.toml",
+        "uv.lock",
+        "THIRD_PARTY_NOTICES.md",
+        ".gitignore",
+        "scripts/preflight.py",
+        "scripts/run_contract_checks.py",
+        "src/joint_interception/domain/",
+        "src/joint_interception/safety/",
+        "src/joint_interception/evaluation/capture_judge.py",
+        "experiments/20260921_w02_contracts_r01/",
+        "protocols/20260921_w02_contracts_r01.json"
+      ],
+      "evidence_refs": [
+        "experiments/20260921_w02_contracts_r01/result.json",
+        "experiments/20260921_w02_contracts_r01/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w02_contracts_r01/checksums.json"
+      ],
+      "next_allowed_stage": "W3"
+    },
+    "W3": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "SUPPORTED",
+      "verdict_note": "Engineering acceptance SUPPORTED: 9/9 frozen checks, 188 tests on both the pinned and a bare interpreter, lint clean. State restoration is exact and a verified prefix couples a replay; a shared seed alone does not. EXPLICITLY NOT VALIDATED: the TraCI call surface, because no SUMO process was started. COMPLETED 2026-09-21: simulator/evader.py delivered after D08 was frozen, closing deviation D-14. Difficulty ordering verified MONOTONE (dead-end rates 0.470 / 0.275 / 0.000); an inverted ordering was caught by measurement and fixed. The D06 dead-end rule is now checkable because every evader decision logs its admissible alternatives.",
+      "artifacts": [
+        "src/joint_interception/simulator/backend.py",
+        "src/joint_interception/simulator/snapshot.py",
+        "src/joint_interception/simulator/sumo_adapter.py",
+        "src/joint_interception/opportunities/generator.py",
+        "src/joint_interception/evidence/records.py",
+        "src/joint_interception/evidence/provenance.py",
+        "scripts/run_adapter_checks.py",
+        "tests/test_snapshot_replay.py",
+        "tests/test_adapter_contract.py",
+        "tests/test_generator.py",
+        "tests/test_source_hygiene.py",
+        "experiments/20260921_w03_adapter_r01/",
+        "protocols/20260921_w03_adapter_r01.json",
+        "src/joint_interception/simulator/evader.py",
+        "src/joint_interception/simulator/topology.py",
+        "tests/test_evader_levels.py",
+        "scripts/run_evader_checks.py",
+        "experiments/20260921_w03_evader_r01/"
+      ],
+      "evidence_refs": [
+        "experiments/20260921_w03_adapter_r01/result.json",
+        "experiments/20260921_w03_adapter_r01/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w03_adapter_r01/checksums.json",
+        "experiments/20260921_w03_evader_r01/SCIENTIFIC_DECISION_EN.md"
+      ],
+      "not_delivered": [
+        "TraciBackend implementation (W4)"
+      ],
+      "next_allowed_stage": "W4"
+    },
+    "W4": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "W4_GATE_PASSED",
+      "artifacts": [],
+      "evidence_refs": [
+        "governance/LEGACY_OBLIGATIONS_EN.md#4-o27-and-o28"
+      ],
+      "next_allowed_stage": "W4.5 empirical model validation (A-47)",
+      "blocked_by": [
+        "traci_call_surface_unexercised",
+        "interaction_half_of_the_constructive_problem: blocking windows from participants' committed plans",
+        "evader_not_yet_wired_to_a_real_network",
+        "D15_split_decision_pending"
+      ],
+      "note": "D06 and D08 are FROZEN and D04 is resolved, so W4's DECISION blockers are cleared. What remains is implementation: the evader levels, the TraCI surface, and the interaction half of the constructive problem. The single-vehicle half is already closed in the abstraction.",
+      "verdict_note": "Passed on r03, the third and final pre-registered attempt (A-54), at the threshold (2 of 4 AVOIDANT). r01 0/4 and r02 1/4 remain on record and are reported with it. Abstract feasibility under the declared offline, optimistic model only.",
+      "r02": {
+        "package": "experiments/20260925_w04_o27_constructions_r02",
+        "verdict": "W4_GATE_NOT_PASSED",
+        "constructed": {
+          "AVOIDANT": 1,
+          "OPTIMAL_ESCAPE": 1
+        },
+        "robustness": "NOT robust to the declared model: 130 factual captures (76 AVOIDANT) failed verification for emergency braking; a declared-model defect (hold after an internal lane not anticipated while on it) found after the run is a candidate cause, not established",
+        "cpu_seconds": 1884.8,
+        "cpu_seconds_allotted": 3764
+      },
+      "r03": {
+        "package": "experiments/20260926_w04_o27_constructions_r03",
+        "verdict": "W4_GATE_PASSED",
+        "constructed": {
+          "AVOIDANT": 2
+        },
+        "cpu_seconds": 1020.9
+      }
+    },
+    "W5": {
+      "execution_status": "BLOCKED",
+      "scientific_verdict": "NOT_ASSESSED",
+      "artifacts": [],
+      "evidence_refs": [
+        "governance/LEGACY_OBLIGATIONS_EN.md#2-o22",
+        "governance/LEGACY_OBLIGATIONS_EN.md#7-capability-and-learning-intervention-budgets"
+      ],
+      "next_allowed_stage": null,
+      "blocked_by": [
+        "W4_native_feasibility_gate",
+        "O22_safety_evidence",
+        "CAP_allowance_exhausted_D04"
+      ]
+    },
+    "W6": {
+      "execution_status": "BLOCKED",
+      "scientific_verdict": "NOT_ASSESSED",
+      "artifacts": [],
+      "evidence_refs": [],
+      "next_allowed_stage": null,
+      "blocked_by": [
+        "W5_native_feasibility_gate",
+        "LRN_allowance_exhausted_D04",
+        "D17_learner_configuration"
+      ]
+    },
+    "W7": {
+      "execution_status": "BLOCKED",
+      "scientific_verdict": "NOT_ASSESSED",
+      "artifacts": [],
+      "evidence_refs": [],
+      "next_allowed_stage": null,
+      "blocked_by": [
+        "W6_acquisition",
+        "D18_inference",
+        "D19_sample_size"
+      ]
+    },
+    "W8": {
+      "execution_status": "BLOCKED",
+      "scientific_verdict": "NOT_ASSESSED",
+      "artifacts": [],
+      "evidence_refs": [],
+      "next_allowed_stage": null,
+      "blocked_by": [
+        "W7_mechanism_study",
+        "TEST_closed"
+      ]
+    },
+    "W4_PREREQUISITE_ARRIVAL_MODEL": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "NOT_SUPPORTED",
+      "verdict_note": "DIRECTION_UNRESOLVED and UNDER REFUTED. The recorded errors are unsigned magnitudes so the approximation direction cannot be established from the historical record; independently, certified bounds are absent on all 5980 rows, refuting UNDER. Under Rule A, NO joint opportunity can ever be SUPPORTED from an arrival model of this kind. Only a constructive schedule yields UNDER.",
+      "artifacts": [
+        "src/joint_interception/opportunities/arrival.py",
+        "scripts/run_arrival_diagnostic.py",
+        "tests/test_arrival_model.py",
+        "experiments/20260921_w04_arrival_model_prereq_r01/",
+        "experiments/20260921_w04_arrival_model_prereq_r02/"
+      ],
+      "evidence_refs": [
+        "experiments/20260921_w04_arrival_model_prereq_r02/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w04_arrival_model_prereq_r02/result.json"
+      ],
+      "superseded_revision": "r01 sealed with verdict CRITERION_INVALID_NO_CONCLUSION_DRAWN",
+      "next_allowed_stage": "W4_blocked"
+    },
+    "W4_PREREQUISITE_CONSTRUCTIVE_WITNESSES": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "SUPPORTED",
+      "verdict_note": "UNDER arrival sets CAN be produced and the label EARNED, in the declared finite abstraction only. All six frozen criteria pass. Every reported time carries a SpeedProfile verified by integration: worst distance error 4.26e-14 m and worst time error 0.0 s over 400 samples, 0 legality violations. First SUPPORTED opportunity verdict in the project backed by generated rather than hand-written sets. NOT established: production on a real network, or interaction between participants' committed plans.",
+      "artifacts": [
+        "src/joint_interception/opportunities/schedule.py",
+        "src/joint_interception/opportunities/arrival.py#ScheduledArrivalModel",
+        "scripts/run_constructive_checks.py",
+        "tests/test_constructive_schedule.py",
+        "experiments/20260921_w04_constructive_arrival_r01/",
+        "protocols/20260921_w04_constructive_arrival_r01.json"
+      ],
+      "evidence_refs": [
+        "experiments/20260921_w04_constructive_arrival_r01/SCIENTIFIC_DECISION_EN.md",
+        "experiments/20260921_w04_constructive_arrival_r01/result.json"
+      ],
+      "next_allowed_stage": "W4_blocked"
+    },
+    "A47_model_validation": {
+      "execution_status": "COMPLETE",
+      "scientific_verdict": "NOT_COVERED",
+      "package": "experiments/20260926_w04_model_validation_r01",
+      "metrics": {
+        "m1": 0.9388,
+        "m2": 0.9613,
+        "m3": 0.7333,
+        "m4_p95_m": 0.9705
+      },
+      "failing": [
+        "m3"
+      ],
+      "claim_class": "empirical coverage on a finite diagnostic set"
+    },
+    "A59_native_replication": {
+      "N01": {
+        "verdict": "W5_PREREQUISITE_NOT_MET",
+        "native": [
+          "toronto_downtown"
+        ],
+        "package": "experiments/20260926_w04_native_replication_n01"
+      },
+      "N02_optimal_reported_only": {
+        "native": [
+          "seattle_downtown",
+          "washington_downtown"
+        ],
+        "package": "experiments/20260926_w04_native_replication_n02_optimal"
+      },
+      "X01": "reproduced captures robust to SUMO sigma 0.5 (42/60 under all three seeds)",
+      "X02": "keep-clear missing: 2/13 vs 42/47",
+      "N03_exploratory": "0 native; failures moved to closed loop",
+      "N05_attempt2_A62_evader": {
+        "verdict": "W5_PREREQUISITE_NOT_MET",
+        "native": [],
+        "package": "experiments/20260926_w04_native_replication_n05_interpolated"
+      }
+    },
+    "CAGING": {
+      "F1": "void then trivial (A-71)",
+      "F2": "not passed narrowly (A-72)",
+      "F3": "PASSED +0.225 [0.181,0.268] (A-74)"
+    }
+  },
+  "claim_status": {
+    "analytical_correctness": "SUPPORTED_FINITE_ABSTRACTION_ONLY_REVERIFIED_AFTER_REFORMAT",
+    "physical_feasibility": "NOT_ASSESSED",
+    "protocol_supported_assistance": "NOT_ASSESSED",
+    "learned_acquisition": "NOT_ASSESSED",
+    "benefit_of_joint_representation": "NOT_ASSESSED",
+    "benefit_of_commitment": "NOT_ASSESSED",
+    "transfer": "NOT_ASSESSED",
+    "novelty": "NOT_SUPPORTED_POTENTIAL_DIFFERENCE",
+    "doctoral_or_publication_readiness": "NOT_ASSESSED_EXTERNAL",
+    "engineering_acceptance": "SUPPORTED_W2_AND_W3",
+    "state_restoration": "REFUTED_AGAINST_SUMO_SUPPORTED_AGAINST_A_FIXTURE. SUMO 1.21.0 writes vehicle pos and speed at a fixed two decimals and --precision does not govern those fields, so loadState restores a state quantised to 1 cm and 1 cm/s and the continuation diverges BY CONSTRUCTION. See A-37.",
+    "arrival_model_direction": "UNDER REFUTED FOR PREDICTIVE MODELS (0/5598). UNDER ACHIEVABLE CONSTRUCTIVELY IN THE FINITE ABSTRACTION. UNDER REFUTED ON REAL NETWORKS for constructive schedules, replicated across 4 maps and 12 routes (A-41). The earliest time in any UNDER set has zero slack by construction and is unreachable in practice.",
+    "evader_difficulty_ordering": "VERIFIED_MONOTONE_IN_ABSTRACTION",
+    "assistance_audit_replay_coupling": "RECOVERED VIA RE-EXECUTION. saveState/loadState cannot carry it (A-37), but two fresh starts with the same seed are exactly identical and a shared prefix stays exactly coupled when the arms diverge later (A-38). Verified with 3 vehicles on one TRAINING map over 30 decisions, with no vehicle entering or leaving the network.",
+    "fresh_start_determinism": "SUPPORTED_UNDER_SUMO_DEFAULTS_IN_A_BOUNDED_CONFIGURATION",
+    "interaction_half_of_the_constructive_problem": "IMPLEMENTED_AND_CONTROLLED_IN_THE_FINITE_ABSTRACTION. The circularity is stated as an operator and searched constructively; witnesses are verified on three conditions. NO EXISTENCE THEOREM: Kakutani needs convex values and these sets are deliberately nonconvex, so a failed search reports NOT_FOUND_ON_THIS_GRID and never non-existence. See A-39.",
+    "constructive_transfer_to_the_network": "REFUTED, REPLICATED, AND ITS MAGNITUDE CORRECTED DOWNWARD. Under a speed limit that includes internal junction lanes, median error is 4.35 s not 39.6 s and 2 of 12 routes keep feasibility throughout. Still 0 of 12 arrive within the 0.1 s tolerance, so the refutation stands. See A-42.",
+    "approach_model_on_the_network": "SIGNAL-AWARE MODEL BUILT AND VALIDATED. Confirms traffic lights as the residual mechanism: predicts a 121 s signal wait to within 0.115 s. Worst deviation 117.0 s -> 5.6 s. DOES NOT YET EARN UNDER: optimistic on 8 of 12 routes. Blocked on a distance discrepancy of up to 42.3 m whose cause is not identified. See A-43.",
+    "capture_predicate_satisfiability": "SATISFIABLE IN SUMO (A-46): an evader brought to rest behind a pursuer satisfies the frozen physical predicate with safety checks on and no collision; a trailing pursuer cannot. Coordination not yet tested."
+  },
+  "hard_facts": {
+    "sumo_episodes_executed_in_this_root": 0,
+    "optimizer_updates_executed_in_this_root": 0,
+    "checkpoints_loaded_in_this_root": 0,
+    "test_split_accesses_in_this_root": 0,
+    "legacy_modules_imported": 0,
+    "legacy_weights_loaded": 0,
+    "background_or_unattended_campaigns_launched": 0,
+    "external_dependencies_installed_for_w0_w1": 0,
+    "frozen_finite_cases_passed": "14/14",
+    "unit_tests_passed": 350,
+    "evidence_packages_sealed": 34,
+    "cpu_minutes_consumed_w0_w1_executable": 0.003,
+    "cpu_minutes_cap_w0_w1": 30,
+    "test_modules": 21,
+    "external_dependencies_installed": [
+      "traci==1.21.0",
+      "sumolib==1.21.0",
+      "numpy==2.3.3",
+      "jsonschema==4.25.1",
+      "ruff==0.14.5"
+    ],
+    "external_dependencies_pinned_not_installed": [
+      "torch==2.14.0"
+    ],
+    "sumo_version_verified": "1.21.0",
+    "sumo_invocations": "--version only; 0 episodes",
+    "lint_clean": true,
+    "sumo_process_starts": 249,
+    "traci_backend_executed": true,
+    "novelty_matrix_rows": 35,
+    "documented_technical_differences": 0,
+    "components_conceded_as_prior_art": 8,
+    "maps_audited": 12,
+    "maps_usable": 12,
+    "evader_levels_implemented": 3,
+    "evader_difficulty_ordering_monotone": true,
+    "bibliographic_access": "Scopus via Universidad Panamericana proxy",
+    "unit_tests_runner": "uv run python -m unittest discover -s tests -t tests",
+    "unit_tests_interpreter": "3.14.6 (.venv), matches requires-python ==3.14.*",
+    "unit_tests_skipped_on_pinned_interpreter": 0,
+    "unit_tests_on_bare_interpreter": "264 passed, 168 skipped (3.14.6, dependencies absent)",
+    "test_counts_recorded_before_2026_09_21": "MEASURED ON PYTHON 3.10, not on the pinned 3.14.6. pytest was never a declared dependency, so uv run pytest fell through to PATH. Sealed packages were not edited. See A-34. No scientific verdict rests on a test count.",
+    "components_conceded_as_prior_art_note": "arrival-time coordination (B03); nonconvex interval reachability with bodies (B04); learned termination in multi-agent pursuit (B06); a joint capture condition in multi-agent pursuit (B06); commitment held under a revision rule (G01, Jennings 1993); learned online balanced target allocation (E02, GSTAM); sustained target assignment as an empirical finding (E02); the urban multi-vehicle pursuit SETTING and the lane-constraint MOTIVATION (E02, E03)",
+    "records_identified_but_unobtainable": 2,
+    "records_identified_but_unobtainable_note": "T-CARE (SAGE, no subscription) blocks C02/C03. Riedmiller and Withopf 2005 (De Gruyter, CLOSED, abstract elided) is recorded against C03/C04 but is NO LONGER the binding constraint on C04: GSTAM, which is readable, concedes more.",
+    "sumo_episodes_note": "three bounded interface arms, not episodes: no scenario was run to completion and no outcome was scored",
+    "simulated_seconds_executed": 168.6,
+    "maps_opened": [
+      "adelaide_cbd",
+      "seattle_downtown",
+      "toronto_downtown",
+      "washington_downtown"
+    ],
+    "cpu_minutes_consumed_all_packages": 0.0443,
+    "cpu_minutes_consumed_all_packages_note": "2.660 s measured across all 8 packages that record a CPU figure. The W0-W1 cap of 30 minutes was the brief's budget for the ORIGINAL assignment; work has since continued through W2, W3 and into W4 on the Research lead's direction. Compute has never been the binding constraint. Bibliographic access and unresolved decisions have been.",
+    "implementation_status_note_stage": "W5 started",
+    "maps_opened_note": "all TRAINING, read-only; no TEST map has been opened in this root"
+  },
+  "inherited_obligations": {
+    "register": "governance/LEGACY_OBLIGATIONS_EN.md",
+    "O22": "OPEN_UNCHANGED_BY_W2",
+    "O26": "COMPLETE_NEGATIVE_NO_GO_CURRENT_CONTROLLER",
+    "O27": "UNMET_0_OF_2_COMPLETE_WITNESSES",
+    "O28": "STOPPED_MODEL_INADEQUATE_FOR_COUNTERFACTUAL_INTERCEPTION",
+    "four_map_14_of_20": "DOES NOT CARRY OVER per D04 resolution; progression is governed by the W6 pilot rule.",
+    "integrated_capability_intervention": "Historical 1/1 consumed; DOES NOT BIND this implementation per D04.",
+    "registered_learning_interventions": "Historical >=2/2 consumed; DOES NOT BIND this implementation per D04.",
+    "final_city_test": "IDENTIFIED 2026-09-21: chicago_loop, melbourne_cbd, salt_lake_city, minneapolis_downtown. Remains CLOSED.",
+    "berlin_mitte_large": "EXPOSED: confirmed 2026-09-21 as the same extract as the historical Berlin TRAINING map. Recorded as validation in the legacy manifest but carries training exposure. The legacy 4/4/4 split cannot be adopted as-is."
+  },
+  "unresolved_decisions_blocking_next_stage": [
+    "Legal control interface: true emergencies (>7 m/s^2) in 39% of F3 runs (evader and pursuers).",
+    "MARL study design and budget (docs/MARL_DESIGN_EN.md) - Research lead approval before training.",
+    "torch installation (pinned learning group) is a learning-stage action to be recorded.",
+    "D07 dynamics still PROPOSED_NOT_FROZEN."
+  ],
+  "next_allowed_stage": "Control-interface legality fix, then MARL design approval",
+  "next_allowed_stage_note": "W4 passed on the r03 model (A-54); model validation NOT_COVERED (A-58); W5 locked.",
+  "prohibited_without_new_authorization": [
+    "SUMO episodes",
+    "optimizer runs or checkpoint loading",
+    "TEST split access",
+    "unattended campaigns, heartbeats or automatic retries",
+    "weakening the capture predicate or safety conditions",
+    "resetting any inherited counter",
+    "importing, symlinking or executing legacy runtime modules"
+  ],
+  "documentation_pointers": {
+    "handoff": "docs/HANDOFF_EN.md",
+    "amendments": "governance/AMENDMENTS_EN.md",
+    "frozen_decision_register": "governance/DECISIONS_EN.md",
+    "note": "DECISIONS_EN.md is sealed and is NOT edited; resolutions are recorded in AMENDMENTS_EN.md A-01.",
+    "third_party_notices": "THIRD_PARTY_NOTICES.md"
+  },
+  "new_requirements_recorded_prospectively": [
+    "Any future arrival-model validation must retain SIGNED prediction errors and the observed ground truth. The historical record stores only magnitudes, which alone made the direction question undecidable."
+  ],
+  "resolved_decisions": {
+    "D11": "RESOLVED 2026-09-21: CCBS, complete and optimal; adaptation and competence verification still required.",
+    "D16": "RESOLVED 2026-09-21 (W2): interpreter, SUMO and dependency pins.",
+    "D06": "RESOLVED 2026-09-21 by Research lead: CONTACT_TO_STOP at 1.0 m/s; moving containment REJECTED; coordination REQUIRED; dead-end captures admissible only if forced. FROZEN.",
+    "D08": "RESOLVED 2026-09-21 by Research lead: scripted difficulty levels 1 RANDOM / 2 AVOIDANT / 3 OPTIMAL_ESCAPE; deterministic and seeded; evader never faster than pursuers. FROZEN.",
+    "D04": "RESOLVED 2026-09-21 by Research lead: fresh start; historical intervention caps do NOT bind; the new plan's own limits apply. Historical evidence preserved, not reset. The four-map 14/20 rule does not carry over.",
+    "D05": "RESOLVED 2026-09-22, NEGATIVELY, pending Research lead confirmation: DACOOP-A cannot be the primary baseline. Its capture is single-pursuer proximity (the predicate D06 rejects), its cooperation is encirclement (formation, ruled out), and its evader is faster than the pursuers (D08 froze the opposite). Retained as the cited structural comparison; the graph-and-time-native baseline is CCBS (D11).",
+    "RESEARCH_LEAD_2026_09_24": "(1) SUPPORTED to be redefined over WINDOWS rather than exact times. (2) Investigate the deficit mechanism: DONE, see A-42. (3) D15: redo splits from the 12 audited maps, excluding berlin_mitte_large. (4) T-CARE: discard if genuinely unobtainable. (5) O22: split, safety-admission part now and native regression after (1). (6) Continue autonomously until something relevant or a stopper.",
+    "D15": "RESOLVED 2026-09-24: TRAINING adelaide/seattle/toronto/washington; DEVELOPMENT phoenix/portland/sapporo; TEST chicago/melbourne/minneapolis/salt_lake CLOSED; berlin_mitte_large excluded. See A-45.",
+    "D06_REMEDY": "RESOLVED 2026-09-24 by the Research lead (A-46): collision = physical overlap; min_gap pursuer 2.5 m, evader 1.0 m; D06 unchanged; verified in SUMO.",
+    "D12": "RESOLVED 2026-09-24 by the Research lead. HELPER: the non-finisher pursuer with the smallest body separation to the evader at the start of the factual capture witness; ties to the lexicographically smallest id; no eligible helper -> assistance UNRESOLVED. TIME: the decision boundary 5 decisions before the witness start; if fewer than 5 precede it, start at decision 0 and record the truncation. b1: each decision, route by shortest path toward the evader's current public position, same limits and interface; then return to the frozen policy. Uses only the factual trace, never a counterfactual outcome.",
+    "O27_EVADER_LEVEL": "RESOLVED 2026-09-24: AVOIDANT (level 2) primary; OPTIMAL_ESCAPE (level 3) attempted on a separate pre-declared budget share, reported separately.",
+    "W5_GATE_PATH": "RESOLVED 2026-09-24: cross the A-47 gate by empirical validation of the signal-aware approach model, with frozen criteria, after O27.",
+    "D12_REVISION_2026_09_25": "RESOLVED by the Research lead, before any r02 case. Helper selection and b1 UNCHANGED. INTERVENTION TIME revised: the helper's SETTLING time is the earliest decision from which, until the witness start, it stays within 1.0 m of its position at the witness start; b1 runs the 5 decisions ending at that settling time, then the helper returns to its policy. A helper moving until the capture has settling time = witness start, so the rule reduces exactly to the original D12. Trajectory-based, factual trace only, applies to every arm. Truncation at decision 0 recorded. Reason: A-50 - the original window cannot see positional coordination, and D12 governs the assistance audit through W5-W7."
+  },
+  "escalations_for_research_lead": [
+    "RESOLVED 2026-09-21: D06, D08, D04, the sealed historical TEST identity, the berlin_mitte_large overlap, bibliographic access, the T-CARE identifier, and the B06 method-level read.",
+    "NEEDED: SAGE access (journals.sagepub.com) for T-CARE. Scopus does not index it yet and SAGE returns 403.",
+    "NEEDED: close the popups INSIDE the Claude browser pane. Five are still open there and they pause all navigation, so full-text retrieval is limited to what the Scopus tab can show.",
+    "OPEN: D15 split decision. The legacy 4/4/4 split CANNOT be adopted as-is because berlin_mitte_large is exposed.",
+    {
+      "id": "ESC-R04-ACCESS",
+      "date": "2026-09-21",
+      "severity": "BLOCKING_FOR_A_CLAIM_CLASS_ONLY",
+      "title": "Two records block C02/C03/C04 distinctness and neither is reachable with the subscriptions held",
+      "records": [
+        {
+          "record": "T-CARE (Shrivastava and Obradovic 2026)",
+          "publisher": "SAGE",
+          "blocks": [
+            "C02",
+            "C03"
+          ],
+          "status": "absent from Scopus (OnlineFirst); HTTP 403 direct; UP holds no SAGE subscription"
+        },
+        {
+          "record": "Riedmiller and Withopf 2005, multi-option framework",
+          "publisher": "De Gruyter / Oldenbourg",
+          "blocks": [
+            "C03",
+            "C04"
+          ],
+          "status": "publisher record CLOSED; abstract ELIDED BY THE PUBLISHER; no open-access copy; no PDF on the author's own publication list"
+        }
+      ],
+      "why_it_matters": "Riedmiller and Withopf is the closest STRUCTURAL relative of C04 found anywhere in the corpus: a centralized meta-agent selecting a joint option over all agents. The one question C04 turns on - whether that joint option space is filtered by a feasibility predicate over the combination - cannot be answered from the citing work's description.",
+      "options_for_the_lead": [
+        "interlibrary loan or document delivery through the university library, for either record",
+        "email the authors for a copy",
+        "proceed with both recorded as unread, which leaves C02, C03 and C04 distinctness permanently unstateable and must then be declared as a limitation in the manuscript"
+      ],
+      "what_does_not_require_a_decision": "All work that does not depend on the novelty claim class continues unaffected."
+    }
+  ],
+  "next_priority_novelty_work": [
+    "Read T-CARE (Shrivastava and Obradovic 2026, DOI 10.1177/10692509261467212). Spatiotemporal RESERVATIONS are the nearest prior art to interval-valued arrival sets. BLOCKED: needs SAGE access, not among the supplied proxies.",
+    "Retrieve and read Riedmiller et al. multi-option framework (B06 reference [15]): centralized JOINT option selection, the closest structural relative of C04. Blocks C03 and C04 distinctness.",
+    "Read E02 GSTAM at method level (urban multi-vehicle pursuit, OPEN ACCESS).",
+    "Read E03 ATT-D3RQN via IEEE Xplore.",
+    "Forward citations of B03 and B04, plus the 5 AAMAS citations of B06.",
+    "DACOOP-A full method via IEEE Xplore for the D05 decision."
+  ],
+  "unresolved_decisions_blocking_next_stage_note": "Corrected 2026-09-21. The previous list was STALE: it named D06, D08 and D04 as blockers after the Research lead had frozen or resolved all three, and named evader levels as outstanding after they were implemented and verified monotone. It contradicted resolved_decisions and next_allowed_stage_note inside this same file. Previous contents preserved below.",
+  "unresolved_decisions_blocking_next_stage_superseded": [
+    "D08 evader policy: UNRESOLVED, hard blocker",
+    "D06 capture parameters: PROPOSED; Research lead must freeze before W4",
+    "interaction half of the constructive problem: blocking windows from participants' committed plans, on a real lane network",
+    "TraCI call surface: unexercised",
+    "D05 closest learned baseline: UNRESOLVED; needs institutional full-text access",
+    "novelty closure: 4 families open; citation chasing on B03/B04/B06 is the cheapest",
+    "D04 historical resource/intervention reconciliation: UNRESOLVED (blocks W5/W6)",
+    "D15 splits and maps: UNRESOLVED; sealed historical TEST set not located"
+  ],
+  "governing_research_question": "docs/RESEARCH_QUESTION_v2_EN.md (A-75)"
+}

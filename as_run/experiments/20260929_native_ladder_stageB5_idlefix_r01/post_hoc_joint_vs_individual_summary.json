@@ -1,0 +1,68 @@
+{
+  "C1_grid4x4": {
+    "n": 17,
+    "delta_joint": 0.091,
+    "ci95": [
+      -0.076,
+      0.271
+    ],
+    "positive": 6,
+    "zero": 6,
+    "negative": 5
+  },
+  "C2_grid6x6": {
+    "n": 10,
+    "delta_joint": 0.035,
+    "ci95": [
+      0.0,
+      0.08
+    ],
+    "positive": 3,
+    "zero": 7,
+    "negative": 0
+  },
+  "C3_grid9x9": {
+    "n": 1,
+    "delta_joint": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "positive": 0,
+    "zero": 1,
+    "negative": 0
+  },
+  "C4_grid10x4": {
+    "n": 8,
+    "delta_joint": -0.175,
+    "ci95": [
+      -0.412,
+      -0.025
+    ],
+    "positive": 0,
+    "zero": 4,
+    "negative": 4
+  },
+  "C5_spider": {
+    "n": 10,
+    "delta_joint": -0.1,
+    "ci95": [
+      -0.33,
+      0.07
+    ],
+    "positive": 1,
+    "zero": 4,
+    "negative": 5
+  },
+  "POOLED": {
+    "n": 46,
+    "delta_joint": -0.011,
+    "ci95": [
+      -0.107,
+      0.079
+    ],
+    "positive": 10,
+    "zero": 22,
+    "negative": 14
+  }
+}

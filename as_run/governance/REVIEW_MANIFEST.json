@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-20",
+  "scope": "Documentation-only final review, integrated English translation/revision, and fresh project entry point. No runtime implementation or experiment.",
+  "algorithm": "sha256",
+  "artifact_paths_relative_to": "/Volumes/SSD Mac/PHD/Union",
+  "files": {
+    "doctoral_joint_interception/README.md": "c9e3ba1c16571e2ed03f0ffc2793077827c7b220673dba91580a1ce579c204d2",
+    "doctoral_joint_interception/docs/DOCTORAL_MASTER_PLAN_EN_v3.md": "03751fd4fd2a87a520ef85eebd7c9f87cccdb10a4034e60293bc0248c4bffe88",
+    "doctoral_joint_interception/docs/FINAL_REVIEW_EN.md": "c6aae77ec56f08262865cb08ad8eafdc1d42ea497ad6d6b7f6e18a3bdd37407a",
+    "doctoral_joint_interception/governance/DECISIONS_EN.md": "92e7b17570367022950b5534cdec9e32792ec3dd9cc934908d0f9908be39bc04",
+    "urban_capture_cooperation_v3/START_HERE_EN.md": "c15b67c00f46b941c3d4183896703cab396143ae033a6c9636a14e8b6eb65691"
+  },
+  "original_documentary_seal_checks": [
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/START_HERE_ES.md",
+      "expected_sha256": "8853c334677597eb75fa2f51c3fce77a6a7acb4832e38cf7ba3514835098ee38",
+      "actual_sha256": "8853c334677597eb75fa2f51c3fce77a6a7acb4832e38cf7ba3514835098ee38",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/LITERATURE_MATRIX_EN.md",
+      "expected_sha256": "30967d17f0ae46f46dc17f11edae6ea6c7289201603635f7c6e526df6f6f0eab",
+      "actual_sha256": "30967d17f0ae46f46dc17f11edae6ea6c7289201603635f7c6e526df6f6f0eab",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/METHOD_SPEC_EN.md",
+      "expected_sha256": "32a82a55a4931bf1614778492ad4021d795f6a494b4426f2a4c07e38a3d5aa83",
+      "actual_sha256": "32a82a55a4931bf1614778492ad4021d795f6a494b4426f2a4c07e38a3d5aa83",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/NOVELTY_DECISION_EN.md",
+      "expected_sha256": "6a33d0c24665c16e4caec90a60271ed14f12f87351ebc50de82999536be81b61",
+      "actual_sha256": "6a33d0c24665c16e4caec90a60271ed14f12f87351ebc50de82999536be81b61",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/PLAN_DOCTORAL_REVISADO_ES.md",
+      "expected_sha256": "62d0116253c9588857c2e960173813991c090e74f3c453d7aac52c9028115775",
+      "actual_sha256": "62d0116253c9588857c2e960173813991c090e74f3c453d7aac52c9028115775",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/R0_PROTOCOL_EN.md",
+      "expected_sha256": "450fb9da38230a370a5033812756aa0a131c7ccaff746aa134705612dfe1d6be",
+      "actual_sha256": "450fb9da38230a370a5033812756aa0a131c7ccaff746aa134705612dfe1d6be",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/SEARCH_PROTOCOL_EN.md",
+      "expected_sha256": "1b41679b83f5fa5d4a965b5f54fc058e999f40777826727c4580e33a73cfc6b0",
+      "actual_sha256": "1b41679b83f5fa5d4a965b5f54fc058e999f40777826727c4580e33a73cfc6b0",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/provenance.json",
+      "expected_sha256": "7f3ec0da187a8d1d7bb259f2d4ebe326389d092f5154f8adb794056c151e51ee",
+      "actual_sha256": "7f3ec0da187a8d1d7bb259f2d4ebe326389d092f5154f8adb794056c151e51ee",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/search_log.json",
+      "expected_sha256": "7ab03b625028dd0410b31155e2a4c4b30d4920c739f32798c2cb8b84f37cee79",
+      "actual_sha256": "7ab03b625028dd0410b31155e2a4c4b30d4920c739f32798c2cb8b84f37cee79",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_novelty_audit_01/sources.json",
+      "expected_sha256": "6eff266e679216573a405a2e49ae23bb9b3965959290acf72b422df52b2d18cc",
+      "actual_sha256": "6eff266e679216573a405a2e49ae23bb9b3965959290acf72b422df52b2d18cc",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/FIRST_GATE_PROTOCOL_EN.md",
+      "expected_sha256": "8ba38f82c1bd82635db4de932c3f8f8a2ae4ba980767bede7a7078cdce7f7d67",
+      "actual_sha256": "8ba38f82c1bd82635db4de932c3f8f8a2ae4ba980767bede7a7078cdce7f7d67",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/PROPUESTA_DOCTORAL_FINAL_ES.md",
+      "expected_sha256": "f5562fbc602d2fb4c37dbc2f7c42cd72e55d20f867178f5934bbd669a73e2857",
+      "actual_sha256": "f5562fbc602d2fb4c37dbc2f7c42cd72e55d20f867178f5934bbd669a73e2857",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/SCIENTIFIC_DECISION_EN.md",
+      "expected_sha256": "a38affc9553fced91277fe636de51316a95e2c789b3508e4f3cbe624548f6a45",
+      "actual_sha256": "a38affc9553fced91277fe636de51316a95e2c789b3508e4f3cbe624548f6a45",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_doctoral_proposal_04/verification.json",
+      "expected_sha256": "5f14934c070d97cbf232c92ab5ca649063707cc2c8d3b7433dbea8e04f0298c8",
+      "actual_sha256": "5f14934c070d97cbf232c92ab5ca649063707cc2c8d3b7433dbea8e04f0298c8",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/ENMIENDA_DE_DIRECCION_ES.md",
+      "expected_sha256": "5177449f5b3471d99a4a636b958bc83eae6dd9c1b336106ca42bfb19d120e002",
+      "actual_sha256": "5177449f5b3471d99a4a636b958bc83eae6dd9c1b336106ca42bfb19d120e002",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/PRIMARY_SOURCE_DELTA_EN.md",
+      "expected_sha256": "fc05facfaf827324533ad5ba232a85ac92fc789e61e297691915366872e0dabe",
+      "actual_sha256": "fc05facfaf827324533ad5ba232a85ac92fc789e61e297691915366872e0dabe",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_research_pivot_05/verification.json",
+      "expected_sha256": "ecc7ef49b3026e59ebda864a9a2de6d96018cab00b999621c4ffb6c7c3d64082",
+      "actual_sha256": "ecc7ef49b3026e59ebda864a9a2de6d96018cab00b999621c4ffb6c7c3d64082",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/REVIEW_PROTOCOL_EN.md",
+      "expected_sha256": "f7dd2d53a1e19fc18d915c4c20538afe9e1c6bceaff43d60999337f5f77131b7",
+      "actual_sha256": "f7dd2d53a1e19fc18d915c4c20538afe9e1c6bceaff43d60999337f5f77131b7",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/START_HERE_ES.md",
+      "expected_sha256": "c5a6f4df78fce01e796e9ee81435f7d0dc124e985d93eb788ef9b0e4b0b98300",
+      "actual_sha256": "c5a6f4df78fce01e796e9ee81435f7d0dc124e985d93eb788ef9b0e4b0b98300",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/access_status.json",
+      "expected_sha256": "bbd161006373f4d03daafd5bfe7637578cb5f98a5b2c3124f12e9c6fb272bf2b",
+      "actual_sha256": "bbd161006373f4d03daafd5bfe7637578cb5f98a5b2c3124f12e9c6fb272bf2b",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_02/query_families.json",
+      "expected_sha256": "f9b496e3706344090024e147f7c3b97300d7fdef9f769a7809089af9c7462393",
+      "actual_sha256": "f9b496e3706344090024e147f7c3b97300d7fdef9f769a7809089af9c7462393",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/NEXT_WORK_EN.md",
+      "expected_sha256": "fa07802614c6646e8d3427d370d7b14f62736165dc3a60d45169ede50156d974",
+      "actual_sha256": "fa07802614c6646e8d3427d370d7b14f62736165dc3a60d45169ede50156d974",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/PRIMARY_FINDINGS_EN.md",
+      "expected_sha256": "fd53997c1728b223413f0d6d214582d2f14380afc4d1ed13e870c2368c9880e2",
+      "actual_sha256": "fd53997c1728b223413f0d6d214582d2f14380afc4d1ed13e870c2368c9880e2",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/REASSESSMENT_ES.md",
+      "expected_sha256": "67ea2b8b3e57722c9a3175fb7183e17c2873bed631838f0184b14fcea5b7888b",
+      "actual_sha256": "67ea2b8b3e57722c9a3175fb7183e17c2873bed631838f0184b14fcea5b7888b",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/URBAN_SCREEN_EN.md",
+      "expected_sha256": "fd82f158f3d9aa769ec53478f69af4b27bf95d8798545c001a1c73224607f427",
+      "actual_sha256": "fd82f158f3d9aa769ec53478f69af4b27bf95d8798545c001a1c73224607f427",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/search_results.json",
+      "expected_sha256": "7e5628d21c0603e08469a0c1b790262c21fddfba028901bf2d4a76a33cdaa08a",
+      "actual_sha256": "7e5628d21c0603e08469a0c1b790262c21fddfba028901bf2d4a76a33cdaa08a",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/supplementary_web_queries.json",
+      "expected_sha256": "9e0b0c51cd67652da26dec2e94f84736bc11364c47908d8d19d0a62b028a1a41",
+      "actual_sha256": "9e0b0c51cd67652da26dec2e94f84736bc11364c47908d8d19d0a62b028a1a41",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/checksums.json",
+      "file": "urban_capture_cooperation_v3/research/20260919_systematic_review_results_03/verification.json",
+      "expected_sha256": "31ada2aec2bd721ef4fd5741db3d7ca4c1e1a4fbbfd7983c4dcd90000507e70d",
+      "actual_sha256": "31ada2aec2bd721ef4fd5741db3d7ca4c1e1a4fbbfd7983c4dcd90000507e70d",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/PLAN_MAESTRO_DOCTORAL_IMPLEMENTACION_ES_v2_SHA256.json",
+      "file": "urban_capture_cooperation_v3/PLAN_MAESTRO_DOCTORAL_IMPLEMENTACION_ES_v2.md",
+      "expected_sha256": "a08c5c89a2e826f20bd4142e3e5d204df1b144d96334a22b48d406172a286d85",
+      "actual_sha256": "a08c5c89a2e826f20bd4142e3e5d204df1b144d96334a22b48d406172a286d85",
+      "matches": true
+    },
+    {
+      "manifest": "urban_capture_cooperation_v3/PREGUNTA_DOCTORAL_Y_CONTRIBUCION_SHA256.json",
+      "file": "urban_capture_cooperation_v3/PREGUNTA_DOCTORAL_Y_CONTRIBUCION_ES.md",
+      "expected_sha256": "da26204a57ed30940acf3e3f9dd8efc9daaa89152fc9208a86cde96d7c95f883",
+      "actual_sha256": "da26204a57ed30940acf3e3f9dd8efc9daaa89152fc9208a86cde96d7c95f883",
+      "matches": true
+    }
+  ],
+  "local_link_validation": {
+    "checked": 15,
+    "all_exist": true
+  },
+  "document_checks": {
+    "master_plan_numbered_sections": 19,
+    "original_sections_mapped": 16,
+    "markdown_fences_balanced": true,
+    "w5_episode_cap": 15,
+    "w6_episode_cap": 144,
+    "pilot_replay_slots": 40
+  },
+  "runtime_modified": false,
+  "native_episodes_executed": 0,
+  "training_executed": false,
+  "novelty_confirmed": false,
+  "doctoral_or_journal_acceptance_certified": false,
+  "legacy_runtime_preflight_completed": false,
+  "full_systematic_review_completed": false,
+  "note": "This manifest excludes itself. Original seal checks validate only the listed documentary files, not runtime behavior or scientific claims."
+}

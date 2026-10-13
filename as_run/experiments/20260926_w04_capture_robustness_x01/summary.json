@@ -1,0 +1,36 @@
+{
+  "captures": 60,
+  "regenerated_identically": 60,
+  "reproduced_sigma0": 44,
+  "by_margin": {
+    "<0 s": {
+      "n": 6,
+      "reproduced": 6
+    },
+    "0-2 s": {
+      "n": 7,
+      "reproduced": 5
+    },
+    "2-5 s": {
+      "n": 1,
+      "reproduced": 0
+    },
+    "5-15 s": {
+      "n": 3,
+      "reproduced": 1
+    },
+    ">=15 s": {
+      "n": 16,
+      "reproduced": 13
+    },
+    "unknown": {
+      "n": 27,
+      "reproduced": 19
+    }
+  },
+  "sigma05_replays": 180,
+  "sigma05_reproduced": 127,
+  "sigma05_all_seeds_reproduced": 42,
+  "cpu_seconds_python": 48.6,
+  "cpu_seconds_sumo": 30.8
+}

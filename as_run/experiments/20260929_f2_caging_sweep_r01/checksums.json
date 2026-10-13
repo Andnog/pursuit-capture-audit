@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_f2_caging_sweep_r01",
+ "sealed_at": "2026-09-29T18:46:22.651192Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "ea8305a8408e9c4de0e140bc2cebda4eed5840f9c92e0d125761e87f1d7d9e13",
+  "SCIENTIFIC_DECISION_EN.md": "3f256c523d9f93016e0d0af496566d0a5e2b81e2f3f5b44215360d98e137de8b",
+  "gifs/C3_grid9x9_team4_x1.2_s1_cut.gif": "197c140128fb2128b5eda1ecabdf7c4346101cc3b57ea28e303671568da6ab99",
+  "gifs/C3_grid9x9_team4_x1.2_s1_individual.gif": "96d3bce535cf7fee2d240bbb4da6741605e99ed09e1b783b4cd47dfe0e7b5d53",
+  "gifs/adelaide_cbd_team3_x1.2_s0_cut.gif": "a1a90caba5d1482465fa737691388dc3f9edfa56ad712a3edfa9dc00c32d2344",
+  "gifs/adelaide_cbd_team3_x1.2_s0_individual.gif": "dcfd849c8270690ed334d12b7bc3bab3c1bee2caa34ab8651873f5ed660ef615",
+  "inputs.json": "e6e9967d21870de9d662d66f0c91e3a4c0f9b242fa41f7cab703cff9c6255ee3",
+  "results.jsonl": "eb6c159f83d2f1ab14004664692e9bcc50cc334c58795ba812c9b07c49575cc0",
+  "run.log": "4d96aa0c180a3153feab0b691e6fb8b2d1684232f96917006787e7e3d3057979",
+  "summary.json": "4ae48a35332c7a26dde2d2b718236b945dee75db8f53d49d13f7929131119401"
+ }
+}

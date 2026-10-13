@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261004_mechanism_diagnostics_r01",
+  "recorded_after_run": "2026-10-05T05:34:37.076005+00:00",
+  "sources": {
+    "scripts/diag_mechanisms.py": "e0c86416c785f8b9ef7b0656f79c793076e585d7bff9a5ddeff369744db76dd8",
+    "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+    "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d"
+  }
+}

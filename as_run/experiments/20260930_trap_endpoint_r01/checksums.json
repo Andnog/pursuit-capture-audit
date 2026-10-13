@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260930_trap_endpoint_r01",
+ "sealed_at": "2026-10-01T00:37:27.589530Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "512b10ad44839857fe825747a46df0bae87612ffacd738575c637fe616b93188",
+  "SCIENTIFIC_DECISION_EN.md": "65f2bfb6cef3942c269530bfc61a8276538211571d930740c9e6ea5356f6f4cb",
+  "gifs/adelaide41_cut.gif": "dd91be87da1cf5213a8e88f2322b6c0af7d000860f3b28ab52caf3b1f7cf7626",
+  "gifs/adelaide41_individual_small.gif": "c89c6391a44b48168de13e0b3288eddce2a2a47e163f81e85afa620ecd991392",
+  "inputs.json": "fdb7188f30de69362c50b549c2d36b61a30d87f2ee44a49320118315e30a81b2",
+  "results.jsonl": "bddc4802e25795ad9360f5622a7c01e891510be474b321d316a0d1ad5c9e59a4",
+  "run.log": "c67e2bcbd1b51ede4d4c726226605f46831f7e41f993a03c07d73b24f062f01d",
+  "summary.json": "522184bba64f95f830632859b5d38863b30043de1182fc1e2fff90aadc31c796"
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "sumo_binary": "/Library/Frameworks/Python.framework/Versions/3.10/bin/sumo",
+  "sumo_binary_version": "SUMO 1.21.0",
+  "traci_version": "1.21.0",
+  "sumolib_version": "1.21.0",
+  "libsumo_available": false,
+  "interface": "TraCI socket",
+  "sumo_safety_checks": "LEFT ON; setSpeed is a request and overrides were counted",
+  "sumo_process_starts_valid_run": 6,
+  "sumo_process_starts_void_run": 6,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false
+}

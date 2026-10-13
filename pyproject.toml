@@ -1,0 +1,61 @@
+[project]
+name = "pursuit-audit"
+version = "1.0.0"
+description = "Audit of capture endpoints for multi-vehicle pursuit in microscopic traffic simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Andrei Noguera Gil" },
+    { name = "Felix Martinez-Rios" },
+    { name = "Edgar Avalos-Gauna" },
+]
+keywords = ["multi-vehicle pursuit", "evaluation", "traffic simulation", "SUMO"]
+# The library itself needs only the standard library. SUMO is needed to simulate, not to score.
+dependencies = []
+
+[project.optional-dependencies]
+sumo = ["traci==1.21.0", "sumolib==1.21.0"]
+
+[project.scripts]
+pursuit-audit = "pursuit_audit.cli:main"
+
+[dependency-groups]
+# `jsonschema` is a dependency of the frozen code, which the equivalence tests import as the reference.
+dev = ["ruff>=0.6", "pytest>=8", "jsonschema==4.25.1"]
+docs = ["mkdocs>=1.6,<2", "mkdocs-material>=9.5,<10"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pursuit_audit"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+# `as_run/` is the code that produced the published results. It is kept exactly as it ran and is
+# linted by its own configuration (as_run/pyproject.toml), never reformatted from here.
+extend-exclude = ["as_run"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "N", "D", "C4", "RET", "PL"]
+ignore = [
+    "D105",    # magic methods are documented by their protocol
+    "D107",    # __init__ is documented in the class docstring
+    "PLR2004", # thresholds of the capture rule are named where they are defined
+    "PLR0913", # scoring functions take the documented parameters of the rule
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "PLR", "N802"]
+# The tools start the frozen code or read its files, so they import late and run long recipes.
+"tools/*" = ["PLC0415", "PLR0912", "PLR0915"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["sumo: needs a SUMO 1.21 installation"]

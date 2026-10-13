@@ -1,0 +1,19 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_published_env_pepcrl_r01",
+ "amendment": "A-137",
+ "third_party": {
+  "url": "https://github.com/BUPT-ANTlab/PEPCRL-MVP",
+  "commit": "ac8ca695ed9defc8728ede131a4840f7949b4c31"
+ },
+ "sources": {
+  "scripts/audit_published_env_pepcrl.py": "1c2772c88041694da1b0c9653892e9b82ddb8daa990cc54fe764d4ecb83977b4",
+  "scripts/audit_published_env.py": "65b95f8ed67ce6edaf1d7dcf27d7baaad37009ced90db1b259c12eb45b193c2f",
+  "scripts/audit_published_env_r02.py": "fe31f99824478164b02beb75b387078f88c5e3c91a58e57331fcddde69e9aeac",
+  "scripts/analyse_published_env.py": "a14746172f35eaf5d814872a0690b2d41383fdf602adc9b16dd1f9807dd217ce"
+ },
+ "sumo": "1.21.0",
+ "seed0": 137000,
+ "seeds_per_scenario": 150,
+ "follow_s": 30
+}

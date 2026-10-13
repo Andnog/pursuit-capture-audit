@@ -1,0 +1,146 @@
+{
+  "label": "POST-HOC, descriptive; not pre-registered; scenario-level bootstrap (10,000), runs averaged per scenario",
+  "pooled_final_minus_bc": [
+    0.04,
+    0.0,
+    0.081
+  ],
+  "pooled_T_minus_U_final": [
+    -0.037,
+    -0.117,
+    0.037
+  ],
+  "pooled_final_minus_cut": [
+    0.015,
+    -0.042,
+    0.071
+  ],
+  "pooled_final_minus_individual": [
+    0.398,
+    0.306,
+    0.487
+  ],
+  "scenarios_caged_by_any_of_16_evaluations": 0.942,
+  "per_map_p_cage": {
+    "adelaide_cbd": {
+      "T_seed1_bc": 0.825,
+      "T_seed1_final": 0.8,
+      "T_seed1_initial": 0.35,
+      "T_seed2_bc": 0.75,
+      "T_seed2_final": 0.775,
+      "T_seed2_initial": 0.325,
+      "U_seed1_bc": 0.675,
+      "U_seed1_final": 0.65,
+      "U_seed1_initial": 0.3,
+      "U_seed2_bc": 0.7,
+      "U_seed2_final": 0.7,
+      "U_seed2_initial": 0.075,
+      "cut": 0.775,
+      "cut_label": 0.775,
+      "individual": 0.35,
+      "random": 0.35
+    },
+    "toronto_downtown": {
+      "T_seed1_bc": 0.7,
+      "T_seed1_final": 0.65,
+      "T_seed1_initial": 0.325,
+      "T_seed2_bc": 0.7,
+      "T_seed2_final": 0.725,
+      "T_seed2_initial": 0.275,
+      "U_seed1_bc": 0.675,
+      "U_seed1_final": 0.775,
+      "U_seed1_initial": 0.45,
+      "U_seed2_bc": 0.725,
+      "U_seed2_final": 0.75,
+      "U_seed2_initial": 0.15,
+      "cut": 0.675,
+      "cut_label": 0.675,
+      "individual": 0.35,
+      "random": 0.325
+    },
+    "washington_downtown": {
+      "T_seed1_bc": 0.575,
+      "T_seed1_final": 0.6,
+      "T_seed1_initial": 0.375,
+      "T_seed2_bc": 0.55,
+      "T_seed2_final": 0.625,
+      "T_seed2_initial": 0.25,
+      "U_seed1_bc": 0.6,
+      "U_seed1_final": 0.75,
+      "U_seed1_initial": 0.4,
+      "U_seed2_bc": 0.625,
+      "U_seed2_final": 0.775,
+      "U_seed2_initial": 0.3,
+      "cut": 0.65,
+      "cut_label": 0.65,
+      "individual": 0.25,
+      "random": 0.525
+    }
+  },
+  "safety": {
+    "T_seed1_bc": {
+      "runs_with_true_emergency": 0.1,
+      "collisions": 0
+    },
+    "T_seed1_final": {
+      "runs_with_true_emergency": 0.075,
+      "collisions": 0
+    },
+    "T_seed1_initial": {
+      "runs_with_true_emergency": 0.067,
+      "collisions": 0
+    },
+    "T_seed2_bc": {
+      "runs_with_true_emergency": 0.1,
+      "collisions": 0
+    },
+    "T_seed2_final": {
+      "runs_with_true_emergency": 0.075,
+      "collisions": 0
+    },
+    "T_seed2_initial": {
+      "runs_with_true_emergency": 0.2,
+      "collisions": 0
+    },
+    "U_seed1_bc": {
+      "runs_with_true_emergency": 0.108,
+      "collisions": 0
+    },
+    "U_seed1_final": {
+      "runs_with_true_emergency": 0.067,
+      "collisions": 0
+    },
+    "U_seed1_initial": {
+      "runs_with_true_emergency": 0.117,
+      "collisions": 0
+    },
+    "U_seed2_bc": {
+      "runs_with_true_emergency": 0.058,
+      "collisions": 0
+    },
+    "U_seed2_final": {
+      "runs_with_true_emergency": 0.05,
+      "collisions": 0
+    },
+    "U_seed2_initial": {
+      "runs_with_true_emergency": 0.1,
+      "collisions": 0
+    },
+    "cut": {
+      "runs_with_true_emergency": 0.108,
+      "collisions": 0
+    },
+    "cut_label": {
+      "runs_with_true_emergency": 0.108,
+      "collisions": 0
+    },
+    "individual": {
+      "runs_with_true_emergency": 0.092,
+      "collisions": 0
+    },
+    "random": {
+      "runs_with_true_emergency": 0.192,
+      "collisions": 0
+    }
+  }
+}

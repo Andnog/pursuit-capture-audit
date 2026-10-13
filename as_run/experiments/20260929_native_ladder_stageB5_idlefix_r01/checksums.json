@@ -1,0 +1,23 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_native_ladder_stageB5_idlefix_r01",
+ "sealed_at": "2026-09-29T17:22:22.910889Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "8413eec2bdfd20603411c633799242708a51c61b458eb9ab1ec84c82953fdc24",
+  "SCIENTIFIC_DECISION_EN.md": "94d463aab53bcca46e3673bd807acae5521522b658641fddd4e54b4c525365a4",
+  "analyse_joint_vs_individual.py": "23729efd755a4c0a727600c06761d6b2230b4c27ac90fb7054375fd709b1d9d5",
+  "gifs/C1_grid4x4_s6_seed5001_helper_removed.gif": "52655b5000deab500f6e6fbe326dedbb125462e294f9df20fbb9d98d77a261ff",
+  "gifs/C1_grid4x4_s6_seed5001_with_helper.gif": "aa7e3d8bba368a7a4b718c6f332c6a6f74ddb927ee762e572eb2206d7cca3e6a",
+  "gifs/C2_grid6x6_s19_seed5001_helper_removed.gif": "90167f1ad524bf022425281e424bfa40c6b4428cb482ff4a0413ff29db16c5c3",
+  "gifs/C2_grid6x6_s19_seed5001_with_helper.gif": "55d8251257bff0c4765a8532d9f49cf36a514b75580f68863e45b06fad3e0ff7",
+  "inputs.json": "7e6a7192e69dfe8dfdc75abeded192248fdf5cce998c2ac0619ad4a24603ca08",
+  "post_hoc_joint_vs_individual.jsonl": "809dcacaa7579f1df1d383929a897a19226c2bf839fc3f3f2f2db457a3de94aa",
+  "post_hoc_joint_vs_individual_summary.json": "caa45dcde6f3c3ddf9bbaddeb7badbba1cb391d766c897ed572dfedbe4143a77",
+  "results.jsonl": "0a23bf47a316614619dac0975bd78284d9232e841447a1ac66c33e3f817a83a0",
+  "run.log": "bb3cb44597ec0d48b65eb935480106e6c9ec3db403201323f88c47717d0ce918",
+  "summary.json": "b349dd8847457fe5d22230c0e1dc04a68ca167a94ba56f953bb978c71919c6c5"
+ }
+}

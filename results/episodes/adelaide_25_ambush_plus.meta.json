@@ -1,0 +1,13 @@
+{
+ "map": "adelaide_cbd",
+ "scenario": 25,
+ "sumo_seed": 9525,
+ "salt": "DEMO",
+ "method": "ambush_plus",
+ "evader": "AVOIDANT",
+ "team": 5,
+ "frames": 3001,
+ "end_s": 300.0,
+ "operational_capture_by_the_frozen_judge": true,
+ "collided": false
+}

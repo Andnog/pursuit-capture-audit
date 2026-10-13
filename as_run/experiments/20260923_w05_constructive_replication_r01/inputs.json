@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260923_w05_constructive_replication_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "src/joint_interception/opportunities/schedule.py": "d5694ae9a9737437ca2ad4d19215bb186a02b34e8dea105c53505502a6f221a7",
+    "src/joint_interception/simulator/sumo_adapter.py": "c34c8e502442d6cd6e0c4143afa57c960b0743404d19324314cafcbd96811077",
+    "scripts/run_constructive_replication.py": "bd7af54363df6e0960c653c8a3d268fd7e0e5738a984a579eaa3153bc9569185",
+    "scripts/run_constructive_on_network.py": "4929dc5510704516a94ca7cc9a76c759f07a6a508591aafee07e83390e6353ea"
+  },
+  "maps": [
+    {
+      "map_id": "washington_downtown",
+      "declared_split": "train",
+      "sha256": "e39bcefb3cebc79494f9ac024e397321756a87ac2bececcdb5e9f5b46702d009",
+      "opened_read_only": true,
+      "copied_or_modified": false
+    },
+    {
+      "map_id": "toronto_downtown",
+      "declared_split": "train",
+      "sha256": "44e1a3f563d4e9b5975794e76c285ad86531bba98eccc6163ced94a3bc8d3392",
+      "opened_read_only": true,
+      "copied_or_modified": false
+    },
+    {
+      "map_id": "adelaide_cbd",
+      "declared_split": "train",
+      "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+      "opened_read_only": true,
+      "copied_or_modified": false
+    },
+    {
+      "map_id": "seattle_downtown",
+      "declared_split": "train",
+      "sha256": "abdeed9ee9e86c233c5f584175522c773170839eda08df124e833f6d98f331c4",
+      "opened_read_only": true,
+      "copied_or_modified": false
+    }
+  ],
+  "code_reuse": "drive_to_station, drive_closed_loop, build, route_speed_limit and speeds_from_profile are imported from the A-40 runner, not copied"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261004_audit_addendum_r02",
+  "recorded_at_launch": "2026-10-04T23:57:54.994876+00:00",
+  "sources": {
+    "scripts/audit_addendum_r02.py": "1cb1db3b9e0454110d7f74330dcf02a404b9dd86444cf0d538a43dc295d84956",
+    "scripts/audit_addendum.py": "fae440ec8c3b31fdccb5c54676a36f5b36fabdfccf28435ef2bfdbf7963ecddc",
+    "scripts/audit_d06_persistence.py": "d0516a5334126ef20739c7e31efb30ad163c9fe05173966b0318593804c7b330",
+    "scripts/audit_cage_certificate.py": "23abd2ab10a3061e1312e6baa0111a3e055c32a1f49b273c07759fca6722389a",
+    "scripts/run_test_confirmation.py": "9259f5f93361978a932a371dff6fd29f19df543ec116e3bd36c1b0a127c52b57",
+    "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+    "src/joint_interception/rl/rollout.py": "63c5868854524ec6f09d7f1e160bd324b79c7103abc30a29a10fb2b63cda03fd",
+    "src/joint_interception/native/ambush_plus.py": "3bac31545ed988cde92ba4da7bd1c0fabfb4ff808db4832267d7710b6f9f9efe",
+    "src/joint_interception/native/ambush.py": "a9aca907bce554cf3ef6a115fb8064261d2d335661c8e4ec34daf29887fdd6fd",
+    "src/joint_interception/simulator/evader.py": "ba3baf1f34a9d477b77d95d24bb757456dde94909ea92a05614ff665070a03fc",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "tests/test_dispatch_bookkeeping.py": "21f4bebe87bd60c9cbe6ec0cb50d55c56d15e19fa0596021c9b10077c3befc26",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b"
+  },
+  "offline_sources": {
+    "scripts/addendum_r02_reanalysis.py": "7d97aa9e21cdf2bbfd8bbce23dc08f5b869b269215aad5ecb94b479e7c8fc5a1",
+    "scripts/interpretability_capture_law.py": "1198ee71072860ccba3a760e08f9000a9453f955393e264d88210d3e7359833b",
+    "scripts/kan_capture_law.py": "86f997ab3d488357c796531a9ba0880734a44772aef63f72b29100ffa2cf6ce6",
+    "scripts/kan_capture_law_test.py": "56d43a320fe787ac65cb32e31297ae28c9b91f707fdc0556e474bf35702f2120"
+  }
+}

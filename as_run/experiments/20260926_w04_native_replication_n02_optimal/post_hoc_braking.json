@@ -1,0 +1,102 @@
+[
+  {
+    "map_id": "seattle_downtown",
+    "arm": "factual",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "seattle_downtown",
+    "arm": "factual",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "seattle_downtown",
+    "arm": "b1",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "seattle_downtown",
+    "arm": "b1",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "seattle_downtown",
+    "arm": "helper_never_acts",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "seattle_downtown",
+    "arm": "helper_never_acts",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "factual",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "factual",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "b1",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "b1",
+    "loop": "closed",
+    "hard_braking_steps": 18,
+    "first": [
+      {
+        "t": 103.5,
+        "vid": "e1",
+        "decel": 9.0
+      },
+      {
+        "t": 103.6,
+        "vid": "e1",
+        "decel": 9.0
+      },
+      {
+        "t": 103.7,
+        "vid": "e1",
+        "decel": 9.0
+      }
+    ]
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "helper_never_acts",
+    "loop": "open",
+    "hard_braking_steps": 0,
+    "first": []
+  },
+  {
+    "map_id": "washington_downtown",
+    "arm": "helper_never_acts",
+    "loop": "closed",
+    "hard_braking_steps": 0,
+    "first": []
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_deficit_mechanism_r01",
+  "sealed_at": "2026-09-24T13:51:34.192927Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "5509333c985532944da9c298663b7e6ffb892ebc1a299b6d49e7c2e5d815453e",
+    "PROTOCOL_EN.md": "252375f994efe7371652f583db7bf6c843667b64d8e69a38801b0ef11bec10fc",
+    "SCIENTIFIC_DECISION_EN.md": "472498dd053d403f7a4592fd8330210dafe35808ae11c624f31cd7ecad8b338e",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "cb8149f87f8aa5f6d7dec32a5099a9a48aa78cbb3eaff2551d1f0d00443787bc",
+    "events.jsonl": "eb16e700db4eeb43609649aadb78f33af975c64df6f4c20476b6446990f622cc",
+    "inputs.json": "666f87ff06ab1e2a73f91824d74267502ebebd5ca612bd3ef3f035d49054e1b4",
+    "measurements.json": "2826348c4965348069df25dadbb22f213907e311362e266d0dc64d89019c895a",
+    "plan.json": "3ab1244692e839af5b1e749fe3ecaac19e893453a89d3184cf00cc60bd1207b9",
+    "result.json": "899bb8c573c3d09f28bf28fc0994af5eaa0457ba5821159317b7c3ed48de5b7c",
+    "results.jsonl": "3a1fc47adf5d3d3c4eab289ee49042799c6a77c116d1f2c6d07d17d64fdc2cad"
+  },
+  "verdict": "TWO_MECHANISMS_ONE_WAS_MY_OWN_MODELLING_ERROR",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

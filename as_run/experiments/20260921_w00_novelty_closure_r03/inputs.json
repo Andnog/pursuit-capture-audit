@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r03",
+  "novelty_artifacts": {
+    "research/novelty/claim_evidence_matrix.csv": "ecb472ab9c5a0aab67fe8626b3be758e2fc9ace1cae690afc8f7373921be2a93",
+    "research/novelty/search_log.jsonl": "33e145e43eda2d70fee9fe048c44d3bc8ac1aa13f6c0fb016b234609364fe7b7",
+    "research/novelty/sources.bib": "27c1ec6e29c38812bdeb3f543d4c928d00cc8bfa3226833ee2a7b47534e95156",
+    "research/novelty/TECHNICAL_GAP_EN.md": "488e1c4367871c4c0bd73d02c70797700569564a46447b5b8a75a0bcca475bf8"
+  },
+  "note": "Search inputs are Scopus records identified in search_log.jsonl; reading depths are recorded per record."
+}

@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_traffic_interaction_posthoc_r01",
+ "sealed_at": "2026-10-05T14:40:58.470702+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "note": "sealed once; the script's docstring was shortened for lint within the same minute and the seal regenerated; outputs identical",
+ "files": {
+  "POSTHOC.json": "59deab41e7317cbe703c79ec060d9559b5ed1c67ff58ad1dd493a3aa76b6efb0",
+  "SCIENTIFIC_DECISION_EN.md": "db7c07dc0e4f442d2c364e5e6b600195d98a60fcd0838a113d9bf8fbd563d646",
+  "../../scripts/posthoc_traffic_interaction.py": "7ba01767556fbde376a9ef24cbd587a948e66e5ce961887fee36c04f3ecac217"
+ }
+}

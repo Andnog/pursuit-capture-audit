@@ -1,0 +1,110 @@
+[
+  {
+    "map": "adelaide_cbd",
+    "route": 0,
+    "model_s": 76.22,
+    "sumo_sigma_default_s": 83.6,
+    "sumo_sigma_zero_s": 81.8,
+    "model_minus_sigma_zero_s": -5.58,
+    "distance_gap_m": -41.95
+  },
+  {
+    "map": "adelaide_cbd",
+    "route": 1,
+    "model_s": 81.79,
+    "sumo_sigma_default_s": 89.2,
+    "sumo_sigma_zero_s": 87.4,
+    "model_minus_sigma_zero_s": -5.606,
+    "distance_gap_m": -41.95
+  },
+  {
+    "map": "adelaide_cbd",
+    "route": 2,
+    "model_s": 196.23,
+    "sumo_sigma_default_s": 201.8,
+    "sumo_sigma_zero_s": 198.8,
+    "model_minus_sigma_zero_s": -2.566,
+    "distance_gap_m": 0.0
+  },
+  {
+    "map": "seattle_downtown",
+    "route": 0,
+    "model_s": 95.52,
+    "sumo_sigma_default_s": 97.3,
+    "sumo_sigma_zero_s": 96.8,
+    "model_minus_sigma_zero_s": -1.284,
+    "distance_gap_m": -17.31
+  },
+  {
+    "map": "seattle_downtown",
+    "route": 1,
+    "model_s": 99.19,
+    "sumo_sigma_default_s": 100.9,
+    "sumo_sigma_zero_s": 100.4,
+    "model_minus_sigma_zero_s": -1.209,
+    "distance_gap_m": -17.31
+  },
+  {
+    "map": "seattle_downtown",
+    "route": 2,
+    "model_s": 99.19,
+    "sumo_sigma_default_s": 100.9,
+    "sumo_sigma_zero_s": 100.4,
+    "model_minus_sigma_zero_s": -1.209,
+    "distance_gap_m": -17.31
+  },
+  {
+    "map": "toronto_downtown",
+    "route": 0,
+    "model_s": 69.32,
+    "sumo_sigma_default_s": 70.0,
+    "sumo_sigma_zero_s": 69.5,
+    "model_minus_sigma_zero_s": -0.182,
+    "distance_gap_m": 0.0
+  },
+  {
+    "map": "toronto_downtown",
+    "route": 1,
+    "model_s": 80.88,
+    "sumo_sigma_default_s": 83.9,
+    "sumo_sigma_zero_s": 83.2,
+    "model_minus_sigma_zero_s": -2.32,
+    "distance_gap_m": -12.99
+  },
+  {
+    "map": "toronto_downtown",
+    "route": 2,
+    "model_s": 119.61,
+    "sumo_sigma_default_s": 120.1,
+    "sumo_sigma_zero_s": 119.4,
+    "model_minus_sigma_zero_s": 0.214,
+    "distance_gap_m": -3.35
+  },
+  {
+    "map": "washington_downtown",
+    "route": 0,
+    "model_s": 190.79,
+    "sumo_sigma_default_s": 190.9,
+    "sumo_sigma_zero_s": 188.9,
+    "model_minus_sigma_zero_s": 1.89,
+    "distance_gap_m": -42.31
+  },
+  {
+    "map": "washington_downtown",
+    "route": 1,
+    "model_s": 104.31,
+    "sumo_sigma_default_s": 104.3,
+    "sumo_sigma_zero_s": 102.7,
+    "model_minus_sigma_zero_s": 1.615,
+    "distance_gap_m": 0.0
+  },
+  {
+    "map": "washington_downtown",
+    "route": 2,
+    "model_s": 177.32,
+    "sumo_sigma_default_s": 178.2,
+    "sumo_sigma_zero_s": 177.1,
+    "model_minus_sigma_zero_s": 0.222,
+    "distance_gap_m": -29.7
+  }
+]

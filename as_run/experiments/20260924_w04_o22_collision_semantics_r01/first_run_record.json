@@ -1,0 +1,114 @@
+{
+  "status": "VOID_PROBE_FAILED",
+  "reason": "every measured gap was -25.0 m against intended gaps of 0.30 to 3.0 m: the vehicles were not where the probe placed them, so no row tested anything. Caught by the protocol rule that the measured gap be read back. Both vehicles departed at position 0, so the second was plausibly never inserted and moveTo did not apply.",
+  "rows": [
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 3.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": false,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 2.6,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": false,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 2.4,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 2.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 1.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "A_defaults",
+      "intended_gap_m": 0.3,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 3.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": false,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 2.6,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": false,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 2.4,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": false,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 2.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 1.0,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    },
+    {
+      "arm": "B_mingap_factor_0",
+      "intended_gap_m": 0.3,
+      "measured_gap_m": -25.0,
+      "inside_capture_band": true,
+      "below_min_gap": true,
+      "sumo_reported_collision": false,
+      "collision_types": []
+    }
+  ]
+}

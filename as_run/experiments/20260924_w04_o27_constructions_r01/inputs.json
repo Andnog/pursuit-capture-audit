@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_o27_constructions_r01",
+  "recorded_at_launch": "2026-09-25T20:05:11.164525Z",
+  "sources": {
+    "configs/domain_v1.json": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "scripts/run_o27_constructions.py": "92ef6ade38c18b2160831830bc9d7d9898c42a5cb0419e919d24b328b6b812b1",
+    "src/joint_interception/world/network.py": "b6606353424a3f573cfe053b8a4f25ef2ca7f4577632885052a120772d8b84ef",
+    "src/joint_interception/world/simulation.py": "898dbbcf73554bbcfe0c30230c12ea1c595749d0124f656815d5fd909061a4d6",
+    "src/joint_interception/world/construction.py": "7954a1731e7a4352829a42669343004ee9f6c0c4256ae4c30feefe6b17e5a98d",
+    "src/joint_interception/simulator/evader.py": "dc42e9b1042dd1d5ee734c8dddf2d5fa5828055c5455bbb0a9de4365ddc9b7b5",
+    "src/joint_interception/simulator/topology.py": "73e2d88afd5d28bb7d1243d765afa3f50e1c2a7afd6ea471ea513582706418c0",
+    "src/joint_interception/evaluation/capture_judge.py": "87a12f971336f03ba115e4eb2f0c44803d2e2e0b1ee0faad826517ef91815c03",
+    "src/joint_interception/domain/contracts.py": "f1d203db1191a3dfbf1613a8fad8f4a70867b13de83db2bd1ebaac8673046f2f",
+    "src/joint_interception/domain/geometry.py": "5fa41ea0651c274cb16192ab87313de8a4778e521cd9655fa33580fbb49e0a07",
+    "src/joint_interception/opportunities/approach.py": "50fd6dd626c4f37c5870112e48ef055d2d3a3cfdcea9248dad69aa50a2402b29"
+  },
+  "rule": "these files are not modified while the search runs; the hashes identify the code that executed"
+}

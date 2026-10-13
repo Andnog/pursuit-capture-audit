@@ -1,0 +1,38 @@
+{
+  "package": "20260921_w04_interpreter_provenance_r01",
+  "stage": "W4",
+  "claim_class": "software_correctness",
+  "verdict": "PROVENANCE_DEFECT_CORRECTED_AND_GUARDED",
+  "defect": {
+    "what": "pytest is not a declared dependency; uv run pytest fell through to a Python 3.10 pytest on PATH while the project pins ==3.14.*",
+    "why_invisible": "environment.json records platform.python_version() from a SIBLING process launched with uv run python, which is genuinely 3.14.6",
+    "consequence": "every test result recorded before 2026-09-21 was measured on Python 3.10",
+    "why_it_mattered": "Python 3.12 replaced the single STRING token for an f-string with an FSTRING_START/MIDDLE/END group; the glued-concatenation guard walked STRING tokens and was therefore INERT for f-strings on the pinned interpreter while reporting as passing"
+  },
+  "how_it_surfaced": "a new assertion passed under one runner and failed under the other; the disagreement was the finding",
+  "corrections": [
+    "FSTRING_* token groups rejoined into one literal, with depth counting for nesting",
+    "static_edges replaces ast.literal_eval, which raises on an f-string",
+    "the detector now has a test that it detects, with four cases",
+    "tests/test_interpreter_pin.py asserts the running interpreter satisfies requires-python",
+    "README states the canonical runner"
+  ],
+  "first_honest_full_suite": {
+    "runner": "uv run python -m unittest discover -s tests -t tests",
+    "interpreter": "3.14.6 (.venv)",
+    "tests": 264,
+    "passed": 264,
+    "skipped": 0
+  },
+  "sealed_packages_not_edited": true,
+  "correction_of_record": "any test count in a package sealed before 2026-09-21 was measured on Python 3.10, whatever the python_version field beside it says",
+  "scientific_effect": "NONE. No scientific verdict in this project rests on a test count. No verdict is withdrawn.",
+  "rule_adopted": "a recorded interpreter version must be measured by the process that ran the work, not by a sibling process; a runner that is not a declared dependency is not a pinned runner",
+  "resources": {
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "package": "20260921_w03_evader_r01",
+  "stage": "W3_COMPLETION",
+  "checks": {
+    "planned": 6,
+    "executed": 6,
+    "passed": 6,
+    "tests_run": 34
+  },
+  "levels": {
+    "trials_per_level": 200,
+    "topology": "A->B, B branches to open C or dead D",
+    "RANDOM": {
+      "level": 1,
+      "entered_dead_end": 94,
+      "dead_end_rate": 0.47
+    },
+    "AVOIDANT": {
+      "level": 2,
+      "entered_dead_end": 55,
+      "dead_end_rate": 0.275
+    },
+    "OPTIMAL_ESCAPE": {
+      "level": 3,
+      "entered_dead_end": 0,
+      "dead_end_rate": 0.0
+    },
+    "difficulty_ordering_holds": true
+  },
+  "regression": {
+    "full_suite_ok": true,
+    "bare_interpreter_ok": true,
+    "lint_clean": true
+  },
+  "gate": {
+    "name": "W3_scripted_evader",
+    "rule": "SUPPORTED only if all six checks pass, both interpreters pass, and lint is clean",
+    "verdict": "SUPPORTED",
+    "claim_class": "engineering_acceptance_only",
+    "explicitly_not_established": [
+      "that any of this runs against a real network; no SUMO process was started",
+      "physical feasibility, assistance, learning, benefit or transfer"
+    ]
+  },
+  "resources": {
+    "cpu_seconds": 0.664,
+    "wall_seconds": 0.722,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

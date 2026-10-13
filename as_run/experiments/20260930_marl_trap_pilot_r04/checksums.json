@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260930_marl_trap_pilot_r04",
+ "sealed_at": "2026-10-01T09:30:01.005119Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "cce79efbd16a04422df7eed23811e9c4455e4d58e7e72760c8315a45c3171937",
+  "SCIENTIFIC_DECISION_EN.md": "34d578c89b4c866dfce168f4cf3a2dd3520fee5914478fd63226a837290b7aba",
+  "checkpoints/T_seed1_bc.pt": "a33cbe7bc4ec80385bff4411f2382f03af6cef8ff8157b521155b320a8c66435",
+  "checkpoints/T_seed1_best.pt": "5fdb0e72bbabe60b00ea065fd23c8c4175c7005ffe27e91cef74afd49fdf4da9",
+  "checkpoints/T_seed1_last.pt": "406507d698aaaf8a9eacba0998a9fa48592190a0cf6500160e845951b9de25ea",
+  "checkpoints/T_seed2_bc.pt": "d836fc5721ffed4f8a0dd3752adea63d247b34ebf283cc9fa52d27472ff38103",
+  "checkpoints/T_seed2_best.pt": "a870841bdb4e025e5b9b772cfbae43c9eef5da281020a21b46ddc4dab5b5090c",
+  "checkpoints/T_seed2_last.pt": "6d831da0bd945b7395319f0d6f088d1e3d8a0a55aff349a1fe2064ac2222db0b",
+  "checkpoints/U_seed1_bc.pt": "8eb64debff4512303b05a711dda0e16ecdc42146bc316bc6b85ae8e382600901",
+  "checkpoints/U_seed1_best.pt": "abbe97310337891f9599d965e3330f4e7b9940e1b1f154a7a3605f8fdd83803a",
+  "checkpoints/U_seed1_last.pt": "4f91ba0926da17165f9464900b6792f80c46426798bce8a1ee41f97f7214c4d8",
+  "checkpoints/U_seed2_bc.pt": "60fe0826d5f223c11461f08a8496c69398721669194db3bdbdde7eaadee6c2f6",
+  "checkpoints/U_seed2_best.pt": "25a45bc6b6c29ed275e227cf9dd40fccdc46858b80f349ed006ff20547dbce19",
+  "checkpoints/U_seed2_last.pt": "73b384efc794f55b5a2fa4059796417c618132b5a62cef61b140229c80ed3dd6",
+  "eval.jsonl": "86f1c8b1b66f5d423d435f07474bae6d70928aa2399db49a0ba7cc3ae1bd690d",
+  "gifs/adelaide26_T_seed1_best_small.gif": "a5ceab80cc7d615cd598186e25553d25a28302ae4e3118abce500b9e408339bf",
+  "inputs.json": "04746e2487e3e15950b366fe95dd80943b23580cecc04183c305cc1340096210",
+  "run.log": "a5d27adf223d95bb55f8cf17a811ed78d83c512ddce47690e9e3c2ff2d55f273",
+  "summary.json": "e2328efafe4cf60a5f1db0e1d14caf275d2c2d381a5fc084a4c2899586949649",
+  "train_log.jsonl": "d85e5b18c2f6eb70a8382121800786fbf5eaaa6130785e49799fbdad5b578ffc"
+ }
+}

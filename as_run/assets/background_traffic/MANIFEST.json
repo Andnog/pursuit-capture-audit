@@ -1,0 +1,58 @@
+{
+  "adelaide_cbd": {
+    "route_file": "assets/background_traffic/adelaide_cbd.rou.xml",
+    "sha256": "8536f495aa557d272f37d0fb032104696b0b618ce17551f5a59459653f4ed062",
+    "vehicles": 296,
+    "seed": 246025030,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "toronto_downtown": {
+    "route_file": "assets/background_traffic/toronto_downtown.rou.xml",
+    "sha256": "a037c5db782bdff316d4c39f2bfbbf9c467059c79d7580223f0eef68573e1a43",
+    "vehicles": 300,
+    "seed": 3285958227,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "washington_downtown": {
+    "route_file": "assets/background_traffic/washington_downtown.rou.xml",
+    "sha256": "7fab4f619c7b4072a84c62aec5780f29fcb0934cd11a95369e26d9894ea70867",
+    "vehicles": 298,
+    "seed": 2997294208,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "seattle_downtown": {
+    "route_file": "assets/background_traffic/seattle_downtown.rou.xml",
+    "sha256": "123c77e56c963e85d4ba1bdc8a50a558e678a41269d94ae67b72daa9ffebf803",
+    "vehicles": 297,
+    "seed": 251224716,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "phoenix_downtown": {
+    "route_file": "assets/background_traffic/phoenix_downtown.rou.xml",
+    "sha256": "98e306ab17e08218bbc6b654eae7d0492e4a96d72902d1cdd4dab77b9f8d1887",
+    "vehicles": 296,
+    "seed": 4166332820,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "portland_downtown": {
+    "route_file": "assets/background_traffic/portland_downtown.rou.xml",
+    "sha256": "c7b60728e43b38cc8117250dbc7600439ebb74ad85dc2ab3d8f588f1b68b081f",
+    "vehicles": 291,
+    "seed": 2659709068,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  },
+  "sapporo_grid": {
+    "route_file": "assets/background_traffic/sapporo_grid.rou.xml",
+    "sha256": "2414727ba17bea9bdfea30970a245cba032998368811f1897a66040c89a05d36",
+    "vehicles": 287,
+    "seed": 2518006312,
+    "period_s": 1.0,
+    "min_distance_m": 300.0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261003_d06_persistence_audit_r01",
+  "recorded_after_run": "2026-10-03T05:24:52.277536Z",
+  "note": "audit script hash at launch d0516a53...b330 equals the recorded hash; no source was edited during the run",
+  "sources": {
+    "scripts/audit_d06_persistence.py": "d0516a5334126ef20739c7e31efb30ad163c9fe05173966b0318593804c7b330",
+    "scripts/audit_cage_certificate.py": "94494099399fa808541e762869eb99c499f738e849a47442b170d71efb456939",
+    "scripts/run_ambush_optimization.py": "7f877fe749480a637fba0322a57703f08b0eb8048d78d470fa1b2177f198f5ef",
+    "scripts/run_robustness_study.py": "ad55939afadf3fa3d6741126078af245f83b80b7e71f15230c6dbb07aca7c9fc",
+    "src/joint_interception/rl/rollout.py": "63c5868854524ec6f09d7f1e160bd324b79c7103abc30a29a10fb2b63cda03fd",
+    "src/joint_interception/native/engine.py": "42e79fb237cd3f0cb6b50f0dfb7a23b4f8bb50453442c05acdb9065302f84f26",
+    "src/joint_interception/native/ambush.py": "a9aca907bce554cf3ef6a115fb8064261d2d335661c8e4ec34daf29887fdd6fd",
+    "src/joint_interception/native/ambush_plus.py": "3bac31545ed988cde92ba4da7bd1c0fabfb4ff808db4832267d7710b6f9f9efe",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "experiments/20261002_ambush_optimization_r01/results.jsonl": "33df2eb4d89678f49f3de5b3abc26014f7425418a576bd2666c40920f3d5f271",
+    "experiments/20261002_ambush_optimization_r01/summary.json": "34df9be1765038a4fe9331919caa684944d906cc8f0a3d1df74ccba3412e78ad"
+  }
+}

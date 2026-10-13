@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261004_audit_addendum_r03",
+ "sealed_at": "2026-10-05T04:51:30.574754+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "ADDENDUM_R03_SUMMARY.json": "8bbf1c03b9eb237a67e4c7599012afe3465f34416d5bec4208141bf10ad6cfea",
+  "DEVIATIONS_EN.md": "cf377bbcf6fc480233c6e39247c12f3a8ddd1e92ea674b23fa9619c1317a6012",
+  "PROTOCOL_EN.md": "09cd70347ae7483f87a613c68c28c809635c87565e34439a55aa6b8e8d191aa5",
+  "SCIENTIFIC_DECISION_EN.md": "32fef9f4b2627ad46615a62fa575a7756ffb0406769b9f0c8439e6a41467c423",
+  "inputs.json": "663d73a9d1b5e8a524412244d5e06401f617cf19ee604e91c9596830c1d689f4",
+  "progress.log": "6996ed742833e0c4eea76e09eb59d4f863e5c9bbc963be72ad6b337e485af299",
+  "results.jsonl": "501096425cacbe65da403bc3841c85dc0df3713e8b2daa7aa86ec1ee8a2e7e30",
+  "run.log": "f03ea18e3be2cce57542ce2e3e7605eaba8da3e0cc11c38c2219b9934c7ac13a"
+ }
+}

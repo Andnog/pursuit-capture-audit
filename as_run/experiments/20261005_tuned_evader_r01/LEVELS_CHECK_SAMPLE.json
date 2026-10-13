@@ -1,0 +1,1182 @@
+[
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|adelaide_cbd|8|109508|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|seattle_downtown|14|109514|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|sapporo_grid|18|109518|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|sapporo_grid|11|9511|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|phoenix_downtown|7|109507|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|adelaide_cbd|19|109519|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|adelaide_cbd|2|109502|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|seattle_downtown|8|109508|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|sapporo_grid|3|9503|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|adelaide_cbd|16|9516|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|seattle_downtown|12|109512|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|toronto_downtown|17|9517|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|toronto_downtown|12|9512|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|toronto_downtown|10|109510|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|toronto_downtown|2|9502|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|6|9506|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|phoenix_downtown|13|109513|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|toronto_downtown|3|109503|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|toronto_downtown|15|9515|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|portland_downtown|2|9502|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|toronto_downtown|4|109504|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|portland_downtown|15|109515|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|5|9505|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|portland_downtown|0|109500|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": false,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|phoenix_downtown|4|109504|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|washington_downtown|13|109513|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|sapporo_grid|3|109503|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|3|109503|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|14|9514|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|adelaide_cbd|18|109518|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|phoenix_downtown|1|9501|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|sapporo_grid|13|109513|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|washington_downtown|12|109512|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|sapporo_grid|8|9508|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|toronto_downtown|6|109506|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|3|9503|OPTIMAL_ESCAPE|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|washington_downtown|5|109505|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|pursuit|toronto_downtown|17|9517|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|toronto_downtown|12|109512|OPTIMAL_ESCAPE|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "OX",
+  "key": "OX|plus_opt|portland_downtown|12|109512|OPTIMAL_ESCAPE|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|sapporo_grid|7|109507|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|seattle_downtown|14|109514|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|portland_downtown|10|109510|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|sapporo_grid|17|109517|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|phoenix_downtown|8|9508|3",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|washington_downtown|0|9500|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|seattle_downtown|18|9518|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|portland_downtown|11|9511|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|portland_downtown|14|109514|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|adelaide_cbd|13|109513|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|phoenix_downtown|12|109512|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|portland_downtown|9|9509|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|phoenix_downtown|12|109512|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|washington_downtown|9|9509|5",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|phoenix_downtown|11|9511|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|phoenix_downtown|9|109509|7",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|toronto_downtown|1|9501|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|washington_downtown|12|109512|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|phoenix_downtown|2|109502|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|adelaide_cbd|8|109508|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|phoenix_downtown|2|109502|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|washington_downtown|8|9508|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|adelaide_cbd|14|9514|7",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|toronto_downtown|12|9512|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|portland_downtown|7|109507|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|phoenix_downtown|6|109506|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|toronto_downtown|14|9514|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|adelaide_cbd|5|109505|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|sapporo_grid|17|109517|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|sapporo_grid|14|109514|5",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|washington_downtown|11|109511|3",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|adelaide_cbd|15|9515|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|adelaide_cbd|8|109508|5",
+  "recorded": {
+   "d06": true
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|washington_downtown|18|9518|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|phoenix_downtown|13|9513|7",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|seattle_downtown|10|109510|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|washington_downtown|15|109515|5",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|pursuit|toronto_downtown|3|109503|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|plus_opt|washington_downtown|15|109515|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "GD",
+  "key": "GD|ambush_a95|adelaide_cbd|13|109513|3",
+  "recorded": {
+   "d06": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|9|109509|AVOIDANT|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|18|9518|AVOIDANT|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|toronto_downtown|0|9500|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|18|109518|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|5|9505|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|11|9511|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": false,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|8|109508|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|7|109507|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": false,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|15|109515|RANDOM|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|1|109501|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|3|9503|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|2|109502|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|13|109513|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|1|9501|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|14|109514|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|11|9511|RANDOM|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|11|9511|RANDOM|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|18|9518|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|2|109502|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|8|109508|RANDOM|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|0|9500|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|3|9503|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|14|109514|RANDOM|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|toronto_downtown|1|109501|AVOIDANT|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|toronto_downtown|1|9501|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|9|9509|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|13|109513|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|0|109500|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|3|9503|RANDOM|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|16|109516|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|16|9516|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|toronto_downtown|1|109501|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|12|9512|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|16|9516|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|0|109500|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|0|9500|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|11|109511|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": false,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|13|9513|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": false
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|8|9508|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|11|109511|RANDOM|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|15|9515|RANDOM|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|1|9501|RANDOM|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|10|9510|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|9|9509|RANDOM|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|15|109515|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|1|109501|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|8|9508|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|toronto_downtown|0|109500|AVOIDANT|5",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|0|109500|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|0|9500|RANDOM|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|8|9508|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|8|9508|RANDOM|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|6|109506|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|5|109505|AVOIDANT|5",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|0|109500|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|6|9506|AVOIDANT|3",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|18|109518|AVOIDANT|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|15|109515|RANDOM|3",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|plus_opt|adelaide_cbd|7|109507|AVOIDANT|7",
+  "recorded": {
+   "d06": true,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ },
+ {
+  "block": "K0",
+  "key": "K|K0|pursuit|adelaide_cbd|10|9510|RANDOM|7",
+  "recorded": {
+   "d06": false,
+   "prox_5m": true,
+   "prox_5m_centre": true
+  }
+ }
+]

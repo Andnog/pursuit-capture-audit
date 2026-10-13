@@ -1,0 +1,4 @@
+{"ts": "2026-09-23T03:06:39.044780Z", "event": "run_started", "package": "20260922_w04_fresh_start_determinism_r01"}
+{"ts": "2026-09-23T03:06:39.044780Z", "event": "arm_completed", "arm": "default1", "imperfection": null, "diverge_at": null, "frames": 30}
+{"ts": "2026-09-23T03:06:39.044780Z", "event": "arm_completed", "arm": "default2", "imperfection": null, "diverge_at": null, "frames": 30}
+{"ts": "2026-09-23T03:06:39.044780Z", "event": "arm_completed", "arm": "defaultB", "imperfection": null, "diverge_at": 15, "frames": 30}

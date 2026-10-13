@@ -1,0 +1,14 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261006_heldout_sets_posthoc_r01",
+ "sealed_at": "2026-10-06T09:31:33.890890+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "cbcbd31ea037368e22090b9fccd1632e39ea90924fc4696562c9bb434a23aa01",
+  "SCIENTIFIC_DECISION_EN.md": "ca09a87fd8c7c04129d730a0fd267e03d19ebf9b9b111806d732c2a3bbd4a50d",
+  "inputs.json": "73c0cb3000d950f8b14971c214c5b0c7164c6643fb84fb1c9b884f74f3e36dfb",
+  "summary.json": "3072a4699be309d42eb8f5220e5215857b9a74416f786555c40d66a0e7e96890"
+ }
+}

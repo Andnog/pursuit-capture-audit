@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w05_constructive_on_network_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "src/joint_interception/opportunities/schedule.py": "d5694ae9a9737437ca2ad4d19215bb186a02b34e8dea105c53505502a6f221a7",
+    "src/joint_interception/opportunities/interaction.py": "dcf1d008b6e673c1fc25172f1b12f4ed65d6d29f4f355a7b7006762e30e1c79a",
+    "src/joint_interception/simulator/sumo_adapter.py": "c34c8e502442d6cd6e0c4143afa57c960b0743404d19324314cafcbd96811077",
+    "scripts/run_constructive_on_network.py": "a3b9ca9cf83000de3cf39fc73868a57217344f46ad4a20de2ca37d4ca6c9fdf9"
+  },
+  "map": {
+    "map_id": "adelaide_cbd",
+    "declared_split": "train",
+    "path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/adelaide_cbd.net.xml",
+    "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+    "opened_read_only": true,
+    "copied_or_modified": false
+  }
+}

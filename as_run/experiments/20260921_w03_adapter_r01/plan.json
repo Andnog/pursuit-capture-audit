@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w03_adapter_r01",
+  "created": "2026-09-21",
+  "stage": "W3",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "protocol_frozen_before_implementation": true,
+  "acceptance_rule_frozen_before_outcomes": true,
+  "planned_checks": [
+    "R1_state_restoration_exact",
+    "R2_shared_seed_insufficient_after_divergence",
+    "R3_information_boundary_every_decision",
+    "R4_masks_and_fallback",
+    "R5_deadline_enforced",
+    "R6_proposed_vs_executed_logged_separately",
+    "R7_generator_pruning_accounted",
+    "R8_episode_result_rows_validate",
+    "R9_no_legacy_import_lint_clean_earlier_tests_pass"
+  ],
+  "acceptance_rule": {
+    "gate": "SUPPORTED only if all nine planned checks pass",
+    "claim_class": "engineering_acceptance_only"
+  },
+  "resource_limits": {
+    "sumo_episodes_permitted": 0,
+    "sumo_process_starts_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  },
+  "explicitly_not_validated": [
+    "the TraCI call surface: no SUMO process was started in W3",
+    "arrival sets computed from a real road network",
+    "anything physical, learned or comparative"
+  ],
+  "commands": {
+    "run": "uv run python scripts/run_adapter_checks.py --package experiments/20260921_w03_adapter_r01",
+    "tests": "uv run python -m unittest discover -s tests -t tests",
+    "lint": "uv run ruff check src tests scripts",
+    "verify": "python3 scripts/verify_artifacts.py"
+  }
+}

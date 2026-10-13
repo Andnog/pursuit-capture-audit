@@ -1,0 +1,20 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261001_ambush_learning_r01",
+ "sealed_at": "2026-10-02T04:13:27.740175Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "e6c99ddeba58d4b1e8a7f5253b8aff09bb3790844f5cd24978295a79e82e574b",
+  "KAN_ANALYSIS.json": "3b156ee218ab263ea035c754f3410712208b1178e5e6baec52306cca0770488f",
+  "PROTOCOL_EN.md": "bb923976aafb35c12cb7e030ab7ffdd508b47aaf9b3820089d7d1c6cbaafcb84",
+  "SCIENTIFIC_DECISION_EN.md": "db20c1167a20f563f2bea7765f605e4ef3a101b6180e46f499c4da1453a81acc",
+  "inputs.json": "8666ac24793109ea7189aca43db46e2ca8ad888a6711f4cf37189d790ece76b0",
+  "run.log": "2be7b53c52795eb80a6a9e396fd5dd4e3c1c9fd97ebd9b9d6b848d185eaefe96",
+  "state.pkl": "3b3e1e8f7294dcf6028f1bf7f7c2486aa17b584c1d471197d9cf6f945f77ed0a",
+  "summary.json": "a8e8ab37daadc4627ac0d6f46ce8bbb3cd0356e75a72a1a19de62316e78877d3",
+  "test.jsonl": "26835202ba3858b6a29ff8fab2eccad8198021719eae14a5c6e6fa6a8560532e",
+  "train_log.jsonl": "f1e8b9364fd7780191db61582be9a691fad5c37c68ca0c0b8e2c3a296b2051a3"
+ }
+}

@@ -1,0 +1,84 @@
+{"stage": "demos", "decisions": 6981, "rule_val": 0.4105263157894737, "a95_ambush_val": 0.3894736842105263, "rule_demo_success": 0.36828644501278773, "wall": 1790907961.0}
+{"stage": "bc", "run": "mlp_s1", "val": 0.39473684210526316, "heldout_acc": 0.993, "rule_val": 0.4105263157894737, "wall": 1790908063.8}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 1, "episodes": 64, "success": 0.35, "policy_loss": 0.0541, "value_loss": 0.156, "entropy": 0.0274, "wall": 1790908092.8}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 2, "episodes": 128, "success": 0.333, "policy_loss": 0.1146, "value_loss": 0.1835, "entropy": 0.0, "wall": 1790908125.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 3, "episodes": 192, "success": 0.375, "policy_loss": -0.0537, "value_loss": 0.1849, "entropy": 0.0175, "wall": 1790908154.4}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 4, "episodes": 256, "success": 0.297, "policy_loss": 0.0921, "value_loss": 0.1323, "entropy": 0.0023, "wall": 1790908185.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 5, "episodes": 320, "success": 0.317, "policy_loss": -0.1081, "value_loss": 0.1685, "entropy": 0.0168, "wall": 1790908215.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 6, "episodes": 384, "success": 0.365, "policy_loss": -0.0621, "value_loss": 0.1461, "entropy": 0.0347, "wall": 1790908248.8}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 7, "episodes": 448, "success": 0.297, "policy_loss": -0.0765, "value_loss": 0.1428, "entropy": 0.0865, "wall": 1790908280.4}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 8, "episodes": 512, "success": 0.222, "policy_loss": -0.0218, "value_loss": 0.1269, "entropy": 0.0231, "wall": 1790908315.1}
+{"stage": "validation", "run": "mlp_s1", "episodes": 512, "val": 0.4052631578947368, "smoothed": 0.4, "best_smoothed": 0.395, "stale": 1, "rule_val": 0.4105263157894737, "wall": 1790908410.2}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 9, "episodes": 576, "success": 0.302, "policy_loss": 0.0483, "value_loss": 0.1375, "entropy": 0.0142, "wall": 1790908442.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 10, "episodes": 640, "success": 0.413, "policy_loss": -0.0532, "value_loss": 0.1509, "entropy": 0.0199, "wall": 1790908476.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 11, "episodes": 704, "success": 0.297, "policy_loss": -0.0337, "value_loss": 0.1503, "entropy": 0.0142, "wall": 1790908507.3}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 12, "episodes": 768, "success": 0.339, "policy_loss": -0.0414, "value_loss": 0.1572, "entropy": 0.0148, "wall": 1790908538.3}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 13, "episodes": 832, "success": 0.206, "policy_loss": -0.037, "value_loss": 0.1132, "entropy": 0.0276, "wall": 1790908574.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 14, "episodes": 896, "success": 0.375, "policy_loss": 0.0331, "value_loss": 0.142, "entropy": 0.0161, "wall": 1790908606.8}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 15, "episodes": 960, "success": 0.286, "policy_loss": -0.0553, "value_loss": 0.137, "entropy": 0.0148, "wall": 1790908683.3}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 16, "episodes": 1024, "success": 0.29, "policy_loss": 0.165, "value_loss": 0.1267, "entropy": 0.0124, "wall": 1790908718.2}
+{"stage": "validation", "run": "mlp_s1", "episodes": 1024, "val": 0.4052631578947368, "smoothed": 0.405, "best_smoothed": 0.395, "stale": 2, "rule_val": 0.4105263157894737, "wall": 1790908811.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 17, "episodes": 1088, "success": 0.281, "policy_loss": 0.1014, "value_loss": 0.136, "entropy": 0.0025, "wall": 1790908853.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 18, "episodes": 1152, "success": 0.339, "policy_loss": -0.0234, "value_loss": 0.1379, "entropy": 0.0139, "wall": 1790908887.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 19, "episodes": 1216, "success": 0.365, "policy_loss": -0.0555, "value_loss": 0.1657, "entropy": 0.0363, "wall": 1790908916.5}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 20, "episodes": 1280, "success": 0.328, "policy_loss": 0.0282, "value_loss": 0.1386, "entropy": 0.0223, "wall": 1790908947.6}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 21, "episodes": 1344, "success": 0.233, "policy_loss": 0.0545, "value_loss": 0.114, "entropy": 0.0104, "wall": 1790908978.3}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 22, "episodes": 1408, "success": 0.25, "policy_loss": -0.0443, "value_loss": 0.1135, "entropy": 0.0208, "wall": 1790909013.2}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 23, "episodes": 1472, "success": 0.345, "policy_loss": 0.0026, "value_loss": 0.1392, "entropy": 0.0329, "wall": 1790909042.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 24, "episodes": 1536, "success": 0.349, "policy_loss": -0.029, "value_loss": 0.1436, "entropy": 0.0302, "wall": 1790909073.9}
+{"stage": "validation", "run": "mlp_s1", "episodes": 1536, "val": 0.4, "smoothed": 0.403, "best_smoothed": 0.395, "stale": 3, "rule_val": 0.4105263157894737, "wall": 1790909166.7}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 25, "episodes": 1600, "success": 0.333, "policy_loss": 0.0901, "value_loss": 0.1184, "entropy": 0.0251, "wall": 1790909198.3}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 26, "episodes": 1664, "success": 0.333, "policy_loss": 0.0086, "value_loss": 0.1751, "entropy": 0.0214, "wall": 1790909229.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 27, "episodes": 1728, "success": 0.302, "policy_loss": 0.1107, "value_loss": 0.1326, "entropy": 0.0411, "wall": 1790909261.5}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 28, "episodes": 1792, "success": 0.286, "policy_loss": -0.0225, "value_loss": 0.1115, "entropy": 0.0323, "wall": 1790909291.1}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 29, "episodes": 1856, "success": 0.302, "policy_loss": 0.0064, "value_loss": 0.1123, "entropy": 0.0046, "wall": 1790909324.9}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 30, "episodes": 1920, "success": 0.429, "policy_loss": 0.0723, "value_loss": 0.1357, "entropy": 0.0051, "wall": 1790909355.7}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 31, "episodes": 1984, "success": 0.344, "policy_loss": -1.1763, "value_loss": 0.3283, "entropy": 0.1883, "wall": 1790909387.0}
+{"stage": "ppo", "run": "mlp_s1", "iteration": 32, "episodes": 2048, "success": 0.339, "policy_loss": -0.0675, "value_loss": 0.1591, "entropy": 0.0414, "wall": 1790909418.7}
+{"stage": "validation", "run": "mlp_s1", "episodes": 2048, "val": 0.39473684210526316, "smoothed": 0.397, "best_smoothed": 0.395, "stale": 4, "rule_val": 0.4105263157894737, "wall": 1790909511.0}
+{"stage": "run_end", "run": "mlp_s1", "episodes": 2048, "reason": "breaker: no smoothed gain >= min_delta for patience validations", "best_smoothed": 0.39473684210526316, "bc_val": 0.39473684210526316, "rule_val": 0.4105263157894737, "wall": 1790909511.2}
+{"stage": "bc", "run": "kan_s1", "val": 0.4052631578947368, "heldout_acc": 0.99, "rule_val": 0.4105263157894737, "wall": 1790909627.5}
+{"stage": "ppo", "run": "kan_s1", "iteration": 1, "episodes": 64, "success": 0.35, "policy_loss": -0.0531, "value_loss": 0.1579, "entropy": 0.0386, "wall": 1790909655.1}
+{"stage": "ppo", "run": "kan_s1", "iteration": 2, "episodes": 128, "success": 0.349, "policy_loss": -0.0383, "value_loss": 0.1963, "entropy": 0.059, "wall": 1790909685.7}
+{"stage": "ppo", "run": "kan_s1", "iteration": 3, "episodes": 192, "success": 0.359, "policy_loss": 0.1109, "value_loss": 0.1841, "entropy": 0.043, "wall": 1790909719.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 4, "episodes": 256, "success": 0.312, "policy_loss": 0.0776, "value_loss": 0.1306, "entropy": 0.0301, "wall": 1790909750.3}
+{"stage": "ppo", "run": "kan_s1", "iteration": 5, "episodes": 320, "success": 0.317, "policy_loss": -0.0076, "value_loss": 0.1392, "entropy": 0.0389, "wall": 1790909780.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 6, "episodes": 384, "success": 0.381, "policy_loss": 0.0422, "value_loss": 0.1717, "entropy": 0.011, "wall": 1790909812.7}
+{"stage": "ppo", "run": "kan_s1", "iteration": 7, "episodes": 448, "success": 0.297, "policy_loss": -0.046, "value_loss": 0.1647, "entropy": 0.0535, "wall": 1790909844.3}
+{"stage": "ppo", "run": "kan_s1", "iteration": 8, "episodes": 512, "success": 0.254, "policy_loss": 0.0616, "value_loss": 0.139, "entropy": 0.0354, "wall": 1790909877.3}
+{"stage": "validation", "run": "kan_s1", "episodes": 512, "val": 0.3894736842105263, "smoothed": 0.397, "best_smoothed": 0.405, "stale": 1, "rule_val": 0.4105263157894737, "wall": 1790909970.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 9, "episodes": 576, "success": 0.302, "policy_loss": -0.0123, "value_loss": 0.1321, "entropy": 0.0431, "wall": 1790910003.1}
+{"stage": "ppo", "run": "kan_s1", "iteration": 10, "episodes": 640, "success": 0.413, "policy_loss": -0.1126, "value_loss": 0.1548, "entropy": 0.0648, "wall": 1790910038.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 11, "episodes": 704, "success": 0.312, "policy_loss": -0.0007, "value_loss": 0.1218, "entropy": 0.0399, "wall": 1790910086.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 12, "episodes": 768, "success": 0.323, "policy_loss": -0.057, "value_loss": 0.1569, "entropy": 0.0434, "wall": 1790910122.3}
+{"stage": "ppo", "run": "kan_s1", "iteration": 13, "episodes": 832, "success": 0.206, "policy_loss": 0.1276, "value_loss": 0.0976, "entropy": 0.0313, "wall": 1790910155.7}
+{"stage": "ppo", "run": "kan_s1", "iteration": 14, "episodes": 896, "success": 0.406, "policy_loss": 0.1276, "value_loss": 0.1285, "entropy": 0.034, "wall": 1790910190.1}
+{"stage": "ppo", "run": "kan_s1", "iteration": 15, "episodes": 960, "success": 0.317, "policy_loss": 0.0214, "value_loss": 0.1414, "entropy": 0.0499, "wall": 1790910219.8}
+{"stage": "ppo", "run": "kan_s1", "iteration": 16, "episodes": 1024, "success": 0.355, "policy_loss": 0.172, "value_loss": 0.1204, "entropy": 0.0373, "wall": 1790910252.4}
+{"stage": "validation", "run": "kan_s1", "episodes": 1024, "val": 0.3894736842105263, "smoothed": 0.389, "best_smoothed": 0.405, "stale": 2, "rule_val": 0.4105263157894737, "wall": 1790910336.1}
+{"stage": "ppo", "run": "kan_s1", "iteration": 17, "episodes": 1088, "success": 0.25, "policy_loss": 0.0857, "value_loss": 0.1119, "entropy": 0.0347, "wall": 1790910368.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 18, "episodes": 1152, "success": 0.306, "policy_loss": -0.0453, "value_loss": 0.1259, "entropy": 0.0773, "wall": 1790910399.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 19, "episodes": 1216, "success": 0.349, "policy_loss": 0.1605, "value_loss": 0.0958, "entropy": 0.1026, "wall": 1790910430.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 20, "episodes": 1280, "success": 0.344, "policy_loss": -0.152, "value_loss": 0.1573, "entropy": 0.08, "wall": 1790910463.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 21, "episodes": 1344, "success": 0.283, "policy_loss": 0.0161, "value_loss": 0.1419, "entropy": 0.0236, "wall": 1790910494.1}
+{"stage": "ppo", "run": "kan_s1", "iteration": 22, "episodes": 1408, "success": 0.3, "policy_loss": -0.0103, "value_loss": 0.1305, "entropy": 0.0609, "wall": 1790910526.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 23, "episodes": 1472, "success": 0.362, "policy_loss": 0.0612, "value_loss": 0.1266, "entropy": 0.0411, "wall": 1790910555.8}
+{"stage": "ppo", "run": "kan_s1", "iteration": 24, "episodes": 1536, "success": 0.397, "policy_loss": -0.007, "value_loss": 0.1375, "entropy": 0.0499, "wall": 1790910589.4}
+{"stage": "validation", "run": "kan_s1", "episodes": 1536, "val": 0.3894736842105263, "smoothed": 0.389, "best_smoothed": 0.405, "stale": 3, "rule_val": 0.4105263157894737, "wall": 1790910675.8}
+{"stage": "ppo", "run": "kan_s1", "iteration": 25, "episodes": 1600, "success": 0.397, "policy_loss": -0.0391, "value_loss": 0.137, "entropy": 0.0806, "wall": 1790910706.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 26, "episodes": 1664, "success": 0.365, "policy_loss": -0.0204, "value_loss": 0.1571, "entropy": 0.0676, "wall": 1790910736.2}
+{"stage": "ppo", "run": "kan_s1", "iteration": 27, "episodes": 1728, "success": 0.302, "policy_loss": -0.0209, "value_loss": 0.1415, "entropy": 0.0648, "wall": 1790910766.4}
+{"stage": "ppo", "run": "kan_s1", "iteration": 28, "episodes": 1792, "success": 0.333, "policy_loss": 0.0486, "value_loss": 0.1205, "entropy": 0.0688, "wall": 1790910795.8}
+{"stage": "ppo", "run": "kan_s1", "iteration": 29, "episodes": 1856, "success": 0.349, "policy_loss": 0.221, "value_loss": 0.1097, "entropy": 0.035, "wall": 1790910827.4}
+{"stage": "ppo", "run": "kan_s1", "iteration": 30, "episodes": 1920, "success": 0.413, "policy_loss": -0.0471, "value_loss": 0.1299, "entropy": 0.0584, "wall": 1790910856.9}
+{"stage": "ppo", "run": "kan_s1", "iteration": 31, "episodes": 1984, "success": 0.393, "policy_loss": -0.2343, "value_loss": 0.1018, "entropy": 0.095, "wall": 1790910887.6}
+{"stage": "ppo", "run": "kan_s1", "iteration": 32, "episodes": 2048, "success": 0.323, "policy_loss": 0.078, "value_loss": 0.1787, "entropy": 0.0592, "wall": 1790910918.8}
+{"stage": "validation", "run": "kan_s1", "episodes": 2048, "val": 0.4, "smoothed": 0.395, "best_smoothed": 0.405, "stale": 4, "rule_val": 0.4105263157894737, "wall": 1790911002.4}
+{"stage": "run_end", "run": "kan_s1", "episodes": 2048, "reason": "breaker: no smoothed gain >= min_delta for patience validations", "best_smoothed": 0.4052631578947368, "bc_val": 0.4052631578947368, "rule_val": 0.4105263157894737, "wall": 1790911002.6}
+{"stage": "global_breaker", "best_s1": 0.4052631578947368, "rule_val": 0.4105263157894737, "action": "seeds 2-3 skipped: no head beat the rule by min_delta", "wall": 1790911002.6}
+{"stage": "test_chunk", "episodes": 915, "wall": 1790911484.6}
+{"stage": "test_chunk", "episodes": 2819, "wall": 1790912904.7}
+{"stage": "test_chunk", "episodes": 2819, "wall": 1790914089.5}
+{"stage": "test_chunk", "episodes": 191, "wall": 1790914195.2}
+{"stage": "test_chunk", "episodes": 0, "wall": 1790914197.1}
+{"stage": "done", "wall": 1790914209.2}

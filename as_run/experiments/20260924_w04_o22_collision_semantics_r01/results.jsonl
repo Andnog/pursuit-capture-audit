@@ -1,0 +1,12 @@
+{"arm": "A_defaults", "intended_gap_m": 3.0, "measured_gap_m": 3.0, "valid": true, "inside_capture_band": false, "below_min_gap": false, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "A_defaults", "intended_gap_m": 2.6, "measured_gap_m": 2.6, "valid": true, "inside_capture_band": false, "below_min_gap": false, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "A_defaults", "intended_gap_m": 2.4, "measured_gap_m": 2.4, "valid": true, "inside_capture_band": false, "below_min_gap": true, "sumo_reported_collision": true, "collision_types": ["collision"]}
+{"arm": "A_defaults", "intended_gap_m": 2.0, "measured_gap_m": 2.0, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": true, "collision_types": ["collision"]}
+{"arm": "A_defaults", "intended_gap_m": 1.0, "measured_gap_m": 1.0, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": true, "collision_types": ["collision"]}
+{"arm": "A_defaults", "intended_gap_m": 0.3, "measured_gap_m": 0.3, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": true, "collision_types": ["collision"]}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 3.0, "measured_gap_m": 3.0, "valid": true, "inside_capture_band": false, "below_min_gap": false, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 2.6, "measured_gap_m": 2.6, "valid": true, "inside_capture_band": false, "below_min_gap": false, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 2.4, "measured_gap_m": 2.4, "valid": true, "inside_capture_band": false, "below_min_gap": true, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 2.0, "measured_gap_m": 2.0, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 1.0, "measured_gap_m": 1.0, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": false, "collision_types": []}
+{"arm": "B_mingap_factor_0", "intended_gap_m": 0.3, "measured_gap_m": 0.3, "valid": true, "inside_capture_band": true, "below_min_gap": true, "sumo_reported_collision": false, "collision_types": []}

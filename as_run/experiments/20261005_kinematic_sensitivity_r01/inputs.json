@@ -1,0 +1,26 @@
+{
+ "amendment": "A-127 K",
+ "salt": "PK1",
+ "variants": {
+  "K0": [],
+  "K1": [
+   "--step-method.ballistic",
+   "true"
+  ],
+  "K2": [
+   "--default.carfollowmodel",
+   "IDM"
+  ]
+ },
+ "sumo": "1.21.0",
+ "sources_sha256": {
+  "scripts/run_kinematic_sensitivity.py": "09e5984813f3e44a304c8918590c8fb2555e74b12d7f1398ddce495cfccd0948",
+  "scripts/audit_cage_certificate.py": "23abd2ab10a3061e1312e6baa0111a3e055c32a1f49b273c07759fca6722389a",
+  "scripts/addendum_reanalysis.py": "d62a15064a3e1b660970b7a5f32d6df42b23c1779fed621b2786dd663a2b08a4",
+  "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+  "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+  "src/joint_interception/simulator/evader.py": "ba3baf1f34a9d477b77d95d24bb757456dde94909ea92a05614ff665070a03fc",
+  "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5"
+ },
+ "plb_params": "experiments/20261002_ambush_optimization_r01/summary.json:final_params"
+}

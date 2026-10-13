@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_d06_remedy_r01",
+  "sealed_at": "2026-09-25T04:57:22.164028Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "5813c3ffc079535547567a1ebd1518125ffccd594bbb99cd065f0170cb8975ff",
+    "PROTOCOL_EN.md": "40b218e20461a7873960f00590c5c1a1aebd17d5a31490786a04fe146771f92c",
+    "SCIENTIFIC_DECISION_EN.md": "183c22b20a88a0f4ecd35cbeb567c21d7144634fc69fe4c28dfc611bc07a1af6",
+    "domain.json": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+    "domain_before.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "a3e6943303cb3aaf121113eead7b4dabf27e2ca1e7f3b1c0bd2b1278e468afc1",
+    "events.jsonl": "06f08ad8ec29931bc90b0bc56b3fd2695909bcdb5bafcaa83a836b95a183a682",
+    "inputs.json": "a347fbd898b0c42c5ad90e19f5c6e82adfed5bb201f73b2f8b6e6eb565f51ca1",
+    "plan.json": "80109597da2de38a5802234c69cb5a4e27085604118328e50675c46183785d27",
+    "probe.py": "442abc7f6f4b68aa097dd3f38637ddf7bca846d23091968f6c90ec6ca696f165",
+    "result.json": "1abd6b03785642ac61664591b8f6b01bf914edcd0bad9ea9da1065c653addd07",
+    "result_raw.json": "e09eb7aa45748534741c513eb5709f6c6222071e41e7a1cb53cc64be9d4d9050",
+    "results.jsonl": "f316feb5d590c09a313cde4a431f0bac869e1e1c10b9f66b5d40946b1dac8263"
+  },
+  "verdict": "REMEDY_VERIFIED",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

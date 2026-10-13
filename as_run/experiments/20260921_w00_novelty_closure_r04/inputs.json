@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r04",
+  "novelty_artifacts": {
+    "research/novelty/claim_evidence_matrix.csv": "2377ac49c828135ad7fa832bca00184afb40c0d67e780a988507c56b23673314",
+    "research/novelty/search_log.jsonl": "8eeca55dc7fa4eb465ab732798034f8dcbff9eb78219026cc7f7017ccca39fe4",
+    "research/novelty/sources.bib": "80f506fac19deeeb193dae5af9ed533374c4b535823403e79ad83fc4b84c6c6f",
+    "research/novelty/TECHNICAL_GAP_EN.md": "63b1b0ef643a261a748f258c76403a2837969afa2c8a6a84ee71ea12ee6fef77",
+    "research/novelty/SEARCH_PROTOCOL_EN.md": "d15b123aac759e21ed581f254ddd4ca21340d6f6d0969d2442df0926c43c7b79"
+  },
+  "primary_source_read": {
+    "source_id": "B06",
+    "local_copy_sha256": "7771c9db70a5f01429d123842b2b0417fa8f9e53f97e1dd15764618b4d9b15b2",
+    "origin": "arXiv 1910.09508",
+    "pages": 14,
+    "extraction": "pdftotext -layout",
+    "extracted_characters": 49840,
+    "note": "The local copy is a scratch download, not a project artifact. Its hash is recorded so the reading can be reproduced against the same bytes."
+  }
+}

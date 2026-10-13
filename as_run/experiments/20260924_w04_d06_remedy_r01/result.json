@@ -1,0 +1,58 @@
+{
+  "package": "20260924_w04_d06_remedy_r01",
+  "stage": "W4",
+  "claim_class": "satisfiability_of_the_capture_predicate_in_the_simulator",
+  "verdict": "REMEDY_VERIFIED",
+  "remedy": {
+    "collision": "physical overlap (--collision.mingap-factor 0)",
+    "min_gap_by_class": {
+      "pursuer": 2.5,
+      "evader": 1.0
+    },
+    "d06": "UNCHANGED",
+    "safety_checks": "ON"
+  },
+  "arms": {
+    "arm1_pursuer_trails_evader": {
+      "rest_gap_m": 2.501,
+      "smallest_gap_m": 2.501,
+      "outside_band": true,
+      "collisions": [],
+      "judge": "REJECTED",
+      "judge_reason": "no_continuous_run_reaches_dwell"
+    },
+    "arm2_evader_stops_behind_pursuer": {
+      "rest_gap_m": 1.001,
+      "inside_band": true,
+      "collisions": [],
+      "judge": "SUPPORTED",
+      "judge_reason": "continuous_witness_satisfies_dwell",
+      "witness_duration_s": 17.2
+    },
+    "arm3_forced_overlap_control": {
+      "bumper_gap_m": -3.0,
+      "collision_reported": true,
+      "collisions": [
+        [
+          "a",
+          "b"
+        ]
+      ]
+    }
+  },
+  "what_is_established": "The frozen physical capture predicate can be satisfied in SUMO with safety checks on and without a collision; a pursuer that merely trails the evader cannot satisfy it; and the collision detector still reports genuine overlap.",
+  "not_established": [
+    "COORDINATION: a single blocking pursuer is deliberately not a coordinated capture; coordination is a team property",
+    "capture in an episode with a moving evader and a selector",
+    "capture across a junction or laterally",
+    "anything O22's native regression requires"
+  ],
+  "resources": {
+    "sumo_process_starts": 3,
+    "declared_limit": 6,
+    "void_runs": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

@@ -1,0 +1,7 @@
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "run_started", "package": "20260921_w03_evader_r01"}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E1_determinism", "ok": true}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E2_keyed_not_sequential_randomness", "ok": true}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E3_levels_differ_in_difficulty", "ok": true}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E4_decision_record_supports_d06", "ok": true}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E5_information_boundary", "ok": true}
+{"ts": "2026-09-21T19:58:55.104718+00:00", "event": "check_executed", "check": "E6_contract_agreement", "ok": true}

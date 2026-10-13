@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w05_constructive_on_network_r01",
+  "sealed_at": "2026-09-23T03:35:20.148496Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "b9ed8f167998113012ddc3b6ce043689d519ae6f1f764c9935eca1815477fe77",
+    "PROTOCOL_EN.md": "ba7a264a923b146a1abf76a71675fb18b7c5191a9cfff1b2c5a28c7c98ac8990",
+    "SCIENTIFIC_DECISION_EN.md": "2df023d17157a7a25c0004342bd269e7a6ee4fd5330e29f95a43488635db0ee5",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "a4136289604d9dc00e9ee30f9a55e6c6549f1fdde6a2a3a65419c74b4a835221",
+    "events.jsonl": "2659ab0ac5de9596329751f37bdae47c2827397724b5fd027f99c5b4017332cc",
+    "first_run_record.json": "4022e2c78123e1932364199ec9fdf2553f77bfad2f59d5bcfec7a5899a4705ac",
+    "inputs.json": "af4591cbb86a9de1e301e398b0fb5da72bddc3b1fccf677aa159652e040d8ce9",
+    "plan.json": "9b4c4526a916d6ed9a15f7857e6c4ca00026b7d00ebae6cfa22104bbaea84d0e",
+    "result.json": "1cb9a2e466d084845179bb09b4f7133e56bec8c4a029bb47817d4e03f91e509d",
+    "results.jsonl": "13aaa73a42b2ab1bd621a46b03886ea67ad93e00b5967182e883bbb559e6e07a"
+  },
+  "verdict": "CONSTRUCTIVE_TIMES_FAIL",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_arrival_model_prereq_r01",
+  "diagnostic_set": {
+    "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_28/corrected_transitions.jsonl",
+    "sha256": "d499ea4323b31631616da7261c3b0b4aa7f72f88d8b17b99c4583adb95771619",
+    "access": "READ_ONLY",
+    "modified": false
+  },
+  "implementation_inputs": {
+    "src/joint_interception/opportunities/arrival.py": "d077461e2f2725d4c1869f3700040ec35457ba5e83d1972675b8b2ac60d06bce",
+    "scripts/run_arrival_diagnostic.py": "2448e258e8c4c336f6f5abd93e3992d1507b70cd312f6d4b0711ff3b8744cb9a"
+  },
+  "specification_inputs": {
+    "docs/METHOD_SPEC_EN.md": "01bfded2d7e5f83d397b1bddce23d383324683bae3e4f75bbc3813ac3fef90e5",
+    "configs/domain_v1.json": "5931ba41154c2e91ee0cbb13d55c18bfd79ff6923b93156fc91e65c4f482db61"
+  }
+}

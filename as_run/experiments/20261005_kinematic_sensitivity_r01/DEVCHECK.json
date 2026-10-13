@@ -1,0 +1,18 @@
+{
+  "adelaide_cbd|K1": {
+    "differs_from_K0": true,
+    "first_difference_s": 0.2
+  },
+  "adelaide_cbd|K2": {
+    "differs_from_K0": true,
+    "first_difference_s": 0.1
+  },
+  "phoenix_downtown|K1": {
+    "differs_from_K0": true,
+    "first_difference_s": 0.1
+  },
+  "phoenix_downtown|K2": {
+    "differs_from_K0": true,
+    "first_difference_s": 0.2
+  }
+}

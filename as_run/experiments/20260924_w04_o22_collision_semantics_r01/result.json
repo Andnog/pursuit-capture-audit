@@ -1,0 +1,48 @@
+{
+  "package": "20260924_w04_o22_collision_semantics_r01",
+  "stage": "W4",
+  "claim_class": "safety_semantics_of_the_simulator",
+  "verdict": "CAPTURE_BAND_IS_A_COLLISION_BY_DEFAULT_AND_IS_UNREACHABLE_UNDER_SAFE_FOLLOWING",
+  "all_positions_verified": true,
+  "finding_1_collision_detection": {
+    "defaults": {
+      "3.00": false,
+      "2.60": false,
+      "2.40": true,
+      "2.00": true,
+      "1.00": true,
+      "0.30": true
+    },
+    "mingap_factor_0": {
+      "3.00": false,
+      "2.60": false,
+      "2.40": false,
+      "2.00": false,
+      "1.00": false,
+      "0.30": false
+    },
+    "reading": "Under SUMO's default collision semantics every bumper gap below minGap (2.5 m) is reported as a collision, including all three gaps inside the frozen capture band [0.30, 2.00] m. SUMO's own warning computes the gap NET OF minGap (2.4 -> -0.10, 2.0 -> -0.50, 1.0 -> -1.50, 0.30 -> -2.20). With mingap-factor 0 a collision means physical overlap and none is reported."
+  },
+  "finding_2_safe_following": {
+    "speed_mode": 31,
+    "smallest_bumper_gap_reached_m": 2.501,
+    "reached_capture_band": false,
+    "reading": "With SUMO's safety checks ON, a pursuer commanded to close on a stationary evader stops at 2.501 m - exactly minGap - and never enters the capture band. Changing collision DETECTION does not change car-following: this was measured with mingap-factor 0."
+  },
+  "o22_roma_reinterpreted": {
+    "legacy_record": "native collision p3/p5 at 21.8 s with a positive reported body gap of 1.959 m; station arithmetic 6.459929 - length 5 - MinGap 2.5",
+    "reading": "6.459929 - 5 - 2.5 = -1.04 m is SUMO's collision gap, net of minGap. The legacy log's own arithmetic IS SUMO's collision formula, and it reads negative. The contract's attribution of O22 Roma to a 'modelling error in station-separation arithmetic' is at best incomplete: a correctly computed physical gap of 1.46 m is ALSO a SUMO collision.",
+    "status": "strong explanation from the logged arithmetic; not re-run on the original Roma scenario"
+  },
+  "consequence_for_d06": "D06 as frozen is UNSATISFIABLE in SUMO as configured, for two independent reasons: every configuration in the capture band is a default collision, and safe car-following cannot reach the band at all. Resolving it changes the simulator configuration, the vehicle minGap in the domain contract, or the frozen capture band. All three are the Research lead's decision.",
+  "admission_module_gap": "safety/admission.py checks physical separation only and never consults minGap, so it would ADMIT a step leaving a 1.46 m bumper gap that SUMO would report as a collision - the historical Roma failure class, reproduced in the new module.",
+  "hypothesis_not_a_finding": "legacy O26 recorded 0/4 and 0/4 captures. If its capture distance also lay below minGap, safe following alone would have prevented every capture. Not checked; the legacy capture contract differs and this is recorded only as a lead.",
+  "resources": {
+    "sumo_process_starts": 5,
+    "declared_limit": 6,
+    "void_starts": 2,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

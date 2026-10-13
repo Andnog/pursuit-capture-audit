@@ -1,0 +1,8 @@
+{"check_id": "IP_1", "name": "runner_satisfies_pin", "expected": "every runner satisfies requires-python ==3.14.*", "observed": "uv run pytest resolves to Python 3.10", "status": "FAILED"}
+{"check_id": "IP_2", "name": "runners_agree", "expected": "all runners agree on the same source", "observed": "the f-string assertion passes on 3.10 and fails on 3.14", "status": "FAILED"}
+{"check_id": "IP_3", "name": "fstring_checked_on_pinned_interpreter", "expected": "glued f-string concatenation is detected on 3.14", "observed": "before repair: not detected. after repair: detected", "status": "REPAIRED"}
+{"check_id": "IP_4", "name": "detector_has_a_test_that_it_detects", "expected": "present", "observed": "absent before this package; four cases added", "status": "REPAIRED"}
+{"check_id": "IP_5", "name": "guard_fails_loudly_on_recurrence", "expected": "an unpinned interpreter fails the suite by name", "observed": "uv run pytest now fails tests/test_interpreter_pin.py and names the interpreter", "status": "PASSED"}
+{"check_id": "IP_6", "name": "full_suite", "runner": "uv run python -m unittest (venv 3.14.6, deps present)", "command": "uv run python -m unittest discover -s tests -t tests -q", "exit_code": 0, "tail": "OK", "status": "PASSED"}
+{"check_id": "IP_7", "name": "full_suite", "runner": "bare python3 -m unittest (3.14.6, no deps)", "command": "/opt/homebrew/bin/python3 -m unittest discover -s tests -q", "exit_code": 0, "tail": "OK (skipped=168)", "status": "PASSED"}
+{"check_id": "IP_8", "name": "full_suite", "runner": "uv run pytest (resolves to Python 3.10)", "command": "uv run pytest -q", "exit_code": 1, "tail": "1 failed, 263 passed in 0.71s", "status": "FAILS_BY_DESIGN_ON_AN_UNPINNED_INTERPRETER"}

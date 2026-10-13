@@ -1,0 +1,11 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "sumo_binary_version": "SUMO 1.21.0",
+  "sumolib_version": "1.21.0",
+  "interface": "TraCI socket",
+  "sumo_process_starts": 40,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false
+}

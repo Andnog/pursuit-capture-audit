@@ -1,0 +1,23 @@
+{
+ "label": "before",
+ "blocks": {
+  "OX": {
+   "episodes": 40,
+   "failed": 0,
+   "same": 40,
+   "different": []
+  },
+  "GD": {
+   "episodes": 40,
+   "failed": 0,
+   "same": 40,
+   "different": []
+  },
+  "K0": {
+   "episodes": 60,
+   "failed": 0,
+   "same": 60,
+   "different": []
+  }
+ }
+}

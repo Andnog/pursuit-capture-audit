@@ -1,0 +1,39 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260926_w04_o27_constructions_r03",
+ "sealed_at": "2026-09-26T13:50:10.643155Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "resealed": {
+  "previous_sealed_at": "2026-09-26T13:49:54.457117Z",
+  "changed": [
+   "DEVIATIONS_EN.md",
+   "SCIENTIFIC_DECISION_EN.md"
+  ]
+ },
+ "files": {
+  "DEVIATIONS_EN.md": "2684a2a01af910005962d7d6ec07b51d000a635565e0debfeb0fd77d2de536a0",
+  "PROTOCOL_EN.md": "d5511a539514886a5755946f322dd855823808dd58f1e5b3411a1749ab83da6f",
+  "SCIENTIFIC_DECISION_EN.md": "d4d40764c8e531aff6ca99c3e16f7d60034a8e22125a031336304fb7d5f01946",
+  "diagnostics_post_run.json": "20ad50ae1ed1bb4b5ff06975ab01a45a7b4a9d3ae5c7701b90a2a59dab2fb5a1",
+  "domain.json": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+  "environment.json": "9bf3e828d0f1d491c5dc87d4081bc073b66749af41be52f34f98bb7b7ecd77b3",
+  "inputs.json": "e75c2d9f214e3612f4fa1fcf84255ee551d46a28c79f6591f6791a6ede1b3a66",
+  "result.json": "9ef527137b25ad7cf6dd750a4f3731c4d6e89ecaf8fbc25ab5e7564385c5b674",
+  "results.jsonl": "47c6db0d345e5f33a10f12ff45210381f05c81e7f5f7da8b7b2d4bc72933c05f",
+  "run.log": "6ff657eac1073a4800d6af06fff0c6b12d113342d3759e4ecb3d765d5f11cfcc",
+  "source_snapshot/MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+  "source_snapshot/configs/domain_v1.json": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+  "source_snapshot/scripts/run_o27_r03.py": "305f1f413c69f757b75e0bdaafbd5cff3eea9ad013538794b259a3d80e4ca374",
+  "source_snapshot/src/joint_interception/domain/contracts.py": "f1d203db1191a3dfbf1613a8fad8f4a70867b13de83db2bd1ebaac8673046f2f",
+  "source_snapshot/src/joint_interception/domain/geometry.py": "5fa41ea0651c274cb16192ab87313de8a4778e521cd9655fa33580fbb49e0a07",
+  "source_snapshot/src/joint_interception/evaluation/capture_judge.py": "87a12f971336f03ba115e4eb2f0c44803d2e2e0b1ee0faad826517ef91815c03",
+  "source_snapshot/src/joint_interception/opportunities/approach.py": "50fd6dd626c4f37c5870112e48ef055d2d3a3cfdcea9248dad69aa50a2402b29",
+  "source_snapshot/src/joint_interception/simulator/evader.py": "dc42e9b1042dd1d5ee734c8dddf2d5fa5828055c5455bbb0a9de4365ddc9b7b5",
+  "source_snapshot/src/joint_interception/simulator/topology.py": "73e2d88afd5d28bb7d1243d765afa3f50e1c2a7afd6ea471ea513582706418c0",
+  "source_snapshot/src/joint_interception/world/construction.py": "e68f52db773b887f852943912f9928a6117de5b1f334e3605d49fc5aa7b77d79",
+  "source_snapshot/src/joint_interception/world/network.py": "e4affdf87247570df48a55422158f6ccaab0c43f9dd0caa795f37aa94a1dc3a9",
+  "source_snapshot/src/joint_interception/world/simulation.py": "999ce532c9b19f442c0fa061e0237ff0802faf54837903bcb616bfdb9cd32c06"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260929_f1_caging_feasibility_r02",
+ "sealed_at": "2026-09-29T18:27:10.954110Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "5d8eb12399ca31f3c9ee27d4da7b0f11a6cb7665ed152bc8d82ebaa018a891eb",
+  "SCIENTIFIC_DECISION_EN.md": "50365d7127adb2f235b0424e367ab02eaebc2b1422bb43a866a6998f4a2200fd",
+  "inputs.json": "72ac11975109a742c1e5e4f4b659a7b25d79bf244319f4ea8155eb14af8491dc",
+  "results.jsonl": "57e20e09c3bf07158a6642ff76dd81dd0ee56419bcab7b867d0865bca4037eca",
+  "run.log": "41098b56ab7f4bbedbeea3344a9f9a11c58be02bca313731bc7cc82ae987ae05",
+  "summary.json": "14af7f5cf2f89266685e3753e1d63597f700cf8508674f0dc2a79b4276d4fd66"
+ }
+}

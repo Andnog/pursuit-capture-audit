@@ -1,0 +1,140 @@
+{
+  "v3_training_from_the_sealed_log": {
+    "runs": {
+      "W_mlp_s1": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 24,
+        "valid_min": 1704,
+        "valid_max": 2001,
+        "without_objective_min": 1059,
+        "without_objective_max": 1234
+      },
+      "W_mlp_s2": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 24,
+        "valid_min": 1710,
+        "valid_max": 1997,
+        "without_objective_min": 992,
+        "without_objective_max": 1163
+      },
+      "P_mlp_s1": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 22,
+        "valid_min": 1696,
+        "valid_max": 2007,
+        "without_objective_min": 120,
+        "without_objective_max": 141
+      },
+      "P_mlp_s2": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 23,
+        "valid_min": 1689,
+        "valid_max": 1997,
+        "without_objective_min": 118,
+        "without_objective_max": 135
+      },
+      "F_mlp_s1": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 26,
+        "valid_min": 1848,
+        "valid_max": 2009,
+        "without_objective_min": 1098,
+        "without_objective_max": 1194
+      },
+      "F_mlp_s2": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 24,
+        "valid_min": 1693,
+        "valid_max": 2003,
+        "without_objective_min": 1002,
+        "without_objective_max": 1186
+      },
+      "F_kan_s1": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 23,
+        "valid_min": 1769,
+        "valid_max": 2009,
+        "without_objective_min": 1039,
+        "without_objective_max": 1179
+      },
+      "F_kan_s2": {
+        "iterations": 32,
+        "attempted": 2048,
+        "unique_denominator": 26,
+        "valid_min": 1822,
+        "valid_max": 2003,
+        "without_objective_min": 1064,
+        "without_objective_max": 1167
+      }
+    },
+    "all_runs": {
+      "iterations": 256,
+      "attempted": 16384,
+      "unique_denominator": 192,
+      "valid_min": 13931,
+      "valid_max": 16026,
+      "without_objective_min": 6492,
+      "without_objective_max": 7399
+    }
+  },
+  "capture_on_a_decision_tick_v2_test": {
+    "learned (3 s decisions)": {
+      "captures": 4752,
+      "on_a_tick": 261,
+      "share": 0.0549
+    },
+    "pursuit": {
+      "captures": 439,
+      "on_a_tick": 5,
+      "share": 0.0114
+    },
+    "planner_c215": {
+      "captures": 631,
+      "on_a_tick": 25,
+      "share": 0.0396
+    }
+  },
+  "collisions_in_sealed_test_rows": {
+    "20261002_mappo_r01": {
+      "completed_test_rows": 9984,
+      "with_collision_flag": 0,
+      "rows_without_the_flag": 0
+    },
+    "20261004_mappo_v2_r01": {
+      "completed_test_rows": 14688,
+      "with_collision_flag": 8,
+      "rows_without_the_flag": 0
+    },
+    "20261005_mappo_prox_r01": {
+      "completed_test_rows": 11466,
+      "with_collision_flag": 0,
+      "rows_without_the_flag": 0
+    },
+    "20261005_mappo_v3_r01": {
+      "completed_test_rows": 22904,
+      "with_collision_flag": 0,
+      "rows_without_the_flag": 0
+    }
+  },
+  "v3_test_schedule": {
+    "factors": "7 cities x 20 scenarios x 2 SUMO seeds x 2 evaders x 3 team sizes",
+    "scheduled_per_policy": 1680,
+    "protocol_text_says": 840,
+    "policies": 14,
+    "scheduled_total": 23520,
+    "rows_in_the_sealed_package": 23520,
+    "rows_per_policy_in_the_sealed_package": [
+      1680
+    ],
+    "completed_per_policy": [
+      1636
+    ]
+  }
+}

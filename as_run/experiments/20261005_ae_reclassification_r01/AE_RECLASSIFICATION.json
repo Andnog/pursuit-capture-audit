@@ -1,0 +1,24 @@
+{
+  "source": "experiments/20261004_audit_addendum_r03/results.jsonl (sealed, read only)",
+  "captures": 1433,
+  "escapes": 15,
+  "categories_by_recorded_request": {
+    "reroute_requests_only": {
+      "episodes": 1316,
+      "escapes": 0
+    },
+    "lane_change_requested": {
+      "episodes": 115,
+      "escapes": 15
+    },
+    "control_errors_only": {
+      "episodes": 2,
+      "escapes": 0,
+      "keys": [
+        "AE|test|plus_opt|portland_downtown|13|109513|RANDOM|7",
+        "AE|test|plus_opt|portland_downtown|13|9513|RANDOM|7"
+      ]
+    }
+  },
+  "note": "Categories are recorded probe requests, not an independent inventory of lanes at capture and not confirmation that a manoeuvre was executed. Control-error episodes are inconclusive for the active-escape test."
+}

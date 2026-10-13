@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_signal_aware_approach_r01",
+  "created": "2026-09-24",
+  "stage": "W5",
+  "protocol": "PROTOCOL_EN.md",
+  "claim_class": "model_soundness_on_the_network",
+  "acceptance_rule_frozen_before_running": true,
+  "acceptance_rule": {
+    "MODEL_UNDER_APPROXIMATES": "model >= SUMO free run on every route",
+    "MODEL_STILL_OPTIMISTIC": "the model is earlier than the free run on any route",
+    "RUN_FAILED": "too few routes complete"
+  },
+  "criterion": "SIGN, not accuracy: UNDER is a guarantee, not an estimate",
+  "controls": [
+    "sigma=0 as well as SUMO's default, to separate model optimism from the default driver",
+    "model distance against SUMO odometer distance"
+  ],
+  "resource_limits": {
+    "sumo_process_starts_permitted": 80,
+    "test_split_accesses_permitted": 0
+  }
+}

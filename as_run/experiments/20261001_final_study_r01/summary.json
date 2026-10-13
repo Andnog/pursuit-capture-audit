@@ -1,0 +1,436 @@
+{
+  "scenarios_common": 413,
+  "failed_episodes": 49,
+  "rates": {
+    "pursuit": {
+      "trapped": [
+        0.165,
+        0.128,
+        0.201
+      ],
+      "prox_5m": [
+        0.801,
+        0.76,
+        0.84
+      ],
+      "prox_10m": [
+        0.891,
+        0.86,
+        0.92
+      ],
+      "contact_capture": [
+        0.155,
+        0.121,
+        0.191
+      ],
+      "evader_exited": [
+        0.131,
+        0.099,
+        0.165
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.169,
+        0.123,
+        0.216
+      ],
+      "trapped_development": [
+        0.158,
+        0.107,
+        0.215
+      ]
+    },
+    "cut": {
+      "trapped": [
+        0.16,
+        0.126,
+        0.196
+      ],
+      "prox_5m": [
+        0.552,
+        0.504,
+        0.6
+      ],
+      "prox_10m": [
+        0.77,
+        0.729,
+        0.811
+      ],
+      "contact_capture": [
+        0.16,
+        0.126,
+        0.196
+      ],
+      "evader_exited": [
+        0.123,
+        0.092,
+        0.155
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.161,
+        0.114,
+        0.212
+      ],
+      "trapped_development": [
+        0.158,
+        0.107,
+        0.215
+      ]
+    },
+    "individual": {
+      "trapped": [
+        0.051,
+        0.031,
+        0.073
+      ],
+      "prox_5m": [
+        0.269,
+        0.228,
+        0.312
+      ],
+      "prox_10m": [
+        0.477,
+        0.429,
+        0.525
+      ],
+      "contact_capture": [
+        0.051,
+        0.031,
+        0.073
+      ],
+      "evader_exited": [
+        0.177,
+        0.14,
+        0.213
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.055,
+        0.03,
+        0.085
+      ],
+      "trapped_development": [
+        0.045,
+        0.017,
+        0.079
+      ]
+    },
+    "random": {
+      "trapped": [
+        0.155,
+        0.121,
+        0.189
+      ],
+      "prox_5m": [
+        0.579,
+        0.533,
+        0.625
+      ],
+      "prox_10m": [
+        0.705,
+        0.661,
+        0.748
+      ],
+      "contact_capture": [
+        0.153,
+        0.119,
+        0.186
+      ],
+      "evader_exited": [
+        0.165,
+        0.131,
+        0.201
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.174,
+        0.127,
+        0.225
+      ],
+      "trapped_development": [
+        0.13,
+        0.085,
+        0.181
+      ]
+    },
+    "pursuit_only_p1": {
+      "trapped": [
+        0.07,
+        0.046,
+        0.097
+      ],
+      "prox_5m": [
+        0.651,
+        0.605,
+        0.697
+      ],
+      "prox_10m": [
+        0.753,
+        0.712,
+        0.794
+      ],
+      "contact_capture": [
+        0.068,
+        0.044,
+        0.092
+      ],
+      "evader_exited": [
+        0.138,
+        0.107,
+        0.172
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.072,
+        0.042,
+        0.106
+      ],
+      "trapped_development": [
+        0.068,
+        0.034,
+        0.107
+      ]
+    },
+    "pursuit_only_p2": {
+      "trapped": [
+        0.07,
+        0.046,
+        0.097
+      ],
+      "prox_5m": [
+        0.683,
+        0.637,
+        0.726
+      ],
+      "prox_10m": [
+        0.765,
+        0.722,
+        0.806
+      ],
+      "contact_capture": [
+        0.07,
+        0.046,
+        0.097
+      ],
+      "evader_exited": [
+        0.138,
+        0.107,
+        0.172
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.076,
+        0.042,
+        0.11
+      ],
+      "trapped_development": [
+        0.062,
+        0.028,
+        0.102
+      ]
+    },
+    "pursuit_only_p3": {
+      "trapped": [
+        0.082,
+        0.056,
+        0.109
+      ],
+      "prox_5m": [
+        0.622,
+        0.576,
+        0.668
+      ],
+      "prox_10m": [
+        0.724,
+        0.68,
+        0.768
+      ],
+      "contact_capture": [
+        0.08,
+        0.056,
+        0.107
+      ],
+      "evader_exited": [
+        0.14,
+        0.109,
+        0.174
+      ],
+      "collisions": 0,
+      "trapped_training": [
+        0.102,
+        0.064,
+        0.144
+      ],
+      "trapped_development": [
+        0.056,
+        0.023,
+        0.09
+      ]
+    }
+  },
+  "tests": {
+    "C1_team_minus_best_single": [
+      -0.019,
+      -0.058,
+      0.019
+    ],
+    "C1_passes": false,
+    "C2_pursuit_minus_cut": [
+      0.005,
+      -0.041,
+      0.053
+    ],
+    "C2_direction": "no difference",
+    "A1_prox5_minus_trapped_pursuit": [
+      0.637,
+      0.586,
+      0.688
+    ],
+    "A1_passes": true,
+    "B1_lane_nv_certificate": "CONFIRMED",
+    "B2_junction_failure_replicates": true
+  },
+  "descriptive": {
+    "team_minus_mean_single": [
+      0.09,
+      0.059,
+      0.122
+    ],
+    "best_single_rate": [
+      0.184,
+      0.148,
+      0.223
+    ],
+    "prox5_minus_trapped_by_policy": {
+      "pursuit": [
+        0.637,
+        0.586,
+        0.688
+      ],
+      "cut": [
+        0.392,
+        0.339,
+        0.448
+      ],
+      "individual": [
+        0.218,
+        0.172,
+        0.266
+      ],
+      "random": [
+        0.424,
+        0.373,
+        0.475
+      ],
+      "pursuit_only_p1": [
+        0.581,
+        0.53,
+        0.63
+      ],
+      "pursuit_only_p2": [
+        0.613,
+        0.564,
+        0.659
+      ],
+      "pursuit_only_p3": [
+        0.54,
+        0.489,
+        0.591
+      ]
+    },
+    "trap_types": {
+      "pursuit": {
+        "SANDWICH": 39,
+        "DEAD_END": 9,
+        "FRONT_ONLY": 18,
+        "CONTACT_ONLY": 2
+      },
+      "cut": {
+        "SANDWICH": 29,
+        "DEAD_END": 6,
+        "FRONT_ONLY": 27,
+        "CONTACT_ONLY": 4
+      },
+      "individual": {
+        "SANDWICH": 2,
+        "DEAD_END": 1,
+        "FRONT_ONLY": 15,
+        "CONTACT_ONLY": 3
+      },
+      "random": {
+        "SANDWICH": 29,
+        "DEAD_END": 8,
+        "FRONT_ONLY": 25,
+        "CONTACT_ONLY": 2
+      },
+      "pursuit_only_p1": {
+        "SANDWICH": 0,
+        "DEAD_END": 16,
+        "FRONT_ONLY": 13,
+        "CONTACT_ONLY": 0
+      },
+      "pursuit_only_p2": {
+        "SANDWICH": 0,
+        "DEAD_END": 14,
+        "FRONT_ONLY": 14,
+        "CONTACT_ONLY": 1
+      },
+      "pursuit_only_p3": {
+        "SANDWICH": 0,
+        "DEAD_END": 13,
+        "FRONT_ONLY": 21,
+        "CONTACT_ONLY": 0
+      }
+    },
+    "junction_precision": [
+      0.199,
+      0.177,
+      0.224
+    ],
+    "junction_recall": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "junction_fired": 1098,
+    "lane_nv_precision": [
+      0.964,
+      0.938,
+      0.987
+    ],
+    "lane_nv_recall": [
+      0.991,
+      0.977,
+      1.0
+    ],
+    "lane_nv_fired": 225,
+    "audit_not_reproduced_or_failed": 0,
+    "audit_junction": {
+      "n": 1098,
+      "escape": [
+        0.709,
+        0.683,
+        0.737
+      ],
+      "left_network": [
+        0.087,
+        0.071,
+        0.105
+      ]
+    },
+    "audit_lane_nv": {
+      "n": 225,
+      "escape": [
+        0.058,
+        0.031,
+        0.089
+      ],
+      "left_network": [
+        0.004,
+        0.0,
+        0.013
+      ]
+    }
+  }
+}

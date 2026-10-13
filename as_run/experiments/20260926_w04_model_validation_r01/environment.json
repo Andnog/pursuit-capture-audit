@@ -1,0 +1,9 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "sumo_binary": "/Library/Frameworks/Python.framework/Versions/3.10/bin/sumo",
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false,
+  "wall_seconds": 531.0
+}

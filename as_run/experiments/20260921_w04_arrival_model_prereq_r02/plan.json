@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w04_arrival_model_prereq_r02",
+  "created": "2026-09-21",
+  "stage": "W4_PREREQUISITE",
+  "revision": "r02",
+  "supersedes": "20260921_w04_arrival_model_prereq_r01",
+  "supersedes_reason": "criterion A1 mis-specified; see r01 DEVIATIONS_EN.md D-18",
+  "protocol": "PROTOCOL_EN.md",
+  "criteria_frozen_before_this_revision_ran": true,
+  "criteria": {
+    "B1_direction_determinability": "SIGNED or UNSIGNED; UNSIGNED means direction UNRESOLVED_FROM_THIS_EVIDENCE",
+    "B2_under_refutation": "UNDER refuted if certified bounds present on < 99% of covered transitions",
+    "B3_coverage": "reported; < 0.90 inadequate",
+    "B4_lane_change_containment": "leakage == 0 required",
+    "B5_braking_containment": "reported",
+    "B6_rule_A_consequence": "derived, not measured"
+  },
+  "gate_rule": {
+    "UNDER_APPROXIMATING": "B2 passes and B1 SIGNED and B3 adequate",
+    "OVER_APPROXIMATING": "B1 SIGNED with no late-arrival violations and B2 fails",
+    "DIRECTION_UNRESOLVED": "B1 UNSIGNED",
+    "PREDICTION_ONLY": "B1 SIGNED and late-arrival violations exist",
+    "declared_consequence": "Unless UNDER_APPROXIMATING, no joint opportunity can ever be SUPPORTED under Rule A. This holds even when the direction is unresolved, because UNRESOLVED is not UNDER."
+  },
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0,
+    "w4_cpu_hour_cap_consumed": false
+  },
+  "commands": {
+    "run": "uv run python scripts/run_arrival_diagnostic.py --package experiments/20260921_w04_arrival_model_prereq_r02"
+  }
+}

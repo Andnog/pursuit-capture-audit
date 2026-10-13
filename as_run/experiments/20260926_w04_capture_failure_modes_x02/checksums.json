@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260926_w04_capture_failure_modes_x02",
+ "sealed_at": "2026-09-26T16:14:47.077345Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "d2b6111833ab45f347e36eebe0e6311d00cc1f925a715a132043b780ca6ec532",
+  "SCIENTIFIC_DECISION_EN.md": "333db40cc68c6ffe4cb58318073a96c53bd8392e35e1af184956927c5c972dde",
+  "results.jsonl": "e0354d8030ef0152fa3d27297201d37691a24ed6201e6ad0657acb2a850363f0",
+  "source_snapshot/scripts/analyse_capture_failures.py": "cf24450dc6a267ad2d05d08ce0e204453375ecd2b6dd59152f3b2dfcf4385c8b",
+  "summary.json": "b3797a11b1758b8a469b21fb47c7c424466f3a749dc2b226f5ba12fd08735b4a"
+ }
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_o22_collision_semantics_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "src/joint_interception/safety/admission.py": "f127910dabffd48002a11e9fc01a6f357b84ca99534c81121bb81fe8d210b3ea",
+    "experiments/20260924_w04_o22_collision_semantics_r01/probe.py": "3f2fb0fd8ba74333ff44299d56fa176aff49f1466aedd619dbf53da66c46f0cf",
+    "experiments/20260924_w04_o22_collision_semantics_r01/approach_probe.py": "9be561fa1e74006bdf0178c3ef4123a740293d3879e7561e676dac5e6efbf9e8"
+  }
+}

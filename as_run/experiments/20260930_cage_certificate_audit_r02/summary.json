@@ -1,0 +1,214 @@
+{
+  "failed": 0,
+  "by_condition": {
+    "hold": {
+      "certified_cages": 427,
+      "reproduced_certification": 1.0,
+      "M1_escape": [
+        0.775,
+        0.735,
+        0.815
+      ],
+      "M1b_left_network_without_gate_crossing": [
+        0.066,
+        0.044,
+        0.089
+      ],
+      "cages_with_no_gate": 28,
+      "M2_blocked_within_window": [
+        0.171,
+        0.136,
+        0.208
+      ],
+      "M3_red_light_at_cert": [
+        0.276,
+        0.234,
+        0.319
+      ],
+      "M4_contact_capture": [
+        0.141,
+        0.108,
+        0.173
+      ],
+      "state_at_cert": {
+        "blocked": 36,
+        "red_light": 118,
+        "stopped": 4,
+        "moving": 269
+      },
+      "cert_valid_share_mean": 0.581,
+      "by_checkpoint": {
+        "T_seed1_final": {
+          "n": 82,
+          "escape": [
+            0.768,
+            0.671,
+            0.854
+          ],
+          "blocked": [
+            0.171,
+            0.098,
+            0.256
+          ]
+        },
+        "T_seed2_final": {
+          "n": 85,
+          "escape": [
+            0.788,
+            0.694,
+            0.871
+          ],
+          "blocked": [
+            0.188,
+            0.106,
+            0.282
+          ]
+        },
+        "U_seed1_final": {
+          "n": 87,
+          "escape": [
+            0.828,
+            0.747,
+            0.908
+          ],
+          "blocked": [
+            0.161,
+            0.092,
+            0.241
+          ]
+        },
+        "U_seed2_final": {
+          "n": 89,
+          "escape": [
+            0.719,
+            0.629,
+            0.809
+          ],
+          "blocked": [
+            0.18,
+            0.101,
+            0.27
+          ]
+        },
+        "cut": {
+          "n": 84,
+          "escape": [
+            0.774,
+            0.679,
+            0.857
+          ],
+          "blocked": [
+            0.155,
+            0.083,
+            0.238
+          ]
+        }
+      },
+      "certificate_adequate": false
+    },
+    "policy": {
+      "certified_cages": 427,
+      "reproduced_certification": 1.0,
+      "M1_escape": [
+        0.778,
+        0.738,
+        0.817
+      ],
+      "M1b_left_network_without_gate_crossing": [
+        0.066,
+        0.044,
+        0.089
+      ],
+      "cages_with_no_gate": 28,
+      "M2_blocked_within_window": [
+        0.162,
+        0.126,
+        0.197
+      ],
+      "M3_red_light_at_cert": [
+        0.276,
+        0.234,
+        0.319
+      ],
+      "M4_contact_capture": [
+        0.133,
+        0.101,
+        0.166
+      ],
+      "state_at_cert": {
+        "blocked": 36,
+        "red_light": 118,
+        "stopped": 4,
+        "moving": 269
+      },
+      "cert_valid_share_mean": 0.597,
+      "by_checkpoint": {
+        "T_seed1_final": {
+          "n": 82,
+          "escape": [
+            0.78,
+            0.683,
+            0.866
+          ],
+          "blocked": [
+            0.159,
+            0.085,
+            0.244
+          ]
+        },
+        "T_seed2_final": {
+          "n": 85,
+          "escape": [
+            0.788,
+            0.694,
+            0.871
+          ],
+          "blocked": [
+            0.165,
+            0.094,
+            0.247
+          ]
+        },
+        "U_seed1_final": {
+          "n": 87,
+          "escape": [
+            0.828,
+            0.747,
+            0.908
+          ],
+          "blocked": [
+            0.138,
+            0.069,
+            0.218
+          ]
+        },
+        "U_seed2_final": {
+          "n": 89,
+          "escape": [
+            0.719,
+            0.629,
+            0.809
+          ],
+          "blocked": [
+            0.191,
+            0.112,
+            0.281
+          ]
+        },
+        "cut": {
+          "n": 84,
+          "escape": [
+            0.774,
+            0.679,
+            0.857
+          ],
+          "blocked": [
+            0.155,
+            0.083,
+            0.238
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "run_started", "package": "20260921_w00_novelty_closure_r01"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "T-CARE", "status": "NOT_LOCATED"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "sequential pursuit-planning record", "status": "CANDIDATE_LOCATED_NOT_READ"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "full-method reads of Grasper/DualCL/DACOOP/PGTS", "status": "NOT_ACHIEVED"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "conventional temporal cooperative planner (D11)", "status": "RESOLVED"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "citation chasing on B03/B04/B06", "status": "NOT_PERFORMED"}
+{"ts": "2026-09-21T16:24:37.135165+00:00", "event": "family_examined", "family": "B06 method sections", "status": "UPGRADE_FAILED"}

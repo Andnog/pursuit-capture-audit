@@ -1,0 +1,3689 @@
+[
+ {
+  "package": "20260920_w01_finite_examples_r01",
+  "date": "2026-09-20",
+  "title": "Protocol: W0\u2013W1 finite examples",
+  "amendment": null,
+  "registered": false,
+  "script": "run_finite_examples.py",
+  "command": "uv run python scripts/run_finite_examples.py --package experiments/20260920_w01_finite_examples_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": "path to the experiment package"
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": "permit writing into an already-sealed package; requires a recorded deviation"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w00_novelty_closure_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: W0 novelty closure",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w00_novelty_closure_r02",
+  "date": "2026-09-21",
+  "title": "Protocol: citation chasing on B03, B04 and B06",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w00_novelty_closure_r03",
+  "date": "2026-09-21",
+  "title": "Protocol: citation chasing with Scopus access (W0 revision r03)",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w00_novelty_closure_r04",
+  "date": "2026-09-21",
+  "title": "Protocol \u2014 W0 revision r04: backward citation chasing on B06",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w02_contracts_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: W2 contracts, dependency lock and admission",
+  "amendment": null,
+  "registered": true,
+  "script": "run_contract_checks.py",
+  "command": "uv run python scripts/run_contract_checks.py --package experiments/20260921_w02_contracts_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w03_adapter_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: W3 adapter, state restoration and candidate generation",
+  "amendment": "A-09",
+  "registered": false,
+  "script": "run_adapter_checks.py",
+  "command": "uv run python scripts/run_adapter_checks.py --package experiments/20260921_w03_adapter_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w03_evader_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: scripted evader levels (W3 completion)",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w04_arrival_model_prereq_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: arrival-model specification and falsification diagnostic (W4 prerequisite)",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w04_arrival_model_prereq_r02",
+  "date": "2026-09-21",
+  "title": "Protocol: arrival-model direction, revision r02 (W4 prerequisite)",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w04_constructive_arrival_r01",
+  "date": "2026-09-21",
+  "title": "Protocol: constructive arrival witnesses (W4 prerequisite)",
+  "amendment": "A-09",
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260921_w04_interpreter_provenance_r01",
+  "date": "2026-09-21",
+  "title": "Protocol \u2014 interpreter provenance of the test suite",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260922_w00_open_access_reads_r01",
+  "date": "2026-09-22",
+  "title": "Protocol \u2014 reading the records recorded as \"blocked on access\"",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260922_w04_fresh_start_determinism_r01",
+  "date": "2026-09-22",
+  "title": "Protocol \u2014 is SUMO deterministic from a fresh start, and does a shared prefix stay coupled?",
+  "amendment": "A-37",
+  "registered": false,
+  "script": "run_fresh_start_determinism.py",
+  "command": "uv run python scripts/run_fresh_start_determinism.py --package experiments/20260922_w04_fresh_start_determinism_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--map",
+    "default": "None",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--pursuers",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--decisions",
+    "default": "30",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--diverge-at",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--divergent-speed",
+    "default": "2.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seed",
+    "default": "20260922",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260922_w04_interaction_fixed_point_r01",
+  "date": "2026-09-22",
+  "title": "Protocol \u2014 the interaction half: blocking windows as a fixed point",
+  "amendment": null,
+  "registered": false,
+  "script": "run_interaction_checks.py",
+  "command": "uv run python scripts/run_interaction_checks.py --package experiments/20260922_w04_interaction_fixed_point_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260922_w04_traci_first_execution_r01",
+  "date": "2026-09-22",
+  "title": "Protocol \u2014 first execution of the TraCI call surface",
+  "amendment": null,
+  "registered": false,
+  "script": "run_traci_first_execution.py",
+  "command": "uv run python scripts/run_traci_first_execution.py --package experiments/20260922_w04_traci_first_execution_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--map",
+    "default": "None",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--pursuers",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--prefix-steps",
+    "default": "100",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--replay-steps",
+    "default": "150",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seed",
+    "default": "20260922",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260922_w05_constructive_on_network_r01",
+  "date": "2026-09-22",
+  "title": "Protocol \u2014 does a constructively computed arrival time hold on a real network?",
+  "amendment": null,
+  "registered": false,
+  "script": "run_constructive_on_network.py",
+  "command": "uv run python scripts/run_constructive_on_network.py --package experiments/20260922_w05_constructive_on_network_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--map",
+    "default": "None",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seed",
+    "default": "20260922",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260923_w05_constructive_replication_r01",
+  "date": "2026-09-23",
+  "title": "Protocol \u2014 replication of A-40 across maps and routes",
+  "amendment": "A-40",
+  "registered": false,
+  "script": "run_constructive_replication.py",
+  "command": "uv run python scripts/run_constructive_replication.py --package experiments/20260923_w05_constructive_replication_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--routes-per-map",
+    "default": "4",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seed",
+    "default": "20260923",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260924_w04_d06_remedy_r01",
+  "date": "2026-09-24",
+  "title": "Protocol \u2014 does the D06 remedy make capture satisfiable in SUMO, without weakening safety?",
+  "amendment": "A-46",
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260924_w04_o22_collision_semantics_r01",
+  "date": "2026-09-24",
+  "title": "Protocol \u2014 what does SUMO call a collision, and can the frozen capture predicate be satisfied without one?",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260924_w04_o27_constructions_r01",
+  "date": "2026-09-24",
+  "title": "Protocol \u2014 O27: two complete offline assisted-capture constructions",
+  "amendment": "A-47",
+  "registered": false,
+  "script": "run_o27_constructions.py",
+  "command": "uv run python scripts/run_o27_constructions.py --package experiments/20260924_w04_o27_constructions_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260924_w05_deficit_mechanism_r01",
+  "date": "2026-09-24",
+  "title": "Protocol \u2014 why does SUMO deliver less progress than the kinematic abstraction assumes?",
+  "amendment": "A-41",
+  "registered": true,
+  "script": "run_constructive_on_network.py",
+  "command": "uv run python scripts/run_constructive_on_network.py --package experiments/20260924_w05_deficit_mechanism_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--map",
+    "default": "None",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seed",
+    "default": "20260922",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reseal",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260924_w05_signal_aware_approach_r01",
+  "date": "2026-09-24",
+  "title": "Protocol \u2014 a signal-aware approach model, and whether it earns `UNDER` on the network",
+  "amendment": "A-40",
+  "registered": false,
+  "script": "run_approach_validation.py",
+  "command": "uv run python scripts/run_approach_validation.py",
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260925_w04_o27_constructions_r02",
+  "date": "2026-09-25",
+  "title": "Protocol \u2014 O27 r02: the pre-registered re-run of the W4 constructions",
+  "amendment": "A-51",
+  "registered": true,
+  "script": "run_o27_r02.py",
+  "command": "uv run python scripts/run_o27_r02.py --package experiments/20260925_w04_o27_constructions_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-avoidant",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-optimal",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-avoidant",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-optimal",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 902
+ },
+ {
+  "package": "20260926_w04_capture_failure_modes_x02",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 X02 (exploratory): failure modes of M3",
+  "amendment": "A-59",
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260926_w04_capture_robustness_x01",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 X01 (exploratory): fragility of model captures",
+  "amendment": "A-59",
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 42069
+ },
+ {
+  "package": "20260926_w04_evader_divergence_x03",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 X03 (exploratory): where the closed-loop evader diverges",
+  "amendment": null,
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20260926_w04_model_validation_r01",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 A-47 empirical model-validation gate, r01",
+  "amendment": "A-47",
+  "registered": false,
+  "script": "run_model_validation.py",
+  "command": "uv run python scripts/run_model_validation.py --package experiments/20260926_w04_model_validation_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--captures",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--others",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--max-index",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-budget-s",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": "MAPS",
+    "flag": false,
+    "help": "harness checks only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 40078
+ },
+ {
+  "package": "20260926_w04_native_replication_n01",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 N01: native-replication search (A-58 revised prerequisite)",
+  "amendment": "A-58",
+  "registered": false,
+  "script": "run_native_replication.py",
+  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--level",
+    "default": "'AVOIDANT'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 9704
+ },
+ {
+  "package": "20260926_w04_native_replication_n02_optimal",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 N02: native-replication search, OPTIMAL_ESCAPE (reported, not gated)",
+  "amendment": "A-59",
+  "registered": false,
+  "script": "run_native_replication.py",
+  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n02_optimal_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--level",
+    "default": "'AVOIDANT'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 4481
+ },
+ {
+  "package": "20260926_w04_native_replication_n03_keepclear",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 N03 (EXPLORATORY): native replication under the keep-clear model variant",
+  "amendment": "A-59",
+  "registered": true,
+  "script": "run_native_replication.py",
+  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n03_keepclear_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--level",
+    "default": "'AVOIDANT'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 32738
+ },
+ {
+  "package": "20260926_w04_native_replication_n05_interpolated",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 N05: native replication under the continuous-input evader (A-59 prerequisite, A-62 evader)",
+  "amendment": "A-59",
+  "registered": true,
+  "script": "run_native_replication.py",
+  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n05_interpolated_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--level",
+    "default": "'AVOIDANT'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-per-map",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 1652
+ },
+ {
+  "package": "20260926_w04_o27_constructions_r03",
+  "date": "2026-09-26",
+  "title": "Protocol \u2014 O27 r03: the final W4 attempt, AVOIDANT only",
+  "amendment": "A-53",
+  "registered": true,
+  "script": "run_o27_r03.py",
+  "command": "uv run python scripts/run_o27_r03.py --package experiments/20260926_w04_o27_constructions_r03_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--cpu-avoidant",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--exp-avoidant",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 462
+ },
+ {
+  "package": "20260927_native_ladder_stageB2_margin_r01",
+  "date": "2026-09-27",
+  "title": "Protocol \u2014 native ladder, stage B2 (A-65): plans with margin",
+  "amendment": "A-65",
+  "registered": false,
+  "script": "run_native_ladder.py",
+  "command": "uv run python scripts/run_native_ladder.py --package experiments/20260927_native_ladder_stageB2_margin_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--levels",
+    "default": "['AVOIDANT']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--extra",
+    "default": "[]",
+    "flag": false,
+    "help": "map:LEVEL pairs added"
+   },
+   {
+    "name": "--scenarios",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget",
+    "default": null,
+    "flag": false,
+    "help": "CPU s per scenario"
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--generator",
+    "default": "'exact'",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 11,
+  "archive_only_bytes": 10911847
+ },
+ {
+  "package": "20260927_native_ladder_stageB3_probability_r01",
+  "date": "2026-09-27",
+  "title": "Protocol \u2014 native ladder, stage B3 (A-66): coordination in probability",
+  "amendment": "A-66",
+  "registered": false,
+  "script": "run_native_probability.py",
+  "command": "uv run python scripts/run_native_probability.py --package experiments/20260927_native_ladder_stageB3_probability_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--extra",
+    "default": "[]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--screen",
+    "default": "3",
+    "flag": false,
+    "help": "candidates screened per scenario"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 828974
+ },
+ {
+  "package": "20260927_native_ladder_stageB_r01",
+  "date": "2026-09-27",
+  "title": "Protocol \u2014 native ladder, stage B (A-64)",
+  "amendment": "A-64",
+  "registered": false,
+  "script": "run_native_ladder.py",
+  "command": "uv run python scripts/run_native_ladder.py --package experiments/20260927_native_ladder_stageB_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--levels",
+    "default": "['AVOIDANT']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--extra",
+    "default": "[]",
+    "flag": false,
+    "help": "map:LEVEL pairs added"
+   },
+   {
+    "name": "--scenarios",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget",
+    "default": null,
+    "flag": false,
+    "help": "CPU s per scenario"
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--generator",
+    "default": "'exact'",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 14,
+  "archive_only_bytes": 15443439
+ },
+ {
+  "package": "20260929_f1_caging_feasibility_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F1: caging feasibility probe (A-70)",
+  "amendment": "A-70",
+  "registered": true,
+  "script": "run_caging_probe.py",
+  "command": "uv run python scripts/run_caging_probe.py --package experiments/20260929_f1_caging_feasibility_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "20",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "5",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 3376032
+ },
+ {
+  "package": "20260929_f1_caging_feasibility_r02",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F1 r02: caging feasibility probe, corrected certificate (A-70, A-71)",
+  "amendment": "A-70",
+  "registered": false,
+  "script": "run_caging_probe.py",
+  "command": "uv run python scripts/run_caging_probe.py --package experiments/20260929_f1_caging_feasibility_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "20",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "5",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 457122
+ },
+ {
+  "package": "20260929_f2_caging_sweep_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F2: caging difficulty sweep with physical occupancy (A-72)",
+  "amendment": "A-72",
+  "registered": false,
+  "script": "run_caging_sweep.py",
+  "command": "uv run python scripts/run_caging_sweep.py --package experiments/20260929_f2_caging_sweep_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--teams",
+    "default": "[3, 4, 5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2, 1.5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 5,
+  "archive_only_bytes": 5383571
+ },
+ {
+  "package": "20260929_f3_caging_confirm_real_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F3: confirmatory caging test on real maps (A-73)",
+  "amendment": "A-73",
+  "registered": false,
+  "script": "run_caging_confirm.py",
+  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f3_caging_confirm_real_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--teams",
+    "default": "[3, 4, 5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2, 1.5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--admission",
+    "default": null,
+    "flag": true,
+    "help": "A-76 legal control interface"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 2174647
+ },
+ {
+  "package": "20260929_f4_caging_confirm_admission_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F4: caging re-confirmation with the legal control interface (A-76)",
+  "amendment": "A-76",
+  "registered": false,
+  "script": "run_caging_confirm.py",
+  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f4_caging_confirm_admission_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--teams",
+    "default": "[3, 4, 5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2, 1.5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--admission",
+    "default": null,
+    "flag": true,
+    "help": "A-76 legal control interface"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 492534
+ },
+ {
+  "package": "20260929_f4_caging_confirm_admission_r02",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 F4 r02: caging re-confirmation with the legal control interface (A-76); r01 crashed",
+  "amendment": "A-76",
+  "registered": false,
+  "script": "run_caging_confirm.py",
+  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f4_caging_confirm_admission_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--teams",
+    "default": "[3, 4, 5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--speeds",
+    "default": "[1.0, 1.2, 1.5]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--strategies",
+    "default": "['cut', 'individual', 'pursuit']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--admission",
+    "default": null,
+    "flag": true,
+    "help": "A-76 legal control interface"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 4026663
+ },
+ {
+  "package": "20260929_marl_pilot_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 MARL pilot for certified coordinated caging (A-78)",
+  "amendment": "A-78",
+  "registered": false,
+  "script": "train_caging_pilot.py",
+  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260929_marl_pilot_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--arms",
+    "default": "['T', 'U']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "[1, 2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--demo-episodes",
+    "default": "300",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--bc-epochs",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--ppo-episodes",
+    "default": "8000",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--batch",
+    "default": "64",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-scenarios",
+    "default": "20",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--lr",
+    "default": "0.0001",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-salt",
+    "default": "'PE'",
+    "flag": false,
+    "help": "reserved evaluation scenarios; r03 uses fresh ones (PE was seen in A-80 checks)"
+   },
+   {
+    "name": "--skip-ppo",
+    "default": null,
+    "flag": true,
+    "help": "BC reproduction check only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 375201
+ },
+ {
+  "package": "20260929_marl_pilot_r02",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 MARL pilot r02 (A-78; r01 crashed, void)",
+  "amendment": "A-78",
+  "registered": false,
+  "script": "train_caging_pilot.py",
+  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260929_marl_pilot_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--arms",
+    "default": "['T', 'U']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "[1, 2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--demo-episodes",
+    "default": "300",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--bc-epochs",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--ppo-episodes",
+    "default": "8000",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--batch",
+    "default": "64",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-scenarios",
+    "default": "20",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--lr",
+    "default": "0.0001",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-salt",
+    "default": "'PE'",
+    "flag": false,
+    "help": "reserved evaluation scenarios; r03 uses fresh ones (PE was seen in A-80 checks)"
+   },
+   {
+    "name": "--skip-ppo",
+    "default": null,
+    "flag": true,
+    "help": "BC reproduction check only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 1,
+  "archive_only_bytes": 13224503
+ },
+ {
+  "package": "20260929_native_ladder_stageB4_pooled_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 native ladder, stage B4 (A-67): pooled probabilistic test",
+  "amendment": "A-67",
+  "registered": false,
+  "script": "run_native_probability.py",
+  "command": "uv run python scripts/run_native_probability.py --package experiments/20260929_native_ladder_stageB4_pooled_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--extra",
+    "default": "[]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--screen",
+    "default": "3",
+    "flag": false,
+    "help": "candidates screened per scenario"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 1421688
+ },
+ {
+  "package": "20260929_native_ladder_stageB5_idlefix_r01",
+  "date": "2026-09-29",
+  "title": "Protocol \u2014 native ladder, stage B5 (A-68): B4 repeated with idle pursuers parked off-lane and plan-only credit",
+  "amendment": "A-68",
+  "registered": true,
+  "script": "run_native_probability.py",
+  "command": "uv run python scripts/run_native_probability.py --package experiments/20260929_native_ladder_stageB5_idlefix_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--maps",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--extra",
+    "default": "[]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--screen",
+    "default": "3",
+    "flag": false,
+    "help": "candidates screened per scenario"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 5,
+  "archive_only_bytes": 7283282
+ },
+ {
+  "package": "20260930_cage_certificate_audit_r01",
+  "date": "2026-09-30",
+  "title": "Protocol \u2014 physical-cage certificate audit r01 (A-83)",
+  "amendment": "A-83",
+  "registered": false,
+  "script": "audit_cage_certificate.py",
+  "command": "uv run python scripts/audit_cage_certificate.py --package experiments/20260930_cage_certificate_audit_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--pilot",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--checkpoints",
+    "default": "['T_seed1_final', 'T_seed2_final', 'U_seed1_final', 'U_seed2_final', 'cut']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--conditions",
+    "default": "['hold', 'policy']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--post-cage-s",
+    "default": "60.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 200373
+ },
+ {
+  "package": "20260930_cage_certificate_audit_r02",
+  "date": "2026-09-30",
+  "title": "Protocol \u2014 physical-cage certificate audit r02 (A-83; r01 void, M1 implementation defect)",
+  "amendment": "A-83",
+  "registered": false,
+  "script": "audit_cage_certificate.py",
+  "command": "uv run python scripts/audit_cage_certificate.py --package experiments/20260930_cage_certificate_audit_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--pilot",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--checkpoints",
+    "default": "['T_seed1_final', 'T_seed2_final', 'U_seed1_final', 'U_seed2_final', 'cut']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--conditions",
+    "default": "['hold', 'policy']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--post-cage-s",
+    "default": "60.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 10515375
+ },
+ {
+  "package": "20260930_marl_pilot_r03",
+  "date": "2026-09-30",
+  "title": "Protocol \u2014 MARL pilot r03 (A-81; follows r02 NOT_PASSED and the A-80 fixes)",
+  "amendment": "A-81",
+  "registered": true,
+  "script": "train_caging_pilot.py",
+  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260930_marl_pilot_r03_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--arms",
+    "default": "['T', 'U']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "[1, 2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--demo-episodes",
+    "default": "300",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--bc-epochs",
+    "default": "15",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--ppo-episodes",
+    "default": "8000",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--batch",
+    "default": "64",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-scenarios",
+    "default": "20",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--lr",
+    "default": "0.0001",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--eval-salt",
+    "default": "'PE'",
+    "flag": false,
+    "help": "reserved evaluation scenarios; r03 uses fresh ones (PE was seen in A-80 checks)"
+   },
+   {
+    "name": "--skip-ppo",
+    "default": null,
+    "flag": true,
+    "help": "BC reproduction check only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 4,
+  "archive_only_bytes": 7937244
+ },
+ {
+  "package": "20260930_marl_trap_pilot_r04",
+  "date": "2026-09-30",
+  "title": "Protocol \u2014 MARL trap pilot r04 (A-86): decisive test of the MARL line",
+  "amendment": "A-86",
+  "registered": true,
+  "script": "train_trap_pilot.py",
+  "command": "uv run python scripts/train_trap_pilot.py --package experiments/20260930_marl_trap_pilot_r04_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--arms",
+    "default": "['T', 'U']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--seeds",
+    "default": "[1, 2]",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--demo-episodes",
+    "default": "300",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--bc-epochs",
+    "default": "30",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--max-episodes",
+    "default": "8000",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--batch",
+    "default": "64",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--lr",
+    "default": "0.0001",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--val-salt",
+    "default": "'PV'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--val-per-map",
+    "default": "30",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--val-every",
+    "default": "8",
+    "flag": false,
+    "help": "PPO iterations"
+   },
+   {
+    "name": "--patience",
+    "default": "6",
+    "flag": false,
+    "help": "validations"
+   },
+   {
+    "name": "--min-episodes",
+    "default": "2048",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--min-delta",
+    "default": "0.011",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--test-salt",
+    "default": "'PE5'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--test-per-map",
+    "default": "60",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 2,
+  "archive_only_bytes": 19551905
+ },
+ {
+  "package": "20260930_trap_endpoint_r01",
+  "date": "2026-09-30",
+  "title": "Protocol \u2014 direct trapping endpoint r01 (A-84, option C)",
+  "amendment": "A-84",
+  "registered": true,
+  "script": "run_trap_endpoint.py",
+  "command": "uv run python scripts/run_trap_endpoint.py --package experiments/20260930_trap_endpoint_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--pilot",
+    "default": "'experiments/20260930_marl_pilot_r03'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": "'PE4'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "60",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--learned",
+    "default": "['T_seed1_final', 'T_seed2_final', 'U_seed1_final', 'U_seed2_final']",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 3,
+  "archive_only_bytes": 10711602
+ },
+ {
+  "package": "20261001_ambush_learning_r01",
+  "date": "2026-10-01",
+  "title": "Protocol \u2014 learned ambush selection r01 (A-96)",
+  "amendment": "A-96",
+  "registered": false,
+  "script": "train_ambush_learner.py",
+  "command": "uv run python scripts/train_ambush_learner.py --package experiments/20261001_ambush_learning_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": "tiny configuration for a pipeline test"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 6816466
+ },
+ {
+  "package": "20261001_ambush_study_r01",
+  "date": "2026-10-01",
+  "title": "Protocol \u2014 ambush-planner study r01 (A-94)",
+  "amendment": "A-94",
+  "registered": true,
+  "script": "run_ambush_study.py",
+  "command": "uv run python scripts/run_ambush_study.py --package experiments/20261001_ambush_study_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--phase",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "20",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reps",
+    "default": "2",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--max-episodes",
+    "default": "None",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 2,
+  "archive_only_bytes": 8220453
+ },
+ {
+  "package": "20261001_endpoint_validation_r01",
+  "date": "2026-10-01",
+  "title": "Protocol \u2014 endpoint validation r01 (A-88, option B)",
+  "amendment": "A-88",
+  "registered": true,
+  "script": "run_endpoint_validation.py",
+  "command": "uv run python scripts/run_endpoint_validation.py --package experiments/20261001_endpoint_validation_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--phase",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": "'PE6'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "60",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 4,
+  "archive_only_bytes": 6727416
+ },
+ {
+  "package": "20261001_final_study_r01",
+  "date": "2026-10-01",
+  "title": "Protocol \u2014 final consolidated study r01 (A-90)",
+  "amendment": "A-90",
+  "registered": true,
+  "script": "run_final_study.py",
+  "command": "uv run python scripts/run_final_study.py --package experiments/20261001_final_study_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--phase",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--salt",
+    "default": "'PE7'",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "60",
+    "flag": false,
+    "help": "per map"
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 3,
+  "archive_only_bytes": 2850916
+ },
+ {
+  "package": "20261001_robustness_study_r01",
+  "date": "2026-10-01",
+  "title": "Protocol \u2014 robustness study r01 (A-92, publication hardening)",
+  "amendment": "A-92",
+  "registered": false,
+  "script": "run_robustness_study.py",
+  "command": "uv run python scripts/run_robustness_study.py --package experiments/20261001_robustness_study_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--phase",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--scenarios",
+    "default": "20",
+    "flag": false,
+    "help": "per city"
+   },
+   {
+    "name": "--grid-scenarios",
+    "default": "60",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--reps",
+    "default": "3",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--max-episodes",
+    "default": "None",
+    "flag": false,
+    "help": "run at most this many pending episodes, then stop (resumable chunks)"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 3,
+  "archive_only_bytes": 16183138
+ },
+ {
+  "package": "20261002_ambush_optimization_r01",
+  "date": "2026-10-02",
+  "title": "Protocol \u2014 pre-positioning ambush with gradient-free optimisation r01 (A-98)",
+  "amendment": "A-98",
+  "registered": false,
+  "script": "run_ambush_optimization.py",
+  "command": "uv run python scripts/run_ambush_optimization.py --package experiments/20261002_ambush_optimization_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 3,
+  "archive_only_bytes": 10449816
+ },
+ {
+  "package": "20261002_kan_capture_law_r01",
+  "date": "2026-10-02",
+  "title": "KAN capture law r01 (A-104; post hoc, descriptive; no new simulation)",
+  "amendment": "A-104",
+  "registered": false,
+  "script": "kan_capture_law.py",
+  "command": "uv run python scripts/kan_capture_law.py --package experiments/20261002_kan_capture_law_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261002_mappo_r01",
+  "date": "2026-10-02",
+  "title": "Protocol \u2014 MAPPO for the multi-agent ambush r01 (A-103)",
+  "amendment": "A-103",
+  "registered": true,
+  "script": "train_mappo.py",
+  "command": "uv run python scripts/train_mappo.py --package experiments/20261002_mappo_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 60405575
+ },
+ {
+  "package": "20261002_sensitivity_r01",
+  "date": "2026-10-02",
+  "title": "Protocol \u2014 sensitivity study r01 (A-101): tuning for 7 pursuers; faster pursuers",
+  "amendment": "A-101",
+  "registered": false,
+  "script": "run_sensitivity_study.py",
+  "command": "uv run python scripts/run_sensitivity_study.py --package experiments/20261002_sensitivity_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 2,
+  "archive_only_bytes": 2085774
+ },
+ {
+  "package": "20261002_sensitivity_r02",
+  "date": "2026-10-02",
+  "title": "Protocol \u2014 sensitivity study r02 (A-101; r01 void, harness defect): tuning for 7 pursuers; faster pursuers",
+  "amendment": "A-101",
+  "registered": false,
+  "script": "run_sensitivity_study.py",
+  "command": "uv run python scripts/run_sensitivity_study.py --package experiments/20261002_sensitivity_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 4918609
+ },
+ {
+  "package": "20261003_commitment_r01",
+  "date": "2026-10-03",
+  "title": "Protocol \u2014 commitment study r01 (A-106)",
+  "amendment": "A-106",
+  "registered": true,
+  "script": "run_commitment_study.py",
+  "command": "uv run python scripts/run_commitment_study.py --package experiments/20261003_commitment_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 2022141
+ },
+ {
+  "package": "20261003_d06_persistence_audit_r01",
+  "date": "2026-10-03",
+  "title": "Protocol \u2014 D06 persistence audit r01 (A-108)",
+  "amendment": "A-108",
+  "registered": true,
+  "script": "audit_d06_persistence.py",
+  "command": "uv run python scripts/audit_d06_persistence.py --package experiments/20261003_d06_persistence_audit_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "0",
+    "flag": false,
+    "help": "smoke test: first N tasks only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 581982
+ },
+ {
+  "package": "20261003_goal_evader_r01",
+  "date": "2026-10-03",
+  "title": "Protocol \u2014 goal-directed evader r01 (A-112)",
+  "amendment": "A-112",
+  "registered": true,
+  "script": "run_goal_evader_study.py",
+  "command": "uv run python scripts/run_goal_evader_study.py --package experiments/20261003_goal_evader_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 1304291
+ },
+ {
+  "package": "20261003_interpretability_r01",
+  "date": "2026-10-03",
+  "title": "Scientific decision \u2014 KAN vs MLP vs regression explanations (A-113, post hoc, metrics fixed in advance)",
+  "amendment": "A-113",
+  "registered": false,
+  "script": "interpretability_capture_law.py",
+  "command": "uv run python scripts/interpretability_capture_law.py --package experiments/20261003_interpretability_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "interpretability_policy_heads.py"
+  ],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 4221726
+ },
+ {
+  "package": "20261003_kan_capture_law_test_r01",
+  "date": "2026-10-03",
+  "title": "KAN capture law on TEST (A-110 S7, post hoc, descriptive)",
+  "amendment": "A-110",
+  "registered": false,
+  "script": "kan_capture_law_test.py",
+  "command": "uv run python scripts/kan_capture_law_test.py --package experiments/20261003_kan_capture_law_test_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261003_method_gifs",
+  "date": "2026-10-03",
+  "title": "20261003_method_gifs",
+  "amendment": null,
+  "registered": false,
+  "script": "render_capture_gif.py",
+  "command": "uv run python scripts/render_capture_gif.py",
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": false,
+  "archive_only_files": 10,
+  "archive_only_bytes": 58964650
+ },
+ {
+  "package": "20261003_test_confirmation_r01",
+  "date": "2026-10-03",
+  "title": "Protocol \u2014 single-shot TEST confirmation r01 (A-110)",
+  "amendment": "A-110",
+  "registered": true,
+  "script": "run_test_confirmation.py",
+  "command": "uv run python scripts/run_test_confirmation.py --package experiments/20261003_test_confirmation_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "0",
+    "flag": false,
+    "help": "smoke test: first N main tasks only"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 4653170
+ },
+ {
+  "package": "20261004_audit_addendum_r01",
+  "date": "2026-10-04",
+  "title": "Protocol \u2014 audit addendum r01 (A-115)",
+  "amendment": "A-115",
+  "registered": true,
+  "script": "audit_addendum.py",
+  "command": "uv run python scripts/audit_addendum.py --package experiments/20261004_audit_addendum_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--only",
+    "default": "''",
+    "flag": false,
+    "help": "smoke test: comma-separated task keys prefixes"
+   },
+   {
+    "name": "--limit",
+    "default": "0",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "addendum_reanalysis.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 891356
+ },
+ {
+  "package": "20261004_audit_addendum_r02",
+  "date": "2026-10-04",
+  "title": "Protocol \u2014 audit addendum r02 (A-119)",
+  "amendment": "A-119",
+  "registered": true,
+  "script": "audit_addendum_r02.py",
+  "command": "uv run python scripts/audit_addendum_r02.py --package experiments/20261004_audit_addendum_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "0",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "addendum_r02_reanalysis.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 932793
+ },
+ {
+  "package": "20261004_audit_addendum_r03",
+  "date": "2026-10-04",
+  "title": "Protocol \u2014 audit addendum r03 (A-121)",
+  "amendment": "A-121",
+  "registered": true,
+  "script": "audit_addendum_r03.py",
+  "command": "uv run python scripts/audit_addendum_r03.py --package experiments/20261004_audit_addendum_r03_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "addendum_r03_reanalysis.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 17702815
+ },
+ {
+  "package": "20261004_mappo_v2_r01",
+  "date": "2026-10-04",
+  "title": "Protocol \u2014 MAPPO v2 r01 (A-116)",
+  "amendment": "A-116",
+  "registered": true,
+  "script": "train_mappo_v2.py",
+  "command": "uv run python scripts/train_mappo_v2.py --package experiments/20261004_mappo_v2_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 67616691
+ },
+ {
+  "package": "20261004_mechanism_diagnostics_r01",
+  "date": "2026-10-04",
+  "title": "Mechanism diagnostics r01 (A-123, post hoc, descriptive)",
+  "amendment": "A-123",
+  "registered": false,
+  "script": "diag_mechanisms.py",
+  "command": "uv run python scripts/diag_mechanisms.py --package experiments/20261004_mechanism_diagnostics_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "40.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261005_ae_reclassification_r01",
+  "date": "2026-10-05",
+  "title": "Reclassification of the active-escape probe (A-125, offline, sealed r03 rows read only)",
+  "amendment": "A-125",
+  "registered": false,
+  "script": null,
+  "command": null,
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261005_capture_instant_scan_r01",
+  "date": "2026-10-05",
+  "title": "Protocol \u2014 scan of the capture instants used by the hold audit (A-137, fifth review F5-2 and F5-5)",
+  "amendment": "A-137",
+  "registered": false,
+  "script": "scan_capture_instants.py",
+  "command": "uv run python scripts/scan_capture_instants.py --package experiments/20261005_capture_instant_scan_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "0",
+    "flag": false,
+    "help": "development check: first N tasks"
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 312645
+ },
+ {
+  "package": "20261005_fifth_review_delimitation_r01",
+  "date": "2026-10-05",
+  "title": "Offline delimitation of the fifth review's findings from sealed records (A-139; post hoc)",
+  "amendment": "A-139",
+  "registered": false,
+  "script": "delimit_fifth_review.py",
+  "command": "uv run python scripts/delimit_fifth_review.py",
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261005_heldout_b_r01",
+  "date": "2026-10-05",
+  "title": "Single-shot evaluation on a second held-out set of cities (A-138)",
+  "amendment": "A-138",
+  "registered": true,
+  "script": "run_heldout_b.py",
+  "command": "uv run python scripts/run_heldout_b.py --package experiments/20261005_heldout_b_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "4",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "build_heldout_b_maps.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 8718927
+ },
+ {
+  "package": "20261005_kinematic_sensitivity_r01",
+  "date": "2026-10-05",
+  "title": "Sensitivity to the simulator's kinematic model (A-127 K)",
+  "amendment": "A-127",
+  "registered": false,
+  "script": "run_kinematic_sensitivity.py",
+  "command": "uv run python scripts/run_kinematic_sensitivity.py --package experiments/20261005_kinematic_sensitivity_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--devcheck",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 9208692
+ },
+ {
+  "package": "20261005_mappo_prox_posthoc_r01",
+  "date": "2026-10-05",
+  "title": "Post hoc contrasts on the proximity-trained MAPPO test set (note to A-129)",
+  "amendment": "A-129",
+  "registered": false,
+  "script": "posthoc_mappo_prox_contrasts.py",
+  "command": "uv run python scripts/posthoc_mappo_prox_contrasts.py",
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261005_mappo_prox_r01",
+  "date": "2026-10-05",
+  "title": "Protocol \u2014 MAPPO trained on the proximity endpoint r01 (A-125)",
+  "amendment": "A-125",
+  "registered": true,
+  "script": "train_mappo_prox.py",
+  "command": "uv run python scripts/train_mappo_prox.py --package experiments/20261005_mappo_prox_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 17905355
+ },
+ {
+  "package": "20261005_mappo_v3_r01",
+  "date": "2026-10-05",
+  "title": "MAPPO-v3: the learning block repeated with a corrected implementation (A-133, R4-A)",
+  "amendment": "A-133",
+  "registered": false,
+  "script": "train_mappo_v3.py",
+  "command": "uv run python scripts/train_mappo_v3.py --package experiments/20261005_mappo_v3_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 43123954
+ },
+ {
+  "package": "20261005_published_env_audit_r01",
+  "date": "2026-10-05",
+  "title": "Audit of capture events in a published pursuit environment (A-126, stage A)",
+  "amendment": "A-126",
+  "registered": false,
+  "script": "audit_published_env.py",
+  "command": "uv run python scripts/audit_published_env.py --package experiments/20261005_published_env_audit_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "4",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "None",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "analyse_published_env.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": true,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 289
+ },
+ {
+  "package": "20261005_published_env_audit_r02",
+  "date": "2026-10-05",
+  "title": "Published-environment audit, addendum r02 (A-133, R4-B)",
+  "amendment": "A-133",
+  "registered": false,
+  "script": "audit_published_env_r02.py",
+  "command": "uv run python scripts/audit_published_env_r02.py --package experiments/20261005_published_env_audit_r02_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "4",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "None",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "analyse_published_env_r02.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": true,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 124
+ },
+ {
+  "package": "20261005_published_env_pepcrl_r01",
+  "date": "2026-10-05",
+  "title": "Capture events in the official PEPCRL-MVP real-map environment (A-137)",
+  "amendment": "A-137",
+  "registered": false,
+  "script": "audit_published_env_pepcrl.py",
+  "command": "uv run python scripts/audit_published_env_pepcrl.py --package experiments/20261005_published_env_pepcrl_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "4",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--limit",
+    "default": "None",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "report_published_env_pepcrl.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": true,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 252
+ },
+ {
+  "package": "20261005_traffic_interaction_posthoc_r01",
+  "date": "2026-10-05",
+  "title": "Post hoc note \u2014 is PLB's advantage smaller with traffic? (A-133, R4-C)",
+  "amendment": "A-133",
+  "registered": false,
+  "script": "posthoc_traffic_interaction.py",
+  "command": "uv run python scripts/posthoc_traffic_interaction.py",
+  "options": [],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261005_traffic_sensitivity_r01",
+  "date": "2026-10-05",
+  "title": "PLB and pursuit with background traffic (A-127 T)",
+  "amendment": "A-127",
+  "registered": false,
+  "script": "run_traffic_sensitivity.py",
+  "command": "uv run python scripts/run_traffic_sensitivity.py --package experiments/20261005_traffic_sensitivity_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "4",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 2327343
+ },
+ {
+  "package": "20261005_tuned_evader_r01",
+  "date": "2026-10-05",
+  "title": "An evader tuned against PLB (A-127 E)",
+  "amendment": "A-127",
+  "registered": false,
+  "script": "run_tuned_evader_study.py",
+  "command": "uv run python scripts/run_tuned_evader_study.py --package experiments/20261005_tuned_evader_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 7810837
+ },
+ {
+  "package": "20261005_v3_first_batch_reconstruction_r01",
+  "date": "2026-10-05",
+  "title": "Protocol \u2014 first training batch of every MAPPO-v3 run, reconstructed with a ledger (A-139, fifth review F5-1 and F5-6)",
+  "amendment": "A-139",
+  "registered": false,
+  "script": "reconstruct_v3_first_batches.py",
+  "command": "uv run python scripts/reconstruct_v3_first_batches.py --package experiments/20261005_v3_first_batch_reconstruction_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 1,
+  "archive_only_bytes": 459042
+ },
+ {
+  "package": "20261006_heldout_sets_posthoc_r01",
+  "date": "2026-10-06",
+  "title": "Post hoc comparison of the two held-out evaluations",
+  "amendment": "A-110",
+  "registered": false,
+  "script": "posthoc_heldout_b_vs_test.py",
+  "command": "uv run python scripts/posthoc_heldout_b_vs_test.py --package experiments/20261006_heldout_sets_posthoc_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [],
+  "needs_simulator": false,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 0,
+  "archive_only_bytes": 0
+ },
+ {
+  "package": "20261006_mappo_v4_r01",
+  "date": "2026-10-06",
+  "title": "MAPPO-v4: the learning block repeated with the corrected training loop (A-143; design fixed in A-139)",
+  "amendment": "A-143",
+  "registered": true,
+  "script": "train_mappo_v4.py",
+  "command": "uv run python scripts/train_mappo_v4.py --package experiments/20261006_mappo_v4_r01_rerun",
+  "options": [
+   {
+    "name": "--package",
+    "default": null,
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--budget-min",
+    "default": "25.0",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--workers",
+    "default": "8",
+    "flag": false,
+    "help": null
+   },
+   {
+    "name": "--smoke",
+    "default": null,
+    "flag": true,
+    "help": null
+   }
+  ],
+  "analysis_scripts": [
+   "analyse_mappo_v4.py"
+  ],
+  "needs_simulator": true,
+  "needs_third_party_code": false,
+  "in_article": true,
+  "archive_only_files": 2,
+  "archive_only_bytes": 69672952
+ }
+]

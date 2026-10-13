@@ -1,0 +1,17 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "sumo_binary": "/Library/Frameworks/Python.framework/Versions/3.10/bin/sumo",
+  "sumo_binary_version": "Eclipse SUMO sumo Version 1.21.0",
+  "traci_version": "1.21.0",
+  "sumolib_version": "1.21.0",
+  "libsumo_available": false,
+  "interface": "TraCI socket; libsumo is unavailable on this platform",
+  "preflight_ok": true,
+  "sumo_process_starts": 3,
+  "sumo_episodes_executed": 0,
+  "note": "three bounded arms, not episodes: no scenario was run to completion and no outcome was scored",
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false
+}

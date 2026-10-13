@@ -1,0 +1,228 @@
+{
+  "post_hoc": true,
+  "reps": 10000,
+  "rates": {
+    "TEST": {
+      "plus_opt": {
+        "d06": 0.3429,
+        "prox_5m": 0.8686,
+        "prox_5m_centre": 0.7543
+      },
+      "ambush_a95": {
+        "d06": 0.2415,
+        "prox_5m": 0.8632,
+        "prox_5m_centre": 0.781
+      },
+      "pursuit": {
+        "d06": 0.1976,
+        "prox_5m": 0.8632,
+        "prox_5m_centre": 0.7927
+      }
+    },
+    "HELDOUT_B": {
+      "plus_opt": {
+        "d06": 0.2908,
+        "prox_5m": 0.7919,
+        "prox_5m_centre": 0.6471
+      },
+      "ambush_a95": {
+        "d06": 0.2669,
+        "prox_5m": 0.7767,
+        "prox_5m_centre": 0.6405
+      },
+      "pursuit": {
+        "d06": 0.2266,
+        "prox_5m": 0.7756,
+        "prox_5m_centre": 0.6427
+      }
+    }
+  },
+  "contrasts": {
+    "plb_minus_pursuit_oc": {
+      "TEST_family_95": [
+        0.1453,
+        0.0919,
+        0.1987
+      ],
+      "HELDOUT_B_family_95": [
+        0.0643,
+        0.0214,
+        0.1078
+      ],
+      "TEST_minus_HELDOUT_B_95": [
+        0.081,
+        0.0111,
+        0.1493
+      ],
+      "families": {
+        "TEST": 156,
+        "HELDOUT_B": 157
+      }
+    },
+    "plb_minus_ambush_oc": {
+      "TEST_family_95": [
+        0.1015,
+        0.0534,
+        0.1506
+      ],
+      "HELDOUT_B_family_95": [
+        0.024,
+        -0.0166,
+        0.0637
+      ],
+      "TEST_minus_HELDOUT_B_95": [
+        0.0775,
+        0.0149,
+        0.1401
+      ],
+      "families": {
+        "TEST": 156,
+        "HELDOUT_B": 157
+      }
+    },
+    "body_gap_5m_minus_oc_pursuit": {
+      "TEST_family_95": [
+        0.6656,
+        0.6026,
+        0.7254
+      ],
+      "HELDOUT_B_family_95": [
+        0.549,
+        0.4846,
+        0.6117
+      ],
+      "TEST_minus_HELDOUT_B_95": [
+        0.1166,
+        0.0282,
+        0.206
+      ],
+      "families": {
+        "TEST": 156,
+        "HELDOUT_B": 157
+      }
+    },
+    "plb_minus_pursuit_body_gap_5m": {
+      "TEST_family_95": [
+        0.0053,
+        -0.0128,
+        0.0267
+      ],
+      "HELDOUT_B_family_95": [
+        0.0163,
+        -0.0022,
+        0.0373
+      ],
+      "TEST_minus_HELDOUT_B_95": [
+        -0.011,
+        -0.0393,
+        0.0181
+      ],
+      "families": {
+        "TEST": 156,
+        "HELDOUT_B": 157
+      }
+    }
+  },
+  "cities": {
+    "chicago_loop": {
+      "set": "TEST",
+      "families": 40,
+      "pursuit_oc": 0.2167,
+      "plb_oc": 0.3292,
+      "pursuit_body_gap_5m": 0.9208,
+      "plb_minus_pursuit_oc_family_95": [
+        0.1125,
+        0.0458,
+        0.1875
+      ]
+    },
+    "melbourne_cbd": {
+      "set": "TEST",
+      "families": 39,
+      "pursuit_oc": 0.1538,
+      "plb_oc": 0.2179,
+      "pursuit_body_gap_5m": 0.6667,
+      "plb_minus_pursuit_oc_family_95": [
+        0.0641,
+        -0.0128,
+        0.1453
+      ]
+    },
+    "minneapolis_downtown": {
+      "set": "TEST",
+      "families": 38,
+      "pursuit_oc": 0.2632,
+      "plb_oc": 0.4737,
+      "pursuit_body_gap_5m": 0.9211,
+      "plb_minus_pursuit_oc_family_95": [
+        0.2105,
+        0.0658,
+        0.3553
+      ]
+    },
+    "salt_lake_city": {
+      "set": "TEST",
+      "families": 39,
+      "pursuit_oc": 0.1581,
+      "plb_oc": 0.3547,
+      "pursuit_body_gap_5m": 0.9444,
+      "plb_minus_pursuit_oc_family_95": [
+        0.1966,
+        0.0897,
+        0.3077
+      ]
+    },
+    "barcelona_eixample": {
+      "set": "HELDOUT_B",
+      "families": 39,
+      "pursuit_oc": 0.0982,
+      "plb_oc": 0.1295,
+      "pursuit_body_gap_5m": 0.4688,
+      "plb_minus_pursuit_oc_family_95": [
+        0.0312,
+        -0.0144,
+        0.0856
+      ]
+    },
+    "buenos_aires_microcentro": {
+      "set": "HELDOUT_B",
+      "families": 38,
+      "pursuit_oc": 0.0182,
+      "plb_oc": 0.0682,
+      "pursuit_body_gap_5m": 0.7,
+      "plb_minus_pursuit_oc_family_95": [
+        0.05,
+        0.0,
+        0.1111
+      ]
+    },
+    "denver_downtown": {
+      "set": "HELDOUT_B",
+      "families": 40,
+      "pursuit_oc": 0.3376,
+      "plb_oc": 0.4829,
+      "pursuit_body_gap_5m": 0.9658,
+      "plb_minus_pursuit_oc_family_95": [
+        0.1453,
+        0.0333,
+        0.2542
+      ]
+    },
+    "vancouver_downtown": {
+      "set": "HELDOUT_B",
+      "families": 40,
+      "pursuit_oc": 0.4292,
+      "plb_oc": 0.4583,
+      "pursuit_body_gap_5m": 0.9458,
+      "plb_minus_pursuit_oc_family_95": [
+        0.0292,
+        -0.075,
+        0.1208
+      ]
+    }
+  },
+  "cities_with_positive_estimate": [
+    8,
+    8
+  ]
+}

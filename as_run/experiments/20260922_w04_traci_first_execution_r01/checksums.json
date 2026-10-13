@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_traci_first_execution_r01",
+  "sealed_at": "2026-09-23T02:57:06.538027Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "9e062bf77df19faee8f77f796cd70fee6468980fa3532d9b03a4cfe27be60465",
+    "PROTOCOL_EN.md": "9759060a80da79b46bebc9ba20a2e9ee73b8c7285cedbc082861dce92d073597",
+    "SCIENTIFIC_DECISION_EN.md": "e7d0f520cd4b18cf4bbe674994b60cab9eef72f51855948fd662bee1b7bb2d17",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "b80ffd463e3ee7846b95616a62b6ce2654fedccb944a81c8d71e0437913badbf",
+    "events.jsonl": "6b5d4999aa527e55ea9e6d14f78e82d95c1d0c3d3e5bff34e41b5c07e9242693",
+    "first_run_record.json": "846a24a1f8b86ee53a67b7b091feabf8aa2a8a974c28adfab1ec22b4c0685cd5",
+    "inputs.json": "f0e84aae845a8a516f177120450046479844da3b76066aefdfe63ed112f26549",
+    "plan.json": "6970b5684b59980f4831fe320258137fb79790d19fd7cda5442d8990c71ddc23",
+    "result.json": "efa06f2544698fac7112498438681b20bd98944d5d684f94bfc22179ee27fed1",
+    "results.jsonl": "a143a3b4d8c3af8a47c70c1a41ff091aa6d0e128b7940cf980082c7ee205d0e7",
+    "state_file_precision_evidence.json": "902c85bd8a4e735535416ac79770f9147b6fc7fedfe917bca76652153a8632f2",
+    "sumo_state_prefix.xml": "385e4b9c0073c62e48a2683a9003deb5aabb169b3d811e6b0c6d7c4911e163a7",
+    "sumo_state_prefix_A.xml": "4bfc2f930a2b52301914933694790be8c4ea1b627a07d42832924a857080097f",
+    "sumo_state_prefix_B.xml": "463d57dbb3d2b2af10d556f5c55b09d17e6cdbf594fe772a9f1da58238e3a589",
+    "sumo_state_prefix_C.xml": "4cea382758920751ede692a708176f006666876aaa8bf3ff7dc84c0b9585c258"
+  },
+  "verdict": "SURFACE_EXERCISED_RESTORATION_INEXACT",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

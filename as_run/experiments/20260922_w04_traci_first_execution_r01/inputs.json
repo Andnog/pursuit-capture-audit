@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_traci_first_execution_r01",
+  "sources": {
+    "configs/domain_v1.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "src/joint_interception/simulator/sumo_adapter.py": "c34c8e502442d6cd6e0c4143afa57c960b0743404d19324314cafcbd96811077",
+    "src/joint_interception/simulator/backend.py": "ae57f57fc22193e7728adb5e3a9ec2daecd24237b71cea436f7b1fc49aa8ee29",
+    "scripts/run_traci_first_execution.py": "bf96f6b28b5b9f5ca23e3b9fc668fb33a078fc5d90f83dfe6a999a0ff78ca24a",
+    "scripts/preflight.py": "15615c9d822ed2d46f8dd70e44f1f4f2569917602da0d2490a329455f1f45419"
+  },
+  "map": {
+    "map_id": "adelaide_cbd",
+    "declared_split": "train",
+    "path": "/Users/andrei/Documents/PHD/Union/urban_dynamic_containment/assets/osm/adelaide_cbd.net.xml",
+    "sha256": "a5e9a2851a90581fb5e630b1b71c23de064f852d3849fe8e64af191441f90dee",
+    "opened_read_only": true,
+    "copied_or_modified": false,
+    "note": "read in place from the legacy asset root; the root was not written to"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w00_open_access_reads_r01",
+  "created": "2026-09-22",
+  "stage": "W0_REVISION",
+  "revision": "r01",
+  "continues": "20260921_w00_novelty_closure_r04",
+  "protocol": "PROTOCOL_EN.md",
+  "claim_class": "novelty_only",
+  "acceptance_rule_frozen_before_reading": true,
+  "move": "attempt the open route for every family recorded as blocked on access",
+  "access": "arXiv (open); ACM open-access full text; IEEE Xplore and Scopus via the Universidad Panamericana proxy, signed in by the Research lead. No credentials were entered by the agent.",
+  "acceptance_rule": {
+    "REFUTED": "a record implements the conjunction",
+    "CONCEDED": "a record implements a component the project claims",
+    "NO_CONSTRAINT": "a record cannot bear on the claims",
+    "STILL_BLOCKED": "the open route fails and no proxy reaches it"
+  },
+  "ordering_rule": "a concession is recorded before any statement of what survives it",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

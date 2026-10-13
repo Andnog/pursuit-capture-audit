@@ -1,0 +1,27 @@
+{
+  "package": "20260922_w04_interaction_fixed_point_r01",
+  "stage": "W4",
+  "claim_class": "analytical_correctness_in_a_finite_abstraction_only",
+  "verdict": "INTERACTION_OPERATOR_IMPLEMENTED_AND_CONTROLLED",
+  "outcomes_demonstrated": [
+    "WITNESS_VERIFIED",
+    "NOT_FOUND_ON_THIS_GRID",
+    "PROVABLY_INCONSISTENT"
+  ],
+  "what_is_established": "The circular dependency between participants' committed plans is stated as an operator and searched constructively. Where a witness is returned, every committed time is verified to lie in its own arrival set recomputed against the others, and joint occupancy is verified against lane capacity by sweep.",
+  "what_is_NOT_established": [
+    "that a mutually consistent commitment set EXISTS in general",
+    "any existence theorem: Kakutani needs CONVEX values and these sets are deliberately nonconvex",
+    "anything on a real SUMO network; this is the finite abstraction",
+    "physical feasibility, assistance, learning, benefit, transfer or novelty"
+  ],
+  "resources": {
+    "cpu_seconds": 0.863,
+    "wall_seconds": 0.995,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}

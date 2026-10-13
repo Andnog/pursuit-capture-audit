@@ -1,0 +1,17 @@
+{
+ "amendment": "A-133 R4-B",
+ "completes": "experiments/20261005_published_env_audit_r01",
+ "sealed_results_sha256": "1b9c6ee23e541804dabb8a653c7ce63f20997767cfc2ea6f4130889bbd055ce8",
+ "third_party": {
+  "url": "https://github.com/BUPT-ANTlab/DGMARL-MVP",
+  "commit": "62bd72e2a6ae94c1b5afba0ddee89aeee5ea9257"
+ },
+ "scripts": {
+  "scripts/audit_published_env_r02.py": "fe31f99824478164b02beb75b387078f88c5e3c91a58e57331fcddde69e9aeac",
+  "scripts/audit_published_env.py": "65b95f8ed67ce6edaf1d7dcf27d7baaad37009ced90db1b259c12eb45b193c2f"
+ },
+ "sumo": "1.21.0",
+ "follow_s": 30,
+ "slow_mps": 1.0,
+ "required_s": 2.0
+}

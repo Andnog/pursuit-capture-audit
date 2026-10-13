@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261005_mappo_prox_r01",
+  "recorded_at_launch": "2026-10-05T06:12:14.237002+00:00",
+  "sources": {
+    "scripts/train_mappo_prox.py": "ca5ffc3dd4f36cf8eef341843d67148593d6c374946081cc4934e2487d7b0fd7",
+    "scripts/train_mappo_v2.py": "8191a5f69bd8cee61f20ef51b8559fbd6f6ca4798f312dcf95b860f19a2d8ba7",
+    "scripts/audit_cage_certificate.py": "23abd2ab10a3061e1312e6baa0111a3e055c32a1f49b273c07759fca6722389a",
+    "src/joint_interception/native/mappo_ambush_v2.py": "ef0509ea5c7923269cd35ba3c56f330c889f16a1089db84ab3e8fb8495cd1d20",
+    "src/joint_interception/rl/mappo_policy.py": "0ac456d4215c744aa9c22768cc0aed584ad44ae1bd0f80354c85d11329a53599",
+    "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+    "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+    "src/joint_interception/rl/rollout.py": "63c5868854524ec6f09d7f1e160bd324b79c7103abc30a29a10fb2b63cda03fd",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "experiments/20261004_mappo_v2_r01/state.pkl": "dac015ea8a28d17a122102bb32f5c03b6a584e4cd6b824646438d106a2c4df09"
+  }
+}

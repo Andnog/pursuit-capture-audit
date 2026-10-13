@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w02_contracts_r01",
+  "sealed_at": "2026-09-21T15:21:34Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "097e7e95c970b102063467b7e881a063798b2babafe2d154639a4e463d219c94",
+    "PROTOCOL_EN.md": "0f6429d461e69958c9b680fa8d944ed3aea877f8cf1bcf8b940aeffe4c36ec3f",
+    "SCIENTIFIC_DECISION_EN.md": "ee0f6b22d1e691b96dde27981de51138d8986e636a2a5513c9c2b1045297d444",
+    "domain.json": "5931ba41154c2e91ee0cbb13d55c18bfd79ff6923b93156fc91e65c4f482db61",
+    "environment.json": "87d77fef47ad6bc98a201d5d8e37419cd18b4c74e46d62833ed116e9b6f4d549",
+    "events.jsonl": "e7dbfd93673cb4413abf436adc35a7e712dedbdea2fa617aea6ba906a3d0443a",
+    "inputs.json": "67031cf120c195baf421bbb1ac93c0776e43c9d176794ffa92806b49560bf041",
+    "plan.json": "7e1f1cbdf63f94947ea7bb597f1050cd77f4b682ceb1c896e4653e11678835c1",
+    "result.json": "1423d96b700c23ff55906f40b255e7d31aba442591b4baa9e5bd600a366d4727",
+    "results.jsonl": "865b55b72504afa95c262b2a1f2e3719313fce6d6181bcb41e086aa9ec5ecaa8"
+  },
+  "limit": "A matching hash proves byte identity of this package's files. It is not scientific validation and certifies no claim in SCIENTIFIC_DECISION_EN.md."
+}

@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260927_native_ladder_stageB_r01",
+ "sealed_at": "2026-09-27T16:07:00.159337Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "1ab8b3665e97c0465b5a3f007b2a16e5b7f17a439b5fc4d9efff49f3ed247c64",
+  "SCIENTIFIC_DECISION_EN.md": "7f76891e334c46fbee7ccf4afe4f3ff9981931b228b194bcb75c72f1852f93a0",
+  "gifs/C2_grid6x6_AVOIDANT_factual.gif": "350f84c2d5eb44a4ae95fc783a766b94ffa41f9075da0147cff4ab3c2044a17d",
+  "gifs/C2_grid6x6_AVOIDANT_helper_never_acts.gif": "7766e28b49b28b2f7496a1c8a1ad07e2be483be548d2d755f114601d1fe9fbd5",
+  "gifs/C3_grid9x9_AVOIDANT_factual.gif": "b15dcef6da72d8d57c4454d26b7cdd0c4c01ec77f3f6ed9c76328d036850f47f",
+  "gifs/C3_grid9x9_AVOIDANT_helper_never_acts.gif": "19fec14ccf55171ebc2cab1d60d461b568110659c461c96513d6f4eee01583c0",
+  "gifs/C4_grid10x4_AVOIDANT_factual.gif": "f30679d374eab93233a0f201ffce7cb8e15317e56aa0a39428ccaa6a4c236ebe",
+  "gifs/C4_grid10x4_AVOIDANT_helper_never_acts.gif": "3bd533ff729dbb9e1054fef46796a374368336a82e809bdea03861b6cfcf1e58",
+  "gifs/C5_spider_AVOIDANT_factual.gif": "1416a26c61f424a1a1f16db2ed16f00eed021674c271168a2a2d6beb6ffa5fc4",
+  "gifs/C5_spider_AVOIDANT_helper_never_acts.gif": "8dadf02b374f800edaec863a5e9b4a54667ca085ef8569cf03f7b3d305b84368",
+  "inputs.json": "86472cc8164123d7b547b1aaf2c35d73ee5ee4ff42163904e08e987c52bec475",
+  "results.jsonl": "6a0df24052156f32938e1f058135ef01e265c3fa78c63eb90d745b73b337d8c5",
+  "run.log": "52152e801a6d6371aff566139dfceb6ac0fe110fe87310c41b32bb878195c199",
+  "summary.json": "0e26f2b5d2c4d3a1ffe9de5fa92d1bba0b4c6f68d60cd7aabac5b45ff8561842",
+  "traces/C2_grid6x6_AVOIDANT_6.pkl": "42b0a24ad2167dc0ea562539f35dab0d3814a2423ed5e933646a2a1b259f290c",
+  "traces/C2_grid6x6_AVOIDANT_7.pkl": "cd20a4d418149003a2558c2b118e7f01cbd815518f7867b9fd764b76819300e7",
+  "traces/C3_grid9x9_AVOIDANT_1.pkl": "205f0a4bdb2ff849f9527fb6f2ae085b7be20d1395fabb2fba54b906010d4a69",
+  "traces/C4_grid10x4_AVOIDANT_2.pkl": "1acf8580032131b0d4e055121eb5dc06dde61f5ced15d8cfa933e77c98166e69",
+  "traces/C5_spider_AVOIDANT_6.pkl": "e0929c89e882bec1a3c7c7543994e01989d709f501cd36a6e24cbf5b3df301b9"
+ }
+}

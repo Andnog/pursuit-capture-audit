@@ -1,0 +1,7 @@
+{"stage": "round", "round": 0, "default": [0.0, 47], "c215": [0.0, 47], "top": [["t7_0", [0.0, 47]], ["t7_1", [0.0, 47]], ["t7_2", [0.0, 47]], ["t7_3", [0.0, 47]]], "wall": 1790948426.0}
+{"stage": "round", "round": 1, "default": [0.0, 189], "c215": [0.0, 189], "top": [["t7_0", [0.0, 189]], ["t7_1", [0.0, 189]], ["t7_2", [0.0, 189]], ["t7_3", [0.0, 189]]], "wall": 1790948702.9}
+{"stage": "round", "round": 2, "default": [0.0, 563], "c215": [0.0, 563], "top": [["t7_0", [0.0, 563]], ["t7_1", [0.0, 563]], ["t7_2", [0.0, 563]]], "wall": 1790949077.6}
+{"stage": "search_end", "best": "t7_0", "r3": {"best": 0.0, "default": 0.0, "c215": 0.0}, "chosen": "c215", "params": {"depth": 2, "margin_s": 0.0, "slow": 1.05, "startup_s": 5.0, "hold_m": 21.776, "chasers": 0, "pre_k_min": 1, "pre_k_max": 2, "pre_margin": -1.007, "prepos_during_plan": 0}, "wall": 1790949077.7}
+{"stage": "validation", "tuned": 0.0, "c215": 0.0, "default": 0.0, "wall": 1790949191.8}
+{"stage": "chunk_done", "phase": "test", "done": 2214, "of": 8960, "wall": 1790949661.6}
+{"stage": "done", "wall": 1790950916.9}

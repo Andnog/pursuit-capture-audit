@@ -1,0 +1,86 @@
+{"stage": "bc", "run": "mlp_s1", "val_prox": 0.9197860962566845, "wall": 1791180912.4}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 1, "episodes": 64, "prox_success": 0.952, "oc": 0.391, "policy_loss": -0.0411, "value_loss": 0.072, "entropy": 0.0206, "wall": 1791180952.1}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 2, "episodes": 128, "prox_success": 0.905, "oc": 0.406, "policy_loss": -0.0227, "value_loss": 0.0531, "entropy": 0.0208, "wall": 1791180992.4}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 3, "episodes": 192, "prox_success": 0.905, "oc": 0.484, "policy_loss": -0.0039, "value_loss": 0.0456, "entropy": 0.0266, "wall": 1791181031.8}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 4, "episodes": 256, "prox_success": 0.921, "oc": 0.453, "policy_loss": 0.0063, "value_loss": 0.0379, "entropy": 0.0134, "wall": 1791181072.6}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 5, "episodes": 320, "prox_success": 0.967, "oc": 0.406, "policy_loss": -0.065, "value_loss": 0.0264, "entropy": 0.021, "wall": 1791181112.3}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 6, "episodes": 384, "prox_success": 0.951, "oc": 0.391, "policy_loss": 0.0214, "value_loss": 0.029, "entropy": 0.0179, "wall": 1791181151.4}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 7, "episodes": 448, "prox_success": 0.968, "oc": 0.453, "policy_loss": 0.0658, "value_loss": 0.0279, "entropy": 0.0152, "wall": 1791181190.6}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 8, "episodes": 512, "prox_success": 0.921, "oc": 0.406, "policy_loss": -0.0607, "value_loss": 0.0449, "entropy": 0.032, "wall": 1791181245.8}
+{"stage": "validation", "run": "mlp_s1", "episodes": 512, "val_prox": 0.9144385026737968, "smoothed": 0.917, "best": 0.92, "stale": 1, "wall": 1791181383.3}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 9, "episodes": 576, "prox_success": 0.871, "oc": 0.344, "policy_loss": -0.0503, "value_loss": 0.0387, "entropy": 0.0495, "wall": 1791181441.3}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 10, "episodes": 640, "prox_success": 0.953, "oc": 0.469, "policy_loss": 0.0326, "value_loss": 0.0268, "entropy": 0.0444, "wall": 1791181499.8}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 11, "episodes": 704, "prox_success": 0.952, "oc": 0.391, "policy_loss": -0.008, "value_loss": 0.0194, "entropy": 0.0237, "wall": 1791181557.3}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 12, "episodes": 768, "prox_success": 0.969, "oc": 0.312, "policy_loss": 0.0006, "value_loss": 0.0208, "entropy": 0.0673, "wall": 1791181616.1}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 13, "episodes": 832, "prox_success": 0.905, "oc": 0.422, "policy_loss": 0.0096, "value_loss": 0.0249, "entropy": 0.0285, "wall": 1791181683.9}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 14, "episodes": 896, "prox_success": 0.918, "oc": 0.484, "policy_loss": -0.0594, "value_loss": 0.0396, "entropy": 0.0468, "wall": 1791181742.7}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 15, "episodes": 960, "prox_success": 0.905, "oc": 0.312, "policy_loss": 0.0932, "value_loss": 0.0342, "entropy": 0.0304, "wall": 1791181795.9}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 16, "episodes": 1024, "prox_success": 0.968, "oc": 0.406, "policy_loss": 0.0494, "value_loss": 0.0314, "entropy": 0.0326, "wall": 1791181859.1}
+{"stage": "validation", "run": "mlp_s1", "episodes": 1024, "val_prox": 0.9197860962566845, "smoothed": 0.917, "best": 0.92, "stale": 2, "wall": 1791182049.4}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 17, "episodes": 1088, "prox_success": 0.968, "oc": 0.422, "policy_loss": 0.0251, "value_loss": 0.0236, "entropy": 0.0209, "wall": 1791182111.2}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 18, "episodes": 1152, "prox_success": 0.918, "oc": 0.328, "policy_loss": -0.0232, "value_loss": 0.0337, "entropy": 0.0226, "wall": 1791182178.0}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 19, "episodes": 1216, "prox_success": 0.859, "oc": 0.391, "policy_loss": 0.0364, "value_loss": 0.0386, "entropy": 0.0389, "wall": 1791182240.2}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 20, "episodes": 1280, "prox_success": 0.883, "oc": 0.297, "policy_loss": 0.0391, "value_loss": 0.0374, "entropy": 0.0321, "wall": 1791182295.9}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 21, "episodes": 1344, "prox_success": 0.906, "oc": 0.297, "policy_loss": -0.0296, "value_loss": 0.0391, "entropy": 0.0224, "wall": 1791182354.5}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 22, "episodes": 1408, "prox_success": 0.922, "oc": 0.297, "policy_loss": -0.0244, "value_loss": 0.0387, "entropy": 0.0487, "wall": 1791182417.7}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 23, "episodes": 1472, "prox_success": 0.905, "oc": 0.266, "policy_loss": -0.0067, "value_loss": 0.0384, "entropy": 0.0321, "wall": 1791182476.5}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 24, "episodes": 1536, "prox_success": 0.922, "oc": 0.266, "policy_loss": -0.0392, "value_loss": 0.0461, "entropy": 0.012, "wall": 1791182536.1}
+{"stage": "validation", "run": "mlp_s1", "episodes": 1536, "val_prox": 0.9090909090909091, "smoothed": 0.914, "best": 0.92, "stale": 3, "wall": 1791182705.6}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 25, "episodes": 1600, "prox_success": 0.903, "oc": 0.281, "policy_loss": -0.0093, "value_loss": 0.051, "entropy": 0.0296, "wall": 1791182766.0}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 26, "episodes": 1664, "prox_success": 0.938, "oc": 0.328, "policy_loss": -0.0753, "value_loss": 0.0401, "entropy": 0.0268, "wall": 1791182824.4}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 27, "episodes": 1728, "prox_success": 0.938, "oc": 0.406, "policy_loss": 0.0467, "value_loss": 0.0429, "entropy": 0.0322, "wall": 1791182881.2}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 28, "episodes": 1792, "prox_success": 0.969, "oc": 0.312, "policy_loss": -0.0005, "value_loss": 0.0382, "entropy": 0.0252, "wall": 1791182940.6}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 29, "episodes": 1856, "prox_success": 0.969, "oc": 0.266, "policy_loss": -0.0468, "value_loss": 0.024, "entropy": 0.0256, "wall": 1791182999.3}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 30, "episodes": 1920, "prox_success": 0.953, "oc": 0.359, "policy_loss": -0.0101, "value_loss": 0.0314, "entropy": 0.0198, "wall": 1791183058.0}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 31, "episodes": 1984, "prox_success": 0.969, "oc": 0.359, "policy_loss": -0.0351, "value_loss": 0.0245, "entropy": 0.0167, "wall": 1791183119.2}
+{"stage": "mappo", "run": "mlp_s1", "iteration": 32, "episodes": 2048, "prox_success": 0.952, "oc": 0.203, "policy_loss": -0.0383, "value_loss": 0.0298, "entropy": 0.0183, "wall": 1791183178.9}
+{"stage": "validation", "run": "mlp_s1", "episodes": 2048, "val_prox": 0.9090909090909091, "smoothed": 0.909, "best": 0.92, "stale": 4, "wall": 1791183343.2}
+{"stage": "run_end", "run": "mlp_s1", "episodes": 2048, "best": 0.9197860962566845, "wall": 1791183343.2}
+{"stage": "bc", "run": "mlp_s2", "val_prox": 0.9144385026737968, "wall": 1791183607.5}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 1, "episodes": 64, "prox_success": 0.966, "oc": 0.469, "policy_loss": 0.0116, "value_loss": 0.0844, "entropy": 0.0146, "wall": 1791183673.5}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 2, "episodes": 128, "prox_success": 0.968, "oc": 0.406, "policy_loss": -0.0403, "value_loss": 0.0363, "entropy": 0.0191, "wall": 1791183735.0}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 3, "episodes": 192, "prox_success": 0.968, "oc": 0.344, "policy_loss": -0.0007, "value_loss": 0.0258, "entropy": 0.0268, "wall": 1791183796.4}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 4, "episodes": 256, "prox_success": 0.937, "oc": 0.531, "policy_loss": -0.0175, "value_loss": 0.0247, "entropy": 0.0227, "wall": 1791183856.6}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 5, "episodes": 320, "prox_success": 0.922, "oc": 0.312, "policy_loss": -0.0353, "value_loss": 0.0343, "entropy": 0.0222, "wall": 1791183912.8}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 6, "episodes": 384, "prox_success": 0.952, "oc": 0.422, "policy_loss": -0.0513, "value_loss": 0.0264, "entropy": 0.0325, "wall": 1791183974.3}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 7, "episodes": 448, "prox_success": 0.891, "oc": 0.375, "policy_loss": 0.0458, "value_loss": 0.0399, "entropy": 0.0126, "wall": 1791184036.5}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 8, "episodes": 512, "prox_success": 0.921, "oc": 0.281, "policy_loss": 0.0062, "value_loss": 0.0352, "entropy": 0.0188, "wall": 1791184094.0}
+{"stage": "validation", "run": "mlp_s2", "episodes": 512, "val_prox": 0.9197860962566845, "smoothed": 0.917, "best": 0.914, "stale": 1, "wall": 1791184256.7}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 9, "episodes": 576, "prox_success": 0.905, "oc": 0.359, "policy_loss": -0.0086, "value_loss": 0.0301, "entropy": 0.0104, "wall": 1791184318.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 10, "episodes": 640, "prox_success": 0.984, "oc": 0.312, "policy_loss": 0.001, "value_loss": 0.0203, "entropy": 0.013, "wall": 1791184386.6}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 11, "episodes": 704, "prox_success": 0.951, "oc": 0.344, "policy_loss": -0.0708, "value_loss": 0.0261, "entropy": 0.0383, "wall": 1791184444.3}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 12, "episodes": 768, "prox_success": 0.922, "oc": 0.375, "policy_loss": 0.0302, "value_loss": 0.036, "entropy": 0.0102, "wall": 1791184504.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 13, "episodes": 832, "prox_success": 0.938, "oc": 0.328, "policy_loss": -0.0807, "value_loss": 0.0332, "entropy": 0.0142, "wall": 1791184563.4}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 14, "episodes": 896, "prox_success": 0.906, "oc": 0.391, "policy_loss": -0.041, "value_loss": 0.036, "entropy": 0.0099, "wall": 1791184622.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 15, "episodes": 960, "prox_success": 0.953, "oc": 0.234, "policy_loss": -0.0088, "value_loss": 0.0367, "entropy": 0.0291, "wall": 1791184687.0}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 16, "episodes": 1024, "prox_success": 0.919, "oc": 0.375, "policy_loss": -0.0599, "value_loss": 0.0299, "entropy": 0.0141, "wall": 1791184744.9}
+{"stage": "validation", "run": "mlp_s2", "episodes": 1024, "val_prox": 0.9144385026737968, "smoothed": 0.917, "best": 0.914, "stale": 2, "wall": 1791184914.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 17, "episodes": 1088, "prox_success": 0.952, "oc": 0.438, "policy_loss": -0.0981, "value_loss": 0.0334, "entropy": 0.0241, "wall": 1791184979.7}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 18, "episodes": 1152, "prox_success": 0.891, "oc": 0.297, "policy_loss": 0.0798, "value_loss": 0.0417, "entropy": 0.0278, "wall": 1791185044.9}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 19, "episodes": 1216, "prox_success": 0.953, "oc": 0.391, "policy_loss": -0.0678, "value_loss": 0.0265, "entropy": 0.0333, "wall": 1791185105.5}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 20, "episodes": 1280, "prox_success": 0.938, "oc": 0.484, "policy_loss": -0.044, "value_loss": 0.0391, "entropy": 0.0294, "wall": 1791185163.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 21, "episodes": 1344, "prox_success": 0.968, "oc": 0.328, "policy_loss": -0.0316, "value_loss": 0.0317, "entropy": 0.0234, "wall": 1791185224.3}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 22, "episodes": 1408, "prox_success": 0.905, "oc": 0.375, "policy_loss": -0.0209, "value_loss": 0.0339, "entropy": 0.0172, "wall": 1791185301.1}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 23, "episodes": 1472, "prox_success": 0.953, "oc": 0.25, "policy_loss": 0.0503, "value_loss": 0.0336, "entropy": 0.0176, "wall": 1791185365.0}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 24, "episodes": 1536, "prox_success": 0.934, "oc": 0.266, "policy_loss": -0.0441, "value_loss": 0.0391, "entropy": 0.0339, "wall": 1791185423.4}
+{"stage": "validation", "run": "mlp_s2", "episodes": 1536, "val_prox": 0.9144385026737968, "smoothed": 0.914, "best": 0.914, "stale": 3, "wall": 1791185591.8}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 25, "episodes": 1600, "prox_success": 0.932, "oc": 0.359, "policy_loss": -0.0453, "value_loss": 0.041, "entropy": 0.0201, "wall": 1791185648.7}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 26, "episodes": 1664, "prox_success": 0.903, "oc": 0.344, "policy_loss": 0.0221, "value_loss": 0.0495, "entropy": 0.0386, "wall": 1791185713.2}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 27, "episodes": 1728, "prox_success": 0.905, "oc": 0.422, "policy_loss": 0.0439, "value_loss": 0.0434, "entropy": 0.0102, "wall": 1791185771.5}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 28, "episodes": 1792, "prox_success": 0.938, "oc": 0.266, "policy_loss": -0.05, "value_loss": 0.0385, "entropy": 0.0161, "wall": 1791185834.0}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 29, "episodes": 1856, "prox_success": 0.968, "oc": 0.297, "policy_loss": 0.0415, "value_loss": 0.0335, "entropy": 0.0239, "wall": 1791185890.4}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 30, "episodes": 1920, "prox_success": 0.922, "oc": 0.297, "policy_loss": -0.0822, "value_loss": 0.0312, "entropy": 0.0217, "wall": 1791185950.9}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 31, "episodes": 1984, "prox_success": 0.984, "oc": 0.422, "policy_loss": 0.035, "value_loss": 0.0279, "entropy": 0.0173, "wall": 1791186009.7}
+{"stage": "mappo", "run": "mlp_s2", "iteration": 32, "episodes": 2048, "prox_success": 0.967, "oc": 0.344, "policy_loss": 0.054, "value_loss": 0.0213, "entropy": 0.0108, "wall": 1791186069.0}
+{"stage": "validation", "run": "mlp_s2", "episodes": 2048, "val_prox": 0.9090909090909091, "smoothed": 0.912, "best": 0.914, "stale": 4, "wall": 1791186235.5}
+{"stage": "run_end", "run": "mlp_s2", "episodes": 2048, "best": 0.9144385026737968, "wall": 1791186235.5}
+{"stage": "selected", "run": "mlp_s1", "wall": 1791186235.5}
+{"stage": "test_chunk", "done": 155, "wall": 1791186422.5}
+{"stage": "test_chunk", "done": 1407, "wall": 1791187887.0}
+{"stage": "test_chunk", "done": 2725, "wall": 1791189330.2}
+{"stage": "test_chunk", "done": 3975, "wall": 1791190771.5}
+{"stage": "test_chunk", "done": 5617, "wall": 1791192213.1}
+{"stage": "test_chunk", "done": 8313, "wall": 1791193669.0}
+{"stage": "test_chunk", "done": 10452, "wall": 1791195110.7}
+{"stage": "test_chunk", "done": 11760, "wall": 1791196018.0}
+{"stage": "done", "primary": {"checkpoint": "final policies of both proximity runs, averaged per cell", "gap_prox_minus_oc__prox_trained_minus_oc_trained": [0.17, 0.135, 0.205], "passes": true}, "wall": 1791196026.7}

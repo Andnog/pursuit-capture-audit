@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20260926_w04_capture_robustness_x01",
+ "sealed_at": "2026-09-26T16:12:40.952141Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "DEVIATIONS_EN.md": "10a3ff86eb19e42cccac04926751e1e3f59e071b7ccb41105bb05539a34a236d",
+  "PROTOCOL_EN.md": "c99e80bd92593dc5a01f0df0de056be9fe84d7a59a351b5d28af3c58cd4fcf4a",
+  "SCIENTIFIC_DECISION_EN.md": "06406512041d501518f500e293b4149a5c9ece1fce33fc79d624832bede9444a",
+  "results.jsonl": "4768106f1af6fca817d78e73ca90a7cb4560d38e57382c5eb06a30326350a5af",
+  "run.log": "7b9ad1ab0bb84c9f1776f92dfc0aaa214c69d9b3b27974c4b5cac8aa19f7bfeb",
+  "source_snapshot/scripts/analyse_capture_robustness.py": "5ffa4145421f3383461d5a89364ed0b3301f6de23108429a2880434811f03828",
+  "summary.json": "1d0c4881a5e24b6888c2cab17fccab4780c3f988cbe0331f6e9a6b9e46612cbc"
+ }
+}

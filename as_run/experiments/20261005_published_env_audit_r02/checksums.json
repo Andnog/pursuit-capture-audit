@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_published_env_audit_r02",
+ "sealed_at": "2026-10-05T15:57:56.582992+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "ANALYSIS.json": "a8ff2d62b5184424e9c0b6555a477cc37855d39349f26931b18678dcf420b206",
+  "PROTOCOL_EN.md": "e7b109a4f6ef4ae126019ea1a9f8aafdbdec057cb4b691cd4597150658aefd69",
+  "SCIENTIFIC_DECISION_EN.md": "fe267b2910007f17cba1150b45f14fcfba641d05903dd7b800cce048eb410556",
+  "inputs.json": "77e93444c6ae4a657b2f8069bdf8aa6eb6e2a3d8b75ebf4ebacb96cb6b0bf98c",
+  "results.jsonl": "fa539ffc79575bf21ab6e0e0d053dcff2bb063aa973627f0d8d0e010d60a60c8",
+  "run.log": "e3f2a15f6108953c7df34fd72818c60e5191ef31f28d132b698ed5c8ab604e11",
+  "summary.json": "0f4674ce22e405b93e6fd51ae133c01b8f6126508fea331e244aa78da5328eb1",
+  "../../scripts/analyse_published_env_r02.py": "c2302fb7871315ba8a2ec999ef07b6f0914289ca66b23ed4ce2c1be358c1806c"
+ }
+}

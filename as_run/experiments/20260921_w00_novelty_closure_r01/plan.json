@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260921_w00_novelty_closure_r01",
+  "created": "2026-09-21",
+  "stage": "W0_REVISION",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "acceptance_rule_frozen_before_searching": true,
+  "pending_families": [
+    "T-CARE",
+    "sequential pursuit-planning record",
+    "full-method reads of Grasper/DualCL/DACOOP/PGTS",
+    "conventional temporal planner (D11)",
+    "citation chasing on B03/B04/B06"
+  ],
+  "discriminating_question": "Does any prior method perform joint, non-pairwise compatibility over a complete candidate combination, AND learn to select and maintain among the results, AND do so against a reactive evader in a lane-constrained domain with vehicle bodies?",
+  "acceptance_rule": {
+    "REFUTED": "a primary record implements the conjunction",
+    "DOCUMENTED_TECHNICAL_DIFFERENCE": "all five families resolved and read at method level, none implements the conjunction",
+    "POTENTIAL_DIFFERENCE": "one or more families remain unresolved"
+  },
+  "prohibited": [
+    "narrowing the discriminating question to make a source non-refuting",
+    "upgrading a reading depth not actually achieved",
+    "declaring a family closed because a search returned nothing"
+  ],
+  "decisions_to_resolve": [
+    "D11 conventional temporal planner",
+    "D05 closest learned baseline"
+  ],
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "sumo_episodes_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "record_type": "preserved_first_run",
+  "note": "The first execution of this package produced 13/14 PASS with case F4 recorded FAIL. The cause was a comparator dispatch defect in scripts/run_finite_examples.py, not a disagreement between the implementation and the frozen expectation. The fix and the rerun are recorded in DEVIATIONS_EN.md as deviation D-03. The first run's events.jsonl, results.jsonl and result.json were OVERWRITTEN by the rerun before this record was created; only the failing row was captured and is reproduced verbatim below. This is itself recorded as a deviation.",
+  "first_run_summary": {
+    "planned_cases": 14,
+    "executed_cases": 14,
+    "passed": 13,
+    "failed": 1,
+    "errors": 0,
+    "gate_verdict": "NOT_SUPPORTED",
+    "unit_tests_returncode": 0
+  },
+  "first_run_failing_row": {
+    "case_id": "F4",
+    "status": "FAIL",
+    "mismatches": [
+      {
+        "field": "b1_joint_window",
+        "detail": "observed=((9.0, 14.0),) expected=[[9.0, 14.0]]"
+      }
+    ],
+    "observed": {
+      "b1_joint_window": [[9.0, 14.0]],
+      "b1_max_contiguous": 5.0,
+      "coverage": 0.5,
+      "all_branch_verdict": "UNKNOWN",
+      "all_branch_claim_permitted": false
+    }
+  },
+  "interpretation": "The observed and expected values are numerically identical. The comparator applied exact equality to a tuple against an equal list of pairs. No scientific quantity changed between the two runs, and the frozen expectation was not edited."
+}

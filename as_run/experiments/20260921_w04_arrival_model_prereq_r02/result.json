@@ -1,0 +1,69 @@
+{
+  "package": "20260921_w04_arrival_model_prereq_r02",
+  "stage": "W4_PREREQUISITE",
+  "diagnostic_set": {
+    "path": "/Volumes/SSD Mac/PHD/Union/urban_dynamic_containment_evidence/v2_20260907/recovery_20260919_28/corrected_transitions.jsonl",
+    "sha256": "d499ea4323b31631616da7261c3b0b4aa7f72f88d8b17b99c4583adb95771619",
+    "records": 5980,
+    "access": "READ_ONLY"
+  },
+  "measured": {
+    "transitions": 5980,
+    "covered": 5598,
+    "prediction_status_counts": {
+      "POINT_HYPOTHESIS_ONLY": 5598,
+      "UNKNOWN": 382
+    },
+    "B1_direction_determinability": {
+      "error_fields_are_signed": false,
+      "negative_error_samples": 0,
+      "error_samples": 5598,
+      "observed_station_recorded": 0,
+      "verdict": "UNSIGNED",
+      "note": "Every recorded error is a magnitude and the observed station is absent, so the sign is unrecoverable and the direction cannot be established from this record."
+    },
+    "B2_under_refutation": {
+      "covered_with_certified_bound": 0,
+      "fraction": 0.0,
+      "threshold": 0.99,
+      "under_refuted": true
+    },
+    "B3_coverage": {
+      "coverage": 0.93612,
+      "threshold": 0.9,
+      "adequate": true
+    },
+    "B4_lane_change_containment": {
+      "observed_lane_changes": 352,
+      "inside_covered_predictions": 0,
+      "leakage": false,
+      "holds": true
+    },
+    "B5_braking_containment": {
+      "observed_braking": 309,
+      "inside_covered_predictions": 241,
+      "fraction_inside": 0.779935
+    },
+    "station_error_magnitude_m": {
+      "samples": 5598,
+      "min": 0.0,
+      "max": 2.40894,
+      "mean": 0.562422,
+      "note": "Magnitudes only. These describe accuracy, not approximation direction."
+    }
+  },
+  "verdict": {
+    "arrival_model_direction": "DIRECTION_UNRESOLVED",
+    "rationale": "The recorded errors are unsigned magnitudes and the observed station is absent, so the approximation direction cannot be established from this record. Separately and independently, B2 refutes UNDER: no covered transition carries a certified bound. UNRESOLVED is not UNDER, so the Rule A consequence follows either way.",
+    "consequence_under_rule_A": "No joint opportunity can ever be SUPPORTED from such a model. Rule A requires every participating set to be UNDER, and this model is not.",
+    "claim_class": "model_limitation_only",
+    "limit": "Historical traces can reveal limitations but cannot certify a changed model or domain. A refutation is a conclusion; survival is not."
+  },
+  "resources": {
+    "cpu_seconds": 0.031,
+    "wall_seconds": 0.036,
+    "sumo_process_starts": 0,
+    "sumo_episodes": 0,
+    "w4_cpu_hour_cap_consumed": false
+  }
+}

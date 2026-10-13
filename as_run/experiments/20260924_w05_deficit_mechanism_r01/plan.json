@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w05_deficit_mechanism_r01",
+  "created": "2026-09-24",
+  "stage": "W5",
+  "protocol": "PROTOCOL_EN.md",
+  "claim_class": "diagnostic_no_pre_registered_acceptance_rule",
+  "authorised_by": "Research lead, 2026-09-24, answer to question 2",
+  "fixed_before_investigating": [
+    "candidates checked against the whole corpus, not the route that suggested them",
+    "any correction applied to the MODEL, never fitted to the measurements",
+    "if a correction reduces the error, the previous refutation is re-stated rather than quietly softened"
+  ],
+  "resource_limits": {
+    "sumo_process_starts_permitted": 60,
+    "test_split_accesses_permitted": 0
+  }
+}

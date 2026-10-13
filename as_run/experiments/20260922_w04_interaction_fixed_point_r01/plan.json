@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_interaction_fixed_point_r01",
+  "created": "2026-09-22",
+  "stage": "W4",
+  "revision": "r01",
+  "protocol": "PROTOCOL_EN.md",
+  "continues": "20260921_w04_constructive_arrival_r01",
+  "claim_class": "analytical_correctness_in_a_finite_abstraction_only",
+  "acceptance_rule_frozen_before_implementing": true,
+  "closes": "the hole left open by constructive_arrival_set, which took blocking_windows as an INPUT",
+  "acceptance_rule": {
+    "WITNESS_VERIFIED": "a mutually consistent set is found and passes all three soundness checks",
+    "NOT_FOUND_ON_THIS_GRID": "the search returns nothing; existence UNKNOWN",
+    "PROVABLY_INCONSISTENT": "a proof of non-existence applies, independent of the grid",
+    "UNSOUND": "a witness is produced that fails a soundness check"
+  },
+  "requirement": "the package must demonstrate all three of the first outcomes; a module that can only report success has not been shown to detect failure",
+  "negative_controls_specified_in_advance": [
+    "pairwise passes while the joint constraint fails",
+    "a provably inconsistent configuration",
+    "a configuration where the convex hull readmits a blocked time"
+  ],
+  "negative_control_added_after_a_finding": "non-vacuity: the first witness had inert blocking windows",
+  "no_existence_theorem": "Kakutani requires CONVEX values; these arrival sets are deliberately nonconvex, so no existence guarantee applies and none is claimed",
+  "resource_limits": {
+    "sumo_process_starts_permitted": 0,
+    "optimizer_updates_permitted": 0,
+    "checkpoint_loads_permitted": 0,
+    "test_split_accesses_permitted": 0
+  }
+}

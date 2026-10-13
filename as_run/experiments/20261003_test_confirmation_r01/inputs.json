@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20261003_test_confirmation_r01",
+  "recorded_at_launch": "2026-10-03T05:33:50.654254+00:00",
+  "sources": {
+    "scripts/run_test_confirmation.py": "9259f5f93361978a932a371dff6fd29f19df543ec116e3bd36c1b0a127c52b57",
+    "scripts/audit_cage_certificate.py": "94494099399fa808541e762869eb99c499f738e849a47442b170d71efb456939",
+    "scripts/run_ambush_optimization.py": "7f877fe749480a637fba0322a57703f08b0eb8048d78d470fa1b2177f198f5ef",
+    "scripts/run_endpoint_validation.py": "533c4896a7a3e32bbe2ccb9f5d1002e339e062253efeee986879a2b3f22c651c",
+    "scripts/run_robustness_study.py": "ad55939afadf3fa3d6741126078af245f83b80b7e71f15230c6dbb07aca7c9fc",
+    "scripts/train_caging_pilot.py": "43b76f6831c4ec91eec99c4d087413ea0fa89518b5630860e4a10f7d2763dc96",
+    "src/joint_interception/rl/rollout.py": "63c5868854524ec6f09d7f1e160bd324b79c7103abc30a29a10fb2b63cda03fd",
+    "src/joint_interception/native/engine.py": "42e79fb237cd3f0cb6b50f0dfb7a23b4f8bb50453442c05acdb9065302f84f26",
+    "src/joint_interception/native/ambush.py": "a9aca907bce554cf3ef6a115fb8064261d2d335661c8e4ec34daf29887fdd6fd",
+    "src/joint_interception/native/ambush_plus.py": "3bac31545ed988cde92ba4da7bd1c0fabfb4ff808db4832267d7710b6f9f9efe",
+    "src/joint_interception/native/mappo_ambush.py": "a7a65090acd9756790b0c129a5f677996e8e973acaad7220fa5b1396ec1e8f0c",
+    "src/joint_interception/rl/mappo_policy.py": "0ac456d4215c744aa9c22768cc0aed584ad44ae1bd0f80354c85d11329a53599",
+    "src/joint_interception/rl/option_policy.py": "b048f893ee478417a38b6c5ec40f2ad677ac31f91f124203af62ba0083edb3a5",
+    "src/joint_interception/evaluation/capture_judge.py": "50ab20f7c3e870806daf9a6ee542683af8635f2355c6f52a0d9cf94153a43454",
+    "src/joint_interception/simulator/evader.py": "8d677227a146432fe51d692e859ffb34fcab83ca678451e015bb37932ea8f8ef",
+    "src/joint_interception/world/construction.py": "13e6edcb409d5b6f4d0eee872c24e711020528bb509d327192837d9bbc9dc4b6",
+    "configs/domain_v1.json": "cfdced2f90bf007726debf80ff1dbea7ce0ea9cedb4867526d9d7180e8e3f16b",
+    "MAPS_STATUS.json": "9514a2525c2cdae494ffdb6196aab43c9779d9ec23d6302cff523e807f292e1f",
+    "experiments/20261002_ambush_optimization_r01/summary.json": "34df9be1765038a4fe9331919caa684944d906cc8f0a3d1df74ccba3412e78ad",
+    "experiments/20261002_mappo_r01/state.pkl": "b8e6ca29cb5d280c3e35d2295654a984a28201ce9bc8aa4f08a42bd6063746a8"
+  }
+}

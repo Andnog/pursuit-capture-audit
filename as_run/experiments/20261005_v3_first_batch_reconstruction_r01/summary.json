@@ -1,0 +1,261 @@
+{
+  "runs": {
+    "W_mlp_s1": {
+      "sealed_log_iteration_1": {
+        "success": 0.377,
+        "oc": 0.377,
+        "prox": 0.951
+      },
+      "reconstructed": {
+        "success": 0.377,
+        "oc": 0.377,
+        "prox": 0.951
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 3,
+      "valid": 61,
+      "end_reasons": {
+        "evader_exit": 8,
+        "event": 23,
+        "horizon": 30
+      },
+      "decisions_trained_by_the_earlier_contract": 4517,
+      "of_which_without_a_future": 31,
+      "episodes_with_such_a_decision": 31,
+      "captures_on_a_decision_tick": 1,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "W_mlp_s2": {
+      "sealed_log_iteration_1": {
+        "success": 0.476,
+        "oc": 0.476,
+        "prox": 0.921
+      },
+      "reconstructed": {
+        "success": 0.476,
+        "oc": 0.476,
+        "prox": 0.921
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 1,
+      "valid": 63,
+      "end_reasons": {
+        "evader_exit": 10,
+        "event": 30,
+        "horizon": 23
+      },
+      "decisions_trained_by_the_earlier_contract": 4359,
+      "of_which_without_a_future": 28,
+      "episodes_with_such_a_decision": 28,
+      "captures_on_a_decision_tick": 5,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "P_mlp_s1": {
+      "sealed_log_iteration_1": {
+        "success": 0.935,
+        "oc": 0.435,
+        "prox": 0.935
+      },
+      "reconstructed": {
+        "success": 0.935,
+        "oc": 0.435,
+        "prox": 0.935
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 2,
+      "valid": 62,
+      "end_reasons": {
+        "evader_exit": 4,
+        "event": 58
+      },
+      "decisions_trained_by_the_earlier_contract": 1782,
+      "of_which_without_a_future": 1,
+      "episodes_with_such_a_decision": 1,
+      "captures_on_a_decision_tick": 0,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "P_mlp_s2": {
+      "sealed_log_iteration_1": {
+        "success": 0.937,
+        "oc": 0.46,
+        "prox": 0.937
+      },
+      "reconstructed": {
+        "success": 0.937,
+        "oc": 0.46,
+        "prox": 0.937
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 1,
+      "valid": 63,
+      "end_reasons": {
+        "evader_exit": 3,
+        "event": 59,
+        "horizon": 1
+      },
+      "decisions_trained_by_the_earlier_contract": 1784,
+      "of_which_without_a_future": 3,
+      "episodes_with_such_a_decision": 3,
+      "captures_on_a_decision_tick": 0,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "F_mlp_s1": {
+      "sealed_log_iteration_1": {
+        "success": 0.413,
+        "oc": 0.413,
+        "prox": 0.873
+      },
+      "reconstructed": {
+        "success": 0.413,
+        "oc": 0.413,
+        "prox": 0.873
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 1,
+      "valid": 63,
+      "end_reasons": {
+        "evader_exit": 5,
+        "event": 26,
+        "horizon": 32
+      },
+      "decisions_trained_by_the_earlier_contract": 4694,
+      "of_which_without_a_future": 33,
+      "episodes_with_such_a_decision": 33,
+      "captures_on_a_decision_tick": 1,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "F_mlp_s2": {
+      "sealed_log_iteration_1": {
+        "success": 0.339,
+        "oc": 0.339,
+        "prox": 0.919
+      },
+      "reconstructed": {
+        "success": 0.339,
+        "oc": 0.339,
+        "prox": 0.919
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 2,
+      "valid": 62,
+      "end_reasons": {
+        "evader_exit": 6,
+        "event": 21,
+        "horizon": 35
+      },
+      "decisions_trained_by_the_earlier_contract": 4884,
+      "of_which_without_a_future": 36,
+      "episodes_with_such_a_decision": 36,
+      "captures_on_a_decision_tick": 1,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "F_kan_s1": {
+      "sealed_log_iteration_1": {
+        "success": 0.413,
+        "oc": 0.413,
+        "prox": 0.873
+      },
+      "reconstructed": {
+        "success": 0.413,
+        "oc": 0.413,
+        "prox": 0.873
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 1,
+      "valid": 63,
+      "end_reasons": {
+        "evader_exit": 5,
+        "event": 26,
+        "horizon": 32
+      },
+      "decisions_trained_by_the_earlier_contract": 4666,
+      "of_which_without_a_future": 33,
+      "episodes_with_such_a_decision": 33,
+      "captures_on_a_decision_tick": 1,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    },
+    "F_kan_s2": {
+      "sealed_log_iteration_1": {
+        "success": 0.355,
+        "oc": 0.355,
+        "prox": 0.919
+      },
+      "reconstructed": {
+        "success": 0.355,
+        "oc": 0.355,
+        "prox": 0.919
+      },
+      "matches_the_sealed_log": true,
+      "attempted": 64,
+      "failed": 2,
+      "valid": 62,
+      "end_reasons": {
+        "evader_exit": 6,
+        "event": 22,
+        "horizon": 34
+      },
+      "decisions_trained_by_the_earlier_contract": 4747,
+      "of_which_without_a_future": 36,
+      "episodes_with_such_a_decision": 36,
+      "captures_on_a_decision_tick": 2,
+      "episodes_with_a_collision": 0,
+      "collision_inside_the_trained_interval": 0,
+      "penalised_for_a_collision_outside": 0,
+      "capture_instant_differs_from_corrected": 0,
+      "inner_gap_frames": 0
+    }
+  },
+  "reproduced_runs": 8,
+  "all_runs": {
+    "attempted": 512,
+    "matches_the_sealed_log": 8,
+    "failed": 13,
+    "valid": 499,
+    "decisions_trained_by_the_earlier_contract": 31433,
+    "of_which_without_a_future": 201,
+    "episodes_with_such_a_decision": 201,
+    "captures_on_a_decision_tick": 11,
+    "episodes_with_a_collision": 0,
+    "collision_inside_the_trained_interval": 0,
+    "penalised_for_a_collision_outside": 0,
+    "capture_instant_differs_from_corrected": 0,
+    "inner_gap_frames": 0,
+    "episodes_ending_at_the_horizon": 187,
+    "episodes_ending_by_evader_exit": 47
+  }
+}

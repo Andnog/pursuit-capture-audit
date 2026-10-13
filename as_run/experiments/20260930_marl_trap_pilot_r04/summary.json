@@ -1,0 +1,85 @@
+{
+  "p_trapped": {
+    "T_seed1_bc": 0.1534,
+    "T_seed1_best": 0.1591,
+    "T_seed1_last": 0.1818,
+    "T_seed2_bc": 0.1477,
+    "T_seed2_best": 0.1477,
+    "T_seed2_last": 0.142,
+    "U_seed1_bc": 0.1705,
+    "U_seed1_best": 0.1875,
+    "U_seed1_last": 0.1534,
+    "U_seed2_bc": 0.1193,
+    "U_seed2_best": 0.1364,
+    "U_seed2_last": 0.142,
+    "cut": 0.142,
+    "individual": 0.0341,
+    "random": 0.1364
+  },
+  "primary": {
+    "T": {
+      "best_minus_cut_pooled": [
+        0.011,
+        -0.031,
+        0.051
+      ],
+      "passes": false
+    },
+    "U": {
+      "best_minus_cut_pooled": [
+        0.02,
+        -0.04,
+        0.08
+      ],
+      "passes": false
+    }
+  },
+  "secondary": {
+    "T": {
+      "best_minus_individual": [
+        0.119,
+        0.071,
+        0.173
+      ],
+      "best_minus_bc": [
+        0.003,
+        -0.037,
+        0.04
+      ],
+      "last_minus_cut": [
+        0.02,
+        -0.023,
+        0.06
+      ]
+    },
+    "U": {
+      "best_minus_individual": [
+        0.128,
+        0.08,
+        0.179
+      ],
+      "best_minus_bc": [
+        0.017,
+        -0.017,
+        0.054
+      ],
+      "last_minus_cut": [
+        0.006,
+        -0.054,
+        0.065
+      ]
+    },
+    "T_minus_U_best": [
+      -0.009,
+      -0.062,
+      0.045
+    ],
+    "cut_minus_individual": [
+      0.108,
+      0.057,
+      0.165
+    ]
+  },
+  "failed_episodes": 0,
+  "marl_line_continues": false
+}

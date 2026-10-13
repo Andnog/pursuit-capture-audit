@@ -1,0 +1,38 @@
+{
+  "C0_ring": {
+    "path": "assets/controlled/C0_ring.net.xml",
+    "sha256": "14fb0235a7f3de81f44c47b31fde474b3ef928c9c44985d72e1f6fdc75b56720"
+  },
+  "C1_grid4x4": {
+    "path": "assets/controlled/C1_grid4x4.net.xml",
+    "sha256": "e99474854d62a18089e509b8af2d0dcadb3bdda85fa353974c104ec03f3fdae9"
+  },
+  "C2_grid6x6": {
+    "path": "assets/controlled/C2_grid6x6.net.xml",
+    "sha256": "0fcd0b989fa51722d1e127da12f0c88208034a4065c72d449374ef692a8a5357"
+  },
+  "C3_grid9x9": {
+    "path": "assets/controlled/C3_grid9x9.net.xml",
+    "sha256": "4128cb183df1f06b8bc0846e3240525fd9a35c0c0735529fe22a891bbf2375fc"
+  },
+  "C4_grid10x4": {
+    "path": "assets/controlled/C4_grid10x4.net.xml",
+    "sha256": "f8d1652336a61f63b22d1ed33cdda6723ffae81d467570eba5df8418809cc044"
+  },
+  "C5_spider": {
+    "path": "assets/controlled/C5_spider.net.xml",
+    "sha256": "06bdf361dda3cb9be2bcd743741c13e8f27a4d53f2cce8e4321e7d93138233fb"
+  },
+  "C6_grid6x6_signals": {
+    "path": "assets/controlled/C6_grid6x6_signals.net.xml",
+    "sha256": "313a6bc03880f8a0dd873db8cfb6675d9cc12ab4780aadce2ddcf126da006891"
+  },
+  "C7_grid6x6_arterials": {
+    "path": "assets/controlled/C7_grid6x6_arterials.net.xml",
+    "sha256": "e90ada4f6f5490023eca6a20efe77f94ab6abf45b31d19cbb3c0dee22821efa0"
+  },
+  "C8_grid6x6_irregular": {
+    "path": "assets/controlled/C8_grid6x6_irregular.net.xml",
+    "sha256": "b100cdccbef02c63831538f949e839ea5c5afec119af2adb0b70625c97f4c6b9"
+  }
+}

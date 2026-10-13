@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261002_sensitivity_r02",
+ "sealed_at": "2026-10-02T16:42:03.315145Z",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "PROTOCOL_EN.md": "2b7c35ce37a1e7b79f4e50f9085efe280e6a96b44fda1bdfdbfac510b50de7e2",
+  "SCIENTIFIC_DECISION_EN.md": "2624935513a60f5218d4c497b12d61d5998d15573fc444f93ff64555d156ad01",
+  "inputs.json": "37ef38436957de72d524e1267a1a43a2020461d0d91f576dc18d576ba768631a",
+  "log.jsonl": "4d01c88b4350d1470a38e03e3a1857f1f5d7b7c901807bf1f3c8b3ac172cb93b",
+  "results.jsonl": "801b224dd0290c2a2a31e973949aceab7aab9252ad829b23b097d12c96bb1acd",
+  "run.log": "0edd8f2cd83458fe1db70b4fd40084bad6452ea6e66a7858eacef7fe7a5cedff",
+  "state.pkl": "922247a2ba5064dfd82c83e1b26430d16c79ab29a8c72d58eb680e5454878be4",
+  "summary.json": "b759bb41f0ebacb230d92ace8cf6a351adde8b1f84a555d6461bb6b44dc0b6ce"
+ }
+}

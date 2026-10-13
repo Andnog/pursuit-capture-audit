@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261004_audit_addendum_r01",
+ "sealed_at": "2026-10-04T16:03:48.079947+00:00",
+ "algorithm": "sha256",
+ "sealed_after_all_writers_ended": true,
+ "excludes_itself": true,
+ "files": {
+  "ADDENDUM_SUMMARY.json": "94b64ab61040a152f982448c18503e5f386045e8f5d28833382f8294dfeb3c27",
+  "PROTOCOL_EN.md": "7798b9cf939be5910939a894c33d0cde11093b98eba595a5d91c87a9987c4f5d",
+  "SCIENTIFIC_DECISION_EN.md": "995da7038205e27bafa0844949dbd081fb36a23f997c6534dd856bc3a91532cd",
+  "inputs.json": "043e3273162cb5faaadae52a58a59de887efa8961c8ba44cf0b93f53ea9a9adc",
+  "progress.log": "4d033bba2b18477114596c2d51082c0ac3c808fc1fdb816950b6dfb239c22628",
+  "results.jsonl": "08ac5cebd7f1d0a56b5ae94a9eaea85cd51debf27812f55216f98c895d36a1d0",
+  "run.log": "a958272a4c55d0b23e9e9b482753eb13f749d6e302390d5109b16b433fdb8515"
+ }
+}

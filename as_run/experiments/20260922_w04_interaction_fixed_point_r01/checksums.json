@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260922_w04_interaction_fixed_point_r01",
+  "sealed_at": "2026-09-23T03:26:48.748388Z",
+  "algorithm": "sha256",
+  "sealed_after_all_writers_ended": true,
+  "excludes_itself": true,
+  "files": {
+    "DEVIATIONS_EN.md": "31960213ed50d68752ded65ac9b0da8a5363edd351bf5e9fb5e37b49d934e06c",
+    "PROTOCOL_EN.md": "b5121da4a5dd8ca28aa68d817327c1ddc58fec9a4d0bb664ef23a1eebf84a5ec",
+    "SCIENTIFIC_DECISION_EN.md": "afbe97e8583e1a3b6fccd2694d75a255347278ce80d00c8409f38d9eef6a3a5d",
+    "domain.json": "e4d3658bba6731b0e79572486e784e638c23587190b59eacdea95bc9a2aad11d",
+    "environment.json": "1697aef17ca269304e2d94322b3edb4bece13109fa396fbf6f3220b86fa509a6",
+    "events.jsonl": "235f231a7792a3adcd42787ba060042b0a9b92c3c63da813f110ef29d9c9fb72",
+    "inputs.json": "dd5bd58ceda7963091eb467ec37e54ca11f347c4b5ae222bacdc721a76a2d549",
+    "plan.json": "ff129880b3c3d32a57347cfedb58b65f805f5dd2fc8ca19684a859bedc22fa78",
+    "result.json": "1e820cc75c1bc5a3c198b941e13a02d00877e5faa4f0830502d75ef089d6e477",
+    "results.jsonl": "6d54b8457781633c22222f910e30c09ccdc35de2de944ae929aa99af64f8b91f"
+  },
+  "verdict": "INTERACTION_OPERATOR_IMPLEMENTED_AND_CONTROLLED",
+  "limit": "A matching hash proves byte identity. It is not scientific validation."
+}

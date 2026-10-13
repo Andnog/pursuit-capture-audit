@@ -1,0 +1,50 @@
+{
+ "schema_version": 1,
+ "experiment_id": "20261005_mappo_v3_r01",
+ "recorded_at_launch": "2026-10-05T15:13:11.872850+00:00",
+ "amendment": "A-133 R4-A",
+ "sources": {
+  "scripts/train_mappo_v3.py": "81cd5495168541382f0e98b82671a684f45ff1521117d41b4dcb2bb71dc18291",
+  "scripts/train_mappo_v2.py": "8191a5f69bd8cee61f20ef51b8559fbd6f6ca4798f312dcf95b860f19a2d8ba7",
+  "scripts/train_mappo_prox.py": "ca5ffc3dd4f36cf8eef341843d67148593d6c374946081cc4934e2487d7b0fd7",
+  "scripts/audit_cage_certificate.py": "14475fd3be552ea4b2cda7951d44193ff7925bd2d648cccb5059a7ecf32a7c2f",
+  "scripts/run_test_confirmation.py": "9259f5f93361978a932a371dff6fd29f19df543ec116e3bd36c1b0a127c52b57",
+  "scripts/run_ambush_optimization.py": "7f877fe749480a637fba0322a57703f08b0eb8048d78d470fa1b2177f198f5ef",
+  "tests/test_mappo_v3.py": "a8ff3d35bcbac55d7077bd81f12a71969205ba19c4ccd38d752cd9be06bd763d",
+  "src/joint_interception/native/mappo_ambush_v3.py": "9f46f18dac097e982fe02a7a82024450093f85796b310e2e6bb3fc4d18736ad8",
+  "src/joint_interception/native/mappo_ambush_v2.py": "ef0509ea5c7923269cd35ba3c56f330c889f16a1089db84ab3e8fb8495cd1d20",
+  "src/joint_interception/native/mappo_ambush.py": "67d398874bf87efd3595ecf2dd46ebf933912a157fb88204eac99f285d4498ea",
+  "src/joint_interception/native/ambush_plus.py": "ccf74ee08a8fa4e237dfd7bc4d3da42f5c831a33d5aadfad7c974d259af9a822",
+  "src/joint_interception/native/engine.py": "a2b48c5bbe009286875f293d6690f5c05da2be658913afbdaa5a8d574a51d70d",
+  "src/joint_interception/rl/mappo_policy.py": "53d91f4d73bf1b4a6c82ce991ef54b0243dadf5a757f9ac64ed854bdbe87fc45",
+  "src/joint_interception/rl/option_policy.py": "b048f893ee478417a38b6c5ec40f2ad677ac31f91f124203af62ba0083edb3a5",
+  "src/joint_interception/simulator/evader.py": "a9b531635fe5b9b462e7a2d69419bf112c8b53f5cdee03c8341ad34146b85502",
+  "src/joint_interception/simulator/sumo_adapter.py": "929d3f73aa3a951d389f2476f02442acf279b6ca4486d18f153ef1eb28a2ebe5"
+ },
+ "imitation_starts": {
+  "package": "experiments/20261004_mappo_v2_r01/state.pkl",
+  "sha256": "dac015ea8a28d17a122102bb32f5c03b6a584e4cd6b824646438d106a2c4df09"
+ },
+ "salts": {
+  "validation": "PV23",
+  "training": "PT23",
+  "test": "PE23"
+ },
+ "order": [
+  "W_mlp_s1",
+  "W_mlp_s2",
+  "P_mlp_s1",
+  "P_mlp_s2",
+  "F_mlp_s1",
+  "F_mlp_s2",
+  "F_kan_s1",
+  "F_kan_s2"
+ ],
+ "warmup": {
+  "iterations": 4,
+  "episodes": 256,
+  "epochs": 10,
+  "lr": 0.001
+ },
+ "sumo": "1.21.0"
+}

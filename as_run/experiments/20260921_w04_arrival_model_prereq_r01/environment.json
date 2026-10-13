@@ -1,0 +1,11 @@
+{
+  "python_version": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "sumo_process_starts": 0,
+  "sumo_episodes_executed": 0,
+  "optimizer_run": false,
+  "checkpoint_loaded": false,
+  "test_split_accessed": false,
+  "historical_evidence_modified": false
+}

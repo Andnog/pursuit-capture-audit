@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "domain_id": "finite_abstraction_v1",
+  "experiment_id": "20260920_w01_finite_examples_r01",
+  "status": "FINITE_ABSTRACTION_ONLY",
+  "description": "The abstraction under which this package's results hold. It is NOT the operational domain: no simulator, no continuous dynamics, no real geometry and no capture contract are present.",
+  "time": {
+    "representation": "continuous real-valued arrival times within finite unions of closed intervals",
+    "physical_step_s": null,
+    "decision_interval_s": null,
+    "horizon_s": null,
+    "note": "The operational 0.1 s step, 1 s decision interval and 300 s horizon are contract values fixed at W2/W3. They play no role here."
+  },
+  "geometry": {
+    "body_length_m": 5.0,
+    "body_width_m": null,
+    "min_gap_m": 2.5,
+    "lane_model": "one usable scalar length per lane; stations are counted, not placed",
+    "swept_body_model": "NOT IMPLEMENTED; movement conflicts are declared, not computed",
+    "orientation_model": "NOT IMPLEMENTED",
+    "note": "Body width 1.8 m and orientation are part of the operational contract and are not used by this abstraction."
+  },
+  "arrival_model": {
+    "implemented": "set algebra over canonical unions with a mandatory approximation-direction label",
+    "not_implemented": "any procedure that DERIVES arrival sets from a road network, traffic state or vehicle dynamics",
+    "direction_labels": ["UNDER", "OVER", "PREDICTION"],
+    "soundness_rules": {
+      "rule_A_support_requires": "all participating sets labelled UNDER",
+      "rule_B_rejection_requires": "all participating sets labelled OVER"
+    },
+    "consequence_recorded": "On the only arrival model this programme has measured (historical obligation O28), free-flow lane estimates are lower bounds with no attainable upper bound under interaction, which makes the derived sets OVER-approximations. Under Rule A such sets can never yield SUPPORTED."
+  },
+  "evader_model": {
+    "implemented": "declared branch identifiers and a coverage fraction",
+    "not_implemented": "any evader policy, continuation rule or route model",
+    "future_route_oracle_used": false
+  },
+  "capture_contract": {
+    "status": "UNRESOLVED",
+    "decision_ref": "D06",
+    "unresolved_parameters": [
+      "contact_gap_min_m", "contact_gap_max_m", "capture_speed_max_mps",
+      "relative_speed_max_mps", "orientation_tolerance_rad", "dwell_time_s",
+      "geometry_tolerance_m"
+    ],
+    "dwell_values_used_here": "per-case illustrative values in configs/finite_examples_v1.json; they are NOT the operational dwell_time_s"
+  },
+  "team": {
+    "pursuers_in_operational_contract": 5,
+    "participants_in_these_cases": "2 or 3, per case",
+    "note": "Case sizes were chosen so that every answer is exhaustively checkable by hand."
+  },
+  "not_represented": [
+    "SUMO or any simulator",
+    "lane change, signal and junction behaviour",
+    "braking and acceleration limits",
+    "safety guard or shield",
+    "capture judge",
+    "reward, policy, optimizer or checkpoint",
+    "TRAINING, DEVELOPMENT or TEST splits"
+  ]
+}

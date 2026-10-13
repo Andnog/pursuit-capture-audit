@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "experiment_id": "20260924_w04_d06_remedy_r01",
+  "sources": {
+    "configs/domain_v1.json": "169d705b2c3fa3011f2b1ad5dae6a1547a25945be69671756e5198b1b9a61123",
+    "src/joint_interception/domain/contracts.py": "f1d203db1191a3dfbf1613a8fad8f4a70867b13de83db2bd1ebaac8673046f2f",
+    "src/joint_interception/simulator/sumo_adapter.py": "775e5046b96443ac819a7e5cbb206606ed614c3b733e6f8c9437152d5f553523",
+    "src/joint_interception/evaluation/capture_judge.py": "87a12f971336f03ba115e4eb2f0c44803d2e2e0b1ee0faad826517ef91815c03",
+    "experiments/20260924_w04_d06_remedy_r01/probe.py": "442abc7f6f4b68aa097dd3f38637ddf7bca846d23091968f6c90ec6ca696f165"
+  },
+  "note": "domain_before.json is the contract as it stood before A-46; domain.json is the contract the arms ran under"
+}

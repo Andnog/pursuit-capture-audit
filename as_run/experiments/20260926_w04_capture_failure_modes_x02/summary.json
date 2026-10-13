@@ -1,0 +1,9 @@
+{
+  "failures": 16,
+  "modes": {
+    "SUMO evader reaches the blocking edge before the finisher": 7,
+    "SUMO evader never reaches the blocking edge": 7,
+    "both on the edge in order, no dwell (gap or speed outside band)": 1,
+    "SUMO captures, but earlier/later or by another pursuer": 1
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "N_I": {
+    "null_d06": {
+      "observed": 0.031,
+      "family_95": [
+        0.0146,
+        0.0511
+      ],
+      "families": 274,
+      "n": 548
+    },
+    "null_prox_5m": {
+      "observed": 0.3321,
+      "family_95": [
+        0.2847,
+        0.3814
+      ],
+      "families": 274,
+      "n": 548
+    },
+    "null_prox_5m_centre": {
+      "observed": 0.2336,
+      "family_95": [
+        0.1916,
+        0.2774
+      ],
+      "families": 274,
+      "n": 548
+    },
+    "null_prox_10m": {
+      "observed": 0.4234,
+      "family_95": [
+        0.3741,
+        0.4745
+      ],
+      "families": 274,
+      "n": 548
+    },
+    "B2T_lane_nv_joint": {
+      "observed": 0.0792,
+      "family_95": [
+        0.0167,
+        0.1581
+      ],
+      "families": 69,
+      "n": 240
+    },
+    "B2T_junction_joint": {
+      "observed": 0.7252,
+      "family_95": [
+        0.6599,
+        0.7845
+      ],
+      "families": 186,
+      "n": 848
+    },
+    "B2F_lane_nv_joint": {
+      "observed": 0.0844,
+      "family_95": [
+        0.0468,
+        0.1292
+      ],
+      "families": 150,
+      "n": 225
+    },
+    "B2F_junction_joint": {
+      "observed": 0.8197,
+      "family_95": [
+        0.7906,
+        0.848
+      ],
+      "families": 395,
+      "n": 1098
+    }
+  },
+  "P": {
+    "captures": 1433,
+    "families_scenario_evader": 176,
+    "cities": {
+      "adelaide_cbd": 379,
+      "phoenix_downtown": 240,
+      "portland_downtown": 113,
+      "sapporo_grid": 184,
+      "seattle_downtown": 153,
+      "toronto_downtown": 170,
+      "washington_downtown": 194
+    },
+    "escapes_observed": 0,
+    "note": "captures share families across methods, teams and seeds; no i.i.d. bound"
+  },
+  "K": {
+    "families_total": 386,
+    "splits": {
+      "DEVELOPMENT": {
+        "rows": 2284,
+        "families": 230,
+        "observed_auc": {
+          "kan": 0.5734,
+          "spline_gam": 0.5752,
+          "mlp": 0.5529,
+          "logistic": 0.5657
+        },
+        "observed_bin_r_lanes": {
+          "kan": 0.2768,
+          "spline_gam": 0.2876,
+          "mlp": 0.0954,
+          "logistic": 0.0208
+        },
+        "differences": {
+          "auc_kan_minus_spline_gam": {
+            "observed": -0.0019,
+            "family_95": [
+              -0.0482,
+              0.0424
+            ],
+            "valid_draws": 1000
+          },
+          "auc_kan_minus_mlp": {
+            "observed": 0.0204,
+            "family_95": [
+              -0.0327,
+              0.0707
+            ],
+            "valid_draws": 1000
+          },
+          "auc_kan_minus_logistic": {
+            "observed": 0.0077,
+            "family_95": [
+              -0.0454,
+              0.0588
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_spline_gam": {
+            "observed": -0.0108,
+            "family_95": [
+              -0.2219,
+              0.2486
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_mlp": {
+            "observed": 0.1814,
+            "family_95": [
+              -0.1191,
+              0.3535
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_logistic": {
+            "observed": 0.256,
+            "family_95": [
+              -0.0856,
+              0.388
+            ],
+            "valid_draws": 1000
+          }
+        }
+      },
+      "TEST": {
+        "rows": 936,
+        "families": 156,
+        "observed_auc": {
+          "kan": 0.597,
+          "spline_gam": 0.6452,
+          "mlp": 0.6471,
+          "logistic": 0.6459
+        },
+        "observed_bin_r_lanes": {
+          "kan": 0.6804,
+          "spline_gam": 0.7982,
+          "mlp": 0.6481,
+          "logistic": 0.6275
+        },
+        "differences": {
+          "auc_kan_minus_spline_gam": {
+            "observed": -0.0482,
+            "family_95": [
+              -0.1069,
+              0.0082
+            ],
+            "valid_draws": 1000
+          },
+          "auc_kan_minus_mlp": {
+            "observed": -0.0501,
+            "family_95": [
+              -0.1114,
+              0.0081
+            ],
+            "valid_draws": 1000
+          },
+          "auc_kan_minus_logistic": {
+            "observed": -0.0489,
+            "family_95": [
+              -0.1094,
+              0.0114
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_spline_gam": {
+            "observed": -0.1179,
+            "family_95": [
+              -0.2427,
+              0.1569
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_mlp": {
+            "observed": 0.0323,
+            "family_95": [
+              -0.1534,
+              0.1967
+            ],
+            "valid_draws": 1000
+          },
+          "binr_kan_minus_logistic": {
+            "observed": 0.0529,
+            "family_95": [
+              -0.1685,
+              0.2038
+            ],
+            "valid_draws": 1000
+          }
+        }
+      }
+    }
+  },
+  "replays": {
+    "W": {
+      "cases": 188,
+      "failed": 0,
+      "witness_reproduced": 188,
+      "states_equal_at_t_c": 188,
+      "same_finisher": 188,
+      "follow_up_60": 188,
+      "escapes": 0
+    },
+    "S": {
+      "by_method": {
+        "plus_opt": {
+          "episodes": 200,
+          "legacy_reproduces_sealed": 200,
+          "any_non_accepted_legacy": 156,
+          "any_non_accepted_checked": 156,
+          "outcome_changed": 0,
+          "legacy_d06": 68,
+          "checked_d06": 68
+        },
+        "ambush_a95": {
+          "episodes": 200,
+          "legacy_reproduces_sealed": 200,
+          "any_non_accepted_legacy": 115,
+          "any_non_accepted_checked": 115,
+          "outcome_changed": 0,
+          "legacy_d06": 55,
+          "checked_d06": 55
+        },
+        "pursuit": {
+          "episodes": 200,
+          "legacy_reproduces_sealed": 200,
+          "any_non_accepted_legacy": 66,
+          "any_non_accepted_checked": 66,
+          "outcome_changed": 0,
+          "legacy_d06": 52,
+          "checked_d06": 52
+        }
+      },
+      "dispatch_events": {
+        "legacy": {
+          "fallback": 998,
+          "rejected": 15543,
+          "no_route": 1
+        },
+        "checked": {
+          "fallback": 3821,
+          "rejected": 15914,
+          "no_route": 23
+        }
+      },
+      "paired_episodes": 600
+    }
+  }
+}

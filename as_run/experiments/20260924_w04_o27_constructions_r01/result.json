@@ -1,0 +1,169 @@
+{
+  "package": "20260924_w04_o27_constructions_r01",
+  "stage": "W4",
+  "claim_class": "abstract_feasibility_under_the_declared_model",
+  "gate": "W4_GATE_NOT_PASSED",
+  "gate_rule": "at least two CONSTRUCTED among the four AVOIDANT cases",
+  "constructed": {
+    "AVOIDANT": 0,
+    "OPTIMAL_ESCAPE": 0
+  },
+  "per_case": [
+    {
+      "level": "AVOIDANT",
+      "map_id": "adelaide_cbd",
+      "verdict": "NECESSARY_BUT_B1_NULL",
+      "expansions": 19949,
+      "tally": {
+        "NECESSARY_BUT_B1_NULL": 6
+      }
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "seattle_downtown",
+      "verdict": "CAPTURE_NOT_COORDINATED",
+      "expansions": 1603,
+      "tally": {
+        "CAPTURE_NOT_COORDINATED": 12,
+        "FACTUAL_FAILED_VERIFICATION": 12
+      }
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "toronto_downtown",
+      "verdict": "CAPTURE_NOT_COORDINATED",
+      "expansions": 8509,
+      "tally": {
+        "CAPTURE_NOT_COORDINATED": 12
+      }
+    },
+    {
+      "level": "AVOIDANT",
+      "map_id": "washington_downtown",
+      "verdict": "NO_WITNESS_WITHIN_CAP",
+      "expansions": 1396,
+      "tally": {}
+    },
+    {
+      "level": "OPTIMAL_ESCAPE",
+      "map_id": "adelaide_cbd",
+      "verdict": "NECESSARY_BUT_B1_NULL",
+      "expansions": 2497,
+      "tally": {
+        "NECESSARY_BUT_B1_NULL": 14,
+        "FACTUAL_FAILED_VERIFICATION": 128,
+        "CAPTURE_NOT_COORDINATED": 114
+      }
+    },
+    {
+      "level": "OPTIMAL_ESCAPE",
+      "map_id": "seattle_downtown",
+      "verdict": "CAPTURE_NOT_COORDINATED",
+      "expansions": 7259,
+      "tally": {
+        "FACTUAL_FAILED_VERIFICATION": 6,
+        "CAPTURE_NOT_COORDINATED": 18,
+        "NECESSARY_BUT_B1_NULL": 12
+      }
+    },
+    {
+      "level": "OPTIMAL_ESCAPE",
+      "map_id": "toronto_downtown",
+      "verdict": "NECESSARY_BUT_B1_NULL",
+      "expansions": 5130,
+      "tally": {
+        "FACTUAL_FAILED_VERIFICATION": 57,
+        "NECESSARY_BUT_B1_NULL": 87,
+        "CAPTURE_NOT_COORDINATED": 8
+      }
+    },
+    {
+      "level": "OPTIMAL_ESCAPE",
+      "map_id": "washington_downtown",
+      "verdict": "CAPTURE_NOT_COORDINATED",
+      "expansions": 4353,
+      "tally": {
+        "FACTUAL_FAILED_VERIFICATION": 713,
+        "CAPTURE_NOT_COORDINATED": 94
+      }
+    }
+  ],
+  "robustness_of_the_gate_verdict": {
+    "to_the_coordination_criterion": "even under the most lenient rule - necessity alone - AVOIDANT yields captures needing the helper in 1 of 4 cases, below the 2 required. The gate outcome does not depend on the criterion chosen.",
+    "to_the_cpu_cap": "3 of 8 cases hit the CPU budget in a diagnostic rerun and did not reproduce exactly; the search returns immediately on a CONSTRUCTED, and those cases ran to their budget, so neither run produced a construction. 0 CONSTRUCTED in both runs."
+  },
+  "coordination_exists_under_the_model": {
+    "cases_with_captures_that_fail_without_the_helper": {
+      "AVOIDANT": 1,
+      "OPTIMAL_ESCAPE": 3
+    },
+    "counts": {
+      "AVOIDANT|adelaide_cbd": 6,
+      "AVOIDANT|seattle_downtown": 0,
+      "AVOIDANT|toronto_downtown": 0,
+      "AVOIDANT|washington_downtown": 0,
+      "OPTIMAL_ESCAPE|adelaide_cbd": 14,
+      "OPTIMAL_ESCAPE|seattle_downtown": 12,
+      "OPTIMAL_ESCAPE|toronto_downtown": 87,
+      "OPTIMAL_ESCAPE|washington_downtown": 0
+    }
+  },
+  "why_no_construction": "every capture that needed its helper had a null b1 contrast. The helper's contribution was positional and established before D12's window: on the real maps the evader's decisive choice preceded the witness start by 6 to 33 s, and a helper already positioned cannot be undone by five decisions of pursuit. Under the frozen D12 window, coordination-by-positioning - the only form this model produces against an evader that reads pursuer positions - is not certifiable.",
+  "search_coverage": {
+    "stopped_by_first_run": "not recorded - a reporting defect of the runner",
+    "stopped_by_rerun": {
+      "AVOIDANT|adelaide_cbd": "CPU budget",
+      "AVOIDANT|seattle_downtown": "candidate queue exhausted",
+      "AVOIDANT|toronto_downtown": "candidate queue exhausted",
+      "AVOIDANT|washington_downtown": "candidate queue exhausted",
+      "OPTIMAL_ESCAPE|adelaide_cbd": "candidate queue exhausted",
+      "OPTIMAL_ESCAPE|seattle_downtown": "CPU budget",
+      "OPTIMAL_ESCAPE|toronto_downtown": "candidate queue exhausted",
+      "OPTIMAL_ESCAPE|washington_downtown": "CPU budget"
+    },
+    "reading": "5 of 8 cases exhausted the candidate generator's space before the budget; 'no construction' is relative to that generator's patterns, not to the budget"
+  },
+  "verification_rejections": {
+    "reasons": {
+      "AVOIDANT|seattle_downtown": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 6,
+        "{\"collisions\": 5048, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 3,
+        "{\"collisions\": 5058, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 3
+      },
+      "OPTIMAL_ESCAPE|adelaide_cbd": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 128
+      },
+      "OPTIMAL_ESCAPE|seattle_downtown": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 6
+      },
+      "OPTIMAL_ESCAPE|toronto_downtown": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 23,
+        "{\"collisions\": 4, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 0}": 8,
+        "{\"collisions\": 5, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 4,
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 4
+      },
+      "OPTIMAL_ESCAPE|washington_downtown": {
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 319,
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 2}": 311,
+        "{\"collisions\": 0, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 3}": 49,
+        "{\"collisions\": 4, \"deterministic\": true, \"judge\": \"SUPPORTED\", \"safety_failures\": 1}": 18
+      }
+    },
+    "reading": "the declared model, legal on all eight baselines, produces emergency braking (1-3 events) or collisions (up to 5058 steps of persistent overlap) under some construction plans. Verification rejected every one, so no invalid construction was accepted, but model defects removed part of the searchable space."
+  },
+  "known_model_defect": "chained internal lanes are read as their first lane only (identified 2026-09-25 during the run, not fixed during it); optimistic",
+  "not_established": [
+    "that capture is infeasible - a failed search is not an impossibility proof",
+    "anything native: no SUMO process",
+    "physical feasibility, assistance, learning, benefit, transfer or novelty"
+  ],
+  "resources": {
+    "cpu_seconds_first_run_upper_bound": 3432,
+    "budget_cpu_seconds": 7200,
+    "diagnostic_rerun_cpu_seconds": 3444.6,
+    "sumo_process_starts": 0,
+    "optimizer_updates": 0,
+    "checkpoint_loads": 0,
+    "test_split_accesses": 0
+  }
+}
