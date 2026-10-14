@@ -34,8 +34,8 @@ check-results:   ## Fail if the committed tables are out of date
 
 check: lint test verify recompute check-results  ## Everything that needs no simulator
 
-site:            ## Build the web site into site/
-	uv run --group docs mkdocs build --strict
+site:            ## Rebuild the data of the web site from the sealed evidence
+	uv run python tools/build_site_data.py
 
 serve:           ## Preview the web site at http://127.0.0.1:8000
-	uv run --group docs mkdocs serve
+	python3 -m http.server 8000 --bind 127.0.0.1 --directory docs

@@ -6,8 +6,9 @@ It writes, under `docs/assets/data/`:
 
 - one JSON file per episode shown in the animations: positions, and for every frame the state of
   each condition of the operational capture rule, computed by the library;
-- `results.json` and the tables of `docs/generated/`: rates and contrasts of the two held-out
-  evaluations, computed by the library from the per-episode records.
+- `charts.json`: every number that the page draws or prints. The rates and the contrasts of the
+  two held-out evaluations are computed by the library from the per-episode records; the others
+  are read from the sealed summaries.
 
 Nothing here is typed by hand: every number of the site comes from a sealed package or from a
 trace, through `pursuit_audit`.
@@ -17,10 +18,14 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+
+from build_results import sealed_values  # noqa: E402
 
 import pursuit_audit as pa  # noqa: E402
 from pursuit_audit.endpoints.specification import PairState  # noqa: E402
@@ -42,7 +47,6 @@ from pursuit_audit.reporting.headline import (  # noqa: E402
 from pursuit_audit.statistics.contrasts import cell_means, pooled_rate  # noqa: E402
 
 DATA = os.path.join(ROOT, "docs", "assets", "data")
-GENERATED = os.path.join(ROOT, "docs", "generated")
 EPISODES = os.path.join(ROOT, "results", "episodes")
 EXAMPLES = os.path.join(ROOT, "as_run", "audit_kit", "examples")
 EXPERIMENTS = os.path.join(ROOT, "as_run", "experiments")
@@ -240,71 +244,299 @@ def rates(package_name: str, block: str, null_block: str | None) -> dict:
     }
 
 
-def markdown_table(header: list[str], rows: list[list[str]]) -> str:
-    """Return a Markdown table."""
-    lines = ["| " + " | ".join(header) + " |", "|" + "---|" * len(header)]
-    lines += ["| " + " | ".join(row) + " |" for row in rows]
-    return "\n".join(lines) + "\n"
+def sealed_json(package: str, name: str) -> dict:
+    """Return a sealed JSON file of a package."""
+    with open(os.path.join(EXPERIMENTS, package, name), encoding="utf-8") as handle:
+        return json.load(handle)
 
 
-def number(value: float | None, digits: int = 3) -> str:
-    """Format a rate or a difference."""
-    return "–" if value is None else f"{value:.{digits}f}"
+def interval(values: list[float], scale: float = 1.0) -> dict:
+    """Return ``{"v", "lo", "hi"}`` from a sealed ``[estimate, low, high]``."""
+    return {"v": values[0] * scale, "lo": values[1] * scale, "hi": values[2] * scale}
 
 
-def build_results() -> None:
-    """Write `results.json` and the generated tables."""
+def parse_printed(text: str) -> dict:
+    """Parse a value as the article prints it, such as ``42.7% [37.3, 48.3]`` or ``+0.126 [..]``."""
+    numbers = [float(x) for x in re.findall(r"[-+]?\d+\.?\d*", text.replace("\u2212", "-"))]
+    if len(numbers) == 1:
+        return {"v": numbers[0]}
+    if len(numbers) == 2:
+        return {"lo": numbers[0], "hi": numbers[1]}
+    return {"v": numbers[0], "lo": numbers[1], "hi": numbers[2]}
+
+
+def rounded(value: object) -> object:
+    """Round every number of a nested structure to four decimals, as the summaries store them."""
+    if isinstance(value, float):
+        return round(value, 4)
+    if isinstance(value, dict):
+        return {key: rounded(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [rounded(item) for item in value]
+    return value
+
+
+def build_charts() -> None:
+    """Write `charts.json`: every number that the page draws or prints, with its source."""
+    printed = dict(sealed_values())
     test = rates(TEST_PACKAGE, "TX", None)
     heldout_b = rates(HELDOUT_B_PACKAGE, "HB", "HN")
-    checks = headline_checks(EXPERIMENTS)
-    results = {
-        "test": test,
-        "heldout_b": heldout_b,
-        "contrasts": [
-            {"label": c.label, "value": c.recomputed, "equals_sealed": c.agrees} for c in checks
-        ],
-    }
-    with open(os.path.join(DATA, "results.json"), "w", encoding="utf-8") as handle:
-        json.dump(results, handle, indent=1)
-    names = {PLB: "Predictive lane blocking", AMBUSH: "Junction ambush", PURSUIT: "Pursuit"}
+    checks = {check.label: check for check in headline_checks(EXPERIMENTS)}
+    if not all(check.agrees for check in checks.values()):
+        raise SystemExit("a recomputed headline value differs from the sealed one")
+    calibration = sealed_json("20261004_audit_addendum_r02", "ADDENDUM_R02_SUMMARY.json")["N_I"]
+    reanalysis = sealed_json("20261004_audit_addendum_r01", "ADDENDUM_SUMMARY.json")["B4"]
+    third = sealed_json("20261004_audit_addendum_r03", "ADDENDUM_R03_SUMMARY.json")
+    set_a = sealed_json("20261005_mappo_prox_r01", "summary.json")["secondary"]
+    set_b = sealed_json("20261005_mappo_v3_r01", "summary.json")["secondary"]
+    final = sealed_json("20261006_mappo_v4_r01", "ANALYSIS.json")["test"]
+    set_c = final["secondary"]
+    heldout_summary = sealed_json(HELDOUT_B_PACKAGE, "summary.json")
+
+    def measured(entry: dict) -> dict:
+        low, high = entry["family_95"]
+        return {"v": 100 * entry["observed"], "lo": 100 * low, "hi": 100 * high, "n": entry["n"]}
+
+    def reversal(name: str, oc: list, body: list, centre: list) -> dict:
+        return {"set": name, "oc": interval(oc), "body": interval(body), "centre": interval(centre)}
+
+    def contrast(label: str) -> dict:
+        return interval(checks[label].recomputed)
+
+    by_team = {}
     for key, data in (("test", test), ("heldout_b", heldout_b)):
-        rows = [
-            [names[m], number(r[OC]), number(r[BODY_GAP]), number(r[CENTRE])]
-            for m, r in data["rates"].items()
-        ]
-        if data["null_team"]:
-            null = data["null_team"]
-            rows.append(
-                ["Team that does not pursue", number(null[OC]), number(null[BODY_GAP]),
-                 number(null[CENTRE])]
-            )  # fmt: skip
-        header = ["Team", "Operational capture", "Body gap ≤ 5 m", "Centre distance ≤ 5 m"]
-        write_generated(f"{key}_endpoints.md", markdown_table(header, rows))
-        rows = [
-            [label.split("|")[0], label.split("|")[1], *(number(row[m]) for m in names)]
+        by_team[key] = [
+            {"evader": label.split("|")[0], "team": int(label.split("|")[1]), **row}
             for label, row in data["by_team"].items()
         ]
-        header = ["Evader", "Pursuers", *names.values()]
-        write_generated(f"{key}_by_team.md", markdown_table(header, rows))
-    rows = [
-        [c.label, f"{c.recomputed[0]:+.3f}", f"[{c.recomputed[1]:.3f}, {c.recomputed[2]:.3f}]"]
-        for c in checks
-    ]
-    write_generated("contrasts.md", markdown_table(["Contrast", "Difference", "Interval"], rows))
-
-
-def write_generated(name: str, text: str) -> None:
-    """Write one generated table."""
-    with open(os.path.join(GENERATED, name), "w", encoding="utf-8") as handle:
-        handle.write(text)
+    ablation = third["AB"]
+    charts = {
+        "null_team": {
+            "development": {
+                "oc": measured(calibration["null_d06"]),
+                "body": measured(calibration["null_prox_5m"]),
+                "centre": measured(calibration["null_prox_5m_centre"]),
+                "body10": measured(calibration["null_prox_10m"]),
+            },
+            "heldout_b": {
+                k: 100 * v
+                for k, v in zip(
+                    ("oc", "body", "centre"), heldout_b["null_team"].values(), strict=True
+                )
+            },
+        },
+        "pursuit": {
+            "test": {
+                k: 100 * v
+                for k, v in zip(
+                    ("oc", "body", "centre"), test["pursuit_all_evaders"].values(), strict=True
+                )
+            },
+            "heldout_b": {
+                k: 100 * v
+                for k, v in zip(
+                    ("oc", "body", "centre"), heldout_b["rates"][PURSUIT].values(), strict=True
+                )
+            },
+        },
+        "published": [
+            {
+                "name": "DGMARL-MVP",
+                "detail": "4 pursuers, 2 evaders",
+                "random": parse_printed(printed["Published env null 4v2"]),
+                "chase": parse_printed(printed["Published env chaser 4v2"]),
+            },
+            {
+                "name": "DGMARL-MVP",
+                "detail": "7 pursuers, 4 evaders",
+                "random": parse_printed(printed["Published env null 7v4"]),
+                "chase": parse_printed(printed["Published env chaser 7v4"]),
+            },
+            *(
+                {
+                    "name": "PEPCRL-MVP",
+                    "detail": f"{size[0]} pursuers, {size[2]} evaders",
+                    "random": parse_printed(printed[f"PEPCRL null {size}"]),
+                    "chase": {
+                        **parse_printed(printed[f"PEPCRL chaser {size}"]),
+                        **parse_printed(printed[f"PEPCRL chaser {size} interval"]),
+                    },
+                }
+                for size in ("6_3", "7_4", "8_5")
+            ),
+        ],
+        "published_events": int(
+            re.search(r"\d+", printed["Published events, both environments"]).group()
+        ),
+        "reversal": [
+            reversal(
+                "Set A",
+                set_a["d06:plb_minus_pursuit"],
+                set_a["prox_5m:plb_minus_pursuit"],
+                set_a["prox_5m_centre:plb_minus_pursuit"],
+            ),
+            reversal(
+                "Set B",
+                set_b["d06:plb_minus_pursuit"],
+                set_b["prox_5m:plb_minus_pursuit"],
+                set_b["prox_5m_centre:plb_minus_pursuit"],
+            ),
+            reversal(
+                "Set C",
+                set_c["d06:plb_minus_pursuit"],
+                set_c["prox_5m:plb_minus_pursuit"],
+                set_c["prox_5m_centre:plb_minus_pursuit"],
+            ),
+            reversal(
+                "HELD-OUT B",
+                heldout_summary["B1_family_95"],
+                heldout_summary["plb_minus_pursuit_under_body_gap_5m"],
+                heldout_summary["plb_minus_pursuit_under_centre_5m"],
+            ),
+        ],
+        "containment": [
+            {
+                "level": "Junction level",
+                "cities": "development cities",
+                **measured(calibration["B2F_junction_joint"]),
+            },
+            {
+                "level": "Junction level",
+                "cities": "TEST cities",
+                **measured(calibration["B2T_junction_joint"]),
+            },
+            {
+                "level": "Lane level",
+                "cities": "development cities",
+                **measured(calibration["B2F_lane_nv_joint"]),
+            },
+            {
+                "level": "Lane level",
+                "cities": "TEST cities",
+                **measured(calibration["B2T_lane_nv_joint"]),
+            },
+        ],
+        "hold": {
+            "captures": third["AE"]["captures"],
+            "escapes_held": sealed_json("20261004_audit_addendum_r02", "ADDENDUM_R02_SUMMARY.json")[
+                "P"
+            ]["escapes_observed"],
+            "escapes_probe": third["AE"]["escapes"],
+        },
+        "advantage": [
+            {
+                "label": "TEST cities",
+                "note": "held out, evaluated once; 97.5 % interval",
+                **contrast("TEST: PLB - pursuit, family 97.5 %"),
+                "primary": True,
+            },
+            {
+                "label": "HELD-OUT B cities",
+                "note": "held out, evaluated once; 97.5 % interval",
+                **contrast("HELD-OUT B: PLB - pursuit, family 97.5 %"),
+                "primary": True,
+            },
+            {
+                "label": "Development cities",
+                "note": "avoidant and random evaders",
+                **interval(reanalysis["A99_plb_minus_pursuit"]["family_95"]),
+            },
+            {
+                "label": "Optimal evader",
+                "note": "TEST cities",
+                **contrast("TEST: PLB - pursuit, optimal evader, family 95 %"),
+            },
+            {
+                "label": "Optimal evader",
+                "note": "HELD-OUT B cities",
+                **contrast("HELD-OUT B: PLB - pursuit, optimal evader, family 95 %"),
+            },
+            {
+                "label": "Goal-directed evader",
+                "note": "development cities",
+                **interval(reanalysis["GOAL_plb_minus_pursuit"]["family_95"]),
+            },
+            {
+                "label": "Evader tuned against the controller",
+                "note": "development cities",
+                **parse_printed(printed["Tuned evader primary"]),
+            },
+            {
+                "label": "Ballistic position update",
+                "note": "another kinematic model",
+                **parse_printed(printed["Kinematics K1"]),
+            },
+            {
+                "label": "IDM car following",
+                "note": "another kinematic model",
+                **parse_printed(printed["Kinematics K2"]),
+            },
+            {
+                "label": "With background traffic",
+                "note": "about 300 other cars per city",
+                **parse_printed(printed["Traffic primary"]),
+            },
+        ],
+        "by_team": by_team,
+        "ablation": {
+            "all": interval(ablation["primary_pooled"]),
+            "rows": [
+                {"label": "Avoidant evader", **interval(ablation["by_evader"]["AVOIDANT"])},
+                {"label": "Random evader", **interval(ablation["by_evader"]["RANDOM"])},
+                {
+                    "label": "Goal-directed evader",
+                    **interval(ablation["by_evader"]["GOAL_DIRECTED"]),
+                },
+                {"label": "Team of 3", **interval(ablation["by_team"]["3"])},
+                {"label": "Team of 5", **interval(ablation["by_team"]["5"])},
+                {"label": "Team of 7", **interval(ablation["by_team"]["7"])},
+            ],
+        },
+        "learning": [
+            {
+                "label": "Fine-tuned, with a critic warm-up",
+                "note": "final minus imitation start",
+                **interval(set_c["d06:final_W_mlp_minus_start"]),
+            },
+            {
+                "label": "Fine-tuned, without warm-up",
+                "note": "final minus imitation start",
+                **interval(set_c["d06:final_F_mlp_minus_start"]),
+            },
+            {
+                "label": "Fine-tuned, Kolmogorov\u2013Arnold head",
+                "note": "final minus imitation start",
+                **interval(set_c["d06:final_F_kan_minus_start"]),
+            },
+            {
+                "label": "Imitation of the planner",
+                "note": "imitation minus the planner itself",
+                **interval(set_c["d06:start_mlp_minus_plb"]),
+            },
+        ],
+        "counts": {
+            "evaluation": int(printed["Count evaluation"]),
+            "selection": int(printed["Count selection"]),
+            "replay": int(printed["Count replay"]),
+            "studies": sum(
+                1
+                for name in os.listdir(EXPERIMENTS)
+                if os.path.isdir(os.path.join(EXPERIMENTS, name))
+            ),
+            "article_numbers": len(printed),
+            "headline_recomputed": len(checks),
+        },
+    }
+    with open(os.path.join(DATA, "charts.json"), "w", encoding="utf-8") as handle:
+        json.dump(rounded(charts), handle, indent=1)
+    print(f"charts.json: {len(charts)} blocks")
 
 
 def main() -> int:
     """Build every file."""
     os.makedirs(DATA, exist_ok=True)
-    os.makedirs(GENERATED, exist_ok=True)
     build_episodes()
-    build_results()
+    build_charts()
     return 0
 
 

@@ -3,7 +3,7 @@ name: site
 on:
   push:
     branches: [main]
-    paths: ["docs/**", "mkdocs.yml", ".github/workflows/pages.yml"]
+    paths: ["docs/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -20,14 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
-        with:
-          python-version: "3.14"
-      - name: Build the site
-        run: uv run --group docs mkdocs build --strict
+      # The site is static: its data files are written by tools/build_site_data.py and committed.
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: docs
   deploy:
     needs: build
     runs-on: ubuntu-latest

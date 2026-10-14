@@ -4591,3 +4591,29 @@ as illustrations, and they are not part of any evaluation. Twelve such episodes 
 **Not done.** The data archive (its DOI is the one PENDING marker left in the manuscript). The simulator loop
 itself was not written again: the library holds the decisions of the controllers, and the loop that runs them in
 SUMO stays in the frozen layer. The learning code was not ported.
+
+## A-178 — Web site of the public repository redesigned as one page; a count of A-177 corrected
+
+**Date:** 2026-10-13. The Research lead asked for a more elegant, minimal and striking site, with few links and a
+more visual and detailed account of the research, and reported that in some animations the street disappeared while
+the picture moved.
+
+- **The defect in the animations.** A lane was drawn only if one of the points of its polyline was near the centre
+  of the picture. A long straight street has two points, both far away, so it vanished while the vehicle was in the
+  middle of it. Lanes are now drawn when their bounding box touches the picture. Checked on the real episodes at
+  several instants.
+- **The site** (`docs/`, in the public repository) is now a single static page, without a site generator: the
+  opening animation; the two rules side by side; one player with three situations; the three findings, each with
+  its charts; one real scenario with two teams; the limits; and how to verify, recompute, replay and run again. The
+  player shows the verdict of each rule, the path of the evader, the place where each rule declared its capture, a
+  small map of the network for the real episodes, and every condition of the operational rule as it holds.
+- **Charts.** Nine charts drawn in the page from `docs/assets/data/charts.json`, which `tools/build_site_data.py`
+  writes from the sealed summaries and, for the two held-out evaluations, from the per-episode records through the
+  library. No result is typed in the page: a test fails if a percentage with an interval or a difference appears as
+  text. Three colours with one meaning each (operational capture, the 5 m rule between bodies, the 5 m rule between
+  centres), checked for colour-blind separation in both the light and the dark theme.
+- **Correction to A-177.** A-177 says that the two real episodes were chosen among six demonstration scenarios and
+  that twelve episodes were simulated. Seven scenarios were looked at (index 20, then 21 to 26) and fifteen
+  episodes were simulated. The page says seven.
+- Checks of the public repository after the change: 74 tests pass; style checks pass; the sealed evidence verifies
+  as before. Still not pushed.

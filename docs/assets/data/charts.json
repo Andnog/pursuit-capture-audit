@@ -1,0 +1,522 @@
+{
+ "null_team": {
+  "development": {
+   "oc": {
+    "v": 3.1,
+    "lo": 1.46,
+    "hi": 5.11,
+    "n": 548
+   },
+   "body": {
+    "v": 33.21,
+    "lo": 28.47,
+    "hi": 38.14,
+    "n": 548
+   },
+   "centre": {
+    "v": 23.36,
+    "lo": 19.16,
+    "hi": 27.74,
+    "n": 548
+   },
+   "body10": {
+    "v": 42.34,
+    "lo": 37.41,
+    "hi": 47.45,
+    "n": 548
+   }
+  },
+  "heldout_b": {
+   "oc": 1.64,
+   "body": 27.3,
+   "centre": 21.38
+  }
+ },
+ "pursuit": {
+  "test": {
+   "oc": 17.24,
+   "body": 85.12,
+   "centre": 74.82
+  },
+  "heldout_b": {
+   "oc": 22.66,
+   "body": 77.56,
+   "centre": 64.27
+  }
+ },
+ "published": [
+  {
+   "name": "DGMARL-MVP",
+   "detail": "4 pursuers, 2 evaders",
+   "random": {
+    "v": 42.7,
+    "lo": 37.3,
+    "hi": 48.3
+   },
+   "chase": {
+    "v": 4.0,
+    "lo": 2.0,
+    "hi": 6.3
+   }
+  },
+  {
+   "name": "DGMARL-MVP",
+   "detail": "7 pursuers, 4 evaders",
+   "random": {
+    "v": 39.0,
+    "lo": 30.0,
+    "hi": 48.0
+   },
+   "chase": {
+    "v": 2.0,
+    "lo": 0.0,
+    "hi": 5.0
+   }
+  },
+  {
+   "name": "PEPCRL-MVP",
+   "detail": "6 pursuers, 3 evaders",
+   "random": {
+    "v": 31.3,
+    "lo": 24.0,
+    "hi": 38.7
+   },
+   "chase": {
+    "v": 2.8,
+    "lo": 0.7,
+    "hi": 5.6
+   }
+  },
+  {
+   "name": "PEPCRL-MVP",
+   "detail": "7 pursuers, 4 evaders",
+   "random": {
+    "v": 59.1,
+    "lo": 51.0,
+    "hi": 67.1
+   },
+   "chase": {
+    "v": 10.7,
+    "lo": 6.0,
+    "hi": 16.1
+   }
+  },
+  {
+   "name": "PEPCRL-MVP",
+   "detail": "8 pursuers, 5 evaders",
+   "random": {
+    "v": 58.7,
+    "lo": 50.7,
+    "hi": 66.7
+   },
+   "chase": {
+    "v": 9.7,
+    "lo": 4.9,
+    "hi": 14.6
+   }
+  }
+ ],
+ "published_events": 3379,
+ "reversal": [
+  {
+   "set": "Set A",
+   "oc": {
+    "v": 0.123,
+    "lo": 0.088,
+    "hi": 0.16
+   },
+   "body": {
+    "v": -0.013,
+    "lo": -0.025,
+    "hi": -0.004
+   },
+   "centre": {
+    "v": -0.021,
+    "lo": -0.04,
+    "hi": -0.002
+   }
+  },
+  {
+   "set": "Set B",
+   "oc": {
+    "v": 0.119,
+    "lo": 0.076,
+    "hi": 0.16
+   },
+   "body": {
+    "v": -0.004,
+    "lo": -0.013,
+    "hi": 0.004
+   },
+   "centre": {
+    "v": -0.038,
+    "lo": -0.059,
+    "hi": -0.02
+   }
+  },
+  {
+   "set": "Set C",
+   "oc": {
+    "v": 0.128,
+    "lo": 0.084,
+    "hi": 0.17
+   },
+   "body": {
+    "v": -0.004,
+    "lo": -0.011,
+    "hi": 0.003
+   },
+   "centre": {
+    "v": -0.021,
+    "lo": -0.038,
+    "hi": -0.006
+   }
+  },
+  {
+   "set": "HELD-OUT B",
+   "oc": {
+    "v": 0.0643,
+    "lo": 0.0214,
+    "hi": 0.1078
+   },
+   "body": {
+    "v": 0.0163,
+    "lo": -0.0022,
+    "hi": 0.0373
+   },
+   "centre": {
+    "v": 0.0044,
+    "lo": -0.0163,
+    "hi": 0.0248
+   }
+  }
+ ],
+ "containment": [
+  {
+   "level": "Junction level",
+   "cities": "development cities",
+   "v": 81.97,
+   "lo": 79.06,
+   "hi": 84.8,
+   "n": 1098
+  },
+  {
+   "level": "Junction level",
+   "cities": "TEST cities",
+   "v": 72.52,
+   "lo": 65.99,
+   "hi": 78.45,
+   "n": 848
+  },
+  {
+   "level": "Lane level",
+   "cities": "development cities",
+   "v": 8.44,
+   "lo": 4.68,
+   "hi": 12.92,
+   "n": 225
+  },
+  {
+   "level": "Lane level",
+   "cities": "TEST cities",
+   "v": 7.92,
+   "lo": 1.67,
+   "hi": 15.81,
+   "n": 240
+  }
+ ],
+ "hold": {
+  "captures": 1433,
+  "escapes_held": 0,
+  "escapes_probe": 15
+ },
+ "advantage": [
+  {
+   "label": "TEST cities",
+   "note": "held out, evaluated once; 97.5 % interval",
+   "v": 0.1453,
+   "lo": 0.0855,
+   "hi": 0.2073,
+   "primary": true
+  },
+  {
+   "label": "HELD-OUT B cities",
+   "note": "held out, evaluated once; 97.5 % interval",
+   "v": 0.0643,
+   "lo": 0.0145,
+   "hi": 0.1139,
+   "primary": true
+  },
+  {
+   "label": "Development cities",
+   "note": "avoidant and random evaders",
+   "v": 0.1047,
+   "lo": 0.0683,
+   "hi": 0.141
+  },
+  {
+   "label": "Optimal evader",
+   "note": "TEST cities",
+   "v": 0.171,
+   "lo": 0.1082,
+   "hi": 0.2381
+  },
+  {
+   "label": "Optimal evader",
+   "note": "HELD-OUT B cities",
+   "v": 0.0729,
+   "lo": 0.0167,
+   "hi": 0.1313
+  },
+  {
+   "label": "Goal-directed evader",
+   "note": "development cities",
+   "v": 0.1049,
+   "lo": 0.058,
+   "hi": 0.1556
+  },
+  {
+   "label": "Evader tuned against the controller",
+   "note": "development cities",
+   "v": 0.128,
+   "lo": 0.081,
+   "hi": 0.178
+  },
+  {
+   "label": "Ballistic position update",
+   "note": "another kinematic model",
+   "v": 0.14,
+   "lo": 0.103,
+   "hi": 0.177
+  },
+  {
+   "label": "IDM car following",
+   "note": "another kinematic model",
+   "v": 0.118,
+   "lo": 0.079,
+   "hi": 0.158
+  },
+  {
+   "label": "With background traffic",
+   "note": "about 300 other cars per city",
+   "v": 0.094,
+   "lo": 0.06,
+   "hi": 0.13
+  }
+ ],
+ "by_team": {
+  "test": [
+   {
+    "evader": "Random",
+    "team": 3,
+    "plus_opt": 0.2987,
+    "ambush_a95": 0.1753,
+    "pursuit": 0.1623
+   },
+   {
+    "evader": "Random",
+    "team": 5,
+    "plus_opt": 0.3506,
+    "ambush_a95": 0.2597,
+    "pursuit": 0.2208
+   },
+   {
+    "evader": "Random",
+    "team": 7,
+    "plus_opt": 0.3701,
+    "ambush_a95": 0.2922,
+    "pursuit": 0.2922
+   },
+   {
+    "evader": "Avoidant",
+    "team": 3,
+    "plus_opt": 0.2975,
+    "ambush_a95": 0.2025,
+    "pursuit": 0.1266
+   },
+   {
+    "evader": "Avoidant",
+    "team": 5,
+    "plus_opt": 0.3734,
+    "ambush_a95": 0.2532,
+    "pursuit": 0.1709
+   },
+   {
+    "evader": "Avoidant",
+    "team": 7,
+    "plus_opt": 0.3671,
+    "ambush_a95": 0.2658,
+    "pursuit": 0.2152
+   },
+   {
+    "evader": "Optimal",
+    "team": 3,
+    "plus_opt": 0.2532,
+    "ambush_a95": 0.1558,
+    "pursuit": 0.1299
+   },
+   {
+    "evader": "Optimal",
+    "team": 5,
+    "plus_opt": 0.2597,
+    "ambush_a95": 0.1883,
+    "pursuit": 0.0909
+   },
+   {
+    "evader": "Optimal",
+    "team": 7,
+    "plus_opt": 0.3636,
+    "ambush_a95": 0.2597,
+    "pursuit": 0.1429
+   }
+  ],
+  "heldout_b": [
+   {
+    "evader": "Random",
+    "team": 3,
+    "plus_opt": 0.2987,
+    "ambush_a95": 0.2532,
+    "pursuit": 0.2208
+   },
+   {
+    "evader": "Random",
+    "team": 5,
+    "plus_opt": 0.3986,
+    "ambush_a95": 0.3649,
+    "pursuit": 0.3243
+   },
+   {
+    "evader": "Random",
+    "team": 7,
+    "plus_opt": 0.3699,
+    "ambush_a95": 0.3836,
+    "pursuit": 0.3493
+   },
+   {
+    "evader": "Avoidant",
+    "team": 3,
+    "plus_opt": 0.1625,
+    "ambush_a95": 0.15,
+    "pursuit": 0.1313
+   },
+   {
+    "evader": "Avoidant",
+    "team": 5,
+    "plus_opt": 0.25,
+    "ambush_a95": 0.2179,
+    "pursuit": 0.1603
+   },
+   {
+    "evader": "Avoidant",
+    "team": 7,
+    "plus_opt": 0.2792,
+    "ambush_a95": 0.2468,
+    "pursuit": 0.1883
+   },
+   {
+    "evader": "Optimal",
+    "team": 3,
+    "plus_opt": 0.1313,
+    "ambush_a95": 0.05,
+    "pursuit": 0.0625
+   },
+   {
+    "evader": "Optimal",
+    "team": 5,
+    "plus_opt": 0.1625,
+    "ambush_a95": 0.125,
+    "pursuit": 0.075
+   },
+   {
+    "evader": "Optimal",
+    "team": 7,
+    "plus_opt": 0.1812,
+    "ambush_a95": 0.1938,
+    "pursuit": 0.1187
+   }
+  ]
+ },
+ "ablation": {
+  "all": {
+   "v": 0.0709,
+   "lo": 0.0538,
+   "hi": 0.089
+  },
+  "rows": [
+   {
+    "label": "Avoidant evader",
+    "v": 0.0811,
+    "lo": 0.0527,
+    "hi": 0.113
+   },
+   {
+    "label": "Random evader",
+    "v": 0.0616,
+    "lo": 0.035,
+    "hi": 0.0918
+   },
+   {
+    "label": "Goal-directed evader",
+    "v": 0.07,
+    "lo": 0.0399,
+    "hi": 0.1027
+   },
+   {
+    "label": "Team of 3",
+    "v": 0.0498,
+    "lo": 0.0279,
+    "hi": 0.0716
+   },
+   {
+    "label": "Team of 5",
+    "v": 0.0777,
+    "lo": 0.0534,
+    "hi": 0.1044
+   },
+   {
+    "label": "Team of 7",
+    "v": 0.0852,
+    "lo": 0.0572,
+    "hi": 0.1144
+   }
+  ]
+ },
+ "learning": [
+  {
+   "label": "Fine-tuned, with a critic warm-up",
+   "note": "final minus imitation start",
+   "v": 0.011,
+   "lo": -0.005,
+   "hi": 0.026
+  },
+  {
+   "label": "Fine-tuned, without warm-up",
+   "note": "final minus imitation start",
+   "v": 0.0,
+   "lo": -0.012,
+   "hi": 0.013
+  },
+  {
+   "label": "Fine-tuned, Kolmogorov\u2013Arnold head",
+   "note": "final minus imitation start",
+   "v": 0.01,
+   "lo": -0.001,
+   "hi": 0.021
+  },
+  {
+   "label": "Imitation of the planner",
+   "note": "imitation minus the planner itself",
+   "v": 0.017,
+   "lo": -0.012,
+   "hi": 0.046
+  }
+ ],
+ "counts": {
+  "evaluation": 197655,
+  "selection": 16403,
+  "replay": 22455,
+  "studies": 90,
+  "article_numbers": 113,
+  "headline_recomputed": 13
+ }
+}

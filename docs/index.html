@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When proximity is not interception</title>
+<meta name="description" content="An audit of capture endpoints for multi-vehicle pursuit in microscopic urban traffic simulation: what a 5 m rule measures, and what stops a car.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0b0b'/%3E%3Cpath d='M9 13h14M9 19h14M19 8l-6 16' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="#top">Proximity ≠ interception <span>· an audit</span></a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#findings">Findings</a>
+      <a href="#limits" class="optional">Limits</a>
+      <a href="#evidence">Evidence</a>
+      <a href="https://github.com/Andnog/pursuit-capture-audit" class="optional">Code</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">An audit of capture endpoints · SUMO · fifteen real downtowns</p>
+    <h1>When proximity is not interception</h1>
+    <p class="lede">Pursuit studies count a capture when a pursuer comes within a few metres of the evader. Two cars that pass each other in opposite lanes do exactly that.</p>
+    <figure>
+      <div class="player" data-src="assets/data/passing_cars.json" data-view="62"></div>
+      <figcaption>Two cars at 12 m/s, drawn to scale. The dashed outline is the 5 m rule. It fires; nobody is stopped. The second rule asks for what an interception is, and it stays silent.</figcaption>
+    </figure>
+    <p class="byline">Andrei Noguera Gil, Felix Martinez-Rios and Edgar Avalos-Gauna</p>
+  </div>
+</section>
+
+<section id="question">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The question</p>
+      <h2>What counts as a capture?</h2>
+      <p class="lede">We scored the same episodes under two kinds of rule, in the SUMO traffic simulator on the road networks of fifteen real downtowns.</p>
+    </div>
+
+    <div class="split">
+      <div class="rule rule-prox">
+        <h3>A proximity rule</h3>
+        <svg viewBox="0 0 320 112" role="img" aria-label="A car with a dashed outline 5 metres around it, and a second car inside the outline in the opposite lane">
+          <rect class="d-road" x="0" y="36" width="320" height="38.4" rx="2"/>
+          <rect class="d-prox" x="115" y="29.4" width="90" height="70.8" rx="30"/>
+          <rect class="d-evader" x="145" y="59.4" width="30" height="10.8" rx="2.5"/>
+          <rect class="d-pursuer" x="182" y="40.2" width="30" height="10.8" rx="2.5"/>
+          <text class="d-text" x="212" y="97">5 m outline</text>
+          <text class="d-text" x="24" y="68">evader →</text>
+          <text class="d-text" x="220" y="49">← pursuer</text>
+        </svg>
+        <p>A capture at the first instant a distance falls to a threshold, usually 5 m. Which distance is part of the rule: between bodies, between centres, or between front bumpers.</p>
+        <p>It asks nothing about speed, direction or duration.</p>
+      </div>
+      <div class="rule rule-oc">
+        <h3>Operational capture</h3>
+        <svg viewBox="0 0 320 112" role="img" aria-label="Two cars in file in the same lane, the evader stopped just behind the pursuer">
+          <rect class="d-road" x="0" y="36" width="320" height="38.4" rx="2"/>
+          <rect class="d-evader" x="121" y="59.4" width="30" height="10.8" rx="2.5"/>
+          <rect class="d-pursuer" x="160" y="59.4" width="30" height="10.8" rx="2.5"/>
+          <rect class="d-oc" x="117" y="55.4" width="77" height="18.8" rx="5"/>
+          <path class="d-oc" d="M151 86v6h9v-6"/>
+          <text class="d-text" x="128" y="107">0.3–2 m</text>
+          <text class="d-text" x="64" y="68">evader</text>
+          <text class="d-text" x="200" y="68">pursuer, ahead</text>
+        </svg>
+        <p>One pursuer directly ahead of the evader, with a gap of 0.3 to 2 m between the two bodies, both nearly stopped, facing the same way, the evader in file behind.</p>
+        <p>Held for 2 s, without interruption, by one and the same pursuer.</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Three situations, three verdicts</h3>
+      <div class="prose"><p>Each condition of the second rule lights up when it holds. The capture needs all of them at once, for two seconds.</p></div>
+      <figure>
+        <div class="player" data-view="62" data-sources='[
+          {"label": "Passing in opposite lanes", "src": "assets/data/passing_cars.json"},
+          {"label": "Trailing at speed", "src": "assets/data/follower_behind.json"},
+          {"label": "Stopped behind a pursuer", "src": "assets/data/blocked_stop.json"}]'></div>
+        <figcaption>A pursuer that merely trails the evader is "within 5 m" from the first instant if the distance is taken between bodies, and never if it is taken between front bumpers: the two bumpers are a car length apart. The same episode is a success or a failure depending on which points the rule joins.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="findings">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="number">01</span>
+      <h2>Proximity is not interception</h2>
+      <p class="lede">The simplest check of a capture rule is to score a team that is not trying.</p>
+    </div>
+
+    <div class="figures">
+      <div><span class="figure-value" data-fill="null-range">–</span><span class="figure-label">of episodes are a success under proximity rules for a team that drives random routes and pursues nobody</span></div>
+      <div><span class="figure-value" data-fill="null-oc">–</span><span class="figure-label">for the same team under operational capture</span></div>
+    </div>
+
+    <figure class="panel">
+      <div data-chart="null-team"></div>
+      <figcaption>A team of five that does not pursue. Lines show 95 % intervals over scenario families, where the study computed them.</figcaption>
+    </figure>
+
+    <div class="block">
+      <h3>The same episodes, two verdicts</h3>
+      <div class="prose">
+        <p>On cities that the methods had never seen, the team that chases is scored as successful <span class="key" data-fill="ratio-test">–</span> times as often by a 5 m rule as by an operational stop on the first set of four, and <span class="key" data-fill="ratio-b">–</span> times on the second.</p>
+      </div>
+      <figure class="panel">
+        <div data-chart="same-episodes"></div>
+        <figcaption>The pursuit team on two held-out sets of four cities, each evaluated once. Computed from the sealed per-episode records by the library of the repository.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>In the released code of two published methods</h3>
+      <div class="prose">
+        <p>To check that these rules are not a straw man, we ran the official environments of two published pursuit methods, unmodified, and looked at every capture event.</p>
+      </div>
+      <div class="figures">
+        <div><span class="figure-value">0 <span style="font-weight:400;color:var(--muted)">of</span> <span data-fill="published-events">–</span></span><span class="figure-label">capture events joined two vehicles in the same lane. They were cars crossing in opposite directions or inside a junction.</span></div>
+        <div><span class="figure-value" data-fill="published-random">–</span><span class="figure-label">of episodes met the published success criterion for a team that turns at random</span></div>
+        <div><span class="figure-value" data-fill="published-chase">–</span><span class="figure-label">for a team that chases. Chasing puts the pursuer behind the evader, where the rule cannot fire.</span></div>
+      </div>
+      <figure class="panel">
+        <div data-chart="published"></div>
+        <figcaption>The released configurations differ from the ones reported in those articles, a later version of the simulator was used, and the published learners were not trained. The audit says nothing about the quality of those learners. It shows what the capture rule rewards in these environments: crossing the evader's path, not stopping it. Both environments come from one research group.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>The rule decides which controller wins</h3>
+      <div class="prose">
+        <p>Compare two controllers: one waits ahead of the evader, the other chases. Scored by operational capture, waiting ahead wins by about twelve points on three independent sets of scenarios. Scored by proximity, the advantage vanishes under one rule and reverses under the other.</p>
+      </div>
+      <figure class="panel">
+        <div data-chart="reversal"></div>
+        <figcaption>Waiting ahead minus chasing, in percentage points of success, with 95 % intervals. To the right of zero, waiting ahead looks better.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>One scenario, two teams</h3>
+      <div class="prose">
+        <p>Central Adelaide: same start positions, same evader, same simulator seed. With pursuit, the 5 m rule stops the clock half a minute in, and the evader drives on for the rest of the episode. With pursuers that wait ahead, it is stopped.</p>
+      </div>
+      <figure>
+        <div class="player" data-view="150" data-speed="10" data-sources='[
+          {"label": "Five pursuers that chase", "src": "assets/data/adelaide_25_pursuit.json", "start": "22"},
+          {"label": "Five pursuers that wait ahead", "src": "assets/data/adelaide_25_ambush_plus.json", "start": "32"}]'></div>
+        <figcaption>An illustration, at ten times real speed. These two episodes were chosen among seven demonstration scenarios because they show the difference clearly; they are not part of any evaluation and say nothing about how often it happens. The rates are in the charts above. Map data © OpenStreetMap contributors.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>Is the stricter rule any better?</h3>
+      <div class="prose">
+        <p>We audited it the same way. Each capture was simulated again with every pursuer held in place, for a full minute.</p>
+      </div>
+      <div class="figures">
+        <div><span class="figure-value" data-fill="hold-captures">–</span><span class="figure-label">operational captures audited</span></div>
+        <div><span class="figure-value" data-fill="hold-held">–</span><span class="figure-label">escapes with the pursuers held and the evader left to its script</span></div>
+        <div><span class="figure-value" data-fill="hold-probe">–</span><span class="figure-label">escapes when a probe asked the evader to change lane every second</span></div>
+      </div>
+      <div class="prose" style="margin-top:2rem">
+        <p>Zero observed escapes is not a guarantee, and the probe shows why. Operational capture measures close stopping behind a pursuer. It does not prove that escape is impossible, and it needs no rear blocker.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="number">02</span>
+      <h2>"Enclosed" needs auditing too</h2>
+      <p class="lede">A containment indicator certifies, during an episode, that the evader has nowhere to go. We followed every certified evader for a minute.</p>
+    </div>
+    <div class="split">
+      <div class="statement"><span data-fill="junction-range">–</span> escape<small>when the indicator asks for a pursuer near each surrounding junction. Its usual failure: a pursuer parked on a different approach, near the junction and not in the way.</small></div>
+      <div class="statement"><span data-fill="lane-range">–</span> escape<small>when it asks for a stopped pursuer in every lane by which the evader would leave. Useful, and fallible.</small></div>
+    </div>
+    <figure class="panel">
+      <div data-chart="containment"></div>
+      <figcaption>Evaders certified as enclosed that leave through a gate, or leave the network, within 60 s, with the pursuers keeping their last orders. 95 % intervals over scenario families. An earlier analysis of ours counted fewer escapes and passed a criterion that this one does not; the correction is part of the record.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="number">03</span>
+      <h2>Waiting ahead beats chasing</h2>
+      <p class="lede">Under the audited rule, pursuers that wait in the lanes the evader is predicted to take capture more than pursuers that chase.</p>
+    </div>
+
+    <div class="figures">
+      <div><span class="figure-value" data-fill="adv-test">–</span><span class="figure-label">points of capture on four held-out cities, opened once. 97.5 % interval <span data-fill="adv-test-ci"></span>.</span></div>
+      <div><span class="figure-value" data-fill="adv-b">–</span><span class="figure-label">points on a second held-out set, registered before its maps were downloaded. Interval <span data-fill="adv-b-ci"></span>.</span></div>
+      <div><span class="figure-value" data-fill="ablation">–</span><span class="figure-label">points lost when each pursuer chooses its lane alone</span></div>
+    </div>
+
+    <div class="block">
+      <h3>How it works</h3>
+      <div class="prose">
+        <p>The planner predicts the path of the evader: at each junction, the exit that takes it farthest ahead of the nearest pursuer. If the team can reach every exit lane of a junction in time, it closes the junction. If it cannot, the pursuers that are free drive ahead and wait in the lanes of the predicted exits, one lane each. Those that can reach no lane chase.</p>
+      </div>
+      <figure>
+        <img class="image" src="assets/figures/F0_method.png" alt="Schematic of predictive lane blocking: pursuers stopped in the exit lanes of the junctions ahead of the evader" loading="lazy">
+        <figcaption>Getting ahead of an evader is not a new idea, and neither is stopping it. What is new here is the measurement. The schematic was drawn as vector code with the assistance of an AI model, from the authors' description, and reviewed by the authors.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>Across evaders, kinematics and traffic</h3>
+      <div class="prose">
+        <p>The advantage is positive in every condition tested. Its size is not stable: on the second held-out set it is less than half of that on the first, and we did not identify why.</p>
+      </div>
+      <figure class="panel">
+        <div data-chart="advantage"></div>
+        <figcaption>Waiting ahead minus chasing, in percentage points of operational capture. Intervals are 95 % over scenario families unless noted.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>By evader and team size</h3>
+      <div class="split">
+        <figure class="panel" style="margin-top:0">
+          <div data-chart="by-team-test"></div>
+          <figcaption>TEST: Chicago, Melbourne, Salt Lake City, Minneapolis.</figcaption>
+        </figure>
+        <figure class="panel" style="margin-top:0">
+          <div data-chart="by-team-b"></div>
+          <figcaption>HELD-OUT B: Denver, Vancouver, Barcelona, Buenos Aires.</figcaption>
+        </figure>
+      </div>
+      <p class="caption">Share of episodes that end in an operational capture. The junction ambush is the simpler planner that only closes a junction when the whole team is in time.</p>
+    </div>
+
+    <div class="block">
+      <h3>Assignment matters</h3>
+      <div class="prose">
+        <p>A registered ablation keeps the same prediction, the same information and the same rule for each pursuer, and removes the team: no joint closing of a junction, and each pursuer picks its lane without knowing which lanes its teammates took.</p>
+      </div>
+      <figure class="panel">
+        <div data-chart="ablation"></div>
+        <figcaption>Coordinated minus independent, in percentage points of operational capture, 95 % intervals. The ablation removes two decisions together, so it measures that bundle, not either decision alone.</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <h3>What did not help</h3>
+      <div class="prose">
+        <p>A controller cloned from the planner and then fine-tuned by multi-agent reinforcement learning did not improve on its imitation start, in three successive implementations. Audits found defects in the training code of the first two; with both corrected, the outcome did not change.</p>
+      </div>
+      <figure class="panel">
+        <div data-chart="learning"></div>
+        <figcaption>The imitation controllers do not lag the planner they copy. The negative result is specific: for this controller and these budgets, learning did not improve on imitation. It is not evidence that learned controllers cannot match or exceed a planner.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="limits">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Limits</p>
+      <h2>What this does not show</h2>
+    </div>
+    <div class="limits">
+      <div><h3>One simulator</h3><p>SUMO moves vehicles along lanes. It has no tyre or steering dynamics, and its drivers do not ram, mount kerbs or drive against traffic. Two other kinematic models and background traffic were checked inside it; that is not a second simulator or field data.</p></div>
+      <div><h3>Scripted evaders</h3><p>Five behaviours, one of them tuned against the controller. A stronger evader may exist. Learned evaders were not evaluated, and reversing and U-turns in mid-street were not simulated, which favours blocking.</p></div>
+      <div><h3>A fallible endpoint</h3><p>Operational capture admits slow following behind a pursuer and needs no rear blocker. It is a better question than proximity, not a proof of containment.</p></div>
+      <div><h3>Eight held-out cities</h3><p>Two sets of four, each evaluated once and not pooled. The advantage differs between them. Registration was internal, through sealed packages with checksums, not an external registry.</p></div>
+      <div><h3>The published environments</h3><p>Audited as released, which is not as reported; the published learners were not trained; both come from one research group.</p></div>
+      <div><h3>Our own earlier work</h3><p>An earlier study of ours scored captures with a 20 m rule against a static prey. It is an instance of what this audit examines.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="evidence">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Evidence</p>
+      <h2>Check it yourself</h2>
+      <p class="lede">Every study is a sealed package with a checksum for each file. The code that produced it is kept exactly as it ran, next to a small library written to be read.</p>
+    </div>
+
+    <div class="figures">
+      <div><span class="figure-value" data-fill="count-evaluation">–</span><span class="figure-label">evaluation episodes behind the article</span></div>
+      <div><span class="figure-value" data-fill="count-studies">–</span><span class="figure-label">sealed studies, with protocol, records and checksums</span></div>
+      <div><span class="figure-value" data-fill="count-numbers">–</span><span class="figure-label">numbers of the article checked against the sealed summaries</span></div>
+    </div>
+
+    <ol class="steps">
+      <li><div>
+        <h3>Verify, in seconds</h3>
+        <p>Every sealed file against its checksum. No simulator needed.</p>
+<pre><code>git clone https://github.com/Andnog/pursuit-capture-audit.git
+cd pursuit-capture-audit &amp;&amp; uv sync
+uv run pursuit-audit verify</code></pre>
+      </div></li>
+      <li><div>
+        <h3>Recompute, in a minute</h3>
+        <p>The headline results, from the raw per-episode records, with code that is independent of the code that ran. <span data-fill="count-recomputed">–</span> of <span data-fill="count-recomputed">–</span> agree with the sealed values to the last stored digit.</p>
+<pre><code>uv run pursuit-audit recompute
+uv run pytest</code></pre>
+        <p class="result">The tests compare the library with the judge and the planners of the study, on tens of thousands of random situations.</p>
+      </div></li>
+      <li><div>
+        <h3>Replay, in minutes</h3>
+        <p>Sealed episodes, again, in SUMO 1.21. Six of six came out identical from the public copy.</p>
+<pre><code>cd as_run &amp;&amp; uv sync --extra learning
+uv run python scripts/preflight.py
+uv run python scripts/audit_d06_persistence.py --package /tmp/replay --limit 6</code></pre>
+      </div></li>
+      <li><div>
+        <h3>Run a study again</h3>
+        <p>Each study has one script and a registered protocol. <a href="https://github.com/Andnog/pursuit-capture-audit/blob/main/REPRODUCE.md">The instructions</a> give the command for every one of them.</p>
+      </div></li>
+    </ol>
+
+    <div class="block">
+      <h3>Score your own study</h3>
+      <div class="prose"><p>The library scores any episode under several capture rules at once. It needs only Python.</p></div>
+<pre><code>import pursuit_audit as pa
+
+frames = pa.load_trace("episode.jsonl")
+row = pa.score_trace(frames, evader="e1")       # every rule, one row
+
+capture = pa.operational_capture(frames, evader="e1")
+print(capture.captured, capture.closest_failure)</code></pre>
+      <p class="caption">Six things a pursuit study can report at low cost: the capture rule in full; the score of a team that does not pursue; what the evader does after a capture; the escape share of any containment indicator; an evaluation on unseen networks, opened once; and which analyses were registered before the runs.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap split">
+    <div>
+      <h3>The article</h3>
+      <p><em>When Proximity Is Not Interception: Auditing Capture Endpoints and Predictive Lane Blocking for Vehicle Pursuit in Microscopic Urban Traffic Simulation.</em> A. Noguera Gil and F. Martinez-Rios (Universidad Panamericana, Ciudad de México), E. Avalos-Gauna (Rice University, Houston). Not yet published.</p>
+      <p><a href="https://github.com/Andnog/pursuit-capture-audit">Code and evidence</a> · <a href="https://github.com/Andnog/pursuit-capture-audit/blob/main/CITATION.cff">How to cite</a></p>
+    </div>
+    <div>
+      <h3>How this was made</h3>
+      <p>Two AI models were used in the research, under the supervision of the first author, and the article declares it: Claude Opus 5.5 (Anthropic) wrote the code, ran the experiments and built this page from the sealed result files; Astra (OpenAI) helped the authors audit the work in six rounds, which found defects that were corrected and are reported.</p>
+    </div>
+    <div>
+      <h3>Licences</h3>
+      <p>Code: MIT. Results and this page: CC BY 4.0. Road networks: © OpenStreetMap contributors, ODbL.</p>
+      <p>The heavy files of the evidence (run logs, training states) are kept in a data archive; its DOI will be added here when the deposit is made.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/player.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

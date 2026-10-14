@@ -4,7 +4,8 @@
 Endpoints and Predictive Lane Blocking for Vehicle Pursuit in Microscopic Urban Traffic Simulation"**
 (A. Noguera Gil, F. Martinez-Rios, E. Avalos-Gauna).
 
-Web site with animations and tables: <https://andnog.github.io/pursuit-capture-audit/>
+The research in one page, with animations and charts: <https://andnog.github.io/pursuit-capture-audit/>
+(`make serve` shows it locally.)
 
 Multi-vehicle pursuit is commonly scored by proximity: an episode is a success when a pursuer comes within a few
 metres of the evader. In microscopic urban traffic that rule is also met by two cars that pass each other in
@@ -47,7 +48,7 @@ pursuit-capture-audit/
 │   ├── assets/                   the road networks (© OpenStreetMap contributors, ODbL)
 │   └── provenance/               source archives and the count of simulations
 ├── results/               figures, the table of every number of the article, the evidence map
-├── docs/                  the web site
+├── docs/                  the web site: one static page, its data written from the sealed evidence
 ├── REPRODUCE.md           how to verify, recompute and run every study again
 └── tools/                 scripts that maintain this repository
 ```
