@@ -214,9 +214,66 @@
       <div class="prose">
         <p>The planner predicts the path of the evader: at each junction, the exit that takes it farthest ahead of the nearest pursuer. If the team can reach every exit lane of a junction in time, it closes the junction. If it cannot, the pursuers that are free drive ahead and wait in the lanes of the predicted exits, one lane each. Those that can reach no lane chase.</p>
       </div>
-      <figure>
-        <img class="image" src="assets/figures/F0_method.png" alt="Schematic of predictive lane blocking: pursuers stopped in the exit lanes of the junctions ahead of the evader" loading="lazy">
-        <figcaption>Getting ahead of an evader is not a new idea, and neither is stopping it. What is new here is the measurement. The schematic was drawn as vector code with the assistance of an AI model, from the authors' description, and reviewed by the authors.</figcaption>
+      <figure class="panel">
+        <div class="schematic">
+          <svg viewBox="0 0 760 300" role="img" aria-labelledby="schematic-title schematic-desc">
+            <title id="schematic-title">Predictive lane blocking</title>
+            <desc id="schematic-desc">An evader drives east along a four-lane street. Its predicted path continues straight through the first junction and turns north at the second. Two pursuers are stopped in the two eastbound lanes beyond the first junction, a third waits in the northbound exit of the second junction, and a fourth, too far behind to reach any lane in time, chases. The exits of the first junction that are not predicted are left open.</desc>
+            <g class="s-road">
+              <rect x="0" y="118" width="760" height="64"/>
+              <rect x="300" y="0" width="64" height="300"/>
+              <rect x="560" y="0" width="64" height="300"/>
+            </g>
+            <g class="s-marks">
+              <path d="M0 134H300M364 134H560M624 134H760M0 166H300M364 166H560M624 166H760"/>
+              <path d="M316 0V118M316 182V300M348 0V118M348 182V300M576 0V118M576 182V300M608 0V118M608 182V300"/>
+            </g>
+            <g class="s-centre">
+              <path d="M0 150H300M364 150H560M624 150H760M332 0V118M332 182V300M592 0V118M592 182V300"/>
+            </g>
+            <path class="s-path" d="M138 174H592Q600 174 600 166V22"/>
+            <path class="s-head" d="M594 30l6-12 6 12z"/>
+
+            <g class="s-open">
+              <path d="M340 104V46M336 54l4-10 4 10"/>
+              <path d="M324 196V254M320 246l4 10 4-10"/>
+            </g>
+            <text class="s-note" x="356" y="40">not predicted:</text>
+            <text class="s-note" x="356" y="56">left open</text>
+
+            <rect class="s-evader" x="108" y="169.5" width="25" height="9" rx="2"/>
+            <rect class="s-front" x="128.5" y="170.5" width="2.5" height="7"/>
+            <text class="s-label" x="102" y="205">evader</text>
+
+            <rect class="s-pursuer" x="462" y="153.5" width="25" height="9" rx="2"/>
+            <rect class="s-pursuer" x="462" y="169.5" width="25" height="9" rx="2"/>
+            <text class="s-label s-middle" x="474.5" y="146">P1</text>
+            <text class="s-label s-middle" x="474.5" y="197">P2</text>
+            <path class="s-measure" d="M364 224H474M364 219v10M474 219v10"/>
+            <text class="s-note" x="372" y="244">about 22 m into each lane</text>
+
+            <rect class="s-pursuer" x="595.5" y="48" width="9" height="25" rx="2"/>
+            <text class="s-label" x="614" y="66">P3</text>
+
+            <rect class="s-chaser" x="22" y="169.5" width="25" height="9" rx="2"/>
+            <path class="s-chase" d="M52 174H92M86 170l7 4-7 4"/>
+            <text class="s-label" x="16" y="205">P4</text>
+
+            <g class="s-step"><circle cx="172" cy="232" r="11"/><text x="172" y="236">1</text></g>
+            <text class="s-note" x="190" y="236">predicted path</text>
+            <g class="s-step"><circle cx="474" cy="102" r="11"/><text x="474" y="106">2</text></g>
+            <g class="s-step"><circle cx="652" cy="60" r="11"/><text x="652" y="64">2</text></g>
+            <g class="s-step"><circle cx="34" cy="232" r="11"/><text x="34" y="236">3</text></g>
+            <text class="s-label s-strong" x="288" y="292">J1</text>
+            <text class="s-label s-strong" x="548" y="292">J2</text>
+          </svg>
+        </div>
+        <ol class="schematic-steps">
+          <li><span class="step-number">1</span><p><strong>Predict.</strong> At each junction, the exit that takes the evader farthest ahead of the nearest pursuer. Here: straight through J1, then north at J2.</p></li>
+          <li><span class="step-number">2</span><p><strong>Wait ahead.</strong> Free pursuers stop in the lanes of the predicted exits of the next one or two junctions, one lane each, never a lane a teammate took. If the whole team can reach every exit lane of a junction in time, it closes that junction instead.</p></li>
+          <li><span class="step-number">3</span><p><strong>Chase.</strong> A pursuer that can reach no lane in time chases. The plan is recomputed every second.</p></li>
+        </ol>
+        <figcaption>Getting ahead of an evader is not a new idea, and neither is stopping it. What is new here is the measurement. Not to scale across the junctions; vehicles and lanes are drawn to scale with each other. Drawn with the assistance of an AI model from the description of the method, and reviewed by the authors.</figcaption>
       </figure>
     </div>
 
