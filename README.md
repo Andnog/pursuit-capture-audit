@@ -1,5 +1,7 @@
 # When proximity is not interception
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23356337.svg)](https://doi.org/10.5281/zenodo.23356337)
+
 **Code, evidence and reproduction instructions for the article "When Proximity Is Not Interception: Auditing Capture
 Endpoints and Predictive Lane Blocking for Vehicle Pursuit in Microscopic Urban Traffic Simulation"**
 (A. Noguera Gil, F. Martinez-Rios, E. Avalos-Gauna).
@@ -130,7 +132,9 @@ The packages in `as_run/experiments/` hold the protocols, the per-episode record
 Their heavy files (run logs, pickled training states and animations: 137 files, 552 MB) are in the data archive,
 and [`as_run/SNAPSHOT.json`](as_run/SNAPSHOT.json) lists each one with its size and its sealed checksum.
 
-> Data archive: DOI to be added when the deposit is made.
+Archived releases of this repository: [doi:10.5281/zenodo.23356337](https://doi.org/10.5281/zenodo.23356337) (all
+versions); v1.0.0 is [doi:10.5281/zenodo.23356338](https://doi.org/10.5281/zenodo.23356338). The heavy files are
+deposited separately; their DOI will be added here.
 
 ## How this was made
 
@@ -144,8 +148,9 @@ the text against the sealed summaries, and a registration record with every amen
 
 ## Cite
 
-See [`CITATION.cff`](CITATION.cff). The article has not been published yet; its reference will be added on
-publication.
+See [`CITATION.cff`](CITATION.cff), or cite the archived release: A. Noguera Gil, F. Martinez-Rios, E. Avalos-Gauna,
+*pursuit-capture-audit: code and evidence for "When Proximity Is Not Interception"*, v1.0.0, Zenodo, 2026,
+doi:10.5281/zenodo.23356338. The article has not been published yet; its reference will be added on publication.
 
 ## Licences
 

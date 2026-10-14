@@ -4617,3 +4617,26 @@ the picture moved.
   episodes were simulated. The page says seven.
 - Checks of the public repository after the change: 74 tests pass; style checks pass; the sealed evidence verifies
   as before. Still not pushed.
+
+## A-179 — Public repository published
+
+**Date:** 2026-10-13. On the Research lead's instruction ("publish it"), the three local commits of the public
+repository were pushed to `https://github.com/Andnog/pursuit-capture-audit` (branch `main`, public). The copy of
+the registration record inside it (`as_run/governance/AMENDMENTS_EN.md`) ends at A-178; this amendment will enter
+it at the next update. The web site is not online yet: its deployment needs GitHub Pages to be switched to "GitHub
+Actions" in the repository settings, which only the owner can do; the first deployment run failed for that reason.
+The data archive (Zenodo) is still to be made; its DOI is the one PENDING marker left in the manuscript.
+
+## A-180 — Release v1.0.0 archived at Zenodo; the heavy files prepared for a second deposit
+
+**Date:** 2026-10-14. The first author created release v1.0.0 of the public repository, which Zenodo archived:
+version DOI 10.5281/zenodo.23356338, all versions 10.5281/zenodo.23356337. Checked through the DOI resolver and the
+Zenodo record: title, the three authors, MIT licence and one archive of the repository (31.3 MB compressed).
+
+- `docs/manuscript/final_v3/`: the data statement cites the archive (new reference `noguera2026code`, 44 entries) and
+  keeps one PENDING marker, for the DOI of the second deposit. 113 of 113 numbers found.
+- The heavy files of the evidence packages are not in that archive. They were packed for a separate deposit at
+  `Union/repo/evidence_archive/`: `pursuit-capture-audit-heavy-files-v1.0.0.tar.gz` (137 files, 552 MB unpacked,
+  158 MB packed; SHA-256 2d3a84c8…6208f8b), `MANIFEST.json` (path, size and SHA-256 of each file; the 126 files that
+  their packages sealed match their seals) and `ZENODO_UPLOAD.md` with the fields of the record.
+- Public repository: the DOIs added to the README (with a badge), `CITATION.cff`, the instructions and the page.

@@ -41,8 +41,9 @@ uv run pursuit-audit verify
 
 Expected: `832 sealed files present and identical`, `126 sealed files not in this copy`, `0 packages with a file
 that differs from its seal`. The 126 absent files are the heavy ones (run logs, pickled training states,
-animations). They are in the data archive, and `as_run/SNAPSHOT.json` lists each with its size and its sealed
-checksum; with the archive unpacked over `as_run/experiments/`, the same command reports them as present.
+animations). They are deposited at Zenodo apart from the code, and `as_run/SNAPSHOT.json` lists each with its size
+and its sealed checksum; with that archive unpacked over `as_run/`, the same command reports them as present. The
+code and the light part of the evidence are archived as release v1.0.0, doi:10.5281/zenodo.23356338.
 
 ## Level 1 — recompute the numbers
 

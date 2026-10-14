@@ -2,7 +2,7 @@
  "schema_version": 1,
  "assembled_by": "scripts/build_public_repo.py",
  "files_copied": 1249,
- "bytes_copied": 149035647,
+ "bytes_copied": 149037556,
  "networks": 12,
  "written_not_copied": [
   "MAPS_STATUS.json (network paths made relative)"

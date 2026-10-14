@@ -6,7 +6,15 @@ title: >-
   pursuit-capture-audit: code and evidence for "When Proximity Is Not Interception"
 type: software
 version: 1.0.0
+doi: 10.5281/zenodo.23356337
 license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23356337
+    description: All versions of this software, archived at Zenodo
+  - type: doi
+    value: 10.5281/zenodo.23356338
+    description: Version 1.0.0, archived at Zenodo
 repository-code: "https://github.com/Andnog/pursuit-capture-audit"
 url: "https://andnog.github.io/pursuit-capture-audit/"
 abstract: >-
