@@ -36,9 +36,11 @@ authors:
     affiliation: "Universidad Panamericana, Facultad de Ingeniería, Ciudad de México, México"
   - family-names: Martinez-Rios
     given-names: Felix
+    orcid: "https://orcid.org/0000-0002-2346-5922"
     affiliation: "Universidad Panamericana, Facultad de Ingeniería, Ciudad de México, México"
   - family-names: Avalos-Gauna
     given-names: Edgar
+    orcid: "https://orcid.org/0000-0002-3774-8966"
     affiliation: "Rice University, Houston, Texas, United States"
 preferred-citation:
   type: article
