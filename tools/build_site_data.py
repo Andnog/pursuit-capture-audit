@@ -6,20 +6,24 @@ It writes, under `docs/assets/data/`:
 
 - one JSON file per episode shown in the animations: positions, and for every frame the state of
   each condition of the operational capture rule, computed by the library;
-- `charts.json`: every number that the page draws or prints. The rates and the contrasts of the
+- `charts.json`: the chart data and dynamic numerical labels. The rates and the contrasts of the
   two held-out evaluations are computed by the library from the per-episode records; the others
   are read from the sealed summaries.
 
-Nothing here is typed by hand: every number of the site comes from a sealed package or from a
-trace, through `pursuit_audit`.
+The generated numerical data come from sealed packages or traces through `pursuit_audit`.
+Editorial prose separately states study counts, rounded results and limits with source links.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
 import sys
+import tempfile
+import xml.etree.ElementTree as ET
+from pathlib import Path
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "src"))
@@ -29,6 +33,7 @@ from build_results import sealed_values  # noqa: E402
 
 import pursuit_audit as pa  # noqa: E402
 from pursuit_audit.endpoints.specification import PairState  # noqa: E402
+from pursuit_audit.evidence.inventory import load_inventory  # noqa: E402
 from pursuit_audit.evidence.package import EvidencePackage  # noqa: E402
 from pursuit_audit.reporting.headline import (  # noqa: E402
     ALL_EVADERS,
@@ -518,10 +523,9 @@ def build_charts() -> None:
             "evaluation": int(printed["Count evaluation"]),
             "selection": int(printed["Count selection"]),
             "replay": int(printed["Count replay"]),
-            "studies": sum(
-                1
-                for name in os.listdir(EXPERIMENTS)
-                if os.path.isdir(os.path.join(EXPERIMENTS, name))
+            "studies": sum(e["kind"] == "sealed" for e in load_inventory()["packages"].values()),
+            "demonstrations": sum(
+                e["kind"] == "demonstration" for e in load_inventory()["packages"].values()
             ),
             "article_numbers": len(printed),
             "headline_recomputed": len(checks),
@@ -532,11 +536,79 @@ def build_charts() -> None:
     print(f"charts.json: {len(charts)} blocks")
 
 
-def main() -> int:
-    """Build every file."""
+def build_networks() -> None:
+    """Draw the fifteen network outlines directly from the frozen SUMO geometries."""
+    snapshot = Path(ROOT) / "as_run"
+    split = json.loads((snapshot / "contracts/split_manifest.json").read_text())
+    groups = {k: v["cities"] for k, v in split["splits"].items()}
+    groups["HELD-OUT B"] = json.loads((snapshot / "assets/osm_b/MANIFEST.json").read_text())[
+        "accepted"
+    ]
+    for group, cities in groups.items():
+        for city in cities:
+            folder = "osm_b" if group == "HELD-OUT B" else "osm"
+            network = ET.parse(snapshot / "assets" / folder / f"{city}.net.xml").getroot()
+            lines = []
+            for edge in network.findall("edge"):
+                lane = edge.find("lane")
+                if edge.get("function") == "internal" or lane is None:
+                    continue
+                lines.append(
+                    [tuple(map(float, p.split(","))) for p in lane.attrib["shape"].split()]
+                )
+            xs = [p[0] for line in lines for p in line]
+            ys = [p[1] for line in lines for p in line]
+            x0, y0 = min(xs), min(ys)
+            scale = min(144 / (max(xs) - x0), 104 / (max(ys) - y0))
+            dx = (160 - (max(xs) - x0) * scale) / 2
+            dy = (120 - (max(ys) - y0) * scale) / 2
+            paths = []
+            for line in lines:
+                coords = " L".join(
+                    f"{dx + (x - x0) * scale:.1f},{120 - dy - (y - y0) * scale:.1f}"
+                    for x, y in line
+                )
+                paths.append("M" + coords)
+            svg = (
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120">'
+                f"<title>{city}: {group} road geometry</title>"
+                '<path fill="none" stroke="#8b9daf" stroke-width="0.65" '
+                f'd="{" ".join(paths)}"/></svg>\n'
+            )
+            Path(DATA, f"network-{city}.svg").write_text(svg)
+
+
+def build_all() -> None:
+    """Build the display data without altering any source evidence."""
     os.makedirs(DATA, exist_ok=True)
     build_episodes()
     build_charts()
+    build_networks()
+
+
+def main() -> int:
+    """Build all assets or compare a temporary rebuild with the committed files."""
+    global DATA  # noqa: PLW0603 — temporarily redirect only generated outputs
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    if args.check:
+        committed = Path(DATA)
+        with tempfile.TemporaryDirectory(prefix="pursuit-site-") as directory:
+            DATA = directory
+            try:
+                build_all()
+                stale = [
+                    p.name
+                    for p in Path(DATA).iterdir()
+                    if not (committed / p.name).exists()
+                    or p.read_bytes() != (committed / p.name).read_bytes()
+                ]
+            finally:
+                DATA = str(committed)
+        print("Site data: " + (", ".join(sorted(stale)) if stale else "all current"))
+        return int(bool(stale))
+    build_all()
     return 0
 
 

@@ -50,6 +50,8 @@
   class Player {
     constructor(root) {
       this.root = root;
+      root.episodePlayer = this;
+      this.manual = root.hasAttribute("data-manual");
       this.sources = root.dataset.sources
         ? JSON.parse(root.dataset.sources)
         : [{ label: "", src: root.dataset.src, start: root.dataset.start }];
@@ -66,7 +68,7 @@
         (entries) => {
           this.visible = entries[0].isIntersecting;
           if (!this.visible) this.pause(true);
-          else if (!REDUCED && !this.touched && this.data) this.play();
+          else if (!this.manual && !REDUCED && !this.touched && this.data) this.play();
         },
         { threshold: 0.45 }
       ).observe(this.canvas);
@@ -175,7 +177,7 @@
       const url = new URL(source.src, document.baseURI).href;
       const ready = (data) => {
         this.load(data, source);
-        if (this.visible && !REDUCED && !this.touched) this.play();
+        if (this.visible && !this.manual && !REDUCED && !this.touched) this.play();
       };
       if (this.cache.has(url)) {
         ready(this.cache.get(url));
@@ -246,6 +248,7 @@
       this.camera = null;
       this.seek(this.startIndex);
       this.resize();
+      this.root.dispatchEvent(new CustomEvent("episode-ready", { bubbles: true }));
     }
 
     setSpeed(value) {
@@ -620,11 +623,67 @@
     }
   }
 
+  function linkComparison(group) {
+    const roots = Array.from(group.querySelectorAll(".player"));
+    const button = group.querySelector("[data-compare-play]");
+    const slider = group.querySelector("[data-compare-time]");
+    const clock = group.querySelector("[data-compare-clock]");
+    let players = [], playing = false, time = 22, last = null, frame = null;
+    const render = () => {
+      players.forEach(player => player.seek(Math.min(player.data.times.length - 1, time / player.step)));
+      slider.value = String(time);
+      clock.textContent = seconds(time);
+    };
+    const pause = () => {
+      playing = false;
+      if (frame !== null) cancelAnimationFrame(frame);
+      frame = null;
+      button.textContent = "Play both";
+    };
+    const tick = now => {
+      if (!playing) return;
+      if (last !== null) time = Math.min(Number(slider.max), time + (now - last) / 1000 * 10);
+      last = now;
+      render();
+      if (time >= Number(slider.max)) pause();
+      else frame = requestAnimationFrame(tick);
+    };
+    const ready = () => {
+      if (group.classList.contains("is-linked")) return;
+      if (!roots.every(root => root.episodePlayer && root.episodePlayer.data)) return;
+      players = roots.map(root => root.episodePlayer);
+      slider.max = String(Math.min(...players.map(player => player.data.times.at(-1))));
+      group.classList.add("is-linked");
+      group.querySelectorAll("button, input").forEach(control => { control.disabled = false; });
+      render();
+    };
+    group.addEventListener("episode-ready", ready);
+    ready();
+    button.addEventListener("click", () => {
+      if (playing) { pause(); return; }
+      if (time >= Number(slider.max)) time = 0;
+      playing = true; last = null; button.textContent = "Pause both";
+      frame = requestAnimationFrame(tick);
+    });
+    slider.addEventListener("input", () => { pause(); time = Number(slider.value); render(); });
+    group.querySelectorAll("[data-compare-jump]").forEach(control => {
+      control.addEventListener("click", () => {
+        pause();
+        const result = control.dataset.compareJump === "stop" ? players[1].data.results.oc : players[0].data.results.body_5m;
+        if (result.reached) { time = result.time; render(); }
+      });
+    });
+    new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) pause();
+    }).observe(group);
+  }
+
   function setup() {
     document.querySelectorAll(".player:not([data-ready])").forEach((root) => {
       root.dataset.ready = "1";
       new Player(root);
     });
+    document.querySelectorAll("[data-comparison]").forEach(linkComparison);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", setup);

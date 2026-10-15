@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: "3.14"
       - name: Install
-        run: uv sync
+        run: uv sync --frozen
       - name: Style
         run: |
           uv run ruff check src tests tools
@@ -27,3 +27,7 @@ jobs:
         run: uv run pursuit-audit recompute
       - name: Result tables are current
         run: uv run python tools/build_results.py --check
+      - name: Website data and reviewer resources are current
+        run: |
+          uv run python tools/build_site_data.py --check
+          uv run python tools/build_review.py --check

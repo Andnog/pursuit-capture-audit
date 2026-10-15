@@ -17,7 +17,47 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SNAPSHOT = os.path.join(ROOT, "as_run")
 OUTPUT = os.path.join(ROOT, "src", "pursuit_audit", "evidence", "studies.json")
-EVIDENCE_MAP = os.path.join(ROOT, "results", "EVIDENCE_MAP.md")
+# Article membership retained from the original claim-by-claim map.
+# Do not infer it from the reviewer guide, which also lists every package.
+ARTICLE_PACKAGES = {
+    "20260930_cage_certificate_audit_r01",
+    "20261001_ambush_learning_r01",
+    "20261001_endpoint_validation_r01",
+    "20261001_final_study_r01",
+    "20261001_robustness_study_r01",
+    "20261002_ambush_optimization_r01",
+    "20261002_kan_capture_law_r01",
+    "20261002_mappo_r01",
+    "20261002_sensitivity_r02",
+    "20261003_commitment_r01",
+    "20261003_d06_persistence_audit_r01",
+    "20261003_goal_evader_r01",
+    "20261003_interpretability_r01",
+    "20261003_kan_capture_law_test_r01",
+    "20261003_test_confirmation_r01",
+    "20261004_audit_addendum_r01",
+    "20261004_audit_addendum_r02",
+    "20261004_audit_addendum_r03",
+    "20261004_mappo_v2_r01",
+    "20261004_mechanism_diagnostics_r01",
+    "20261005_ae_reclassification_r01",
+    "20261005_capture_instant_scan_r01",
+    "20261005_fifth_review_delimitation_r01",
+    "20261005_heldout_b_r01",
+    "20261005_kinematic_sensitivity_r01",
+    "20261005_mappo_prox_posthoc_r01",
+    "20261005_mappo_prox_r01",
+    "20261005_mappo_v3_r01",
+    "20261005_published_env_audit_r01",
+    "20261005_published_env_audit_r02",
+    "20261005_published_env_pepcrl_r01",
+    "20261005_traffic_interaction_posthoc_r01",
+    "20261005_traffic_sensitivity_r01",
+    "20261005_tuned_evader_r01",
+    "20261005_v3_first_batch_reconstruction_r01",
+    "20261006_heldout_sets_posthoc_r01",
+    "20261006_mappo_v4_r01",
+}
 SCRIPT = re.compile(r"scripts/([a-z0-9_]+\.py)")
 SIMULATES = re.compile(r"run_episode|import traci|native\.engine|\bPool\(|rollout")
 RUNNER_PREFIXES = ("run_", "train_", "audit_")
@@ -135,9 +175,11 @@ def command_for(script: str | None, package: str) -> str | None:
     command = f"uv run python scripts/{script}"
     for candidate in ("--package", "--out", "package"):
         if candidate in names:
-            target = f"experiments/{package}_rerun"
+            target = f"/tmp/{package}_rerun"
             command += f" {target}" if candidate == "package" else f" {candidate} {target}"
             break
+    else:
+        command += " --help"
     return command
 
 
@@ -150,7 +192,7 @@ def main() -> int:
     """Write the catalogue."""
     with open(os.path.join(SNAPSHOT, "SNAPSHOT.json"), encoding="utf-8") as handle:
         archive_only = json.load(handle)["archive_only"]
-    cited = set(re.findall(r"\b(20\d{6}_[a-z0-9_]+)", read(EVIDENCE_MAP)))
+    cited = ARTICLE_PACKAGES
     studies = []
     experiments = os.path.join(SNAPSHOT, "experiments")
     for package in sorted(os.listdir(experiments)):

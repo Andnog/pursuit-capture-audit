@@ -7,17 +7,22 @@
 <meta name="description" content="An audit of capture endpoints for multi-vehicle pursuit in microscopic urban traffic simulation: what a 5 m rule measures, and what stops a car.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0b0b'/%3E%3Cpath d='M9 13h14M9 19h14M19 8l-6 16' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/editorial.css">
+<meta property="og:title" content="When proximity is not interception">
+<meta property="og:description" content="Capture rules, fifteen urban road networks, and the evidence behind the article.">
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 
 <header class="site-header">
   <div class="wrap">
     <a class="wordmark" href="#top">Proximity ≠ interception <span>· an audit</span></a>
     <nav class="site-nav" aria-label="Sections">
       <a href="#findings">Findings</a>
+      <a href="#study">Study</a>
       <a href="#limits" class="optional">Limits</a>
       <a href="#evidence">Evidence</a>
-      <a href="https://github.com/Andnog/pursuit-capture-audit" class="optional">Code</a>
+      <a href="review.html" class="review-nav">Review guide ↗</a>
     </nav>
   </div>
 </header>
@@ -26,14 +31,39 @@
 
 <section class="hero">
   <div class="wrap">
-    <p class="eyebrow">An audit of capture endpoints · SUMO · fifteen real downtowns</p>
-    <h1>When proximity is not interception</h1>
-    <p class="lede">Pursuit studies count a capture when a pursuer comes within a few metres of the evader. Two cars that pass each other in opposite lanes do exactly that.</p>
-    <figure>
-      <div class="player" data-src="assets/data/passing_cars.json" data-view="62"></div>
-      <figcaption>Two cars at 12 m/s, drawn to scale. The dashed outline is the 5 m rule. It fires; nobody is stopped. The second rule asks for what an interception is, and it stays silent.</figcaption>
-    </figure>
-    <p class="byline">Andrei Noguera Gil, Felix Martinez-Rios and Edgar Avalos-Gauna</p>
+    <p class="eyebrow">Research article · methods, findings &amp; evidence</p>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>When proximity<br>is not <em>interception.</em></h1>
+        <p class="lede">Getting close is not the same as stopping a car. In simulations on fifteen urban road networks, the rule used to count a capture changes both the success rate and which strategy appears to work best.</p>
+        <p class="byline">Andrei Noguera Gil · Felix Martinez-Rios · Edgar Avalos-Gauna</p>
+        <p class="affiliations">Universidad Panamericana · Rice University</p>
+        <div class="resource-actions">
+          <a class="button primary" href="paper/manuscript.pdf">Read the manuscript <span>↗</span></a>
+          <a class="button" href="paper/supplement.pdf">Supplement ↗</a>
+          <a class="text-link" href="review.html">Data, code &amp; reproduction →</a>
+        </div>
+        <p class="publication-state">Author manuscript · October 2026 · not yet published<br>Companion data archive: DOI pending. <a href="review.html#availability">Availability details</a></p>
+      </div>
+      <figure class="hero-demo">
+        <div class="figure-kicker"><span class="live-dot"></span> A measurement problem, in motion</div>
+        <div class="player" data-src="assets/data/passing_cars.json" data-view="62"></div>
+        <figcaption>Two cars pass in opposite lanes at 12 m/s. The 5 m body-gap rule counts a capture; our sustained-stop criterion does not. Synthetic illustration, drawn to scale.</figcaption>
+      </figure>
+    </div>
+    <div class="study-ribbon"><span>15 road networks</span><span>8 held-out cities</span><span>One simulator: SUMO</span><span>Scripted evaders</span></div>
+  </div>
+</section>
+
+<section class="overview" aria-labelledby="overview-title">
+  <div class="wrap">
+    <div class="overview-heading"><p class="eyebrow">The contribution</p><h2 id="overview-title">Three findings. One question:<br>what does a capture score measure?</h2></div>
+    <div class="finding-grid">
+      <a class="finding-card" href="#findings"><span class="number">01 / Measurement</span><h3>Close is not captured.</h3><p>A team that does not pursue still scores <strong data-fill="null-body">33.2 %</strong> under a 5 m body-gap rule, versus <strong data-fill="null-oc">3.1 %</strong> under operational capture.</p><span class="card-link">Compare the endpoints →</span></a>
+      <a class="finding-card" href="#containment"><span class="number">02 / Containment</span><h3>“Enclosed” can be wrong.</h3><p>Most evaders certified by the junction-level indicator escape. Checking individual lanes helps, but does not guarantee containment.</p><span class="card-link">Audit the indicators →</span></a>
+      <a class="finding-card" href="#blocking"><span class="number">03 / Control</span><h3>Waiting ahead helps.</h3><p>Predictive lane blocking beats chasing by <strong data-fill="adv-test">+14.5</strong> and <strong data-fill="adv-b">+6.4</strong> percentage points on two separate held-out sets.</p><span class="card-link">Inspect the held-out results →</span></a>
+    </div>
+    <p class="scope-note">The contribution is an audit of measurement, with a planning baseline evaluated under it. Getting ahead of a vehicle is established prior work; these experiments do not establish effectiveness in real vehicles.</p>
   </div>
 </section>
 
@@ -85,28 +115,50 @@
           {"label": "Passing in opposite lanes", "src": "assets/data/passing_cars.json"},
           {"label": "Trailing at speed", "src": "assets/data/follower_behind.json"},
           {"label": "Stopped behind a pursuer", "src": "assets/data/blocked_stop.json"}]'></div>
-        <figcaption>A pursuer that merely trails the evader is "within 5 m" from the first instant if the distance is taken between bodies, and never if it is taken between front bumpers: the two bumpers are a car length apart. The same episode is a success or a failure depending on which points the rule joins.</figcaption>
+        <figcaption>Compare passing, following at speed and stopping. The displayed proximity verdict uses the shortest gap between vehicle bodies. Front-bumper and centre distances can give different verdicts on the same scene; the manuscript specifies each rule.</figcaption>
       </figure>
     </div>
   </div>
 </section>
 
+<section id="study" class="study-section"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Experimental design</p><h2>Real street geometries.<br>Controlled simulation.</h2><p class="lede">Fifteen downtown networks from OpenStreetMap. Four cities for training, three for development, and two separate sets of four reserved for evaluation.</p></div>
+<div class="design-facts"><div><strong>SUMO 1.21</strong><span>0.1 s physical steps · 300 s episodes</span></div><div><strong>3, 5 or 7 pursuers</strong><span>One scripted evader · matched starts and seeds</span></div><div><strong>Two held-out sets</strong><span>Each evaluated once · results not pooled</span></div></div>
+<div class="network-atlas"><figure class="network-card" data-split="TRAINING"><img loading="lazy" src="assets/data/network-adelaide_cbd.svg" alt="Road network used for Adelaide"><figcaption><strong>Adelaide</strong><span>TRAINING</span></figcaption></figure>
+<figure class="network-card" data-split="TRAINING"><img loading="lazy" src="assets/data/network-seattle_downtown.svg" alt="Road network used for Seattle"><figcaption><strong>Seattle</strong><span>TRAINING</span></figcaption></figure>
+<figure class="network-card" data-split="TRAINING"><img loading="lazy" src="assets/data/network-toronto_downtown.svg" alt="Road network used for Toronto"><figcaption><strong>Toronto</strong><span>TRAINING</span></figcaption></figure>
+<figure class="network-card" data-split="TRAINING"><img loading="lazy" src="assets/data/network-washington_downtown.svg" alt="Road network used for Washington"><figcaption><strong>Washington</strong><span>TRAINING</span></figcaption></figure>
+<figure class="network-card" data-split="DEVELOPMENT"><img loading="lazy" src="assets/data/network-phoenix_downtown.svg" alt="Road network used for Phoenix"><figcaption><strong>Phoenix</strong><span>DEVELOPMENT</span></figcaption></figure>
+<figure class="network-card" data-split="DEVELOPMENT"><img loading="lazy" src="assets/data/network-portland_downtown.svg" alt="Road network used for Portland"><figcaption><strong>Portland</strong><span>DEVELOPMENT</span></figcaption></figure>
+<figure class="network-card" data-split="DEVELOPMENT"><img loading="lazy" src="assets/data/network-sapporo_grid.svg" alt="Road network used for Sapporo"><figcaption><strong>Sapporo</strong><span>DEVELOPMENT</span></figcaption></figure>
+<figure class="network-card" data-split="TEST"><img loading="lazy" src="assets/data/network-chicago_loop.svg" alt="Road network used for Chicago"><figcaption><strong>Chicago</strong><span>TEST</span></figcaption></figure>
+<figure class="network-card" data-split="TEST"><img loading="lazy" src="assets/data/network-melbourne_cbd.svg" alt="Road network used for Melbourne"><figcaption><strong>Melbourne</strong><span>TEST</span></figcaption></figure>
+<figure class="network-card" data-split="TEST"><img loading="lazy" src="assets/data/network-minneapolis_downtown.svg" alt="Road network used for Minneapolis"><figcaption><strong>Minneapolis</strong><span>TEST</span></figcaption></figure>
+<figure class="network-card" data-split="TEST"><img loading="lazy" src="assets/data/network-salt_lake_city.svg" alt="Road network used for Salt Lake City"><figcaption><strong>Salt Lake City</strong><span>TEST</span></figcaption></figure>
+<figure class="network-card" data-split="HELD-OUT B"><img loading="lazy" src="assets/data/network-denver_downtown.svg" alt="Road network used for Denver"><figcaption><strong>Denver</strong><span>HELD-OUT B</span></figcaption></figure>
+<figure class="network-card" data-split="HELD-OUT B"><img loading="lazy" src="assets/data/network-vancouver_downtown.svg" alt="Road network used for Vancouver"><figcaption><strong>Vancouver</strong><span>HELD-OUT B</span></figcaption></figure>
+<figure class="network-card" data-split="HELD-OUT B"><img loading="lazy" src="assets/data/network-barcelona_eixample.svg" alt="Road network used for Barcelona"><figcaption><strong>Barcelona</strong><span>HELD-OUT B</span></figcaption></figure>
+<figure class="network-card" data-split="HELD-OUT B"><img loading="lazy" src="assets/data/network-buenos_aires_microcentro.svg" alt="Road network used for Buenos Aires"><figcaption><strong>Buenos Aires</strong><span>HELD-OUT B</span></figcaption></figure></div>
+<p class="caption">Network outlines generated from the distributed SUMO files; each is independently scaled. These are simulations on real road geometries, not field trials. © OpenStreetMap contributors, ODbL.</p>
+<details class="method-details"><summary>Protocol, uncertainty and evaluation scope</summary><div class="prose"><p>Training cities were used for parameter selection. Development cities informed design decisions. TEST was opened once after methods were frozen. HELD-OUT B cities were registered before map download and evaluated once. Both sets are now spent.</p><p>Comparisons are paired by scenario and simulator seed. Intervals resample scenario families, keeping related team-size cells together. A family is a city, a scenario and an evader behaviour. Primary held-out contrasts use 97.5 % intervals; other displayed intervals use 95 % unless labelled otherwise. Four cities per held-out set limit inference to other cities.</p><p>“Optimal” is the name of a greedy scripted evader, not a global optimum. Five evader behaviours are studied overall; the primary comparison pools avoidant and random evaders. Registration is internal, with hashes and amendments, not an externally timestamped registry. <a href="review.html#methods">Inspect the contracts and analysis →</a></p></div></details>
+</div></section>
+
 <section id="findings">
   <div class="wrap">
     <div class="section-head">
       <span class="number">01</span>
-      <h2>Proximity is not interception</h2>
+      <h2>Proximity is not interception</h2><a class="section-source" href="review.html#endpoints">Records &amp; analysis ↗</a>
       <p class="lede">The simplest check of a capture rule is to score a team that is not trying.</p>
     </div>
 
     <div class="figures">
-      <div><span class="figure-value" data-fill="null-range">–</span><span class="figure-label">of episodes are a success under proximity rules for a team that drives random routes and pursues nobody</span></div>
-      <div><span class="figure-value" data-fill="null-oc">–</span><span class="figure-label">for the same team under operational capture</span></div>
+      <div><span class="figure-value" data-fill="null-body">–</span><span class="figure-label">of the same 548 episodes meet the 5 m body-gap rule, although the team drives random routes and pursues nobody</span></div>
+      <div><span class="figure-value" data-fill="null-oc">–</span><span class="figure-label">of those episodes meet the operational capture criterion</span></div>
     </div>
 
     <figure class="panel">
       <div data-chart="null-team"></div>
-      <figcaption>A team of five that does not pursue. Lines show 95 % intervals over scenario families, where the study computed them.</figcaption>
+      <figcaption>A team of five that does not pursue. The headline compares the same 548 episodes on seven cities. The second row is a separate held-out set. Lines show 95 % intervals over scenario families, where available. The broader 21–42 % range in the article also includes a 10 m body-gap rule, omitted from this chart.</figcaption>
     </figure>
 
     <div class="block">
@@ -152,11 +204,14 @@
       <div class="prose">
         <p>Central Adelaide: same start positions, same evader, same simulator seed. With pursuit, the 5 m rule stops the clock half a minute in, and the evader drives on for the rest of the episode. With pursuers that wait ahead, it is stopped.</p>
       </div>
-      <figure>
-        <div class="player" data-view="150" data-speed="10" data-sources='[
-          {"label": "Five pursuers that chase", "src": "assets/data/adelaide_25_pursuit.json", "start": "22"},
-          {"label": "Five pursuers that wait ahead", "src": "assets/data/adelaide_25_ambush_plus.json", "start": "32"}]'></div>
-        <figcaption>An illustration, at ten times real speed. These two episodes were chosen among seven demonstration scenarios because they show the difference clearly; they are not part of any evaluation and say nothing about how often it happens. The rates are in the charts above. Map data © OpenStreetMap contributors.</figcaption>
+      <figure class="comparison" data-comparison>
+        <div class="comparison-controls"><button type="button" class="button" data-compare-play disabled>Play both</button><label>Shared simulation time <input data-compare-time type="range" min="0" max="300" step="0.2" value="22" disabled></label><output data-compare-clock>22.0 s</output><span>10× speed</span></div>
+        <div class="comparison-jumps"><button type="button" data-compare-jump="proximity" disabled>First proximity encounter</button><button type="button" data-compare-jump="stop" disabled>Operational stop</button></div>
+        <div class="comparison-grid">
+          <div><h4>Pursuit <span>Five pursuers chase</span></h4><div class="player" data-manual data-view="150" data-start="22" data-src="assets/data/adelaide_25_pursuit.json"></div></div>
+          <div><h4>Predictive lane blocking <span>Five pursuers wait ahead</span></h4><div class="player" data-manual data-view="150" data-start="22" data-src="assets/data/adelaide_25_ambush_plus.json"></div></div>
+        </div>
+        <figcaption>Same scenario and simulation clock; camera views follow each evader separately. These two episodes were selected from seven demonstrations, are outside the evaluations, and do not estimate capture frequency. Map data © OpenStreetMap contributors.</figcaption>
       </figure>
     </div>
 
@@ -171,18 +226,18 @@
         <div><span class="figure-value" data-fill="hold-probe">–</span><span class="figure-label">escapes when a probe asked the evader to change lane every second</span></div>
       </div>
       <div class="prose" style="margin-top:2rem">
-        <p>Zero observed escapes is not a guarantee, and the probe shows why. Operational capture measures close stopping behind a pursuer. It does not prove that escape is impossible, and it needs no rear blocker.</p>
+        <p>Zero observed escapes is not a guarantee, and the probe shows why. Operational capture measures close stopping behind a pursuer. It does not prove that escape is impossible, and it needs no rear blocker. If controllers keep re-planning after capture, 8–14 % of evaders are later released: the zero-escape hold result depends on keeping the pursuers stopped. <a href="review.html#persistence">Audit records →</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section id="containment">
   <div class="wrap">
     <div class="section-head">
       <span class="number">02</span>
-      <h2>"Enclosed" needs auditing too</h2>
-      <p class="lede">A containment indicator certifies, during an episode, that the evader has nowhere to go. We followed every certified evader for a minute.</p>
+      <h2>"Enclosed" needs auditing too</h2><a class="section-source" href="review.html#containment">Records &amp; analysis ↗</a>
+      <p class="lede">A containment indicator labels an evader as enclosed during an episode. We test whether that label predicts what happens next. We followed every certified evader for a minute.</p>
     </div>
     <div class="split">
       <div class="statement"><span data-fill="junction-range">–</span> escape<small>when the indicator asks for a pursuer near each surrounding junction. Its usual failure: a pursuer parked on a different approach, near the junction and not in the way.</small></div>
@@ -195,11 +250,11 @@
   </div>
 </section>
 
-<section>
+<section id="blocking">
   <div class="wrap">
     <div class="section-head">
       <span class="number">03</span>
-      <h2>Waiting ahead beats chasing</h2>
+      <h2>Waiting ahead beats chasing</h2><a class="section-source" href="review.html#heldout">Records &amp; analysis ↗</a>
       <p class="lede">Under the audited rule, pursuers that wait in the lanes the evader is predicted to take capture more than pursuers that chase.</p>
     </div>
 
@@ -280,7 +335,7 @@
     <div class="block">
       <h3>Across evaders, kinematics and traffic</h3>
       <div class="prose">
-        <p>The advantage is positive in every condition tested. Its size is not stable: on the second held-out set it is less than half of that on the first, and we did not identify why.</p>
+        <p>The estimated advantage over pursuit is positive in every condition shown. Its size is not stable: on the second held-out set it is less than half of that on the first, and we did not identify why.</p>
       </div>
       <figure class="panel">
         <div data-chart="advantage"></div>
@@ -300,7 +355,7 @@
           <figcaption>HELD-OUT B: Denver, Vancouver, Barcelona, Buenos Aires.</figcaption>
         </figure>
       </div>
-      <p class="caption">Share of episodes that end in an operational capture. The junction ambush is the simpler planner that only closes a junction when the whole team is in time.</p>
+      <p class="caption">Share of episodes that end in an operational capture. “Optimal” names a scripted evader that chooses among all exits by a local distance rule, not a globally optimal adversary. The junction ambush is the simpler planner that only closes a junction when the whole team is in time. On HELD-OUT B, PLB’s advantage over that simpler planner was not established: +2.4 points (95 % interval −1.7 to +6.4). Its advantage over pursuit remains positive. <a href="review.html#heldout">Sources and comparisons →</a></p>
     </div>
 
     <div class="block">
@@ -317,11 +372,11 @@
     <div class="block">
       <h3>What did not help</h3>
       <div class="prose">
-        <p>A controller cloned from the planner and then fine-tuned by multi-agent reinforcement learning did not improve on its imitation start, in three successive implementations. Audits found defects in the training code of the first two; with both corrected, the outcome did not change.</p>
+        <p>A controller cloned from the planner and then fine-tuned by multi-agent reinforcement learning showed no statistically supported improvement over its imitation start at the tested budgets, across three successive implementations. Audits found defects in the training code of the first two; with both corrected, the outcome did not change.</p>
       </div>
       <figure class="panel">
         <div data-chart="learning"></div>
-        <figcaption>The imitation controllers do not lag the planner they copy. The negative result is specific: for this controller and these budgets, learning did not improve on imitation. It is not evidence that learned controllers cannot match or exceed a planner.</figcaption>
+        <figcaption>No clear difference from the copied planner was detected; this is not a test establishing equivalence. For this controller and these budgets, fine-tuning produced no statistically supported improvement over imitation. It is not evidence that learned controllers cannot match or exceed a planner.</figcaption>
       </figure>
     </div>
   </div>
@@ -348,20 +403,20 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Evidence</p>
-      <h2>Check it yourself</h2>
-      <p class="lede">Every study is a sealed package with a checksum for each file. The code that produced it is kept exactly as it ran, next to a small library written to be read.</p>
+      <h2>Check it yourself</h2><a class="section-source" href="review.html">Open the complete review guide ↗</a>
+      <p class="lede">The repository preserves sealed result packages, the research code and available historical source archives, alongside an independently implemented library. Some launch-time source versions are not fully recoverable. Integrity, numerical recomputation and simulator replay are separate checks. <a href="review.html#reproduction">See the verification scope →</a></p>
     </div>
 
     <div class="figures">
       <div><span class="figure-value" data-fill="count-evaluation">–</span><span class="figure-label">evaluation episodes behind the article</span></div>
-      <div><span class="figure-value" data-fill="count-studies">–</span><span class="figure-label">sealed studies, with protocol, records and checksums</span></div>
+      <div><span class="figure-value" data-fill="count-studies">–</span><span class="figure-label">sealed evidence packages, plus one separate demonstration directory</span></div>
       <div><span class="figure-value" data-fill="count-numbers">–</span><span class="figure-label">numbers of the article checked against the sealed summaries</span></div>
     </div>
 
     <ol class="steps">
       <li><div>
         <h3>Verify, in seconds</h3>
-        <p>Every sealed file against its checksum. No simulator needed.</p>
+        <p>Expected packages, unchanged seals and file checksums. Only explicitly listed companion-file omissions are allowed. No simulator needed.</p>
 <pre><code>git clone https://github.com/Andnog/pursuit-capture-audit.git
 cd pursuit-capture-audit &amp;&amp; uv sync
 uv run pursuit-audit verify</code></pre>
@@ -382,7 +437,7 @@ uv run python scripts/audit_d06_persistence.py --package /tmp/replay --limit 6</
       </div></li>
       <li><div>
         <h3>Run a study again</h3>
-        <p>Each study has one script and a registered protocol. <a href="https://github.com/Andnog/pursuit-capture-audit/blob/main/REPRODUCE.md">The instructions</a> give the command for every one of them.</p>
+        <p>The catalogue identifies study scripts and registration records; it also includes post hoc analyses and demonstrations. <a href="https://github.com/Andnog/pursuit-capture-audit/blob/main/REPRODUCE.md">The instructions</a> give the command for every one of them.</p>
       </div></li>
     </ol>
 
@@ -401,6 +456,7 @@ print(capture.captured, capture.closest_failure)</code></pre>
   </div>
 </section>
 
+<noscript><div class="wrap notice">Interactive charts require JavaScript. The <a href="paper/manuscript.pdf">manuscript</a>, <a href="paper/supplement.pdf">supplement</a> and <a href="review.html">review guide</a> are available without it.</div></noscript>
 </main>
 
 <footer class="site-footer">
@@ -412,12 +468,12 @@ print(capture.captured, capture.closest_failure)</code></pre>
     </div>
     <div>
       <h3>How this was made</h3>
-      <p>Two AI models were used in the research, under the supervision of the first author, and the article declares it: Claude Opus 5.5 (Anthropic) wrote the code, ran the experiments and built this page from the sealed result files; Astra (OpenAI) helped the authors audit the work in six rounds, which found defects that were corrected and are reported.</p>
+      <p>Two AI models were used in the research, under the supervision of the first author, as declared in the manuscript: Claude Opus 5.5 (Anthropic) wrote the code, ran the experiments and built the original page from the sealed result files; Astra (OpenAI) helped the authors audit the work in six rounds, which found defects that were corrected and are reported. This editorial revision adds reviewer navigation, clearer scope statements and integrity checks without changing the preserved research record.</p>
     </div>
     <div>
       <h3>Licences</h3>
       <p>Code: MIT. Results and this page: CC BY 4.0. Road networks: © OpenStreetMap contributors, ODbL.</p>
-      <p>Archived at Zenodo: <a href="https://doi.org/10.5281/zenodo.23356337">doi:10.5281/zenodo.23356337</a>. The heavy files of the evidence (run logs, training states) are deposited separately.</p>
+      <p>Archived at Zenodo: <a href="https://doi.org/10.5281/zenodo.23356337">doi:10.5281/zenodo.23356337</a>. The companion archive (run logs and training states) is being prepared for separate deposit; its DOI is pending. <a href="review.html#availability">Files and availability →</a></p>
     </div>
   </div>
 </footer>

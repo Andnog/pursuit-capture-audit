@@ -6,13 +6,17 @@ import os
 import pytest
 
 from pursuit_audit.evidence.catalogue import load_catalogue
+from pursuit_audit.evidence.inventory import load_inventory
 from pursuit_audit.evidence.package import EvidencePackage, packages, sha256_of
 from pursuit_audit.reporting.headline import headline_checks
 
 
 def test_every_present_sealed_file_matches_its_checksum(experiments):
     present = 0
+    inventory = load_inventory()["packages"]
     for package in packages(experiments):
+        if inventory[package.name]["kind"] == "demonstration":
+            continue
         result = package.verify()
         assert result.intact, f"{package.name}: {result.mismatched}"
         present += len(result.matched)

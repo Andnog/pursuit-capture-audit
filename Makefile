@@ -1,4 +1,4 @@
-.PHONY: help install lint format test verify recompute numbers results check-results check site serve
+.PHONY: help install lint format test verify recompute numbers results check-results check check-site site serve
 
 help:            ## List the targets
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | sed -E 's/:.*## /\t/' | expand -t 18
@@ -32,10 +32,15 @@ results: numbers ## Regenerate the catalogue of studies and the tables of result
 check-results:   ## Fail if the committed tables are out of date
 	uv run python tools/build_results.py --check
 
-check: lint test verify recompute check-results  ## Everything that needs no simulator
+check: lint test verify recompute check-results check-site  ## Everything that needs no simulator
 
-site:            ## Rebuild the data of the web site from the sealed evidence
+check-site:      ## Check generated website data and public review resources
+	uv run python tools/build_site_data.py --check
+	uv run python tools/build_review.py --check
+
+site:            ## Rebuild the public website resources from preserved evidence
 	uv run python tools/build_site_data.py
+	uv run python tools/build_review.py
 
 serve:           ## Preview the web site at http://127.0.0.1:8000
 	python3 -m http.server 8000 --bind 127.0.0.1 --directory docs

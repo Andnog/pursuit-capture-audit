@@ -515,7 +515,8 @@
   "evaluation": 197655,
   "selection": 16403,
   "replay": 22455,
-  "studies": 90,
+  "studies": 89,
+  "demonstrations": 1,
   "article_numbers": 113,
   "headline_recomputed": 13
  }

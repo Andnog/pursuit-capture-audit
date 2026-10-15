@@ -1,0 +1,54 @@
+{
+  "revision": "Author draft, October 2026; copied for editorial review on 2026-10-14",
+  "companion_doi_status": "pending",
+  "files": {
+    "SOURCE_README.txt": {
+      "sha256": "70e9a37ae36816176748a966445728f346edfccb3fa5ccdd0d108b23b12734f3",
+      "bytes": 486
+    },
+    "figures/F0_method.pdf": {
+      "sha256": "fecae10509ad222f74e7ac1a45acb311290be3594c3d528b2e84392fd4378f48",
+      "bytes": 62971
+    },
+    "figures/F1_endpoint_calibration.pdf": {
+      "sha256": "2543f0d3657712afbf1c497012c58f292b0a0c6a76e0d20e49fd1a49c776dcec",
+      "bytes": 16302
+    },
+    "figures/F2_methods_by_team.pdf": {
+      "sha256": "d569824aa143b214029ce9404dc0f1c87b11d5791cb6f5b732794eac72c09bfa",
+      "bytes": 23756
+    },
+    "figures/F3_certificate_validity.pdf": {
+      "sha256": "815b0ef52b17e7bc07d103198042eec8d8022f1b7be1157c65be05d672aa1070",
+      "bytes": 18287
+    },
+    "figures/F4_junction_blockability.pdf": {
+      "sha256": "aae32de087415c8344c8db1b7b78762ac95f95ab49069b922557332e0f5b2272",
+      "bytes": 14248
+    },
+    "figures/F7_kan_mlp_logistic_shapes.pdf": {
+      "sha256": "83b3f233b071b36d8ee13a77d440f122a69cc58d8778a42d5d1f06fb46b56d70",
+      "bytes": 18331
+    },
+    "manuscript.pdf": {
+      "sha256": "c51e4ad970f76eea12f1a564c77d84795f303018f3f794a01e07a1de97d4fc95",
+      "bytes": 632247
+    },
+    "source/main.tex": {
+      "sha256": "c9f75406bc96ac47de29b4d830e5e1aa58a682b0666b6fe73a73647b25e67165",
+      "bytes": 66929
+    },
+    "source/refs.bib": {
+      "sha256": "7611132e0722cae4217267f5c1add0fbefad25fe28e895c2a7afed10663ddc3f",
+      "bytes": 16757
+    },
+    "source/supplement.tex": {
+      "sha256": "129bbbf066cacba7522b867785a86a9b1e3445cdf1714aabfb6c611b86995103",
+      "bytes": 72228
+    },
+    "supplement.pdf": {
+      "sha256": "945362c087a3bb555f1d3eff90b31e4d12f6da0480932755e00cf567203cbac4",
+      "bytes": 414787
+    }
+  }
+}

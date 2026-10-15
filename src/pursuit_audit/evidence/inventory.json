@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "description": "Public snapshot inventory recorded before the editorial revision; hashes are integrity references, not external timestamps. Do not rebuild to hide missing or changed evidence.",
+  "snapshot_sha256": "ba7b3ba6c23b6e5ae9f49a91c9689a58409216b494bf49993ec42457b152244d",
+  "packages": {
+    "20260920_w01_finite_examples_r01": {
+      "kind": "sealed",
+      "seal_sha256": "b41973f931ea940cd642b3869cb5d08e5483a77eb5c81fab088e04046ab6fb9e"
+    },
+    "20260921_w00_novelty_closure_r01": {
+      "kind": "sealed",
+      "seal_sha256": "124e7ef872a706c7aed8b2614cf13b1233df3bf49dd1c89b7f48d2bb52579e98"
+    },
+    "20260921_w00_novelty_closure_r02": {
+      "kind": "sealed",
+      "seal_sha256": "6200665eab897f401463eabbc772cdf52538ab7e705e84703db2a700853147d9"
+    },
+    "20260921_w00_novelty_closure_r03": {
+      "kind": "sealed",
+      "seal_sha256": "0da3b16c24059e821f29fa7d246a498b3c904de3235b1380d31a656823e30375"
+    },
+    "20260921_w00_novelty_closure_r04": {
+      "kind": "sealed",
+      "seal_sha256": "ebcfaa1b9534fc827342890bb1f967dae6ef7f73635bc3b294be9b61693c32b3"
+    },
+    "20260921_w02_contracts_r01": {
+      "kind": "sealed",
+      "seal_sha256": "a78f05aeb0f1f7f39b3717b8f379ed4a2e78e8ec11b9d3698b9bc95ae6fe32a2"
+    },
+    "20260921_w03_adapter_r01": {
+      "kind": "sealed",
+      "seal_sha256": "d3047b02348f9d5816215c758900492ae32f5b8abf80b780b892cc6a0ec751f2"
+    },
+    "20260921_w03_evader_r01": {
+      "kind": "sealed",
+      "seal_sha256": "9416fc0df065bd3fcf58aca6fd411eb39a8be6270a11a0eef663d0c07820c522"
+    },
+    "20260921_w04_arrival_model_prereq_r01": {
+      "kind": "sealed",
+      "seal_sha256": "5af7278e2bff7afa84b916b8c1b9558a2b718b3cbf11a84c703eadc1e0bbc0ad"
+    },
+    "20260921_w04_arrival_model_prereq_r02": {
+      "kind": "sealed",
+      "seal_sha256": "838f0961d2e8abddbc546c8584d1d236f28a9fff9aad4d1cfec4b652829f44bc"
+    },
+    "20260921_w04_constructive_arrival_r01": {
+      "kind": "sealed",
+      "seal_sha256": "21820e9dabb56ac98365bf2a0584b882d122fe47f97805c1fd105d8ec7a25b64"
+    },
+    "20260921_w04_interpreter_provenance_r01": {
+      "kind": "sealed",
+      "seal_sha256": "cebe1a69ff72ed3cd0d32b594de8f592e3cad69193a18e807e9a46b38a32d122"
+    },
+    "20260922_w00_open_access_reads_r01": {
+      "kind": "sealed",
+      "seal_sha256": "5df1dfbc7895049941ccb041256940a22ce16b5f580215c4a7fe4859aaf2a1f0"
+    },
+    "20260922_w04_fresh_start_determinism_r01": {
+      "kind": "sealed",
+      "seal_sha256": "8aea139af491515e8cc6dba739af16294e0a08deb60d7a8c4c85bd92caf9a9e9"
+    },
+    "20260922_w04_interaction_fixed_point_r01": {
+      "kind": "sealed",
+      "seal_sha256": "15b96207b169d2ec80982ff0509021339108f1ce4e55ae70d1e1f1f59265fef9"
+    },
+    "20260922_w04_traci_first_execution_r01": {
+      "kind": "sealed",
+      "seal_sha256": "c1b4b12d5fd36e70222aad2d3565f3965642daa6be0da422a8dc871eae2ff961"
+    },
+    "20260922_w05_constructive_on_network_r01": {
+      "kind": "sealed",
+      "seal_sha256": "c191c222e32f6b6e6d4ff56678be4f4d5f77033300dde0432de996bc48d35002"
+    },
+    "20260923_w05_constructive_replication_r01": {
+      "kind": "sealed",
+      "seal_sha256": "15b7b9b1a53db9c7b161de0d20e75249f432845eea1e1db8eaf7b0a4b5d24ae4"
+    },
+    "20260924_w04_d06_remedy_r01": {
+      "kind": "sealed",
+      "seal_sha256": "5cf802b4fafb7231664f2bd4bebfe20ea4e14ea67d9409a1e71bae89d1f7f7b0"
+    },
+    "20260924_w04_o22_collision_semantics_r01": {
+      "kind": "sealed",
+      "seal_sha256": "fec749406083896a514676198acf6a3db07549ee9bd5bb645b68c44d8028a60d"
+    },
+    "20260924_w04_o27_constructions_r01": {
+      "kind": "sealed",
+      "seal_sha256": "899e73d197e84f5f5e5886c41dad246e4dce0d8de60d0997eba8f8930a5b296b"
+    },
+    "20260924_w05_deficit_mechanism_r01": {
+      "kind": "sealed",
+      "seal_sha256": "053d78273c0a055a354d2a9084f59453ea4ac2d017b872571fa3c48463cd74de"
+    },
+    "20260924_w05_signal_aware_approach_r01": {
+      "kind": "sealed",
+      "seal_sha256": "9791bfb8e60319ee9daeccbbfad1b5874d03f593a388a13ae100d99247f2ca1d"
+    },
+    "20260925_w04_o27_constructions_r02": {
+      "kind": "sealed",
+      "seal_sha256": "3898df4232aa771f32c605fc9d5ceeaf7278ff52316d98dad73a81653c18190e"
+    },
+    "20260926_w04_capture_failure_modes_x02": {
+      "kind": "sealed",
+      "seal_sha256": "61bc416f2d5f11bb5ab5acc129531663941f466406537cd69b7f9da3b7ee9427"
+    },
+    "20260926_w04_capture_robustness_x01": {
+      "kind": "sealed",
+      "seal_sha256": "da133f0ebe59893387aa1cd9c7b6a6cab17157b95f9c8a453247fef8989edf51"
+    },
+    "20260926_w04_evader_divergence_x03": {
+      "kind": "sealed",
+      "seal_sha256": "0b08505ae79f59cc814c4c5828aecd01207dbbf3049df12d99ca496adeb85436"
+    },
+    "20260926_w04_model_validation_r01": {
+      "kind": "sealed",
+      "seal_sha256": "8dbbe8bb6fb3beeb3124e8e6c95d10b81136c9c8115859ceffd711a9ca36b54c"
+    },
+    "20260926_w04_native_replication_n01": {
+      "kind": "sealed",
+      "seal_sha256": "11427a14b3f3409286c8a38b441d3493899f88dce28a47e2217fb081814935a3"
+    },
+    "20260926_w04_native_replication_n02_optimal": {
+      "kind": "sealed",
+      "seal_sha256": "5363d790ceeb54621d5013637d8b4a2f44eca6c6b6ce7da195837f66a22e78b3"
+    },
+    "20260926_w04_native_replication_n03_keepclear": {
+      "kind": "sealed",
+      "seal_sha256": "016ad55b89da29e047375fd4d05beae71e30cf600ed21a3c8f2039ed3a75db18"
+    },
+    "20260926_w04_native_replication_n05_interpolated": {
+      "kind": "sealed",
+      "seal_sha256": "245257ae5aeb687fcbbf50e761a3810c1ead983b7b6cee4b4a253c3ac2c6dcc3"
+    },
+    "20260926_w04_o27_constructions_r03": {
+      "kind": "sealed",
+      "seal_sha256": "1fe9fa84bbf5971a754127e23ee0a87a06fcac20ac41badd99668f4eaa584d45"
+    },
+    "20260927_native_ladder_stageB2_margin_r01": {
+      "kind": "sealed",
+      "seal_sha256": "e82abb65bf7d6d8d50eb925e02683f2d524719aa65a536ceffeffa7d9bd055a6"
+    },
+    "20260927_native_ladder_stageB3_probability_r01": {
+      "kind": "sealed",
+      "seal_sha256": "41291cfa4f0ba05f652d38da64d50c0b2003aa585432dca65fcf5dd96bab58ec"
+    },
+    "20260927_native_ladder_stageB_r01": {
+      "kind": "sealed",
+      "seal_sha256": "d474bbca71b5f18565bc31f2a03293ba4c3bcb807403900a649e9a2bbe951032"
+    },
+    "20260929_f1_caging_feasibility_r01": {
+      "kind": "sealed",
+      "seal_sha256": "6da547051afcc0622b9b517547bb131034d20bdaf0b45890e13ba034e9c7137c"
+    },
+    "20260929_f1_caging_feasibility_r02": {
+      "kind": "sealed",
+      "seal_sha256": "e749534c8eef8b109309621ca4c7046e852f53f6e1c777df99414d225e4909ff"
+    },
+    "20260929_f2_caging_sweep_r01": {
+      "kind": "sealed",
+      "seal_sha256": "2b6f3a854e0d85f3d7911072339653c85f8119ca81177a5f9110b38d6f1dd2c0"
+    },
+    "20260929_f3_caging_confirm_real_r01": {
+      "kind": "sealed",
+      "seal_sha256": "ef08e288cd6baef580b2cc8449d3d762f2668c96a0606a957d1da9b0fd9923dc"
+    },
+    "20260929_f4_caging_confirm_admission_r01": {
+      "kind": "sealed",
+      "seal_sha256": "fcc77368c58aa4f070a967a9c0b2cd53ddd189fceffd3489818c34714e85eac9"
+    },
+    "20260929_f4_caging_confirm_admission_r02": {
+      "kind": "sealed",
+      "seal_sha256": "b92eb4c86af29aa64ef8bd3f84c29264770eeabe1769f922bee401c758e64d79"
+    },
+    "20260929_marl_pilot_r01": {
+      "kind": "sealed",
+      "seal_sha256": "e0ce2d19d1a5d02069278f131659626f114d5b29fd22adcf0ba26e2389c3eabb"
+    },
+    "20260929_marl_pilot_r02": {
+      "kind": "sealed",
+      "seal_sha256": "43d326edbe4361bf27704909174c16dfe571f879706d5d014f01c15262099ad7"
+    },
+    "20260929_native_ladder_stageB4_pooled_r01": {
+      "kind": "sealed",
+      "seal_sha256": "aaa76182facca41298dbe328475e40c05641f1e9972b72788d23282d2912b8c6"
+    },
+    "20260929_native_ladder_stageB5_idlefix_r01": {
+      "kind": "sealed",
+      "seal_sha256": "e09760c8b11c94f8515d63cf1589dee86832ddf28326031f756b8579578787a8"
+    },
+    "20260930_cage_certificate_audit_r01": {
+      "kind": "sealed",
+      "seal_sha256": "44e9a3c20cb79ef3c2df5de52ba5be667a85f692743f44e0c5853974ff3eafa3"
+    },
+    "20260930_cage_certificate_audit_r02": {
+      "kind": "sealed",
+      "seal_sha256": "ccf5c3dd174af2235e96f018498412e5992d9adccae9c713be3bb9be069845a4"
+    },
+    "20260930_marl_pilot_r03": {
+      "kind": "sealed",
+      "seal_sha256": "f19843ae4f2e860cce10c6f0a1d193a86b221246f2c78f6cbb771f23d641c147"
+    },
+    "20260930_marl_trap_pilot_r04": {
+      "kind": "sealed",
+      "seal_sha256": "f890a728d865379d64af465883bfb3b05d38456a6bf83b914c02fef6d176bd5c"
+    },
+    "20260930_trap_endpoint_r01": {
+      "kind": "sealed",
+      "seal_sha256": "ddf9ebcf7e4e90ee382c9527181b452671244281b70feef21510681b8aeb202a"
+    },
+    "20261001_ambush_learning_r01": {
+      "kind": "sealed",
+      "seal_sha256": "48ca2265090d271b1983ca9a6447b93d9891a42754f464005ee4c3438117f953"
+    },
+    "20261001_ambush_study_r01": {
+      "kind": "sealed",
+      "seal_sha256": "baea8e377a558b9295870e6b7777b9f49234af2dc9855b018c1d57f5c36d020e"
+    },
+    "20261001_endpoint_validation_r01": {
+      "kind": "sealed",
+      "seal_sha256": "69aead658cedc94a3bd6d4598b3fd3f97e288b59f1505b9ca56a0a9ebe9127d1"
+    },
+    "20261001_final_study_r01": {
+      "kind": "sealed",
+      "seal_sha256": "9b01b33d42c137af17426180a52322365191a4a2dd11a6406794ffc0b16aedbb"
+    },
+    "20261001_robustness_study_r01": {
+      "kind": "sealed",
+      "seal_sha256": "662fd38f26c1939aca2d58b590bee9badacbeba8ee3678c8f48fd612f7cf29df"
+    },
+    "20261002_ambush_optimization_r01": {
+      "kind": "sealed",
+      "seal_sha256": "33f77cdb9c4a362610ffb2ae793304fe28f42278b3cce59ce357ee7ff7532f55"
+    },
+    "20261002_kan_capture_law_r01": {
+      "kind": "sealed",
+      "seal_sha256": "3fd5429e919dbc0fe80c6795de084ced3e4385496ef577d91bc7fbef179d426a"
+    },
+    "20261002_mappo_r01": {
+      "kind": "sealed",
+      "seal_sha256": "3df9c88cca4b79cdaa4d8049280d26d8204f64f8a64d7172f1a8b812735fd805"
+    },
+    "20261002_sensitivity_r01": {
+      "kind": "sealed",
+      "seal_sha256": "4aa76dd6aa65f607e572a935949b3dccfb524499cb6be4ef206548827d4f1136"
+    },
+    "20261002_sensitivity_r02": {
+      "kind": "sealed",
+      "seal_sha256": "79c11b84df3f81d19b195b7e11196419fb41ea7f85c1df5221d0b693bfbaf5cb"
+    },
+    "20261003_commitment_r01": {
+      "kind": "sealed",
+      "seal_sha256": "4031025e1207d153461592f7e867467a33a188b7dd8327cd4ecb228a247bafc1"
+    },
+    "20261003_d06_persistence_audit_r01": {
+      "kind": "sealed",
+      "seal_sha256": "15c55d6493738dd0b75c65667ede189a70f7e2fde43ab0f753149d77e7a97fb4"
+    },
+    "20261003_goal_evader_r01": {
+      "kind": "sealed",
+      "seal_sha256": "f5076d3285ad5e400ec1e08c40048236680d17c353efeeefcf437068e4c5565a"
+    },
+    "20261003_interpretability_r01": {
+      "kind": "sealed",
+      "seal_sha256": "4b7a14081e74a4805efc263ad71a23551e956251ffc31786165987e7f7ea2e78"
+    },
+    "20261003_kan_capture_law_test_r01": {
+      "kind": "sealed",
+      "seal_sha256": "2373ea6290ca5fc89c5d3d45a80f36b8debe1797d693d5549c677c1719780811"
+    },
+    "20261003_method_gifs": {
+      "kind": "demonstration",
+      "seal_sha256": null
+    },
+    "20261003_test_confirmation_r01": {
+      "kind": "sealed",
+      "seal_sha256": "7bf9f1663fe52f1a3218f54dac93cdd5a7afb206f44e8677d844fc17f7992a68"
+    },
+    "20261004_audit_addendum_r01": {
+      "kind": "sealed",
+      "seal_sha256": "bb22e96ea2de97bb7d4164936b61bc2275488ebe02ea220d98fddb25538aef50"
+    },
+    "20261004_audit_addendum_r02": {
+      "kind": "sealed",
+      "seal_sha256": "363f68b2cbc1be17b18483038eea3601c20be20857bddfd69dfb94774d8fd575"
+    },
+    "20261004_audit_addendum_r03": {
+      "kind": "sealed",
+      "seal_sha256": "07e72b82e501ba92bb5242caa002294bd4364b8ae74e0013cc73a995aafd7c7d"
+    },
+    "20261004_mappo_v2_r01": {
+      "kind": "sealed",
+      "seal_sha256": "3e0269e9990df33e05dfed37330e422ea78977145c43b6e46292a101c1c3af54"
+    },
+    "20261004_mechanism_diagnostics_r01": {
+      "kind": "sealed",
+      "seal_sha256": "feaad111bc118d11807fb2e2840eb4a408d6ad1e509b02a48d52cdc9129d5f5d"
+    },
+    "20261005_ae_reclassification_r01": {
+      "kind": "sealed",
+      "seal_sha256": "c5e3e38f420ca82d1cac584dbe54e14d57270eb8f1ce9d7b58a4480ae8307f04"
+    },
+    "20261005_capture_instant_scan_r01": {
+      "kind": "sealed",
+      "seal_sha256": "15988f570890555a529d48cc017dac994d6a802c0f8541de35372345e75c413c"
+    },
+    "20261005_fifth_review_delimitation_r01": {
+      "kind": "sealed",
+      "seal_sha256": "9a4a056e9b7f5863d32ef62ebac0ca99637e1b3fbfa704a39e8b91e54e3db3b2"
+    },
+    "20261005_heldout_b_r01": {
+      "kind": "sealed",
+      "seal_sha256": "7e8c1a5dfc605de7ef2e3948e62d24cd199aabcfc1007f24323e787485fb22cc"
+    },
+    "20261005_kinematic_sensitivity_r01": {
+      "kind": "sealed",
+      "seal_sha256": "45dc4eb4601b474c79e1f76240c4ea87d4c0c4e14d4effcacb548093588db71a"
+    },
+    "20261005_mappo_prox_posthoc_r01": {
+      "kind": "sealed",
+      "seal_sha256": "44ca98197c7998f99ad55684d56a5b45866c8483829d9da179dcab2b7bd0214e"
+    },
+    "20261005_mappo_prox_r01": {
+      "kind": "sealed",
+      "seal_sha256": "bafa7440a6f78729871c7a5328627d07f1ce38e404bd49f460cf1ac59ea328e7"
+    },
+    "20261005_mappo_v3_r01": {
+      "kind": "sealed",
+      "seal_sha256": "20ea1c6cffd7b74fdc74ddf70b7ceaea0d115cc85dd058449eddf9860d90d329"
+    },
+    "20261005_published_env_audit_r01": {
+      "kind": "sealed",
+      "seal_sha256": "0cdbc0adf8dd4997043603079eb9e226e616ede297967e9f3c08aa5ee28567cc"
+    },
+    "20261005_published_env_audit_r02": {
+      "kind": "sealed",
+      "seal_sha256": "9ad195023b9d1b4c14f1138b398c99b18f390c57c4eb447231a56a7208255ebb"
+    },
+    "20261005_published_env_pepcrl_r01": {
+      "kind": "sealed",
+      "seal_sha256": "1eadaf22b1efaf23625378cb9598ad902abc101c03f6c3fbe7e277c257783a80"
+    },
+    "20261005_traffic_interaction_posthoc_r01": {
+      "kind": "sealed",
+      "seal_sha256": "26e1f2a1516f14e7a8fed18fa64930f517f1849adf8ecc9adf1dc439abe7efe0"
+    },
+    "20261005_traffic_sensitivity_r01": {
+      "kind": "sealed",
+      "seal_sha256": "9b764def1d71806b4d2c5bc86aa423e864fd5b169ac78a5ce94299e2bf9394af"
+    },
+    "20261005_tuned_evader_r01": {
+      "kind": "sealed",
+      "seal_sha256": "289a3617f1f90ef0c94ed000d38c79081012c89bca21094cfc4242302ef5c61b"
+    },
+    "20261005_v3_first_batch_reconstruction_r01": {
+      "kind": "sealed",
+      "seal_sha256": "f43d4f6d25e4780a05b16221b726014a5338f7d8ea9962d4e5cd68dcedb67a90"
+    },
+    "20261006_heldout_sets_posthoc_r01": {
+      "kind": "sealed",
+      "seal_sha256": "d8def8ab6cc468df95a89d122da3cafdef4cabac89cdf58169c87e56db1731c2"
+    },
+    "20261006_mappo_v4_r01": {
+      "kind": "sealed",
+      "seal_sha256": "c1a378bc9a5d7424da1b74f4ba95baa6037cef83de1825faeddca109e3900605"
+    }
+  },
+  "companion_hashes": {
+    "experiments/20261002_ambush_optimization_r01/gifs/toronto8_optimised_team5.gif": "33188e8afb1a893e0cba44f6e39882f58554969bf510a8287c9349fd101c3b00",
+    "experiments/20261003_method_gifs/adelaide_cbd_20_ambush.gif": "12defa7ef73f30fd49352cf1d19e00c5f6193612df32b2276f846af015415ac3",
+    "experiments/20261003_method_gifs/adelaide_cbd_20_ambush_plus.gif": "e2c35f8c641fcc7238a4e1e37bf88e53b5774f1ecfe50f48eb4b79bae2f2a68a",
+    "experiments/20261003_method_gifs/adelaide_cbd_20_cut.gif": "04f8682c73c5c040bc076c7833b505d79f26febd096dce87dfed7a1cab8e808c",
+    "experiments/20261003_method_gifs/adelaide_cbd_20_mappo_kan_s1.gif": "5c40feb7167ce2b899cbe12a0fc17055ba245f85958a1120cf80eaf4de97d997",
+    "experiments/20261003_method_gifs/adelaide_cbd_20_pursuit.gif": "1277ab88ed731cd134bc63dc5dc94c507291be1d13eee71fec4b83c742e676a0",
+    "experiments/20261003_method_gifs/phoenix_downtown_32_ambush.gif": "aa90538e08963f12605ba1e4ce6cd53a21374180d7fdfcc3a7c94ce538cbfb3d",
+    "experiments/20261003_method_gifs/phoenix_downtown_32_ambush_plus.gif": "597327389d0fcfcb9581f70f04edd81455929102b06800f05f3a87eac5cfaf78",
+    "experiments/20261003_method_gifs/phoenix_downtown_32_cut.gif": "f860d9d81cac53f670ae0e19388cffccf09c7f9909e42245a8117c1739fd3f13",
+    "experiments/20261003_method_gifs/phoenix_downtown_32_mappo_kan_s1.gif": "e1320f376a952a5c9bb0a0dbc33c0e733b26cec363f4342a3a418ad3b13ed271",
+    "experiments/20261003_method_gifs/phoenix_downtown_32_pursuit.gif": "0717c058b12f7812145259e55e20d90239770f1a10a95f319cc552ee9d0fc78c"
+  }
+}

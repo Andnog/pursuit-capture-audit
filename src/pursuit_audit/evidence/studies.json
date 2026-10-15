@@ -6,7 +6,7 @@
   "amendment": null,
   "registered": false,
   "script": "run_finite_examples.py",
-  "command": "uv run python scripts/run_finite_examples.py --package experiments/20260920_w01_finite_examples_r01_rerun",
+  "command": "uv run python scripts/run_finite_examples.py --package /tmp/20260920_w01_finite_examples_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -99,7 +99,7 @@
   "amendment": null,
   "registered": true,
   "script": "run_contract_checks.py",
-  "command": "uv run python scripts/run_contract_checks.py --package experiments/20260921_w02_contracts_r01_rerun",
+  "command": "uv run python scripts/run_contract_checks.py --package /tmp/20260921_w02_contracts_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -128,7 +128,7 @@
   "amendment": "A-09",
   "registered": false,
   "script": "run_adapter_checks.py",
-  "command": "uv run python scripts/run_adapter_checks.py --package experiments/20260921_w03_adapter_r01_rerun",
+  "command": "uv run python scripts/run_adapter_checks.py --package /tmp/20260921_w03_adapter_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -253,7 +253,7 @@
   "amendment": "A-37",
   "registered": false,
   "script": "run_fresh_start_determinism.py",
-  "command": "uv run python scripts/run_fresh_start_determinism.py --package experiments/20260922_w04_fresh_start_determinism_r01_rerun",
+  "command": "uv run python scripts/run_fresh_start_determinism.py --package /tmp/20260922_w04_fresh_start_determinism_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -318,7 +318,7 @@
   "amendment": null,
   "registered": false,
   "script": "run_interaction_checks.py",
-  "command": "uv run python scripts/run_interaction_checks.py --package experiments/20260922_w04_interaction_fixed_point_r01_rerun",
+  "command": "uv run python scripts/run_interaction_checks.py --package /tmp/20260922_w04_interaction_fixed_point_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -347,7 +347,7 @@
   "amendment": null,
   "registered": false,
   "script": "run_traci_first_execution.py",
-  "command": "uv run python scripts/run_traci_first_execution.py --package experiments/20260922_w04_traci_first_execution_r01_rerun",
+  "command": "uv run python scripts/run_traci_first_execution.py --package /tmp/20260922_w04_traci_first_execution_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -406,7 +406,7 @@
   "amendment": null,
   "registered": false,
   "script": "run_constructive_on_network.py",
-  "command": "uv run python scripts/run_constructive_on_network.py --package experiments/20260922_w05_constructive_on_network_r01_rerun",
+  "command": "uv run python scripts/run_constructive_on_network.py --package /tmp/20260922_w05_constructive_on_network_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -447,7 +447,7 @@
   "amendment": "A-40",
   "registered": false,
   "script": "run_constructive_replication.py",
-  "command": "uv run python scripts/run_constructive_replication.py --package experiments/20260923_w05_constructive_replication_r01_rerun",
+  "command": "uv run python scripts/run_constructive_replication.py --package /tmp/20260923_w05_constructive_replication_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -520,7 +520,7 @@
   "amendment": "A-47",
   "registered": false,
   "script": "run_o27_constructions.py",
-  "command": "uv run python scripts/run_o27_constructions.py --package experiments/20260924_w04_o27_constructions_r01_rerun",
+  "command": "uv run python scripts/run_o27_constructions.py --package /tmp/20260924_w04_o27_constructions_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -543,7 +543,7 @@
   "amendment": "A-41",
   "registered": true,
   "script": "run_constructive_on_network.py",
-  "command": "uv run python scripts/run_constructive_on_network.py --package experiments/20260924_w05_deficit_mechanism_r01_rerun",
+  "command": "uv run python scripts/run_constructive_on_network.py --package /tmp/20260924_w05_deficit_mechanism_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -584,7 +584,7 @@
   "amendment": "A-40",
   "registered": false,
   "script": "run_approach_validation.py",
-  "command": "uv run python scripts/run_approach_validation.py",
+  "command": "uv run python scripts/run_approach_validation.py --help",
   "options": [],
   "analysis_scripts": [],
   "needs_simulator": false,
@@ -600,7 +600,7 @@
   "amendment": "A-51",
   "registered": true,
   "script": "run_o27_r02.py",
-  "command": "uv run python scripts/run_o27_r02.py --package experiments/20260925_w04_o27_constructions_r02_rerun",
+  "command": "uv run python scripts/run_o27_r02.py --package /tmp/20260925_w04_o27_constructions_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -695,7 +695,7 @@
   "amendment": "A-47",
   "registered": false,
   "script": "run_model_validation.py",
-  "command": "uv run python scripts/run_model_validation.py --package experiments/20260926_w04_model_validation_r01_rerun",
+  "command": "uv run python scripts/run_model_validation.py --package /tmp/20260926_w04_model_validation_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -748,7 +748,7 @@
   "amendment": "A-58",
   "registered": false,
   "script": "run_native_replication.py",
-  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n01_rerun",
+  "command": "uv run python scripts/run_native_replication.py --package /tmp/20260926_w04_native_replication_n01_rerun",
   "options": [
    {
     "name": "--package",
@@ -795,7 +795,7 @@
   "amendment": "A-59",
   "registered": false,
   "script": "run_native_replication.py",
-  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n02_optimal_rerun",
+  "command": "uv run python scripts/run_native_replication.py --package /tmp/20260926_w04_native_replication_n02_optimal_rerun",
   "options": [
    {
     "name": "--package",
@@ -842,7 +842,7 @@
   "amendment": "A-59",
   "registered": true,
   "script": "run_native_replication.py",
-  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n03_keepclear_rerun",
+  "command": "uv run python scripts/run_native_replication.py --package /tmp/20260926_w04_native_replication_n03_keepclear_rerun",
   "options": [
    {
     "name": "--package",
@@ -889,7 +889,7 @@
   "amendment": "A-59",
   "registered": true,
   "script": "run_native_replication.py",
-  "command": "uv run python scripts/run_native_replication.py --package experiments/20260926_w04_native_replication_n05_interpolated_rerun",
+  "command": "uv run python scripts/run_native_replication.py --package /tmp/20260926_w04_native_replication_n05_interpolated_rerun",
   "options": [
    {
     "name": "--package",
@@ -936,7 +936,7 @@
   "amendment": "A-53",
   "registered": true,
   "script": "run_o27_r03.py",
-  "command": "uv run python scripts/run_o27_r03.py --package experiments/20260926_w04_o27_constructions_r03_rerun",
+  "command": "uv run python scripts/run_o27_r03.py --package /tmp/20260926_w04_o27_constructions_r03_rerun",
   "options": [
    {
     "name": "--package",
@@ -971,7 +971,7 @@
   "amendment": "A-65",
   "registered": false,
   "script": "run_native_ladder.py",
-  "command": "uv run python scripts/run_native_ladder.py --package experiments/20260927_native_ladder_stageB2_margin_r01_rerun",
+  "command": "uv run python scripts/run_native_ladder.py --package /tmp/20260927_native_ladder_stageB2_margin_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1042,7 +1042,7 @@
   "amendment": "A-66",
   "registered": false,
   "script": "run_native_probability.py",
-  "command": "uv run python scripts/run_native_probability.py --package experiments/20260927_native_ladder_stageB3_probability_r01_rerun",
+  "command": "uv run python scripts/run_native_probability.py --package /tmp/20260927_native_ladder_stageB3_probability_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1107,7 +1107,7 @@
   "amendment": "A-64",
   "registered": false,
   "script": "run_native_ladder.py",
-  "command": "uv run python scripts/run_native_ladder.py --package experiments/20260927_native_ladder_stageB_r01_rerun",
+  "command": "uv run python scripts/run_native_ladder.py --package /tmp/20260927_native_ladder_stageB_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1178,7 +1178,7 @@
   "amendment": "A-70",
   "registered": true,
   "script": "run_caging_probe.py",
-  "command": "uv run python scripts/run_caging_probe.py --package experiments/20260929_f1_caging_feasibility_r01_rerun",
+  "command": "uv run python scripts/run_caging_probe.py --package /tmp/20260929_f1_caging_feasibility_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1243,7 +1243,7 @@
   "amendment": "A-70",
   "registered": false,
   "script": "run_caging_probe.py",
-  "command": "uv run python scripts/run_caging_probe.py --package experiments/20260929_f1_caging_feasibility_r02_rerun",
+  "command": "uv run python scripts/run_caging_probe.py --package /tmp/20260929_f1_caging_feasibility_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -1308,7 +1308,7 @@
   "amendment": "A-72",
   "registered": false,
   "script": "run_caging_sweep.py",
-  "command": "uv run python scripts/run_caging_sweep.py --package experiments/20260929_f2_caging_sweep_r01_rerun",
+  "command": "uv run python scripts/run_caging_sweep.py --package /tmp/20260929_f2_caging_sweep_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1379,7 +1379,7 @@
   "amendment": "A-73",
   "registered": false,
   "script": "run_caging_confirm.py",
-  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f3_caging_confirm_real_r01_rerun",
+  "command": "uv run python scripts/run_caging_confirm.py --package /tmp/20260929_f3_caging_confirm_real_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1456,7 +1456,7 @@
   "amendment": "A-76",
   "registered": false,
   "script": "run_caging_confirm.py",
-  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f4_caging_confirm_admission_r01_rerun",
+  "command": "uv run python scripts/run_caging_confirm.py --package /tmp/20260929_f4_caging_confirm_admission_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1533,7 +1533,7 @@
   "amendment": "A-76",
   "registered": false,
   "script": "run_caging_confirm.py",
-  "command": "uv run python scripts/run_caging_confirm.py --package experiments/20260929_f4_caging_confirm_admission_r02_rerun",
+  "command": "uv run python scripts/run_caging_confirm.py --package /tmp/20260929_f4_caging_confirm_admission_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -1610,7 +1610,7 @@
   "amendment": "A-78",
   "registered": false,
   "script": "train_caging_pilot.py",
-  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260929_marl_pilot_r01_rerun",
+  "command": "uv run python scripts/train_caging_pilot.py --package /tmp/20260929_marl_pilot_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1699,7 +1699,7 @@
   "amendment": "A-78",
   "registered": false,
   "script": "train_caging_pilot.py",
-  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260929_marl_pilot_r02_rerun",
+  "command": "uv run python scripts/train_caging_pilot.py --package /tmp/20260929_marl_pilot_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -1788,7 +1788,7 @@
   "amendment": "A-67",
   "registered": false,
   "script": "run_native_probability.py",
-  "command": "uv run python scripts/run_native_probability.py --package experiments/20260929_native_ladder_stageB4_pooled_r01_rerun",
+  "command": "uv run python scripts/run_native_probability.py --package /tmp/20260929_native_ladder_stageB4_pooled_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1853,7 +1853,7 @@
   "amendment": "A-68",
   "registered": true,
   "script": "run_native_probability.py",
-  "command": "uv run python scripts/run_native_probability.py --package experiments/20260929_native_ladder_stageB5_idlefix_r01_rerun",
+  "command": "uv run python scripts/run_native_probability.py --package /tmp/20260929_native_ladder_stageB5_idlefix_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1918,7 +1918,7 @@
   "amendment": "A-83",
   "registered": false,
   "script": "audit_cage_certificate.py",
-  "command": "uv run python scripts/audit_cage_certificate.py --package experiments/20260930_cage_certificate_audit_r01_rerun",
+  "command": "uv run python scripts/audit_cage_certificate.py --package /tmp/20260930_cage_certificate_audit_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -1971,7 +1971,7 @@
   "amendment": "A-83",
   "registered": false,
   "script": "audit_cage_certificate.py",
-  "command": "uv run python scripts/audit_cage_certificate.py --package experiments/20260930_cage_certificate_audit_r02_rerun",
+  "command": "uv run python scripts/audit_cage_certificate.py --package /tmp/20260930_cage_certificate_audit_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -2024,7 +2024,7 @@
   "amendment": "A-81",
   "registered": true,
   "script": "train_caging_pilot.py",
-  "command": "uv run python scripts/train_caging_pilot.py --package experiments/20260930_marl_pilot_r03_rerun",
+  "command": "uv run python scripts/train_caging_pilot.py --package /tmp/20260930_marl_pilot_r03_rerun",
   "options": [
    {
     "name": "--package",
@@ -2113,7 +2113,7 @@
   "amendment": "A-86",
   "registered": true,
   "script": "train_trap_pilot.py",
-  "command": "uv run python scripts/train_trap_pilot.py --package experiments/20260930_marl_trap_pilot_r04_rerun",
+  "command": "uv run python scripts/train_trap_pilot.py --package /tmp/20260930_marl_trap_pilot_r04_rerun",
   "options": [
    {
     "name": "--package",
@@ -2232,7 +2232,7 @@
   "amendment": "A-84",
   "registered": true,
   "script": "run_trap_endpoint.py",
-  "command": "uv run python scripts/run_trap_endpoint.py --package experiments/20260930_trap_endpoint_r01_rerun",
+  "command": "uv run python scripts/run_trap_endpoint.py --package /tmp/20260930_trap_endpoint_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2285,7 +2285,7 @@
   "amendment": "A-96",
   "registered": false,
   "script": "train_ambush_learner.py",
-  "command": "uv run python scripts/train_ambush_learner.py --package experiments/20261001_ambush_learning_r01_rerun",
+  "command": "uv run python scripts/train_ambush_learner.py --package /tmp/20261001_ambush_learning_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2326,7 +2326,7 @@
   "amendment": "A-94",
   "registered": true,
   "script": "run_ambush_study.py",
-  "command": "uv run python scripts/run_ambush_study.py --package experiments/20261001_ambush_study_r01_rerun",
+  "command": "uv run python scripts/run_ambush_study.py --package /tmp/20261001_ambush_study_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2379,7 +2379,7 @@
   "amendment": "A-88",
   "registered": true,
   "script": "run_endpoint_validation.py",
-  "command": "uv run python scripts/run_endpoint_validation.py --package experiments/20261001_endpoint_validation_r01_rerun",
+  "command": "uv run python scripts/run_endpoint_validation.py --package /tmp/20261001_endpoint_validation_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2426,7 +2426,7 @@
   "amendment": "A-90",
   "registered": true,
   "script": "run_final_study.py",
-  "command": "uv run python scripts/run_final_study.py --package experiments/20261001_final_study_r01_rerun",
+  "command": "uv run python scripts/run_final_study.py --package /tmp/20261001_final_study_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2473,7 +2473,7 @@
   "amendment": "A-92",
   "registered": false,
   "script": "run_robustness_study.py",
-  "command": "uv run python scripts/run_robustness_study.py --package experiments/20261001_robustness_study_r01_rerun",
+  "command": "uv run python scripts/run_robustness_study.py --package /tmp/20261001_robustness_study_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2532,7 +2532,7 @@
   "amendment": "A-98",
   "registered": false,
   "script": "run_ambush_optimization.py",
-  "command": "uv run python scripts/run_ambush_optimization.py --package experiments/20261002_ambush_optimization_r01_rerun",
+  "command": "uv run python scripts/run_ambush_optimization.py --package /tmp/20261002_ambush_optimization_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2567,7 +2567,7 @@
   "amendment": "A-104",
   "registered": false,
   "script": "kan_capture_law.py",
-  "command": "uv run python scripts/kan_capture_law.py --package experiments/20261002_kan_capture_law_r01_rerun",
+  "command": "uv run python scripts/kan_capture_law.py --package /tmp/20261002_kan_capture_law_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2590,7 +2590,7 @@
   "amendment": "A-103",
   "registered": true,
   "script": "train_mappo.py",
-  "command": "uv run python scripts/train_mappo.py --package experiments/20261002_mappo_r01_rerun",
+  "command": "uv run python scripts/train_mappo.py --package /tmp/20261002_mappo_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2631,7 +2631,7 @@
   "amendment": "A-101",
   "registered": false,
   "script": "run_sensitivity_study.py",
-  "command": "uv run python scripts/run_sensitivity_study.py --package experiments/20261002_sensitivity_r01_rerun",
+  "command": "uv run python scripts/run_sensitivity_study.py --package /tmp/20261002_sensitivity_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2666,7 +2666,7 @@
   "amendment": "A-101",
   "registered": false,
   "script": "run_sensitivity_study.py",
-  "command": "uv run python scripts/run_sensitivity_study.py --package experiments/20261002_sensitivity_r02_rerun",
+  "command": "uv run python scripts/run_sensitivity_study.py --package /tmp/20261002_sensitivity_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -2701,7 +2701,7 @@
   "amendment": "A-106",
   "registered": true,
   "script": "run_commitment_study.py",
-  "command": "uv run python scripts/run_commitment_study.py --package experiments/20261003_commitment_r01_rerun",
+  "command": "uv run python scripts/run_commitment_study.py --package /tmp/20261003_commitment_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2736,7 +2736,7 @@
   "amendment": "A-108",
   "registered": true,
   "script": "audit_d06_persistence.py",
-  "command": "uv run python scripts/audit_d06_persistence.py --package experiments/20261003_d06_persistence_audit_r01_rerun",
+  "command": "uv run python scripts/audit_d06_persistence.py --package /tmp/20261003_d06_persistence_audit_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2777,7 +2777,7 @@
   "amendment": "A-112",
   "registered": true,
   "script": "run_goal_evader_study.py",
-  "command": "uv run python scripts/run_goal_evader_study.py --package experiments/20261003_goal_evader_r01_rerun",
+  "command": "uv run python scripts/run_goal_evader_study.py --package /tmp/20261003_goal_evader_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2812,7 +2812,7 @@
   "amendment": "A-113",
   "registered": false,
   "script": "interpretability_capture_law.py",
-  "command": "uv run python scripts/interpretability_capture_law.py --package experiments/20261003_interpretability_r01_rerun",
+  "command": "uv run python scripts/interpretability_capture_law.py --package /tmp/20261003_interpretability_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2837,7 +2837,7 @@
   "amendment": "A-110",
   "registered": false,
   "script": "kan_capture_law_test.py",
-  "command": "uv run python scripts/kan_capture_law_test.py --package experiments/20261003_kan_capture_law_test_r01_rerun",
+  "command": "uv run python scripts/kan_capture_law_test.py --package /tmp/20261003_kan_capture_law_test_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2860,7 +2860,7 @@
   "amendment": null,
   "registered": false,
   "script": "render_capture_gif.py",
-  "command": "uv run python scripts/render_capture_gif.py",
+  "command": "uv run python scripts/render_capture_gif.py --help",
   "options": [],
   "analysis_scripts": [],
   "needs_simulator": false,
@@ -2876,7 +2876,7 @@
   "amendment": "A-110",
   "registered": true,
   "script": "run_test_confirmation.py",
-  "command": "uv run python scripts/run_test_confirmation.py --package experiments/20261003_test_confirmation_r01_rerun",
+  "command": "uv run python scripts/run_test_confirmation.py --package /tmp/20261003_test_confirmation_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2917,7 +2917,7 @@
   "amendment": "A-115",
   "registered": true,
   "script": "audit_addendum.py",
-  "command": "uv run python scripts/audit_addendum.py --package experiments/20261004_audit_addendum_r01_rerun",
+  "command": "uv run python scripts/audit_addendum.py --package /tmp/20261004_audit_addendum_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -2966,7 +2966,7 @@
   "amendment": "A-119",
   "registered": true,
   "script": "audit_addendum_r02.py",
-  "command": "uv run python scripts/audit_addendum_r02.py --package experiments/20261004_audit_addendum_r02_rerun",
+  "command": "uv run python scripts/audit_addendum_r02.py --package /tmp/20261004_audit_addendum_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -3009,7 +3009,7 @@
   "amendment": "A-121",
   "registered": true,
   "script": "audit_addendum_r03.py",
-  "command": "uv run python scripts/audit_addendum_r03.py --package experiments/20261004_audit_addendum_r03_rerun",
+  "command": "uv run python scripts/audit_addendum_r03.py --package /tmp/20261004_audit_addendum_r03_rerun",
   "options": [
    {
     "name": "--package",
@@ -3052,7 +3052,7 @@
   "amendment": "A-116",
   "registered": true,
   "script": "train_mappo_v2.py",
-  "command": "uv run python scripts/train_mappo_v2.py --package experiments/20261004_mappo_v2_r01_rerun",
+  "command": "uv run python scripts/train_mappo_v2.py --package /tmp/20261004_mappo_v2_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3093,7 +3093,7 @@
   "amendment": "A-123",
   "registered": false,
   "script": "diag_mechanisms.py",
-  "command": "uv run python scripts/diag_mechanisms.py --package experiments/20261004_mechanism_diagnostics_r01_rerun",
+  "command": "uv run python scripts/diag_mechanisms.py --package /tmp/20261004_mechanism_diagnostics_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3144,7 +3144,7 @@
   "amendment": "A-137",
   "registered": false,
   "script": "scan_capture_instants.py",
-  "command": "uv run python scripts/scan_capture_instants.py --package experiments/20261005_capture_instant_scan_r01_rerun",
+  "command": "uv run python scripts/scan_capture_instants.py --package /tmp/20261005_capture_instant_scan_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3185,7 +3185,7 @@
   "amendment": "A-139",
   "registered": false,
   "script": "delimit_fifth_review.py",
-  "command": "uv run python scripts/delimit_fifth_review.py",
+  "command": "uv run python scripts/delimit_fifth_review.py --help",
   "options": [],
   "analysis_scripts": [],
   "needs_simulator": false,
@@ -3201,7 +3201,7 @@
   "amendment": "A-138",
   "registered": true,
   "script": "run_heldout_b.py",
-  "command": "uv run python scripts/run_heldout_b.py --package experiments/20261005_heldout_b_r01_rerun",
+  "command": "uv run python scripts/run_heldout_b.py --package /tmp/20261005_heldout_b_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3238,7 +3238,7 @@
   "amendment": "A-127",
   "registered": false,
   "script": "run_kinematic_sensitivity.py",
-  "command": "uv run python scripts/run_kinematic_sensitivity.py --package experiments/20261005_kinematic_sensitivity_r01_rerun",
+  "command": "uv run python scripts/run_kinematic_sensitivity.py --package /tmp/20261005_kinematic_sensitivity_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3279,7 +3279,7 @@
   "amendment": "A-129",
   "registered": false,
   "script": "posthoc_mappo_prox_contrasts.py",
-  "command": "uv run python scripts/posthoc_mappo_prox_contrasts.py",
+  "command": "uv run python scripts/posthoc_mappo_prox_contrasts.py --help",
   "options": [],
   "analysis_scripts": [],
   "needs_simulator": false,
@@ -3295,7 +3295,7 @@
   "amendment": "A-125",
   "registered": true,
   "script": "train_mappo_prox.py",
-  "command": "uv run python scripts/train_mappo_prox.py --package experiments/20261005_mappo_prox_r01_rerun",
+  "command": "uv run python scripts/train_mappo_prox.py --package /tmp/20261005_mappo_prox_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3336,7 +3336,7 @@
   "amendment": "A-133",
   "registered": false,
   "script": "train_mappo_v3.py",
-  "command": "uv run python scripts/train_mappo_v3.py --package experiments/20261005_mappo_v3_r01_rerun",
+  "command": "uv run python scripts/train_mappo_v3.py --package /tmp/20261005_mappo_v3_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3377,7 +3377,7 @@
   "amendment": "A-126",
   "registered": false,
   "script": "audit_published_env.py",
-  "command": "uv run python scripts/audit_published_env.py --package experiments/20261005_published_env_audit_r01_rerun",
+  "command": "uv run python scripts/audit_published_env.py --package /tmp/20261005_published_env_audit_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3420,7 +3420,7 @@
   "amendment": "A-133",
   "registered": false,
   "script": "audit_published_env_r02.py",
-  "command": "uv run python scripts/audit_published_env_r02.py --package experiments/20261005_published_env_audit_r02_rerun",
+  "command": "uv run python scripts/audit_published_env_r02.py --package /tmp/20261005_published_env_audit_r02_rerun",
   "options": [
    {
     "name": "--package",
@@ -3463,7 +3463,7 @@
   "amendment": "A-137",
   "registered": false,
   "script": "audit_published_env_pepcrl.py",
-  "command": "uv run python scripts/audit_published_env_pepcrl.py --package experiments/20261005_published_env_pepcrl_r01_rerun",
+  "command": "uv run python scripts/audit_published_env_pepcrl.py --package /tmp/20261005_published_env_pepcrl_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3506,7 +3506,7 @@
   "amendment": "A-133",
   "registered": false,
   "script": "posthoc_traffic_interaction.py",
-  "command": "uv run python scripts/posthoc_traffic_interaction.py",
+  "command": "uv run python scripts/posthoc_traffic_interaction.py --help",
   "options": [],
   "analysis_scripts": [],
   "needs_simulator": false,
@@ -3522,7 +3522,7 @@
   "amendment": "A-127",
   "registered": false,
   "script": "run_traffic_sensitivity.py",
-  "command": "uv run python scripts/run_traffic_sensitivity.py --package experiments/20261005_traffic_sensitivity_r01_rerun",
+  "command": "uv run python scripts/run_traffic_sensitivity.py --package /tmp/20261005_traffic_sensitivity_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3557,7 +3557,7 @@
   "amendment": "A-127",
   "registered": false,
   "script": "run_tuned_evader_study.py",
-  "command": "uv run python scripts/run_tuned_evader_study.py --package experiments/20261005_tuned_evader_r01_rerun",
+  "command": "uv run python scripts/run_tuned_evader_study.py --package /tmp/20261005_tuned_evader_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3592,7 +3592,7 @@
   "amendment": "A-139",
   "registered": false,
   "script": "reconstruct_v3_first_batches.py",
-  "command": "uv run python scripts/reconstruct_v3_first_batches.py --package experiments/20261005_v3_first_batch_reconstruction_r01_rerun",
+  "command": "uv run python scripts/reconstruct_v3_first_batches.py --package /tmp/20261005_v3_first_batch_reconstruction_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3627,7 +3627,7 @@
   "amendment": "A-110",
   "registered": false,
   "script": "posthoc_heldout_b_vs_test.py",
-  "command": "uv run python scripts/posthoc_heldout_b_vs_test.py --package experiments/20261006_heldout_sets_posthoc_r01_rerun",
+  "command": "uv run python scripts/posthoc_heldout_b_vs_test.py --package /tmp/20261006_heldout_sets_posthoc_r01_rerun",
   "options": [
    {
     "name": "--package",
@@ -3650,7 +3650,7 @@
   "amendment": "A-143",
   "registered": true,
   "script": "train_mappo_v4.py",
-  "command": "uv run python scripts/train_mappo_v4.py --package experiments/20261006_mappo_v4_r01_rerun",
+  "command": "uv run python scripts/train_mappo_v4.py --package /tmp/20261006_mappo_v4_r01_rerun",
   "options": [
    {
     "name": "--package",

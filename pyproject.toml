@@ -55,6 +55,9 @@ convention = "google"
 # The tools start the frozen code or read its files, so they import late and run long recipes.
 "tools/*" = ["PLC0415", "PLR0912", "PLR0915"]
 
+# The review generator contains long document text and tables.
+"tools/build_review.py" = ["E501"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = ["sumo: needs a SUMO 1.21 installation"]

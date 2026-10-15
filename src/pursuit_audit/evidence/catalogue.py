@@ -19,7 +19,7 @@ class Option:
 
 @dataclass(frozen=True)
 class Study:
-    """One sealed study.
+    """One catalogue entry: a study, an analysis or a demonstration.
 
     Attributes:
         package: Name of the evidence package, which starts with its date.

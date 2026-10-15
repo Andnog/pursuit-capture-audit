@@ -39,11 +39,19 @@ files.
 uv run pursuit-audit verify
 ```
 
-Expected: `832 sealed files present and identical`, `126 sealed files not in this copy`, `0 packages with a file
-that differs from its seal`. The 126 absent files are the heavy ones (run logs, pickled training states,
-animations). They are deposited at Zenodo apart from the code, and `as_run/SNAPSHOT.json` lists each with its size
-and its sealed checksum; with that archive unpacked over `as_run/`, the same command reports them as present. The
-code and the light part of the evidence are archived as release v1.0.0, doi:10.5281/zenodo.23356338.
+Expected for the light public copy: `832 sealed files present and identical`, `126 sealed files not in this copy`, zero damaged packages, and `PASS: public-copy (only listed omissions permitted) inventory verification`.
+
+The verifier checks the expected package directories and the hashes of their `checksums.json` files against `src/pursuit_audit/evidence/inventory.json`. It pins `as_run/SNAPSHOT.json` as well. Missing required records, missing packages, malformed or changed seals, and changed present files fail. The single demonstration directory is classified separately, not treated as a sealed study. Unlisted directories under `experiments/` also fail: put new reproductions outside the preserved snapshot, for example under `/tmp/`.
+
+Only files explicitly listed in the pinned snapshot manifest may be absent in public-copy mode. There are 137 companion files in total; 126 are included in package seals. Present companion files are checked even when they are not sealed: 126 hashes come from the historical snapshot and 11 from the prepared companion manifest, copied into the new inventory. Those additional hashes do not retroactively seal demonstrations. This checks integrity against the versioned references, not an external timestamp or scientific validity.
+
+The companion upload is in progress; its DOI is pending. [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) gives the archive checksum and restoration instructions. Once it is restored, require all companion files with:
+
+```bash
+uv run pursuit-audit verify --complete
+```
+
+This stricter command is expected to fail on the light copy. Do not change the inventory or seals merely to make it pass. The original code-and-light-evidence release is archived at doi:10.5281/zenodo.23356338; the current editorial working revision is not that archived release.
 
 ## Level 1 — recompute the numbers
 
@@ -63,7 +71,8 @@ HELD-OUT B (estimate and 97.5 % family interval).
 summary:
 
 ```bash
-make numbers                 # rewrites results/ARTICLE_NUMBERS.md; `make check-results` fails if it changes
+make check-results           # checks the generated tables without rewriting them
+make check-site              # checks regenerated charts, animations, network outlines and review guide
 ```
 
 **The count of simulations and the figures**, from the frozen scripts:
@@ -82,7 +91,7 @@ uv run pytest                                                           # the te
 (cd as_run && uv run python -m unittest discover -s tests -t tests)     # 528 tests of the frozen code
 ```
 
-In this copy the frozen suite reports 526 passes, one skip and one error: that test reads the pickled training
+In the 14 October local review, using the existing research environment, the frozen suite reported 527 passes and one error: the failing test reads the pickled training
 state of a learning study, a heavy file that is in the data archive. Without PyTorch, 21 more tests report an
 import error.
 
@@ -124,12 +133,11 @@ differences can change individual episodes; compare summaries in that case, not 
 
 ## Level 3 — run a study again
 
-Every study follows the same pattern. Its script takes the directory of an evidence package, runs in chunks that
-can be resumed, and writes its records and its summary there.
+Many simulation runners take an output package, run in resumable chunks, and write their records and summary there. Other analyses have different arguments or fixed paths. Use a separate working copy for new studies, inspect `--help` and the source, and keep the preserved checkout untouched. The following is a template, not a universal command.
 
 ```bash
 cd as_run
-uv run python scripts/<script>.py --package experiments/<name>_rerun --workers 8 --budget-min 25
+uv run python scripts/<script>.py --package /tmp/<name>_rerun --workers 8 --budget-min 25
 ```
 
 - `--package` is the output directory. **Give a new name.** The sealed packages are the evidence of the article and
@@ -142,9 +150,9 @@ uv run python scripts/<script>.py --package experiments/<name>_rerun --workers 8
 When the run is complete, seal the new package and compare it with the sealed one:
 
 ```bash
-uv run python scripts/package_tools.py seal --package experiments/<name>_rerun
-uv run python scripts/package_tools.py verify --package experiments/<name>_rerun
-cd .. && uv run python tools/compare_runs.py as_run/experiments/<name> as_run/experiments/<name>_rerun
+uv run python scripts/package_tools.py seal --package /tmp/<name>_rerun
+uv run python scripts/package_tools.py verify --package /tmp/<name>_rerun
+cd .. && uv run python tools/compare_runs.py as_run/experiments/<name> /tmp/<name>_rerun
 ```
 
 `compare_runs.py` matches the per-episode records of the two packages by key and reports how many are identical,
@@ -152,8 +160,8 @@ and which fields differ in the others.
 
 ### Which script for which result
 
-[`results/STUDIES.md`](results/STUDIES.md) lists the 90 sealed studies with the script of each, and gives the
-command for every study that the article rests on. `uv run pursuit-audit studies --article --commands` prints the
+[`results/STUDIES.md`](results/STUDIES.md) lists the 89 sealed evidence packages and the demonstration directory with available scripts, and gives the
+starting command templates for the available scripts behind the article. `uv run pursuit-audit studies --article --commands` prints the
 same list. [`results/EVIDENCE_MAP.md`](results/EVIDENCE_MAP.md) goes the other way: from each claim of the article
 to the package, the file and the key that hold it.
 
@@ -192,9 +200,7 @@ The main ones:
 - **Road networks.** The fifteen city networks are in `as_run/assets/` (`osm/` and `osm_b/`), with the checksums
   that the study recorded in `as_run/MAPS_STATUS.json`. They are derived from OpenStreetMap (ODbL). Run the scripts
   from `as_run/`: the paths in that file are relative to it.
-- **Registration.** Each package has its `PROTOCOL_EN.md`, written before the runs, and its
-  `SCIENTIFIC_DECISION_EN.md`, written after. The amendments that registered and reported every study are in
-  `as_run/governance/AMENDMENTS_EN.md`.
+- **Registration.** The record includes confirmatory protocols, post hoc analyses and demonstrations. A protocol filename alone does not establish preregistration. Inspect the package, its decision and the corresponding amendment in `as_run/governance/AMENDMENTS_EN.md`; the public evidence map identifies available protocol files without creating retrospective ones.
 
 ## What cannot be reproduced exactly
 
@@ -203,3 +209,22 @@ The main ones:
   `as_run/provenance/` holds the source archives that exist.
 - The audits of the published environments used the released configurations and a later version of the simulator
   than those articles; they are reproducible as run here, not as a reproduction of those articles.
+
+## Local verification before an editorial release
+
+```bash
+make check
+```
+
+This checks the library and generated public resources. It does not rerun every experiment.
+For simulation, first install the pinned environment and run preflight. The separate helper
+`tools/check_reproduction.py` runs the complete-archive check, the historical test suite and
+a six-episode replay, writing only to a new output directory. It requires the companion archive
+to be restored in the supplied copy and SUMO 1.21.0:
+
+```bash
+uv run python tools/check_reproduction.py --python as_run/.venv/bin/python --output /tmp/pursuit-full-check
+```
+
+To preserve a light checkout, restore and run in a separate working copy. A complete check
+requires all companion files; merely skipping the state-dependent test is not a substitute.

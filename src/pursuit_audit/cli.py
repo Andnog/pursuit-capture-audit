@@ -16,7 +16,7 @@ import sys
 from .domain.trace import TraceError, load_trace
 from .endpoints.scoring import score_trace
 from .evidence.catalogue import load_catalogue
-from .evidence.package import packages
+from .evidence.inventory import verify_snapshot
 from .reporting.headline import headline_checks
 
 _SNAPSHOT = "as_run"
@@ -40,21 +40,19 @@ def find_snapshot(start: str | None = None) -> str:
 
 
 def _verify(args: argparse.Namespace) -> int:
-    root = os.path.join(args.snapshot or find_snapshot(), "experiments")
-    matched = absent = 0
-    damaged = []
-    for package in packages(root):
-        result = package.verify()
-        matched += len(result.matched)
-        absent += len(result.absent)
-        if not result.intact:
-            damaged.append(result)
-            for name in result.mismatched:
-                print(f"DIFFERS  {package.name}/{name}")
-    print(f"{matched} sealed files present and identical")
-    print(f"{absent} sealed files not in this copy (heavy files, kept in the data archive)")
-    print(f"{len(damaged)} packages with a file that differs from its seal")
-    return 1 if damaged else 0
+    result = verify_snapshot(
+        args.snapshot or find_snapshot(), complete=args.complete, inventory_path=args.inventory
+    )
+    print(f"{result.matched} sealed files present and identical")
+    print(f"{result.absent} sealed files not in this copy")
+    print(f"{result.damaged} packages with a file that differs from its seal")
+    print(f"{result.archive_absent} companion-archive files absent (sealed and unsealed)")
+    for error in result.errors:
+        print(f"ERROR {error}")
+    if not result.errors:
+        mode = "complete" if args.complete else "public-copy (only listed omissions permitted)"
+        print(f"PASS: {mode} inventory verification")
+    return 1 if result.errors else 0
 
 
 def _recompute(args: argparse.Namespace) -> int:
@@ -98,6 +96,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     verify = commands.add_parser("verify", help="compare the sealed packages with their checksums")
     verify.add_argument("--snapshot", help="path of the as_run directory")
+    verify.add_argument("--complete", action="store_true", help="require every companion file too")
+    verify.add_argument("--inventory", help="explicit inventory JSON; defaults to this release")
     verify.set_defaults(run=_verify)
 
     recompute = commands.add_parser("recompute", help="recompute the headline results")
